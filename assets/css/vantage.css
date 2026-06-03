@@ -47,7 +47,8 @@ a{color:inherit;text-decoration:none}
 .brand .home{font-family:var(--disp);font-weight:800;font-size:30px;letter-spacing:3px;text-transform:uppercase;color:var(--white);transition:.15s}
 .brand .home:hover{color:var(--purple-lt)}
 .brand .home b{color:var(--purple-lt)}
-.brand .div{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;border:1px solid rgba(255,200,0,.35);padding:3px 8px;border-radius:2px}
+.brand .div{display:none;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;border:1px solid rgba(255,200,0,.35);padding:3px 8px;border-radius:2px}
+body[data-page="oversight"] .brand .div{display:inline-block}
 .brand .tag{font-size:10px;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
 .seasons{display:flex;gap:6px;align-items:center}
 .seasons .lbl{font-size:10px;color:var(--dim);letter-spacing:2px;margin-right:4px;text-transform:uppercase}
@@ -191,8 +192,15 @@ tr.win td{background:var(--win-bg)}tr.loss td{background:var(--loss-bg)}
 .board td.neg-lead::after{content:"\25B2";font-size:7px;color:var(--red);position:absolute;top:6px;right:7px}
 .board th.badge-neg{color:var(--red)}
 .board td.dim-cell{color:var(--dim);font-weight:400;font-family:var(--mono);font-size:12px}
-.board.ov-matrix thead th{font-size:9px;padding:7px 5px}
-.board.ov-matrix tbody td{font-size:12px;padding:7px 6px}
+.board.ov-matrix thead th{font-size:10px;padding:8px 6px}
+.board.ov-matrix thead .colcall{font-size:15px}
+.board.ov-matrix tbody td{font-size:14px;padding:8px 8px;font-family:var(--disp);font-weight:700}
+.board.ov-matrix tbody td.l{text-align:left}
+.board.ov-matrix .opcell{align-items:center}
+.board.ov-matrix .opicon{width:32px;height:32px;flex:0 0 32px}
+.board.ov-matrix .opicon img{width:100%;height:100%;object-fit:contain}
+.board.ov-matrix .opname{font-family:var(--disp);font-size:15px;font-weight:700;letter-spacing:.5px;color:var(--white)}
+.board.ov-matrix td.dim-cell{font-size:13px;font-family:var(--mono);font-weight:400}
 .map-chip{display:inline-block;padding:3px 8px;border-radius:2px;font-weight:700;font-size:12px;min-width:44px;text-align:center}
 .map-chip.good{background:var(--win-bg);color:var(--green)}
 .map-chip.mid{background:rgba(255,200,0,.12);color:var(--gold)}

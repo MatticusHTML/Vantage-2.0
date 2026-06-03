@@ -216,7 +216,7 @@ async function renderOversight(){
   const data=ROSTER.map((p,i)=>({cfg:p,rec:recs[i]})).filter(d=>d.rec&&d.rec.meta);
   if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
   view.innerHTML = board(data) + radar(data) + squadComments(squad)
-    + badgeBoard(data) + operatorMatrix(data) + mapHeatmap(data);
+    + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
 }
 function buildOvSeasonBtns(active){
   const el=byId("seasons");
@@ -330,7 +330,7 @@ function operatorMatrix(data){
   const body=list.map(name=>{
     const o=ops[name];
     const tag=o.side==="ATK"?'<span class="side-tag atk">ATK</span>':'<span class="side-tag def">DEF</span>';
-    let row=`<tr><td class="l"><div class="opcell">${opIconImg(name)}<span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
+    let row=`<tr><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
     data.forEach(d=>{
       const op=o.cells[d.cfg.slug];
       if(op) row+=`<td>${op.rounds}</td><td style="color:${wrColor(op.winPct)}">${op.winPct}%</td><td>${op.kd.toFixed(2)}</td>`;
