@@ -14,10 +14,10 @@ const PAGE = document.body.dataset.page || "roster";
 
 /* ---- roster config: order = character-select grid order ---- */
 const ROSTER = [
-  { slug:"cunderthock",        name:"CunderThock",        ubi:"Cunders",          accent:"#9a5cd4" },
-  { slug:"matticus_hq",        name:"Matticus HQ",        ubi:"LOAF_OF_EDIBLES",  accent:"#ffc800" },
-  { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#3ee08f" },
-  { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#4da8ff" },
+  { slug:"cunderthock",        name:"CunderThock",        ubi:"Cunders",          accent:"#ffc800" },
+  { slug:"matticus_hq",        name:"Matticus HQ",        ubi:"LOAF_OF_EDIBLES",  accent:"#9a5cd4" },
+  { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#4da8ff" },
+  { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#2bb87a" },
 ];
 const SEASONS = ["Y11S2","Y11S1"];           // newest first
 const RECRUITS = ["blue","green","orange","red","yellow"];
