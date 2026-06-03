@@ -187,6 +187,19 @@ tr.win td{background:var(--win-bg)}tr.loss td{background:var(--loss-bg)}
 .board tbody tr:hover td,.board tbody tr:hover th{background:rgba(154,92,212,.10)}
 .board td.lead{color:var(--gold);position:relative}
 .board td.lead::after{content:"\25B2";font-size:7px;color:var(--gold);position:absolute;top:6px;right:7px}
+.board td.neg-lead{color:var(--red);font-weight:700;position:relative}
+.board td.neg-lead::after{content:"\25B2";font-size:7px;color:var(--red);position:absolute;top:6px;right:7px}
+.board th.badge-neg{color:var(--red)}
+.board td.dim-cell{color:var(--dim);font-weight:400;font-family:var(--mono);font-size:12px}
+.board.ov-matrix thead th{font-size:9px;padding:7px 5px}
+.board.ov-matrix tbody td{font-size:12px;padding:7px 6px}
+.map-chip{display:inline-block;padding:3px 8px;border-radius:2px;font-weight:700;font-size:12px;min-width:44px;text-align:center}
+.map-chip.good{background:var(--win-bg);color:var(--green)}
+.map-chip.mid{background:rgba(255,200,0,.12);color:var(--gold)}
+.map-chip.bad{background:var(--loss-bg);color:var(--red)}
+.side-tag{font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:2px 6px;border-radius:2px;font-weight:700}
+.side-tag.atk{background:rgba(62,224,143,.12);color:var(--green)}
+.side-tag.def{background:rgba(107,47,160,.25);color:var(--purple-lt)}
 
 /* radar */
 .radar-wrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:center}

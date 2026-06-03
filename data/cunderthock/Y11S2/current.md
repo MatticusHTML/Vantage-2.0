@@ -1,5 +1,5 @@
 # VANTAGE RECORD — CunderThock
-**Season:** Y11S2 · Operation [Next] — Ranked 3.0  
+**Season:** Y11S2 · Operation System Override  
 **Updated:** Jun 3, 2026 · 10:19 AM PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
@@ -14,7 +14,7 @@
   "debrief": "",
   "comments": [],
   "season": "Y11S2",
-  "seasonLabel": "Operation [Next] \u2014 Ranked 3.0",
+  "seasonLabel": "Operation System Override",
   "updated": "Jun 3, 2026 \u00b7 10:19 AM PT"
 }
 ```

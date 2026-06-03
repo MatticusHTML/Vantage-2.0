@@ -19,7 +19,12 @@ const ROSTER = [
   { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#4da8ff" },
   { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#2bb87a" },
 ];
-const SEASONS = ["Y11S2","Y11S1"];           // newest first
+const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
+const DEFAULT_SEASON = SEASONS[0];
+const SEASON_OPS = {
+  Y11S1: "Operation Silent Hunt",
+  Y11S2: "Operation System Override",
+};
 const RECRUITS = ["blue","green","orange","red","yellow"];
 const ICON_ALIAS = { solidsnake:"snake" };
 
@@ -46,6 +51,10 @@ function commentIconImg(c){
   return `<img src="${iconSrc(c.subject)}" alt="${esc(c.subject)}" onerror="this.onerror=null;this.src='${recruitSrc()}'">`;
 }
 function wrColor(p){ p=parseFloat(p); if(isNaN(p))return"var(--white)"; if(p>=55)return"var(--green)"; if(p>=45)return"var(--gold)"; return"var(--red)"; }
+function seasonOp(s){ return SEASON_OPS[s] || ""; }
+function setBrandTag(text){ const el=document.querySelector(".cmdbar .tag"); if(el) el.textContent=text; }
+function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
+function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
 
 /* ---- data loading ---- */
 function parseRecord(txt){
@@ -114,11 +123,9 @@ async function renderPlayer(){
   const slug = document.body.dataset.player;
   const view = byId("view");
 
-  let latest;
-  try{ latest = await loadLatest(slug); }
-  catch(e){ fetchErr(view); buildSeasonBtns(slug, SEASONS[0]); return; }
-  PLAYER_SEASON = PLAYER_SEASON || latest.season;
+  PLAYER_SEASON = PLAYER_SEASON || DEFAULT_SEASON;
   buildSeasonBtns(slug, PLAYER_SEASON);
+  setBrandTag(playerTag(slug, PLAYER_SEASON));
 
   let rec;
   try{ rec = await loadRecord(slug, PLAYER_SEASON); }
@@ -197,15 +204,9 @@ function emptySeason(season){
 let OV_SEASON=null;
 async function renderOversight(){
   const view=byId("view");
-  // pick season with data across squad
-  if(!OV_SEASON){
-    OV_SEASON=SEASONS[SEASONS.length-1];
-    for(const s of SEASONS){
-      const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,s).catch(()=>null)));
-      if(recs.some(r=>r&&r.meta)){ OV_SEASON=s; break; }
-    }
-  }
+  if(!OV_SEASON) OV_SEASON = DEFAULT_SEASON;
   buildOvSeasonBtns(OV_SEASON);
+  setBrandTag(oversightTag(OV_SEASON));
 
   let recs;
   try{ recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,OV_SEASON))); }
@@ -214,7 +215,8 @@ async function renderOversight(){
 
   const data=ROSTER.map((p,i)=>({cfg:p,rec:recs[i]})).filter(d=>d.rec&&d.rec.meta);
   if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
-  view.innerHTML = board(data) + radar(data) + squadComments(squad);
+  view.innerHTML = board(data) + radar(data) + squadComments(squad)
+    + badgeBoard(data) + operatorMatrix(data) + mapHeatmap(data);
 }
 function buildOvSeasonBtns(active){
   const el=byId("seasons");
@@ -273,6 +275,107 @@ function squadComments(squad){
       <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
       <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
       <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
+}
+
+/* ---- OVERSIGHT extended comparisons (computed from player JSON) ---- */
+const BADGE_ORDER=["2K","3K","4K","Ace","1v1 Clutch","1v2 Clutch","1v3 Clutch","1v4 Clutch","1v5 Clutch","Victim","1v1 Lost","1v2 Lost","1v3 Lost","TK"];
+const NEG_BADGES=new Set(["Victim","1v1 Lost","1v2 Lost","1v3 Lost","TK"]);
+
+function ovPanel(title,note,inner){
+  return `<div class="panel"><div class="sect-hdr">// ${title} <span class="n">— ${note}</span></div>${inner}</div>`;
+}
+function badgeCount(rec,name){
+  const b=(rec.badges||[]).find(x=>x.name===name);
+  return b?b.count:0;
+}
+function mapChip(wr){
+  const cls=wr>=55?"good":wr>=45?"mid":"bad";
+  return `<span class="map-chip ${cls}">${wr.toFixed(0)}%</span>`;
+}
+
+function badgeBoard(data){
+  const names=BADGE_ORDER.filter(b=>data.some(d=>badgeCount(d.rec,b)>0));
+  if(!names.length) return "";
+  const head=`<tr><th class="l">Badge</th>`+data.map(d=>`<th><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
+  const body=names.map(b=>{
+    const neg=NEG_BADGES.has(b);
+    const vals=data.map(d=>badgeCount(d.rec,b));
+    const mx=Math.max(...vals);
+    return `<tr><th class="l${neg?" badge-neg":""}">${esc(b)}</th>`+vals.map(v=>{
+      const lead=v===mx&&v>0;
+      return `<td class="${lead?(neg?"neg-lead":"lead"):""}">${v||"—"}</td>`;
+    }).join("")+`</tr>`;
+  }).join("");
+  return ovPanel("BADGE COMPARISON","gold = squad high · red = high on losses / TK",
+    `<div class="scroll"><table class="board"><thead>${head}</thead><tbody>${body}</tbody></table></div>`);
+}
+
+function operatorMatrix(data){
+  const ops={};
+  data.forEach(d=>{
+    (d.rec.operators||[]).forEach(op=>{
+      if(!op.rounds) return;
+      if(!ops[op.name]) ops[op.name]={side:op.side,cells:{}};
+      ops[op.name].cells[d.cfg.slug]=op;
+    });
+  });
+  const list=Object.keys(ops).sort((a,b)=>{
+    const sum=n=>Object.values(ops[n].cells).reduce((s,o)=>s+o.rounds,0);
+    return sum(b)-sum(a);
+  });
+  if(!list.length) return "";
+  const head1=`<tr><th rowspan="2" class="l">Operator</th><th rowspan="2">Side</th>`
+    +data.map(d=>`<th colspan="3"><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
+  const head2=`<tr>`+data.map(()=>`<th>Rds</th><th>Win%</th><th>K/D</th>`).join("")+`</tr>`;
+  const body=list.map(name=>{
+    const o=ops[name];
+    const tag=o.side==="ATK"?'<span class="side-tag atk">ATK</span>':'<span class="side-tag def">DEF</span>';
+    let row=`<tr><td class="l"><div class="opcell">${opIconImg(name)}<span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
+    data.forEach(d=>{
+      const op=o.cells[d.cfg.slug];
+      if(op) row+=`<td>${op.rounds}</td><td style="color:${wrColor(op.winPct)}">${op.winPct}%</td><td>${op.kd.toFixed(2)}</td>`;
+      else row+=`<td class="dim-cell">—</td><td class="dim-cell">—</td><td class="dim-cell">—</td>`;
+    });
+    return row+`</tr>`;
+  }).join("");
+  return ovPanel("OPERATOR MATRIX","all season operators · rounds / win% / K/D",
+    `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
+}
+
+function mapHeatmap(data){
+  const maps={};
+  data.forEach(d=>{
+    (d.rec.matches||[]).forEach(m=>{
+      if(!m.map) return;
+      if(!maps[m.map]) maps[m.map]={};
+      if(!maps[m.map][d.cfg.slug]) maps[m.map][d.cfg.slug]={w:0,l:0};
+      if(m.result==="W") maps[m.map][d.cfg.slug].w++;
+      else if(m.result==="L") maps[m.map][d.cfg.slug].l++;
+    });
+  });
+  const mapTotal=m=>data.reduce((s,d)=>{const x=maps[m]?.[d.cfg.slug];return s+(x?x.w+x.l:0)},0);
+  const list=Object.keys(maps).sort((a,b)=>mapTotal(b)-mapTotal(a));
+  if(!list.length) return "";
+  const head1=`<tr><th rowspan="2" class="l">Map</th>`
+    +data.map(d=>`<th colspan="2"><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")
+    +`<th rowspan="2">Squad</th></tr>`;
+  const head2=`<tr>`+data.map(()=>`<th>W-L</th><th>Win%</th>`).join("")+`</tr>`;
+  const body=list.map(map=>{
+    let sw=0,sl=0,row=`<tr><th class="l">${esc(map)}</th>`;
+    data.forEach(d=>{
+      const x=maps[map][d.cfg.slug];
+      if(x&&x.w+x.l>0){
+        const g=x.w+x.l,wr=x.w/g*100;
+        row+=`<td>${x.w}-${x.l}</td><td>${mapChip(wr)}</td>`;
+        sw+=x.w; sl+=x.l;
+      } else row+=`<td class="dim-cell">—</td><td class="dim-cell">—</td>`;
+    });
+    const sg=sw+sl;
+    row+=`<td>${sg?mapChip(sw/sg*100):"—"}</td></tr>`;
+    return row;
+  }).join("");
+  return ovPanel("MAP PERFORMANCE","from match log · green ≥55% · gold ≥45% · red &lt;45%",
+    `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
 }
 
 /* ---- boot ---- */
