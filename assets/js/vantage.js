@@ -1,0 +1,281 @@
+/* ============================================================
+   VANTAGE / OVERSIGHT  —  rendering engine (shared by all pages)
+
+   Each page sets on <body>:  data-page="roster|player|oversight"
+                              data-player="<slug>"   (player pages)
+                              data-base="../"         (pages in /players/)
+
+   Data source of truth: data/<slug>/<season>/current.md
+   Each current.md contains ONE ```json fenced block (the full record).
+   The design never changes on update — only the markdown changes.
+   ============================================================ */
+const BASE = document.body.dataset.base || "";
+const PAGE = document.body.dataset.page || "roster";
+
+/* ---- roster config: order = character-select grid order ---- */
+const ROSTER = [
+  { slug:"cunderthock",        name:"CunderThock",        ubi:"Cunders",          accent:"#9a5cd4" },
+  { slug:"matticus_hq",        name:"Matticus HQ",        ubi:"LOAF_OF_EDIBLES",  accent:"#ffc800" },
+  { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#3ee08f" },
+  { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#4da8ff" },
+];
+const SEASONS = ["Y11S2","Y11S1"];           // newest first
+const RECRUITS = ["blue","green","orange","red","yellow"];
+const ICON_ALIAS = { solidsnake:"snake" };
+
+/* ---- helpers ---- */
+const byId = id => document.getElementById(id);
+const fmt  = n => (n===null||n===undefined||n==="") ? "—" : Number(n).toLocaleString();
+const esc  = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function slugify(name){
+  return String(name).toLowerCase().normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"").replace(/ø/g,"o").replace(/[^a-z0-9]/g,"");
+}
+function iconSrc(name){
+  let s = slugify(name); s = ICON_ALIAS[s] || s;
+  return `${BASE}assets/icons/${s}.svg`;
+}
+function recruitSrc(){ return `${BASE}assets/icons/recruit_${RECRUITS[Math.floor(Math.random()*RECRUITS.length)]}.svg`; }
+/* operator icon img; on missing file -> random Recruit fallback */
+function opIconImg(name){
+  return `<img src="${iconSrc(name)}" alt="${esc(name)}" loading="lazy" onerror="this.onerror=null;this.src='${recruitSrc()}'">`;
+}
+function commentIconImg(c){
+  if(c.type==="map") return `<img src="${BASE}assets/icons/location_blue.svg" alt="map">`;
+  return `<img src="${iconSrc(c.subject)}" alt="${esc(c.subject)}" onerror="this.onerror=null;this.src='${recruitSrc()}'">`;
+}
+function wrColor(p){ p=parseFloat(p); if(isNaN(p))return"var(--white)"; if(p>=55)return"var(--green)"; if(p>=45)return"var(--gold)"; return"var(--red)"; }
+
+/* ---- data loading ---- */
+function parseRecord(txt){
+  const m = txt.match(/```json\s*([\s\S]*?)```/);
+  if(!m) throw new Error("No data block found");
+  return JSON.parse(m[1]);
+}
+async function loadRecord(slug, season){
+  const res = await fetch(`${BASE}data/${slug}/${season}/current.md`, {cache:"no-store"});
+  if(!res.ok) throw new Error("fetch "+res.status);
+  return parseRecord(await res.text());
+}
+/* load the newest season that actually has matches; fall back to newest */
+async function loadLatest(slug){
+  let firstLoaded=null;
+  for(const s of SEASONS){
+    try{
+      const rec = await loadRecord(slug,s);
+      if(!firstLoaded) firstLoaded={season:s,rec};
+      if(rec.meta && rec.matches && rec.matches.length) return {season:s,rec};
+    }catch(e){}
+  }
+  if(firstLoaded) return firstLoaded;
+  throw new Error("no data");
+}
+function fetchErr(host){
+  host.innerHTML = `<div class="errbox"><b>// SIGNAL LOST</b>
+    Can't read the data files directly from disk.
+    <span>Browsers block <code>file://</code> reads. Preview through Cursor's <b>Live Preview / Go Live</b>,
+    or view the published <b>GitHub Pages</b> URL — the data loads fine when the site is served.</span></div>`;
+}
+
+/* ============================================================
+   PAGE: CHARACTER SELECT
+   ============================================================ */
+function renderRoster(){
+  const grid = byId("roster");
+  grid.innerHTML = ROSTER.map(p=>`
+    <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}">
+      <span class="corner"></span>
+      <span class="rankchip" id="rank-${p.slug}">—</span>
+      <img src="assets/cards/${p.slug}.png" alt="${esc(p.name)}">
+      <span class="meta"><span class="call">${esc(p.name)}</span><span class="sub" id="sub-${p.slug}">@${esc(p.ubi)}</span></span>
+    </a>`).join("") + `
+    <a class="ocard" href="oversight.html">
+      <img src="assets/cards/oversight.png" alt="OVERSIGHT">
+      <span class="olabel"><span class="t">Team Review</span><span class="s">OVERSIGHT · Squad Comparison</span></span>
+    </a>`;
+  // async: fill rank chips from each player's latest season
+  ROSTER.forEach(async p=>{
+    try{
+      const {rec}=await loadLatest(p.slug);
+      if(rec.meta){
+        byId("rank-"+p.slug).textContent = rec.meta.rank || "—";
+        byId("sub-"+p.slug).textContent  = `${rec.meta.rp?fmt(rec.meta.rp)+" RP":"@"+p.ubi}`;
+      } else { byId("rank-"+p.slug).textContent = "UNRANKED"; }
+    }catch(e){ byId("rank-"+p.slug).textContent="—"; }
+  });
+}
+
+/* ============================================================
+   PAGE: PLAYER DOSSIER
+   ============================================================ */
+let PLAYER_SEASON = null;
+async function renderPlayer(){
+  const slug = document.body.dataset.player;
+  const view = byId("view");
+
+  let latest;
+  try{ latest = await loadLatest(slug); }
+  catch(e){ fetchErr(view); buildSeasonBtns(slug, SEASONS[0]); return; }
+  PLAYER_SEASON = PLAYER_SEASON || latest.season;
+  buildSeasonBtns(slug, PLAYER_SEASON);
+
+  let rec;
+  try{ rec = await loadRecord(slug, PLAYER_SEASON); }
+  catch(e){ fetchErr(view); return; }
+  view.innerHTML = rec.meta ? playerBody(rec) : emptySeason(PLAYER_SEASON);
+}
+function buildSeasonBtns(slug, active){
+  const el = byId("seasons");
+  el.innerHTML = `<span class="lbl">Season</span>` + SEASONS.map(s=>
+    `<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("");
+  el.querySelectorAll(".season-btn").forEach(b=>b.onclick=()=>{ PLAYER_SEASON=b.dataset.s; renderPlayer(); });
+}
+function playerBody(rec){
+  const m=rec.meta;
+  const cards=`<div class="panel"><div class="phead">
+      <img class="pic" src="${BASE}assets/cards/${document.body.dataset.player}.png" alt="">
+      <div><div class="call" style="font-size:30px">${esc(rec.name||"")}</div>
+      <div class="sub">${esc(rec.seasonLabel||"")} · ${esc(rec.season)} · updated ${esc(rec.updated||"—")}</div></div>
+      <span class="rankpill" style="margin-left:auto">${esc(m.rank)}</span>
+    </div>
+    <div class="cards" style="margin-top:16px">
+      <div class="card"><div class="k">Current RP</div><div class="v gold">${fmt(m.rp)}</div></div>
+      <div class="card"><div class="k">Rank</div><div class="v">${esc(m.rank)}</div></div>
+      <div class="card"><div class="k">Record</div><div class="v">${m.w}-${m.l}</div></div>
+      <div class="card"><div class="k">Win Rate</div><div class="v" style="color:${wrColor(m.winRate)}">${m.winRate}%</div></div>
+      <div class="card"><div class="k">K/D</div><div class="v">${m.kd}</div></div>
+      <div class="card"><div class="k">Net RP</div><div class="v green">+${fmt(m.netRp)}</div></div>
+    </div>
+    <div class="milestone"><span class="bar"></span>${m.rpToNext} RP until ${esc(m.nextRank)} · season peak ${fmt(m.peakRp)} · avg HS% ${m.avgHs} · ${m.matches} matches</div>
+  </div>`;
+
+  const ops = (rec.operators||[]).slice().sort((a,b)=>b.rounds-a.rounds).map(o=>`<tr>
+    <td class="l"><div class="opcell"><span class="opicon">${opIconImg(o.name)}</span><span class="opname">${esc(o.name)}<span class="side">${o.side}</span></span></div></td>
+    <td>${o.rounds}</td><td style="color:${wrColor(o.winPct)};font-weight:700">${o.winPct}%</td>
+    <td>${o.kd}</td><td>${o.hs}%</td><td>${o.w}</td><td>${o.l}</td><td>${o.k}</td><td>${o.d}</td><td>${o.a}</td>
+    <td>${o.aces||0}</td><td>${o.tks||0}</td></tr>`).join("");
+  const operators=`<div class="panel"><div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
+    <div class="scroll"><table><thead><tr><th class="l">Operator</th><th>RDS</th><th>WIN%</th><th>K/D</th><th>HS%</th><th>W</th><th>L</th><th>K</th><th>D</th><th>A</th><th>ACE</th><th>TK</th></tr></thead>
+    <tbody>${ops}</tbody></table></div>
+    <div class="legend">WIN% — <span class="g">green &ge;55%</span> · <span class="y">gold &ge;45%</span> · <span class="r">red &lt;45%</span></div></div>`;
+
+  const rows=(rec.matches||[]).map(x=>{
+    const win=x.result==="W", drp=(x.drp>=0?"+":"")+x.drp;
+    return `<tr class="${win?'win':'loss'}"><td>${esc(x.date)}</td><td class="l">${esc(x.map)}</td>
+      <td class="${win?'res-w':'res-l'}">${x.result}</td><td>${esc(x.score)}</td><td>${fmt(x.rp)}</td>
+      <td class="${x.drp>=0?'rp-pos':'rp-neg'}">${drp}</td><td>${x.k}/${x.d}/${x.a}</td><td>${x.hs}%</td>
+      <td class="l">${(x.badges||[]).join(", ")}</td></tr>`;}).join("");
+  const matchlog=`<div class="panel"><div class="sect-hdr">// MATCH LOG <span class="n">— ${(rec.matches||[]).length} logged</span></div>
+    <div class="scroll"><table><thead><tr><th class="l">Date</th><th class="l">Map</th><th>Res</th><th>Score</th><th>RP</th><th>&Delta;RP</th><th>K/D/A</th><th>HS%</th><th class="l">Badges</th></tr></thead>
+    <tbody>${rows}</tbody></table></div></div>`;
+
+  const badges=`<div class="panel"><div class="sect-hdr">// BADGE TALLY <span class="n">— cumulative</span></div>
+    <div class="badges">${(rec.badges||[]).map(b=>`<div class="badge ${/victim/i.test(b.name)?'victim':''}"><span class="bn">${esc(b.name)}</span><span class="bc">${b.count}</span></div>`).join("")}</div></div>`;
+
+  const debrief=rec.debrief?`<div class="panel"><div class="sect-hdr">// VANTAGE DEBRIEF</div><div class="debrief">${rec.debrief}</div></div>`:"";
+
+  const comments=`<div class="panel"><div class="sect-hdr">// VANTAGE COMMENT LOG <span class="n">— map + 5 operators per refresh, retained</span></div>
+    <div class="callback-note">Older entries kept so VANTAGE can track progression and call back to prior reads.</div>
+    <div class="clog">${(rec.comments||[]).map(c=>`<div class="comment ${c.type==='map'?'map':''} ${c.old?'old':''}">
+      <span class="cicon">${commentIconImg(c)}</span>
+      <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
+      <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
+      <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
+
+  return cards+operators+matchlog+badges+debrief+comments;
+}
+function emptySeason(season){
+  return `<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
+    <div class="es">No matches logged for ${esc(season)} yet. Drop screenshots into Cursor and VANTAGE populates the board.<br>
+    Rank thresholds load once the season config is confirmed.</div></div></div>`;
+}
+
+/* ============================================================
+   PAGE: OVERSIGHT
+   ============================================================ */
+let OV_SEASON=null;
+async function renderOversight(){
+  const view=byId("view");
+  // pick season with data across squad
+  if(!OV_SEASON){
+    OV_SEASON=SEASONS[SEASONS.length-1];
+    for(const s of SEASONS){
+      const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,s).catch(()=>null)));
+      if(recs.some(r=>r&&r.meta)){ OV_SEASON=s; break; }
+    }
+  }
+  buildOvSeasonBtns(OV_SEASON);
+
+  let recs;
+  try{ recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,OV_SEASON))); }
+  catch(e){ fetchErr(view); return; }
+  const squad=await loadRecord("oversight",OV_SEASON).catch(()=>null);
+
+  const data=ROSTER.map((p,i)=>({cfg:p,rec:recs[i]})).filter(d=>d.rec&&d.rec.meta);
+  if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
+  view.innerHTML = board(data) + radar(data) + squadComments(squad);
+}
+function buildOvSeasonBtns(active){
+  const el=byId("seasons");
+  el.innerHTML=`<span class="lbl">Season</span>`+SEASONS.map(s=>`<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("");
+  el.querySelectorAll(".season-btn").forEach(b=>b.onclick=()=>{ OV_SEASON=b.dataset.s; renderOversight(); });
+}
+function topOp(rec){ return (rec.operators||[]).slice().sort((a,b)=>b.winPct-a.winPct)[0]; }
+function board(data){
+  const head=`<tr><th></th>`+data.map(d=>`<th><img class="colpic" src="${BASE}assets/cards/${d.cfg.slug}.png" alt=""><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
+  const rowDefs=[
+    ["Rank",   d=>d.rec.meta.rank, null],
+    ["RP",     d=>d.rec.meta.rp, "max"],
+    ["Record", d=>`${d.rec.meta.w}-${d.rec.meta.l}`, null],
+    ["Win %",  d=>d.rec.meta.winRate, "max"],
+    ["K/D",    d=>d.rec.meta.kd, "max"],
+    ["HS %",   d=>d.rec.meta.avgHs, "max"],
+    ["Matches",d=>d.rec.meta.matches, "max"],
+  ];
+  const body=rowDefs.map(([label,get,cmp])=>{
+    let leadVal=null;
+    if(cmp==="max") leadVal=Math.max(...data.map(d=>parseFloat(get(d))));
+    return `<tr><th>${label}</th>`+data.map(d=>{
+      const v=get(d), isLead=cmp==="max"&&parseFloat(v)===leadVal;
+      const disp=(label==="RP"||label==="Matches")?fmt(v):v+(label.includes("%")?"%":"");
+      return `<td class="${isLead?'lead':''}">${disp}</td>`;
+    }).join("")+`</tr>`;
+  }).join("");
+  const topRow=`<tr><th>Top Op</th>`+data.map(d=>{const o=topOp(d.rec);return o?`<td><div class="opcell" style="justify-content:center"><span class="opicon">${opIconImg(o.name)}</span><span class="opname" style="font-family:var(--mono);font-weight:500">${esc(o.name)}</span></div></td>`:`<td>—</td>`;}).join("")+`</tr>`;
+  return `<div class="ov-hero"><img src="${BASE}assets/cards/oversight.png" alt="OVERSIGHT"><div class="cap"><div class="t">OVERSIGHT</div><div class="s">Squad Comparison · ${esc(OV_SEASON)}</div></div></div>
+    <div class="panel"><div class="sect-hdr">// COMMAND BOARD <span class="n">— per-stat leader in gold</span></div>
+    <div class="scroll"><table class="board"><thead>${head}</thead><tbody>${body}${topRow}</tbody></table></div></div>`;
+}
+function radar(data){
+  const axes=[["RP",d=>d.rec.meta.rp],["Win%",d=>d.rec.meta.winRate],["K/D",d=>d.rec.meta.kd],["HS%",d=>d.rec.meta.avgHs],["Games",d=>d.rec.meta.matches]];
+  const N=axes.length, cx=150, cy=150, R=110;
+  // normalize each axis 0.25..1
+  const norms=axes.map(([_,get])=>{const vals=data.map(d=>parseFloat(get(d)));const mn=Math.min(...vals),mx=Math.max(...vals);return v=>mx===mn?0.7:0.25+0.75*((v-mn)/(mx-mn));});
+  const pt=(i,r)=>{const ang=-Math.PI/2 + i*2*Math.PI/N; return [cx+r*Math.cos(ang), cy+r*Math.sin(ang)];};
+  let rings="";
+  for(const f of [0.25,0.5,0.75,1]){ rings+=`<polygon points="${axes.map((_,i)=>pt(i,R*f).join(",")).join(" ")}" fill="none" stroke="var(--border)" stroke-width="1"/>`; }
+  let spokes="",labels="";
+  axes.forEach(([label],i)=>{const [x,y]=pt(i,R);spokes+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--border)" stroke-width="1"/>`;
+    const [lx,ly]=pt(i,R+18);labels+=`<text x="${lx}" y="${ly}" fill="var(--dim)" font-size="9" text-anchor="middle" dominant-baseline="middle" font-family="var(--mono)" letter-spacing="1">${label}</text>`;});
+  const polys=data.map(d=>{const p=axes.map(([_,get],i)=>pt(i,R*norms[i](parseFloat(get(d)))).join(",")).join(" ");
+    return `<polygon points="${p}" fill="${d.cfg.accent}22" stroke="${d.cfg.accent}" stroke-width="2"/>`;}).join("");
+  const legend=data.map(d=>`<div class="row"><span class="sw" style="background:${d.cfg.accent}"></span>${esc(d.cfg.name)}</div>`).join("");
+  return `<div class="panel"><div class="sect-hdr">// SQUAD SHAPE <span class="n">— normalized across the roster</span></div>
+    <div class="radar-wrap"><svg viewBox="0 0 300 300" width="300" height="300">${rings}${spokes}${labels}${polys}</svg>
+    <div class="radar-legend">${legend}<div class="radar-axes">Each axis scaled min&rarr;max within the squad</div></div></div></div>`;
+}
+function squadComments(squad){
+  if(!squad||!squad.comments||!squad.comments.length) return "";
+  return `<div class="panel"><div class="sect-hdr">// VANTAGE — TEAM DEBRIEF <span class="n">— map + 5 operators, squad-wide</span></div>
+    <div class="clog">${squad.comments.map(c=>`<div class="comment ${c.type==='map'?'map':''}">
+      <span class="cicon">${commentIconImg(c)}</span>
+      <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
+      <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
+      <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
+}
+
+/* ---- boot ---- */
+if(PAGE==="roster")    renderRoster();
+else if(PAGE==="player")   renderPlayer();
+else if(PAGE==="oversight") renderOversight();

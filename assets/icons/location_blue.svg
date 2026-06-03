@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350" role="img" aria-label="Tactical location icon">
+  <defs>
+    <style>
+      .shadow{opacity:.4;fill:#000}.bg{fill:#69686d}.black{fill:#000}.blue{fill:#337abb}.white{fill:#fff}.line{fill:none;stroke:#000;stroke-width:7;stroke-linejoin:round;stroke-linecap:square}.thin{fill:none;stroke:#fff;stroke-width:4;stroke-linejoin:round;opacity:.95}
+    </style>
+  </defs>
+  <!-- transparent outside the icon footprint -->
+  <rect class="shadow" x="45" y="45" width="260" height="260"/>
+  <rect class="bg" x="73" y="73" width="204" height="204"/>
+  <path class="black" d="M277 243 107 73H73v38.333L238.667 277H277z"/>
+
+  <!-- tactical location / compound silhouette -->
+  <path class="black" d="M94 106h165v45h-22v31h28v63H88v-77h38v-17H94z"/>
+  
+  <!-- north building block -->
+  <path class="blue" d="M105 117h75v28h-75z"/>
+  <path class="white" d="M190 117h58v28h-58z"/>
+  
+  <!-- west rooms -->
+  <path class="white" d="M99 179h48v54H99z"/>
+  <path class="blue" d="M154 179h48v54h-48z"/>
+  
+  <!-- east objective courtyard / structure -->
+  <path class="blue" d="M211 161h43v72h-43z"/>
+  <path class="white" d="M222 172h21v21h-21z"/>
+  
+  <!-- central corridor and lower plaza -->
+  <path class="blue" d="M151 151h73v21h-73z"/>
+  <path class="blue" d="M122 240h98v24h-98z"/>
+  <path class="white" d="M229 240h25v24h-25z"/>
+  
+  <!-- internal black tactical dividers -->
+  <path class="line" d="M151 148v89M205 148v89M94 175h165M94 237h165M183 117v31M221 117v31"/>
+  
+  <!-- tactical map markings -->
+  <path class="thin" d="M116 130h18M164 193h24M164 211h24M132 251h72"/>
+  <path class="white" d="M174.5 183 185 201h-21z"/>
+  <circle class="white" cx="232.5" cy="204.5" r="8.5"/>
+  <path class="black" d="M229 201h7v7h-7z"/>
+  
+  <!-- small entry points -->
+  <path class="black" d="M86 204h13v22H86zM169 264h18v14h-18zM248 125h16v16h-16z"/>
+</svg>
