@@ -490,6 +490,9 @@ function mapHeatmap(data){
 /* ---- background music ---- */
 const BGM_KEY="vantage-bgm-vol";
 const BGM_MUTE_KEY="vantage-bgm-muted";
+const BGM_TIME_KEY="vantage-bgm-time";
+const BGM_PLAYING_KEY="vantage-bgm-playing";
+const BGM_DEFAULT_VOL=25;
 function initBgm(){
   if(document.getElementById("vantage-bgm")) return;
   const wrap=document.createElement("div");
@@ -499,9 +502,9 @@ function initBgm(){
       <div class="bgm-drop-hdr">// AMBIENT AUDIO</div>
       <button type="button" class="bgm-mute" id="bgm-mute">Mute</button>
       <label class="bgm-vol-lbl" for="bgm-vol">Volume</label>
-      <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="35">
+      <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="${BGM_DEFAULT_VOL}">
     </div>
-    <audio id="vantage-bgm" loop preload="auto" src="${BASE}assets/audio/vibe-shard.mp3"></audio>`;
+    <audio id="vantage-bgm" loop preload="auto" autoplay src="${BASE}assets/audio/vibe-shard.mp3"></audio>`;
   document.body.appendChild(wrap);
 
   const audio=byId("vantage-bgm");
@@ -511,44 +514,127 @@ function initBgm(){
   const slider=byId("bgm-vol");
   let muted=localStorage.getItem(BGM_MUTE_KEY)==="1";
   let vol=parseInt(localStorage.getItem(BGM_KEY),10);
-  if(isNaN(vol)) vol=35;
+  if(isNaN(vol)) vol=BGM_DEFAULT_VOL;
+  let autoplayMuted=false;
+  let positionRestored=false;
+
+  function wasPlayingLastPage(){
+    return sessionStorage.getItem(BGM_PLAYING_KEY)==="1";
+  }
+  function saveBgmState(){
+    if(muted||audio.paused){
+      sessionStorage.setItem(BGM_PLAYING_KEY,"0");
+    }else{
+      sessionStorage.setItem(BGM_PLAYING_KEY,"1");
+      sessionStorage.setItem(BGM_TIME_KEY,String(audio.currentTime));
+    }
+  }
+  function restoreBgmPosition(){
+    if(positionRestored) return;
+    const t=parseFloat(sessionStorage.getItem(BGM_TIME_KEY));
+    if(!isNaN(t)&&t>0&&(!audio.duration||t<audio.duration-1)){
+      audio.currentTime=t;
+    }
+    positionRestored=true;
+  }
 
   function syncUi(){
-    slider.value=muted?0:vol;
+    slider.value=vol;
     muteBtn.textContent=muted?"Unmute":"Mute";
     btn.classList.toggle("muted",muted);
-    btn.classList.toggle("playing",!audio.paused&&!muted);
+    btn.classList.toggle("playing",!audio.paused&&!muted&&!autoplayMuted);
+    btn.classList.toggle("needs-tap",autoplayMuted&&!muted);
   }
   function applyVol(){
     audio.volume=muted?0:Math.max(0,Math.min(1,vol/100));
     syncUi();
   }
-  function tryPlay(){
+  async function attemptAutoplay(){
+    if(muted){ audio.pause(); saveBgmState(); syncUi(); return; }
+    restoreBgmPosition();
+    audio.volume=vol/100;
+    audio.muted=false;
+    try{
+      await audio.play();
+      autoplayMuted=false;
+      saveBgmState();
+      syncUi();
+      return;
+    }catch(e){}
+    audio.muted=true;
+    try{
+      await audio.play();
+      autoplayMuted=true;
+      saveBgmState();
+      syncUi();
+    }catch(e){ syncUi(); }
+  }
+  function unlockFromGesture(){
     if(muted) return;
-    audio.play().then(()=>{ btn.classList.remove("needs-tap"); syncUi(); })
-      .catch(()=>{ btn.classList.add("needs-tap"); });
+    if(autoplayMuted){
+      audio.muted=false;
+      autoplayMuted=false;
+      applyVol();
+      audio.play().then(saveBgmState).catch(()=>{});
+    }else if(audio.paused){
+      attemptAutoplay();
+    }
   }
 
+  audio.addEventListener("loadedmetadata",restoreBgmPosition);
+  audio.addEventListener("canplay",()=>{
+    if(!muted&&(wasPlayingLastPage()||!audio.paused)) attemptAutoplay();
+  });
+  window.addEventListener("pagehide",saveBgmState);
+  setInterval(()=>{ if(!audio.paused&&!muted) saveBgmState(); },2000);
+
   applyVol();
-  tryPlay();
-  document.addEventListener("click",()=>{ if(!muted&&audio.paused) tryPlay(); },{once:true});
+  if(!muted&&wasPlayingLastPage()) attemptAutoplay();
+  else if(!muted) attemptAutoplay();
+  document.addEventListener("pointerdown",unlockFromGesture,{passive:true});
+  document.addEventListener("keydown",unlockFromGesture);
 
   btn.onclick=e=>{
     e.stopPropagation();
     const open=!drop.hidden;
     drop.hidden=open;
     btn.setAttribute("aria-expanded",String(!open));
+    if(open&&autoplayMuted&&!muted) unlockFromGesture();
   };
   muteBtn.onclick=e=>{
     e.stopPropagation();
-    if(muted){ muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); tryPlay(); }
-    else{ muted=true; localStorage.setItem(BGM_MUTE_KEY,"1"); audio.pause(); applyVol(); }
+    if(muted){
+      muted=false;
+      if(vol===0) vol=BGM_DEFAULT_VOL;
+      localStorage.setItem(BGM_MUTE_KEY,"0");
+      applyVol();
+      attemptAutoplay();
+    }else{
+      muted=true;
+      localStorage.setItem(BGM_MUTE_KEY,"1");
+      audio.pause();
+      autoplayMuted=false;
+      audio.muted=false;
+      saveBgmState();
+      applyVol();
+    }
   };
   slider.oninput=()=>{
     vol=parseInt(slider.value,10);
     localStorage.setItem(BGM_KEY,String(vol));
-    if(vol===0){ muted=true; localStorage.setItem(BGM_MUTE_KEY,"1"); audio.pause(); }
-    else{ muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); tryPlay(); }
+    if(vol===0){
+      muted=true;
+      localStorage.setItem(BGM_MUTE_KEY,"1");
+      audio.pause();
+      autoplayMuted=false;
+      audio.muted=false;
+      saveBgmState();
+    }else{
+      muted=false;
+      localStorage.setItem(BGM_MUTE_KEY,"0");
+      applyVol();
+      attemptAutoplay();
+    }
     applyVol();
   };
   document.addEventListener("click",e=>{
