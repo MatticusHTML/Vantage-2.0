@@ -2021,7 +2021,7 @@
     },
     {
       "name": "Denari",
-      "side": "ATK",
+      "side": "DEF",
       "rounds": 2,
       "winPct": 100,
       "kd": 1,

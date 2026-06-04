@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
 const SIDE = {
-  Zero: "DEF", Tachanka: "DEF", Mozzie: "DEF", Sentry: "DEF", Bandit: "DEF",
+  Tachanka: "DEF", Mozzie: "DEF", Sentry: "DEF", Bandit: "DEF",
   "Solid Snake": "DEF", Caveira: "DEF", Thunderbird: "DEF", Solis: "DEF",
   Fenrir: "DEF", Smoke: "DEF", Echo: "DEF", Valkyrie: "DEF", Jäger: "DEF",
   Goyo: "DEF", Clash: "DEF", Maestro: "DEF", Mute: "DEF", Sens: "DEF",
@@ -13,14 +13,14 @@ const SIDE = {
   Ela: "DEF", Lesion: "DEF", Kapkan: "DEF", Rook: "DEF", Castle: "DEF",
   Echo: "DEF", Valkyrie: "DEF", Smoke: "DEF", Doc: "DEF", Clash: "DEF",
   Caveira: "DEF", Vigil: "DEF", Sentry: "DEF", Azami: "DEF", Solis: "DEF",
-  Thunderbird: "DEF", Oryx: "DEF",
-  Twitch: "ATK", Jackal: "ATK", Striker: "ATK", Amaru: "ATK", Capitão: "ATK",
+  Thunderbird: "DEF", Oryx: "DEF", Denari: "DEF",
+  Twitch: "ATK", Jackal: "ATK", Striker: "ATK", Amaru: "ATK", Capitão: "ATK", Zero: "ATK",
   Montagne: "ATK", Nøkk: "ATK", Grim: "ATK", Blitz: "ATK", Finka: "ATK",
   Brava: "ATK", Ying: "ATK", Deimos: "ATK", Maverick: "ATK", Dokkaebi: "ATK",
   Ace: "ATK", Gridlock: "ATK", Thermite: "ATK", Thatcher: "ATK", Blackbeard: "ATK",
   Nomad: "ATK", Lion: "ATK", Fuze: "ATK", Ram: "ATK", Hibana: "ATK", Sledge: "ATK",
   Flores: "ATK", Ash: "ATK", Iana: "ATK", Buck: "ATK", Osa: "ATK", Kali: "ATK",
-  Denari: "ATK", Rauora: "ATK", IQ: "ATK", Zofia: "ATK", Glaz: "ATK",
+  Rauora: "ATK", IQ: "ATK", Zofia: "ATK", Glaz: "ATK",
   Skopós: "DEF", Sens: "DEF",
 };
 
