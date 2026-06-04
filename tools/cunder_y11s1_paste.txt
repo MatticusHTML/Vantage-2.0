@@ -1,0 +1,5133 @@
+Jun 1
+1
+RPΔ-21
+0 W1 L
+K/D1.33
+K8
+D6
+HS%37.5%
+1d agoKanal
+Ranked
+Score
+3 : 5
+1v2 Clutch 3K
+RP
+RP
+2,718 -21
+K/D
+1.33
+K/D/A
+8 6 1
+HS %
+37.5%
+May 31
+2
+RPΔ+12
+1 W1 L
+K/D1.71
+K12
+D7
+HS%41.7%
+2d agoConsulate
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,739 +33
+K/D
+2.00
+K/D/A
+6 3 2
+HS %
+50.0%
+2d agoSkyscraper
+Ranked
+Score
+1 : 4
+4K
+RP
+RP
+2,706 -21
+K/D
+1.50
+K/D/A
+6 4 0
+HS %
+33.3%
+May 30
+4
+RPΔ+81
+3 W1 L
+K/D1.27
+K19
+D15
+HS%42.1%
+3d agoClubhouse
+Ranked
+Score
+2 : 4
+1v1 Lost 2K
+RP
+RP
+2,727 -21
+K/D
+1.25
+K/D/A
+5 4 1
+HS %
+40.0%
+3d agoBorder
+Ranked
+Score
+4 : 1
+RP
+RP
+2,748 +35
+K/D
+0.50
+K/D/A
+2 4 1
+HS %
+0.0%
+3d agoConsulate
+Ranked
+Score
+4 : 1
+2K x3
+RP
+RP
+2,713 +34
+K/D
+6.00
+K/D/A
+6 1 0
+HS %
+66.7%
+3d agoVilla
+Ranked
+Score
+5 : 4
+2K x2
+RP
+RP
+2,679 +33
+K/D
+1.00
+K/D/A
+6 6 3
+HS %
+33.3%
+May 27
+3
+3
+W
+Streak
+RPΔ+96
+3 W0 L
+K/D0.42
+K8
+D19
+HS%25.0%
+6d agoCoastline
+Ranked
+Score
+5 : 4
+Victim
+RP
+RP
+2,646 +33
+K/D
+0.22
+K/D/A
+2 9 1
+HS %
+0.0%
+6d agoKanal
+Ranked
+Score
+4 : 2
+2K
+RP
+RP
+2,613 +32
+K/D
+0.40
+K/D/A
+2 5 1
+HS %
+100.0%
+6d agoOregon
+Ranked
+Score
+4 : 2
+2K
+RP
+RP
+2,581 +31
+K/D
+0.80
+K/D/A
+4 5 1
+HS %
+0.0%
+May 25
+2
+RPΔ+8
+1 W1 L
+K/D1.57
+K11
+D7
+HS%18.2%
+1w agoVilla
+Ranked
+Score
+4 : 1
+1v3 Lost
+RP
+RP
+2,550 +30
+K/D
+1.00
+K/D/A
+2 2 3
+HS %
+0.0%
+1w agoBank
+Ranked
+Score
+2 : 4
+4K 3K
+RP
+RP
+2,520 -22
+K/D
+1.80
+K/D/A
+9 5 2
+HS %
+22.2%
+May 20
+2
+RPΔ+8
+1 W1 L
+K/D1.22
+K11
+D9
+HS%45.5%
+1w agoKanal
+Ranked
+Score
+4 : 2
+1v2 Clutch 1v2 Lost
+RP
+RP
+2,542 +30
+K/D
+1.50
+K/D/A
+6 4 0
+HS %
+50.0%
+1w agoChalet
+Ranked
+Score
+2 : 4
+1v2 Lost
+RP
+RP
+2,512 -22
+K/D
+1.00
+K/D/A
+5 5 1
+HS %
+40.0%
+May 19
+1
+RPΔ+31
+1 W0 L
+K/D0.00
+K0
+D8
+HS%0.0%
+2w agoClubhouse
+Ranked
+Score
+5 : 4
+1v2 Lost
+RP
+RP
+2,534 +31
+K/D
+0.00
+K/D/A
+0 8 0
+HS %
+0.0%
+2w ago
+Ranked
+RP Rollback
+RP
+RP
+2,503 +11
+May 18
+2
+RPΔ+6
+1 W1 L
+K/D0.70
+K7
+D10
+HS%28.6%
+2w agoChalet
+Ranked
+Score
+4 : 0
+3K
+RP
+RP
+2,492 +28
+K/D
+1.00
+K/D/A
+3 3 3
+HS %
+33.3%
+2w agoKafe Dostoyevsky
+Ranked
+Score
+3 : 5
+1v3 Lost x2
+RP
+RP
+2,464 -22
+K/D
+0.57
+K/D/A
+4 7 3
+HS %
+25.0%
+2w ago
+Ranked
+RP Rollback
+RP
+RP
+2,486 +17
+May 17
+1
+RPΔ-23
+0 W1 L
+K/D2.00
+K8
+D4
+HS%37.5%
+2w agoOutback
+Ranked
+Score
+2 : 4
+3K 2K
+RP
+RP
+2,469 -23
+K/D
+2.00
+K/D/A
+8 4 0
+HS %
+37.5%
+May 16
+2
+2
+W
+Streak
+RPΔ+52
+2 W0 L
+K/D0.80
+K4
+D5
+HS%25.0%
+2w agoClubhouse
+Ranked
+Score
+4 : 2
+1v3 Lost
+RP
+RP
+2,492 +27
+K/D
+0.33
+K/D/A
+1 3 1
+HS %
+0.0%
+2w agoBank
+Ranked
+Score
+4 : 0
+3K
+RP
+RP
+2,465 +25
+K/D
+1.50
+K/D/A
+3 2 2
+HS %
+33.3%
+May 15
+1
+RPΔ-23
+0 W1 L
+K/D2.33
+K7
+D3
+HS%42.9%
+2w agoConsulate
+Ranked
+Score
+3 : 5
+2K x2
+RP
+RP
+2,440 -23
+K/D
+2.33
+K/D/A
+7 3 2
+HS %
+42.9%
+May 14
+1
+RPΔ+26
+1 W0 L
+K/D0.25
+K1
+D4
+HS%0.0%
+2w agoOregon
+Ranked
+Score
+4 : 1
+RP
+RP
+2,463 +26
+K/D
+0.25
+K/D/A
+1 4 2
+HS %
+0.0%
+May 13
+4
+RPΔ+2
+2 W2 L
+K/D0.96
+K22
+D23
+HS%54.5%
+2w agoOutback
+Ranked
+Score
+5 : 3
+3K x2
+RP
+RP
+2,437 +25
+K/D
+1.50
+K/D/A
+9 6 6
+HS %
+55.6%
+2w agoChalet
+Ranked
+Score
+3 : 5
+2K
+RP
+RP
+2,412 -23
+K/D
+0.33
+K/D/A
+2 6 3
+HS %
+50.0%
+2w agoBorder
+Ranked
+Score
+4 : 1
+3K 2K x2
+RP
+RP
+2,435 +24
+K/D
+2.00
+K/D/A
+8 4 2
+HS %
+62.5%
+2w agoChalet
+Ranked
+Score
+3 : 5
+1v2 Lost x3TK
+RP
+RP
+2,411 -24
+K/D
+0.43
+K/D/A
+3 7 2
+HS %
+33.3%
+May 12
+4
+RPΔ-43
+1 W3 L
+K/D1.28
+K23
+D18
+HS%52.2%
+3w agoEmerald Plains
+Ranked
+Score
+1 : 4
+Victim 2K x2
+RP
+RP
+2,435 -23
+K/D
+0.80
+K/D/A
+4 5 0
+HS %
+25.0%
+3w agoBank
+Ranked
+Score
+4 : 2
+1v2 Clutch 4K
+RP
+RP
+2,458 +26
+K/D
+2.33
+K/D/A
+7 3 2
+HS %
+85.7%
+3w agoOutback
+Ranked
+Score
+3 : 5
+1v1 Clutch 2K x3
+RP
+RP
+2,432 -23
+K/D
+1.17
+K/D/A
+7 6 0
+HS %
+42.9%
+3w agoBank
+Ranked
+Score
+2 : 4
+1v1 Clutch 1v2 Lost
+RP
+RP
+2,455 -23
+K/D
+1.25
+K/D/A
+5 4 0
+HS %
+40.0%
+May 11
+4
+RPΔ-22
+1 W3 L
+K/D0.95
+K21
+D22
+HS%52.4%
+3w agoTheme Park
+Ranked
+Score
+1 : 4
+2K
+RP
+RP
+2,478 -22
+K/D
+0.75
+K/D/A
+3 4 2
+HS %
+66.7%
+3w agoNighthaven Labs
+Ranked
+Score
+4 : 5
+TK 2K x4
+RP
+RP
+2,500 -11
+K/D
+1.29
+K/D/A
+9 7 1
+HS %
+33.3%
+3w agoClubhouse
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,511 -21
+K/D
+0.25
+K/D/A
+1 4 0
+HS %
+100.0%
+3w agoConsulate
+Ranked
+Score
+5 : 4
+1v3 Clutch 3K
+RP
+RP
+2,532 +32
+K/D
+1.14
+K/D/A
+8 7 3
+HS %
+62.5%
+May 10
+5
+RPΔ+1
+2 W3 L
+K/D1.00
+K27
+D27
+HS%48.1%
+3w agoOregon
+Ranked
+Score
+3 : 5
+2K x31v3 Lost
+RP
+RP
+2,500 -21
+K/D
+1.00
+K/D/A
+7 7 0
+HS %
+42.9%
+3w agoOutback
+Ranked
+Score
+4 : 2
+3K
+RP
+RP
+2,521 +32
+K/D
+0.80
+K/D/A
+4 5 0
+HS %
+50.0%
+3w agoOutback
+Ranked
+Score
+4 : 2
+1v2 Lost 2K
+RP
+RP
+2,489 +32
+K/D
+1.20
+K/D/A
+6 5 1
+HS %
+33.3%
+3w agoKanal
+Ranked
+Score
+3 : 5
+1v1 Lost 2K x4
+RP
+RP
+2,457 -21
+K/D
+1.50
+K/D/A
+9 6 5
+HS %
+55.6%
+3w agoClubhouse
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,478 -21
+K/D
+0.25
+K/D/A
+1 4 1
+HS %
+100.0%
+3w ago
+Ranked
+RP Rollback
+RP
+RP
+2,499 +23
+May 9
+6
+RPΔ+77
+4 W2 L
+K/D2.44
+K39
+D16
+HS%38.5%
+3w agoCoastline
+Ranked
+Score
+4 : 1
+4K 3K
+RP
+RP
+2,476 +32
+K/D
+4.50
+K/D/A
+9 2 0
+HS %
+44.4%
+3w agoKafe Dostoyevsky
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,444 -21
+K/D
+0.25
+K/D/A
+1 4 0
+HS %
+0.0%
+3w agoFortress
+Ranked
+Score
+4 : 1
+4K 1v1 Clutch
+RP
+RP
+2,465 +31
+K/D
+5.00
+K/D/A
+10 2 1
+HS %
+20.0%
+3w agoBorder
+Ranked
+Score
+4 : 0
+3K x22K
+RP
+RP
+2,434 +29
+K/D
+9.00
+K/D/A
+9 0 2
+HS %
+33.3%
+3w agoConsulate
+Ranked
+Score
+4 : 1
+2K x2
+RP
+RP
+2,405 +28
+K/D
+1.33
+K/D/A
+4 3 0
+HS %
+25.0%
+3w agoChalet
+Ranked
+Score
+1 : 4
+Victim 2K x2
+RP
+RP
+2,377 -22
+K/D
+1.20
+K/D/A
+6 5 1
+HS %
+83.3%
+May 8
+4
+3
+W
+Streak
+RPΔ+58
+3 W1 L
+K/D1.06
+K17
+D16
+HS%35.3%
+3w agoLair
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,399 +28
+K/D
+1.40
+K/D/A
+7 5 1
+HS %
+42.9%
+3w agoOutback
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,371 +27
+K/D
+4.00
+K/D/A
+4 1 0
+HS %
+0.0%
+3w agoConsulate
+Ranked
+Score
+5 : 3
+2K
+RP
+RP
+2,344 +26
+K/D
+0.83
+K/D/A
+5 6 0
+HS %
+60.0%
+3w agoOregon
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,318 -23
+K/D
+0.25
+K/D/A
+1 4 2
+HS %
+0.0%
+May 7
+7
+RPΔ-16
+3 W4 L
+K/D0.91
+K32
+D35
+HS%53.1%
+3w agoKanal
+Ranked
+Score
+5 : 3
+2K x3
+RP
+RP
+2,341 +26
+K/D
+1.17
+K/D/A
+7 6 2
+HS %
+57.1%
+3w agoKanal
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,315 -24
+K/D
+0.20
+K/D/A
+1 5 1
+HS %
+0.0%
+3w agoClubhouse
+Ranked
+Score
+2 : 4
+Victim 2K
+RP
+RP
+2,339 -23
+K/D
+0.83
+K/D/A
+5 6 1
+HS %
+60.0%
+3w agoKanal
+Ranked
+Score
+3 : 5
+3K 1v2 Lost x2
+RP
+RP
+2,362 -23
+K/D
+1.33
+K/D/A
+8 6 0
+HS %
+75.0%
+3w agoClubhouse
+Ranked
+Score
+5 : 3
+RP
+RP
+2,385 +26
+K/D
+1.00
+K/D/A
+5 5 1
+HS %
+40.0%
+3w agoKafe Dostoyevsky
+Ranked
+Score
+4 : 0
+2K x2
+RP
+RP
+2,359 +25
+K/D
+2.00
+K/D/A
+6 3 0
+HS %
+33.3%
+3w agoBorder
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,334 -23
+K/D
+0.00
+K/D/A
+0 4 1
+HS %
+0.0%
+May 6
+6
+4
+W
+Streak
+RPΔ+82
+5 W1 L
+K/D1.04
+K26
+D25
+HS%42.3%
+3w agoBorder
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,357 +24
+K/D
+1.75
+K/D/A
+7 4 1
+HS %
+42.9%
+3w agoChalet
+Ranked
+Score
+4 : 1
+2K
+RP
+RP
+2,333 +23
+K/D
+1.00
+K/D/A
+3 3 2
+HS %
+66.7%
+3w agoConsulate
+Ranked
+Score
+5 : 3
+2K
+RP
+RP
+2,310 +22
+K/D
+0.75
+K/D/A
+3 4 1
+HS %
+100.0%
+3w agoKanal
+Ranked
+Score
+4 : 2
+1v3 Lost
+RP
+RP
+2,288 +19
+K/D
+1.00
+K/D/A
+4 4 1
+HS %
+50.0%
+3w agoChalet
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,269 -25
+K/D
+0.00
+K/D/A
+0 5 1
+HS %
+0.0%
+4w agoBorder
+Ranked
+Score
+5 : 3
+3K 2K
+RP
+RP
+2,294 +19
+K/D
+1.80
+K/D/A
+9 5 1
+HS %
+11.1%
+May 5
+5
+RPΔ-98
+0 W5 L
+K/D0.96
+K24
+D25
+HS%41.7%
+4w agoClubhouse
+Ranked
+Score
+2 : 4
+3K
+RP
+RP
+2,275 -25
+K/D
+1.25
+K/D/A
+5 4 0
+HS %
+40.0%
+4w agoConsulate
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,300 -1
+K/D
+0.25
+K/D/A
+1 4 0
+HS %
+0.0%
+4w agoOutback
+Ranked
+Score
+4 : 5
+3K x21v2 Lost x2
+RP
+RP
+2,301 -24
+K/D
+1.43
+K/D/A
+10 7 3
+HS %
+40.0%
+4w agoOregon
+Ranked
+Score
+1 : 4
+Victim 2K
+RP
+RP
+2,325 -24
+K/D
+1.00
+K/D/A
+5 5 0
+HS %
+20.0%
+4w agoCoastline
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,349 -24
+K/D
+0.60
+K/D/A
+3 5 1
+HS %
+100.0%
+May 4
+3
+RPΔ-27
+1 W2 L
+K/D1.00
+K13
+D13
+HS%30.8%
+4w agoChalet
+Ranked
+Score
+5 : 3
+3K 2K
+RP
+RP
+2,373 +21
+K/D
+1.17
+K/D/A
+7 6 0
+HS %
+28.6%
+4w agoKafe Dostoyevsky
+Ranked
+Score
+0 : 4
+1v2 Lost Victim
+RP
+RP
+2,352 -24
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+50.0%
+4w agoBorder
+Ranked
+Score
+2 : 3
+2K x21v3 Lost
+RP
+RP
+2,376 -24
+K/D
+1.33
+K/D/A
+4 3 0
+HS %
+25.0%
+May 3
+6
+RPΔ+49
+4 W2 L
+K/D1.29
+K31
+D24
+HS%41.9%
+1mo agoBorder
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,400 -17
+K/D
+0.80
+K/D/A
+4 5 1
+HS %
+50.0%
+1mo agoClubhouse
+Ranked
+Score
+1 : 4
+Victim 1v3 Lost
+RP
+RP
+2,417 -23
+K/D
+0.40
+K/D/A
+2 5 2
+HS %
+100.0%
+1mo agoCoastline
+Ranked
+Score
+5 : 3
+1v1 Clutch 2K
+RP
+RP
+2,440 +24
+K/D
+0.80
+K/D/A
+4 5 2
+HS %
+0.0%
+1mo agoEmerald Plains
+Ranked
+Score
+5 : 3
+3K 2K
+RP
+RP
+2,416 +23
+K/D
+1.40
+K/D/A
+7 5 2
+HS %
+42.9%
+1mo agoKanal
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,393 +22
+K/D
+4.00
+K/D/A
+4 1 0
+HS %
+75.0%
+1mo agoTheme Park
+Ranked
+Score
+4 : 2
+1v3 Clutch 3K
+RP
+RP
+2,371 +20
+K/D
+3.33
+K/D/A
+10 3 1
+HS %
+30.0%
+May 2
+5
+3
+W
+Streak
+RPΔ+51
+4 W1 L
+K/D1.46
+K35
+D24
+HS%42.9%
+1mo agoBank
+Ranked
+Score
+4 : 1
+3K 2K
+RP
+RP
+2,351 +19
+K/D
+1.50
+K/D/A
+6 4 0
+HS %
+33.3%
+1mo agoConsulate
+Ranked
+Score
+4 : 2
+4K
+RP
+RP
+2,332 +17
+K/D
+2.00
+K/D/A
+6 3 1
+HS %
+50.0%
+1mo agoOregon
+Ranked
+Score
+5 : 4
+2K x31v3 Lost
+RP
+RP
+2,315 +15
+K/D
+1.50
+K/D/A
+9 6 2
+HS %
+55.6%
+1mo agoOutback
+Ranked
+Score
+2 : 4
+1v1 Clutch 3K
+RP
+RP
+2,300 -16
+K/D
+1.00
+K/D/A
+4 4 0
+HS %
+25.0%
+1mo agoConsulate
+Ranked
+Score
+5 : 3
+1v1 Clutch 3K x2
+RP
+RP
+2,316 +16
+K/D
+1.43
+K/D/A
+10 7 4
+HS %
+40.0%
+Apr 30
+5
+RPΔ+26
+3 W2 L
+K/D1.94
+K35
+D18
+HS%54.3%
+1mo agoClubhouse
+Ranked
+Score
+2 : 4
+1v3 Clutch 3K
+RP
+RP
+2,300 -16
+K/D
+1.20
+K/D/A
+6 5 0
+HS %
+16.7%
+1mo agoClubhouse
+Ranked
+Score
+4 : 2
+Ace 1v1 Clutch
+RP
+RP
+2,316 +16
+K/D
+3.50
+K/D/A
+7 2 0
+HS %
+71.4%
+1mo agoClubhouse
+Ranked
+Score
+4 : 5
+2K x3
+RP
+RP
+2,300 -7
+K/D
+1.43
+K/D/A
+10 7 5
+HS %
+50.0%
+1mo agoTheme Park
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,307 +17
+K/D
+3.00
+K/D/A
+3 1 1
+HS %
+33.3%
+1mo agoClubhouse
+Ranked
+Score
+4 : 2
+1v3 Clutch 4K
+RP
+RP
+2,290 +16
+K/D
+3.00
+K/D/A
+9 3 1
+HS %
+77.8%
+Apr 29
+4
+RPΔ+1
+2 W2 L
+K/D1.18
+K20
+D17
+HS%50.0%
+1mo agoNighthaven Labs
+Ranked
+Score
+1 : 4
+2K x2
+RP
+RP
+2,274 -26
+K/D
+1.00
+K/D/A
+4 4 1
+HS %
+0.0%
+1mo agoBorder
+Ranked
+Score
+4 : 5
+2K
+RP
+RP
+2,300 -7
+K/D
+0.75
+K/D/A
+6 8 4
+HS %
+50.0%
+1mo agoKanal
+Ranked
+Score
+4 : 2
+4K 1v1 Clutch
+RP
+RP
+2,307 +18
+K/D
+4.00
+K/D/A
+8 2 0
+HS %
+75.0%
+1mo agoLair
+Ranked
+Score
+4 : 1
+1v2 Clutch
+RP
+RP
+2,289 +16
+K/D
+0.67
+K/D/A
+2 3 4
+HS %
+50.0%
+Apr 28
+2
+2
+W
+Streak
+RPΔ+27
+2 W0 L
+K/D5.50
+K11
+D2
+HS%54.5%
+1mo agoFortress
+Ranked
+Score
+4 : 2
+3K 2K x2
+RP
+RP
+2,273 +15
+K/D
+4.00
+K/D/A
+8 2 1
+HS %
+50.0%
+1mo agoVilla
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,258 +12
+K/D
+3.00
+K/D/A
+3 0 1
+HS %
+66.7%
+Apr 27
+3
+RPΔ-55
+0 W3 L
+K/D0.53
+K8
+D15
+HS%50.0%
+1mo agoChalet
+Ranked
+Score
+2 : 4
+Victim
+RP
+RP
+2,246 -27
+K/D
+0.33
+K/D/A
+2 6 1
+HS %
+50.0%
+1mo agoConsulate
+Ranked
+Score
+0 : 4
+4K Victim
+RP
+RP
+2,273 -27
+K/D
+1.00
+K/D/A
+4 4 0
+HS %
+50.0%
+1mo agoChalet
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,300 -1
+K/D
+0.40
+K/D/A
+2 5 1
+HS %
+50.0%
+Apr 26
+2
+2
+W
+Streak
+RPΔ+28
+2 W0 L
+K/D1.38
+K11
+D8
+HS%63.6%
+1mo agoChalet
+Ranked
+Score
+4 : 2
+2K x2
+RP
+RP
+2,301 +15
+K/D
+1.25
+K/D/A
+5 4 0
+HS %
+60.0%
+1mo agoEmerald Plains
+Ranked
+Score
+5 : 3
+2K 1v3 Lost
+RP
+RP
+2,286 +13
+K/D
+1.50
+K/D/A
+6 4 0
+HS %
+66.7%
+Apr 25
+4
+RPΔ-51
+1 W3 L
+K/D1.44
+K26
+D18
+HS%53.8%
+1mo agoBorder
+Ranked
+Score
+3 : 5
+4K 2K
+RP
+RP
+2,273 -27
+K/D
+1.33
+K/D/A
+8 6 1
+HS %
+50.0%
+1mo agoVilla
+Ranked
+Score
+2 : 4
+3K 1v1 Lost
+RP
+RP
+2,300 -14
+K/D
+2.00
+K/D/A
+6 3 3
+HS %
+50.0%
+1mo agoChalet
+Ranked
+Score
+4 : 1
+3K 2K x2
+RP
+RP
+2,314 +14
+K/D
+2.33
+K/D/A
+7 3 3
+HS %
+57.1%
+1mo agoOutback
+Ranked
+Score
+3 : 5
+3K
+RP
+RP
+2,300 -24
+K/D
+0.83
+K/D/A
+5 6 2
+HS %
+60.0%
+Apr 24
+4
+RPΔ-65
+1 W3 L
+K/D0.44
+K8
+D18
+HS%37.5%
+1mo agoConsulate
+Ranked
+Score
+2 : 4
+1v2 Lost
+RP
+RP
+2,324 -26
+K/D
+0.00
+K/D/A
+0 4 2
+HS %
+0.0%
+1mo agoVilla
+Ranked
+Score
+4 : 2
+3K
+RP
+RP
+2,350 +14
+K/D
+1.67
+K/D/A
+5 3 0
+HS %
+40.0%
+1mo agoCoastline
+Ranked
+Score
+0 : 4
+Victim 1v3 Lost
+RP
+RP
+2,336 -27
+K/D
+0.00
+K/D/A
+0 4 0
+HS %
+0.0%
+1mo agoClubhouse
+Ranked
+Score
+3 : 5
+RP
+RP
+2,363 -26
+K/D
+0.43
+K/D/A
+3 7 0
+HS %
+33.3%
+Apr 22
+5
+RPΔ-32
+2 W3 L
+K/D0.67
+K16
+D24
+HS%50.0%
+1mo agoNighthaven Labs
+Ranked
+Score
+4 : 2
+Victim
+RP
+RP
+2,389 +15
+K/D
+0.33
+K/D/A
+2 6 2
+HS %
+0.0%
+1mo agoKanal
+Ranked
+Score
+0 : 4
+Victim 2K
+RP
+RP
+2,374 -26
+K/D
+1.00
+K/D/A
+4 4 1
+HS %
+75.0%
+1mo agoBank
+Ranked
+Score
+2 : 4
+1v2 Lost 2K
+RP
+RP
+2,400 -17
+K/D
+0.75
+K/D/A
+3 4 0
+HS %
+66.7%
+1mo agoEmerald Plains
+Ranked
+Score
+4 : 2
+Victim
+RP
+RP
+2,417 +17
+K/D
+0.33
+K/D/A
+2 6 4
+HS %
+50.0%
+1mo agoConsulate
+Ranked
+Score
+1 : 4
+1v3 Clutch 3K
+RP
+RP
+2,400 -21
+K/D
+1.25
+K/D/A
+5 4 0
+HS %
+40.0%
+Apr 21
+1
+RPΔ-25
+0 W1 L
+K/D0.75
+K3
+D4
+HS%33.3%
+1mo agoNighthaven Labs
+Ranked
+Score
+0 : 4
+1v2 Lost Victim
+RP
+RP
+2,421 -25
+K/D
+0.75
+K/D/A
+3 4 0
+HS %
+33.3%
+Apr 20
+2
+RPΔ-5
+1 W1 L
+K/D1.25
+K10
+D8
+HS%40.0%
+1mo agoKanal
+Ranked
+Score
+3 : 5
+2K x31v3 Lost x3
+RP
+RP
+2,446 -25
+K/D
+2.25
+K/D/A
+9 4 1
+HS %
+44.4%
+1mo agoConsulate
+Ranked
+Score
+4 : 2
+RP
+RP
+2,471 +20
+K/D
+0.25
+K/D/A
+1 4 4
+HS %
+0.0%
+Apr 19
+4
+RPΔ-46
+1 W3 L
+K/D0.86
+K19
+D22
+HS%31.6%
+1mo agoBorder
+Ranked
+Score
+2 : 4
+1v1 Clutch 2K
+RP
+RP
+2,451 -25
+K/D
+0.60
+K/D/A
+3 5 3
+HS %
+0.0%
+1mo agoOutback
+Ranked
+Score
+4 : 5
+4K 1v2 Lost
+RP
+RP
+2,476 -24
+K/D
+1.33
+K/D/A
+8 6 0
+HS %
+12.5%
+1mo agoConsulate
+Ranked
+Score
+3 : 5
+RP
+RP
+2,500 -20
+K/D
+0.43
+K/D/A
+3 7 0
+HS %
+33.3%
+1mo agoKanal
+Ranked
+Score
+4 : 1
+2K
+RP
+RP
+2,520 +23
+K/D
+1.25
+K/D/A
+5 4 2
+HS %
+80.0%
+Apr 18
+8
+RPΔ-45
+3 W5 L
+K/D1.16
+K37
+D32
+HS%32.4%
+1mo agoConsulate
+Ranked
+Score
+4 : 0
+1v1 Clutch
+RP
+RP
+2,497 +21
+K/D
+1.00
+K/D/A
+2 2 0
+HS %
+50.0%
+1mo agoClubhouse
+Ranked
+Score
+2 : 4
+RP
+RP
+2,476 -24
+K/D
+0.60
+K/D/A
+3 5 0
+HS %
+0.0%
+1mo agoOregon
+Ranked
+Score
+3 : 5
+3K 2K
+RP
+RP
+2,500 -18
+K/D
+1.80
+K/D/A
+9 5 2
+HS %
+33.3%
+1mo agoChalet
+Ranked
+Score
+1 : 4
+1v1 Clutch 1v2 Lost
+RP
+RP
+2,518 -24
+K/D
+1.25
+K/D/A
+5 4 1
+HS %
+20.0%
+1mo agoEmerald Plains
+Ranked
+Score
+4 : 1
+2K x3
+RP
+RP
+2,542 +23
+K/D
+2.00
+K/D/A
+8 4 2
+HS %
+37.5%
+1mo agoOutback
+Ranked
+Score
+0 : 4
+Victim 2K
+RP
+RP
+2,519 -24
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+0.0%
+1mo agoClubhouse
+Ranked
+Score
+1 : 4
+1v3 Lost
+RP
+RP
+2,543 -24
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+50.0%
+1mo agoFortress
+Ranked
+Score
+4 : 2
+3K
+RP
+RP
+2,567 +25
+K/D
+1.50
+K/D/A
+6 4 2
+HS %
+50.0%
+Apr 17
+3
+RPΔ-21
+1 W2 L
+K/D0.92
+K11
+D12
+HS%45.5%
+1mo agoOutback
+Ranked
+Score
+1 : 4
+1v1 Clutch 2K
+RP
+RP
+2,542 -23
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+0.0%
+1mo agoClubhouse
+Ranked
+Score
+4 : 2
+1v2 Lost
+RP
+RP
+2,565 +25
+K/D
+1.67
+K/D/A
+5 3 2
+HS %
+40.0%
+1mo agoConsulate
+Ranked
+Score
+2 : 4
+1v3 Lost
+RP
+RP
+2,540 -23
+K/D
+0.80
+K/D/A
+4 5 1
+HS %
+75.0%
+Apr 15
+4
+RPΔ+9
+2 W2 L
+K/D0.94
+K15
+D16
+HS%40.0%
+1mo agoBorder
+Ranked
+Score
+1 : 4
+RP
+RP
+2,563 -23
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+50.0%
+1mo agoBorder
+Ranked
+Score
+5 : 3
+1v3 Clutch x23K
+RP
+RP
+2,586 +27
+K/D
+1.20
+K/D/A
+6 5 1
+HS %
+16.7%
+1mo agoOregon
+Ranked
+Score
+2 : 4
+RP
+RP
+2,559 -23
+K/D
+0.00
+K/D/A
+0 5 1
+HS %
+0.0%
+1mo agoEmerald Plains
+Ranked
+Score
+4 : 0
+3K 2K
+RP
+RP
+2,582 +28
+K/D
+3.50
+K/D/A
+7 2 0
+HS %
+57.1%
+Apr 12
+1
+RPΔ-23
+0 W1 L
+K/D0.86
+K6
+D7
+HS%50.0%
+1mo agoNighthaven Labs
+Ranked
+Score
+3 : 5
+2K 1v3 Lost
+RP
+RP
+2,554 -23
+K/D
+0.86
+K/D/A
+6 7 3
+HS %
+50.0%
+Apr 11
+5
+3
+W
+Streak
+RPΔ+43
+3 W2 L
+K/D0.74
+K14
+D19
+HS%35.7%
+1mo agoKafe Dostoyevsky
+Ranked
+Score
+5 : 4
+RP
+RP
+2,577 +27
+K/D
+0.33
+K/D/A
+2 6 2
+HS %
+0.0%
+1mo agoLair
+Ranked
+Score
+4 : 0
+RP
+RP
+2,550 +26
+K/D
+2.00
+K/D/A
+2 1 0
+HS %
+100.0%
+1mo agoConsulate
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,524 +24
+K/D
+5.00
+K/D/A
+5 1 3
+HS %
+0.0%
+1mo agoClubhouse
+Ranked
+Score
+3 : 5
+RP
+RP
+2,500 -11
+K/D
+0.43
+K/D/A
+3 7 2
+HS %
+66.7%
+1mo agoLair
+Ranked
+Score
+0 : 4
+Victim 2K
+RP
+RP
+2,511 -23
+K/D
+0.50
+K/D/A
+2 4 1
+HS %
+50.0%
+Apr 10
+2
+RPΔ+4
+1 W1 L
+K/D1.00
+K15
+D15
+HS%46.7%
+1mo agoClubhouse
+Ranked
+Score
+5 : 4
+2K x2
+RP
+RP
+2,534 +27
+K/D
+1.14
+K/D/A
+8 7 5
+HS %
+50.0%
+1mo agoConsulate
+Ranked
+Score
+3 : 5
+3K Victim
+RP
+RP
+2,507 -23
+K/D
+0.88
+K/D/A
+7 8 3
+HS %
+42.9%
+Apr 8
+3
+3
+W
+Streak
+RPΔ+77
+3 W0 L
+K/D0.83
+K10
+D12
+HS%70.0%
+1mo agoBank
+Ranked
+Score
+5 : 3
+3K
+RP
+RP
+2,530 +27
+K/D
+0.50
+K/D/A
+3 6 1
+HS %
+66.7%
+1mo agoCoastline
+Ranked
+Score
+4 : 2
+RP
+RP
+2,503 +26
+K/D
+1.00
+K/D/A
+3 3 2
+HS %
+100.0%
+1mo agoBorder
+Ranked
+Score
+4 : 0
+RP
+RP
+2,477 +24
+K/D
+1.33
+K/D/A
+4 3 0
+HS %
+50.0%
+Apr 7
+3
+RPΔ-21
+1 W2 L
+K/D1.27
+K19
+D15
+HS%63.2%
+1mo agoBank
+Ranked
+Score
+3 : 5
+3K
+RP
+RP
+2,453 -24
+K/D
+0.83
+K/D/A
+5 6 2
+HS %
+60.0%
+1mo agoEmerald Plains
+Ranked
+Score
+1 : 4
+RP
+RP
+2,477 -23
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+100.0%
+1mo agoClubhouse
+Ranked
+Score
+5 : 3
+3K x21v2 Lost x2
+RP
+RP
+2,500 +26
+K/D
+2.40
+K/D/A
+12 5 3
+HS %
+58.3%
+Apr 6
+2
+2
+W
+Streak
+RPΔ+48
+2 W0 L
+K/D0.86
+K6
+D7
+HS%16.7%
+1mo agoClubhouse
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,474 +25
+K/D
+1.00
+K/D/A
+3 3 1
+HS %
+0.0%
+1mo agoChalet
+Ranked
+Score
+4 : 1
+RP
+RP
+2,449 +23
+K/D
+0.75
+K/D/A
+3 4 1
+HS %
+33.3%
+Apr 5
+5
+2
+W
+Streak
+RPΔ-35
+2 W3 L
+K/D0.88
+K22
+D25
+HS%27.3%
+1mo ago
+Ranked
+RP Rollback
+RP
+RP
+2,426 +14
+1mo agoChalet
+Ranked
+Score
+4 : 2
+2K
+RP
+RP
+2,412 +20
+K/D
+0.60
+K/D/A
+3 5 4
+HS %
+66.7%
+1mo agoBorder
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,392 +18
+K/D
+2.33
+K/D/A
+7 3 2
+HS %
+28.6%
+1mo agoClubhouse
+Ranked
+Score
+3 : 5
+RP
+RP
+2,374 -26
+K/D
+0.71
+K/D/A
+5 7 3
+HS %
+20.0%
+1mo agoOregon
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,400 -22
+K/D
+0.40
+K/D/A
+2 5 0
+HS %
+0.0%
+1mo agoCoastline
+Ranked
+Score
+2 : 4
+3K 2K
+RP
+RP
+2,422 -25
+K/D
+1.00
+K/D/A
+5 5 0
+HS %
+20.0%
+Apr 4
+6
+RPΔ-95
+1 W5 L
+K/D0.81
+K25
+D31
+HS%36.0%
+1mo agoChalet
+Ranked
+Score
+4 : 2
+1v1 Clutch 3K
+RP
+RP
+2,447 +20
+K/D
+1.00
+K/D/A
+5 5 1
+HS %
+40.0%
+1mo agoOregon
+Ranked
+Score
+3 : 5
+3K 1v1 Lost
+RP
+RP
+2,427 -25
+K/D
+1.50
+K/D/A
+9 6 2
+HS %
+33.3%
+1mo agoVilla
+Ranked
+Score
+3 : 5
+2K x2
+RP
+RP
+2,452 -24
+K/D
+0.86
+K/D/A
+6 7 0
+HS %
+66.7%
+1mo agoClubhouse
+Ranked
+Score
+0 : 4
+Victim 2K
+RP
+RP
+2,476 -24
+K/D
+0.50
+K/D/A
+2 4 1
+HS %
+0.0%
+1mo agoFortress
+Ranked
+Score
+0 : 4
+Victim 1v3 Lost
+RP
+RP
+2,500 -18
+K/D
+0.25
+K/D/A
+1 4 1
+HS %
+0.0%
+1mo agoNighthaven Labs
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,518 -24
+K/D
+0.40
+K/D/A
+2 5 0
+HS %
+0.0%
+Apr 3
+3
+RPΔ+22
+2 W1 L
+K/D1.58
+K19
+D12
+HS%52.6%
+1mo agoChalet
+Ranked
+Score
+1 : 4
+Victim 2K
+RP
+RP
+2,542 -24
+K/D
+0.60
+K/D/A
+3 5 1
+HS %
+33.3%
+1mo agoOregon
+Ranked
+Score
+4 : 0
+3K 2K x2
+RP
+RP
+2,566 +24
+K/D
+3.50
+K/D/A
+7 2 1
+HS %
+28.6%
+1mo agoBank
+Ranked
+Score
+5 : 4
+4K 2K x2
+RP
+RP
+2,542 +22
+K/D
+1.80
+K/D/A
+9 5 1
+HS %
+77.8%
+Apr 2
+2
+RPΔ+20
+1 W1 L
+K/D2.00
+K12
+D6
+HS%25.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+4 : 2
+1v2 Clutch 3K x2
+RP
+RP
+2,520 +20
+K/D
+4.00
+K/D/A
+8 2 2
+HS %
+25.0%
+2mo agoLair
+Ranked
+Score
+2 : 4
+1v1 Lost
+RP
+RP
+2,500
+K/D
+1.00
+K/D/A
+4 4 1
+HS %
+25.0%
+Apr 1
+3
+RPΔ-28
+1 W2 L
+K/D1.13
+K17
+D15
+HS%47.1%
+2mo agoBorder
+Ranked
+Score
+3 : 5
+TK 2K
+RP
+RP
+2,500 -24
+K/D
+0.83
+K/D/A
+5 6 2
+HS %
+60.0%
+2mo agoVilla
+Ranked
+Score
+1 : 4
+2K
+RP
+RP
+2,524 -25
+K/D
+1.00
+K/D/A
+4 4 2
+HS %
+25.0%
+2mo agoBank
+Ranked
+Score
+4 : 2
+4K 2K
+RP
+RP
+2,549 +21
+K/D
+1.60
+K/D/A
+8 5 1
+HS %
+50.0%
+Mar 31
+4
+RPΔ-77
+0 W4 L
+K/D1.00
+K23
+D23
+HS%30.4%
+2mo agoChalet
+Ranked
+Score
+1 : 4
+RP
+RP
+2,528 -24
+K/D
+0.50
+K/D/A
+2 4 1
+HS %
+50.0%
+2mo agoChalet
+Ranked
+Score
+3 : 5
+1v2 Clutch 2K x2
+RP
+RP
+2,552 -24
+K/D
+1.33
+K/D/A
+8 6 0
+HS %
+12.5%
+2mo agoConsulate
+Ranked
+Score
+3 : 5
+2K
+RP
+RP
+2,576 -24
+K/D
+0.67
+K/D/A
+4 6 3
+HS %
+25.0%
+2mo agoClubhouse
+Ranked
+Score
+3 : 5
+3K 1v2 Lost
+RP
+RP
+2,600 -5
+K/D
+1.29
+K/D/A
+9 7 1
+HS %
+44.4%
+Mar 30
+2
+RPΔ+5
+1 W1 L
+K/D1.38
+K11
+D8
+HS%45.5%
+2mo agoNighthaven Labs
+Ranked
+Score
+2 : 4
+RP
+RP
+2,605 -23
+K/D
+0.60
+K/D/A
+3 5 2
+HS %
+33.3%
+2mo agoBank
+Ranked
+Score
+5 : 3
+1v2 Clutch 4K
+RP
+RP
+2,628 +28
+K/D
+2.67
+K/D/A
+8 3 1
+HS %
+50.0%
+Mar 29
+6
+RPΔ+86
+4 W2 L
+K/D1.23
+K27
+D22
+HS%37.0%
+2mo agoNighthaven Labs
+Ranked
+Score
+1 : 4
+3K 1v2 Lost x2
+RP
+RP
+2,600 -9
+K/D
+1.50
+K/D/A
+6 4 2
+HS %
+50.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 2
+1v1 Clutch 1v2 Lost
+RP
+RP
+2,609 +30
+K/D
+2.00
+K/D/A
+6 3 1
+HS %
+50.0%
+2mo agoChalet
+Ranked
+Score
+4 : 1
+RP
+RP
+2,579 +28
+K/D
+0.25
+K/D/A
+1 4 2
+HS %
+0.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,551 +26
+K/D
+1.50
+K/D/A
+3 2 2
+HS %
+33.3%
+2mo agoChalet
+Ranked
+Score
+4 : 1
+RP
+RP
+2,525 +25
+K/D
+1.00
+K/D/A
+2 2 2
+HS %
+100.0%
+2mo agoVilla
+Ranked
+Score
+3 : 5
+3K x21v2 Lost
+RP
+RP
+2,500 -14
+K/D
+1.29
+K/D/A
+9 7 2
+HS %
+11.1%
+Mar 28
+6
+RPΔ+56
+4 W2 L
+K/D1.52
+K38
+D25
+HS%60.5%
+2mo agoChalet
+Ranked
+Score
+2 : 4
+1v2 Lost 2K
+RP
+RP
+2,514 -23
+K/D
+0.80
+K/D/A
+4 5 0
+HS %
+50.0%
+2mo agoEmerald Plains
+Ranked
+Score
+5 : 3
+2K x2
+RP
+RP
+2,537 +27
+K/D
+1.00
+K/D/A
+7 7 2
+HS %
+71.4%
+2mo agoOregon
+Ranked
+Score
+4 : 1
+1v3 Clutch 4K
+RP
+RP
+2,510 +26
+K/D
+8.00
+K/D/A
+8 1 0
+HS %
+25.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 0
+3K
+RP
+RP
+2,484 +25
+K/D
+5.00
+K/D/A
+5 1 1
+HS %
+60.0%
+2mo agoNighthaven Labs
+Ranked
+Score
+4 : 5
+3K 1v2 Lost
+RP
+RP
+2,459 -24
+K/D
+1.83
+K/D/A
+11 6 0
+HS %
+72.7%
+2mo agoCoastline
+Ranked
+Score
+5 : 3
+2K
+RP
+RP
+2,483 +25
+K/D
+0.60
+K/D/A
+3 5 1
+HS %
+100.0%
+Mar 27
+4
+RPΔ+4
+2 W2 L
+K/D1.22
+K22
+D18
+HS%27.3%
+2mo agoOregon
+Ranked
+Score
+5 : 4
+3K 2K x2
+RP
+RP
+2,458 +24
+K/D
+1.50
+K/D/A
+9 6 2
+HS %
+11.1%
+2mo agoBank
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,434 -23
+K/D
+0.40
+K/D/A
+2 5 2
+HS %
+50.0%
+2mo agoCoastline
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,457 -23
+K/D
+0.25
+K/D/A
+1 4 0
+HS %
+100.0%
+2mo agoNighthaven Labs
+Ranked
+Score
+5 : 3
+2K x31v3 Lost
+RP
+RP
+2,480 +26
+K/D
+3.33
+K/D/A
+10 3 1
+HS %
+30.0%
+Mar 26
+2
+2
+W
+Streak
+RPΔ+51
+2 W0 L
+K/D1.20
+K6
+D5
+HS%16.7%
+2mo agoClubhouse
+Ranked
+Score
+4 : 1
+2K
+RP
+RP
+2,454 +26
+K/D
+1.50
+K/D/A
+3 2 1
+HS %
+33.3%
+2mo agoChalet
+Ranked
+Score
+4 : 1
+2K
+RP
+RP
+2,428 +25
+K/D
+1.00
+K/D/A
+3 3 2
+HS %
+0.0%
+Mar 25
+5
+RPΔ-58
+1 W4 L
+K/D0.91
+K21
+D23
+HS%52.4%
+2mo agoVilla
+Ranked
+Score
+3 : 5
+RP
+RP
+2,403 -23
+K/D
+0.50
+K/D/A
+3 6 0
+HS %
+100.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 0
+RP
+RP
+2,426 +26
+K/D
+4.00
+K/D/A
+4 1 2
+HS %
+25.0%
+2mo agoBank
+Ranked
+Score
+2 : 4
+2K x2
+RP
+RP
+2,400 -16
+K/D
+1.00
+K/D/A
+5 5 1
+HS %
+0.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+4 : 5
+1v3 Clutch 1v1 Clutch
+RP
+RP
+2,416 -23
+K/D
+1.33
+K/D/A
+8 6 1
+HS %
+75.0%
+2mo agoVilla
+Ranked
+Score
+1 : 4
+Victim 1v3 Lost
+RP
+RP
+2,439 -22
+K/D
+0.20
+K/D/A
+1 5 3
+HS %
+100.0%
+Mar 24
+5
+RPΔ+45
+3 W2 L
+K/D0.79
+K19
+D24
+HS%42.1%
+2mo agoOregon
+Ranked
+Score
+1 : 4
+Victim
+RP
+RP
+2,461 -22
+K/D
+0.20
+K/D/A
+1 5 3
+HS %
+0.0%
+2mo agoChalet
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,483 +29
+K/D
+1.00
+K/D/A
+5 5 3
+HS %
+40.0%
+2mo agoEmerald Plains
+Ranked
+Score
+2 : 4
+RP
+RP
+2,454 -22
+K/D
+0.20
+K/D/A
+1 5 4
+HS %
+0.0%
+2mo agoConsulate
+Ranked
+Score
+4 : 1
+3K x2
+RP
+RP
+2,476 +30
+K/D
+3.00
+K/D/A
+6 2 1
+HS %
+33.3%
+2mo agoBorder
+Ranked
+Score
+5 : 4
+3K 1v2 Lost
+RP
+RP
+2,446 +30
+K/D
+0.86
+K/D/A
+6 7 2
+HS %
+66.7%
+Mar 23
+3
+RPΔ+38
+2 W1 L
+K/D0.80
+K12
+D15
+HS%33.3%
+2mo agoVilla
+Ranked
+Score
+4 : 5
+1v2 Lost 2K
+RP
+RP
+2,416 -22
+K/D
+0.71
+K/D/A
+5 7 2
+HS %
+20.0%
+2mo agoBank
+Ranked
+Score
+5 : 4
+1v1 Clutch 1v2 Lost
+RP
+RP
+2,438 +30
+K/D
+1.00
+K/D/A
+6 6 3
+HS %
+33.3%
+2mo agoConsulate
+Ranked
+Score
+4 : 1
+RP
+RP
+2,408 +30
+K/D
+0.50
+K/D/A
+1 2 1
+HS %
+100.0%
+Mar 22
+5
+RPΔ+21
+2 W3 L
+K/D1.00
+K28
+D28
+HS%46.4%
+2mo agoEmerald Plains
+Ranked
+Score
+4 : 5
+1v1 Lost 2K
+RP
+RP
+2,378 -22
+K/D
+0.57
+K/D/A
+4 7 3
+HS %
+50.0%
+2mo agoLair
+Ranked
+Score
+4 : 5
+1v1 Lost
+RP
+RP
+2,400 -3
+K/D
+0.62
+K/D/A
+5 8 4
+HS %
+40.0%
+2mo agoOregon
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,403 -21
+K/D
+0.40
+K/D/A
+2 5 0
+HS %
+100.0%
+2mo agoOregon
+Ranked
+Score
+4 : 1
+3K x22K
+RP
+RP
+2,424 +34
+K/D
+2.67
+K/D/A
+8 3 1
+HS %
+50.0%
+2mo agoChalet
+Ranked
+Score
+4 : 2
+4K 2K x2
+RP
+RP
+2,390 +33
+K/D
+1.80
+K/D/A
+9 5 1
+HS %
+33.3%
+Mar 21
+8
+RPΔ+124
+5 W3 L
+K/D0.89
+K25
+D28
+HS%28.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,357 +33
+K/D
+1.50
+K/D/A
+6 4 3
+HS %
+33.3%
+2mo agoNighthaven Labs
+Ranked
+Score
+1 : 4
+Victim 2K
+RP
+RP
+2,324 -21
+K/D
+0.40
+K/D/A
+2 5 2
+HS %
+0.0%
+2mo agoFortress
+Ranked
+Score
+4 : 0
+RP
+RP
+2,345 +33
+K/D
+3.00
+K/D/A
+3 1 0
+HS %
+0.0%
+2mo agoClubhouse
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,312 -21
+K/D
+0.60
+K/D/A
+3 5 0
+HS %
+66.7%
+2mo agoConsulate
+Ranked
+Score
+5 : 3
+2K 1v3 Lost
+RP
+RP
+2,333 +33
+K/D
+0.80
+K/D/A
+4 5 3
+HS %
+0.0%
+2mo agoClubhouse
+Ranked
+Score
+2 : 4
+RP
+RP
+2,300 -5
+K/D
+0.20
+K/D/A
+1 5 1
+HS %
+0.0%
+2mo agoBorder
+Ranked
+Score
+4 : 1
+RP
+RP
+2,305 +36
+K/D
+2.00
+K/D/A
+4 2 0
+HS %
+75.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,269 +36
+K/D
+2.00
+K/D/A
+2 1 1
+HS %
+0.0%
+Mar 20
+4
+RPΔ+33
+2 W2 L
+K/D1.11
+K20
+D18
+HS%25.0%
+2mo agoEmerald Plains
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,233 -20
+K/D
+0.00
+K/D/A
+0 4 0
+HS %
+0.0%
+2mo agoVilla
+Ranked
+Score
+4 : 2
+1v3 Clutch 3K
+RP
+RP
+2,253 +36
+K/D
+3.00
+K/D/A
+6 2 0
+HS %
+16.7%
+2mo agoBank
+Ranked
+Score
+3 : 5
+3K 2K
+RP
+RP
+2,217 -20
+K/D
+1.14
+K/D/A
+8 7 0
+HS %
+12.5%
+2mo agoOregon
+Ranked
+Score
+4 : 2
+2K x2
+RP
+RP
+2,237 +37
+K/D
+1.20
+K/D/A
+6 5 1
+HS %
+50.0%
+Mar 19
+5
+RPΔ+22
+2 W3 L
+K/D1.32
+K25
+D19
+HS%28.0%
+2mo agoBorder
+Ranked
+Score
+2 : 4
+2K
+RP
+RP
+2,200 -17
+K/D
+1.25
+K/D/A
+5 4 3
+HS %
+0.0%
+2mo agoBorder
+Ranked
+Score
+2 : 4
+2K x2
+RP
+RP
+2,217 -19
+K/D
+1.00
+K/D/A
+5 5 3
+HS %
+40.0%
+2mo agoCoastline
+Ranked
+Score
+4 : 1
+2K 1v3 Lost
+RP
+RP
+2,236 +39
+K/D
+0.75
+K/D/A
+3 4 2
+HS %
+66.7%
+2mo agoFortress
+Ranked
+Score
+4 : 1
+1v5 Clutch Ace
+RP
+RP
+2,197 +38
+K/D
+6.00
+K/D/A
+12 2 2
+HS %
+25.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,159 -19
+K/D
+0.00
+K/D/A
+0 4 0
+HS %
+0.0%
+Mar 18
+3
+2
+W
+Streak
+RPΔ+78
+2 W1 L
+K/D1.00
+K19
+D19
+HS%31.6%
+2mo agoVilla
+Ranked
+Score
+5 : 4
+3K 1v2 Lost
+RP
+RP
+2,178 +39
+K/D
+1.00
+K/D/A
+8 8 1
+HS %
+25.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+4 : 1
+2K x2
+RP
+RP
+2,139 +39
+K/D
+2.00
+K/D/A
+6 3 1
+HS %
+66.7%
+2mo agoBorder
+Ranked
+Score
+4 : 5
+1v1 Lost 2K x2
+RP
+RP
+2,100
+K/D
+0.62
+K/D/A
+5 8 3
+HS %
+0.0%
+Mar 17
+2
+RPΔ+36
+1 W1 L
+K/D0.91
+K10
+D11
+HS%60.0%
+2mo agoConsulate
+Ranked
+Score
+4 : 5
+2K x21v3 Lost
+RP
+RP
+2,100 -6
+K/D
+0.88
+K/D/A
+7 8 2
+HS %
+71.4%
+2mo agoBank
+Ranked
+Score
+4 : 2
+2K
+RP
+RP
+2,106 +42
+K/D
+1.00
+K/D/A
+3 3 0
+HS %
+33.3%
+Mar 16
+2
+2
+W
+Streak
+RPΔ+82
+2 W0 L
+K/D1.33
+K8
+D6
+HS%62.5%
+2mo agoChalet
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+2,064 +41
+K/D
+1.25
+K/D/A
+5 4 4
+HS %
+40.0%
+2mo agoBank
+Ranked
+Score
+4 : 0
+2K
+RP
+RP
+2,023 +41
+K/D
+1.50
+K/D/A
+3 2 2
+HS %
+100.0%
+Mar 15
+3
+RPΔ-49
+0 W3 L
+K/D0.82
+K14
+D17
+HS%42.9%
+2mo agoNighthaven Labs
+Ranked
+Score
+4 : 5
+1v1 Lost 2K
+RP
+RP
+1,982 -18
+K/D
+0.80
+K/D/A
+4 5 2
+HS %
+25.0%
+2mo agoOregon
+Ranked
+Score
+0 : 4
+Victim 1v3 Lost
+RP
+RP
+2,000 -14
+K/D
+0.50
+K/D/A
+2 4 0
+HS %
+50.0%
+2mo agoLair
+Ranked
+Score
+4 : 5
+2K x21v3 Lost
+RP
+RP
+2,014 -17
+K/D
+1.00
+K/D/A
+8 8 3
+HS %
+50.0%
+Mar 14
+4
+RPΔ-32
+1 W3 L
+K/D1.44
+K23
+D16
+HS%39.1%
+2mo agoOregon
+Ranked
+Score
+4 : 5
+3K x22K
+RP
+RP
+2,031 -16
+K/D
+1.83
+K/D/A
+11 6 3
+HS %
+36.4%
+2mo agoClubhouse
+Ranked
+Score
+4 : 5
+1v2 Clutch 3K x2
+RP
+RP
+2,047 -16
+K/D
+1.50
+K/D/A
+9 6 0
+HS %
+44.4%
+2mo agoConsulate
+Ranked
+Score
+4 : 0
+K/D
+2.00
+K/D/A
+2 0 1
+HS %
+0.0%
+2mo agoClubhouse
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,063
+K/D
+0.25
+K/D/A
+1 4 0
+HS %
+100.0%
+Mar 13
+4
+RPΔ+20
+1 W3 L
+K/D1.14
+K24
+D21
+HS%37.5%
+2mo agoLair
+Ranked
+Score
+4 : 5
+2K x3
+RP
+RP
+2,026 -14
+K/D
+1.00
+K/D/A
+8 8 4
+HS %
+50.0%
+2mo agoOregon
+Ranked
+Score
+2 : 4
+RP
+RP
+2,040 -14
+K/D
+0.40
+K/D/A
+2 5 1
+HS %
+50.0%
+2mo agoClubhouse
+Ranked
+Score
+0 : 4
+Victim
+RP
+RP
+2,054 -13
+K/D
+0.25
+K/D/A
+1 4 1
+HS %
+0.0%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+5 : 3
+4K 3K
+RP
+RP
+2,067 +61
+K/D
+3.25
+K/D/A
+13 4 4
+HS %
+30.8%
+Mar 12
+2
+RPΔ+51
+1 W1 L
+K/D1.20
+K12
+D10
+HS%41.7%
+2mo agoClubhouse
+Ranked
+Score
+5 : 4
+4K 2K
+RP
+RP
+2,006 +63
+K/D
+1.50
+K/D/A
+9 6 2
+HS %
+33.3%
+2mo agoOregon
+Ranked
+Score
+1 : 4
+2K 1v3 Lost
+RP
+RP
+1,943 -12
+K/D
+0.75
+K/D/A
+3 4 1
+HS %
+66.7%
+Mar 11
+5
+RPΔ+116
+2 W3 L
+K/D0.84
+K21
+D25
+HS%33.3%
+2mo agoBorder
+Ranked
+Score
+4 : 2
+2K x2
+RP
+RP
+1,955 +66
+K/D
+2.00
+K/D/A
+6 3 2
+HS %
+33.3%
+2mo agoClubhouse
+Ranked
+Score
+2 : 4
+3K 1v2 Lost
+RP
+RP
+1,889 -11
+K/D
+1.00
+K/D/A
+6 6 1
+HS %
+16.7%
+2mo agoKafe Dostoyevsky
+Ranked
+Score
+2 : 4
+1v2 Lost 2K
+RP
+RP
+1,900 -3
+K/D
+1.00
+K/D/A
+4 4 0
+HS %
+25.0%
+2mo agoClubhouse
+Ranked
+Score
+2 : 4
+1v3 Lost
+RP
+RP
+1,903 -10
+K/D
+0.20
+K/D/A
+1 5 0
+HS %
+0.0%
+2mo agoCoastline
+Ranked
+Score
+5 : 4
+1v3 Lost
+RP
+RP
+1,913 +74
+K/D
+0.57
+K/D/A
+4 7 4
+HS %
+75.0%
+Mar 9
+3
+2
+W
+Streak
+RPΔ+144
+2 W1 L
+K/D1.29
+K22
+D17
+HS%36.4%
+2mo agoClubhouse
+Ranked
+Score
+5 : 3
+TK 1v3 Lost
+RP
+RP
+1,839 +75
+K/D
+1.00
+K/D/A
+7 7 5
+HS %
+14.3%
+2mo agoLair
+Ranked
+Score
+5 : 4
+1v1 Clutch 1v2 Lost
+RP
+RP
+1,764 +77
+K/D
+1.33
+K/D/A
+8 6 5
+HS %
+50.0%
+2mo agoVilla
+Ranked
+Score
+2 : 4
+3K 2K
+RP
+RP
+1,687 -8
+K/D
+1.75
+K/D/A
+7 4 1
+HS %
+42.9%
+Mar 8
+4
+RPΔ+242
+3 W1 L
+K/D1.35
+K23
+D17
+HS%43.5%
+2mo agoCoastline
+Ranked
+Score
+5 : 4
+3K x22K
+RP
+RP
+1,695 +80
+K/D
+1.57
+K/D/A
+11 7 2
+HS %
+36.4%
+2mo agoChalet
+Ranked
+Score
+0 : 4
+Victim 1v3 Lost
+RP
+RP
+1,615 -8
+K/D
+0.00
+K/D/A
+0 4 0
+HS %
+0.0%
+2mo agoClubhouse
+Ranked
+Score
+4 : 2
+3K 2K
+RP
+RP
+1,623 +84
+K/D
+2.00
+K/D/A
+6 3 2
+HS %
+83.3%
+2mo agoCoastline
+Ranked
+Score
+4 : 1
+3K 2K
+RP
+RP
+1,539 +86
+K/D
+2.00
+K/D/A
+6 3 2
+HS %
+16.7%
+Mar 7
+1
+RPΔ-8
+0 W1 L
+K/D1.50
+K9
+D6
+HS%66.7%
+2mo agoVilla
+Ranked
+Score
+4 : 5
+1v3 Clutch 3K
+RP
+RP
+1,453 -8
+K/D
+1.50
+K/D/A
+9 6 1
+HS %
+66.7%
+Mar 6
+2
+RPΔ+82
+1 W1 L
+K/D1.75
+K14
+D8
+HS%42.9%
+2mo agoBank
+Ranked
+Score
+4 : 0
+RP
+RP
+1,461 +90
+K/D
+0.50
+K/D/A
+1 2 1
+HS %
+0.0%
+2mo agoChalet
+Ranked
+Score
+3 : 5
+4K 1v1 Lost
+RP
+RP
+1,371 -8
+K/D
+2.17
+K/D/A
+13 6 1
+HS %
+46.2%
+Mar 4
+5
+RPΔ+279
+4 W1 L
+K/D0.39
+K11
+D28
+HS%9.1%
+2mo agoChalet
+Ranked
+Score
+5 : 3
+1v3 Lost
+RP
+RP
+1,379 +93
+K/D
+0.14
+K/D/A
+1 7 1
+HS %
+0.0%
+2mo agoBank
+Ranked
+Score
+2 : 4
+1v2 Lost Victim
+RP
+RP
+1,286 -8
+K/D
+0.50
+K/D/A
+3 6 1
+HS %
+0.0%
+2mo agoCoastline
+Ranked
+Score
+4 : 1
+Victim
+RP
+RP
+1,294 +96
+K/D
+0.20
+K/D/A
+1 5 1
+HS %
+0.0%
+2mo agoLair
+Ranked
+Score
+5 : 3
+3K
+RP
+RP
+1,198 +98
+K/D
+0.80
+K/D/A
+4 5 2
+HS %
+25.0%
+2mo agoBank
+Ranked
+Score
+4 : 2
+RP
+RP
+1,100
+K/D
+0.40
+K/D/A
+2 5 2
+HS %
+0.0%
+
+------------
+
+Now here is his operator information!
+
+ Operators Overview
+
+Operator
+Zero
+	
+675
+	
+44.0%
+	
+0.97
+	
+48.7%
+	
+297
+	
+378
+	
+487
+	
+502
+	
+119
+	
+0
+	
+4
+Operator
+Tachanka
+	
+514
+	
+57.0%
+	
+1.05
+	
+26.3%
+	
+293
+	
+221
+	
+373
+	
+356
+	
+149
+	
+0
+	
+0
+Operator
+Mozzie
+	
+145
+	
+60.7%
+	
+1.61
+	
+51.3%
+	
+88
+	
+57
+	
+156
+	
+97
+	
+28
+	
+1
+	
+0
+Operator
+Sentry
+	
+79
+	
+55.7%
+	
+1.40
+	
+48.6%
+	
+44
+	
+35
+	
+74
+	
+53
+	
+18
+	
+0
+	
+0
+Operator
+Twitch
+	
+43
+	
+32.6%
+	
+0.97
+	
+65.6%
+	
+14
+	
+29
+	
+32
+	
+33
+	
+14
+	
+1
+	
+0
+Operator
+Bandit
+	
+30
+	
+56.7%
+	
+1.62
+	
+41.2%
+	
+17
+	
+13
+	
+34
+	
+21
+	
+11
+	
+0
+	
+0
+Operator
+Solid Snake
+	
+27
+	
+33.3%
+	
+0.91
+	
+52.4%
+	
+9
+	
+18
+	
+21
+	
+23
+	
+3
+	
+0
+	
+0
+Operator
+Caveira
+	
+22
+	
+59.1%
+	
+1.21
+	
+21.7%
+	
+13
+	
+9
+	
+23
+	
+19
+	
+7
+	
+0
+	
+0
+Operator
+Jackal
+	
+19
+	
+47.4%
+	
+1.08
+	
+38.5%
+	
+9
+	
+10
+	
+13
+	
+12
+	
+3
+	
+0
+	
+0
+Operator
+Striker
+	
+17
+	
+47.1%
+	
+2.00
+	
+50.0%
+	
+8
+	
+9
+	
+26
+	
+13
+	
+1
+	
+0
+	
+0
+Operator
+Amaru
+	
+16
+	
+56.2%
+	
+1.46
+	
+21.1%
+	
+9
+	
+7
+	
+19
+	
+13
+	
+5
+	
+0
+	
+0
+Operator
+Thunderbird
+	
+10
+	
+50.0%
+	
+0.88
+	
+57.1%
+	
+5
+	
+5
+	
+7
+	
+8
+	
+2
+	
+0
+	
+0
+Operator
+Solis
+	
+9
+	
+44.4%
+	
+0.83
+	
+80.0%
+	
+4
+	
+5
+	
+5
+	
+6
+	
+2
+	
+0
+	
+0
+Operator
+Capitão
+	
+9
+	
+44.4%
+	
+0.44
+	
+25.0%
+	
+4
+	
+5
+	
+4
+	
+9
+	
+1
+	
+0
+	
+0
+Operator
+Montagne
+	
+9
+	
+33.3%
+	
+0.43
+	
+0.0%
+	
+3
+	
+6
+	
+3
+	
+7
+	
+1
+	
+0
+	
+0
+Operator
+Nøkk
+	
+6
+	
+33.3%
+	
+0.40
+	
+50.0%
+	
+2
+	
+4
+	
+2
+	
+5
+	
+0
+	
+0
+	
+0
+Operator
+Fenrir
+	
+5
+	
+20.0%
+	
+0.00
+	
+0.0%
+	
+1
+	
+4
+	
+0
+	
+5
+	
+0
+	
+0
+	
+0
+Operator
+Smoke
+	
+3
+	
+33.3%
+	
+1.00
+	
+66.7%
+	
+1
+	
+2
+	
+3
+	
+3
+	
+1
+	
+0
+	
+0
+Operator
+Echo
+	
+3
+	
+100.0%
+	
+0.00
+	
+0.0%
+	
+3
+	
+0
+	
+0
+	
+2
+	
+1
+	
+0
+	
+0
+Operator
+Grim
+	
+2
+	
+0.0%
+	
+1.00
+	
+50.0%
+	
+0
+	
+2
+	
+2
+	
+2
+	
+0
+	
+0
+	
+0
+Operator
+Valkyrie
+	
+2
+	
+50.0%
+	
+1.00
+	
+100.0%
+	
+1
+	
+1
+	
+1
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Jäger
+	
+2
+	
+50.0%
+	
+0.00
+	
+0.0%
+	
+1
+	
+1
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Goyo
+	
+2
+	
+100.0%
+	
+2.00
+	
+100.0%
+	
+2
+	
+0
+	
+2
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Blitz
+	
+1
+	
+0.0%
+	
+0.00
+	
+0.0%
+	
+0
+	
+1
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Finka
+	
+1
+	
+0.0%
+	
+0.00
+	
+0.0%
+	
+0
+	
+1
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Brava
+	
+1
+	
+0.0%
+	
+0.00
+	
+0.0%
+	
+0
+	
+1
+	
+0
+	
+1
+	
+1
+	
+0
+	
+0
+Operator
+Ying
+	
+1
+	
+100.0%
+	
+0.00
+	
+0.0%
+	
+1
+	
+0
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Clash
+	
+1
+	
+100.0%
+	
+0.00
+	
+0.0%
+	
+1
+	
+0
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Maestro
+	
+1
+	
+100.0%
+	
+0.00
+	
+0.0%
+	
+1
+	
+0
+	
+0
+	
+0
+	
+0
+	
+0
+	
+0
+Operator
+Mute
+	
+1
+	
+0.0%
+	
+0.00
+	
+0.0%
+	
+0
+	
+1
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Deimos
+	
+1
+	
+0.0%
+	
+0.00
+	
+0.0%
+	
+0
+	
+1
+	
+0
+	
+1
+	
+0
+	
+0
+	
+0
+Operator
+Sens
+	
+1
+	
+0.0%
+	
+1.00
+	
+0.0%
+	
+0
+	
+1
+	
+1
+	
+1
+	
+0
+	
+0
+	
+0

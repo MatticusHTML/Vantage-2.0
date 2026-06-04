@@ -1,8 +1,4 @@
-# VANTAGE RECORD — CunderThock
-**Season:** Y11S1 · Operation Silent Hunt  
-**Updated:** Jun 3, 2026 · 6:00 PM PT
-
-> Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
+# Archive snapshot — Jun 3, 2026 · 6:00 PM PT
 
 ```json
 {
@@ -4711,6 +4707,7 @@
   "seasonLabel": "Operation Silent Hunt",
   "updated": "Jun 3, 2026 · 6:00 PM PT",
   "seasonClosed": true,
-  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Gold III, 2,739 RP.</b> 266 ranked matches. 132 wins, 134 losses. A coin flip with a pulse — 49.6% win rate and a 1.07 K/D across the heaviest volume on the squad.</p>\n<p>You played more ranked than anyone in the stack and landed in Gold anyway. That is either dedication or addiction; the data does not distinguish. Peak 2,748 RP — Platinum was 461 points away and never quite arrived.</p>\n<p><b>Zero defined your season at 675 rounds and 44.0%.</b> That is not a main, that is a habit. Tachanka at 514 rounds and 57.0% was the Lord holding the line while you fed RP into cam timing. Mozzie at 60.7% and 1.61 K/D over 145 rounds was the receipt we kept writing — the best defender on the account, chronically under-picked relative to Tachanka and Zero volume.</p>\n<p>Four RP rollbacks logged. Badge ledger says you clutch (17 one-v-one clutches, ten three-v-three clutches) and you die first (43 Victim tags). Both can be true. The squad's two-loss rule was written for your worst nights.</p>\n<p>Silent Hunt closes with Gold on the card and a 266-match paper trail. Trim the Zero volume, ride Mozzie and Tachanka, and Y11S2 is a Platinum conversation. Walk at two losses. The Lord abides.</p>"
+  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Gold III, 2,739 RP.</b> 266 ranked matches. 132 wins, 134 losses. A coin flip with a pulse — 49.6% win rate and a 1.07 K/D across the heaviest volume on the squad.</p>\n<p>You played more ranked than anyone in the stack and landed in Gold anyway. That is either dedication or addiction; the data does not distinguish. Peak 2,748 RP — Platinum was 461 points away and never quite arrived.</p>\n<p><b>Zero defined your season at 675 rounds and 44.0%.</b> That is not a main, that is a habit. Tachanka at 514 rounds and 57.0% was the Lord holding the line while you fed RP into cam timing. Mozzie at 60.7% and 1.61 K/D over 145 rounds was the receipt we kept writing — the best defender on the account, chronically under-picked relative to Tachanka and Zero volume.</p>\n<p>Four RP rollbacks logged. Badge ledger says you clutch (17 one-v-one clutches, ten three-v-three clutches) and you die first (43 Victim tags). Both can be true. The squad's two-loss rule was written for your worst nights.</p>\n<p>Silent Hunt closes with Gold on the card and a 266-match paper trail. Trim the Zero volume, ride Mozzie and Tachanka, and Y11S2 is a Platinum conversation. Walk at two losses. The Lord abides.</p>",
+  "archived": "Jun 3, 2026 · 6:00 PM PT"
 }
 ```

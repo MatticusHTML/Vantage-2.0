@@ -53,8 +53,41 @@ function commentIconImg(c){
 function wrColor(p){ p=parseFloat(p); if(isNaN(p))return"var(--white)"; if(p>=55)return"var(--green)"; if(p>=45)return"var(--gold)"; return"var(--red)"; }
 function seasonOp(s){ return SEASON_OPS[s] || ""; }
 function setBrandTag(text){ const el=document.querySelector(".cmdbar .tag"); if(el) el.textContent=text; }
+
+/* ---- ambient FX / seasonal themes ---- */
+function initFxLayers(){
+  if(document.querySelector(".fx-root")) return;
+  const root=document.createElement("div");
+  root.className="fx-root";
+  root.setAttribute("aria-hidden","true");
+  root.innerHTML=[
+    '<div class="fx fx-base"></div>',
+    '<div class="fx fx-grid"></div>',
+    '<div class="fx fx-sweep"></div>',
+    '<div class="fx fx-scan"></div>',
+    '<div class="fx fx-vignette"></div>',
+    '<div class="fx fx-noise"></div>',
+    '<div class="fx fx-glitch"></div>',
+    '<div class="fx fx-hud"></div>',
+  ].join("");
+  document.body.prepend(root);
+}
+function setSeasonTheme(season){
+  initFxLayers();
+  const s=season||DEFAULT_SEASON;
+  document.body.dataset.season=s;
+  if(PAGE==="oversight") document.body.dataset.fx="oversight";
+  else delete document.body.dataset.fx;
+}
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
 function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
+const MONTHS = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+function formatCardUpdated(s){
+  if(!s) return "—";
+  const m = String(s).match(/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s+(\d{4})/);
+  if(!m) return "—";
+  return `${String(MONTHS[m[1]]).padStart(2,"0")}-${String(m[2]).padStart(2,"0")}-${m[3]}`;
+}
 
 /* ---- data loading ---- */
 function parseRecord(txt){
@@ -91,13 +124,20 @@ function fetchErr(host){
    PAGE: CHARACTER SELECT
    ============================================================ */
 function renderRoster(){
+  setSeasonTheme(DEFAULT_SEASON);
   const grid = byId("roster");
   grid.innerHTML = ROSTER.map(p=>`
     <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}">
       <span class="corner"></span>
       <span class="rankchip" id="rank-${p.slug}">—</span>
       <img src="assets/cards/${p.slug}.png" alt="${esc(p.name)}">
-      <span class="meta"><span class="call">${esc(p.name)}</span><span class="sub" id="sub-${p.slug}">@${esc(p.ubi)}</span></span>
+      <span class="meta">
+        <span class="meta-left"><span class="call">${esc(p.name)}</span></span>
+        <span class="meta-right">
+          <span class="rp" id="rp-${p.slug}">—</span>
+          <span class="lastupd" id="upd-${p.slug}">last updated —</span>
+        </span>
+      </span>
     </a>`).join("") + `
     <a class="ocard" href="oversight.html">
       <img src="assets/cards/oversight.png" alt="OVERSIGHT">
@@ -109,7 +149,8 @@ function renderRoster(){
       const {rec}=await loadLatest(p.slug);
       if(rec.meta){
         byId("rank-"+p.slug).textContent = rec.meta.rank || "—";
-        byId("sub-"+p.slug).textContent  = `${rec.meta.rp?fmt(rec.meta.rp)+" RP":"@"+p.ubi}`;
+        byId("rp-"+p.slug).textContent   = rec.meta.rp ? fmt(rec.meta.rp)+" RP" : "—";
+        byId("upd-"+p.slug).textContent   = "last updated "+formatCardUpdated(rec.updated);
       } else { byId("rank-"+p.slug).textContent = "UNRANKED"; }
     }catch(e){ byId("rank-"+p.slug).textContent="—"; }
   });
@@ -124,6 +165,7 @@ async function renderPlayer(){
   const view = byId("view");
 
   PLAYER_SEASON = PLAYER_SEASON || DEFAULT_SEASON;
+  setSeasonTheme(PLAYER_SEASON);
   buildSeasonBtns(slug, PLAYER_SEASON);
   setBrandTag(playerTag(slug, PLAYER_SEASON));
 
@@ -131,6 +173,23 @@ async function renderPlayer(){
   try{ rec = await loadRecord(slug, PLAYER_SEASON); }
   catch(e){ fetchErr(view); return; }
   view.innerHTML = rec.meta ? playerBody(rec) : emptySeason(PLAYER_SEASON);
+  wireOpSideFilter();
+}
+function wireOpSideFilter(root="#view"){
+  document.querySelectorAll(`${root} .op-filter`).forEach(filter=>{
+    const panel=filter.closest(".panel");
+    const tbody=panel?.querySelector("tbody");
+    if(!tbody) return;
+    const btns=filter.querySelectorAll(".op-fbtn");
+    btns.forEach(btn=>btn.onclick=()=>{
+      btns.forEach(b=>b.classList.remove("on"));
+      btn.classList.add("on");
+      const f=btn.dataset.f;
+      tbody.querySelectorAll("tr").forEach(tr=>{
+        tr.style.display=(f==="all"||tr.dataset.side===f)?"":"none";
+      });
+    });
+  });
 }
 function buildSeasonBtns(slug, active){
   const el = byId("seasons");
@@ -157,22 +216,31 @@ function playerBody(rec){
     <div class="milestone"><span class="bar"></span>${m.rpToNext} RP until ${esc(m.nextRank)} · season peak ${fmt(m.peakRp)} · avg HS% ${m.avgHs} · ${m.matches} matches</div>
   </div>`;
 
-  const ops = (rec.operators||[]).slice().sort((a,b)=>b.rounds-a.rounds).map(o=>`<tr>
+  const ops = (rec.operators||[]).slice().sort((a,b)=>b.rounds-a.rounds).map(o=>`<tr data-side="${esc(o.side)}">
     <td class="l"><div class="opcell"><span class="opicon">${opIconImg(o.name)}</span><span class="opname">${esc(o.name)}<span class="side">${o.side}</span></span></div></td>
     <td>${o.rounds}</td><td style="color:${wrColor(o.winPct)};font-weight:700">${o.winPct}%</td>
     <td>${o.kd}</td><td>${o.hs}%</td><td>${o.w}</td><td>${o.l}</td><td>${o.k}</td><td>${o.d}</td><td>${o.a}</td>
     <td>${o.aces||0}</td><td>${o.tks||0}</td></tr>`).join("");
-  const operators=`<div class="panel"><div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
+  const operators=`<div class="panel op-standings"><div class="sect-hdr-row">
+    <div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
+    <div class="op-filter" role="group" aria-label="Filter operators by side">
+      <button type="button" class="op-fbtn on" data-f="all">All</button>
+      <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
+      <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
+    </div></div>
     <div class="scroll"><table><thead><tr><th class="l">Operator</th><th>RDS</th><th>WIN%</th><th>K/D</th><th>HS%</th><th>W</th><th>L</th><th>K</th><th>D</th><th>A</th><th>ACE</th><th>TK</th></tr></thead>
     <tbody>${ops}</tbody></table></div>
     <div class="legend">WIN% — <span class="g">green &ge;55%</span> · <span class="y">gold &ge;45%</span> · <span class="r">red &lt;45%</span></div></div>`;
 
   const rows=(rec.matches||[]).map(x=>{
-    const win=x.result==="W", drp=(x.drp>=0?"+":"")+x.drp;
-    return `<tr class="${win?'win':'loss'}"><td>${esc(x.date)}</td><td class="l">${esc(x.map)}</td>
-      <td class="${win?'res-w':'res-l'}">${x.result}</td><td>${esc(x.score)}</td><td>${fmt(x.rp)}</td>
-      <td class="${x.drp>=0?'rp-pos':'rp-neg'}">${drp}</td><td>${x.k}/${x.d}/${x.a}</td><td>${x.hs}%</td>
-      <td class="l">${(x.badges||[]).join(", ")}</td></tr>`;}).join("");
+    const rb=x.result==="RB", win=!rb&&x.result==="W", drp=(x.drp>=0?"+":"")+x.drp;
+    const resCls=rb?"res-rb":win?"res-w":"res-l";
+    const kda=rb?"—":`${x.k}/${x.d}/${x.a}`;
+    const hs=rb?"—":`${x.hs}%`;
+    return `<tr class="${rb?"rollback":win?"win":"loss"}"><td>${esc(x.date)}</td><td class="l">${esc(x.map)}</td>
+      <td class="${resCls}">${x.result}</td><td>${esc(x.score)}</td><td>${fmt(x.rp)}</td>
+      <td class="${x.drp>=0?'rp-pos':'rp-neg'}">${drp}</td><td>${kda}</td><td>${hs}</td>
+      <td class="l">${rb?"":(x.badges||[]).join(", ")}</td></tr>`;}).join("");
   const matchlog=`<div class="panel"><div class="sect-hdr">// MATCH LOG <span class="n">— ${(rec.matches||[]).length} logged</span></div>
     <div class="scroll"><table><thead><tr><th class="l">Date</th><th class="l">Map</th><th>Res</th><th>Score</th><th>RP</th><th>&Delta;RP</th><th>K/D/A</th><th>HS%</th><th class="l">Badges</th></tr></thead>
     <tbody>${rows}</tbody></table></div></div>`;
@@ -182,15 +250,26 @@ function playerBody(rec){
 
   const debrief=rec.debrief?`<div class="panel"><div class="sect-hdr">// VANTAGE DEBRIEF</div><div class="debrief">${rec.debrief}</div></div>`:"";
 
-  const comments=`<div class="panel"><div class="sect-hdr">// VANTAGE COMMENT LOG <span class="n">— map + 5 operators per refresh, retained</span></div>
+  return cards+operators+matchlog+badges+debrief+playerVoice(rec);
+}
+function seasonReportBody(text){
+  if(!text) return "";
+  if(String(text).includes("<p>")) return `<div class="debrief season-report">${text}</div>`;
+  return `<div class="debrief season-report">${String(text).split(/\n\n+/).filter(Boolean).map(p=>`<p>${esc(p.trim())}</p>`).join("")}</div>`;
+}
+function playerVoice(rec){
+  if(rec.seasonClosed&&rec.seasonReport){
+    return `<div class="panel"><div class="sect-hdr">// VANTAGE — END OF SEASON REPORT <span class="n">— ${esc(rec.season||"")} · final wrap</span></div>
+      ${seasonReportBody(rec.seasonReport)}</div>`;
+  }
+  if(!rec.comments||!rec.comments.length) return "";
+  return `<div class="panel"><div class="sect-hdr">// VANTAGE COMMENT LOG <span class="n">— map + 5 operators per refresh, retained</span></div>
     <div class="callback-note">Older entries kept so VANTAGE can track progression and call back to prior reads.</div>
-    <div class="clog">${(rec.comments||[]).map(c=>`<div class="comment ${c.type==='map'?'map':''} ${c.old?'old':''}">
+    <div class="clog">${rec.comments.map(c=>`<div class="comment ${c.type==='map'?'map':''} ${c.old?'old':''}">
       <span class="cicon">${commentIconImg(c)}</span>
       <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
       <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
       <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
-
-  return cards+operators+matchlog+badges+debrief+comments;
 }
 function emptySeason(season){
   return `<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
@@ -205,6 +284,7 @@ let OV_SEASON=null;
 async function renderOversight(){
   const view=byId("view");
   if(!OV_SEASON) OV_SEASON = DEFAULT_SEASON;
+  setSeasonTheme(OV_SEASON);
   buildOvSeasonBtns(OV_SEASON);
   setBrandTag(oversightTag(OV_SEASON));
 
@@ -217,6 +297,7 @@ async function renderOversight(){
   if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
   view.innerHTML = board(data) + radar(data) + squadComments(squad)
     + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
+  wireOpSideFilter();
 }
 function buildOvSeasonBtns(active){
   const el=byId("seasons");
@@ -268,7 +349,12 @@ function radar(data){
     <div class="radar-legend">${legend}<div class="radar-axes">Each axis scaled min&rarr;max within the squad</div></div></div></div>`;
 }
 function squadComments(squad){
-  if(!squad||!squad.comments||!squad.comments.length) return "";
+  if(!squad) return "";
+  if(squad.seasonClosed&&squad.seasonReport){
+    return `<div class="panel"><div class="sect-hdr">// OVERSIGHT — END OF SEASON REPORT <span class="n">— ${esc(squad.season||"")} · squad final wrap</span></div>
+      ${seasonReportBody(squad.seasonReport)}</div>`;
+  }
+  if(!squad.comments||!squad.comments.length) return "";
   return `<div class="panel"><div class="sect-hdr">// VANTAGE — TEAM DEBRIEF <span class="n">— map + 5 operators, squad-wide</span></div>
     <div class="clog">${squad.comments.map(c=>`<div class="comment ${c.type==='map'?'map':''}">
       <span class="cicon">${commentIconImg(c)}</span>
@@ -330,7 +416,7 @@ function operatorMatrix(data){
   const body=list.map(name=>{
     const o=ops[name];
     const tag=o.side==="ATK"?'<span class="side-tag atk">ATK</span>':'<span class="side-tag def">DEF</span>';
-    let row=`<tr><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
+    let row=`<tr data-side="${esc(o.side)}"><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
     data.forEach(d=>{
       const op=o.cells[d.cfg.slug];
       if(op) row+=`<td>${op.rounds}</td><td style="color:${wrColor(op.winPct)}">${op.winPct}%</td><td>${op.kd.toFixed(2)}</td>`;
@@ -338,15 +424,21 @@ function operatorMatrix(data){
     });
     return row+`</tr>`;
   }).join("");
-  return ovPanel("OPERATOR MATRIX","all season operators · rounds / win% / K/D",
-    `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
+  return `<div class="panel ov-op-matrix"><div class="sect-hdr-row">
+    <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · rounds / win% / K/D</span></div>
+    <div class="op-filter" role="group" aria-label="Filter operators by side">
+      <button type="button" class="op-fbtn on" data-f="all">All</button>
+      <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
+      <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
+    </div></div>
+    <div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div></div>`;
 }
 
 function mapHeatmap(data){
   const maps={};
   data.forEach(d=>{
     (d.rec.matches||[]).forEach(m=>{
-      if(!m.map) return;
+      if(!m.map||m.result==="RB"||m.map==="RP Rollback") return;
       if(!maps[m.map]) maps[m.map]={};
       if(!maps[m.map][d.cfg.slug]) maps[m.map][d.cfg.slug]={w:0,l:0};
       if(m.result==="W") maps[m.map][d.cfg.slug].w++;
@@ -379,6 +471,8 @@ function mapHeatmap(data){
 }
 
 /* ---- boot ---- */
+initFxLayers();
+setSeasonTheme(DEFAULT_SEASON);
 if(PAGE==="roster")    renderRoster();
 else if(PAGE==="player")   renderPlayer();
 else if(PAGE==="oversight") renderOversight();

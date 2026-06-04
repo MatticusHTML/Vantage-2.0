@@ -1,8 +1,4 @@
-# VANTAGE RECORD — Grandmaster Sandman
-**Season:** Y11S1 · Operation Silent Hunt  
-**Updated:** Jun 3, 2026 · 6:00 PM PT
-
-> Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
+# Archive snapshot — Jun 3, 2026 · 6:00 PM PT
 
 ```json
 {
@@ -3501,6 +3497,7 @@
   "seasonLabel": "Operation Silent Hunt",
   "updated": "Jun 3, 2026 · 6:00 PM PT",
   "seasonClosed": true,
-  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Gold III, 2,752 RP.</b> 168 matches. 88–80. 52.4% win rate, 1.32 K/D — the best combined record on the squad. Peak 2,876 hit Gold II before the slide. You were the stack's ceiling this season.</p>\n<p><b>Defense was elite when you committed.</b> Kaid 60.9% over 110 rounds, 1.71 K/D. Thorn 59.1%, 2.14 K/D — fragger numbers on a trap operator. Maestro, Mute, Aruni, Fenrir all popped on smaller samples north of 69%. The flex pool is deep.</p>\n<p><b>Sledge at 187 rounds and 43.3% was the tax.</b> Most-played operator, below-water win rate. Rauora at 95 rounds and 36.8% was the same story on attack — volume without conversion. When the hammer and the ram showed up without a map plan, RP leaked.</p>\n<p>Border and Consulate paid repeatedly — clutches, aces, four-kill rounds on the ledger. Two rollbacks. 42.5% headshot rate with a 1.32 K/D says you win trades more than you lose them; session discipline on loss streaks is the remaining variable.</p>\n<p>Silent Hunt closes with Gold on the card and the squad's best win rate. Cut Sledge and Rauora volume to map-specific plans, keep Kaid-Thorn anchored, and Platinum is the next milestone. You already proved the ceiling — now hold it.</p>"
+  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Gold III, 2,752 RP.</b> 168 matches. 88–80. 52.4% win rate, 1.32 K/D — the best combined record on the squad. Peak 2,876 hit Gold II before the slide. You were the stack's ceiling this season.</p>\n<p><b>Defense was elite when you committed.</b> Kaid 60.9% over 110 rounds, 1.71 K/D. Thorn 59.1%, 2.14 K/D — fragger numbers on a trap operator. Maestro, Mute, Aruni, Fenrir all popped on smaller samples north of 69%. The flex pool is deep.</p>\n<p><b>Sledge at 187 rounds and 43.3% was the tax.</b> Most-played operator, below-water win rate. Rauora at 95 rounds and 36.8% was the same story on attack — volume without conversion. When the hammer and the ram showed up without a map plan, RP leaked.</p>\n<p>Border and Consulate paid repeatedly — clutches, aces, four-kill rounds on the ledger. Two rollbacks. 42.5% headshot rate with a 1.32 K/D says you win trades more than you lose them; session discipline on loss streaks is the remaining variable.</p>\n<p>Silent Hunt closes with Gold on the card and the squad's best win rate. Cut Sledge and Rauora volume to map-specific plans, keep Kaid-Thorn anchored, and Platinum is the next milestone. You already proved the ceiling — now hold it.</p>",
+  "archived": "Jun 3, 2026 · 6:00 PM PT"
 }
 ```

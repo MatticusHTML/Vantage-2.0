@@ -1,26 +1,6 @@
-# VANTAGE RECORD — CunderThock
-**Season:** Y11S1 · Operation Silent Hunt  
-**Updated:** Jun 3, 2026 · 6:00 PM PT
-
-> Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
-
-```json
 {
-  "name": "CunderThock",
-  "meta": {
-    "rank": "Gold III",
-    "rp": 2739,
-    "peakRp": 2748,
-    "nextRank": "Platinum",
-    "rpToNext": 461,
-    "matches": 266,
-    "w": 132,
-    "l": 134,
-    "winRate": 49.6,
-    "kd": 1.07,
-    "avgHs": 41.9,
-    "netRp": 1633
-  },
+  "match_count": 270,
+  "operator_count": 32,
   "matches": [
     {
       "date": "Jun 1",
@@ -3703,8 +3683,8 @@
       "map": "Consulate",
       "result": "W",
       "score": "4:0",
-      "rp": 2063,
-      "drp": 26,
+      "rp": 0,
+      "drp": 0,
       "k": 2,
       "d": 0,
       "a": 1,
@@ -4660,57 +4640,5 @@
       "name": "TK",
       "count": 3
     }
-  ],
-  "debrief": "<p>266 ranked matches — Gold III at 2,739 RP, peak 2,748. One RP bar from a real climb; <b>132–134</b> is coin-flip territory, not a slump.</p><p><b>Zero is the story now</b> — 675 rounds, nearly half your season. The 44% win rate and 0.97 K/D say the pick is volume, not value. Tachanka at 57% over 514 rounds is still the anchor.</p><p><b>Mozzie stays elite</b> — 60.7% and 1.61 K/D on 145 rounds. When you stop defaulting Zero and play the picks that print, the WR follows.</p><p><b>Two-loss rule still applies.</b> Your worst RP nights come from chaining queues after back-to-back Ls. Walk at two.</p>",
-  "comments": [
-    {
-      "type": "map",
-      "subject": "Consulate",
-      "date": "Jun 3",
-      "text": "Consulate keeps showing up in your W column when you stop ego-challenging site. 4:1 and 4:2 wins this week — slow clears, trade the refrag, don't die first for the plant."
-    },
-    {
-      "type": "operator",
-      "subject": "Zero",
-      "date": "Jun 3",
-      "text": "675 rounds at 44% and a 0.97 K/D — that is not a main, that is a habit. Four team kills on the season too. Trim the volume or fix the cam timing; Tachanka and Mozzie are right there."
-    },
-    {
-      "type": "operator",
-      "subject": "Tachanka",
-      "date": "Jun 3",
-      "text": "514 rounds, 57% win rate, 1.05 K/D — the Lord is still your most reliable defender by sample size. When Zero is bleeding RP, this is the reset pick."
-    },
-    {
-      "type": "operator",
-      "subject": "Mozzie",
-      "date": "Jun 3",
-      "text": "60.7% and 1.61 K/D on 145 rounds — quietly your best defender when you actually commit. One ace on the board. Stop treating him as a flex and run the drone economy."
-    },
-    {
-      "type": "operator",
-      "subject": "Striker",
-      "date": "Jun 3",
-      "text": "17 rounds, 2.00 K/D, 50% HS — small sample but the numbers pop. Worth a look on attack when you need a fragger who doesn't need 600 rounds to prove it."
-    },
-    {
-      "type": "operator",
-      "subject": "Twitch",
-      "date": "Jun 3",
-      "text": "43 rounds, 32.6% win rate — the F2 tax is real this season. 65.6% HS means the aim is there; the round impact isn't. Save her for maps you can isolate vertical."
-    },
-    {
-      "type": "operator",
-      "subject": "Mozzie",
-      "date": "May 18",
-      "old": true,
-      "text": "Told you weeks ago Mozzie was trending up. Receipts."
-    }
-  ],
-  "season": "Y11S1",
-  "seasonLabel": "Operation Silent Hunt",
-  "updated": "Jun 3, 2026 · 6:00 PM PT",
-  "seasonClosed": true,
-  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Gold III, 2,739 RP.</b> 266 ranked matches. 132 wins, 134 losses. A coin flip with a pulse — 49.6% win rate and a 1.07 K/D across the heaviest volume on the squad.</p>\n<p>You played more ranked than anyone in the stack and landed in Gold anyway. That is either dedication or addiction; the data does not distinguish. Peak 2,748 RP — Platinum was 461 points away and never quite arrived.</p>\n<p><b>Zero defined your season at 675 rounds and 44.0%.</b> That is not a main, that is a habit. Tachanka at 514 rounds and 57.0% was the Lord holding the line while you fed RP into cam timing. Mozzie at 60.7% and 1.61 K/D over 145 rounds was the receipt we kept writing — the best defender on the account, chronically under-picked relative to Tachanka and Zero volume.</p>\n<p>Four RP rollbacks logged. Badge ledger says you clutch (17 one-v-one clutches, ten three-v-three clutches) and you die first (43 Victim tags). Both can be true. The squad's two-loss rule was written for your worst nights.</p>\n<p>Silent Hunt closes with Gold on the card and a 266-match paper trail. Trim the Zero volume, ride Mozzie and Tachanka, and Y11S2 is a Platinum conversation. Walk at two losses. The Lord abides.</p>"
+  ]
 }
-```

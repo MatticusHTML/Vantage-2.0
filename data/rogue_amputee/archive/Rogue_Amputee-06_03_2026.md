@@ -1,8 +1,4 @@
-# VANTAGE RECORD — Rogue_Amputee
-**Season:** Y11S1 · Operation Silent Hunt  
-**Updated:** Jun 3, 2026 · 6:00 PM PT
-
-> Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
+# Archive snapshot — Jun 3, 2026 · 6:00 PM PT
 
 ```json
 {
@@ -3515,6 +3511,7 @@
   "seasonLabel": "Operation Silent Hunt",
   "updated": "Jun 3, 2026 · 6:00 PM PT",
   "seasonClosed": true,
-  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Silver IV, 2,141 RP.</b> 175 matches. 83–92. 47.4% win rate, 0.91 K/D. You touched 2,395 peak and gave back a chunk of the climb — the season had altitude, not a landing.</p>\n<p>Defense carried the account. <b>Kaid at 130 rounds, 61.5%, 1.27 K/D</b> — your real anchor. Mute at 57.7% over 123 rounds was quiet excellence. Thorn at 63.9% on 97 rounds printed refrags and utility wins. That is a three-operator defensive core hiding in plain sight.</p>\n<p>Attack leaked. <b>Brava at 122 rounds and 45.1%</b> — second-most played, below water. Grim at 47.6% was fine but not a rescue act. The Kludge drone economy never became a primary win condition.</p>\n<p>Two rollbacks. Headshot rate 41.3% — you aim fine; round impact on attack is where seasons stall. When you queued Kaid-Thorn-Mute chains, the stack felt you. When you defaulted Brava out of habit, the stack felt it too.</p>\n<p>Silent Hunt closes Silver with a clear blueprint: anchor defense, fix attack selection, stop donating RP on Brava volume. Gold is 459 RP away on paper. The picks that print are already on the board.</p>"
+  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Silver IV, 2,141 RP.</b> 175 matches. 83–92. 47.4% win rate, 0.91 K/D. You touched 2,395 peak and gave back a chunk of the climb — the season had altitude, not a landing.</p>\n<p>Defense carried the account. <b>Kaid at 130 rounds, 61.5%, 1.27 K/D</b> — your real anchor. Mute at 57.7% over 123 rounds was quiet excellence. Thorn at 63.9% on 97 rounds printed refrags and utility wins. That is a three-operator defensive core hiding in plain sight.</p>\n<p>Attack leaked. <b>Brava at 122 rounds and 45.1%</b> — second-most played, below water. Grim at 47.6% was fine but not a rescue act. The Kludge drone economy never became a primary win condition.</p>\n<p>Two rollbacks. Headshot rate 41.3% — you aim fine; round impact on attack is where seasons stall. When you queued Kaid-Thorn-Mute chains, the stack felt you. When you defaulted Brava out of habit, the stack felt it too.</p>\n<p>Silent Hunt closes Silver with a clear blueprint: anchor defense, fix attack selection, stop donating RP on Brava volume. Gold is 459 RP away on paper. The picks that print are already on the board.</p>",
+  "archived": "Jun 3, 2026 · 6:00 PM PT"
 }
 ```
