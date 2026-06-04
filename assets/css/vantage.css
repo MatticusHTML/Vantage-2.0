@@ -228,6 +228,37 @@ tr.win td{background:var(--win-bg)}tr.loss td{background:var(--loss-bg)}
 
 .foot{text-align:center;color:var(--dim);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:24px 0 0;border-top:1px solid var(--border);margin-top:26px}
 
+/* ---- background music control ---- */
+.bgm-ctl{position:fixed;bottom:18px;right:18px;z-index:50}
+.bgm-btn{
+  width:42px;height:42px;border-radius:4px;border:1px solid var(--border);
+  background:var(--panel);color:var(--purple-lt);font-size:18px;cursor:pointer;
+  transition:.15s;box-shadow:0 4px 20px rgba(0,0,0,.35);
+}
+.bgm-btn:hover{border-color:var(--purple-lt);color:var(--white)}
+.bgm-btn.playing{border-color:var(--gold);color:var(--gold)}
+.bgm-btn.muted{color:var(--dim);opacity:.75}
+.bgm-btn.needs-tap{animation:bgm-pulse 1.5s ease-in-out infinite}
+.bgm-drop{
+  position:absolute;bottom:50px;right:0;min-width:210px;padding:14px;
+  background:var(--panel);border:1px solid var(--border);border-radius:4px;
+  box-shadow:0 8px 32px rgba(0,0,0,.45);
+}
+.bgm-drop-hdr{font-size:10px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;margin-bottom:10px}
+.bgm-mute{
+  display:block;width:100%;margin-bottom:12px;padding:8px 10px;
+  font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;
+  cursor:pointer;background:var(--panel-2);color:var(--white);border:1px solid var(--border);border-radius:2px;
+  transition:.15s;
+}
+.bgm-mute:hover{border-color:var(--purple-lt)}
+.bgm-vol-lbl{display:block;font-size:10px;letter-spacing:1px;color:var(--dim);text-transform:uppercase;margin-bottom:6px}
+.bgm-vol{width:100%;accent-color:var(--purple-lt);cursor:pointer}
+@keyframes bgm-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(154,92,212,.35)}
+  50%{box-shadow:0 0 0 6px rgba(154,92,212,0)}
+}
+
 .loading,.errbox{text-align:center;padding:60px 20px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;font-size:12px}
 .errbox{color:var(--red)}
 .errbox b{color:var(--white);display:block;font-family:var(--disp);font-size:20px;letter-spacing:2px;margin-bottom:10px}
@@ -280,18 +311,23 @@ body[data-fx="menu"] .fx-grid{
 body[data-fx="menu"] .fx-sweep{
   opacity:.5;
   background:
-    linear-gradient(118deg, transparent 42%, rgba(154,92,212,.08) 49.6%, rgba(220,160,255,.22) 50%, rgba(154,92,212,.08) 50.4%, transparent 58%),
-    linear-gradient(-118deg, transparent 38%, rgba(107,47,160,.06) 49.6%, rgba(180,120,255,.16) 50%, transparent 62%),
-    linear-gradient(90deg, transparent 0%, rgba(154,92,212,.12) 48%, rgba(200,140,255,.2) 50%, rgba(154,92,212,.12) 52%, transparent 100%);
-  background-size:100% 100%, 100% 100%, 220% 100%;
-  animation:menu-laser 9s ease-in-out infinite, hack-sweep 14s ease-in-out infinite;
+    linear-gradient(90deg, transparent calc(50% - 1px), rgba(210,160,255,.45) 50%, transparent calc(50% + 1px)),
+    linear-gradient(125deg, transparent calc(50% - .5px), rgba(154,92,212,.28) 50%, transparent calc(50% + .5px)),
+    linear-gradient(55deg, transparent calc(50% - .5px), rgba(180,110,255,.22) 50%, transparent calc(50% + .5px));
+  background-size:280% 100%, 100% 280%, 100% 280%;
+  animation:laser-h 6s linear infinite, laser-d1 9s linear infinite, laser-d2 11s linear infinite;
   mix-blend-mode:screen;
 }
-body[data-fx="menu"] .fx-scan{
-  opacity:.14;
-  background:repeating-linear-gradient(0deg, rgba(154,92,212,.06) 0 1px, transparent 1px 4px);
-  animation:nv-scan 12s linear infinite;
+body[data-fx="menu"] .fx-smoke{
+  opacity:.4;
+  background:
+    radial-gradient(ellipse 50% 38% at 15% 85%, rgba(107,47,160,.2), transparent 68%),
+    radial-gradient(ellipse 42% 32% at 82% 20%, rgba(154,92,212,.14), transparent 62%),
+    radial-gradient(ellipse 55% 40% at 48% 55%, rgba(60,45,90,.12), transparent 70%);
+  filter:blur(48px);
+  animation:smoke-drift 20s ease-in-out infinite;
 }
+body[data-fx="menu"] .fx-scan{opacity:0}
 body[data-fx="menu"] .fx-hud{
   opacity:.45;
   background:
@@ -314,7 +350,8 @@ body[data-fx="menu"] .fx-noise{
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E");
 }
 
-/* ---- Y11S1 · player dossier only — Zero / night-vision (unchanged vibe) ---- */
+/* ---- Y11S1 · player dossier — Zero / night-vision ---- */
+body[data-page="player"].theme-y11s1,
 body[data-page="player"][data-season="Y11S1"]{
   --bg:#050a08;
   --panel:#08110d;
@@ -327,6 +364,7 @@ body[data-page="player"][data-season="Y11S1"]{
   --white:#d8f5e4;
   --dim:#5a8a6a;
 }
+body[data-page="player"].theme-y11s1 .fx-base,
 body[data-page="player"][data-season="Y11S1"] .fx-base{
   background:
     radial-gradient(ellipse 90% 70% at 50% 45%, rgba(40,120,60,.16), transparent 62%),
@@ -334,6 +372,7 @@ body[data-page="player"][data-season="Y11S1"] .fx-base{
     radial-gradient(600px 400px at 88% 92%, rgba(20,80,40,.12), transparent 60%),
     var(--bg);
 }
+body[data-page="player"].theme-y11s1 .fx-grid,
 body[data-page="player"][data-season="Y11S1"] .fx-grid{
   opacity:.32;
   background-image:
@@ -342,6 +381,7 @@ body[data-page="player"][data-season="Y11S1"] .fx-grid{
   background-size:52px 52px;
   mask-image:radial-gradient(ellipse 75% 65% at 50% 42%, #000 20%, transparent 72%);
 }
+body[data-page="player"].theme-y11s1 .fx-sweep,
 body[data-page="player"][data-season="Y11S1"] .fx-sweep{
   opacity:.45;
   background:linear-gradient(180deg, transparent 0%, rgba(77,255,138,.22) 48%, rgba(120,255,160,.35) 50%, rgba(77,255,138,.22) 52%, transparent 100%);
@@ -350,11 +390,13 @@ body[data-page="player"][data-season="Y11S1"] .fx-sweep{
   animation:nv-beam 7s linear infinite;
   mix-blend-mode:screen;
 }
+body[data-page="player"].theme-y11s1 .fx-scan,
 body[data-page="player"][data-season="Y11S1"] .fx-scan{
   opacity:.26;
   background:repeating-linear-gradient(0deg, rgba(77,255,138,.08) 0 1px, transparent 1px 4px);
   animation:nv-scan 10s linear infinite;
 }
+body[data-page="player"].theme-y11s1 .fx-vignette,
 body[data-page="player"][data-season="Y11S1"] .fx-vignette{
   opacity:1;
   background:
@@ -363,11 +405,13 @@ body[data-page="player"][data-season="Y11S1"] .fx-vignette{
   box-shadow:inset 0 0 120px rgba(0,20,8,.75);
   animation:nv-gain 5.5s ease-in-out infinite;
 }
+body[data-page="player"].theme-y11s1 .fx-noise,
 body[data-page="player"][data-season="Y11S1"] .fx-noise{
   opacity:.07;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
   mix-blend-mode:soft-light;
 }
+body[data-page="player"].theme-y11s1 .fx-hud,
 body[data-page="player"][data-season="Y11S1"] .fx-hud{
   opacity:.55;
   background:
@@ -378,13 +422,19 @@ body[data-page="player"][data-season="Y11S1"] .fx-hud{
     radial-gradient(circle at 50% 50%, rgba(86,255,138,.12) 0 2px, transparent 3px);
   mask-image:radial-gradient(circle at 50% 50%, #000 0 120px, transparent 180px);
 }
+body[data-page="player"].theme-y11s1 .brand .home b,
 body[data-page="player"][data-season="Y11S1"] .brand .home b{color:var(--purple-lt)}
+body[data-page="player"].theme-y11s1 th,
 body[data-page="player"][data-season="Y11S1"] th{color:var(--purple-lt)}
+body[data-page="player"].theme-y11s1 .panel::before,
 body[data-page="player"][data-season="Y11S1"] .panel::before{border-color:rgba(86,255,138,.45)}
+body[data-page="player"].theme-y11s1 .comment,
 body[data-page="player"][data-season="Y11S1"] .comment{border-left-color:var(--purple-lt)}
+body[data-page="player"].theme-y11s1 .debrief p::before,
 body[data-page="player"][data-season="Y11S1"] .debrief p::before{color:var(--purple-lt)}
 
-/* ---- Y11S2 · player dossier only — grayscale hack + RGB glitch ---- */
+/* ---- Y11S2 · player dossier — grayscale hack + RGB glitch ---- */
+body[data-page="player"].theme-y11s2,
 body[data-page="player"][data-season="Y11S2"]{
   --bg:#080809;
   --panel:#0e0e11;
@@ -396,65 +446,85 @@ body[data-page="player"][data-season="Y11S2"]{
   --season-btn-bg:rgba(168,168,180,.1);
   --white:#d6d6de;
   --dim:#585860;
+  background:var(--bg);
 }
+body[data-page="player"].theme-y11s2 .fx-base,
 body[data-page="player"][data-season="Y11S2"] .fx-base{
   background:
-    radial-gradient(900px 480px at 70% -8%, rgba(120,120,130,.12), transparent 58%),
-    radial-gradient(600px 360px at 10% 90%, rgba(80,80,88,.08), transparent 55%),
+    radial-gradient(900px 480px at 70% -8%, rgba(120,120,130,.14), transparent 58%),
+    radial-gradient(600px 360px at 10% 90%, rgba(80,80,88,.1), transparent 55%),
     linear-gradient(180deg, #0a0a0c 0%, #121214 50%, #080809 100%);
 }
+body[data-page="player"].theme-y11s2 .fx-grid,
 body[data-page="player"][data-season="Y11S2"] .fx-grid{
-  opacity:.2;
+  opacity:.22;
   background-image:
-    linear-gradient(rgba(160,160,168,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(140,140,148,.04) 1px, transparent 1px);
+    linear-gradient(rgba(160,160,168,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(140,140,148,.05) 1px, transparent 1px);
   background-size:40px 40px;
   animation:grid-drift 26s linear infinite;
 }
+body[data-page="player"].theme-y11s2 .fx-scan,
 body[data-page="player"][data-season="Y11S2"] .fx-scan{
-  opacity:.1;
-  background:repeating-linear-gradient(0deg, rgba(180,180,188,.06) 0 2px, transparent 2px 7px);
+  opacity:.12;
+  background:repeating-linear-gradient(0deg, rgba(180,180,188,.07) 0 2px, transparent 2px 7px);
   animation:hack-flicker 5s steps(1) infinite;
 }
-body[data-page="player"][data-season="Y11S2"] .fx-glitch{opacity:1}
+body[data-page="player"].theme-y11s2 .fx-glitch,
+body[data-page="player"][data-season="Y11S2"] .fx-glitch{
+  opacity:1;
+  overflow:hidden;
+  background:repeating-linear-gradient(0deg, rgba(80,220,120,.1) 0 1px, transparent 1px 18px);
+  animation:glitch-burst 5.2s steps(1,end) infinite;
+}
+body[data-page="player"].theme-y11s2 .fx-glitch::before,
+body[data-page="player"].theme-y11s2 .fx-glitch::after,
 body[data-page="player"][data-season="Y11S2"] .fx-glitch::before,
 body[data-page="player"][data-season="Y11S2"] .fx-glitch::after{
   content:"";position:absolute;inset:0;pointer-events:none;
 }
+body[data-page="player"].theme-y11s2 .fx-glitch::before,
 body[data-page="player"][data-season="Y11S2"] .fx-glitch::before{
-  background:repeating-linear-gradient(0deg, rgba(255,60,80,.14) 0 2px, transparent 2px 9px);
+  background:repeating-linear-gradient(0deg, rgba(255,60,80,.16) 0 2px, transparent 2px 9px);
   mix-blend-mode:screen;
   animation:glitch-chroma-r 5.2s steps(1,end) infinite;
 }
+body[data-page="player"].theme-y11s2 .fx-glitch::after,
 body[data-page="player"][data-season="Y11S2"] .fx-glitch::after{
-  background:repeating-linear-gradient(0deg, rgba(60,180,255,.14) 0 2px, transparent 2px 9px);
+  background:repeating-linear-gradient(0deg, rgba(60,180,255,.16) 0 2px, transparent 2px 9px);
   mix-blend-mode:screen;
   animation:glitch-chroma-b 5.2s steps(1,end) infinite;
 }
-body[data-page="player"][data-season="Y11S2"] .fx-glitch{
-  background:repeating-linear-gradient(0deg, rgba(80,220,120,.08) 0 1px, transparent 1px 18px);
-  animation:glitch-burst 5.2s steps(1,end) infinite;
-}
+body[data-page="player"].theme-y11s2 .fx-sweep,
 body[data-page="player"][data-season="Y11S2"] .fx-sweep{
-  opacity:.15;
-  background:linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent);
+  opacity:.18;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent);
   background-size:180% 100%;
   animation:hack-sweep 7s ease-in-out infinite;
 }
+body[data-page="player"].theme-y11s2 .fx-vignette,
 body[data-page="player"][data-season="Y11S2"] .fx-vignette{
-  opacity:.65;
-  background:radial-gradient(ellipse at center, transparent 48%, rgba(0,0,0,.55) 100%);
+  opacity:.7;
+  background:radial-gradient(ellipse at center, transparent 46%, rgba(0,0,0,.58) 100%);
 }
+body[data-page="player"].theme-y11s2 .fx-noise,
 body[data-page="player"][data-season="Y11S2"] .fx-noise{
-  opacity:.06;
+  opacity:.07;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation:noise-flicker 2.8s steps(4) infinite;
   filter:grayscale(1);
 }
+body[data-page="player"].theme-y11s2 .fx-smoke,
+body[data-page="player"][data-season="Y11S2"] .fx-smoke{opacity:0}
+body[data-page="player"].theme-y11s2 .brand .home b,
 body[data-page="player"][data-season="Y11S2"] .brand .home b{color:#9898a6}
+body[data-page="player"].theme-y11s2 th,
 body[data-page="player"][data-season="Y11S2"] th{color:#b8b8c4}
+body[data-page="player"].theme-y11s2 .panel::before,
 body[data-page="player"][data-season="Y11S2"] .panel::before{border-color:#686874}
+body[data-page="player"].theme-y11s2 .debrief p::before,
 body[data-page="player"][data-season="Y11S2"] .debrief p::before{color:#9898a6}
+body[data-page="player"].theme-y11s2 .season-btn.on,
 body[data-page="player"][data-season="Y11S2"] .season-btn.on{color:#d6d6de;border-color:#888894}
 
 /* ---- OVERSIGHT — gold command deck (always) ---- */
@@ -542,6 +612,22 @@ body[data-fx="oversight"] .sect-hdr{color:var(--gold)}
 body[data-fx="oversight"] .debrief p::before{color:var(--gold)}
 body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rgba(255,200,0,.08)}
 
+@keyframes laser-h{
+  0%{background-position:120% 0, 0 0, 0 0}
+  100%{background-position:-120% 0, 0 0, 0 0}
+}
+@keyframes laser-d1{
+  0%{background-position:0 0, 0 120%, 0 0}
+  100%{background-position:0 0, 0 -120%, 0 0}
+}
+@keyframes laser-d2{
+  0%{background-position:0 0, 0 0, 0 120%}
+  100%{background-position:0 0, 0 0, 0 -120%}
+}
+@keyframes smoke-drift{
+  0%,100%{transform:translate(0,0) scale(1);opacity:.35}
+  50%{transform:translate(2%,-1.5%) scale(1.04);opacity:.45}
+}
 @keyframes menu-laser{
   0%,100%{opacity:.4;filter:brightness(1)}
   50%{opacity:.6;filter:brightness(1.08)}
@@ -612,10 +698,11 @@ body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rg
 }
 
 @media(prefers-reduced-motion:reduce){
-  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-vignette{animation:none!important}
+  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-smoke,.fx-vignette{animation:none!important}
 }
 
 @media(max-width:760px){
   body[data-fx="oversight"] .fx-hud{background-size:50px 2px, 2px 50px, 50px 2px, 2px 50px, 50px 2px, 2px 50px, 50px 2px, 2px 50px, 30px 1px, 1px 30px, 30px 1px, 1px 30px, 30px 1px, 1px 30px, 30px 1px, 1px 30px, 180px 1px, 10px 10px}
+  body[data-page="player"].theme-y11s1 .fx-hud,
   body[data-page="player"][data-season="Y11S1"] .fx-hud{opacity:.35}
 }

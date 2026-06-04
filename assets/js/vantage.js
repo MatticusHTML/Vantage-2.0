@@ -64,6 +64,7 @@ function initFxLayers(){
     '<div class="fx fx-base"></div>',
     '<div class="fx fx-grid"></div>',
     '<div class="fx fx-sweep"></div>',
+    '<div class="fx fx-smoke"></div>',
     '<div class="fx fx-scan"></div>',
     '<div class="fx fx-vignette"></div>',
     '<div class="fx fx-noise"></div>',
@@ -72,20 +73,28 @@ function initFxLayers(){
   ].join("");
   document.body.prepend(root);
 }
+function clearThemeClasses(){
+  document.body.classList.remove("theme-y11s1","theme-y11s2");
+}
 function applyMenuTheme(){
   initFxLayers();
   delete document.body.dataset.season;
   document.body.dataset.fx="menu";
+  clearThemeClasses();
 }
 function applyPlayerSeasonTheme(season){
   initFxLayers();
   delete document.body.dataset.fx;
-  document.body.dataset.season=season||DEFAULT_SEASON;
+  clearThemeClasses();
+  const s=season||DEFAULT_SEASON;
+  document.body.dataset.season=s;
+  document.body.classList.add(s==="Y11S1"?"theme-y11s1":"theme-y11s2");
 }
 function applyOversightTheme(){
   initFxLayers();
   delete document.body.dataset.season;
   document.body.dataset.fx="oversight";
+  clearThemeClasses();
 }
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
 function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
@@ -478,8 +487,78 @@ function mapHeatmap(data){
     `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
 }
 
+/* ---- background music ---- */
+const BGM_KEY="vantage-bgm-vol";
+const BGM_MUTE_KEY="vantage-bgm-muted";
+function initBgm(){
+  if(document.getElementById("vantage-bgm")) return;
+  const wrap=document.createElement("div");
+  wrap.className="bgm-ctl";
+  wrap.innerHTML=`<button type="button" class="bgm-btn" id="bgm-btn" aria-label="Background music volume" aria-expanded="false" title="Volume">&#9835;</button>
+    <div class="bgm-drop" id="bgm-drop" hidden>
+      <div class="bgm-drop-hdr">// AMBIENT AUDIO</div>
+      <button type="button" class="bgm-mute" id="bgm-mute">Mute</button>
+      <label class="bgm-vol-lbl" for="bgm-vol">Volume</label>
+      <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="35">
+    </div>
+    <audio id="vantage-bgm" loop preload="auto" src="${BASE}assets/audio/vibe-shard.mp3"></audio>`;
+  document.body.appendChild(wrap);
+
+  const audio=byId("vantage-bgm");
+  const btn=byId("bgm-btn");
+  const drop=byId("bgm-drop");
+  const muteBtn=byId("bgm-mute");
+  const slider=byId("bgm-vol");
+  let muted=localStorage.getItem(BGM_MUTE_KEY)==="1";
+  let vol=parseInt(localStorage.getItem(BGM_KEY),10);
+  if(isNaN(vol)) vol=35;
+
+  function syncUi(){
+    slider.value=muted?0:vol;
+    muteBtn.textContent=muted?"Unmute":"Mute";
+    btn.classList.toggle("muted",muted);
+    btn.classList.toggle("playing",!audio.paused&&!muted);
+  }
+  function applyVol(){
+    audio.volume=muted?0:Math.max(0,Math.min(1,vol/100));
+    syncUi();
+  }
+  function tryPlay(){
+    if(muted) return;
+    audio.play().then(()=>{ btn.classList.remove("needs-tap"); syncUi(); })
+      .catch(()=>{ btn.classList.add("needs-tap"); });
+  }
+
+  applyVol();
+  tryPlay();
+  document.addEventListener("click",()=>{ if(!muted&&audio.paused) tryPlay(); },{once:true});
+
+  btn.onclick=e=>{
+    e.stopPropagation();
+    const open=!drop.hidden;
+    drop.hidden=open;
+    btn.setAttribute("aria-expanded",String(!open));
+  };
+  muteBtn.onclick=e=>{
+    e.stopPropagation();
+    if(muted){ muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); tryPlay(); }
+    else{ muted=true; localStorage.setItem(BGM_MUTE_KEY,"1"); audio.pause(); applyVol(); }
+  };
+  slider.oninput=()=>{
+    vol=parseInt(slider.value,10);
+    localStorage.setItem(BGM_KEY,String(vol));
+    if(vol===0){ muted=true; localStorage.setItem(BGM_MUTE_KEY,"1"); audio.pause(); }
+    else{ muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); tryPlay(); }
+    applyVol();
+  };
+  document.addEventListener("click",e=>{
+    if(!wrap.contains(e.target)){ drop.hidden=true; btn.setAttribute("aria-expanded","false"); }
+  });
+}
+
 /* ---- boot ---- */
 initFxLayers();
+initBgm();
 if(PAGE==="roster")       { applyMenuTheme(); renderRoster(); }
 else if(PAGE==="player")   renderPlayer();
 else if(PAGE==="oversight") renderOversight();
