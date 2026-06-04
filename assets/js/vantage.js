@@ -72,12 +72,20 @@ function initFxLayers(){
   ].join("");
   document.body.prepend(root);
 }
-function setSeasonTheme(season){
+function applyMenuTheme(){
   initFxLayers();
-  const s=season||DEFAULT_SEASON;
-  document.body.dataset.season=s;
-  if(PAGE==="oversight") document.body.dataset.fx="oversight";
-  else delete document.body.dataset.fx;
+  delete document.body.dataset.season;
+  document.body.dataset.fx="menu";
+}
+function applyPlayerSeasonTheme(season){
+  initFxLayers();
+  delete document.body.dataset.fx;
+  document.body.dataset.season=season||DEFAULT_SEASON;
+}
+function applyOversightTheme(){
+  initFxLayers();
+  delete document.body.dataset.season;
+  document.body.dataset.fx="oversight";
 }
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
 function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
@@ -124,7 +132,7 @@ function fetchErr(host){
    PAGE: CHARACTER SELECT
    ============================================================ */
 function renderRoster(){
-  setSeasonTheme(DEFAULT_SEASON);
+  applyMenuTheme();
   const grid = byId("roster");
   grid.innerHTML = ROSTER.map(p=>`
     <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}">
@@ -165,7 +173,7 @@ async function renderPlayer(){
   const view = byId("view");
 
   PLAYER_SEASON = PLAYER_SEASON || DEFAULT_SEASON;
-  setSeasonTheme(PLAYER_SEASON);
+  applyPlayerSeasonTheme(PLAYER_SEASON);
   buildSeasonBtns(slug, PLAYER_SEASON);
   setBrandTag(playerTag(slug, PLAYER_SEASON));
 
@@ -284,7 +292,7 @@ let OV_SEASON=null;
 async function renderOversight(){
   const view=byId("view");
   if(!OV_SEASON) OV_SEASON = DEFAULT_SEASON;
-  setSeasonTheme(OV_SEASON);
+  applyOversightTheme();
   buildOvSeasonBtns(OV_SEASON);
   setBrandTag(oversightTag(OV_SEASON));
 
@@ -472,7 +480,6 @@ function mapHeatmap(data){
 
 /* ---- boot ---- */
 initFxLayers();
-setSeasonTheme(DEFAULT_SEASON);
-if(PAGE==="roster")    renderRoster();
+if(PAGE==="roster")       { applyMenuTheme(); renderRoster(); }
 else if(PAGE==="player")   renderPlayer();
 else if(PAGE==="oversight") renderOversight();
