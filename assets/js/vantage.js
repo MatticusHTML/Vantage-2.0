@@ -166,73 +166,170 @@ function clearThemeClasses(){
   document.body.classList.remove("theme-y11s1","theme-y11s2");
 }
 
-/* Y11S2 · post-glitch terminal skull debris (option B: hex + brackets) */
-const SKULL_LABELS = ["{☠}","0xDEAD","[0xDEAD]","{0x☠}","<☠_LOG>","// INTRUSION","[SKULL_TRACE]"];
-let skullSpawnerOn = false;
-let skullGlitchHandler = null;
-let skullBootTimer = null;
+/* Y11S2 · Dokkaebi background intercepts (pool: data/doka/Y11S2/pool.json) */
+const DOKA_AMBIENT_FALLBACK = ["[TRACE DETECTED]","0xDEAD","[ghost process]","// SYSTEM_OVERRIDE","packet sniffing..."];
+let dokaPool = null;
+let dokaPoolPromise = null;
+let dokaSpawnerOn = false;
+let dokaGlitchHandler = null;
+let dokaBootTimer = null;
+let dokaPlayerSlug = null;
 
-function stopSkullSpawner(){
-  skullSpawnerOn = false;
-  if(skullBootTimer){ clearTimeout(skullBootTimer); skullBootTimer = null; }
+async function loadDokaPool(){
+  if(dokaPool && dokaPool.season === "Y11S2") return dokaPool;
+  if(dokaPoolPromise) return dokaPoolPromise;
+  dokaPoolPromise = fetch(`${BASE}data/doka/Y11S2/pool.json`, {cache:"no-store"})
+    .then(r => r.ok ? r.json() : null)
+    .then(j => { dokaPool = j; return j; })
+    .catch(() => null);
+  return dokaPoolPromise;
+}
+
+function stopDokaSpawner(){
+  dokaSpawnerOn = false;
+  dokaPlayerSlug = null;
+  if(dokaBootTimer){ clearTimeout(dokaBootTimer); dokaBootTimer = null; }
   const glitch = document.querySelector(".fx-glitch");
-  if(glitch && skullGlitchHandler) glitch.removeEventListener("animationiteration", skullGlitchHandler);
-  skullGlitchHandler = null;
-  document.querySelectorAll(".fx-skull").forEach(el => el.remove());
+  if(glitch && dokaGlitchHandler) glitch.removeEventListener("animationiteration", dokaGlitchHandler);
+  dokaGlitchHandler = null;
+  document.querySelectorAll(".fx-doka-intercept").forEach(el => el.remove());
 }
 
-function skullSpawnPos(){
+function stopDokaEffects(){
+  stopDokaSpawner();
+  removeDokaIntro();
+}
+
+function dokaSpawnPos(){
   const r = Math.random();
-  if(r < 0.34) return { left: 2 + Math.random() * 11, top: 8 + Math.random() * 78 };
-  if(r < 0.68) return { left: 87 + Math.random() * 10, top: 8 + Math.random() * 78 };
-  if(r < 0.84) return { left: 12 + Math.random() * 76, top: 3 + Math.random() * 7 };
-  return { left: 10 + Math.random() * 72, top: 90 + Math.random() * 7 };
+  if(r < 0.45) return { left: 1 + Math.random() * 11, top: 10 + Math.random() * 78 };
+  if(r < 0.90) return { left: 88 + Math.random() * 10, top: 10 + Math.random() * 78 };
+  if(r < 0.95) return { left: 14 + Math.random() * 72, top: 2 + Math.random() * 4 };
+  return { left: 14 + Math.random() * 72, top: 94 + Math.random() * 4 };
 }
 
-function spawnSkullGlyph(){
-  if(!skullSpawnerOn) return;
+function pickAmbientLine(){
+  const pool = dokaPool?.ambient?.length ? dokaPool.ambient : DOKA_AMBIENT_FALLBACK;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function pickDokaLine(){
+  if(!dokaPool) return pickAmbientLine();
+  if(Math.random() > 0.30) return pickAmbientLine();
+  const slug = dokaPlayerSlug;
+  const roll = Math.random();
+  let lines;
+  if(roll < 0.35 && slug && dokaPool.players?.[slug]?.length) lines = dokaPool.players[slug];
+  else if(roll < 0.75 && dokaPool.gossip?.length) lines = dokaPool.gossip;
+  else if(dokaPool.global?.length) lines = dokaPool.global;
+  else lines = dokaPool.ambient || DOKA_AMBIENT_FALLBACK;
+  return lines[Math.floor(Math.random() * lines.length)];
+}
+
+function spawnDokaIntercept(){
+  if(!dokaSpawnerOn) return;
   const host = document.querySelector(".fx-skulls");
   if(!host) return;
+  const text = pickDokaLine();
   const el = document.createElement("span");
-  el.className = "fx-skull";
-  const pos = skullSpawnPos();
+  el.className = "fx-doka-intercept" + (text.length > 22 ? " fx-doka-quip" : "");
+  const pos = dokaSpawnPos();
   el.style.left = pos.left + "%";
   el.style.top = pos.top + "%";
-  el.textContent = SKULL_LABELS[Math.floor(Math.random() * SKULL_LABELS.length)];
+  el.textContent = text;
   const life = 5000 + Math.random() * 5000;
   el.style.animationDuration = life + "ms";
   host.appendChild(el);
   el.addEventListener("animationend", () => el.remove(), { once: true });
 }
 
-function spawnSkullBurst(){
-  if(!skullSpawnerOn) return;
+function spawnDokaBurst(){
+  if(!dokaSpawnerOn) return;
   const n = 2 + Math.floor(Math.random() * 3);
   for(let i = 0; i < n; i++){
-    setTimeout(spawnSkullGlyph, i * (350 + Math.random() * 550));
+    setTimeout(spawnDokaIntercept, i * (350 + Math.random() * 550));
   }
 }
 
-function startSkullSpawner(){
-  stopSkullSpawner();
+async function startDokaSpawner(playerSlug){
+  stopDokaSpawner();
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   initFxLayers();
+  await loadDokaPool();
   const glitch = document.querySelector(".fx-glitch");
   if(!glitch) return;
-  skullSpawnerOn = true;
-  skullGlitchHandler = () => {
-    setTimeout(spawnSkullBurst, 650 + Math.random() * 850);
+  dokaSpawnerOn = true;
+  dokaPlayerSlug = playerSlug || null;
+  dokaGlitchHandler = () => {
+    setTimeout(spawnDokaBurst, 650 + Math.random() * 850);
   };
-  glitch.addEventListener("animationiteration", skullGlitchHandler);
-  skullBootTimer = setTimeout(() => { if(skullSpawnerOn) spawnSkullBurst(); }, 4700);
+  glitch.addEventListener("animationiteration", dokaGlitchHandler);
+  dokaBootTimer = setTimeout(() => { if(dokaSpawnerOn) spawnDokaBurst(); }, 4700);
+}
+
+/* Y11S2 · Dokkaebi hack intro (first ~2.5s on dossier load) */
+let dokaIntroTimer = null;
+let dokaIntroFadeTimer = null;
+
+function removeDokaIntro(){
+  document.querySelector(".doka-intro")?.remove();
+  document.body.classList.remove("doka-intro-active");
+  if(dokaIntroTimer){ clearTimeout(dokaIntroTimer); dokaIntroTimer = null; }
+  if(dokaIntroFadeTimer){ clearTimeout(dokaIntroFadeTimer); dokaIntroFadeTimer = null; }
+}
+
+function showDokaIntro(){
+  removeDokaIntro();
+  if(PAGE !== "roster") return;
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const el = document.createElement("div");
+  el.className = "doka-intro";
+  el.setAttribute("aria-hidden", "true");
+  el.innerHTML = [
+    '<div class="doka-intro-scan"></div>',
+    '<div class="doka-intro-noise"></div>',
+    '<div class="doka-intro-slice"></div>',
+    '<div class="doka-intro-grid">',
+      '<div class="doka-intro-left">',
+        '<div class="doka-intro-line doka-intro-line-1">&gt; ACCESSING DATABASE...</div>',
+        '<div class="doka-intro-line doka-intro-line-2">&gt; BYPASSING FIREWALL...</div>',
+        '<div class="doka-intro-line doka-intro-line-3">&gt; DECRYPTING FILES...</div>',
+        '<div class="doka-intro-line doka-intro-line-4">&gt; UPLOADING PAYLOAD...</div>',
+        '<div class="doka-intro-line doka-intro-line-5">&gt; CONTROL ACQUIRED.</div>',
+        '<div class="doka-intro-stamp">SYSTEM HACKED</div>',
+      '</div>',
+      '<div class="doka-intro-center">',
+        '<div class="doka-intro-glyph" aria-hidden="true">☠</div>',
+        '<div class="doka-intro-title"><span class="doka-intro-glitch" data-text="DOKKAEBI">DOKKAEBI</span></div>',
+        '<div class="doka-intro-tag">I SEE EVERYTHING</div>',
+      '</div>',
+      '<div class="doka-intro-right">',
+        '<div class="doka-intro-line doka-intro-line-1">&gt; USER: ADMIN</div>',
+        '<div class="doka-intro-line doka-intro-line-2">&gt; STATUS: COMPROMISED</div>',
+        '<div class="doka-intro-line doka-intro-line-3">&gt; PERMISSIONS: FULL</div>',
+        '<div class="doka-intro-line doka-intro-line-4">&gt; TRACE: OFFLINE</div>',
+        '<div class="doka-intro-stamp doka-intro-stamp-right">YOU HAVE BEEN OWNED</div>',
+        '<div class="doka-intro-sign">— DOKKAEBI WAS HERE</div>',
+      '</div>',
+    '</div>',
+  ].join("");
+  document.body.appendChild(el);
+  document.body.classList.add("doka-intro-active");
+  requestAnimationFrame(() => el.classList.add("doka-intro--on"));
+  dokaIntroTimer = setTimeout(() => {
+    el.classList.add("doka-intro--out");
+    dokaIntroFadeTimer = setTimeout(removeDokaIntro, 600);
+  }, 2500);
 }
 
 function applyMenuTheme(){
   initFxLayers();
-  stopSkullSpawner();
+  stopDokaSpawner();
+  removeDokaIntro();
   delete document.body.dataset.season;
   document.body.dataset.fx="menu";
   clearThemeClasses();
+  showDokaIntro();
 }
 function applyPlayerSeasonTheme(season){
   initFxLayers();
@@ -241,12 +338,13 @@ function applyPlayerSeasonTheme(season){
   const s=season||DEFAULT_SEASON;
   document.body.dataset.season=s;
   document.body.classList.add(s==="Y11S1"?"theme-y11s1":"theme-y11s2");
-  if(s==="Y11S2") startSkullSpawner();
-  else stopSkullSpawner();
+  if(s==="Y11S2") startDokaSpawner(document.body.dataset.player);
+  else stopDokaSpawner();
+  removeDokaIntro();
 }
 function applyOversightTheme(){
   initFxLayers();
-  stopSkullSpawner();
+  stopDokaEffects();
   delete document.body.dataset.season;
   document.body.dataset.fx="oversight";
   clearThemeClasses();

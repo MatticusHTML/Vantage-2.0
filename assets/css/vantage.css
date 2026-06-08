@@ -521,24 +521,32 @@ body[data-page="player"][data-season="Y11S2"] .fx-glitch::after{
 }
 body[data-page="player"].theme-y11s2 .fx-skulls,
 body[data-page="player"][data-season="Y11S2"] .fx-skulls{opacity:1}
-body[data-page="player"].theme-y11s2 .fx-skull,
-body[data-page="player"][data-season="Y11S2"] .fx-skull{
+body[data-page="player"].theme-y11s2 .fx-doka-intercept,
+body[data-page="player"][data-season="Y11S2"] .fx-doka-intercept{
   position:absolute;
   font-family:var(--mono);
-  font-size:clamp(9px,1.05vw,12px);
+  font-size:clamp(9px,1.05vw,11px);
   font-weight:500;
-  letter-spacing:.1em;
-  color:rgba(80,220,120,.13);
+  letter-spacing:.06em;
+  color:#3ee08f;
   text-shadow:
-    -2px 0 rgba(255,55,75,.45),
-    2px 0 rgba(55,175,255,.45),
-    0 0 14px rgba(80,220,120,.18);
+    -1px 0 rgba(255,70,90,.35),
+    1px 0 rgba(70,180,255,.35),
+    0 0 10px rgba(62,224,143,.25);
   white-space:nowrap;
   user-select:none;
   pointer-events:none;
   opacity:0;
-  filter:blur(.35px);
-  animation:skull-ghost linear forwards;
+  filter:blur(.2px);
+  animation:doka-ghost linear forwards;
+  max-width:min(42vw,320px);
+}
+body[data-page="player"].theme-y11s2 .fx-doka-quip,
+body[data-page="player"][data-season="Y11S2"] .fx-doka-quip{
+  font-size:clamp(8px,.95vw,10px);
+  line-height:1.45;
+  white-space:normal;
+  font-style:italic;
 }
 body[data-page="player"].theme-y11s2 .fx-sweep,
 body[data-page="player"][data-season="Y11S2"] .fx-sweep{
@@ -571,6 +579,133 @@ body[data-page="player"].theme-y11s2 .debrief p::before,
 body[data-page="player"][data-season="Y11S2"] .debrief p::before{color:#9898a6}
 body[data-page="player"].theme-y11s2 .season-btn.on,
 body[data-page="player"][data-season="Y11S2"] .season-btn.on{color:#d6d6de;border-color:#888894}
+
+/* ---- Y11S2 · Dokkaebi hack intro overlay (~2.5s on dossier load) ---- */
+body.doka-intro-active{overflow:hidden}
+.doka-intro{
+  position:fixed;inset:0;z-index:8000;pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 45%, rgba(120,0,20,.35), transparent 65%),
+    linear-gradient(180deg, rgba(12,0,2,.97) 0%, rgba(6,0,0,.94) 100%);
+  opacity:0;visibility:hidden;
+  transition:opacity .55s ease, visibility .55s ease;
+}
+.doka-intro--on{opacity:1;visibility:visible}
+.doka-intro--out{opacity:0;visibility:hidden}
+.doka-intro-scan{
+  position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg, rgba(255,40,60,.12) 0 1px, transparent 1px 3px);
+  animation:doka-intro-scan .08s steps(2) infinite;
+}
+.doka-intro-noise{
+  position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:doka-intro-noise .15s steps(4) infinite;
+}
+.doka-intro-slice{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg, rgba(255,0,40,.08), transparent 40%, rgba(0,120,255,.06));
+  animation:doka-intro-slice 2.5s steps(1,end) forwards;
+}
+.doka-intro-grid{
+  position:absolute;inset:0;display:grid;
+  grid-template-columns:1fr minmax(200px,420px) 1fr;
+  align-items:center;padding:clamp(16px,4vw,48px);
+  font-family:var(--mono);color:#ff2848;
+  text-shadow:0 0 12px rgba(255,40,70,.45);
+}
+.doka-intro-left,.doka-intro-right{
+  font-size:clamp(9px,1vw,11px);line-height:1.7;letter-spacing:.06em;
+  opacity:0;animation:doka-intro-panel-in .4s ease forwards;
+}
+.doka-intro-right{animation-delay:.08s;text-align:right}
+.doka-intro-line{opacity:0;animation:doka-intro-line-in .25s ease forwards}
+.doka-intro-line-1{animation-delay:.12s}
+.doka-intro-line-2{animation-delay:.28s}
+.doka-intro-line-3{animation-delay:.44s}
+.doka-intro-line-4{animation-delay:.6s}
+.doka-intro-line-5{animation-delay:.76s}
+.doka-intro-stamp{
+  margin-top:18px;font-family:var(--disp);font-weight:800;font-size:clamp(14px,2.2vw,22px);
+  letter-spacing:.14em;color:#fff;text-shadow:0 0 20px rgba(255,50,70,.8), 2px 0 #ff0033, -2px 0 #ff6688;
+  opacity:0;animation:doka-intro-stamp .35s ease forwards;animation-delay:.95s;
+}
+.doka-intro-stamp-right{animation-delay:1.05s}
+.doka-intro-sign{
+  margin-top:10px;font-size:clamp(8px,.85vw,10px);color:rgba(255,120,130,.85);
+  letter-spacing:.12em;opacity:0;animation:doka-intro-stamp .35s ease forwards;animation-delay:1.2s;
+}
+.doka-intro-center{text-align:center;animation:doka-intro-center .5s ease forwards;opacity:0}
+.doka-intro-glyph{
+  font-size:clamp(28px,5vw,48px);line-height:1;margin-bottom:8px;
+  color:#fff;text-shadow:0 0 24px rgba(255,40,60,.9);
+  animation:doka-intro-glyph .6s ease forwards;animation-delay:.2s;opacity:0;
+}
+.doka-intro-title{
+  font-family:var(--disp);font-weight:800;font-size:clamp(32px,7vw,72px);
+  letter-spacing:.08em;line-height:.95;color:#fff;
+}
+.doka-intro-glitch{
+  position:relative;display:inline-block;
+  animation:doka-intro-title-glitch 2.5s steps(1,end) infinite;
+}
+.doka-intro-glitch::before,.doka-intro-glitch::after{
+  content:attr(data-text);position:absolute;left:0;top:0;width:100%;overflow:hidden;
+}
+.doka-intro-glitch::before{
+  color:#ff0033;clip-path:inset(0 0 55% 0);transform:translateX(-3px);
+  animation:doka-intro-chroma 2.5s steps(1,end) infinite;
+}
+.doka-intro-glitch::after{
+  color:#66ccff;clip-path:inset(45% 0 0 0);transform:translateX(3px);
+  animation:doka-intro-chroma 2.5s steps(1,end) infinite;animation-direction:reverse;
+}
+.doka-intro-tag{
+  margin-top:12px;font-family:var(--disp);font-weight:700;
+  font-size:clamp(12px,2vw,20px);letter-spacing:.28em;color:rgba(255,220,220,.9);
+  text-shadow:0 0 16px rgba(255,60,80,.6);
+  animation:doka-intro-tag .4s ease forwards;animation-delay:.55s;opacity:0;
+}
+@keyframes doka-intro-scan{
+  0%,100%{opacity:.85}50%{opacity:.55}
+}
+@keyframes doka-intro-noise{
+  0%{transform:translate(0,0)}25%{transform:translate(-2%,1%)}50%{transform:translate(1%,-1%)}75%{transform:translate(-1%,2%)}
+}
+@keyframes doka-intro-slice{
+  0%,100%{clip-path:none;transform:none}
+  8%{clip-path:inset(12% 0 68% 0);transform:translateX(-8px)}
+  16%{clip-path:inset(48% 0 32% 0);transform:translateX(6px)}
+  24%{clip-path:inset(72% 0 8% 0);transform:translateX(-5px)}
+  32%{clip-path:none;transform:none}
+  55%{clip-path:inset(28% 0 52% 0);transform:translateX(4px)}
+  62%{clip-path:none;transform:none}
+}
+@keyframes doka-intro-panel-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes doka-intro-line-in{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+@keyframes doka-intro-line-in-r{from{opacity:0;transform:translateX(6px)}to{opacity:1;transform:none}}
+.doka-intro-right .doka-intro-line{animation-name:doka-intro-line-in-r}
+@keyframes doka-intro-stamp{from{opacity:0;letter-spacing:.3em}to{opacity:1;letter-spacing:.14em}}
+@keyframes doka-intro-center{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+@keyframes doka-intro-glyph{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:none}}
+@keyframes doka-intro-tag{from{opacity:0;letter-spacing:.4em}to{opacity:1;letter-spacing:.28em}}
+@keyframes doka-intro-title-glitch{
+  0%,78%,100%{transform:none;filter:none}
+  80%{transform:translateX(-4px) skewX(-2deg);filter:brightness(1.3)}
+  82%{transform:translateX(5px);clip-path:inset(20% 0 40% 0)}
+  84%{transform:none;filter:none}
+}
+@keyframes doka-intro-chroma{
+  0%,78%,100%{opacity:0}
+  80%{opacity:.85}
+  84%{opacity:0}
+}
+
+@media(max-width:760px){
+  .doka-intro-grid{grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:20px;text-align:center}
+  .doka-intro-left,.doka-intro-right{text-align:center;font-size:9px}
+  .doka-intro-left .doka-intro-line-5{display:none}
+}
 
 /* ---- OVERSIGHT — gold command deck (always) ---- */
 body[data-fx="oversight"]{
@@ -731,13 +866,16 @@ body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rg
   92%{opacity:.78;transform:translateX(6px);clip-path:inset(28% 0 48% 0)}
   93%{opacity:0;transform:translateX(0)}
 }
-@keyframes skull-ghost{
-  0%{opacity:0;transform:translateY(5px) scale(.95)}
-  6%{opacity:.2}
-  12%{opacity:.13}
-  55%{opacity:.11}
-  82%{opacity:.07}
-  100%{opacity:0;transform:translateY(-3px) scale(1.02)}
+@keyframes doka-ghost{
+  0%{opacity:0;transform:translateY(4px) scale(.98)}
+  4%{opacity:.52}
+  8%{opacity:.58}
+  22%{opacity:.55}
+  35%{opacity:.48}
+  50%{opacity:.38}
+  70%{opacity:.22}
+  85%{opacity:.1}
+  100%{opacity:0;transform:translateY(-2px) scale(1.01)}
 }
 @keyframes hack-sweep{
   0%,100%{background-position:200% 0}
@@ -763,8 +901,10 @@ body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rg
 }
 
 @media(prefers-reduced-motion:reduce){
-  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-smoke,.fx-vignette,.fx-skull{animation:none!important}
+  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-smoke,.fx-vignette,.fx-doka-intercept{animation:none!important}
   .fx-skulls{display:none!important}
+  .doka-intro{display:none!important}
+  body.doka-intro-active{overflow:auto}
 }
 
 @media(max-width:760px){

@@ -156,6 +156,42 @@ When Ubisoft ships a new season, add or replace matching `VANTAGE_*_REFERENCE_<s
 
 ---
 
+## 6c. DOKKAEBI BACKGROUND INTERCEPTS (Y11S2 only — not Y11S3+)
+
+**Scope:** Hidden terminal messages on **Y11S2 player dossiers** only — background FX layer, never over official stats or VANTAGE comments. **Do not port to future seasons** unless the user explicitly requests a new season's pool.
+
+**Persona doc:** Read `DOKKAEBI_PERSONA_REFERENCE.md` at repo root before writing or refreshing intercept lines. Doka is a good-natured gremlin hacker squatting inside VANTAGE — teasing habits, cross-squad gossip, Jegeo/System Override flavor, occasional stealth hype. Short (1–2 lines). Never cruel. Never corrupt real data. No retired tags (no SIERRA-1).
+
+**Pool file:** `data/doka/Y11S2/pool.json`
+
+```jsonc
+{
+  "season": "Y11S2",
+  "updated": "…",
+  "ambient": [ "short system tokens — 70% of spawns" ],
+  "global": [ "season-wide Doka lines" ],
+  "gossip": [ "cross-squad teasing — encouraged" ],
+  "players": {
+    "cunderthock": [ "…" ],
+    "rogue_amputee": [ "…" ],
+    "grandmaster_sandman": [ "…" ],
+    "matticus_hq": [ "…" ]
+  }
+}
+```
+
+**When to refresh the pool:** Every **OVERSIGHT** update — treat it as the squad being fully current. Re-read all four player `current.md` files and rewrite pool entries so teasing matches **live Y11S2 stats, operators, ranks, and recent maps**. Rotate hooks; don't repeat the same line every refresh.
+
+**On player dossiers:** The site loads the pool once per page visit. ~**30%** of background spawns are full Doka lines (weighted **35%** current player · **40%** gossip · **25%** global); ~**70%** are short `ambient` tokens. Spawns bias **left/right margins** so text rarely sits behind the center column.
+
+**OVERSIGHT page itself:** No Doka background FX (gold command deck unchanged).
+
+**Hack intro overlay:** On **roster / menu load** (`index.html`), a ~**2.5s** full-screen red glitch overlay plays (`SYSTEM HACKED` / `DOKKAEBI` / terminal lines), then fades out (~0.6s) — the “hacking into VANTAGE” moment. Not on player dossiers, OVERSIGHT, or Y11S1. Skipped when `prefers-reduced-motion` is set. Y11S2-era site flavor only — not Y11S3+.
+
+**Margin intercepts (green Doka quips):** Y11S2 **player dossiers** only — not roster, not OVERSIGHT.
+
+---
+
 ## 6b. SEASON CLOSE-OUT (only when the user declares the season finished)
 
 **Trigger:** The user explicitly closes a season (e.g. *"Close Y11S1"* / *"Y11S1 is done — run end-of-season"*). **Never** run this on a normal update or comment refresh.
@@ -194,7 +230,7 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 | **Update Player** | "Update CunderThock" + screenshots | Append matches (de-dup), refresh `meta`, replace `operators` if overview given, read §6a reference docs, add the 1+5 comment set, bump `updated`. |
 | **Refresh Comments** | "New reads for Sandman" | Read §6a reference docs; add a fresh 1 map + 5 operator comment set only. Keep all prior comments. |
 | **Operator Update** | "New operator overview for Rogue" | Confirm season-filtered, then full-replace the `operators` array. |
-| **Compare / OVERSIGHT** | "Run OVERSIGHT" | Read §6a reference docs; refresh the squad comment set; the board + radar recompute from player data automatically. |
+| **Compare / OVERSIGHT** | "Run OVERSIGHT" | Read §6a reference docs; refresh the squad comment set; **refresh `data/doka/Y11S2/pool.json`** (§6c); the board + radar recompute from player data automatically. |
 | **Close Season** | "Close Y11S1" (explicit only) | Finalize data, write VANTAGE-voice `seasonReport` (10–40 sentences, no filler) per player + OVERSIGHT, set `seasonClosed: true`, archive snapshots. No new 1+5 comments. |
 | **New Season** | "Start Y11S2" | Populate the existing empty `Y11S2/current.md`; archive a snapshot of the closing season (see §8); confirm new rank thresholds. |
 
