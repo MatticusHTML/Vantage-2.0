@@ -302,6 +302,7 @@ body.modal-open{overflow:hidden}
 .fx-root{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .fx{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
 .fx-root .fx-base{opacity:1}
+.fx-skulls{opacity:0}
 
 /* ---- VANTAGE main menu (roster) — purple sci-fi / laser grid ---- */
 body[data-fx="menu"]{
@@ -518,6 +519,27 @@ body[data-page="player"][data-season="Y11S2"] .fx-glitch::after{
   mix-blend-mode:screen;
   animation:glitch-chroma-b 5.2s steps(1,end) infinite;
 }
+body[data-page="player"].theme-y11s2 .fx-skulls,
+body[data-page="player"][data-season="Y11S2"] .fx-skulls{opacity:1}
+body[data-page="player"].theme-y11s2 .fx-skull,
+body[data-page="player"][data-season="Y11S2"] .fx-skull{
+  position:absolute;
+  font-family:var(--mono);
+  font-size:clamp(9px,1.05vw,12px);
+  font-weight:500;
+  letter-spacing:.1em;
+  color:rgba(80,220,120,.13);
+  text-shadow:
+    -2px 0 rgba(255,55,75,.45),
+    2px 0 rgba(55,175,255,.45),
+    0 0 14px rgba(80,220,120,.18);
+  white-space:nowrap;
+  user-select:none;
+  pointer-events:none;
+  opacity:0;
+  filter:blur(.35px);
+  animation:skull-ghost linear forwards;
+}
 body[data-page="player"].theme-y11s2 .fx-sweep,
 body[data-page="player"][data-season="Y11S2"] .fx-sweep{
   opacity:.18;
@@ -674,28 +696,48 @@ body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rg
   100%{background-position:44px 44px, -44px 44px}
 }
 @keyframes glitch-burst{
-  0%,88%,100%{transform:none;filter:none;clip-path:none}
-  89%{transform:translateX(-4px) skewX(-1.2deg);filter:hue-rotate(20deg);clip-path:inset(8% 0 62% 0)}
-  90%{transform:translateX(5px);clip-path:inset(44% 0 22% 0)}
-  91%{transform:translateX(-3px) skewX(.8deg);clip-path:inset(68% 0 6% 0)}
-  92%{transform:translateX(2px);clip-path:inset(28% 0 48% 0)}
-  93%{transform:none;filter:none;clip-path:none}
+  0%,88%,100%{transform:none;filter:none;clip-path:none;background:repeating-linear-gradient(0deg, rgba(80,220,120,.1) 0 1px, transparent 1px 18px)}
+  89%{transform:translateX(-5px) skewX(-1.4deg);filter:saturate(2.2) brightness(1.15) contrast(1.08);clip-path:inset(8% 0 62% 0);
+    background:
+      repeating-linear-gradient(0deg, rgba(80,255,120,.28) 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(0deg, rgba(80,220,120,.18) 0 1px, transparent 1px 18px)}
+  90%{transform:translateX(6px);clip-path:inset(44% 0 22% 0);filter:saturate(2) brightness(1.12);
+    background:
+      repeating-linear-gradient(0deg, rgba(80,255,120,.24) 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(0deg, rgba(80,220,120,.14) 0 1px, transparent 1px 18px)}
+  91%{transform:translateX(-4px) skewX(.9deg);clip-path:inset(68% 0 6% 0);filter:saturate(2.1) brightness(1.1);
+    background:
+      repeating-linear-gradient(0deg, rgba(80,255,120,.26) 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(0deg, rgba(80,220,120,.16) 0 1px, transparent 1px 18px)}
+  92%{transform:translateX(3px);clip-path:inset(28% 0 48% 0);filter:saturate(1.9) brightness(1.08);
+    background:
+      repeating-linear-gradient(0deg, rgba(80,255,120,.22) 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(0deg, rgba(80,220,120,.12) 0 1px, transparent 1px 18px)}
+  93%{transform:none;filter:none;clip-path:none;background:repeating-linear-gradient(0deg, rgba(80,220,120,.1) 0 1px, transparent 1px 18px)}
 }
 @keyframes glitch-chroma-r{
   0%,88%,100%{opacity:0;transform:translateX(0)}
-  89%{opacity:.7;transform:translateX(-6px);clip-path:inset(8% 0 62% 0)}
-  90%{opacity:.6;transform:translateX(-4px);clip-path:inset(44% 0 22% 0)}
-  91%{opacity:.65;transform:translateX(-5px);clip-path:inset(68% 0 6% 0)}
-  92%{opacity:.5;transform:translateX(-3px);clip-path:inset(28% 0 48% 0)}
+  89%{opacity:.92;transform:translateX(-10px);clip-path:inset(8% 0 62% 0)}
+  90%{opacity:.85;transform:translateX(-7px);clip-path:inset(44% 0 22% 0)}
+  91%{opacity:.88;transform:translateX(-9px);clip-path:inset(68% 0 6% 0)}
+  92%{opacity:.78;transform:translateX(-6px);clip-path:inset(28% 0 48% 0)}
   93%{opacity:0;transform:translateX(0)}
 }
 @keyframes glitch-chroma-b{
   0%,88%,100%{opacity:0;transform:translateX(0)}
-  89%{opacity:.7;transform:translateX(6px);clip-path:inset(8% 0 62% 0)}
-  90%{opacity:.6;transform:translateX(4px);clip-path:inset(44% 0 22% 0)}
-  91%{opacity:.65;transform:translateX(5px);clip-path:inset(68% 0 6% 0)}
-  92%{opacity:.5;transform:translateX(3px);clip-path:inset(28% 0 48% 0)}
+  89%{opacity:.92;transform:translateX(10px);clip-path:inset(8% 0 62% 0)}
+  90%{opacity:.85;transform:translateX(7px);clip-path:inset(44% 0 22% 0)}
+  91%{opacity:.88;transform:translateX(9px);clip-path:inset(68% 0 6% 0)}
+  92%{opacity:.78;transform:translateX(6px);clip-path:inset(28% 0 48% 0)}
   93%{opacity:0;transform:translateX(0)}
+}
+@keyframes skull-ghost{
+  0%{opacity:0;transform:translateY(5px) scale(.95)}
+  6%{opacity:.2}
+  12%{opacity:.13}
+  55%{opacity:.11}
+  82%{opacity:.07}
+  100%{opacity:0;transform:translateY(-3px) scale(1.02)}
 }
 @keyframes hack-sweep{
   0%,100%{background-position:200% 0}
@@ -721,7 +763,8 @@ body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rg
 }
 
 @media(prefers-reduced-motion:reduce){
-  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-smoke,.fx-vignette{animation:none!important}
+  .fx-scan,.fx-glitch,.fx-glitch::before,.fx-glitch::after,.fx-grid,.fx-hud,.fx-noise,.fx-sweep,.fx-smoke,.fx-vignette,.fx-skull{animation:none!important}
+  .fx-skulls{display:none!important}
 }
 
 @media(max-width:760px){

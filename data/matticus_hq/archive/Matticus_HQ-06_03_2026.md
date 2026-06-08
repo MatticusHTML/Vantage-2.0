@@ -1406,7 +1406,7 @@
     },
     {
       "name": "Solid Snake",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 56,
       "winPct": 41.1,
       "kd": 0.93,
@@ -1451,7 +1451,7 @@
     },
     {
       "name": "Sens",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 41,
       "winPct": 41.5,
       "kd": 1.12,
@@ -2021,7 +2021,7 @@
     },
     {
       "name": "Denari",
-      "side": "ATK",
+      "side": "DEF",
       "rounds": 2,
       "winPct": 100,
       "kd": 1,
@@ -2337,7 +2337,7 @@
   "seasonLabel": "Operation Silent Hunt",
   "updated": "Jun 3, 2026 · 6:00 PM PT",
   "seasonClosed": true,
-  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Silver II, 2,422 RP.</b> 88 matches — lightest volume on the squad. 38–50. 43.2% win rate, 0.99 K/D. Peak 2,505 touched Gold and retreated. You traded kills even and lost rounds — classic Silver trap.</p>\n<p><b>Aruni is the season.</b> 58 rounds, 69.0%, 1.97 K/D, one ace. When you anchored the Surya gate, the stack won. Castle at 51 rounds and 39.2% and Solid Snake at 56 rounds and 41.1% were the opposite — high volume, low return. You experimented while Aruni waited on the bench.</p>\n<p>Tubarão at 63.6% and 2.40 K/D on 22 rounds was the hidden ace — small sample, loud numbers. Skopos at 47.7% was filler, not a main. The engine room is defense; the account still ran too many rounds on picks that do not close.</p>\n<p>Two rollbacks. Mar 24 Ace with a one-v-four clutch on Chalet belongs on the highlight reel. The Apr–May stretch of Consulate and Clubhouse variance tells the rest — brilliant when prepped, punished when ego-challenging.</p>\n<p>Silent Hunt closes 178 RP from Gold. Stop auditioning defenders mid-session. Main Aruni, flex Tubarão, cut Castle and Snake volume. Four clean wins worth of RP — the path was obvious all season; Y11S2 is execution, not discovery.</p>",
+  "seasonReport": "<p><b>Operation Silent Hunt — final grade: Silver II, 2,422 RP.</b> 88 matches — lightest volume on the squad. 38–50. 43.2% win rate, 0.99 K/D. Peak 2,505 touched Gold and retreated. You traded kills even and lost rounds — classic Silver trap.</p>\n<p><b>Aruni is the season.</b> 58 rounds, 69.0%, 1.97 K/D, one ace. When you anchored the Surya gate, the stack won. Castle at 51 defensive rounds and 39.2% and Solid Snake at 56 attack rounds and 41.1% were the opposite — high volume, low return on both sides. You experimented while Aruni waited on the bench.</p>\n<p>Tubarão at 63.6% and 2.40 K/D on 22 rounds was the hidden ace — small sample, loud numbers. Skopos at 47.7% was filler, not a main. The engine room is defense; the account still ran too many rounds on picks that do not close.</p>\n<p>Two rollbacks. Mar 24 Ace with a one-v-four clutch on Chalet belongs on the highlight reel. The Apr–May stretch of Consulate and Clubhouse variance tells the rest — brilliant when prepped, punished when ego-challenging.</p>\n<p>Silent Hunt closes 178 RP from Gold. Stop auditioning defenders mid-session. Main Aruni, flex Tubarão, cut Castle and Snake volume. Four clean wins worth of RP — the path was obvious all season; Y11S2 is execution, not discovery.</p>",
   "archived": "Jun 3, 2026 · 6:00 PM PT"
 }
 ```

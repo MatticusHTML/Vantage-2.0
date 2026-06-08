@@ -1410,7 +1410,7 @@
     },
     {
       "name": "Solid Snake",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 56,
       "winPct": 41.1,
       "kd": 0.93,
@@ -1455,7 +1455,7 @@
     },
     {
       "name": "Sens",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 41,
       "winPct": 41.5,
       "kd": 1.12,
@@ -2025,7 +2025,7 @@
     },
     {
       "name": "Denari",
-      "side": "ATK",
+      "side": "DEF",
       "rounds": 2,
       "winPct": 100,
       "kd": 1,
@@ -2341,6 +2341,6 @@
   "seasonLabel": "Operation Silent Hunt",
   "updated": "Jun 3, 2026 · 6:00 PM PT",
   "seasonClosed": true,
-  "seasonReport": "<p><b>OPERATION SILENT HUNT — FINAL GRADE: Silver II, 2,422 RP.</b> Eighty-eight matches, the lightest dossier on the stack. 38–50. A 43.2% win rate riding a 0.99 K/D. Read those two numbers side by side and the whole season confesses: you traded kills dead even and still lost more rounds than you won. That is not an aim problem. That is a round-management problem, and it cost you a rank.</p>\n<p><b>Aruni was the season — and you knew it.</b> 58 rounds, 69.0%, a 1.97 K/D, and an ace to end the argument. Every time you planted yourself on the Surya gate and made the site come to you, the round was won before the timer hit zero. She is a cheat code in your hands. So explain why she rode the bench while you auditioned the rest of the roster.</p>\n<p><b>Because Castle and Snake kept running the meter.</b> Castle: 51 rounds at 39.2%. Solid Snake: 56 rounds at 41.1%. Your second- and third-most-played defenders, both underwater, both picked ahead of the 69% anchor sitting right there. Meanwhile Tubarão quietly posted 63.6% and a 2.40 K/D across 22 rounds — the hidden ace of your year, under-played because he never got the reps to become a habit. Skopos at 47.7% was filler dressed up as a main.</p>\n<p>Two rollbacks on the books. The Mar 24 Chalet ace — a one-v-four with the round already written off — is the clip that makes the Discord go silent. That is your ceiling. The April–May swings on Consulate and Clubhouse are your floor: surgical on the nights you prepped, punished on the nights your ego picked the operator.</p>\n<p>Silent Hunt closes you 178 RP from Gold. Four clean wins. Four. The math was never the wall — the discipline was. Stop auditioning defenders mid-session. Main Aruni. Flex Tubarão when the map earns it. Demote Castle and Snake to situational picks instead of defaults. Y11S2 isn't a discovery season for you. You already found the answer. It's an execution season. Go execute it.</p>"
+  "seasonReport": "<p><b>OPERATION SILENT HUNT — FINAL GRADE: Silver II, 2,422 RP.</b> Eighty-eight matches, the lightest dossier on the stack. 38–50. A 43.2% win rate riding a 0.99 K/D. Read those two numbers side by side and the whole season confesses: you traded kills dead even and still lost more rounds than you won. That is not an aim problem. That is a round-management problem, and it cost you a rank.</p>\n<p><b>Aruni was the season — and you knew it.</b> 58 rounds, 69.0%, a 1.97 K/D, and an ace to end the argument. Every time you planted yourself on the Surya gate and made the site come to you, the round was won before the timer hit zero. She is a cheat code in your hands. So explain why she rode the bench while you auditioned the rest of the roster.</p>\n<p><b>Because Castle and Snake kept running the meter.</b> Castle: 51 rounds at 39.2%. Solid Snake: 56 rounds at 41.1%. Castle and Snake as your highest-volume non-Aruni picks — defense and attack both underwater, both picked ahead of the 69% anchor sitting right there. Meanwhile Tubarão quietly posted 63.6% and a 2.40 K/D across 22 rounds — the hidden ace of your year, under-played because he never got the reps to become a habit. Skopos at 47.7% was filler dressed up as a main.</p>\n<p>Two rollbacks on the books. The Mar 24 Chalet ace — a one-v-four with the round already written off — is the clip that makes the Discord go silent. That is your ceiling. The April–May swings on Consulate and Clubhouse are your floor: surgical on the nights you prepped, punished on the nights your ego picked the operator.</p>\n<p>Silent Hunt closes you 178 RP from Gold. Four clean wins. Four. The math was never the wall — the discipline was. Stop auditioning defenders mid-session. Main Aruni. Flex Tubarão when the map earns it. Demote Castle and Snake to situational picks instead of defaults. Y11S2 isn't a discovery season for you. You already found the answer. It's an execution season. Go execute it.</p>"
 }
 ```

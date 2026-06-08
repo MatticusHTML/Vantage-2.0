@@ -1390,7 +1390,7 @@
     },
     {
       "name": "Solid Snake",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 56,
       "winPct": 41.1,
       "kd": 0.93,
@@ -1435,7 +1435,7 @@
     },
     {
       "name": "Sens",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 41,
       "winPct": 41.5,
       "kd": 1.12,

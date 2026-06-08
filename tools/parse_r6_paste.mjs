@@ -4,24 +4,25 @@ import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
 const SIDE = {
-  Tachanka: "DEF", Mozzie: "DEF", Sentry: "DEF", Bandit: "DEF",
-  "Solid Snake": "DEF", Caveira: "DEF", Thunderbird: "DEF", Solis: "DEF",
+  Tachanka: "DEF", Mozzie: "DEF", Sentry: "DEF", Bandit: "DEF", Denari: "DEF",
+  Caveira: "DEF", Thunderbird: "DEF", Solis: "DEF",
   Fenrir: "DEF", Smoke: "DEF", Echo: "DEF", Valkyrie: "DEF", Jäger: "DEF",
-  Goyo: "DEF", Clash: "DEF", Maestro: "DEF", Mute: "DEF", Sens: "DEF",
+  Goyo: "DEF", Clash: "DEF", Maestro: "DEF", Mute: "DEF",
   Kaid: "DEF", Thorn: "DEF", Azami: "DEF", Mira: "DEF", Aruni: "DEF",
   Frost: "DEF", Pulse: "DEF", Alibi: "DEF", Tubarão: "DEF", Melusi: "DEF",
   Ela: "DEF", Lesion: "DEF", Kapkan: "DEF", Rook: "DEF", Castle: "DEF",
   Echo: "DEF", Valkyrie: "DEF", Smoke: "DEF", Doc: "DEF", Clash: "DEF",
   Caveira: "DEF", Vigil: "DEF", Sentry: "DEF", Azami: "DEF", Solis: "DEF",
-  Thunderbird: "DEF", Oryx: "DEF", Zero: "DEF",
-  Twitch: "ATK", Jackal: "ATK", Striker: "ATK", Amaru: "ATK", Capitão: "ATK", Denari: "ATK",
+  Thunderbird: "DEF", Oryx: "DEF",
+  Twitch: "ATK", Jackal: "ATK", Striker: "ATK", Amaru: "ATK", Capitão: "ATK", Zero: "ATK",
+  Sens: "ATK", "Solid Snake": "ATK",
   Montagne: "ATK", Nøkk: "ATK", Grim: "ATK", Blitz: "ATK", Finka: "ATK",
   Brava: "ATK", Ying: "ATK", Deimos: "ATK", Maverick: "ATK", Dokkaebi: "ATK",
   Ace: "ATK", Gridlock: "ATK", Thermite: "ATK", Thatcher: "ATK", Blackbeard: "ATK",
   Nomad: "ATK", Lion: "ATK", Fuze: "ATK", Ram: "ATK", Hibana: "ATK", Sledge: "ATK",
   Flores: "ATK", Ash: "ATK", Iana: "ATK", Buck: "ATK", Osa: "ATK", Kali: "ATK",
   Rauora: "ATK", IQ: "ATK", Zofia: "ATK", Glaz: "ATK",
-  Skopós: "DEF", Sens: "DEF",
+  Skopós: "DEF",
 };
 
 const OP_ALIASES = {

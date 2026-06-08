@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Rogue_Amputee
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 4, 2026 · 8:28 AM PT
+**Updated:** Jun 8, 2026 · 10:23 AM PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,115 @@
   "name": "Rogue_Amputee",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 4, 2026 · 8:28 AM PT",
+  "updated": "Jun 8, 2026 · 10:23 AM PT",
   "meta": {
-    "rank": "Bronze II",
-    "rp": 1815,
-    "peakRp": 1815,
-    "nextRank": "Silver",
-    "rpToNext": 285,
-    "matches": 5,
-    "w": 2,
-    "l": 3,
-    "winRate": 40.0,
-    "kd": 0.61,
-    "avgHs": 50.0,
-    "netRp": 0
+    "rank": "Bronze III",
+    "rp": 1774,
+    "peakRp": 1840,
+    "nextRank": "Bronze II",
+    "rpToNext": 26,
+    "matches": 11,
+    "w": 4,
+    "l": 7,
+    "winRate": 36.4,
+    "kd": 0.73,
+    "avgHs": 29.7,
+    "netRp": -41
   },
   "matches": [
+    {
+      "date": "Jun 7",
+      "map": "Oregon",
+      "result": "L",
+      "score": "1:4",
+      "rp": 1774,
+      "drp": -26,
+      "k": 1,
+      "d": 5,
+      "a": 0,
+      "hs": 100.0,
+      "badges": [
+        "Victim"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Oregon",
+      "result": "L",
+      "score": "2:4",
+      "rp": 1800,
+      "drp": -15,
+      "k": 5,
+      "d": 5,
+      "a": 1,
+      "hs": 20.0,
+      "badges": [
+        "1v2 Clutch",
+        "2K",
+        "2K"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Calypso Casino",
+      "result": "L",
+      "score": "2:4",
+      "rp": 1815,
+      "drp": -24,
+      "k": 2,
+      "d": 5,
+      "a": 2,
+      "hs": 0.0,
+      "badges": []
+    },
+    {
+      "date": "Jun 7",
+      "map": "Lair",
+      "result": "W",
+      "score": "4:2",
+      "rp": 1839,
+      "drp": 24,
+      "k": 3,
+      "d": 5,
+      "a": 3,
+      "hs": 0.0,
+      "badges": []
+    },
+    {
+      "date": "Jun 7",
+      "map": "Border",
+      "result": "L",
+      "score": "2:4",
+      "rp": 1815,
+      "drp": -25,
+      "k": 4,
+      "d": 5,
+      "a": 0,
+      "hs": 0.0,
+      "badges": [
+        "1v2 Lost",
+        "2K",
+        "2K"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Calypso Casino",
+      "result": "W",
+      "score": "4:2",
+      "rp": 1840,
+      "drp": 25,
+      "k": 8,
+      "d": 3,
+      "a": 4,
+      "hs": 25.0,
+      "badges": [
+        "2K",
+        "2K",
+        "2K",
+        "2K"
+      ]
+    },
     {
       "date": "Jun 3",
       "map": "Coastline",
@@ -105,14 +198,14 @@
     {
       "name": "Mute",
       "side": "DEF",
-      "rounds": 9,
-      "winPct": 55.6,
-      "kd": 0.71,
-      "hs": 60.0,
-      "w": 5,
-      "l": 4,
-      "k": 5,
-      "d": 7,
+      "rounds": 18,
+      "winPct": 44.4,
+      "kd": 0.6,
+      "hs": 33.3,
+      "w": 8,
+      "l": 10,
+      "k": 9,
+      "d": 15,
       "a": 3,
       "aces": 0,
       "tks": 0
@@ -120,80 +213,125 @@
     {
       "name": "Nomad",
       "side": "ATK",
-      "rounds": 7,
-      "winPct": 57.1,
-      "kd": 1.5,
-      "hs": 50.0,
-      "w": 4,
-      "l": 3,
-      "k": 6,
-      "d": 4,
-      "a": 2,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Ace",
-      "side": "ATK",
-      "rounds": 3,
-      "winPct": 66.7,
-      "kd": 1.0,
-      "hs": 100.0,
-      "w": 2,
-      "l": 1,
-      "k": 1,
-      "d": 1,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Gridlock",
-      "side": "ATK",
-      "rounds": 3,
-      "winPct": 33.3,
-      "kd": 0.33,
-      "hs": 0.0,
-      "w": 1,
-      "l": 2,
-      "k": 1,
-      "d": 3,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Thorn",
-      "side": "DEF",
-      "rounds": 2,
+      "rounds": 10,
       "winPct": 50.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 1,
-      "k": 0,
-      "d": 2,
-      "a": 0,
+      "kd": 1.17,
+      "hs": 42.9,
+      "w": 5,
+      "l": 5,
+      "k": 7,
+      "d": 6,
+      "a": 4,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Dokkaebi",
       "side": "ATK",
-      "rounds": 2,
-      "winPct": 50.0,
-      "kd": 0.0,
+      "rounds": 10,
+      "winPct": 60.0,
+      "kd": 1.2,
       "hs": 0.0,
-      "w": 1,
-      "l": 1,
-      "k": 0,
-      "d": 1,
+      "w": 6,
+      "l": 4,
+      "k": 6,
+      "d": 5,
+      "a": 5,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Ace",
+      "side": "ATK",
+      "rounds": 5,
+      "winPct": 40.0,
+      "kd": 1.33,
+      "hs": 50.0,
+      "w": 2,
+      "l": 3,
+      "k": 4,
+      "d": 3,
       "a": 1,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Kaid",
+      "side": "DEF",
+      "rounds": 5,
+      "winPct": 40.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 2,
+      "l": 3,
+      "k": 0,
+      "d": 5,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Thorn",
+      "side": "DEF",
+      "rounds": 5,
+      "winPct": 40.0,
+      "kd": 1.0,
+      "hs": 50.0,
+      "w": 2,
+      "l": 3,
+      "k": 4,
+      "d": 4,
+      "a": 3,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Gridlock",
+      "side": "ATK",
+      "rounds": 4,
+      "winPct": 25.0,
+      "kd": 0.5,
+      "hs": 0.0,
+      "w": 1,
+      "l": 3,
+      "k": 2,
+      "d": 4,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Hibana",
+      "side": "ATK",
+      "rounds": 2,
+      "winPct": 50.0,
+      "kd": 1.0,
+      "hs": 50.0,
+      "w": 1,
+      "l": 1,
+      "k": 2,
+      "d": 2,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Smoke",
+      "side": "DEF",
+      "rounds": 2,
+      "winPct": 100.0,
+      "kd": 1.0,
+      "hs": 0.0,
+      "w": 2,
+      "l": 0,
+      "k": 2,
+      "d": 2,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Fenrir",
       "side": "DEF",
       "rounds": 1,
       "winPct": 0.0,
@@ -223,8 +361,23 @@
       "tks": 0
     },
     {
-      "name": "Alibi",
+      "name": "Caveira",
       "side": "DEF",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 0,
+      "l": 1,
+      "k": 0,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Thermite",
+      "side": "ATK",
       "rounds": 1,
       "winPct": 0.0,
       "kd": 0.0,
@@ -253,22 +406,7 @@
       "tks": 0
     },
     {
-      "name": "Fenrir",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Caveira",
+      "name": "Alibi",
       "side": "DEF",
       "rounds": 1,
       "winPct": 0.0,
@@ -285,27 +423,27 @@
   ],
   "badges": [
     {
+      "name": "2K",
+      "count": 9
+    },
+    {
       "name": "Victim",
-      "count": 2
+      "count": 3
     },
     {
       "name": "3K",
       "count": 1
     },
     {
-      "name": "2K",
-      "count": 1
-    },
-    {
       "name": "1v2 Clutch",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1v2 Lost",
-      "count": 1
+      "count": 2
     }
   ],
-  "debrief": "<p><b>Operation System Override — five matches in.</b> Bronze II at 1,815 RP. 2–3 on the night, 0.61 K/D, 50% HS — the aim is showing up even when the round isn't.</p><p><b>Coastline split the session:</b> you bookended with wins (4:1 and 5:3) and bled in the middle. Outback was a 0–5 <b>Victim</b> tag — first death, no trade, no refrag. That's the tax on attack when you don't get a plant down.</p><p><b>Mute and Nomad are the early Y11S2 story</b> — 9 and 7 rounds, both north of 55% win rate. Silent Hunt ended on Kaid–Thorn–Mute; keep that muscle memory before you reach for the experimental attack picks.</p>",
+  "debrief": "<p><b>Bronze III · 1,774 RP · 4–7 · 36.4% win rate · 0.73 K/D.</b> Jun 7 was a six-game swing: 2–4, −41 RP, and a demotion from Bronze II after you touched 1,840 on the opener. The session had heat and hemorrhage in the same queue.</p><p><b>Calypso Casino split 1–1</b> — the first trip was a 4–2 with eight kills, four assists, and four 2K tags; the rematch was a 2–4 bleed. <b>Dokkaebi remaster is your best attack row</b> at 60% over ten rounds with five assists. Mute still leads volume at eighteen rounds but cooled to 44.4%.</p><p>Back-to-back Oregon losses closed the night — Victim on the 1–4, a 1v2 clutch and two 2Ks on the 2–4 that still didn't convert. Stop dying first on the rounds that decide the set. Ride Dokkaebi and Nomad on attack, Mute and Thorn on defense, and make Calypso look like the first game, not the second.</p>",
   "comments": [
     {
       "type": "map",
@@ -342,6 +480,42 @@
       "subject": "Gridlock",
       "date": "Jun 3",
       "text": "Three attack rounds, 33.3%, 0.33 K/D, 0% HS. That's the Brava-adjacent tax in miniature — utility operator, no round impact. You don't need a third attack experiment at 40% season win rate. Ride Nomad and Ace until Gridlock earns a real look."
+    },
+    {
+      "type": "map",
+      "subject": "Calypso Casino",
+      "date": "Jun 7",
+      "text": "Split 1–1 on the new map — and the gap between the two games is the whole session. The opener was 4–2 with eight kills, four assists, four 2K tags, and +25 RP at 2.67 K/D. The rematch was 2–4 with two kills and a 0.40 K/D line. Same map, same rank band, opposite discipline. Calypso rewards vertical reads and round closure; you proved you can play it, then donated the sequel."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 7",
+      "text": "Ten attack rounds, 60.0% win rate, 1.20 K/D, five assists — the remaster is not the old passive Dokkaebi. Jegeo Payload is intel denial and forced movement: scan a target, drop the hack, deny their cams, pressure the anchor. Five assists on ten rounds says the utility is landing even when the XK23 isn't printing headshots. This is your attack default until the data flips — not Gridlock, not one-off Lion labs."
+    },
+    {
+      "type": "operator",
+      "subject": "Mute",
+      "date": "Jun 7",
+      "text": "Eighteen defensive rounds at 44.4% win rate and 0.60 K/D — still your highest-volume pick, but the win rate cooled hard from the Jun 3 heater. Mute's job is jammer coverage on the real breach wall and drone denial in prep — K/D undersells him when the wall holds, and oversells him when you're peeking off the jam. Bad habit: a single jammer on a wall the attack ignores. Good habit: overlapping jammers on the breach that matters, stacked with Kaid when you can."
+    },
+    {
+      "type": "operator",
+      "subject": "Nomad",
+      "date": "Jun 7",
+      "text": "Ten attack rounds, 50.0% win rate, 1.17 K/D, four assists — still the steady attack line on a brutal night. Nomad wins with Airjabs sealing the flank the roamers use to collapse your execute, then frags to back the plant. She's not the operator that got you Victim'd on Oregon — she's the one that keeps attack rounds winnable when you play map control first. Stay on her when Dokkaebi isn't the call."
+    },
+    {
+      "type": "operator",
+      "subject": "Thorn",
+      "date": "Jun 7",
+      "text": "Five defensive rounds, 40.0% win rate, 1.00 K/D, three assists — the traps are doing work even when the set record isn't. Razorblooms on the plant spot force attackers to move or eat the blast; three assists says your shells displaced someone your team traded. K/D undersells anchor-trap value. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells in dead space while you ego peek off site."
+    },
+    {
+      "type": "operator",
+      "subject": "Kaid",
+      "date": "Jun 7",
+      "text": "Five defensive rounds, 40.0% win rate, 0.00 K/D, five deaths — the stat line looks catastrophic until you remember what Kaid is for. Electroclaws on the reinforced wall and hatch that gate the breach; the TCSG12 holds long angles. Zero kills means the claws either didn't land on the surface that mattered or you died before the denial paid off. Judge breaches denied, not frags — but five deaths with no trade is still a habit fix: claw the right wall, then hold an angle that punishes the breach attempt."
     }
   ]
 }

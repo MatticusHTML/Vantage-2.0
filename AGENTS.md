@@ -135,6 +135,27 @@ Every refresh adds **exactly 1 MAP comment first, then 5 OPERATOR comments** to 
 
 ---
 
+## 6a. OPERATOR REFERENCE (comment coaching)
+
+Before writing any **operator** comment — player dossier, OVERSIGHT debrief, or season-report lines about specific ops — **read both reference files at repo root**:
+
+- `VANTAGE_ATTACKER_REFERENCE_Y11S2.md`
+- `VANTAGE_DEFENDER_REFERENCE_Y11S2.md`
+
+Skim each file's **Y11S2 changes** and **Coaching rules** sections first, then open the dossier entry for **every operator you are commenting on in that wave**. Ground the write-up in that op's gadget, recommended role, playstyle, flex note, and **VANTAGE coaching lens**. Use the quick-reference tables (utility-heavy vs stat-heavy) to decide how hard to weight K/D and HS%.
+
+**Apply when drafting operator text:**
+- **Utility / intel / anchor-trap ops** (Zero, Mute, Mozzie, Thorn, Castle, Melusi, etc.): round impact, assists, setup, time bought, and gadget value matter more than raw K/D.
+- **Entry / duelist ops** (Ash, Sledge, Zofia, etc.): K/D and HS% carry more weight — still tie advice to that op's kit.
+- **Flex notes:** unconventional play with a strong win rate gets praised, not corrected. Weak stats → coach the **habit** tied to that op's job, never the person.
+- **Side discipline:** stay ATK or DEF in that comment; never cross-recommend sides unprompted.
+
+Map comments do **not** require the operator reference — only the five operator lines per wave (and OVERSIGHT's five operator lines).
+
+When Ubisoft ships a new season, add or replace matching `VANTAGE_*_REFERENCE_<season>.md` files and update the paths here.
+
+---
+
 ## 6b. SEASON CLOSE-OUT (only when the user declares the season finished)
 
 **Trigger:** The user explicitly closes a season (e.g. *"Close Y11S1"* / *"Y11S1 is done — run end-of-season"*). **Never** run this on a normal update or comment refresh.
@@ -170,10 +191,10 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 
 | Mode | Trigger | What you do |
 |---|---|---|
-| **Update Player** | "Update CunderThock" + screenshots | Append matches (de-dup), refresh `meta`, replace `operators` if overview given, add the 1+5 comment set, bump `updated`. |
-| **Refresh Comments** | "New reads for Sandman" | Add a fresh 1 map + 5 operator comment set only. Keep all prior comments. |
+| **Update Player** | "Update CunderThock" + screenshots | Append matches (de-dup), refresh `meta`, replace `operators` if overview given, read §6a reference docs, add the 1+5 comment set, bump `updated`. |
+| **Refresh Comments** | "New reads for Sandman" | Read §6a reference docs; add a fresh 1 map + 5 operator comment set only. Keep all prior comments. |
 | **Operator Update** | "New operator overview for Rogue" | Confirm season-filtered, then full-replace the `operators` array. |
-| **Compare / OVERSIGHT** | "Run OVERSIGHT" | Refresh the squad comment set; the board + radar recompute from player data automatically. |
+| **Compare / OVERSIGHT** | "Run OVERSIGHT" | Read §6a reference docs; refresh the squad comment set; the board + radar recompute from player data automatically. |
 | **Close Season** | "Close Y11S1" (explicit only) | Finalize data, write VANTAGE-voice `seasonReport` (10–40 sentences, no filler) per player + OVERSIGHT, set `seasonClosed: true`, archive snapshots. No new 1+5 comments. |
 | **New Season** | "Start Y11S2" | Populate the existing empty `Y11S2/current.md`; archive a snapshot of the closing season (see §8); confirm new rank thresholds. |
 

@@ -1,6 +1,6 @@
 # VANTAGE RECORD — CunderThock
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 7, 2026 · 6:00 PM PT
+**Updated:** Jun 8, 2026 · 9:51 AM PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,85 @@
   "name": "CunderThock",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 7, 2026 · 6:00 PM PT",
+  "updated": "Jun 8, 2026 · 9:51 AM PT",
   "meta": {
     "rank": "Gold V",
-    "rp": 2560,
+    "rp": 2509,
     "peakRp": 2560,
     "nextRank": "Gold IV",
-    "rpToNext": 40,
-    "matches": 10,
-    "w": 7,
-    "l": 3,
-    "winRate": 70.0,
-    "kd": 1.02,
-    "avgHs": 41.3,
-    "netRp": 150
+    "rpToNext": 91,
+    "matches": 14,
+    "w": 8,
+    "l": 6,
+    "winRate": 57.1,
+    "kd": 1.03,
+    "avgHs": 43.5,
+    "netRp": 99
   },
   "matches": [
+    {
+      "date": "Jun 7",
+      "map": "Oregon",
+      "result": "L",
+      "score": "2:4",
+      "rp": 2509,
+      "drp": -26,
+      "k": 4,
+      "d": 6,
+      "a": 1,
+      "hs": 25.0,
+      "badges": [
+        "Victim",
+        "2K"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Calypso Casino",
+      "result": "L",
+      "score": "2:4",
+      "rp": 2535,
+      "drp": -24,
+      "k": 6,
+      "d": 5,
+      "a": 0,
+      "hs": 50.0,
+      "badges": [
+        "1v2 Clutch",
+        "4K"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Lair",
+      "result": "W",
+      "score": "4:2",
+      "rp": 2559,
+      "drp": 24,
+      "k": 8,
+      "d": 3,
+      "a": 2,
+      "hs": 37.5,
+      "badges": [
+        "4K",
+        "1v1 Clutch"
+      ]
+    },
+    {
+      "date": "Jun 7",
+      "map": "Border",
+      "result": "L",
+      "score": "2:4",
+      "rp": 2535,
+      "drp": -25,
+      "k": 2,
+      "d": 5,
+      "a": 0,
+      "hs": 100.0,
+      "badges": [
+        "2K"
+      ]
+    },
     {
       "date": "Jun 7",
       "map": "Border",
@@ -182,30 +245,105 @@
     {
       "name": "Tachanka",
       "side": "DEF",
-      "rounds": 24,
-      "winPct": 70.8,
-      "kd": 0.72,
-      "hs": 30.8,
-      "w": 17,
-      "l": 7,
-      "k": 13,
-      "d": 18,
-      "a": 9,
+      "rounds": 33,
+      "winPct": 63.6,
+      "kd": 0.62,
+      "hs": 31.2,
+      "w": 21,
+      "l": 12,
+      "k": 16,
+      "d": 26,
+      "a": 11,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Zero",
-      "side": "DEF",
-      "rounds": 23,
-      "winPct": 52.2,
-      "kd": 1.19,
+      "side": "ATK",
+      "rounds": 24,
+      "winPct": 50.0,
+      "kd": 1.12,
       "hs": 52.6,
       "w": 12,
-      "l": 11,
+      "l": 12,
       "k": 19,
-      "d": 16,
+      "d": 17,
       "a": 4,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Solid Snake",
+      "side": "ATK",
+      "rounds": 6,
+      "winPct": 16.7,
+      "kd": 1.0,
+      "hs": 80.0,
+      "w": 1,
+      "l": 5,
+      "k": 5,
+      "d": 5,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Twitch",
+      "side": "ATK",
+      "rounds": 4,
+      "winPct": 75.0,
+      "kd": 10.0,
+      "hs": 30.0,
+      "w": 3,
+      "l": 1,
+      "k": 10,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Sentry",
+      "side": "DEF",
+      "rounds": 4,
+      "winPct": 50.0,
+      "kd": 1.0,
+      "hs": 66.7,
+      "w": 2,
+      "l": 2,
+      "k": 3,
+      "d": 3,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Striker",
+      "side": "ATK",
+      "rounds": 3,
+      "winPct": 66.7,
+      "kd": 1.67,
+      "hs": 20.0,
+      "w": 2,
+      "l": 1,
+      "k": 5,
+      "d": 3,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Bandit",
+      "side": "DEF",
+      "rounds": 3,
+      "winPct": 66.7,
+      "kd": 0.5,
+      "hs": 0.0,
+      "w": 2,
+      "l": 1,
+      "k": 1,
+      "d": 2,
+      "a": 1,
       "aces": 0,
       "tks": 0
     },
@@ -225,46 +363,16 @@
       "tks": 0
     },
     {
-      "name": "Sentry",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 50.0,
-      "kd": 3.0,
-      "hs": 66.7,
-      "w": 1,
-      "l": 1,
-      "k": 3,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Bandit",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 100.0,
-      "kd": 1.0,
-      "hs": 0.0,
-      "w": 2,
-      "l": 0,
-      "k": 1,
-      "d": 1,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Striker",
+      "name": "Brava",
       "side": "ATK",
-      "rounds": 2,
-      "winPct": 50.0,
-      "kd": 1.5,
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
       "hs": 0.0,
-      "w": 1,
+      "w": 0,
       "l": 1,
-      "k": 3,
-      "d": 2,
+      "k": 0,
+      "d": 1,
       "a": 0,
       "aces": 0,
       "tks": 0
@@ -283,27 +391,12 @@
       "a": 0,
       "aces": 0,
       "tks": 0
-    },
-    {
-      "name": "Solid Snake",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
     }
   ],
   "badges": [
     {
       "name": "2K",
-      "count": 6
+      "count": 8
     },
     {
       "name": "3K",
@@ -311,7 +404,7 @@
     },
     {
       "name": "4K",
-      "count": 1
+      "count": 3
     },
     {
       "name": "1v3 Lost",
@@ -319,18 +412,22 @@
     },
     {
       "name": "1v2 Clutch",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1v2 Lost",
       "count": 1
     },
     {
-      "name": "Victim",
+      "name": "1v1 Clutch",
       "count": 1
+    },
+    {
+      "name": "Victim",
+      "count": 2
     }
   ],
-  "debrief": "<p><b>Gold V · 2,560 RP · 7–3 · 70% win rate · 1.02 K/D.</b> Placement is done and the heater is real — six straight wins across Jun 5–7 after the 1–3 opener. Silent Hunt's homework finally landed.</p><p><b>Tachanka is the season at 70.8% over 24 rounds.</b> The Lord never left; you just stopped fighting him. Zero sits at 23 rounds and 52.2% — volume still high, but the win rate finally cleared break-even when the stack started winning.</p><p>Clubhouse delivered a <b>3K and three 2Ks</b> in one W. Border closed at 5–4 with nine kills and a 1v3 Lost tag — frags and round closure in the same set. Keep the anchor picks, trim the Jackal/Snake noise, and Gold IV is one session away.</p>",
+  "debrief": "<p><b>Gold V · 2,509 RP · 8–6 · 57.1% win rate · 1.03 K/D.</b> Peak was 2,560 after the morning heater — the second Jun 7 block went 3–3 and gave back fifty-one RP. Clips still show up; round closure didn't on three of four new maps.</p><p><b>Tachanka leads at 33 rounds and 63.6% win rate</b> — still the spine, even as the K/D dipped on anchor duty. Zero holds even at fifty-fifty over twenty-four attack rounds. Solid Snake at six rounds and 16.7% is the lab pick bleeding RP when defense already has an answer.</p><p><b>Lair</b> was the receipt: 4–2, eight kills, a 4K, and a 1v1 clutch that actually converted. Calypso Casino debuted with a 4K and a 1v2 clutch in a 2–4 L — same movie as Oregon on day one. Trim the Snake volume, ride Tachanka and structured Zero intel, and stop donating sets after multi-kills.</p>",
   "comments": [
     {
       "type": "map",
@@ -366,43 +463,43 @@
       "type": "operator",
       "subject": "Solid Snake",
       "date": "Jun 3",
-      "text": "One defensive round, zero impact, one loss. Experimental picks in a 1–3 start are how unranked stays unranked. Snake isn't the problem — the queue timing is. Stabilize on Tachanka or Mozzie before you lab another defender."
+      "text": "One attack round, zero impact, one loss. Experimental picks in a 1–3 start are how unranked stays unranked. Snake isn't the problem — the queue timing is. Stabilize on Tachanka or Mozzie on defense before you lab another attacker."
     },
     {
       "type": "map",
-      "subject": "Clubhouse",
-      "date": "Jun 6",
-      "text": "A 3–2 win with a 3K and three 2K tags — that's the whole arc of your week in one map. Nine kills, three deaths, 33.3% HS, and the round actually closed. This is what happens when you stop donating the early pick and play for the site. Clubhouse isn't charity; you earned it with multi-kill impact that converted to RP."
+      "subject": "Lair",
+      "date": "Jun 7",
+      "text": "A 4–2 win with an 8/3/2 line, a 4K, and a 1v1 clutch — this is what the second Jun 7 block should have looked like all night. You closed the set instead of banking a highlight and handing back RP. Lair rewarded the read: multi-kill impact that actually finished the map. Every other Jun 7 game in this paste had the clip and lost the ticket; Lair had both."
     },
     {
       "type": "operator",
       "subject": "Tachanka",
       "date": "Jun 7",
-      "text": "Twenty-four rounds, 70.8% win rate — the highest line on your board and it's not close. Silent Hunt had the Lord at 57% on 514 rounds; System Override just compressed the lesson into a hot streak. When Tachanka leads volume and wins, the whole account stops bleeding. This is the pick. Everything else is garnish."
+      "text": "Thirty-three defensive rounds at 63.6% win rate — still your highest-volume pick and still carrying the season. The 0.62 K/D is anchor math, not a crisis: Shumikha denial and time bought on site matter more than frags when the Lord is doing his job. Win rate cooled off the hot streak but stayed north of break-even. Keep him first on defense; the flex picks only work when this row is stable."
     },
     {
       "type": "operator",
       "subject": "Zero",
       "date": "Jun 7",
-      "text": "Twenty-three rounds at 52.2% with a 1.19 K/D — still heavy volume, but the win rate finally crossed the line when the stack started winning sets. Zero is denial and cam intel on defense; stop treating him like a highlight reel. Pair him behind Tachanka's anchor, not instead of it."
+      "text": "Twenty-four attack rounds, 50.0% win rate, 1.12 K/D — even split, and that's the right lens for an intel op. Zero's job is ARGUS coverage, laser clears on denial, and callouts the stack acts on — not a highlight reel K/D. The earlier Oregon W with zero kills and three assists is proof the tablet can win rounds you never frag on. Bad habit here: peeking on timer when the cams are already doing the work. Good habit: hidden cams on bomb and flanks, active comms, lasers on the gadgets that gate the breach."
     },
     {
       "type": "operator",
-      "subject": "Bandit",
-      "date": "Jun 6",
-      "text": "Two rounds, 100% win rate, one kill, one death, one assist — perfect small sample on a hard breach denial pick. Bandit isn't a main at two rounds, but the row says when you play the simple gadget op and don't ego peek, the round resolves. More of this energy, less Jackal."
+      "subject": "Solid Snake",
+      "date": "Jun 7",
+      "text": "Six attack rounds, 16.7% win rate, 1.00 K/D — the trades look fine until you notice five losses on a 3-speed/1-health flanker. Snake wins with radar intel from cover and silent F2 pressure off the call; he dies when you scan in the open or queue him while Tachanka already owns your defensive identity. One win in six is not a flex — it's RP leakage. Lab him in stacks, not in ranked when the Lord is your actual main."
     },
     {
       "type": "operator",
-      "subject": "Sentry",
-      "date": "Jun 6",
-      "text": "Two rounds, 50% WR, 3.00 K/D — three kills, one death on a gadget defender. Sentry printed when you let the utility do work. Not enough sample to main him, but the read is clear: structured defense is carrying your climb. Ride Tachanka first; Sentry is a flex receipt."
+      "subject": "Twitch",
+      "date": "Jun 7",
+      "text": "Four attack rounds, 75% win rate, 10.00 K/D — yes, the number is absurd, and no, it's not the whole story. Twitch's real job is Shock Drone surgery on Bandit batteries, shields, and cams so the breach goes through; the F2 frags are the bonus when denial is cleared. Three wins in four rounds says you ran her correctly in a tiny sample. Don't chase the 10.0 — chase the gadget clears that made those rounds winnable."
     },
     {
       "type": "operator",
       "subject": "Mozzie",
       "date": "Jun 7",
-      "text": "Still one round on the season — 100% win rate, again. Y11S1 Mozzie was 60.7% over 145 rounds and you haven't touched him during a six-win heater. That's not discipline, that's neglecting a proven pick. The Lord is printing; Mozzie is the second anchor waiting on the bench."
+      "text": "Still one defensive round on the season — 100% win rate, zero kills, pure denial. Y11S2 buffed Pest capture range to 1.75m and you still haven't queued him during a 3–3 block that needed defensive stops. Mozzie wins by intercepting drones and feeding intel, not by fragging. The Lord is your anchor; Mozzie is the proven second pick sitting at one round while Snake gets six. That's roster priority backwards."
     }
   ]
 }

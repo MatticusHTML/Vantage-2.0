@@ -3048,7 +3048,7 @@
     },
     {
       "name": "Solid Snake",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 4,
       "winPct": 50,
       "kd": 0,

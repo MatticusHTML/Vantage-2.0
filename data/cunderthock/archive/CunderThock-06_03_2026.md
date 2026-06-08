@@ -4124,7 +4124,7 @@
   "operators": [
     {
       "name": "Zero",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 675,
       "winPct": 44,
       "kd": 0.97,
@@ -4214,7 +4214,7 @@
     },
     {
       "name": "Solid Snake",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 27,
       "winPct": 33.3,
       "kd": 0.91,
@@ -4589,7 +4589,7 @@
     },
     {
       "name": "Sens",
-      "side": "DEF",
+      "side": "ATK",
       "rounds": 1,
       "winPct": 0,
       "kd": 1,

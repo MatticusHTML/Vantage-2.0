@@ -133,7 +133,18 @@ function setBrandTag(text){ const el=document.querySelector(".cmdbar .tag"); if(
 
 /* ---- ambient FX / seasonal themes ---- */
 function initFxLayers(){
-  if(document.querySelector(".fx-root")) return;
+  if(document.querySelector(".fx-root")){
+    if(!document.querySelector(".fx-skulls")){
+      const root=document.querySelector(".fx-root");
+      const skulls=document.createElement("div");
+      skulls.className="fx fx-skulls";
+      skulls.setAttribute("aria-hidden","true");
+      const hud=root.querySelector(".fx-hud");
+      if(hud) root.insertBefore(skulls,hud);
+      else root.appendChild(skulls);
+    }
+    return;
+  }
   const root=document.createElement("div");
   root.className="fx-root";
   root.setAttribute("aria-hidden","true");
@@ -146,6 +157,7 @@ function initFxLayers(){
     '<div class="fx fx-vignette"></div>',
     '<div class="fx fx-noise"></div>',
     '<div class="fx fx-glitch"></div>',
+    '<div class="fx fx-skulls"></div>',
     '<div class="fx fx-hud"></div>',
   ].join("");
   document.body.prepend(root);
@@ -153,8 +165,71 @@ function initFxLayers(){
 function clearThemeClasses(){
   document.body.classList.remove("theme-y11s1","theme-y11s2");
 }
+
+/* Y11S2 · post-glitch terminal skull debris (option B: hex + brackets) */
+const SKULL_LABELS = ["{☠}","0xDEAD","[0xDEAD]","{0x☠}","<☠_LOG>","// INTRUSION","[SKULL_TRACE]"];
+let skullSpawnerOn = false;
+let skullGlitchHandler = null;
+let skullBootTimer = null;
+
+function stopSkullSpawner(){
+  skullSpawnerOn = false;
+  if(skullBootTimer){ clearTimeout(skullBootTimer); skullBootTimer = null; }
+  const glitch = document.querySelector(".fx-glitch");
+  if(glitch && skullGlitchHandler) glitch.removeEventListener("animationiteration", skullGlitchHandler);
+  skullGlitchHandler = null;
+  document.querySelectorAll(".fx-skull").forEach(el => el.remove());
+}
+
+function skullSpawnPos(){
+  const r = Math.random();
+  if(r < 0.34) return { left: 2 + Math.random() * 11, top: 8 + Math.random() * 78 };
+  if(r < 0.68) return { left: 87 + Math.random() * 10, top: 8 + Math.random() * 78 };
+  if(r < 0.84) return { left: 12 + Math.random() * 76, top: 3 + Math.random() * 7 };
+  return { left: 10 + Math.random() * 72, top: 90 + Math.random() * 7 };
+}
+
+function spawnSkullGlyph(){
+  if(!skullSpawnerOn) return;
+  const host = document.querySelector(".fx-skulls");
+  if(!host) return;
+  const el = document.createElement("span");
+  el.className = "fx-skull";
+  const pos = skullSpawnPos();
+  el.style.left = pos.left + "%";
+  el.style.top = pos.top + "%";
+  el.textContent = SKULL_LABELS[Math.floor(Math.random() * SKULL_LABELS.length)];
+  const life = 5000 + Math.random() * 5000;
+  el.style.animationDuration = life + "ms";
+  host.appendChild(el);
+  el.addEventListener("animationend", () => el.remove(), { once: true });
+}
+
+function spawnSkullBurst(){
+  if(!skullSpawnerOn) return;
+  const n = 2 + Math.floor(Math.random() * 3);
+  for(let i = 0; i < n; i++){
+    setTimeout(spawnSkullGlyph, i * (350 + Math.random() * 550));
+  }
+}
+
+function startSkullSpawner(){
+  stopSkullSpawner();
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  initFxLayers();
+  const glitch = document.querySelector(".fx-glitch");
+  if(!glitch) return;
+  skullSpawnerOn = true;
+  skullGlitchHandler = () => {
+    setTimeout(spawnSkullBurst, 650 + Math.random() * 850);
+  };
+  glitch.addEventListener("animationiteration", skullGlitchHandler);
+  skullBootTimer = setTimeout(() => { if(skullSpawnerOn) spawnSkullBurst(); }, 4700);
+}
+
 function applyMenuTheme(){
   initFxLayers();
+  stopSkullSpawner();
   delete document.body.dataset.season;
   document.body.dataset.fx="menu";
   clearThemeClasses();
@@ -166,9 +241,12 @@ function applyPlayerSeasonTheme(season){
   const s=season||DEFAULT_SEASON;
   document.body.dataset.season=s;
   document.body.classList.add(s==="Y11S1"?"theme-y11s1":"theme-y11s2");
+  if(s==="Y11S2") startSkullSpawner();
+  else stopSkullSpawner();
 }
 function applyOversightTheme(){
   initFxLayers();
+  stopSkullSpawner();
   delete document.body.dataset.season;
   document.body.dataset.fx="oversight";
   clearThemeClasses();

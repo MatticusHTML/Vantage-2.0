@@ -2756,7 +2756,7 @@
     },
     {
       "name": "Denari",
-      "side": "ATK",
+      "side": "DEF",
       "rounds": 54,
       "winPct": 48.1,
       "kd": 0.82,
