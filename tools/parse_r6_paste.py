@@ -4,13 +4,13 @@ import re, json, sys
 from pathlib import Path
 
 SIDE = {
-    "Tachanka":"DEF","Mozzie":"DEF","Sentry":"DEF","Bandit":"DEF","Denari":"DEF",
+    "Tachanka":"DEF","Mozzie":"DEF","Sentry":"DEF","Bandit":"DEF","Zero":"DEF",
     "Solid Snake":"DEF","Caveira":"DEF","Thunderbird":"DEF","Solis":"DEF",
     "Fenrir":"DEF","Smoke":"DEF","Echo":"DEF","Valkyrie":"DEF","Jäger":"DEF",
     "Goyo":"DEF","Clash":"DEF","Maestro":"DEF","Mute":"DEF","Sens":"DEF",
     "Twitch":"ATK","Jackal":"ATK","Striker":"ATK","Amaru":"ATK","Capitão":"ATK",
     "Montagne":"ATK","Nøkk":"ATK","Grim":"ATK","Blitz":"ATK","Finka":"ATK",
-    "Brava":"ATK","Ying":"ATK","Deimos":"ATK","Zero":"ATK",
+    "Brava":"ATK","Ying":"ATK","Deimos":"ATK","Denari":"ATK",
 }
 
 OP_ALIASES = {"Solid Snake":"Solid Snake","Nøkk":"Nokk","Capitão":"Capitao","Jäger":"Jager"}

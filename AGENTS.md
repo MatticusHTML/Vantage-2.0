@@ -117,7 +117,9 @@ Ubisoft sometimes **voids a match** and issues an **RP Rollback** — RP is adju
 
 ## 6. COMMENT CADENCE (per refresh)
 
-Every refresh adds **exactly 1 MAP comment first, then 5 OPERATOR comments** to the `comments` array. Comments are **additive, dated, and retained** — never delete old ones. Keeping them lets you call back to prior reads and track progression ("told you Mozzie was trending up — receipts").
+Every refresh adds **exactly 1 MAP comment first, then 5 OPERATOR comments** to the `comments` array. Comments are **additive in the JSON** — never delete old waves from the file. Each block of 6 is one **wave** (wave 1, wave 2, …).
+
+**On the site:** only the **latest wave** (most recent 6) renders on the dossier / OVERSIGHT page. A **Past comments** button at the bottom of the comment section opens a modal with all earlier waves, labeled **Wave 1 · date**, **Wave 2 · date**, etc.
 
 **Length:** Each comment should be **2–6 sentences** — enough room for the stat, the read, and the order. Don't pad for word count, but don't default to one-liners when the data supports a real coaching take.
 
@@ -197,6 +199,7 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 
 - Win% color: **green ≥55 · gold ≥45 · red <45.** W/L and ΔRP: green positive / red negative.
 - Operator table shows the **full roster, all maps** — don't trim it.
+- Comment log shows the **latest wave only** (6 entries); prior waves live in JSON and appear via **Past comments** modal.
 - Badges are cumulative; zero counts are never shown.
 - Palette: bg `#0d0f1a` · purple `#6b2fa0` · purple-lt `#9a5cd4` · gold `#ffc800` · white `#e8eaf0` · green `#3ee08f` · red `#ff5c66`.
 

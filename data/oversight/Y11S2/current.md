@@ -25,7 +25,7 @@
       "type": "operator",
       "subject": "Zero",
       "date": "Jun 3",
-      "text": "CunderThock ran ten Zero rounds in four matches — tied with Tachanka for top volume, 40% win rate, 1.38 K/D. The K/D says he wins duels; the WR says the rounds still die. Y11S1's Zero compulsion didn't retire, it respawned. Until placement game five lands, the squad doesn't need more attack experiments; it needs one less cam-timing tax per night."
+      "text": "CunderThock ran ten Zero rounds in four matches — tied with Tachanka for top volume, 40% win rate, 1.38 K/D. The K/D says he wins duels; the WR says the rounds still die. Y11S1's Zero compulsion didn't retire, it respawned. He's since climbed to Gold V on a Tachanka heater — the squad lesson is anchor first, Zero denial second, not the other way around."
     },
     {
       "type": "operator",

@@ -4124,7 +4124,7 @@
   "operators": [
     {
       "name": "Zero",
-      "side": "ATK",
+      "side": "DEF",
       "rounds": 675,
       "winPct": 44,
       "kd": 0.97,

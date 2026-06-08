@@ -50,6 +50,83 @@ function commentIconImg(c){
   if(c.type==="map") return `<img src="${BASE}assets/icons/location_blue.svg" alt="map">`;
   return `<img src="${iconSrc(c.subject)}" alt="${esc(c.subject)}" onerror="this.onerror=null;this.src='${recruitSrc()}'">`;
 }
+
+/* ---- comment waves: 6 per refresh (1 map + 5 operators); latest on page, past in modal ---- */
+const COMMENT_WAVE_SIZE = 6;
+function splitCommentWaves(comments){
+  if(!comments||!comments.length) return [];
+  const waves=[];
+  for(let i=0;i<comments.length;i+=COMMENT_WAVE_SIZE) waves.push(comments.slice(i,i+COMMENT_WAVE_SIZE));
+  return waves;
+}
+function waveLabel(n,wave){
+  const dates=[...new Set(wave.map(c=>c.date).filter(Boolean))];
+  if(!dates.length) return `Wave ${n}`;
+  if(dates.length===1) return `Wave ${n} · ${dates[0]}`;
+  return `Wave ${n} · ${dates[dates.length-1]} – ${dates[0]}`;
+}
+function renderCommentsClog(comments,{dimOld=false}={}){
+  return comments.map(c=>`<div class="comment ${c.type==="map"?"map":""} ${dimOld&&c.old?"old":""}">
+      <span class="cicon">${commentIconImg(c)}</span>
+      <div class="cbody"><div class="ctop"><span class="ctype ${c.type==="map"?"map":""}">${c.type}</span>
+      <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
+      <div class="ctext">${esc(c.text)}</div></div></div>`).join("");
+}
+function commentLogPanel(comments,{title,note,dimOld=false}={}){
+  const waves=splitCommentWaves(comments);
+  if(!waves.length) return "";
+  const current=waves[waves.length-1];
+  const past=waves.slice(0,-1);
+  const pastStore=past.length?`<div class="past-comments-store" hidden aria-hidden="true">${past.map((w,i)=>`<div class="comment-wave-block">
+      <div class="wave-hdr">${esc(waveLabel(i+1,w))}</div>
+      <div class="clog">${renderCommentsClog(w,{dimOld})}</div></div>`).join("")}</div>`:"";
+  const foot=past.length?`<div class="clog-foot"><button type="button" class="past-comments-btn" aria-haspopup="dialog">
+      Past comments <span class="n">— ${past.length} earlier wave${past.length>1?"s":""}</span></button></div>`:"";
+  return `<div class="panel comment-log-panel">${pastStore}
+    <div class="sect-hdr">${title}${note?` <span class="n">${note}</span>`:""}</div>
+    <div class="clog">${renderCommentsClog(current,{dimOld})}</div>${foot}</div>`;
+}
+function ensureCommentModal(){
+  let m=byId("comment-modal");
+  if(m) return m;
+  m=document.createElement("div");
+  m.id="comment-modal";
+  m.className="comment-modal";
+  m.hidden=true;
+  m.innerHTML=`<div class="comment-modal-backdrop" data-close-modal></div>
+    <div class="comment-modal-panel" role="dialog" aria-modal="true" aria-labelledby="comment-modal-title">
+      <div class="comment-modal-hdr"><span id="comment-modal-title">// PAST COMMENTS</span>
+        <button type="button" class="comment-modal-close" data-close-modal aria-label="Close">×</button></div>
+      <div class="comment-modal-body" id="comment-modal-body"></div>
+    </div>`;
+  document.body.appendChild(m);
+  m.querySelectorAll("[data-close-modal]").forEach(el=>el.onclick=closeCommentModal);
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!m.hidden) closeCommentModal(); });
+  return m;
+}
+function openCommentModal(html){
+  const m=ensureCommentModal();
+  byId("comment-modal-body").innerHTML=html;
+  m.hidden=false;
+  document.body.classList.add("modal-open");
+}
+function closeCommentModal(){
+  const m=byId("comment-modal");
+  if(!m||m.hidden) return;
+  m.hidden=true;
+  document.body.classList.remove("modal-open");
+  byId("comment-modal-body").innerHTML="";
+}
+function wirePastComments(root="#view"){
+  ensureCommentModal();
+  document.querySelectorAll(`${root} .past-comments-btn`).forEach(btn=>{
+    btn.onclick=()=>{
+      const store=btn.closest(".comment-log-panel")?.querySelector(".past-comments-store");
+      if(!store) return;
+      openCommentModal(store.innerHTML);
+    };
+  });
+}
 function wrColor(p){ p=parseFloat(p); if(isNaN(p))return"var(--white)"; if(p>=55)return"var(--green)"; if(p>=45)return"var(--gold)"; return"var(--red)"; }
 function seasonOp(s){ return SEASON_OPS[s] || ""; }
 function setBrandTag(text){ const el=document.querySelector(".cmdbar .tag"); if(el) el.textContent=text; }
@@ -191,6 +268,7 @@ async function renderPlayer(){
   catch(e){ fetchErr(view); return; }
   view.innerHTML = rec.meta ? playerBody(rec) : emptySeason(PLAYER_SEASON);
   wireOpSideFilter();
+  wirePastComments();
 }
 function wireOpSideFilter(root="#view"){
   document.querySelectorAll(`${root} .op-filter`).forEach(filter=>{
@@ -280,13 +358,11 @@ function playerVoice(rec){
       ${seasonReportBody(rec.seasonReport)}</div>`;
   }
   if(!rec.comments||!rec.comments.length) return "";
-  return `<div class="panel"><div class="sect-hdr">// VANTAGE COMMENT LOG <span class="n">— map + 5 operators per refresh, retained</span></div>
-    <div class="callback-note">Older entries kept so VANTAGE can track progression and call back to prior reads.</div>
-    <div class="clog">${rec.comments.map(c=>`<div class="comment ${c.type==='map'?'map':''} ${c.old?'old':''}">
-      <span class="cicon">${commentIconImg(c)}</span>
-      <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
-      <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
-      <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
+  return commentLogPanel(rec.comments,{
+    title:"// VANTAGE COMMENT LOG",
+    note:"— latest map + 5 operators",
+    dimOld:true,
+  });
 }
 function emptySeason(season){
   return `<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
@@ -315,6 +391,7 @@ async function renderOversight(){
   view.innerHTML = board(data) + radar(data) + squadComments(squad)
     + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
   wireOpSideFilter();
+  wirePastComments();
 }
 function buildOvSeasonBtns(active){
   const el=byId("seasons");
@@ -372,12 +449,10 @@ function squadComments(squad){
       ${seasonReportBody(squad.seasonReport)}</div>`;
   }
   if(!squad.comments||!squad.comments.length) return "";
-  return `<div class="panel"><div class="sect-hdr">// VANTAGE — TEAM DEBRIEF <span class="n">— map + 5 operators, squad-wide</span></div>
-    <div class="clog">${squad.comments.map(c=>`<div class="comment ${c.type==='map'?'map':''}">
-      <span class="cicon">${commentIconImg(c)}</span>
-      <div class="cbody"><div class="ctop"><span class="ctype ${c.type==='map'?'map':''}">${c.type}</span>
-      <span class="csubj">${esc(c.subject)}</span><span class="cdate">${esc(c.date||"")}</span></div>
-      <div class="ctext">${esc(c.text)}</div></div></div>`).join("")}</div></div>`;
+  return commentLogPanel(squad.comments,{
+    title:"// VANTAGE — TEAM DEBRIEF",
+    note:"— latest squad map + 5 operators",
+  });
 }
 
 /* ---- OVERSIGHT extended comparisons (computed from player JSON) ---- */
