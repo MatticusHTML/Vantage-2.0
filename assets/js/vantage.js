@@ -267,15 +267,35 @@ async function startDokaSpawner(playerSlug){
   dokaBootTimer = setTimeout(() => { if(dokaSpawnerOn) spawnDokaBurst(); }, 4700);
 }
 
-/* Y11S2 · Dokkaebi hack intro (first ~2.5s on dossier load) */
-let dokaIntroTimer = null;
-let dokaIntroFadeTimer = null;
+/* Y11S2 · Dokkaebi hack intro (first ~2.5s on roster load) */
+const DOKA_INTRO_SFX=`${BASE}assets/audio/DOKKAEBI_HACKING.mp3`;
+const DOKA_INTRO_VOL=0.75;
+let dokaIntroTimer=null;
+let dokaIntroFadeTimer=null;
+let dokaIntroAudio=null;
+
+function stopDokaIntroSfx(){
+  if(!dokaIntroAudio) return;
+  dokaIntroAudio.pause();
+  dokaIntroAudio.currentTime=0;
+}
+function playDokaIntroSfx(){
+  stopDokaIntroSfx();
+  if(!dokaIntroAudio){
+    dokaIntroAudio=new Audio(DOKA_INTRO_SFX);
+    dokaIntroAudio.preload="auto";
+  }
+  dokaIntroAudio.volume=DOKA_INTRO_VOL;
+  dokaIntroAudio.currentTime=0;
+  dokaIntroAudio.play().catch(()=>{});
+}
 
 function removeDokaIntro(){
   document.querySelector(".doka-intro")?.remove();
   document.body.classList.remove("doka-intro-active");
-  if(dokaIntroTimer){ clearTimeout(dokaIntroTimer); dokaIntroTimer = null; }
-  if(dokaIntroFadeTimer){ clearTimeout(dokaIntroFadeTimer); dokaIntroFadeTimer = null; }
+  if(dokaIntroTimer){ clearTimeout(dokaIntroTimer); dokaIntroTimer=null; }
+  if(dokaIntroFadeTimer){ clearTimeout(dokaIntroFadeTimer); dokaIntroFadeTimer=null; }
+  stopDokaIntroSfx();
 }
 
 function showDokaIntro(){
@@ -315,11 +335,13 @@ function showDokaIntro(){
   ].join("");
   document.body.appendChild(el);
   document.body.classList.add("doka-intro-active");
-  requestAnimationFrame(() => el.classList.add("doka-intro--on"));
-  dokaIntroTimer = setTimeout(() => {
+  requestAnimationFrame(()=>el.classList.add("doka-intro--on"));
+  playDokaIntroSfx();
+  dokaIntroTimer=setTimeout(()=>{
     el.classList.add("doka-intro--out");
-    dokaIntroFadeTimer = setTimeout(removeDokaIntro, 600);
-  }, 2500);
+    stopDokaIntroSfx();
+    dokaIntroFadeTimer=setTimeout(removeDokaIntro,600);
+  },2500);
 }
 
 function applyMenuTheme(){
