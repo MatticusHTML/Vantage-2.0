@@ -274,21 +274,32 @@ let dokaIntroTimer=null;
 let dokaIntroFadeTimer=null;
 let dokaIntroAudio=null;
 
+function preloadDokaIntroSfx(){
+  if(PAGE!=="roster") return;
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(dokaIntroAudio) return;
+  dokaIntroAudio=new Audio(DOKA_INTRO_SFX);
+  dokaIntroAudio.preload="auto";
+  dokaIntroAudio.volume=DOKA_INTRO_VOL;
+  dokaIntroAudio.load();
+}
 function stopDokaIntroSfx(){
   if(!dokaIntroAudio) return;
   dokaIntroAudio.pause();
   dokaIntroAudio.currentTime=0;
 }
 function playDokaIntroSfx(){
-  stopDokaIntroSfx();
-  if(!dokaIntroAudio){
-    dokaIntroAudio=new Audio(DOKA_INTRO_SFX);
-    dokaIntroAudio.preload="auto";
-  }
-  dokaIntroAudio.volume=DOKA_INTRO_VOL;
-  dokaIntroAudio.currentTime=0;
-  dokaIntroAudio.play().catch(()=>{});
+  preloadDokaIntroSfx();
+  if(!dokaIntroAudio) return;
+  const start=()=>{
+    dokaIntroAudio.volume=DOKA_INTRO_VOL;
+    dokaIntroAudio.currentTime=0;
+    dokaIntroAudio.play().catch(()=>{});
+  };
+  if(dokaIntroAudio.readyState>=2) start();
+  else dokaIntroAudio.addEventListener("canplay",start,{once:true});
 }
+preloadDokaIntroSfx();
 
 function removeDokaIntro(){
   document.querySelector(".doka-intro")?.remove();
@@ -416,7 +427,6 @@ function fetchErr(host){
    PAGE: CHARACTER SELECT
    ============================================================ */
 function renderRoster(){
-  applyMenuTheme();
   const grid = byId("roster");
   grid.innerHTML = ROSTER.map(p=>`
     <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}">
@@ -1133,8 +1143,13 @@ async function initBgm(){
 }
 
 /* ---- boot ---- */
-initFxLayers();
-initBgm().catch(()=>{});
-if(PAGE==="roster")       { applyMenuTheme(); renderRoster(); }
-else if(PAGE==="player")   renderPlayer();
-else if(PAGE==="oversight") renderOversight();
+if(PAGE==="roster"){
+  applyMenuTheme();
+  initBgm().catch(()=>{});
+  renderRoster();
+}else{
+  initFxLayers();
+  initBgm().catch(()=>{});
+  if(PAGE==="player") renderPlayer();
+  else if(PAGE==="oversight") renderOversight();
+}
