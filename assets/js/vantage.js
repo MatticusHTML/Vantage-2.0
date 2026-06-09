@@ -795,9 +795,8 @@ async function initBgm(){
       <div class="bgm-browse">
         <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SEASONS</div>
         <div class="bgm-albums" id="bgm-albums"></div>
-        <div class="bgm-tracks-panel" id="bgm-tracks-panel" hidden>
-          <button type="button" class="bgm-back" id="bgm-back">&#8592; Seasons</button>
-          <div class="bgm-tracks-hdr" id="bgm-tracks-hdr"></div>
+        <div class="bgm-tracks-panel" id="bgm-tracks-panel">
+          <div class="bgm-tracks-hdr" id="bgm-tracks-hdr">Pick a season</div>
           <ul class="bgm-list" id="bgm-tracks-list"></ul>
         </div>
       </div>
@@ -831,6 +830,7 @@ async function initBgm(){
   let seekDragging=false;
   let trackIdx=-1;
   let shuffleOn=false;
+  let browseAlbumId=null;
 
   function trackAt(i){ return i>=0&&i<tracks.length?tracks[i]:null; }
   function track(){ return trackAt(trackIdx)||{title:"—",albumLabel:"",cover:null}; }
@@ -842,18 +842,17 @@ async function initBgm(){
     return idx;
   }
   function albumTracks(albumId){ return tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId); }
+  function albumMeta(albumId){ return albums.find(a=>a.id===albumId)||null; }
 
-  function showAlbums(){
-    albumsEl.hidden=false;
-    tracksPanel.hidden=true;
-    browseHdr.textContent="// SEASONS";
-  }
-  function showTracks(albumId,label){
-    albumsEl.hidden=true;
-    tracksPanel.hidden=false;
-    browseHdr.textContent="// TRACKS";
-    tracksHdr.textContent=label;
+  function setBrowseAlbum(albumId){
+    browseAlbumId=albumId;
+    const album=albumMeta(albumId);
+    albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
+      el.classList.toggle("on",el.dataset.album===albumId);
+    });
+    tracksHdr.textContent=album?album.label:"Pick a season";
     tracksList.innerHTML="";
+    if(!albumId) return;
     albumTracks(albumId).forEach(({t,i})=>{
       const li=document.createElement("li");
       const b=document.createElement("button");
@@ -871,26 +870,30 @@ async function initBgm(){
       tracksList.appendChild(li);
     });
   }
+  function syncBrowseToPlayingAlbum(){
+    const t=trackAt(trackIdx);
+    if(t?.album) setBrowseAlbum(t.album);
+  }
 
   albums.forEach(a=>{
     const count=a.count||albumTracks(a.id).length;
     const b=document.createElement("button");
     b.type="button";
     b.className="bgm-album-btn";
+    b.dataset.album=a.id;
     b.innerHTML=`<div class="bgm-album-thumb">${a.cover?`<img src="${audioSrc(a.cover)}" alt="" loading="lazy">`:""}</div>
-      <div class="bgm-album-info"><div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${count} track${count===1?"":"s"}</div></div>`;
-    b.onclick=e=>{ e.stopPropagation(); showTracks(a.id,a.label); };
+      <div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${count} track${count===1?"":"s"}</div>`;
+    b.onclick=e=>{ e.stopPropagation(); setBrowseAlbum(a.id); };
     albumsEl.appendChild(b);
   });
-  byId("bgm-back").onclick=e=>{ e.stopPropagation(); showAlbums(); };
 
   function saveBgmState(){
     if(trackIdx<0){ sessionStorage.setItem(BGM_PLAYING_KEY,"0"); return; }
-    if(deactivated||audio.paused) sessionStorage.setItem(BGM_PLAYING_KEY,"0");
-    else{
-      sessionStorage.setItem(BGM_PLAYING_KEY,"1");
+    if(audio.currentTime>0||!audio.paused){
       sessionStorage.setItem(BGM_TIME_KEY,String(audio.currentTime));
     }
+    if(deactivated||audio.paused) sessionStorage.setItem(BGM_PLAYING_KEY,"0");
+    else sessionStorage.setItem(BGM_PLAYING_KEY,"1");
     localStorage.setItem(BGM_TRACK_KEY,track().id);
   }
   function restoreBgmPosition(){
@@ -900,20 +903,35 @@ async function initBgm(){
     else if(!isNaN(t)&&t>0&&!audio.duration) audio.currentTime=t;
     positionRestored=true;
   }
+  let shownCoverSrc="";
   function updateCover(t){
-    coverEl.innerHTML=t.cover
-      ? `<img src="${audioSrc(t.cover)}" alt="" loading="lazy">`
-      : `<span class="bgm-cover-ph" aria-hidden="true">&#9835;</span>`;
+    const src=t.cover?audioSrc(t.cover):"";
+    if(src===shownCoverSrc) return;
+    shownCoverSrc=src;
+    if(src){
+      const img=coverEl.querySelector("img");
+      if(img) img.src=src;
+      else coverEl.innerHTML=`<img src="${src}" alt="">`;
+    }else{
+      coverEl.innerHTML=`<span class="bgm-cover-ph" aria-hidden="true">&#9835;</span>`;
+    }
   }
-  function highlightTrack(){
+  function highlightTrackList(){
     tracksList.querySelectorAll(".bgm-list-item").forEach(el=>{
       el.classList.toggle("on",parseInt(el.dataset.idx,10)===trackIdx);
     });
-    if(trackIdx>=0){
-      titleEl.textContent=track().title;
-      albumEl.textContent=track().albumLabel||"";
-      updateCover(track());
-    }
+  }
+  function updateNowPlaying(){
+    if(trackIdx<0) return;
+    const t=track();
+    if(titleEl.textContent!==t.title) titleEl.textContent=t.title;
+    const album=t.albumLabel||"";
+    if(albumEl.textContent!==album) albumEl.textContent=album;
+    updateCover(t);
+  }
+  function highlightTrack(){
+    highlightTrackList();
+    updateNowPlaying();
   }
   function updateSeekUi(){
     const d=audio.duration;
@@ -924,7 +942,8 @@ async function initBgm(){
     curEl.textContent=fmtAudioTime(audio.currentTime);
     durEl.textContent=d&&isFinite(d)?fmtAudioTime(d):"0:00";
   }
-  function syncUi(){
+  function syncUi(opts){
+    const trackOnly=opts&&opts.trackOnly;
     volSlider.value=vol;
     activeBtn.textContent=deactivated?"Activate":"Deactivate";
     activeBtn.classList.toggle("is-off",deactivated);
@@ -934,12 +953,13 @@ async function initBgm(){
     btn.classList.toggle("deactivated",deactivated);
     btn.classList.toggle("playing",!audio.paused&&!deactivated&&!autoplayMuted&&trackIdx>=0);
     btn.classList.toggle("needs-tap",autoplayMuted&&!deactivated);
-    highlightTrack();
+    if(trackOnly) highlightTrackList();
+    else highlightTrack();
     updateSeekUi();
   }
   function applyVol(){
     audio.volume=deactivated?0:Math.max(0,Math.min(1,vol/100));
-    syncUi();
+    syncUi({trackOnly:true});
   }
   async function attemptAutoplay(){
     if(trackIdx<0||deactivated){ audio.pause(); saveBgmState(); syncUi(); return; }
@@ -977,6 +997,7 @@ async function initBgm(){
     if(fromStart) positionRestored=true;
     else positionRestored=false;
     const t=track();
+    if(fromStart&&play) syncBrowseToPlayingAlbum();
     audio.src=audioSrc(t.file);
     audio.load();
     if(fromStart) audio.currentTime=0;
@@ -988,7 +1009,7 @@ async function initBgm(){
     };
     if(play&&!deactivated) audio.addEventListener("canplay",after,{once:true});
     else after();
-    saveBgmState();
+    if(play||fromStart) saveBgmState();
   }
   function shuffleNext(){
     shuffleOn=true;
@@ -998,7 +1019,7 @@ async function initBgm(){
   const savedId=localStorage.getItem(BGM_TRACK_KEY);
   if(savedId){
     const found=tracks.findIndex(t=>t.id===savedId);
-    if(found>=0){ trackIdx=found; shuffleOn=true; }
+    if(found>=0) trackIdx=found;
   }
 
   audio.addEventListener("loadedmetadata",()=>{ restoreBgmPosition(); updateSeekUi(); });
@@ -1007,6 +1028,9 @@ async function initBgm(){
   audio.addEventListener("pause",()=>{ saveBgmState(); syncUi(); });
   audio.addEventListener("ended",()=>{ if(deactivated) return; shuffleOn=true; shuffleNext(); });
   window.addEventListener("pagehide",saveBgmState);
+  document.addEventListener("visibilitychange",()=>{
+    if(document.visibilityState==="hidden") saveBgmState();
+  });
   setInterval(()=>{ if(!audio.paused&&!deactivated) saveBgmState(); },2000);
 
   seekSlider.addEventListener("pointerdown",()=>{ seekDragging=true; });
@@ -1037,7 +1061,6 @@ async function initBgm(){
     const open=!drop.hidden;
     drop.hidden=open;
     btn.setAttribute("aria-expanded",String(!open));
-    if(!open) showAlbums();
     if(open&&autoplayMuted&&!deactivated) unlockFromGesture();
   };
   activeBtn.onclick=e=>{
@@ -1067,18 +1090,19 @@ async function initBgm(){
     if(!wrap.contains(e.target)){
       drop.hidden=true;
       btn.setAttribute("aria-expanded","false");
-      showAlbums();
     }
   });
 
-  showAlbums();
+  if(trackIdx>=0) syncBrowseToPlayingAlbum();
+  else if(albums.length) setBrowseAlbum(albums[0].id);
+  const resumePlay=trackIdx>=0&&!deactivated&&wasPlayingLastPage();
   if(trackIdx>=0){
     loadTrack(trackIdx,false);
     applyVol();
-    audio.addEventListener("canplay",()=>{
-      if(!deactivated&&wasPlayingLastPage()) attemptAutoplay();
-    },{once:true});
-    if(!deactivated&&wasPlayingLastPage()) attemptAutoplay();
+    if(resumePlay){
+      audio.addEventListener("canplay",()=>{ attemptAutoplay(); },{once:true});
+      attemptAutoplay();
+    }
   }else{
     applyVol();
   }
