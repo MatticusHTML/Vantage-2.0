@@ -738,70 +738,209 @@ function mapHeatmap(data){
     `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
 }
 
-/* ---- background music ---- */
+/* ---- background music / jukebox ---- */
 const BGM_KEY="vantage-bgm-vol";
 const BGM_MUTE_KEY="vantage-bgm-muted";
 const BGM_TIME_KEY="vantage-bgm-time";
 const BGM_PLAYING_KEY="vantage-bgm-playing";
+const BGM_TRACK_KEY="vantage-bgm-track";
 const BGM_DEFAULT_VOL=25;
-function initBgm(){
+const BGM_FALLBACK=[];
+
+function fmtAudioTime(s){
+  if(!isFinite(s)||s<0) return "0:00";
+  const m=Math.floor(s/60), sec=Math.floor(s%60);
+  return m+":"+String(sec).padStart(2,"0");
+}
+function audioSrc(file){ return `${BASE}assets/audio/${file.split("/").map(encodeURIComponent).join("/")}`; }
+
+async function initBgm(){
   if(document.getElementById("vantage-bgm")) return;
+  let playlist={albums:[],tracks:BGM_FALLBACK,defaultTrack:null};
+  try{
+    const r=await fetch(`${BASE}data/music/playlist.json`,{cache:"no-store"});
+    if(r.ok) playlist=await r.json();
+  }catch(e){}
+
+  const tracks=(playlist.tracks||[]).filter(t=>t.album!=="y11s1"&&t.file!=="vibe-shard.mp3");
+  if(!tracks.length) return;
+
+  const albums=(playlist.albums||[]).filter(a=>a.id!=="y11s1");
   const wrap=document.createElement("div");
   wrap.className="bgm-ctl";
-  wrap.innerHTML=`<button type="button" class="bgm-btn" id="bgm-btn" aria-label="Background music volume" aria-expanded="false" title="Volume">&#9835;</button>
+  wrap.innerHTML=`<button type="button" class="bgm-btn" id="bgm-btn" aria-label="Music player" aria-expanded="false" title="Music">&#9835;</button>
     <div class="bgm-drop" id="bgm-drop" hidden>
-      <div class="bgm-drop-hdr">// AMBIENT AUDIO</div>
-      <button type="button" class="bgm-mute" id="bgm-mute">Mute</button>
-      <label class="bgm-vol-lbl" for="bgm-vol">Volume</label>
-      <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="${BGM_DEFAULT_VOL}">
+      <div class="bgm-drop-hdr">// COMMS AUDIO</div>
+      <div class="bgm-now">
+        <div class="bgm-cover" id="bgm-cover"><span class="bgm-cover-ph" aria-hidden="true">&#9835;</span></div>
+        <div class="bgm-meta">
+          <div class="bgm-title" id="bgm-title">—</div>
+          <div class="bgm-album" id="bgm-album">Pick a season</div>
+        </div>
+      </div>
+      <div class="bgm-transport">
+        <button type="button" class="bgm-tbtn bgm-play" id="bgm-play" aria-label="Play">&#9654;</button>
+        <button type="button" class="bgm-tbtn" id="bgm-skip" aria-label="Shuffle skip" title="Shuffle skip">&#8644;</button>
+      </div>
+      <div class="bgm-seek-row">
+        <span class="bgm-time" id="bgm-cur">0:00</span>
+        <input type="range" class="bgm-seek" id="bgm-seek" min="0" max="1000" value="0" aria-label="Seek">
+        <span class="bgm-time end" id="bgm-dur">0:00</span>
+      </div>
+      <div class="bgm-vol-row">
+        <span class="bgm-vol-lbl">Vol</span>
+        <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="${BGM_DEFAULT_VOL}">
+        <button type="button" class="bgm-mute" id="bgm-mute">Mute</button>
+      </div>
+      <div class="bgm-browse">
+        <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SEASONS</div>
+        <div class="bgm-albums" id="bgm-albums"></div>
+        <div class="bgm-tracks-panel" id="bgm-tracks-panel" hidden>
+          <button type="button" class="bgm-back" id="bgm-back">&#8592; Seasons</button>
+          <div class="bgm-tracks-hdr" id="bgm-tracks-hdr"></div>
+          <ul class="bgm-list" id="bgm-tracks-list"></ul>
+        </div>
+      </div>
     </div>
-    <audio id="vantage-bgm" loop preload="auto" autoplay src="${BASE}assets/audio/vibe-shard.mp3"></audio>`;
+    <audio id="vantage-bgm" preload="metadata"></audio>`;
   document.body.appendChild(wrap);
 
   const audio=byId("vantage-bgm");
   const btn=byId("bgm-btn");
   const drop=byId("bgm-drop");
   const muteBtn=byId("bgm-mute");
-  const slider=byId("bgm-vol");
+  const volSlider=byId("bgm-vol");
+  const seekSlider=byId("bgm-seek");
+  const playBtn=byId("bgm-play");
+  const titleEl=byId("bgm-title");
+  const albumEl=byId("bgm-album");
+  const coverEl=byId("bgm-cover");
+  const curEl=byId("bgm-cur");
+  const durEl=byId("bgm-dur");
+  const albumsEl=byId("bgm-albums");
+  const tracksPanel=byId("bgm-tracks-panel");
+  const tracksList=byId("bgm-tracks-list");
+  const tracksHdr=byId("bgm-tracks-hdr");
+  const browseHdr=byId("bgm-browse-hdr");
+
   let muted=localStorage.getItem(BGM_MUTE_KEY)==="1";
   let vol=parseInt(localStorage.getItem(BGM_KEY),10);
   if(isNaN(vol)) vol=BGM_DEFAULT_VOL;
   let autoplayMuted=false;
   let positionRestored=false;
+  let seekDragging=false;
+  let trackIdx=-1;
+  let shuffleOn=false;
 
-  function wasPlayingLastPage(){
-    return sessionStorage.getItem(BGM_PLAYING_KEY)==="1";
+  function trackAt(i){ return i>=0&&i<tracks.length?tracks[i]:null; }
+  function track(){ return trackAt(trackIdx)||{title:"—",albumLabel:"",cover:null}; }
+  function wasPlayingLastPage(){ return sessionStorage.getItem(BGM_PLAYING_KEY)==="1"; }
+  function randomTrackIdx(exclude){
+    if(tracks.length<=1) return 0;
+    let idx;
+    do{ idx=Math.floor(Math.random()*tracks.length); }while(idx===exclude);
+    return idx;
   }
+  function albumTracks(albumId){ return tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId); }
+
+  function showAlbums(){
+    albumsEl.hidden=false;
+    tracksPanel.hidden=true;
+    browseHdr.textContent="// SEASONS";
+  }
+  function showTracks(albumId,label){
+    albumsEl.hidden=true;
+    tracksPanel.hidden=false;
+    browseHdr.textContent="// TRACKS";
+    tracksHdr.textContent=label;
+    tracksList.innerHTML="";
+    albumTracks(albumId).forEach(({t,i})=>{
+      const li=document.createElement("li");
+      const b=document.createElement("button");
+      b.type="button";
+      b.className="bgm-list-item";
+      b.dataset.idx=String(i);
+      b.textContent=t.title;
+      b.classList.toggle("on",i===trackIdx);
+      b.onclick=e=>{
+        e.stopPropagation();
+        shuffleOn=true;
+        loadTrack(i,true,true);
+      };
+      li.appendChild(b);
+      tracksList.appendChild(li);
+    });
+  }
+
+  albums.forEach(a=>{
+    const count=a.count||albumTracks(a.id).length;
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="bgm-album-btn";
+    b.innerHTML=`<div class="bgm-album-thumb">${a.cover?`<img src="${audioSrc(a.cover)}" alt="" loading="lazy">`:""}</div>
+      <div class="bgm-album-info"><div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${count} track${count===1?"":"s"}</div></div>`;
+    b.onclick=e=>{ e.stopPropagation(); showTracks(a.id,a.label); };
+    albumsEl.appendChild(b);
+  });
+  byId("bgm-back").onclick=e=>{ e.stopPropagation(); showAlbums(); };
+
   function saveBgmState(){
-    if(muted||audio.paused){
-      sessionStorage.setItem(BGM_PLAYING_KEY,"0");
-    }else{
+    if(trackIdx<0){ sessionStorage.setItem(BGM_PLAYING_KEY,"0"); return; }
+    if(muted||audio.paused) sessionStorage.setItem(BGM_PLAYING_KEY,"0");
+    else{
       sessionStorage.setItem(BGM_PLAYING_KEY,"1");
       sessionStorage.setItem(BGM_TIME_KEY,String(audio.currentTime));
     }
+    localStorage.setItem(BGM_TRACK_KEY,track().id);
   }
   function restoreBgmPosition(){
-    if(positionRestored) return;
+    if(positionRestored||shuffleOn) return;
     const t=parseFloat(sessionStorage.getItem(BGM_TIME_KEY));
-    if(!isNaN(t)&&t>0&&(!audio.duration||t<audio.duration-1)){
-      audio.currentTime=t;
-    }
+    if(!isNaN(t)&&t>0&&audio.duration&&t<audio.duration-0.5) audio.currentTime=t;
+    else if(!isNaN(t)&&t>0&&!audio.duration) audio.currentTime=t;
     positionRestored=true;
   }
-
+  function updateCover(t){
+    coverEl.innerHTML=t.cover
+      ? `<img src="${audioSrc(t.cover)}" alt="" loading="lazy">`
+      : `<span class="bgm-cover-ph" aria-hidden="true">&#9835;</span>`;
+  }
+  function highlightTrack(){
+    tracksList.querySelectorAll(".bgm-list-item").forEach(el=>{
+      el.classList.toggle("on",parseInt(el.dataset.idx,10)===trackIdx);
+    });
+    if(trackIdx>=0){
+      titleEl.textContent=track().title;
+      albumEl.textContent=track().albumLabel||"";
+      updateCover(track());
+    }
+  }
+  function updateSeekUi(){
+    const d=audio.duration;
+    if(!seekDragging){
+      if(d&&isFinite(d)) seekSlider.value=String(Math.round((audio.currentTime/d)*1000));
+      else seekSlider.value="0";
+    }
+    curEl.textContent=fmtAudioTime(audio.currentTime);
+    durEl.textContent=d&&isFinite(d)?fmtAudioTime(d):"0:00";
+  }
   function syncUi(){
-    slider.value=vol;
+    volSlider.value=vol;
     muteBtn.textContent=muted?"Unmute":"Mute";
+    playBtn.innerHTML=audio.paused?"&#9654;":"&#9646;&#9646;";
+    playBtn.setAttribute("aria-label",audio.paused?"Play":"Pause");
     btn.classList.toggle("muted",muted);
-    btn.classList.toggle("playing",!audio.paused&&!muted&&!autoplayMuted);
+    btn.classList.toggle("playing",!audio.paused&&!muted&&!autoplayMuted&&trackIdx>=0);
     btn.classList.toggle("needs-tap",autoplayMuted&&!muted);
+    highlightTrack();
+    updateSeekUi();
   }
   function applyVol(){
     audio.volume=muted?0:Math.max(0,Math.min(1,vol/100));
     syncUi();
   }
   async function attemptAutoplay(){
-    if(muted){ audio.pause(); saveBgmState(); syncUi(); return; }
+    if(trackIdx<0||muted){ audio.pause(); saveBgmState(); syncUi(); return; }
     restoreBgmPosition();
     audio.volume=vol/100;
     audio.muted=false;
@@ -821,35 +960,76 @@ function initBgm(){
     }catch(e){ syncUi(); }
   }
   function unlockFromGesture(){
-    if(muted) return;
+    if(muted||trackIdx<0) return;
     if(autoplayMuted){
       audio.muted=false;
       autoplayMuted=false;
       applyVol();
       audio.play().then(saveBgmState).catch(()=>{});
-    }else if(audio.paused){
-      attemptAutoplay();
-    }
+    }else if(audio.paused) attemptAutoplay();
+  }
+  function loadTrack(idx,play,fromStart){
+    if(idx<0||idx>=tracks.length) return;
+    trackIdx=idx;
+    if(fromStart) positionRestored=true;
+    else positionRestored=false;
+    const t=track();
+    audio.src=audioSrc(t.file);
+    audio.load();
+    if(fromStart) audio.currentTime=0;
+    highlightTrack();
+    const after=()=>{
+      if(fromStart) audio.currentTime=0;
+      if(play&&!muted) attemptAutoplay();
+      else syncUi();
+    };
+    if(play&&!muted) audio.addEventListener("canplay",after,{once:true});
+    else after();
+    saveBgmState();
+  }
+  function shuffleNext(){
+    shuffleOn=true;
+    loadTrack(randomTrackIdx(trackIdx),true,true);
   }
 
-  audio.addEventListener("loadedmetadata",restoreBgmPosition);
-  audio.addEventListener("canplay",()=>{
-    if(!muted&&(wasPlayingLastPage()||!audio.paused)) attemptAutoplay();
-  });
+  const savedId=localStorage.getItem(BGM_TRACK_KEY);
+  if(savedId){
+    const found=tracks.findIndex(t=>t.id===savedId);
+    if(found>=0){ trackIdx=found; shuffleOn=true; }
+  }
+
+  audio.addEventListener("loadedmetadata",()=>{ restoreBgmPosition(); updateSeekUi(); });
+  audio.addEventListener("timeupdate",()=>{ if(!seekDragging) updateSeekUi(); });
+  audio.addEventListener("play",syncUi);
+  audio.addEventListener("pause",()=>{ saveBgmState(); syncUi(); });
+  audio.addEventListener("ended",()=>{ shuffleOn=true; shuffleNext(); });
   window.addEventListener("pagehide",saveBgmState);
   setInterval(()=>{ if(!audio.paused&&!muted) saveBgmState(); },2000);
 
-  applyVol();
-  if(!muted&&wasPlayingLastPage()) attemptAutoplay();
-  else if(!muted) attemptAutoplay();
-  document.addEventListener("pointerdown",unlockFromGesture,{passive:true});
-  document.addEventListener("keydown",unlockFromGesture);
+  seekSlider.addEventListener("pointerdown",()=>{ seekDragging=true; });
+  seekSlider.addEventListener("pointerup",()=>{ seekDragging=false; });
+  seekSlider.oninput=()=>{
+    if(audio.duration&&isFinite(audio.duration)){
+      audio.currentTime=(parseInt(seekSlider.value,10)/1000)*audio.duration;
+      updateSeekUi();
+    }
+  };
+
+  playBtn.onclick=e=>{
+    e.stopPropagation();
+    if(trackIdx<0) return;
+    if(muted&&vol===0){ vol=BGM_DEFAULT_VOL; muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); }
+    if(audio.paused) attemptAutoplay();
+    else{ audio.pause(); saveBgmState(); syncUi(); }
+  };
+  byId("bgm-skip").onclick=e=>{ e.stopPropagation(); if(trackIdx<0) return; shuffleNext(); };
 
   btn.onclick=e=>{
     e.stopPropagation();
     const open=!drop.hidden;
     drop.hidden=open;
     btn.setAttribute("aria-expanded",String(!open));
+    if(!open) showAlbums();
     if(open&&autoplayMuted&&!muted) unlockFromGesture();
   };
   muteBtn.onclick=e=>{
@@ -859,7 +1039,7 @@ function initBgm(){
       if(vol===0) vol=BGM_DEFAULT_VOL;
       localStorage.setItem(BGM_MUTE_KEY,"0");
       applyVol();
-      attemptAutoplay();
+      if(trackIdx>=0) attemptAutoplay();
     }else{
       muted=true;
       localStorage.setItem(BGM_MUTE_KEY,"1");
@@ -870,8 +1050,8 @@ function initBgm(){
       applyVol();
     }
   };
-  slider.oninput=()=>{
-    vol=parseInt(slider.value,10);
+  volSlider.oninput=()=>{
+    vol=parseInt(volSlider.value,10);
     localStorage.setItem(BGM_KEY,String(vol));
     if(vol===0){
       muted=true;
@@ -884,18 +1064,36 @@ function initBgm(){
       muted=false;
       localStorage.setItem(BGM_MUTE_KEY,"0");
       applyVol();
-      attemptAutoplay();
+      if(trackIdx>=0&&audio.paused) attemptAutoplay();
     }
     applyVol();
   };
   document.addEventListener("click",e=>{
-    if(!wrap.contains(e.target)){ drop.hidden=true; btn.setAttribute("aria-expanded","false"); }
+    if(!wrap.contains(e.target)){
+      drop.hidden=true;
+      btn.setAttribute("aria-expanded","false");
+      showAlbums();
+    }
   });
+
+  showAlbums();
+  if(trackIdx>=0){
+    loadTrack(trackIdx,false);
+    applyVol();
+    audio.addEventListener("canplay",()=>{
+      if(!muted&&wasPlayingLastPage()) attemptAutoplay();
+    });
+    if(!muted&&wasPlayingLastPage()) attemptAutoplay();
+  }else{
+    applyVol();
+  }
+  document.addEventListener("pointerdown",unlockFromGesture,{passive:true});
+  document.addEventListener("keydown",unlockFromGesture);
 }
 
 /* ---- boot ---- */
 initFxLayers();
-initBgm();
+initBgm().catch(()=>{});
 if(PAGE==="roster")       { applyMenuTheme(); renderRoster(); }
 else if(PAGE==="player")   renderPlayer();
 else if(PAGE==="oversight") renderOversight();
