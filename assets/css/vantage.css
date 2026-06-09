@@ -15,6 +15,7 @@
   --border:#242b40;
   --green:#3ee08f;         /* win% >=55 / wins / +RP */
   --red:#ff5c66;           /* win% <45 / losses / -RP */
+  --doka:#e3413d;          /* Y11S2 Dokkaebi remaster intercept red (sampled from promo) */
   --win-bg:rgba(62,224,143,.06);
   --loss-bg:rgba(255,92,102,.06);
   --mono:'JetBrains Mono',ui-monospace,'Cascadia Code',monospace;
@@ -528,11 +529,11 @@ body[data-page="player"][data-season="Y11S2"] .fx-doka-intercept{
   font-size:clamp(9px,1.05vw,11px);
   font-weight:500;
   letter-spacing:.06em;
-  color:#3ee08f;
+  color:var(--doka);
   text-shadow:
-    -1px 0 rgba(255,70,90,.35),
-    1px 0 rgba(70,180,255,.35),
-    0 0 10px rgba(62,224,143,.25);
+    -1px 0 rgba(255,70,90,.4),
+    1px 0 rgba(70,180,255,.28),
+    0 0 12px rgba(227,65,61,.32);
   white-space:nowrap;
   user-select:none;
   pointer-events:none;
@@ -611,8 +612,8 @@ body.doka-intro-active{overflow:hidden}
   position:absolute;inset:0;display:grid;
   grid-template-columns:1fr minmax(200px,420px) 1fr;
   align-items:center;padding:clamp(16px,4vw,48px);
-  font-family:var(--mono);color:#ff2848;
-  text-shadow:0 0 12px rgba(255,40,70,.45);
+  font-family:var(--mono);color:var(--doka);
+  text-shadow:0 0 12px rgba(227,65,61,.45);
 }
 .doka-intro-left,.doka-intro-right{
   font-size:clamp(9px,1vw,11px);line-height:1.7;letter-spacing:.06em;

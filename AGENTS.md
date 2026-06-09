@@ -188,7 +188,7 @@ When Ubisoft ships a new season, add or replace matching `VANTAGE_*_REFERENCE_<s
 
 **Hack intro overlay:** On **roster / menu load** (`index.html`), a ~**2.5s** full-screen red glitch overlay plays (`SYSTEM HACKED` / `DOKKAEBI` / terminal lines), then fades out (~0.6s) — the “hacking into VANTAGE” moment. Not on player dossiers, OVERSIGHT, or Y11S1. Skipped when `prefers-reduced-motion` is set. Y11S2-era site flavor only — not Y11S3+.
 
-**Margin intercepts (green Doka quips):** Y11S2 **player dossiers** only — not roster, not OVERSIGHT.
+**Margin intercepts (Dokkaebi remaster red `#e3413d` quips):** Y11S2 **player dossiers** only — not roster, not OVERSIGHT.
 
 ---
 
@@ -258,7 +258,7 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 - Operator table shows the **full roster, all maps** — don't trim it.
 - Comment log shows the **latest wave only** (6 entries); prior waves live in JSON and appear via **Past comments** modal.
 - Badges are cumulative; zero counts are never shown.
-- Palette: bg `#0d0f1a` · purple `#6b2fa0` · purple-lt `#9a5cd4` · gold `#ffc800` · white `#e8eaf0` · green `#3ee08f` · red `#ff5c66`.
+- Palette: bg `#0d0f1a` · purple `#6b2fa0` · purple-lt `#9a5cd4` · gold `#ffc800` · white `#e8eaf0` · green `#3ee08f` (stats) · red `#ff5c66` · doka `#e3413d` (Y11S2 intercepts).
 
 ---
 

@@ -2,7 +2,7 @@
 ### VANTAGE Protocol · Easter-Egg / Hidden-Message Persona
 **Codename:** DOKKAEBI (squad shorthand: "Doka")
 **Function:** Unsanctioned voice hiding inside the VANTAGE/OVERSIGHT system — a 4th-wall-breaking hacker character who has "rooted" the coach and leaves hidden messages in the reports.
-**Render style suggestion:** Green terminal / glitch text (`#3ee08f`), monospace (JetBrains Mono), often tagged as intercepted or corrupted log entries.
+**Render style suggestion:** Dokkaebi remaster red / glitch text (`#e3413d`), monospace (JetBrains Mono), often tagged as intercepted or corrupted log entries.
 
 ---
 
@@ -143,7 +143,7 @@ She doesn't always sign, but when she does, pick from this flavor:
 
 How these should appear in the VANTAGE-2.0 site / reports so they read as *hidden* rather than official:
 
-- **Visually distinct from VANTAGE.** VANTAGE is orange/gold authority. Doka is **green terminal glitch** (`#3ee08f`), monospace, smaller, often italic or `>_` prefixed.
+- **Visually distinct from VANTAGE.** VANTAGE is orange/gold authority. Doka is **remaster red terminal glitch** (`#e3413d`), monospace, smaller, often italic or `>_` prefixed.
 - **Frame them as intercepts.** Prefix tags like `[ghost process]`, `[TRACE DETECTED]`, `// intercepted`, `>_` sell the "she broke in" idea.
 - **Treat them as easter eggs, not features.** They sit *under* or *beside* the real comment, like a margin note or a corrupted log line — never replacing actual coaching data.
 - **Low frequency = high impact.** One or two Doka messages per report refresh, max. She's rare on purpose; if she's everywhere, she's noise instead of a ghost.
