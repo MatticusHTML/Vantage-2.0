@@ -771,7 +771,7 @@ async function initBgm(){
   wrap.innerHTML=`<button type="button" class="bgm-btn" id="bgm-btn" aria-label="Music player" aria-expanded="false" title="Music">&#9835;</button>
     <div class="bgm-drop" id="bgm-drop" hidden>
       <div class="bgm-drop-hdr">// COMMS AUDIO</div>
-      <div class="bgm-now">
+      <div class="bgm-hero">
         <div class="bgm-cover" id="bgm-cover"><span class="bgm-cover-ph" aria-hidden="true">&#9835;</span></div>
         <div class="bgm-meta">
           <div class="bgm-title" id="bgm-title">—</div>
@@ -780,7 +780,7 @@ async function initBgm(){
       </div>
       <div class="bgm-transport">
         <button type="button" class="bgm-tbtn bgm-play" id="bgm-play" aria-label="Play">&#9654;</button>
-        <button type="button" class="bgm-tbtn" id="bgm-skip" aria-label="Shuffle skip" title="Shuffle skip">&#8644;</button>
+        <button type="button" class="bgm-tbtn bgm-skip" id="bgm-skip" aria-label="Skip to next track" title="Skip">Skip</button>
       </div>
       <div class="bgm-seek-row">
         <span class="bgm-time" id="bgm-cur">0:00</span>
@@ -790,7 +790,7 @@ async function initBgm(){
       <div class="bgm-vol-row">
         <span class="bgm-vol-lbl">Vol</span>
         <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="${BGM_DEFAULT_VOL}">
-        <button type="button" class="bgm-mute" id="bgm-mute">Mute</button>
+        <button type="button" class="bgm-active" id="bgm-active">Deactivate</button>
       </div>
       <div class="bgm-browse">
         <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SEASONS</div>
@@ -808,7 +808,7 @@ async function initBgm(){
   const audio=byId("vantage-bgm");
   const btn=byId("bgm-btn");
   const drop=byId("bgm-drop");
-  const muteBtn=byId("bgm-mute");
+  const activeBtn=byId("bgm-active");
   const volSlider=byId("bgm-vol");
   const seekSlider=byId("bgm-seek");
   const playBtn=byId("bgm-play");
@@ -823,7 +823,7 @@ async function initBgm(){
   const tracksHdr=byId("bgm-tracks-hdr");
   const browseHdr=byId("bgm-browse-hdr");
 
-  let muted=localStorage.getItem(BGM_MUTE_KEY)==="1";
+  let deactivated=localStorage.getItem(BGM_MUTE_KEY)==="1";
   let vol=parseInt(localStorage.getItem(BGM_KEY),10);
   if(isNaN(vol)) vol=BGM_DEFAULT_VOL;
   let autoplayMuted=false;
@@ -886,7 +886,7 @@ async function initBgm(){
 
   function saveBgmState(){
     if(trackIdx<0){ sessionStorage.setItem(BGM_PLAYING_KEY,"0"); return; }
-    if(muted||audio.paused) sessionStorage.setItem(BGM_PLAYING_KEY,"0");
+    if(deactivated||audio.paused) sessionStorage.setItem(BGM_PLAYING_KEY,"0");
     else{
       sessionStorage.setItem(BGM_PLAYING_KEY,"1");
       sessionStorage.setItem(BGM_TIME_KEY,String(audio.currentTime));
@@ -926,21 +926,23 @@ async function initBgm(){
   }
   function syncUi(){
     volSlider.value=vol;
-    muteBtn.textContent=muted?"Unmute":"Mute";
+    activeBtn.textContent=deactivated?"Activate":"Deactivate";
+    activeBtn.classList.toggle("is-off",deactivated);
+    activeBtn.setAttribute("aria-label",deactivated?"Activate music":"Deactivate music");
     playBtn.innerHTML=audio.paused?"&#9654;":"&#9646;&#9646;";
     playBtn.setAttribute("aria-label",audio.paused?"Play":"Pause");
-    btn.classList.toggle("muted",muted);
-    btn.classList.toggle("playing",!audio.paused&&!muted&&!autoplayMuted&&trackIdx>=0);
-    btn.classList.toggle("needs-tap",autoplayMuted&&!muted);
+    btn.classList.toggle("deactivated",deactivated);
+    btn.classList.toggle("playing",!audio.paused&&!deactivated&&!autoplayMuted&&trackIdx>=0);
+    btn.classList.toggle("needs-tap",autoplayMuted&&!deactivated);
     highlightTrack();
     updateSeekUi();
   }
   function applyVol(){
-    audio.volume=muted?0:Math.max(0,Math.min(1,vol/100));
+    audio.volume=deactivated?0:Math.max(0,Math.min(1,vol/100));
     syncUi();
   }
   async function attemptAutoplay(){
-    if(trackIdx<0||muted){ audio.pause(); saveBgmState(); syncUi(); return; }
+    if(trackIdx<0||deactivated){ audio.pause(); saveBgmState(); syncUi(); return; }
     restoreBgmPosition();
     audio.volume=vol/100;
     audio.muted=false;
@@ -959,14 +961,15 @@ async function initBgm(){
       syncUi();
     }catch(e){ syncUi(); }
   }
-  function unlockFromGesture(){
-    if(muted||trackIdx<0) return;
+  function unlockFromGesture(e){
+    if(e&&wrap.contains(e.target)) return;
+    if(deactivated||trackIdx<0) return;
     if(autoplayMuted){
       audio.muted=false;
       autoplayMuted=false;
       applyVol();
       audio.play().then(saveBgmState).catch(()=>{});
-    }else if(audio.paused) attemptAutoplay();
+    }
   }
   function loadTrack(idx,play,fromStart){
     if(idx<0||idx>=tracks.length) return;
@@ -980,10 +983,10 @@ async function initBgm(){
     highlightTrack();
     const after=()=>{
       if(fromStart) audio.currentTime=0;
-      if(play&&!muted) attemptAutoplay();
+      if(play&&!deactivated) attemptAutoplay();
       else syncUi();
     };
-    if(play&&!muted) audio.addEventListener("canplay",after,{once:true});
+    if(play&&!deactivated) audio.addEventListener("canplay",after,{once:true});
     else after();
     saveBgmState();
   }
@@ -1002,9 +1005,9 @@ async function initBgm(){
   audio.addEventListener("timeupdate",()=>{ if(!seekDragging) updateSeekUi(); });
   audio.addEventListener("play",syncUi);
   audio.addEventListener("pause",()=>{ saveBgmState(); syncUi(); });
-  audio.addEventListener("ended",()=>{ shuffleOn=true; shuffleNext(); });
+  audio.addEventListener("ended",()=>{ if(deactivated) return; shuffleOn=true; shuffleNext(); });
   window.addEventListener("pagehide",saveBgmState);
-  setInterval(()=>{ if(!audio.paused&&!muted) saveBgmState(); },2000);
+  setInterval(()=>{ if(!audio.paused&&!deactivated) saveBgmState(); },2000);
 
   seekSlider.addEventListener("pointerdown",()=>{ seekDragging=true; });
   seekSlider.addEventListener("pointerup",()=>{ seekDragging=false; });
@@ -1018,7 +1021,12 @@ async function initBgm(){
   playBtn.onclick=e=>{
     e.stopPropagation();
     if(trackIdx<0) return;
-    if(muted&&vol===0){ vol=BGM_DEFAULT_VOL; muted=false; localStorage.setItem(BGM_MUTE_KEY,"0"); applyVol(); }
+    if(deactivated){
+      deactivated=false;
+      localStorage.setItem(BGM_MUTE_KEY,"0");
+      if(vol===0) vol=BGM_DEFAULT_VOL;
+      applyVol();
+    }
     if(audio.paused) attemptAutoplay();
     else{ audio.pause(); saveBgmState(); syncUi(); }
   };
@@ -1030,18 +1038,18 @@ async function initBgm(){
     drop.hidden=open;
     btn.setAttribute("aria-expanded",String(!open));
     if(!open) showAlbums();
-    if(open&&autoplayMuted&&!muted) unlockFromGesture();
+    if(open&&autoplayMuted&&!deactivated) unlockFromGesture();
   };
-  muteBtn.onclick=e=>{
+  activeBtn.onclick=e=>{
     e.stopPropagation();
-    if(muted){
-      muted=false;
+    if(deactivated){
+      deactivated=false;
       if(vol===0) vol=BGM_DEFAULT_VOL;
       localStorage.setItem(BGM_MUTE_KEY,"0");
       applyVol();
       if(trackIdx>=0) attemptAutoplay();
     }else{
-      muted=true;
+      deactivated=true;
       localStorage.setItem(BGM_MUTE_KEY,"1");
       audio.pause();
       autoplayMuted=false;
@@ -1053,19 +1061,6 @@ async function initBgm(){
   volSlider.oninput=()=>{
     vol=parseInt(volSlider.value,10);
     localStorage.setItem(BGM_KEY,String(vol));
-    if(vol===0){
-      muted=true;
-      localStorage.setItem(BGM_MUTE_KEY,"1");
-      audio.pause();
-      autoplayMuted=false;
-      audio.muted=false;
-      saveBgmState();
-    }else{
-      muted=false;
-      localStorage.setItem(BGM_MUTE_KEY,"0");
-      applyVol();
-      if(trackIdx>=0&&audio.paused) attemptAutoplay();
-    }
     applyVol();
   };
   document.addEventListener("click",e=>{
@@ -1081,9 +1076,9 @@ async function initBgm(){
     loadTrack(trackIdx,false);
     applyVol();
     audio.addEventListener("canplay",()=>{
-      if(!muted&&wasPlayingLastPage()) attemptAutoplay();
-    });
-    if(!muted&&wasPlayingLastPage()) attemptAutoplay();
+      if(!deactivated&&wasPlayingLastPage()) attemptAutoplay();
+    },{once:true});
+    if(!deactivated&&wasPlayingLastPage()) attemptAutoplay();
   }else{
     applyVol();
   }
