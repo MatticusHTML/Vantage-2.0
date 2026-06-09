@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 8, 2026 · 10:45 AM PT
+**Updated:** Jun 9, 2026 · 1:15 PM PT
 
 ```json
 {
   "name": "OVERSIGHT",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 8, 2026 · 10:45 AM PT",
+  "updated": "Jun 9, 2026 · 1:15 PM PT",
   "comments": [
     {
       "type": "map",
@@ -80,6 +80,42 @@
       "subject": "Sledge",
       "date": "Jun 8",
       "text": "Grandmaster Sandman opened Wave 1 with fifteen operators in four placement games and one Sledge round that lost anyway. Fourteen games later: eleven Sledge rounds, 63.6% win rate, 1.75 K/D, Gold V at 2,598 RP. That's consolidation paying off — purposeful hammer, timed entries, not nostalgia rushes. Matticus HQ just opened with ten operators in two placement losses — same spread disease, better headshot rate, zero rank. Sandman's arc is the squad memo: lock attack and defense mains before game five, not after Bronze."
+    },
+    {
+      "type": "map",
+      "subject": "Bank",
+      "date": "Jun 8",
+      "text": "Jun 8 made Bank the squad's shared receipt map. Grandmaster Sandman cashed 4:1 with two 3K tags and the Gold IV promotion. Rogue_Amputee stopped a Jun 7 bleed with a clean 4/2/1 W. Matticus HQ logged his first placement win at 2/2/0 — no RP tick yet, but the round closure finally landed. Three stacks, same morning, same map, three Ws. CunderThock didn't queue it this session, but the rest of the stack proved Bank rewards disciplined trades over hero ball. When the squad converges on a map and closes, the board moves — Sandman to Gold IV, Rogue back to Bronze II, Matticus off an 0–2 opener."
+    },
+    {
+      "type": "operator",
+      "subject": "Sledge",
+      "date": "Jun 9",
+      "text": "Grandmaster Sandman: thirteen Sledge rounds, 61.5% win rate, 1.89 K/D — still the highest-volume attacker on the squad and the line that fixed Y11S1's hammer tax. Bank's 7/2/1 with two 3K tags is timed entry and round closure, not nostalgia floor-bashing. Cross-roster contrast: CunderThock's attack volume still lives on Zero and Solid Snake experiments; Sandman consolidated on one rifle and climbed to Gold IV. The squad memo didn't change — pick an attack main and stop auditioning — Sandman just wrote the answer on the dossier."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 9",
+      "text": "Rogue_Amputee's Dokkaebi: eleven attack rounds, 63.6% win rate, 1.40 K/D, five assists — the best Jegeo Payload receipt on the stack after Bank stopped the slide. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in at volume. The remaster rewards scan-and-payload pressure, not passive phone hacks — Rogue found the rhythm first and climbed back to Bronze II on discipline, not highlight volume. Cross-roster note: when attack WR is underwater, Dokkaebi and Nomad on Rogue's sheet are the template; Brava and Gridlock reflexes are the tax."
+    },
+    {
+      "type": "operator",
+      "subject": "Skopos",
+      "date": "Jun 9",
+      "text": "Matticus HQ's Skopós: four defensive rounds, 100% win rate, 2.00 K/D — the first perfect operator sample on his placement card and the engine behind the Bank W. Pantheon Shells in two zones let him swap bodies and punish commitments without ego peeking. Cross-roster contrast: Grandmaster Sandman anchors on Kaid at 83.3%; CunderThock on Tachanka at sixty-three percent over thirty-three rounds; Rogue on Mute volume. Matticus finally has a defensive signal — stop spreading twelve operators in three games and ride the shell swap before Copper lands."
+    },
+    {
+      "type": "operator",
+      "subject": "Kaid",
+      "date": "Jun 9",
+      "text": "Grandmaster Sandman: twelve Kaid rounds, 83.3% win rate — the defensive headline of System Override and the anchor behind Gold IV. Rogue_Amputee's Kaid row still reads 0.00 K/D but ticked to 50% over six rounds; the claws are landing more than the scoreboard admits. CunderThock hasn't mirrored the pick this season — Tachanka and Mozzie still own his defensive volume. Cross-roster lesson unchanged: Electroclaw anchors win placements for this stack when the wall gates the real breach. Sandman proved it; Rogue's learning it; Matticus and Cunder have the templates sitting on adjacent dossiers."
+    },
+    {
+      "type": "operator",
+      "subject": "Tachanka",
+      "date": "Jun 9",
+      "text": "CunderThock: thirty-three Tachanka rounds, 63.6% win rate — still the highest-volume defensive pick on his Gold V dossier and the spine of the stack's heaviest grinder. Grandmaster Sandman hit Gold IV without queuing the Lord once, riding Kaid instead — two anchor philosophies, both printing. Rogue_Amputee and Matticus HQ still lack a locked defensive main; Tachanka and Kaid are sitting in plain sight on Cunder's and Sandman's sheets. System Override punishes operator spread; Cunder's volume on the Lord is proof the habit works when you commit."
     }
   ]
 }

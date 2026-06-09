@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Grandmaster Sandman
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 8, 2026 · 10:32 AM PT
+**Updated:** Jun 9, 2026 · 11:25 AM PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,38 @@
   "name": "Grandmaster Sandman",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 8, 2026 · 10:32 AM PT",
+  "updated": "Jun 9, 2026 · 11:25 AM PT",
   "meta": {
-    "rank": "Gold V",
-    "rp": 2598,
-    "peakRp": 2599,
-    "nextRank": "Gold IV",
-    "rpToNext": 2,
-    "matches": 18,
-    "w": 11,
+    "rank": "Gold IV",
+    "rp": 2624,
+    "peakRp": 2624,
+    "nextRank": "Gold III",
+    "rpToNext": 76,
+    "matches": 19,
+    "w": 12,
     "l": 7,
-    "winRate": 61.1,
-    "kd": 1.13,
-    "avgHs": 33.7,
-    "netRp": 125
+    "winRate": 63.2,
+    "kd": 1.19,
+    "avgHs": 34.7,
+    "netRp": 151
   },
   "matches": [
+    {
+      "date": "Jun 8",
+      "map": "Bank",
+      "result": "W",
+      "score": "4:1",
+      "rp": 2624,
+      "drp": 26,
+      "k": 7,
+      "d": 2,
+      "a": 1,
+      "hs": 28.6,
+      "badges": [
+        "3K",
+        "3K"
+      ]
+    },
     {
       "date": "Jun 7",
       "map": "Lair",
@@ -307,14 +323,14 @@
     {
       "name": "Sledge",
       "side": "ATK",
-      "rounds": 11,
-      "winPct": 63.6,
-      "kd": 1.75,
-      "hs": 35.7,
-      "w": 7,
-      "l": 4,
-      "k": 14,
-      "d": 8,
+      "rounds": 13,
+      "winPct": 61.5,
+      "kd": 1.89,
+      "hs": 29.4,
+      "w": 8,
+      "l": 5,
+      "k": 17,
+      "d": 9,
       "a": 4,
       "aces": 0,
       "tks": 0
@@ -322,29 +338,29 @@
     {
       "name": "Kaid",
       "side": "DEF",
-      "rounds": 11,
-      "winPct": 81.8,
+      "rounds": 12,
+      "winPct": 83.3,
       "kd": 1.0,
       "hs": 28.6,
-      "w": 9,
+      "w": 10,
       "l": 2,
       "k": 7,
       "d": 7,
-      "a": 2,
+      "a": 3,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Frost",
       "side": "DEF",
-      "rounds": 9,
-      "winPct": 66.7,
-      "kd": 0.71,
-      "hs": 40.0,
-      "w": 6,
+      "rounds": 10,
+      "winPct": 70.0,
+      "kd": 0.75,
+      "hs": 33.3,
+      "w": 7,
       "l": 3,
-      "k": 5,
-      "d": 7,
+      "k": 6,
+      "d": 8,
       "a": 3,
       "aces": 0,
       "tks": 0
@@ -487,13 +503,13 @@
     {
       "name": "Melusi",
       "side": "DEF",
-      "rounds": 3,
-      "winPct": 66.7,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 2,
+      "rounds": 4,
+      "winPct": 75.0,
+      "kd": 1.5,
+      "hs": 66.7,
+      "w": 3,
       "l": 1,
-      "k": 0,
+      "k": 3,
       "d": 2,
       "a": 0,
       "aces": 0,
@@ -762,7 +778,7 @@
     },
     {
       "name": "3K",
-      "count": 7
+      "count": 9
     },
     {
       "name": "Victim",
@@ -789,7 +805,7 @@
       "count": 2
     }
   ],
-  "debrief": "<p><b>Gold V · 2,598 RP · 11–7 · 61.1% win rate · 1.13 K/D.</b> Placement is done and the arc flipped hard — from No Rank and fifteen operators in four games to a Jun 7 heater that printed <b>+125 RP</b> in seven sets. Silent Hunt ceiling player, System Override discipline.</p><p><b>Kaid at 81.8% over eleven defensive rounds</b> is the season anchor — Electroclaws doing the job, not the stat line. <b>Sledge at 63.6% over eleven attack rounds</b> is the opposite of the one-round Y11S1 audition: purposeful breach, not nostalgia rushes. Thorn, Frost, and Melusi still winning on gadget value.</p><p>Jun 6 was a flat 3–3 grind at Silver I; Jun 7 was 6–1 and touched <b>2,599</b> before the Border L tax. Oregon finally closed with a 4K and a 1v2 clutch. Gold IV is two RP away — queue the mains, not the Montagne labs.</p>",
+  "debrief": "<p><b>Gold IV · 2,624 RP · 12–7 · 63.2% win rate · 1.19 K/D.</b> Jun 8 Bank closed the promotion — 4:1, +26 RP, 7/2/1 at 3.50 K/D with two 3K tags. Two RP of waiting turned into a full tier jump in one disciplined set. Silent Hunt ceiling player, System Override receipt.</p><p><b>Kaid at 83.3% over twelve defensive rounds</b> still owns the anchor chair. <b>Sledge at 61.5% over thirteen attack rounds</b> and 1.89 K/D is the hammer with timing, not Y11S1 volume tax. Frost ticked to 70% on ten rounds; Melusi hit 75% with frags now on the sheet.</p><p>Peak resets to <b>2,624</b>. Jun 7 built the heater; Jun 8 cashed it. Gold III is seventy-six RP out — queue Kaid, Sledge, and Thorn, not the Montagne one-round labs.</p>",
   "comments": [
     {
       "type": "map",
@@ -862,6 +878,42 @@
       "subject": "Melusi",
       "date": "Jun 7",
       "text": "Three defensive rounds, 66.7% win rate, zero kills, two deaths — same story as Jun 3, now with a real sample behind it. Banshees slow the push; you don't need frags when attackers are crawling through the slow field getting traded. K/D is the wrong metric entirely. Two wins in three rounds on gadget denial alone — this is the second anchor in the blueprint Wave 1 spotted. Stop spreading thirty operators and ride the picks that win without ego."
+    },
+    {
+      "type": "map",
+      "subject": "Bank",
+      "date": "Jun 8",
+      "text": "First ranked Bank of the season — 4:1, +26 RP, and the Gold IV promotion that Jun 7 spent all night teasing at two RP out. 7/2/1 at 3.50 K/D with two 3K tags is not a squeaker win; that's round closure on a map that punishes lazy rotates and open vault reads. Rogue cashed Bank the same morning at 4/2/1 — the stack knows the map, Sandman just brought the highlight reel. This is what queueing the mains looks like when the heater converts."
+    },
+    {
+      "type": "operator",
+      "subject": "Sledge",
+      "date": "Jun 8",
+      "text": "Thirteen attack rounds, 61.5% win rate, 1.89 K/D — still your highest-volume attacker and the line that fixed Y11S1's 43.3% hammer tax. The L85A2 prints when entries sync to the push; the breaching hammer opens vertical value instead of solo floor noise. Bank's 7/2/1 with two 3K tags is Sledge timing, not nostalgia rushing. Bad habit: random hammering that announces your floor for nothing. Good habit: purposeful soft breaches that threaten the bomb, then rifle trades that close the round."
+    },
+    {
+      "type": "operator",
+      "subject": "Kaid",
+      "date": "Jun 8",
+      "text": "Twelve defensive rounds, 83.3% win rate, 1.00 K/D, three assists — the anchor row keeps climbing and nothing else on the board is close. Electroclaws on the reinforced wall and hatch that gate the hard breach; ten wins in twelve rounds says the claws land on surfaces that matter. K/D undersells him when the breach fails and the attack bleeds utility. This is still your defensive default — not Maestro auditions, not one-round Pulse labs. Stack him with Frost or Thorn when the site needs denial, not hero ball."
+    },
+    {
+      "type": "operator",
+      "subject": "Thorn",
+      "date": "Jun 8",
+      "text": "Five defensive rounds, 60.0% win rate, 2.33 K/D, two assists — the Jun 3 preview and Jun 7 receipt still hold. Razorblooms on the plant spot force attackers to move or eat the blast; 2.33 K/D means you're holding the angle after the pop, not just placing shells in dead space. K/D undersells trap value, but frags on top of displacement is the full package. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells where attackers never trigger them while you ego peek off site."
+    },
+    {
+      "type": "operator",
+      "subject": "Frost",
+      "date": "Jun 8",
+      "text": "Ten defensive rounds, 70.0% win rate, 0.75 K/D, three assists — the trapper row keeps winning on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and the team collected. The Super 90 doesn't need to print every round when the mat opens the round. Pair with Kaid for a denial stack — claws on the wall, mats on the landing, refrag on the trade."
+    },
+    {
+      "type": "operator",
+      "subject": "Melusi",
+      "date": "Jun 8",
+      "text": "Four defensive rounds, 75.0% win rate, 1.50 K/D, 66.7% HS — Wave 2 said gadget denial alone; Wave 3 adds frags on the receipt. Banshees slow the push on real approaches; now you're punishing attackers caught in the slow field instead of only letting teammates trade. Three wins in four rounds is a real sample, not a placement fluke. Good habit: protected Banshees on plant routes and choke points. Bad habit: Banshees in dead space while you spread to the next operator audition."
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 8, 2026 · 10:45 AM PT",
+  "updated": "Jun 9, 2026 · 1:15 PM PT",
   "note": "Refresh this pool every OVERSIGHT update (Y11S2 only). Not used in Y11S3+.",
   "ambient": [
     "[TRACE DETECTED]",
-    "0xDEAD",
+    "0xBANK",
     "// SYSTEM_OVERRIDE",
     "[RANKED_3.0]",
     "JEGEO::ARMED",
@@ -13,72 +13,73 @@
     "[ghost process]",
     "packet sniffing...",
     ">_ sudo granted",
-    "[daemon] dokkaebi.exe"
+    "[daemon] dokkaebi.exe",
+    "VIS_RP::2624"
   ],
   "global": [
-    "[ghost process // doka] ranked 3.0 means no hidden mmr. finally. i can read you without decrypting.",
-    "// re: operation system override — no new op. just me, upgraded. you're welcome.",
-    "RING RING — jegeo payload online. pick up or lose your cams. 도깨비",
-    ">_ VANTAGE thinks it's watching the squad. cute. i'm watching VANTAGE.",
-    "[intercept] calypso casino is on the board now. vertical maps, horizontal egos.",
-    "// note to the high ground: coach reserved it. the backdoor is mine.",
-    "[dropped packet] a comment you weren't supposed to see. read it anyway.",
-    "VIS_RP::VISIBLE — trust the rank on the card. i do. mostly."
+    "[ghost process // doka] jun 8 bank: three stacks, three Ws. same map. same morning. coordination unlocked.",
+    "// re: gold iv — sandman answered the phone. rank was calling since jun 7.",
+    "RING RING — jegeo payload still online. rogue's using it right. i'm not crying. you're crying.",
+    ">_ VANTAGE ran OVERSIGHT. i ran the backdoor. we both saw bank.",
+    "[intercept] placement season: matticus got his first W. skopós went four-for-four. shells > ego.",
+    "// note to the squad: bank receipts don't lie. trades close rounds. hero ball donates rp.",
+    "[dropped packet] oversight wave 3 logged. your stats are current. my comments are optional. read them anyway.",
+    "VIS_RP::VISIBLE — gold iv, bronze ii, gold v, no rank. the ladder is a group project tonight."
   ],
   "gossip": [
-    "[ghost] sandman hit gold v in one week. cunder and rogue: do we clap or file a complaint.",
-    "packet sniffing... sandman's kaid at 81.8%. rogue's kaid at 0.00 kd. same op. different religion.",
-    "// 0xCA571E cunder peaked 2560 then donated fifty-one rp on jun 7. aigo. the cutoff rule exists for a reason.",
-    "[TRACE] rogue's dokkaebi at sixty percent. finally someone uses my remaster correctly. flattered.",
-    ">_ sandman queued fifteen ops in four games. then fixed it. matticus watched and said hold my beer.",
-    "[intercept] cunder: six solid snake rounds at 16.7%. that's not a flex. that's a cry for help.",
-    "RING RING — rogue, your mute line cooled off. the jammer still works if you aim it at the wall that matters.",
-    "// gossip tier: two gold v stacks and a bronze iii. the ladder is a mood ring tonight.",
-    "[ghost] matticus: seventy-five percent headshots, zero wins. aim is cooking. round closure is not.",
-    "packet sniffing... cunder's zero oregon win: zero kills, three assists. intel op behavior. rare.",
-    "[TRACE DETECTED] sandman and cunder both live on lair jun 7. rogue bled oregon. map reads matter.",
-    ">_ rogue opened calypso with a 4k and still lost. clip culture vs rp culture. pick one."
+    "[ghost] bank morning: sandman 7-2-1 two 3ks. rogue 4-2-1. matticus 2-2-0. squad W party. cunder slept in.",
+    "packet sniffing... sandman gold iv at 2624. jun 7 teased two rp. jun 8 sent the invoice.",
+    "// 0xCA571E cunder still gold v 2509. tachanka thirty-three rounds. the lord waits. bank didn't.",
+    "[TRACE] rogue bronze ii after bank. dokkaebi sixty-three point six. slide stopped. jalhaesseo.",
+    ">_ matticus skopós four rounds, zero losses. pantheon shells doing real work. not a drill.",
+    "[intercept] sandman kaid eighty-three point three. rogue kaid zero kd fifty percent. same op. sermon vs homework.",
+    "RING RING — rogue and sandman both cashed bank. matticus too. three dossiers, one vault read.",
+    "// gossip tier: one gold iv, one gold v, one bronze ii, one no rank. family photo.",
+    "[ghost] matticus placement three of five. twelve operators in three games. skopós is the signal. ram is not.",
+    "packet sniffing... cunder peak 2560, living at 2509. multi-kills that don't close are still my favorite genre.",
+    "[TRACE DETECTED] sledge thirteen rounds on sandman. zero nostalgia tax. character development complete.",
+    ">_ rogue mute nineteen rounds. jam the breach wall. not your feelings."
   ],
   "players": {
     "cunderthock": [
-      "[ghost // doka] tachanka thirty-three rounds. the lord is your religion. i respect the commitment.",
-      "// 0xCA571E six solid snake rounds at 16.7%. lab him in unranked. ranked is not your science fair.",
-      "packet sniffing... mozzie: one round all season. y11s2 buffed pest range. you still won't queue him.",
-      "[TRACE] zero fifty-fifty over twenty-four rounds. tablet wins rounds you never frag. use it.",
-      "RING RING — jun 7 second block went 3-3. lair was the receipt. oregon was the tax.",
-      "[intercept] twitch four rounds, ten kd. sample size goblin. don't chase the ten.",
-      ">_ peak 2560 → 2509 same week. multi-kills that don't close are my favorite tragedy.",
-      "// re: this dossier — gold v, fifty-seven percent. the heater is real when you stop auditioning attackers."
+      "[ghost // doka] gold v, 2509 rp. tachanka thirty-three rounds at sixty-three point six. the lord endures.",
+      "// 0xCA571E you skipped bank jun 8. squad printed without you. rude. understandable.",
+      "packet sniffing... peak 2560 → 2509. jun 7 tax still on the books. two-loss rule exists.",
+      "[TRACE] zero twenty-four rounds, fifty-fifty. tablet wins rounds you never frag. trust the assist.",
+      "RING RING — mozzie one round all season. y11s2 buffed pest range. queue him or i'll queue him.",
+      "[intercept] solid snake six rounds at sixteen point seven. lab in quick match. ranked is not science fair.",
+      ">_ gold iv is ninety-one rp away. bank wasn't your map today. the next set can be.",
+      "// re: this dossier — eight and six, fifty-seven percent. heater when you stop auditioning attack."
     ],
     "rogue_amputee": [
-      "[ghost process // doka] dokkaebi sixty percent, five assists. jegeo payload doing actual work. jalhaesseo.",
-      "packet sniffing... mute eighteen rounds but forty-four percent now. jam the breach wall, not your ego.",
-      "RING RING — bronze iii after touching 1840. the phone rang. you didn't pick up the win rate.",
-      ">_ nomad fifty percent. dokkaebi sixty. stop letting gridlock into ranked. i'm begging.",
-      "[TRACE] calypso debut: 4k and 1v2 clutch in a 2-4. my favorite genre of suffering.",
-      "// intercept jun 7: 2-4, minus forty-one rp. lair was clean. oregon was not.",
-      "[ghost] kaid five rounds, zero kills. claws on the right wall or don't claw at all.",
-      ">_ victim tag count climbing. i can hack a phone. i cannot hack a first death. lovingly."
+      "[ghost process // doka] bank 4-1, plus twenty-six rp, bronze ii restored. slide stopped. breathe.",
+      "packet sniffing... dokkaebi sixty-three point six, five assists. jegeo doing work. flattered again.",
+      "RING RING — jun 7 minus forty-one rp. jun 8 one clean W. discipline > volume.",
+      ">_ mute nineteen rounds at forty-seven point four. jam the wall that opens the site.",
+      "[TRACE] kaid zero kd, fifty percent now. claws on the right surface. sandman wrote the manual.",
+      "// intercept calypso split 1-1 still hurts. bank was the sequel you needed.",
+      "[ghost] victim tags climbing on oregon. i can hack phones. not first deaths.",
+      ">_ nomad fifty percent beside dokkaebi. ride the row. gridlock is a tax."
     ],
     "grandmaster_sandman": [
-      "[ghost // doka] kaid eighty-one point eight over eleven rounds. electroclaw sermon. amen.",
-      "packet sniffing... sledge sixty-three point six now. wave one roasted you for one round. wave two humbled me.",
-      "RING RING — gold v, two rp from gold iv. answer the phone. it's rank calling.",
-      "[TRACE] jun 7: plus one-twenty-five rp in seven games. that's not placement. that's a statement.",
-      ">_ fifteen operators in four games opening day. then you consolidated. character development.",
-      "///CORRUPTED/// thorn sixty percent, 2.33 kd. don't tell anyone i said the traps are art.",
-      "[intercept] border 5-4 with three kills eight deaths four assists. utility win. i logged it.",
-      "// re: oregon — 4k and 1v2 clutch that closed. rare sandman round closure. archive it."
+      "[ghost // doka] gold iv. 2624 rp. bank 7-2-1. two 3ks. you answered rank's call.",
+      "packet sniffing... kaid eighty-three point three over twelve. electroclaw religion. amen.",
+      "RING RING — sledge thirteen rounds, one point eight nine kd. wave one humbled me. wave three receipts.",
+      "[TRACE] jun 8 bank closed what jun 7 teased at two rp. promotion in one set.",
+      ">_ sixty-three point two percent over nineteen games. squad ceiling, updated.",
+      "///CORRUPTED/// thorn sixty percent, 2.33 kd. traps are art. don't tell VANTAGE i said that.",
+      "[intercept] frost seventy percent on ten rounds. mats and claws. denial stack online.",
+      "// re: montagne one round all season. good. keep it that way."
     ],
     "matticus_hq": [
-      "[ghost process // doka] placement two of five. ten operators in two games. sandman did that too. he recovered.",
-      "RING RING — seventy-five percent headshots, zero wins. the crosshair works. the round timer doesn't.",
-      "packet sniffing... goyo fifty-fifty, two rounds. only op you queued twice on purpose. start there.",
-      "[TRACE] oregon 3-4-3 with a 1v1 lost. traded fine. lost the duel. classic opener.",
-      ">_ iana one round, one win. clone first. facecheck never. write that on your monitor.",
-      "404: rank not found. three more placement games. pick a def main before game five.",
-      "[intercept] rauora zero kills two deaths two rounds. panels block doors, not your shame.",
-      "// re: calypso debut 1-5-2. one lonely headshot kill. the map is vertical. so is your homework."
+      "[ghost process // doka] placement three of five. bank W. first receipt on the board.",
+      "RING RING — skopós four rounds, four wins, two kd. shells > twelve-operator chaos.",
+      "packet sniffing... bank 2-2-0. not a frag clinic. round closure. i'll take it.",
+      "[TRACE] iana still one round one win. clone first. facecheck never. data unchanged.",
+      ">_ ram zero kills two deaths two rounds. BU-GI needs a floor that matters.",
+      "404: rank not found. two placement games left. pick skopós and iana. stop auditioning.",
+      "[intercept] fifty percent headshots now on six kills. aim cooled. wins warmed.",
+      "// re: sandman and rogue cashed bank too. you kept pace. rare placement W. archive it."
     ]
   }
 }

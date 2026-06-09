@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Matticus HQ
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 8, 2026 · 10:34 AM PT
+**Updated:** Jun 9, 2026 · 1:08 PM PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,35 @@
   "name": "Matticus HQ",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 8, 2026 · 10:34 AM PT",
+  "updated": "Jun 9, 2026 · 1:08 PM PT",
   "meta": {
     "rank": "No Rank",
     "rp": 0,
     "peakRp": 0,
     "nextRank": "Copper",
     "rpToNext": 1600,
-    "matches": 2,
-    "w": 0,
+    "matches": 3,
+    "w": 1,
     "l": 2,
-    "winRate": 0.0,
-    "kd": 0.44,
-    "avgHs": 75.0,
+    "winRate": 33.3,
+    "kd": 0.55,
+    "avgHs": 50.0,
     "netRp": 0
   },
   "matches": [
+    {
+      "date": "Jun 8",
+      "map": "Bank",
+      "result": "W",
+      "score": "4:1",
+      "rp": 0,
+      "drp": 0,
+      "k": 2,
+      "d": 2,
+      "a": 0,
+      "hs": 0.0,
+      "badges": []
+    },
     {
       "date": "Jun 7",
       "map": "Oregon",
@@ -56,6 +69,21 @@
   ],
   "operators": [
     {
+      "name": "Skopos",
+      "side": "DEF",
+      "rounds": 4,
+      "winPct": 100.0,
+      "kd": 2.0,
+      "hs": 0.0,
+      "w": 4,
+      "l": 0,
+      "k": 2,
+      "d": 1,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
       "name": "Goyo",
       "side": "DEF",
       "rounds": 2,
@@ -71,7 +99,7 @@
       "tks": 0
     },
     {
-      "name": "Rauora",
+      "name": "Ram",
       "side": "ATK",
       "rounds": 2,
       "winPct": 0.0,
@@ -86,8 +114,23 @@
       "tks": 0
     },
     {
-      "name": "Lesion",
+      "name": "Pulse",
       "side": "DEF",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 0,
+      "l": 1,
+      "k": 0,
+      "d": 1,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Finka",
+      "side": "ATK",
       "rounds": 1,
       "winPct": 0.0,
       "kd": 1.0,
@@ -96,21 +139,6 @@
       "l": 1,
       "k": 1,
       "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Skopos",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 0,
-      "k": 0,
-      "d": 0,
       "a": 1,
       "aces": 0,
       "tks": 0
@@ -146,8 +174,38 @@
       "tks": 0
     },
     {
-      "name": "Pulse",
+      "name": "Flores",
+      "side": "ATK",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 0,
+      "l": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Lesion",
       "side": "DEF",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 1.0,
+      "hs": 100.0,
+      "w": 0,
+      "l": 1,
+      "k": 1,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Glaz",
+      "side": "ATK",
       "rounds": 1,
       "winPct": 0.0,
       "kd": 0.0,
@@ -156,7 +214,22 @@
       "l": 1,
       "k": 0,
       "d": 1,
-      "a": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Montagne",
+      "side": "ATK",
+      "rounds": 1,
+      "winPct": 100.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 1,
+      "l": 0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
       "aces": 0,
       "tks": 0
     },
@@ -174,36 +247,6 @@
       "a": 0,
       "aces": 0,
       "tks": 0
-    },
-    {
-      "name": "Finka",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 1.0,
-      "hs": 100.0,
-      "w": 0,
-      "l": 1,
-      "k": 1,
-      "d": 1,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Flores",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
     }
   ],
   "badges": [
@@ -212,7 +255,7 @@
       "count": 1
     }
   ],
-  "debrief": "<p><b>System Override — placement 2 of 5.</b> Still <b>No Rank</b>, 0–2, 0.44 K/D — but <b>75% headshot rate</b> on four kills says the crosshair is awake even when the round isn't closing.</p><p><b>Oregon</b> was the better line: 3/4/3 with a 1v1 Lost tag — you traded and assisted, then donated the duel. <b>Calypso Casino</b> debuted at 1/5/2 with a lonely 100% HS kill. Ten operators in two matches is the Sandman day-one spread with better aim and worse discipline.</p><p>Skopos, Deimos, and Iana each won their lone round; Rauora went 0–2 with zero impact. Three more placement games — pick a defensive main and an attack main before rank lands, not ten auditions.</p>",
+  "debrief": "<p><b>System Override — placement 3 of 5.</b> Still <b>No Rank</b>, but the board flipped to <b>1–2 · 33.3% · 0.55 K/D</b> after Jun 8 Bank — 4:1, 2/2/0, no RP tick yet because placements aren't done.</p><p><b>Skopós at 100% over four defensive rounds</b> is the first real signal this season — 2.00 K/D, four wins, zero round losses on the row. Bank wasn't a frag clinic; it was round closure on a map Rogue and Sandman both cashed the same morning.</p><p>Twelve operators in three matches is still audition chaos — Ram 0–2, Montagne and Glaz one-offs. Two more placement games: lock Skopós on defense, pick Iana or Deimos on attack, and stop spreading before Copper lands.</p>",
   "comments": [
     {
       "type": "map",
@@ -249,6 +292,42 @@
       "subject": "Rauora",
       "date": "Jun 7",
       "text": "Two attack rounds, 0% win rate, zero kills, two deaths — the only operator with volume and zero return. Rauora's job is D.O.M. panels controlling rotations and enabling the plant; K/D is a weak metric, but zero impact across two rounds means the panels either blocked nothing useful or never got placed. This is placement — you don't have room for map-control experiments that bleed. Lock Iana or a breach pick for attack; Rauora can wait until the mains are set."
+    },
+    {
+      "type": "map",
+      "subject": "Bank",
+      "date": "Jun 8",
+      "text": "First Bank win of the season — 4:1, 2/2/0 at 1.00 K/D, zero headshots logged, and the first W on the placement card. No RP movement yet because you're still in the five-match window, but the result matters: Rogue and Sandman both printed on Bank the same morning, and you didn't get run over. This wasn't the Oregon 75% HS heater — it was even trades and round closure. Bank punishes lazy vault reads; you closed the set without a highlight badge. Placement game three of five — take the process, not the ego."
+    },
+    {
+      "type": "operator",
+      "subject": "Skopos",
+      "date": "Jun 8",
+      "text": "Four defensive rounds, 100.0% win rate, 2.00 K/D, one assist — the first operator with real volume and a perfect record. Pantheon Shells in two zones force the attack to guess which body you're in; swap to the shell they're not watching and punish the commitment. One assist says the inactive shell fed intel or refrag value even when you weren't fragging. Bad habit: both shells parked uselessly or feeding a shell early. Good habit: Talos and Colossus covering two real zones on Bank's rotates — this is your defensive main audition passing."
+    },
+    {
+      "type": "operator",
+      "subject": "Goyo",
+      "date": "Jun 8",
+      "text": "Two defensive rounds, 50.0% win rate, 0.50 K/D, one assist — still the only pre-Bank operator you doubled up on, and still break-even. Volcán canisters deny the plant spot when the fire lands at the decisive moment; K/D undersells him when the lane burns. Wave 1 said anchor with purpose; Wave 2 says the sample hasn't grown because Skopós took the minutes. Fine as a flex behind Skopós — not a third main while placements finish."
+    },
+    {
+      "type": "operator",
+      "subject": "Ram",
+      "date": "Jun 8",
+      "text": "Two attack rounds, 0% win rate, zero kills, two deaths — the BU-GI Auto-Breacher never converted to round impact. Ram opens vertical and soft destruction for the team; zero kills with two deaths means the drone either rolled into nothing or you facechecked before the floor mattered. Judge destruction value, not just K/D — but two dead rounds with no lines opened is still a bleed. Iana and Deimos each won their lone round; Ram is not the attack answer during placements."
+    },
+    {
+      "type": "operator",
+      "subject": "Iana",
+      "date": "Jun 8",
+      "text": "One attack round, 100% win rate, 1.00 K/D, 100% HS, one assist — still the best attack line on the board after three matches. The Gemini Replicator scouts; you fragged and assisted on the same round you won. Wave 1's read holds: clone before you facecheck. Two placement games left — if you pick one attack main before rank lands, the data already voted Iana. Don't bury her under Ram and Glaz auditions."
+    },
+    {
+      "type": "operator",
+      "subject": "Montagne",
+      "date": "Jun 8",
+      "text": "One attack round, 100% win rate, zero kills, zero deaths — a round won without a frag, which is rare Montagne math on a 1–2 placement card. Shield ops buy space and intel; the win says the round closed around you, not because of you. Valid once you're ranked and the stack calls for shield entry — not as a placement-game audition when Skopós and Iana are already printing. Sandman got the Montagne lab warning; you don't need to repeat it."
     }
   ]
 }
