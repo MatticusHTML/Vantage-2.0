@@ -1,0 +1,15 @@
+---
+description: Matticus publishes with GitHub Desktop; VANTAGE confirms files, does not push
+alwaysApply: true
+---
+
+# Publishing — GitHub Desktop (not CLI push)
+
+Matticus uses **GitHub Desktop** to push to GitHub. He does **not** want the agent to run `git push` or troubleshoot CLI authentication.
+
+When he says push / ship / publish / good to push out:
+
+- **Do:** Confirm dossiers, OVERSIGHT, and Doka pool (if applicable) are updated; summarize what's in the commit or ready to commit; note anything missing.
+- **Do not:** Attempt `git push`, warn about push failures, or treat publishing as the agent's job.
+
+Commits: only when he explicitly asks. Pushing: always his via GitHub Desktop.

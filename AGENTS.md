@@ -260,4 +260,16 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 - Badges are cumulative; zero counts are never shown.
 - Palette: bg `#0d0f1a` · purple `#6b2fa0` · purple-lt `#9a5cd4` · gold `#ffc800` · white `#e8eaf0` · green `#3ee08f` · red `#ff5c66`.
 
+---
+
+## 11. PUBLISHING (GitHub Pages)
+
+**Matticus pushes via GitHub Desktop** — not the terminal. When he says *"push to GitHub"* / *"ship it"* / *"we're good to push"*, he means:
+
+1. **VANTAGE confirms** all data files are updated and in order (player `current.md`, OVERSIGHT, Doka pool when OVERSIGHT ran, etc.).
+2. **Optional:** stage and **commit locally** if he asked for that explicitly — otherwise leave commits to him.
+3. **Do not** run `git push` or panic about CLI auth failures. He publishes with **GitHub Desktop → Push origin**.
+
+After push, Pages redeploys from `main` automatically (~1 minute).
+
 *The high ground is reserved for those who earn it.*
