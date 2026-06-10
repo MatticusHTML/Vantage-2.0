@@ -1,13 +1,7 @@
 ﻿{
-    "updated":  "Jun 9, 2026 · 2:09 PM PT",
-    "defaultTrack":  "8841ebd7",
+    "updated":  "Jun 10, 2026 · morning PT",
+    "defaultTrack":  "3aa63d76",
     "albums":  [
-                   {
-                       "id":  "inv2018",
-                       "label":  "Invitational 2018",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Invitational Theme Music (2018)/coverart.jpg",
-                       "count":  1
-                   },
                    {
                        "id":  "y1",
                        "label":  "Year 1",
@@ -25,17 +19,16 @@
                        "label":  "Year 3",
                        "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
                        "count":  24
+                   },
+                   {
+                       "id":  "cunderrock",
+                       "label":  "CunderRock",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "count":  2,
+                       "manualOnly":  true
                    }
                ],
     "tracks":  [
-                   {
-                       "id":  "8841ebd7",
-                       "album":  "inv2018",
-                       "albumLabel":  "Invitational 2018",
-                       "title":  "Invitational Theme Music",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Invitational Theme Music (2018)/Invitational Theme Music.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Invitational Theme Music (2018)/coverart.jpg"
-                   },
                    {
                        "id":  "31baad8d",
                        "album":  "y1",
@@ -133,6 +126,14 @@
                        "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
                    },
                    {
+                       "id":  "3aa63d76",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2",
+                       "title":  "Rainbow Six Siege - Invitational Main Theme",
+                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
+                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                   },
+                   {
                        "id":  "5f38cc35",
                        "album":  "y2",
                        "albumLabel":  "Year 2",
@@ -202,14 +203,6 @@
                        "albumLabel":  "Year 2",
                        "title":  "Style Riderz",
                        "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/09. Style Riderz.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
-                   },
-                   {
-                       "id":  "3aa63d76",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
-                       "title":  "Rainbow Six Siege - Invitational Main Theme",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
                        "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
                    },
                    {
@@ -403,6 +396,22 @@
                        "title":  "Match Point",
                        "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/24. Match Point.mp3",
                        "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                   },
+                   {
+                       "id":  "cunder-die-mf",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock",
+                       "title":  "Die MF Die",
+                       "file":  "Cunders Picks/Dope Band - Die MF Die.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png"
+                   },
+                   {
+                       "id":  "cunder-bodies",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock",
+                       "title":  "Let The Bodies Hit The Floor",
+                       "file":  "Cunders Picks/Let The Bodies Hit The Floor.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png"
                    }
                ]
 }

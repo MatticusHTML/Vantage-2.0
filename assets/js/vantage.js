@@ -794,7 +794,7 @@ async function initBgm(){
     if(r.ok) playlist=await r.json();
   }catch(e){}
 
-  const tracks=(playlist.tracks||[]).filter(t=>t.album!=="y11s1"&&t.file!=="vibe-shard.mp3");
+  const tracks=(playlist.tracks||[]).filter(t=>t.album!=="y11s1"&&t.album!=="inv2018"&&t.file!=="vibe-shard.mp3");
   if(!tracks.length) return;
 
   const albums=(playlist.albums||[]).filter(a=>a.id!=="y11s1");
@@ -867,11 +867,16 @@ async function initBgm(){
   function trackAt(i){ return i>=0&&i<tracks.length?tracks[i]:null; }
   function track(){ return trackAt(trackIdx)||{title:"—",albumLabel:"",cover:null}; }
   function wasPlayingLastPage(){ return sessionStorage.getItem(BGM_PLAYING_KEY)==="1"; }
+  function isShuffleTrack(i){
+    const t=trackAt(i);
+    if(!t) return false;
+    const a=albumMeta(t.album);
+    return !a?.manualOnly;
+  }
   function randomTrackIdx(exclude){
-    if(tracks.length<=1) return 0;
-    let idx;
-    do{ idx=Math.floor(Math.random()*tracks.length); }while(idx===exclude);
-    return idx;
+    const pool=tracks.map((_,i)=>i).filter(i=>i!==exclude&&isShuffleTrack(i));
+    if(!pool.length) return exclude>=0?exclude:0;
+    return pool[Math.floor(Math.random()*pool.length)];
   }
   function albumTracks(albumId){ return tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId); }
   function albumMeta(albumId){ return albums.find(a=>a.id===albumId)||null; }
@@ -885,7 +890,15 @@ async function initBgm(){
     tracksHdr.textContent=album?album.label:"Pick a season";
     tracksList.innerHTML="";
     if(!albumId) return;
-    albumTracks(albumId).forEach(({t,i})=>{
+    const list=albumTracks(albumId);
+    if(!list.length){
+      const li=document.createElement("li");
+      li.className="bgm-list-empty";
+      li.textContent=album&&album.count===0?"Coming soon — tracks loading…":"No tracks in this album";
+      tracksList.appendChild(li);
+      return;
+    }
+    list.forEach(({t,i})=>{
       const li=document.createElement("li");
       const b=document.createElement("button");
       b.type="button";
@@ -908,13 +921,14 @@ async function initBgm(){
   }
 
   albums.forEach(a=>{
-    const count=a.count||albumTracks(a.id).length;
+    const count=a.count??albumTracks(a.id).length;
+    const countLbl=count===0?"Coming soon":`${count} track${count===1?"":"s"}`;
     const b=document.createElement("button");
     b.type="button";
-    b.className="bgm-album-btn";
+    b.className="bgm-album-btn"+(count===0?" bgm-album-placeholder":"")+(a.manualOnly?" bgm-album-manual":"");
     b.dataset.album=a.id;
-    b.innerHTML=`<div class="bgm-album-thumb">${a.cover?`<img src="${audioSrc(a.cover)}" alt="" loading="lazy">`:""}</div>
-      <div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${count} track${count===1?"":"s"}</div>`;
+    b.innerHTML=`<div class="bgm-album-thumb">${a.cover?`<img src="${audioSrc(a.cover)}" alt="" loading="lazy">`:`<span class="bgm-album-ph" aria-hidden="true">&#9835;</span>`}</div>
+      <div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${countLbl}</div>`;
     b.onclick=e=>{ e.stopPropagation(); setBrowseAlbum(a.id); };
     albumsEl.appendChild(b);
   });
@@ -1048,7 +1062,8 @@ async function initBgm(){
     loadTrack(randomTrackIdx(trackIdx),true,true);
   }
 
-  const savedId=localStorage.getItem(BGM_TRACK_KEY);
+  let savedId=localStorage.getItem(BGM_TRACK_KEY);
+  if(savedId==="8841ebd7") savedId="3aa63d76";
   if(savedId){
     const found=tracks.findIndex(t=>t.id===savedId);
     if(found>=0) trackIdx=found;
