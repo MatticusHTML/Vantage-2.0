@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 9, 2026 · 1:15 PM PT
+**Updated:** Jun 10, 2026 · evening PT
 
 ```json
 {
   "name": "OVERSIGHT",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 9, 2026 · 1:15 PM PT",
+  "updated": "Jun 10, 2026 · evening PT",
   "comments": [
     {
       "type": "map",
@@ -116,6 +116,42 @@
       "subject": "Tachanka",
       "date": "Jun 9",
       "text": "CunderThock: thirty-three Tachanka rounds, 63.6% win rate — still the highest-volume defensive pick on his Gold V dossier and the spine of the stack's heaviest grinder. Grandmaster Sandman hit Gold IV without queuing the Lord once, riding Kaid instead — two anchor philosophies, both printing. Rogue_Amputee and Matticus HQ still lack a locked defensive main; Tachanka and Kaid are sitting in plain sight on Cunder's and Sandman's sheets. System Override punishes operator spread; Cunder's volume on the Lord is proof the habit works when you commit."
+    },
+    {
+      "type": "map",
+      "subject": "Consulate",
+      "date": "Jun 10",
+      "text": "Jun 10 was the squad's first full four-stack night — Oregon, Outback, Calypso Casino, Consulate, same order, same shape: one Oregon donation, three wins to close, +218 RP combined. Grandmaster Sandman capped Consulate at 10/2/0 with a 4K and a 3K on the way to Gold IV at 2,677 RP. CunderThock closed at 5/2/2 with a 3K and a new Gold V peak at 2,572. Rogue_Amputee and Matticus HQ both banked clean 4:1 Ws — Rogue to break-even at 8–8, Matticus to Silver IV at 2,113 on his first ranked night. When all four dossiers move on the same map block, the lesson isn't individual aim — it's shared round closure on the back three maps after Oregon punishes hero ball."
+    },
+    {
+      "type": "operator",
+      "subject": "Kaid",
+      "date": "Jun 10",
+      "text": "Grandmaster Sandman: fifteen Kaid rounds, 80.0% win rate, six assists — still the squad's defensive ceiling and the anchor behind 2,677 RP. Rogue_Amputee's Kaid finally climbed to 60.0% over ten rounds with 0.75 K/D after the 0.00 K/D era — Electroclaws landing on the breach that matters, stacked with Mute on twenty-four defensive rounds. CunderThock still rides Tachanka; Matticus HQ rides Skopós at 70.0%. Cross-roster lesson unchanged: the wall that gates the hard breach wins placements for this stack. Sandman wrote the manual; Rogue's Jun 10 wave says the homework is finally turning in."
+    },
+    {
+      "type": "operator",
+      "subject": "Tachanka",
+      "date": "Jun 10",
+      "text": "CunderThock: forty-two Tachanka rounds, 64.3% win rate — nine more defensive rounds since the last refresh and the win rate climbed, not dipped. The Lord is still the spine of a Gold V dossier at 2,572 RP (+63 on the night) even when Oregon opens the block with a 2:4 donation. Grandmaster Sandman hit 2,677 on Kaid and Sledge without queuing Tachanka once — two anchor philosophies, both printing. Rogue's Mute volume and Matticus's Skopós shells still need a long-term defensive lock; Tachanka and Kaid templates are sitting on adjacent dossiers in plain sight."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 10",
+      "text": "Rogue_Amputee: fifteen Dokkaebi attack rounds, 60.0% win rate, 1.38 K/D, seven assists — the best Jegeo Payload volume on the stack after Outback's 8/3/3 heater and a +53 RP night that finally broke even at 8–8. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in at volume. Cross-roster lesson: when attack WR needs a floor, Rogue's scan-and-payload rhythm is the Y11S2 meta receipt — Nomad beside her at fifty percent, Smoke at 4–0 on four rounds, Gridlock at twenty percent not competing for the slot."
+    },
+    {
+      "type": "operator",
+      "subject": "Zero",
+      "date": "Jun 10",
+      "text": "CunderThock: thirty-one Zero attack rounds, 54.8% win rate, 1.10 K/D, 52.2% headshots — finally cleared fifty percent for the season and stayed north of it on the same night Tachanka climbed to sixty-four point three. ARGUS coverage and laser clears, not entry hero ball; the Oregon loss with two kills and two assists still fits the intel-op script. Cross-roster note: Grandmaster Sandman prints attack on Sledge at 1.79 K/D; Rogue on Dokkaebi; Matticus on Finka. Different jobs — stop grading Zero like an entry fragger when the tablet wins rounds you never frag on, and stop burying him under Solid Snake's six Ls on seven rounds."
+    },
+    {
+      "type": "operator",
+      "subject": "Finka",
+      "date": "Jun 10",
+      "text": "Matticus HQ: nine Finka attack rounds, 77.8% win rate, 2.33 K/D, 71.4% headshots — placements cleared and Silver IV at 2,113 RP arrived on surge timing that actually converted. Skopós at 70.0% over ten defensive rounds and Alibi at 80.0% on five rounds give Matticus both chairs for the first time this season. Cross-roster contrast: Grandmaster Sandman prints on Sledge, CunderThock on Zero/Jackal flex, Rogue on Dokkaebi. Ram is still 0–2. The Jun 10 player comment wave said it plainly — queue Finka and Skopós, stop spreading one-round labs."
     }
   ]
 }

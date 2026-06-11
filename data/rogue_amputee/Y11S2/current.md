@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Rogue_Amputee
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 9, 2026 · 11:12 AM PT
+**Updated:** Jun 10, 2026 · evening PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,84 @@
   "name": "Rogue_Amputee",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 9, 2026 · 11:12 AM PT",
+  "updated": "Jun 10, 2026 · evening PT",
   "meta": {
     "rank": "Bronze II",
-    "rp": 1800,
-    "peakRp": 1840,
+    "rp": 1853,
+    "peakRp": 1853,
     "nextRank": "Bronze I",
-    "rpToNext": 100,
-    "matches": 12,
-    "w": 5,
-    "l": 7,
-    "winRate": 41.7,
-    "kd": 0.77,
-    "avgHs": 29.2,
-    "netRp": -15
+    "rpToNext": 47,
+    "matches": 16,
+    "w": 8,
+    "l": 8,
+    "winRate": 50.0,
+    "kd": 0.96,
+    "avgHs": 28.1,
+    "netRp": 38
   },
   "matches": [
+    {
+      "date": "Jun 10",
+      "map": "Consulate",
+      "result": "W",
+      "score": "4:1",
+      "rp": 1853,
+      "drp": 26,
+      "k": 4,
+      "d": 3,
+      "a": 3,
+      "hs": 0.0,
+      "badges": [
+        "3K"
+      ]
+    },
+    {
+      "date": "Jun 10",
+      "map": "Calypso Casino",
+      "result": "W",
+      "score": "4:1",
+      "rp": 1827,
+      "drp": 23,
+      "k": 6,
+      "d": 3,
+      "a": 2,
+      "hs": 33.3,
+      "badges": [
+        "2K",
+        "2K"
+      ]
+    },
+    {
+      "date": "Jun 10",
+      "map": "Outback",
+      "result": "W",
+      "score": "4:2",
+      "rp": 1804,
+      "drp": 23,
+      "k": 8,
+      "d": 3,
+      "a": 3,
+      "hs": 37.5,
+      "badges": [
+        "3K",
+        "1v1 Lost"
+      ]
+    },
+    {
+      "date": "Jun 10",
+      "map": "Oregon",
+      "result": "L",
+      "score": "2:4",
+      "rp": 1781,
+      "drp": -19,
+      "k": 5,
+      "d": 5,
+      "a": 0,
+      "hs": 20.0,
+      "badges": [
+        "2K"
+      ]
+    },
     {
       "date": "Jun 8",
       "map": "Bank",
@@ -211,43 +273,43 @@
     {
       "name": "Mute",
       "side": "DEF",
-      "rounds": 19,
-      "winPct": 47.4,
-      "kd": 0.67,
-      "hs": 30.0,
-      "w": 9,
-      "l": 10,
-      "k": 10,
-      "d": 15,
-      "a": 3,
+      "rounds": 24,
+      "winPct": 45.8,
+      "kd": 0.68,
+      "hs": 23.1,
+      "w": 11,
+      "l": 13,
+      "k": 13,
+      "d": 19,
+      "a": 4,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Dokkaebi",
       "side": "ATK",
-      "rounds": 11,
-      "winPct": 63.6,
-      "kd": 1.4,
-      "hs": 0.0,
-      "w": 7,
-      "l": 4,
-      "k": 7,
-      "d": 5,
-      "a": 5,
+      "rounds": 15,
+      "winPct": 60.0,
+      "kd": 1.38,
+      "hs": 9.1,
+      "w": 9,
+      "l": 6,
+      "k": 11,
+      "d": 8,
+      "a": 7,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Nomad",
       "side": "ATK",
-      "rounds": 10,
-      "winPct": 50.0,
-      "kd": 1.17,
-      "hs": 42.9,
+      "rounds": 11,
+      "winPct": 45.5,
+      "kd": 1.67,
+      "hs": 40.0,
       "w": 5,
-      "l": 5,
-      "k": 7,
+      "l": 6,
+      "k": 10,
       "d": 6,
       "a": 4,
       "aces": 0,
@@ -256,14 +318,44 @@
     {
       "name": "Kaid",
       "side": "DEF",
-      "rounds": 6,
-      "winPct": 50.0,
-      "kd": 0.0,
+      "rounds": 10,
+      "winPct": 60.0,
+      "kd": 0.75,
+      "hs": 33.3,
+      "w": 6,
+      "l": 4,
+      "k": 6,
+      "d": 8,
+      "a": 2,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Gridlock",
+      "side": "ATK",
+      "rounds": 5,
+      "winPct": 20.0,
+      "kd": 0.6,
       "hs": 0.0,
-      "w": 3,
+      "w": 1,
+      "l": 4,
+      "k": 3,
+      "d": 5,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Ace",
+      "side": "ATK",
+      "rounds": 5,
+      "winPct": 40.0,
+      "kd": 1.33,
+      "hs": 50.0,
+      "w": 2,
       "l": 3,
-      "k": 0,
-      "d": 6,
+      "k": 4,
+      "d": 3,
       "a": 1,
       "aces": 0,
       "tks": 0
@@ -284,47 +376,32 @@
       "tks": 0
     },
     {
-      "name": "Ace",
-      "side": "ATK",
-      "rounds": 5,
-      "winPct": 40.0,
-      "kd": 1.33,
-      "hs": 50.0,
-      "w": 2,
-      "l": 3,
-      "k": 4,
+      "name": "Smoke",
+      "side": "DEF",
+      "rounds": 4,
+      "winPct": 100.0,
+      "kd": 1.0,
+      "hs": 0.0,
+      "w": 4,
+      "l": 0,
+      "k": 3,
       "d": 3,
       "a": 1,
       "aces": 0,
       "tks": 0
     },
     {
-      "name": "Gridlock",
+      "name": "Ying",
       "side": "ATK",
-      "rounds": 4,
-      "winPct": 25.0,
-      "kd": 0.5,
-      "hs": 0.0,
-      "w": 1,
-      "l": 3,
-      "k": 2,
-      "d": 4,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Smoke",
-      "side": "DEF",
-      "rounds": 3,
+      "rounds": 2,
       "winPct": 100.0,
-      "kd": 1.5,
+      "kd": 1.0,
       "hs": 0.0,
-      "w": 3,
+      "w": 2,
       "l": 0,
-      "k": 3,
+      "k": 2,
       "d": 2,
-      "a": 0,
+      "a": 1,
       "aces": 0,
       "tks": 0
     },
@@ -344,52 +421,67 @@
       "tks": 0
     },
     {
-      "name": "Alibi",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Caveira",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Thermite",
+      "name": "Brava",
       "side": "ATK",
       "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
+      "winPct": 100.0,
+      "kd": 2.0,
+      "hs": 50.0,
+      "w": 1,
+      "l": 0,
+      "k": 2,
+      "d": 0,
       "a": 0,
       "aces": 0,
       "tks": 0
     },
     {
       "name": "Fenrir",
+      "side": "DEF",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 0,
+      "l": 1,
+      "k": 0,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Fuze",
+      "side": "ATK",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 1.0,
+      "hs": 100.0,
+      "w": 0,
+      "l": 1,
+      "k": 1,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Thatcher",
+      "side": "ATK",
+      "rounds": 1,
+      "winPct": 100.0,
+      "kd": 2.0,
+      "hs": 50.0,
+      "w": 1,
+      "l": 0,
+      "k": 2,
+      "d": 0,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Alibi",
       "side": "DEF",
       "rounds": 1,
       "winPct": 0.0,
@@ -419,6 +511,36 @@
       "tks": 0
     },
     {
+      "name": "Caveira",
+      "side": "DEF",
+      "rounds": 1,
+      "winPct": 0.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 0,
+      "l": 1,
+      "k": 0,
+      "d": 1,
+      "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Blackbeard",
+      "side": "ATK",
+      "rounds": 1,
+      "winPct": 100.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 1,
+      "l": 0,
+      "k": 0,
+      "d": 0,
+      "a": 1,
+      "aces": 0,
+      "tks": 0
+    },
+    {
       "name": "Azami",
       "side": "DEF",
       "rounds": 1,
@@ -434,17 +556,32 @@
       "tks": 0
     },
     {
-      "name": "Fuze",
+      "name": "Thermite",
       "side": "ATK",
       "rounds": 1,
       "winPct": 0.0,
-      "kd": 1.0,
-      "hs": 100.0,
+      "kd": 0.0,
+      "hs": 0.0,
       "w": 0,
       "l": 1,
-      "k": 1,
+      "k": 0,
       "d": 1,
       "a": 0,
+      "aces": 0,
+      "tks": 0
+    },
+    {
+      "name": "Valkyrie",
+      "side": "DEF",
+      "rounds": 1,
+      "winPct": 100.0,
+      "kd": 0.0,
+      "hs": 0.0,
+      "w": 1,
+      "l": 0,
+      "k": 0,
+      "d": 1,
+      "a": 1,
       "aces": 0,
       "tks": 0
     }
@@ -452,7 +589,7 @@
   "badges": [
     {
       "name": "2K",
-      "count": 9
+      "count": 12
     },
     {
       "name": "Victim",
@@ -460,7 +597,7 @@
     },
     {
       "name": "3K",
-      "count": 1
+      "count": 3
     },
     {
       "name": "1v2 Clutch",
@@ -469,9 +606,13 @@
     {
       "name": "1v2 Lost",
       "count": 2
+    },
+    {
+      "name": "1v1 Lost",
+      "count": 1
     }
   ],
-  "debrief": "<p><b>Bronze II · 1,800 RP · 5–7 · 41.7% win rate · 0.77 K/D.</b> One game on Jun 8 — Bank 4:1, +26 RP, 4/2/1 at 2.00 K/D — and you're back in Bronze II after Jun 7 donated forty-one points. Small sample, clean receipt.</p><p><b>Dokkaebi is still the attack headline</b> — 63.6% over eleven rounds with a 1.40 K/D and five assists. Mute leads volume at nineteen rounds and ticked up to 47.4%. Kaid's line still reads 0.00 K/D, but he's at 50% over six rounds now — judge the claws, not the scoreboard.</p><p>Peak stays 1,840 from the Calypso heater. One disciplined win doesn't erase a six-game bleed, but it stops the slide. Keep Bank's pace: trade, assist, don't die first on the swing round. Dokkaebi and Nomad on attack, Mute and Smoke when the gas matters.</p>",
+  "debrief": "<p><b>Bronze II · 1,853 RP · 8–8 · 50.0% win rate · 0.96 K/D.</b> Jun 10 mirrored the squad's three-win night: +53 RP, new peak, and the season finally hit break-even on wins. Oregon opened with a donation; Outback, Calypso, and Consulate all closed.</p><p><b>Dokkaebi at fifteen rounds and 60.0% win rate</b> — 1.38 K/D with seven assists. Kaid finally has frags on the sheet at 0.75 K/D over ten rounds. Smoke is 4–0 on four defensive rounds. Mute still leads volume at twenty-four.</p><p><b>Outback</b> was the heater line — 8/3/3, a 3K, and a set that actually moved rank. Forty-seven RP from Bronze I. Keep Dokkaebi and Nomad on attack, stack Mute with Kaid, and don't let one Oregon L undo a +63 block.</p>",
   "comments": [
     {
       "type": "map",
@@ -580,6 +721,42 @@
       "subject": "Nomad",
       "date": "Jun 8",
       "text": "Ten attack rounds, 50.0% win rate, 1.17 K/D, 42.9% HS, four assists — the steady line while Dokkaebi headlines. Nomad wins with Airjabs sealing the flank route the roamers use to collapse your execute, then frags to back the plant. She's not the pick that got you Victim'd on Oregon — she's map control and rotate denial. When Dokkaebi isn't the call for the site, Nomad is the disciplined alternative; don't swap her for Gridlock out of habit."
+    },
+    {
+      "type": "map",
+      "subject": "Outback",
+      "date": "Jun 10",
+      "text": "An 8/3/3 line on a 4:2 win with a 3K tag — this is the Jun 7 Calypso heater with round closure attached. Outback's modernized layout still punishes teams that win duels but lose the plant clock; you printed +23 RP and three assists on a map that actually finished the set. The 1v1 Lost badge is the only blemish on a night that otherwise moved rank. When the multi-kill shows up here, it has to convert — tonight it did."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 10",
+      "text": "Fifteen attack rounds, 60.0% win rate, 1.38 K/D, seven assists — the remaster keeps paying rent on System Override. Jegeo Payload on a scanned anchor forces them off cams or eats the phone; seven assists on fifteen rounds says the hack is creating trades even at 9.1% HS. The XK23 means weak frags aren't fully excused, but this row is printing rounds. Stay on her for attack defaults — Gridlock at 20% over five rounds is not competing for the slot."
+    },
+    {
+      "type": "operator",
+      "subject": "Kaid",
+      "date": "Jun 10",
+      "text": "Ten defensive rounds, 60.0% win rate, 0.75 K/D — the claws finally show up on the scoreboard. Electroclaws on the breach wall and hatch that gate the hard breach; six kills and eight deaths with two assists says you're trading on the denial now, not just dying for it. Judge breaches denied first, frags second — but 60% win rate after the 0.00 K/D era is the habit fix landing. Stack him with Mute so Thatcher has to spend twice."
+    },
+    {
+      "type": "operator",
+      "subject": "Mute",
+      "date": "Jun 10",
+      "text": "Twenty-four defensive rounds, 45.8% win rate, 0.68 K/D — still your highest-volume pick on a night the whole squad climbed. Mute's job is jammer coverage on the real breach wall and drone denial in prep; thirteen kills and four assists on anchor duty is steady, not spectacular. Win rate is below fifty percent — the jammers need to land on surfaces the attack actually needs, not decorative walls. Good habit: overlap with Kaid on the breach that opens site."
+    },
+    {
+      "type": "operator",
+      "subject": "Smoke",
+      "date": "Jun 10",
+      "text": "Four defensive rounds, 100.0% win rate, 1.00 K/D — one more round since Jun 8 and the row is still perfect. Smoke is plant-denial anchor: hold the gas for the bomb window, detonate when attackers commit, SMG-11 for the trade after. Four wins from four rounds is not noise on an 8–8 season — that's picking him when the site needs denial. Bad habit: gassing early and having nothing left for the plant. Good habit: gas on the bomb the moment they commit."
+    },
+    {
+      "type": "operator",
+      "subject": "Nomad",
+      "date": "Jun 10",
+      "text": "Eleven attack rounds, 45.5% win rate, 1.67 K/D, 40.0% HS, four assists — the K/D climbed even as win rate dipped slightly from the Jun 8 refresh. Nomad wins with Airjabs sealing the flank the roamers use to collapse your execute, then frags to back the plant. Ten kills on six deaths says the duels landed on Outback and Calypso even when Oregon donated. When Dokkaebi isn't the call, Nomad is still the disciplined alternative — not Gridlock at 20%."
     }
   ]
 }

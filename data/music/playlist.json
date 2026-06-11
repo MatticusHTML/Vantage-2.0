@@ -24,7 +24,7 @@
                        "id":  "cunderrock",
                        "label":  "CunderRock",
                        "cover":  "Cunders Picks/Cunders Album Cover.png",
-                       "count":  2,
+                       "count":  3,
                        "manualOnly":  true
                    }
                ],
@@ -411,6 +411,14 @@
                        "albumLabel":  "CunderRock",
                        "title":  "Let The Bodies Hit The Floor",
                        "file":  "Cunders Picks/Let The Bodies Hit The Floor.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png"
+                   },
+                   {
+                       "id":  "cunder-storm-eagle",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock",
+                       "title":  "Storm Eagle (Sky Stage)",
+                       "file":  "Cunders Picks/Mega Man X OST - T17 Storm Eagle (Sky Stage).mp3",
                        "cover":  "Cunders Picks/Cunders Album Cover.png"
                    }
                ]
