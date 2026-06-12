@@ -141,7 +141,7 @@ body[data-page="oversight"] .brand .div{display:inline-block}
   width:100%;margin:0 0 16px;border:1px solid var(--border);border-radius:4px;
   background:var(--panel);overflow:hidden;animation:rise .45s ease both;
 }
-.roster-banner img{width:100%;height:auto;display:block;vertical-align:top}
+.roster-banner img,.roster-banner video{width:100%;height:auto;display:block;vertical-align:top}
 .rankpill{font-family:var(--disp);font-weight:700;letter-spacing:2px;font-size:15px;color:var(--gold);
   border:1px solid var(--gold);background:rgba(255,200,0,.08);padding:5px 12px;border-radius:2px;text-transform:uppercase}
 
