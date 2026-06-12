@@ -506,9 +506,6 @@ function buildSeasonBtns(slug, active){
     `<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("");
   el.querySelectorAll(".season-btn").forEach(b=>b.onclick=()=>{ PLAYER_SEASON=b.dataset.s; renderPlayer(); });
 }
-function dossierHero(){
-  return `<div class="dossier-hero"><img src="${BASE}assets/images/dossier-header.gif" alt=""></div>`;
-}
 function playerBody(rec){
   const m=rec.meta;
   const cards=`<div class="panel"><div class="phead">
@@ -562,7 +559,7 @@ function playerBody(rec){
 
   const debrief=rec.debrief?`<div class="panel"><div class="sect-hdr">// VANTAGE DEBRIEF</div><div class="debrief">${rec.debrief}</div></div>`:"";
 
-  return dossierHero()+cards+operators+matchlog+badges+debrief+playerVoice(rec);
+  return cards+operators+matchlog+badges+debrief+playerVoice(rec);
 }
 function seasonReportBody(text){
   if(!text) return "";
@@ -582,7 +579,7 @@ function playerVoice(rec){
   });
 }
 function emptySeason(season){
-  return dossierHero()+`<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
+  return `<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
     <div class="es">No matches logged for ${esc(season)} yet. Drop screenshots into Cursor and VANTAGE populates the board.<br>
     Rank thresholds load once the season config is confirmed.</div></div></div>`;
 }

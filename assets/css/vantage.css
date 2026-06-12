@@ -136,16 +136,12 @@ body[data-page="oversight"] .brand .div{display:inline-block}
 .phead .call{font-family:var(--disp);font-weight:800;font-size:34px;letter-spacing:2px;text-transform:uppercase}
 .phead .sub{font-size:11px;color:var(--dim);letter-spacing:1px}
 .phead .ubi{color:var(--purple-lt)}
-.dossier-hero{
-  position:relative;width:100%;aspect-ratio:21/9;max-height:240px;margin-bottom:18px;
-  border:1px solid var(--border);border-radius:4px;overflow:hidden;
-  animation:rise .45s ease both;
+/* home roster — full-frame looping banner above character-select grid */
+.roster-banner{
+  width:100%;margin:0 0 16px;border:1px solid var(--border);border-radius:4px;
+  background:var(--panel);overflow:hidden;animation:rise .45s ease both;
 }
-.dossier-hero::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(13,15,26,.08) 0%,rgba(13,15,26,.55) 72%,rgba(13,15,26,.92) 100%);
-}
-.dossier-hero img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+.roster-banner img{width:100%;height:auto;display:block;vertical-align:top}
 .rankpill{font-family:var(--disp);font-weight:700;letter-spacing:2px;font-size:15px;color:var(--gold);
   border:1px solid var(--gold);background:rgba(255,200,0,.08);padding:5px 12px;border-radius:2px;text-transform:uppercase}
 
@@ -392,7 +388,6 @@ body.modal-open{overflow:hidden}
   .cards{grid-template-columns:repeat(3,1fr)}
   .select-hero h2{font-size:32px}
   .phead .call{font-size:26px}
-  .dossier-hero{max-height:160px;aspect-ratio:16/9}
   .roster{gap:10px}
   .ocard .olabel .t{font-size:20px;letter-spacing:3px}
   .ocard .olabel .s{font-size:8px;letter-spacing:1.5px}
