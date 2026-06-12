@@ -373,7 +373,8 @@ body.modal-open{overflow:hidden}
 .bgm-browse{margin-top:6px;border-top:1px solid var(--border);padding-top:14px}
 .bgm-browse-hdr{font-size:11px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;margin-bottom:10px}
 .bgm-albums{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px;margin-bottom:14px;
+  max-height:240px;overflow-y:auto;padding-right:4px;
 }
 .bgm-album-btn{
   display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;padding:8px 6px;

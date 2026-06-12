@@ -924,7 +924,7 @@ async function initBgm(){
         <div class="bgm-cover" id="bgm-cover"><span class="bgm-cover-ph" aria-hidden="true">&#9835;</span></div>
         <div class="bgm-meta">
           <div class="bgm-title" id="bgm-title">—</div>
-          <div class="bgm-album" id="bgm-album">Pick a season</div>
+          <div class="bgm-album" id="bgm-album">Pick an album</div>
         </div>
       </div>
       <div class="bgm-transport">
@@ -942,10 +942,10 @@ async function initBgm(){
         <button type="button" class="bgm-active" id="bgm-active">Deactivate</button>
       </div>
       <div class="bgm-browse">
-        <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SEASONS</div>
+        <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SOUNDTRACKS</div>
         <div class="bgm-albums" id="bgm-albums"></div>
         <div class="bgm-tracks-panel" id="bgm-tracks-panel">
-          <div class="bgm-tracks-hdr" id="bgm-tracks-hdr">Pick a season</div>
+          <div class="bgm-tracks-hdr" id="bgm-tracks-hdr">Pick an album</div>
           <ul class="bgm-list" id="bgm-tracks-list"></ul>
         </div>
       </div>
@@ -1004,7 +1004,7 @@ async function initBgm(){
     albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
       el.classList.toggle("on",el.dataset.album===albumId);
     });
-    tracksHdr.textContent=album?album.label:"Pick a season";
+    tracksHdr.textContent=album?album.label:"Pick an album";
     tracksList.innerHTML="";
     if(!albumId) return;
     const list=albumTracks(albumId);
@@ -1181,6 +1181,7 @@ async function initBgm(){
 
   let savedId=localStorage.getItem(BGM_TRACK_KEY);
   if(savedId==="8841ebd7") savedId="3aa63d76";
+  if(savedId==="3aa63d76") savedId="f740538b";
   if(savedId){
     const found=tracks.findIndex(t=>t.id===savedId);
     if(found>=0) trackIdx=found;

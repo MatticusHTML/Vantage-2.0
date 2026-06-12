@@ -1,425 +1,1673 @@
-{
-    "updated":  "Jun 10, 2026 · afternoon PT",
-    "defaultTrack":  "3aa63d76",
+﻿{
     "albums":  [
                    {
-                       "id":  "y1",
                        "label":  "Year 1",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "id":  "y1",
                        "count":  12
                    },
                    {
-                       "id":  "y2",
                        "label":  "Year 2",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "id":  "y2",
                        "count":  10
                    },
                    {
-                       "id":  "y3",
                        "label":  "Year 3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "id":  "y3",
                        "count":  24
                    },
                    {
-                       "id":  "cunderrock",
+                       "label":  "Year 4",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "id":  "y4",
+                       "count":  24
+                   },
+                   {
+                       "label":  "Year 5",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "id":  "y5",
+                       "count":  24
+                   },
+                   {
+                       "label":  "Year 6",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "id":  "y6",
+                       "count":  24
+                   },
+                   {
+                       "label":  "Year 7",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "id":  "y7",
+                       "count":  23
+                   },
+                   {
+                       "label":  "Year 8",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "id":  "y8",
+                       "count":  17
+                   },
+                   {
+                       "label":  "Year 9",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "id":  "y9",
+                       "count":  10
+                   },
+                   {
+                       "label":  "Siege X",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "id":  "siegex",
+                       "count":  8
+                   },
+                   {
+                       "label":  "PostMatch Lo-Fi",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "id":  "lofi",
+                       "count":  20
+                   },
+                   {
                        "label":  "CunderRock",
                        "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "id":  "cunderrock",
                        "count":  3,
                        "manualOnly":  true
                    }
                ],
     "tracks":  [
                    {
-                       "id":  "31baad8d",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "23276d45",
                        "title":  "Baffin Bay",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/01. Baffin Bay.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/01. Baffin Bay.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "684fa67b",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "962c1b49",
                        "title":  "Hull Breach",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/02. Hull Breach.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/02. Hull Breach.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "6365b09b",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "973a169a",
                        "title":  "Black Ice",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/03. Black Ice.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/03. Black Ice.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "8fb8a262",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "b29f935f",
                        "title":  "Medevac",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/04. Medevac.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/04. Medevac.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "21157e08",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "0c3e4f38",
                        "title":  "Crash Scene",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/05. Crash Scene.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/05. Crash Scene.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "fcbf6ff7",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "45c6a65a",
                        "title":  "Detention",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/06. Detention.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/06. Detention.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "d3c94980",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "3121373a",
                        "title":  "Home",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/07. Home.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/07. Home.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "d77ab24e",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "b5e53a42",
                        "title":  "Faca na Caveira",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/08. Faca na Caveira.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/08. Faca na Caveira.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "efd8cb7a",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "4781c943",
                        "title":  "Eye for an Eye",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/09. Eye for an Eye.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/09. Eye for an Eye.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "b7a84154",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "e134345a",
                        "title":  "Modernity and Tradition",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/10. Modernity and Tradition.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/10. Modernity and Tradition.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "f2853de2",
-                       "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "id":  "19f18c54",
                        "title":  "Kumo No Ue",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/11. Kumo No Ue.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
-                   },
-                   {
-                       "id":  "062a4983",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/11. Kumo No Ue.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
                        "album":  "y1",
-                       "albumLabel":  "Year 1",
+                       "albumLabel":  "Year 1"
+                   },
+                   {
+                       "id":  "baf94492",
                        "title":  "Hankyō",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/12. Hankyō.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/12. Hankyō.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 1 (2020)/Images/00 Front.jpg",
+                       "album":  "y1",
+                       "albumLabel":  "Year 1"
                    },
                    {
-                       "id":  "3aa63d76",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
-                       "title":  "Rainbow Six Siege - Invitational Main Theme",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
-                   },
-                   {
-                       "id":  "5f38cc35",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "cfadd51d",
                        "title":  "La Perla Blanca",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/01. La Perla Blanca.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/01. La Perla Blanca.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "447b5e47",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "c655c463",
                        "title":  "Cool Vibes",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/02. Cool Vibes.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/02. Cool Vibes.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "050489de",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "94783de5",
                        "title":  "Before Midnight",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/03. Before Midnight.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/03. Before Midnight.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "718a668d",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "646e14c4",
                        "title":  "Rainbow Fun Land",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/04. Rainbow Fun Land.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/04. Rainbow Fun Land.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "782e83b6",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "7c64bf4c",
                        "title":  "Teacups",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/05. Teacups.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/05. Teacups.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "5077461b",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "e40ee26c",
                        "title":  "Haunted Rollercoaster",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/06. Haunted Rollercoaster.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/06. Haunted Rollercoaster.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "7d4377e2",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "485cbf4b",
                        "title":  "Mok Myeok",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/07. Mok Myeok.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/07. Mok Myeok.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "09395af3",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "id":  "87a2c63f",
                        "title":  "Seoul Museum",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/08. Seoul Museum.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
-                   },
-                   {
-                       "id":  "4d87ff18",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/08. Seoul Museum.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
                        "album":  "y2",
-                       "albumLabel":  "Year 2",
+                       "albumLabel":  "Year 2"
+                   },
+                   {
+                       "id":  "7157b045",
                        "title":  "Style Riderz",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/09. Style Riderz.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/09. Style Riderz.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
                    },
                    {
-                       "id":  "6eaedbd0",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "f740538b",
+                       "title":  "Rainbow Six Siege - Invitational Main Theme",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2"
+                   },
+                   {
+                       "id":  "9d5bf35a",
                        "title":  "Countdown",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/01. Countdown.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/01. Countdown.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "6b1de4e4",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "19d58b41",
                        "title":  "Dr. Mackintosh",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/02. Dr. Mackintosh.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/02. Dr. Mackintosh.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "3460dd0b",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "e3e2e5cd",
                        "title":  "Hunted",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/03. Hunted.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/03. Hunted.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "29d521cd",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "681abd2f",
                        "title":  "Flatline",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/04. Flatline.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/04. Flatline.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "fbaa51ab",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "9ab76914",
                        "title":  "Boyd Brooks",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/05. Boyd Brooks.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/05. Boyd Brooks.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "d7486800",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "16f62364",
                        "title":  "The Capsule",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/06. The Capsule.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/06. The Capsule.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "0e088389",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "4b822bee",
                        "title":  "Vinciguerra",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/07. Vinciguerra.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/07. Vinciguerra.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "c230e37c",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "42b36dfa",
                        "title":  "Si Vis Pacem",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/08. Si Vis Pacem.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/08. Si Vis Pacem.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "121f0f53",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "8f3c0357",
                        "title":  "Mind Games",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/09. Mind Games.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/09. Mind Games.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "d256388c",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "e623924b",
                        "title":  "Grim Sky",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/10. Grim Sky.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/10. Grim Sky.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "e17bcc93",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "6720b86e",
                        "title":  "Come Closer",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/11. Come Closer.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/11. Come Closer.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "7b28d907",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "f3d379ce",
                        "title":  "Suri",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/12. Suri.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/12. Suri.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "3d89b99b",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "eecaa964",
                        "title":  "Atlas",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/13. Atlas.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/13. Atlas.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "26d87390",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "a7bf0741",
                        "title":  "Resilience",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/14. Resilience.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/14. Resilience.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "91efe010",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "db30b131",
                        "title":  "The Fortress",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/15. The Fortress.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/15. The Fortress.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "a8d00676",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "fb786ab9",
                        "title":  "The Hammer and the Scalpel",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/16. The Hammer and the Scalpel.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/16. The Hammer and the Scalpel.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "e9f73125",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "708ed208",
                        "title":  "60 Seconds Remaining",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/17. 60 Seconds Remaining.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/17. 60 Seconds Remaining.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "1d0cc997",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "515b1ee7",
                        "title":  "No Lag",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/18. No Lag.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/18. No Lag.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "2fdad6c9",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "23e4b0c0",
                        "title":  "1v5",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/19. 1v5.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/19. 1v5.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "e66b33ba",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "b65db1f0",
                        "title":  "Like a Tornado",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/20. Like a Tornado.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/20. Like a Tornado.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "2a8a9e7c",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "e82a76ee",
                        "title":  "OPFOR Eliminated",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/21. OPFOR Eliminated.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/21. OPFOR Eliminated.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "b0e4d0df",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "337add2b",
                        "title":  "Preparation Phase",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/22. Preparation Phase.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/22. Preparation Phase.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "b9fe8f4b",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "7b820b92",
                        "title":  "Let Them Come",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/23. Let Them Come.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/23. Let Them Come.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
                    },
                    {
-                       "id":  "0fb9af81",
-                       "album":  "y3",
-                       "albumLabel":  "Year 3",
+                       "id":  "fb927445",
                        "title":  "Match Point",
-                       "file":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/24. Match Point.mp3",
-                       "cover":  "Tom Clancy\u0027s Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg"
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/24. Match Point.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 3 (2019)(1)/Images/00 Front.jpg",
+                       "album":  "y3",
+                       "albumLabel":  "Year 3"
+                   },
+                   {
+                       "id":  "3ebc7bca",
+                       "title":  "Sunburnt Country",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/01. Sunburnt Country.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "51254158",
+                       "title":  "Outback",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/02. Outback.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "df4055b9",
+                       "title":  "Red Heart",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/03. Red Heart.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "ae2b697a",
+                       "title":  "Adorable Scamps",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/04. Adorable Scamps.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "98a9d985",
+                       "title":  "Mr. Bear's Sleepytime",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/05. Mr. Bear's Sleepytime.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "a06a94af",
+                       "title":  "Secret Service",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/06. Secret Service.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "acbbaec1",
+                       "title":  "None the Wiser",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/07. None the Wiser.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "9688110b",
+                       "title":  "Seeing Clear",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/08. Seeing Clear.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "d8e735c1",
+                       "title":  "Truth or Consequences",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/09. Truth or Consequences.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "181a2b97",
+                       "title":  "Showdown",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/10. Showdown.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "0c776895",
+                       "title":  "Heritage",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/11. Heritage.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "d9d36a2a",
+                       "title":  "Volcán Primed",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/12. Volcán Primed.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "dfaaa8b3",
+                       "title":  "Taking Flight",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/13. Taking Flight.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "3fd43ad2",
+                       "title":  "¡Qué paja, causa!",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/14. ¡Qué paja, causa!.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "bd3999f3",
+                       "title":  "They Live",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/15. They Live.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "a1b094df",
+                       "title":  "Extermination",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/16. Extermination.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "4660ca68",
+                       "title":  "The Storm",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/17. The Storm.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "fd0676b6",
+                       "title":  "The Perfect Shot",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/18. The Perfect Shot.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "44c85be4",
+                       "title":  "MagNet Online",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/19. MagNet Online.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "c9c9c471",
+                       "title":  "Carry Me Away (Bella Ciao Cover)",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/20. Carry Me Away (Bella Ciao Cover).mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "6f361746",
+                       "title":  "The Program",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/21. The Program.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "5fbdd86c",
+                       "title":  "Echoes of Heroes Past",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/22. Echoes of Heroes Past.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "036714e4",
+                       "title":  "Tournament of Champions",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/23. Tournament of Champions.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "ee2bb288",
+                       "title":  "The Crucible",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/24. The Crucible.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 4 (2020)/Images/00 Front.jpg",
+                       "album":  "y4",
+                       "albumLabel":  "Year 4"
+                   },
+                   {
+                       "id":  "a83a9ba4",
+                       "title":  "Celestial Concerto",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/01. Celestial Concerto.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "ca120f59",
+                       "title":  "Trodden Path",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/02. Trodden Path.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "d3e8dc16",
+                       "title":  "Space Trajectory",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/03. Space Trajectory.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "21f1edb0",
+                       "title":  "Aria",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/04. Aria.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "c896fdf2",
+                       "title":  "Thicker than Blood",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/05. Thicker than Blood.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "632f24db",
+                       "title":  "Money in The Bag",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/06. Money in The Bag.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "649955d6",
+                       "title":  "The Shepherd",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/07. The Shepherd.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "8c2c3663",
+                       "title":  "H2 Echoes",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/08. H2 Echoes.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "7fbaff40",
+                       "title":  "Full Metal Breach",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/09. Full Metal Breach.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "7dcc8acf",
+                       "title":  "M.U.T.E. Protocol",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/10. M.U.T.E. Protocol.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "a383c054",
+                       "title":  "Dronemorph Teleport",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/11. Dronemorph Teleport.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "70424da3",
+                       "title":  "Theme from Battery (Jon Opstad Remix)",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/12. Theme from Battery (Jon Opstad Remix).mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "83087fa7",
+                       "title":  "Zero Chances",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/13. Zero Chances.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "a5f7448d",
+                       "title":  "Under The Table",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/14. Under The Table.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "d01a743c",
+                       "title":  "Sugar Fright",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/15. Sugar Fright.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "b4044d20",
+                       "title":  "No Sweet Left Behind",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/16. No Sweet Left Behind.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "8b285d36",
+                       "title":  "Deadly Force, Lesson One",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/17. Deadly Force, Lesson One.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "511e838f",
+                       "title":  "Neon Dawn",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/18. Neon Dawn.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "4f5e4615",
+                       "title":  "Dragon Bridge",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/19. Dragon Bridge.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "84ed71cc",
+                       "title":  "Vertical Destruction",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/20. Vertical Destruction.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "f47848e2",
+                       "title":  "Absortio",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/21. Absortio.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "d2393577",
+                       "title":  "Champion Horizon",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/22. Champion Horizon.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "d25d624a",
+                       "title":  "Disarmed",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/23. Disarmed.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "a59399b1",
+                       "title":  "Survive",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/24. Survive.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 5 (2021)/Images/00 Front.jpg",
+                       "album":  "y5",
+                       "albumLabel":  "Year 5"
+                   },
+                   {
+                       "id":  "feba06b2",
+                       "title":  "After Hours",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/01. After Hours.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "42f52265",
+                       "title":  "Down the Hatch",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/02. Down the Hatch.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "2ec23b26",
+                       "title":  "Archive Hold",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/03. Archive Hold.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "e246bdad",
+                       "title":  "Revelation",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/04. Revelation.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "78e1834a",
+                       "title":  "What Comes to Pass",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/05. What Comes to Pass.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "5d1078c3",
+                       "title":  "No Compromise",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/06. No Compromise.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "0ef11a22",
+                       "title":  "New Heights",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/07. New Heights.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "959b7e24",
+                       "title":  "Below the Mountain",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/08. Below the Mountain.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "35e7b756",
+                       "title":  "Anchor",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/09. Anchor.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "101bb1c1",
+                       "title":  "Early Warning",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/10. Early Warning.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "9ee56daa",
+                       "title":  "At All Costs",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/11. At All Costs.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "4b96eb6f",
+                       "title":  "Assimilation",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/12. Assimilation.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "b90304aa",
+                       "title":  "Innovation",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/13. Innovation.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "2330b8d0",
+                       "title":  "Transaction",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/14. Transaction.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "5ab1143a",
+                       "title":  "Balancing Act",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/15. Balancing Act.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "6fa6ea13",
+                       "title":  "Welcome to Snow Brawl",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/16. Welcome to Snow Brawl.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "48e9e0d0",
+                       "title":  "In the Finals",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/17. In the Finals.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "0a9b8cba",
+                       "title":  "The Take Down",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/18. The Take Down.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "bdf2c7f1",
+                       "title":  "Highland Corral",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/19. Highland Corral.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "cad3f817",
+                       "title":  "On the Ranch",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/20. On the Ranch.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "b6544f65",
+                       "title":  "Solitary Stockman",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/21. Solitary Stockman.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "998e8d54",
+                       "title":  "New Strategy",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/22. New Strategy.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "8ff130b3",
+                       "title":  "Before the War – SI 2022 Main Theme",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/23. Before the War – SI 2022 Main Theme.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "07441f78",
+                       "title":  "Measures of Time (Medley)",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/24. Measures of Time (Medley).mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 6 (2022)/Images/00 Front.jpg",
+                       "album":  "y6",
+                       "albumLabel":  "Year 6"
+                   },
+                   {
+                       "id":  "d7a90710",
+                       "title":  "Promise of Death",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/01. Promise of Death.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "25697286",
+                       "title":  "Under Hill",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/02. Under Hill.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "b729e860",
+                       "title":  "Adversary",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/03. Adversary.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "f31151c9",
+                       "title":  "Gates of Rengoku",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/04. Gates of Rengoku.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "c7065125",
+                       "title":  "Pure Devotion",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/05. Pure Devotion.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "71cc7761",
+                       "title":  "Obscure Possession",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/06. Obscure Possession.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "8c02b70a",
+                       "title":  "Dance with Danger",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/07. Dance with Danger.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "456f817e",
+                       "title":  "Hopeless Tension",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/08. Hopeless Tension.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "d67f4c8f",
+                       "title":  "Empty Spaces",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/09. Empty Spaces.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "2340704f",
+                       "title":  "Dissonant Cortex",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/10. Dissonant Cortex.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "2dfc4e56",
+                       "title":  "New Flesh",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/11. New Flesh.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "ef717d1c",
+                       "title":  "Mech Minded",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/12. Mech Minded.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "6794e554",
+                       "title":  "Grim Encounter",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/13. Grim Encounter.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "16d91dd8",
+                       "title":  "Warning - Override",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/14. Warning - Override.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "465902f5",
+                       "title":  "Arrhythmia",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/15. Arrhythmia.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "326c6545",
+                       "title":  "The Monster Hour",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/16. The Monster Hour.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "91fc2a87",
+                       "title":  "Montster Bash",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/17. Montster Bash.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "5371293f",
+                       "title":  "A Monster's Pace",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/18. A Monster's Pace.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "2eb7a87f",
+                       "title":  "No Hiding from the Sun",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/19. No Hiding from the Sun.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "59e96fcb",
+                       "title":  "The Owl's Den",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/20. The Owl's Den.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "bcf0f1b6",
+                       "title":  "Crossed a Line",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/21. Crossed a Line.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "28e41a93",
+                       "title":  "Call of the Contender",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/22. Call of the Contender.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "219931e5",
+                       "title":  "All for the Hammer",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/23. All for the Hammer.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 7 (2022)/Images/00 Front.jpg",
+                       "album":  "y7",
+                       "albumLabel":  "Year 7"
+                   },
+                   {
+                       "id":  "f0211946",
+                       "title":  "Tooth and Nail",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/01. Tooth and Nail.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "63bf5017",
+                       "title":  "Shallow Tomb",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/02. Shallow Tomb.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "975cced0",
+                       "title":  "Return to Form",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/03. Return to Form.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "e20dffe4",
+                       "title":  "Playing Rough",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/04. Playing Rough.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "c5231b6a",
+                       "title":  "Let's Play a Game!",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/05. Let's Play a Game!.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "21586f39",
+                       "title":  "There Can Only Be One",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/06. There Can Only Be One.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "beb7a606",
+                       "title":  "Waking Nightmare",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/07. Waking Nightmare.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "4d62d31b",
+                       "title":  "Hollow Promises",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/08. Hollow Promises.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "58dfc363",
+                       "title":  "Seeking Closure",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/09. Seeking Closure.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "f4739709",
+                       "title":  "Only the Favored",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/10. Only the Favored.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "f9934106",
+                       "title":  "Knock Knock",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/11. Knock Knock.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "04a2dfbb",
+                       "title":  "Sink or Swim",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/12. Sink or Swim.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "69f24da2",
+                       "title":  "No Trespassing",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/13. No Trespassing.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "92ef6a6f",
+                       "title":  "Terrorden",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/14. Terrorden.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "9e2b1adc",
+                       "title":  "Cold Tidings",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/15. Cold Tidings.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "0030f5cd",
+                       "title":  "Frostlocked",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/16. Frostlocked.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "28f36a26",
+                       "title":  "Creatures of Ice",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/17. Creatures of Ice.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 8 - Original Game Soundtrack (2024)/Images/00 Front.jpg",
+                       "album":  "y8",
+                       "albumLabel":  "Year 8"
+                   },
+                   {
+                       "id":  "85d04409",
+                       "title":  "Disarray",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/01. Disarray.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "08522b48",
+                       "title":  "False Leads",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/02. False Leads.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "9eb6e850",
+                       "title":  "Every Operator Dies",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/03. Every Operator Dies.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "a31565e0",
+                       "title":  "Duty Above All",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/04. Duty Above All.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "71a89878",
+                       "title":  "Ashes of the Past",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/05. Ashes of the Past.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "68883e0c",
+                       "title":  "Unmarked Graves",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/06. Unmarked Graves.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "3f063c36",
+                       "title":  "Mutants and Murder",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/07. Mutants and Murder.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "1730b21e",
+                       "title":  "Thus It Begins",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/08. Thus It Begins.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "74ff4e47",
+                       "title":  "Here We Stand",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/09. Here We Stand.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "5c7b730b",
+                       "title":  "Welcome to the New Order",
+                       "file":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/10. Welcome to the New Order.mp3",
+                       "cover":  "Rainbow Six Siege - Year 9 (Original Music from the Rainbow Six Siege Series) (2025)/Images/00 Front.jpg",
+                       "album":  "y9",
+                       "albumLabel":  "Year 9"
+                   },
+                   {
+                       "id":  "3bd7d3da",
+                       "title":  "Hold Your Breath",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/01. Hold Your Breath.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "340e9821",
+                       "title":  "Siege X",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/02. Siege X.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "24f2cef7",
+                       "title":  "The Waiting Game",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/03. The Waiting Game.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "02403231",
+                       "title":  "Hunter's Harmony",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/04. Hunter's Harmony.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "9f70d2a4",
+                       "title":  "Harbinger of Creation",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/05. Harbinger of Creation.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "6f6f0182",
+                       "title":  "Check Your Corners",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/06. Check Your Corners.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "41eaf759",
+                       "title":  "Guardian's Refrain",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/07. Guardian's Refrain.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "1f1acee1",
+                       "title":  "You Expected Tranquility",
+                       "file":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/08. You Expected Tranquility.mp3",
+                       "cover":  "Rainbow Six - Siege X (Original Game Soundtrack) (2025)/Images/00 Front.jpg",
+                       "album":  "siegex",
+                       "albumLabel":  "Siege X"
+                   },
+                   {
+                       "id":  "2c2690e1",
+                       "title":  "Prep Montage",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/01. Prep Montage.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "53fa5a8c",
+                       "title":  "Rainbow Lounge",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/02. Rainbow Lounge.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "09853eb8",
+                       "title":  "Evening Bork",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/03. Evening Bork.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "23d65901",
+                       "title":  "Industry of Design",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/04. Industry of Design.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "7326864c",
+                       "title":  "On Leave",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/05. On Leave.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "2f4a71a3",
+                       "title":  "Underground",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/06. Underground.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "f586f3cc",
+                       "title":  "Urban Jungle",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/07. Urban Jungle.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "287f6fbd",
+                       "title":  "Riddle in the Sky",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/08. Riddle in the Sky.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "d6668de0",
+                       "title":  "Sunday Waking",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/09. Sunday Waking.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "189566ca",
+                       "title":  "Unrattled Pride",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/10. Unrattled Pride.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "7903575b",
+                       "title":  "Celestial Journey",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/11. Celestial Journey.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "4a7e3ee2",
+                       "title":  "Jam and Flow",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/12. Jam and Flow.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "d2f7bebb",
+                       "title":  "Debrief Beats",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/13. Debrief Beats.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "f7041c18",
+                       "title":  "Low Growl",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/14. Low Growl.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "c858acd2",
+                       "title":  "Speakeasy",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/15. Speakeasy.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "364fd9b9",
+                       "title":  "High Rise, Low Pulse",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/16. High Rise, Low Pulse.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "4af07822",
+                       "title":  "Invitation to Dream",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/17. Invitation to Dream.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "31d834e9",
+                       "title":  "Unanswered Questions",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/18. Unanswered Questions.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "342b56f3",
+                       "title":  "Ocean View",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/19. Ocean View.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
+                   },
+                   {
+                       "id":  "3fb23626",
+                       "title":  "Breathless Static",
+                       "file":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/20. Breathless Static.mp3",
+                       "cover":  "PostMatch Lo-Fi Music (Inspired by the Rainbow Six Siege Game Universe) (2021)/Images/00 Front.jpg",
+                       "album":  "lofi",
+                       "albumLabel":  "PostMatch Lo-Fi"
                    },
                    {
                        "id":  "cunder-die-mf",
-                       "album":  "cunderrock",
-                       "albumLabel":  "CunderRock",
-                       "title":  "Die MF Die",
+                       "title":  "Dope Band - Die MF Die",
                        "file":  "Cunders Picks/Dope Band - Die MF Die.mp3",
-                       "cover":  "Cunders Picks/Cunders Album Cover.png"
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
                    },
                    {
                        "id":  "cunder-bodies",
-                       "album":  "cunderrock",
-                       "albumLabel":  "CunderRock",
                        "title":  "Let The Bodies Hit The Floor",
                        "file":  "Cunders Picks/Let The Bodies Hit The Floor.mp3",
-                       "cover":  "Cunders Picks/Cunders Album Cover.png"
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
                    },
                    {
                        "id":  "cunder-storm-eagle",
-                       "album":  "cunderrock",
-                       "albumLabel":  "CunderRock",
-                       "title":  "Storm Eagle (Sky Stage)",
+                       "title":  "Mega Man X OST - T17 Storm Eagle (Sky Stage)",
                        "file":  "Cunders Picks/Mega Man X OST - T17 Storm Eagle (Sky Stage).mp3",
-                       "cover":  "Cunders Picks/Cunders Album Cover.png"
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
                    }
-               ]
+               ],
+    "updated":  "Jun 12, 2026 Â· evening PT",
+    "defaultTrack":  "f740538b"
 }
