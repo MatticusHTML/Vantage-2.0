@@ -1,7 +1,7 @@
 {
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 10, 2026 · evening PT",
+  "updated": "Jun 9, 2026 · roster expansion PT",
   "note": "Refresh this pool every OVERSIGHT update (Y11S2 only). Not used in Y11S3+.",
   "ambient": [
     "[TRACE DETECTED]",
@@ -17,14 +17,14 @@
     "VIS_RP::2677"
   ],
   "global": [
-    "[ghost process // doka] jun 10: four stacks, four maps, same night. oregon L then three Ws. squad synchronized.",
+    "[ghost process // doka] jun 10: squad stack, four maps, same night. oregon L then three Ws. core four synchronized.",
     "// re: consulate — everyone capped the block. sandman 10-2. cunder 5-2. rogue and edible closed clean.",
     "RING RING — jegeo payload still online. rogue's dokkaebi row is the attack textbook. you're welcome.",
     ">_ VANTAGE ran OVERSIGHT. i ran the backdoor. jun 10 wave logged.",
     "[intercept] placements done: matticus silver iv at 2113. rank acquired. shells and surge paid off.",
     "// note to the squad: oregon opens with donations. outback calypso consulate close the invoice.",
-    "[dropped packet] oversight wave 4 logged. all four dossiers current. my comments are optional. read them anyway.",
-    "VIS_RP::VISIBLE — gold iv, gold v, bronze ii, silver iv. the ladder moved tonight."
+    "[dropped packet] oversight wave 4 logged. core four dossiers current. three more slots online — awaiting ranked paste.",
+    "VIS_RP::VISIBLE — gold iv, gold v, bronze ii, silver iv. the ladder moved tonight. seven-operator roster armed."
   ],
   "gossip": [
     "[ghost] jun 10 four-stack: oregon victim tax, then three wins. sandman +53. cunder +63. rogue +53. edible +49.",
@@ -34,7 +34,7 @@
     ">_ matticus silver iv 2113. finka seventy-seven point eight. skopós seventy. rank landed.",
     "[intercept] sandman kaid eighty percent. sledge nineteen rounds. denial stack + hammer receipt.",
     "RING RING — same four maps, same squad, same three-win shape. coordination isn't a myth.",
-    "// gossip tier: one gold iv, one gold v, one bronze ii, one silver iv. family photo updated.",
+    "// gossip tier: one gold iv, one gold v, one bronze ii, one silver iv. family photo updated. slackandlack, mjester1337, mynameisblang — dossiers open, stats pending.",
     "[ghost] edible placements cleared. ram still zero-two. finka took the minutes. data agrees.",
     "packet sniffing... cunder peak 2572. consulate cap after oregon donation. multi-kill that closed.",
     "[TRACE DETECTED] sledge nineteen rounds on sandman. consulate 4k. character development continues.",
@@ -80,6 +80,45 @@
       "[intercept] alibi eighty percent on five rounds. second defensive chair online.",
       "404: spread disease cured. pick skopós and finka. stop auditioning.",
       "// re: consulate 2-3-1 closed the night. not a frag clinic. round closure. archive it."
+    ],
+    "slackandlack": [
+      "[ghost // doka] dossier online. ranked paste pending. red accent armed.",
+      "packet sniffing... slackandlack slot open on the roster. awaiting first contact.",
+      "[TRACE] Y11S2 shell live. meta null until match screenshots land.",
+      ">_ seven-player grid locked. your column fills when you queue.",
+      "RING RING — rose patch detected. don't make me guess your mains.",
+      "[intercept] same rules as the core four: matches append, operators replace, comments wave.",
+      "// re: onboarding — drop history + operator overview when ready.",
+      "[ghost] OVERSIGHT board has your column reserved. stats TBD."
+    ],
+      "[ghost // doka] dossier online. ranked paste pending. red accent armed.",
+      "packet sniffing... slackandlack slot open on the roster. awaiting first contact.",
+      "[TRACE] Y11S2 shell live. meta null until match screenshots land.",
+      ">_ seven-player grid locked. your column fills when you queue.",
+      "RING RING — rose patch detected. don't make me guess your mains.",
+      "[intercept] same rules as the core four: matches append, operators replace, comments wave.",
+      "// re: onboarding — drop history + operator overview when ready.",
+      "[ghost] OVERSIGHT board has your column reserved. stats TBD."
+    ],
+    "mjester1337": [
+      "[ghost // doka] dossier online. ranked paste pending. orange accent armed.",
+      "packet sniffing... MJester1337 slot open. awaiting first contact.",
+      "[TRACE] Y11S2 shell live. meta null until match screenshots land.",
+      ">_ seven-player grid locked. your column fills when you queue.",
+      "RING RING — jester card on the roster. punchline comes after the data.",
+      "[intercept] same rules as the core four: matches append, operators replace, comments wave.",
+      "// re: onboarding — drop history + operator overview when ready.",
+      "[ghost] OVERSIGHT board has your column reserved. stats TBD."
+    ],
+    "mynameisblang": [
+      "[ghost // doka] dossier online. ranked paste pending. pink accent armed.",
+      "packet sniffing... Mynameisblang slot open. awaiting first contact.",
+      "[TRACE] Y11S2 shell live. meta null until match screenshots land.",
+      ">_ seven-player grid locked. your column fills when you queue.",
+      "RING RING — blang card deployed. GIGN energy optional, data mandatory.",
+      "[intercept] same rules as the core four: matches append, operators replace, comments wave.",
+      "// re: onboarding — drop history + operator overview when ready.",
+      "[ghost] OVERSIGHT board has your column reserved. stats TBD."
     ]
   }
 }

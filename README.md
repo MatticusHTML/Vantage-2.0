@@ -1,6 +1,6 @@
 # VANTAGE // OVERSIGHT
 
-A tactical surveillance-style website that tracks a four-person Rainbow Six Siege squad across ranked seasons. Per-player dossiers, a squad **OVERSIGHT** comparison page, and a coaching analyst voice (**VANTAGE**) — all driven by simple markdown data files you edit in Cursor.
+A tactical surveillance-style website that tracks a seven-person Rainbow Six Siege squad across ranked seasons. Per-player dossiers, a squad **OVERSIGHT** comparison page, and a coaching analyst voice (**VANTAGE**) — all driven by simple markdown data files you edit in Cursor.
 
 **The design lives in two files. The data lives in markdown. You only ever edit the markdown.**
 
@@ -24,11 +24,14 @@ Vantage-2.0/
 │  ├─ matticus_hq.html        each player page is a thin shell —
 │  ├─ cunderthock.html        no data inside, just loads the engine
 │  ├─ rogue_amputee.html
-│  └─ grandmaster_sandman.html
+│  ├─ grandmaster_sandman.html
+│  ├─ slackandlack.html
+│  ├─ mjester1337.html
+│  └─ mynameisblang.html
 ├─ assets/
 │  ├─ css/vantage.css     ← the entire look (edit once, every page updates)
 │  ├─ js/vantage.js       ← the engine (reads markdown, renders pages)
-│  ├─ cards/              ← the 5 character-select images
+│  ├─ cards/              ← the 8 character-select images (7 players + OVERSIGHT)
 │  └─ icons/              ← 77 operators + 5 Recruit + location marker (SVG)
 ├─ data/                  ← ★ THE PART YOU EDIT ★
 │  ├─ <player>/<season>/current.md     one record per player per season

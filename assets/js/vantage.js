@@ -18,6 +18,9 @@ const ROSTER = [
   { slug:"matticus_hq",        name:"Matticus HQ",        ubi:"LOAF_OF_EDIBLES",  accent:"#9a5cd4" },
   { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#4da8ff" },
   { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#2bb87a" },
+  { slug:"slackandlack",       name:"slackandlack",       ubi:"slackandlack",     accent:"#ff5c66" },
+  { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#f0a500" },
+  { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
 ];
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
@@ -267,7 +270,8 @@ async function startDokaSpawner(playerSlug){
   dokaBootTimer = setTimeout(() => { if(dokaSpawnerOn) spawnDokaBurst(); }, 4700);
 }
 
-/* Y11S2 · Dokkaebi hack intro (first ~2.5s on roster load) */
+/* Y11S2 · Dokkaebi hack intro (first ~2.5s on roster load) — disabled until re-enabled */
+const DOKA_INTRO_ENABLED = false;
 const DOKA_INTRO_SFX=`${BASE}assets/audio/DOKKAEBI_HACKING.mp3`;
 const DOKA_INTRO_VOL=0.75;
 let dokaIntroTimer=null;
@@ -299,7 +303,7 @@ function playDokaIntroSfx(){
   if(dokaIntroAudio.readyState>=2) start();
   else dokaIntroAudio.addEventListener("canplay",start,{once:true});
 }
-preloadDokaIntroSfx();
+if(DOKA_INTRO_ENABLED) preloadDokaIntroSfx();
 
 function removeDokaIntro(){
   document.querySelector(".doka-intro")?.remove();
@@ -362,7 +366,7 @@ function applyMenuTheme(){
   delete document.body.dataset.season;
   document.body.dataset.fx="menu";
   clearThemeClasses();
-  showDokaIntro();
+  if(DOKA_INTRO_ENABLED) showDokaIntro();
 }
 function applyPlayerSeasonTheme(season){
   initFxLayers();
@@ -429,7 +433,7 @@ function fetchErr(host){
 function renderRoster(){
   const grid = byId("roster");
   grid.innerHTML = ROSTER.map(p=>`
-    <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}">
+    <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}" style="--pcard-accent:${p.accent}">
       <span class="corner"></span>
       <span class="rankchip" id="rank-${p.slug}">—</span>
       <img src="assets/cards/${p.slug}.png" alt="${esc(p.name)}">
@@ -442,6 +446,8 @@ function renderRoster(){
       </span>
     </a>`).join("") + `
     <a class="ocard" href="oversight.html">
+      <span class="ocard-shimmer" aria-hidden="true"></span>
+      <span class="ocard-sparkles" aria-hidden="true"></span>
       <img src="assets/cards/oversight.png" alt="OVERSIGHT">
       <span class="olabel"><span class="t">Team Review</span><span class="s">OVERSIGHT · Squad Comparison</span></span>
     </a>`;
@@ -500,6 +506,9 @@ function buildSeasonBtns(slug, active){
     `<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("");
   el.querySelectorAll(".season-btn").forEach(b=>b.onclick=()=>{ PLAYER_SEASON=b.dataset.s; renderPlayer(); });
 }
+function dossierHero(){
+  return `<div class="dossier-hero"><img src="${BASE}assets/images/dossier-header.gif" alt=""></div>`;
+}
 function playerBody(rec){
   const m=rec.meta;
   const cards=`<div class="panel"><div class="phead">
@@ -553,7 +562,7 @@ function playerBody(rec){
 
   const debrief=rec.debrief?`<div class="panel"><div class="sect-hdr">// VANTAGE DEBRIEF</div><div class="debrief">${rec.debrief}</div></div>`:"";
 
-  return cards+operators+matchlog+badges+debrief+playerVoice(rec);
+  return dossierHero()+cards+operators+matchlog+badges+debrief+playerVoice(rec);
 }
 function seasonReportBody(text){
   if(!text) return "";
@@ -573,7 +582,7 @@ function playerVoice(rec){
   });
 }
 function emptySeason(season){
-  return `<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
+  return dossierHero()+`<div class="panel"><div class="empty"><div class="eh">&#9650; Season Open — Awaiting First Contact</div>
     <div class="es">No matches logged for ${esc(season)} yet. Drop screenshots into Cursor and VANTAGE populates the board.<br>
     Rank thresholds load once the season config is confirmed.</div></div></div>`;
 }
