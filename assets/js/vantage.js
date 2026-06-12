@@ -549,6 +549,16 @@ function buildOpSortBar(keys,defaultKey="rounds"){
   ).join("");
   return `<div class="op-sort" role="group" aria-label="Sort operators"><span class="op-sort-lbl">Sort</span>${btns}</div>`;
 }
+function buildOpFilter(){
+  return `<div class="op-filter" role="group" aria-label="Filter operators by side">
+      <button type="button" class="op-fbtn on" data-f="all">All</button>
+      <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
+      <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
+    </div>`;
+}
+function buildOpToolbar(sortKeys,compact){
+  return `<div class="op-toolbar${compact?" op-toolbar-compact":""}">${buildOpSortBar(sortKeys)}${buildOpFilter()}</div>`;
+}
 function sortOpTbody(tbody, key, dir){
   const mult=dir==="asc"?1:-1;
   Array.from(tbody.querySelectorAll("tr")).sort((a,b)=>{
@@ -640,15 +650,8 @@ function playerBody(rec){
     <td>${o.rounds}</td><td style="color:${wrColor(o.winPct)};font-weight:700">${o.winPct}%</td>
     <td>${o.kd}</td><td>${o.hs}%</td><td>${o.w}</td><td>${o.l}</td><td>${o.k}</td><td>${o.d}</td><td>${o.a}</td>
     <td>${o.aces||0}</td><td>${o.tks||0}</td></tr>`).join("");
-  const opSortBar=buildOpSortBar(OP_STANDINGS_SORT);
-  const operators=`<div class="panel op-standings"><div class="sect-hdr-row">
-    <div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
-    <div class="op-controls">${opSortBar}
-    <div class="op-filter" role="group" aria-label="Filter operators by side">
-      <button type="button" class="op-fbtn on" data-f="all">All</button>
-      <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
-      <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
-    </div></div></div>
+  const operators=`<div class="panel op-standings"><div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
+    ${buildOpToolbar(OP_STANDINGS_SORT)}
     <div class="scroll"><table><thead><tr><th class="l">Operator</th><th>RDS</th><th>WIN%</th><th>K/D</th><th>HS%</th><th>W</th><th>L</th><th>K</th><th>D</th><th>A</th><th>ACE</th><th>TK</th></tr></thead>
     <tbody>${ops}</tbody></table></div>
     <div class="legend">WIN% — <span class="g">green &ge;55%</span> · <span class="y">gold &ge;45%</span> · <span class="r">red &lt;45%</span> · Sort <span class="g">▼</span> high first · <span class="r">▲</span> low first</div></div>`;
@@ -842,15 +845,8 @@ function operatorMatrix(data){
     });
     return row+`</tr>`;
   }).join("");
-  const opSortBar=buildOpSortBar(OP_MATRIX_SORT);
-  return `<div class="panel ov-op-matrix"><div class="sect-hdr-row">
-    <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
-    <div class="op-controls">${opSortBar}
-    <div class="op-filter" role="group" aria-label="Filter operators by side">
-      <button type="button" class="op-fbtn on" data-f="all">All</button>
-      <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
-      <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
-    </div></div></div>
+  return `<div class="panel ov-op-matrix"><div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
+    ${buildOpToolbar(OP_MATRIX_SORT,true)}
     <div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>
     <div class="legend">Sort by squad-weighted RDS / WIN% / K/D · <span class="g">▼</span> high first · <span class="r">▲</span> low first</div></div>`;
 }
