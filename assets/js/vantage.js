@@ -538,6 +538,17 @@ async function renderPlayer(){
   wireOpTableControls();
   wirePastComments();
 }
+const OP_STANDINGS_SORT=[
+  ["rounds","RDS"],["winpct","WIN%"],["kd","K/D"],["hs","HS%"],
+  ["w","W"],["l","L"],["k","K"],["d","D"],["a","A"],["ace","ACE"],["tk","TK"],
+];
+const OP_MATRIX_SORT=[["rounds","RDS"],["winpct","WIN%"],["kd","K/D"]];
+function buildOpSortBar(keys,defaultKey="rounds"){
+  const btns=keys.map(([k,lbl])=>
+    `<button type="button" class="op-sbtn${k===defaultKey?" on":""}" data-sort="${k}" data-label="${lbl}">${lbl}</button>`
+  ).join("");
+  return `<div class="op-sort" role="group" aria-label="Sort operators"><span class="op-sort-lbl">Sort</span>${btns}</div>`;
+}
 function sortOpTbody(tbody, key, dir){
   const mult=dir==="asc"?1:-1;
   Array.from(tbody.querySelectorAll("tr")).sort((a,b)=>{
@@ -624,17 +635,12 @@ function playerBody(rec){
     <div class="milestone"><span class="bar"></span>${m.rpToNext} RP until ${esc(m.nextRank)} · season peak ${fmt(m.peakRp)} · avg HS% ${m.avgHs} · ${m.matches} matches</div>
   </div>`;
 
-  const ops = (rec.operators||[]).map(o=>`<tr data-side="${esc(o.side)}" data-rounds="${o.rounds}" data-winpct="${o.winPct}" data-kd="${o.kd}">
+  const ops = (rec.operators||[]).map(o=>`<tr data-side="${esc(o.side)}" data-rounds="${o.rounds}" data-winpct="${o.winPct}" data-kd="${o.kd}" data-hs="${o.hs}" data-w="${o.w}" data-l="${o.l}" data-k="${o.k}" data-d="${o.d}" data-a="${o.a}" data-ace="${o.aces||0}" data-tk="${o.tks||0}">
     <td class="l"><div class="opcell"><span class="opicon">${opIconImg(o.name)}</span><span class="opname">${esc(o.name)}<span class="side">${o.side}</span></span></div></td>
     <td>${o.rounds}</td><td style="color:${wrColor(o.winPct)};font-weight:700">${o.winPct}%</td>
     <td>${o.kd}</td><td>${o.hs}%</td><td>${o.w}</td><td>${o.l}</td><td>${o.k}</td><td>${o.d}</td><td>${o.a}</td>
     <td>${o.aces||0}</td><td>${o.tks||0}</td></tr>`).join("");
-  const opSortBar=`<div class="op-sort" role="group" aria-label="Sort operators">
-      <span class="op-sort-lbl">Sort</span>
-      <button type="button" class="op-sbtn on" data-sort="rounds">RDS</button>
-      <button type="button" class="op-sbtn" data-sort="winpct">WIN%</button>
-      <button type="button" class="op-sbtn" data-sort="kd">K/D</button>
-    </div>`;
+  const opSortBar=buildOpSortBar(OP_STANDINGS_SORT);
   const operators=`<div class="panel op-standings"><div class="sect-hdr-row">
     <div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
     <div class="op-controls">${opSortBar}
@@ -836,12 +842,7 @@ function operatorMatrix(data){
     });
     return row+`</tr>`;
   }).join("");
-  const opSortBar=`<div class="op-sort" role="group" aria-label="Sort operators">
-      <span class="op-sort-lbl">Sort</span>
-      <button type="button" class="op-sbtn on" data-sort="rounds">RDS</button>
-      <button type="button" class="op-sbtn" data-sort="winpct">WIN%</button>
-      <button type="button" class="op-sbtn" data-sort="kd">K/D</button>
-    </div>`;
+  const opSortBar=buildOpSortBar(OP_MATRIX_SORT);
   return `<div class="panel ov-op-matrix"><div class="sect-hdr-row">
     <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
     <div class="op-controls">${opSortBar}

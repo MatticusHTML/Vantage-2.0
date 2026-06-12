@@ -137,10 +137,11 @@ body[data-page="oversight"] .brand .div{display:inline-block}
 .sect-hdr-row{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
 .sect-hdr-row .sect-hdr{margin-bottom:0;flex:1;min-width:200px}
 .op-controls{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0}
-.op-sort{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-.op-sort-lbl{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-right:2px}
-.op-sbtn{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;
-  background:var(--panel);color:var(--dim);border:1px solid var(--border);padding:6px 12px;border-radius:2px;transition:.15s;white-space:nowrap;min-width:52px}
+.op-sort{display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:flex-end;max-width:min(100%,520px)}
+.op-sort-lbl{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-right:2px;flex:0 0 auto}
+.op-sbtn{font-family:var(--mono);font-size:9px;letter-spacing:.8px;text-transform:uppercase;cursor:pointer;
+  background:var(--panel);color:var(--dim);border:1px solid var(--border);padding:5px 9px;border-radius:2px;transition:.15s;white-space:nowrap;min-width:0}
+.op-standings .op-sbtn{min-width:36px}
 .op-sbtn:hover{color:var(--white);border-color:var(--purple-lt)}
 .op-sbtn.on{background:rgba(62,224,143,.12);color:var(--green);border-color:var(--green)}
 .op-filter{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap}
