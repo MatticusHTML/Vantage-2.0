@@ -134,6 +134,58 @@ function wrColor(p){ p=parseFloat(p); if(isNaN(p))return"var(--white)"; if(p>=55
 function seasonOp(s){ return SEASON_OPS[s] || ""; }
 function setBrandTag(text){ const el=document.querySelector(".cmdbar .tag"); if(el) el.textContent=text; }
 
+/* ---- performance mode (full FX default · lite strips animations) ---- */
+const PERF_LITE_KEY="vantage-perf-lite";
+function isPerfLite(){ return localStorage.getItem(PERF_LITE_KEY)==="1"; }
+function freezeBannerVideo(lite){
+  const v=document.querySelector(".roster-banner-vid");
+  if(!v) return;
+  if(lite){
+    v.pause();
+    try{ v.currentTime=0; }catch(e){}
+  }else v.play().catch(()=>{});
+}
+function applyPerfMode(lite){
+  document.body.classList.toggle("perf-lite",lite);
+  const btn=byId("perf-btn");
+  if(btn){
+    btn.classList.toggle("on",!lite);
+    btn.setAttribute("aria-pressed",String(!lite));
+    const tip=lite?"Visual effects off — click to enable":"Visual effects on — click for low performance";
+    btn.title=tip;
+    btn.setAttribute("aria-label",tip);
+  }
+  freezeBannerVideo(lite);
+  if(lite){ stopDokaSpawner(); removeDokaIntro(); }
+  else if(PAGE==="player"&&(document.body.dataset.season==="Y11S2"||document.body.classList.contains("theme-y11s2"))){
+    startDokaSpawner(document.body.dataset.player);
+  }
+}
+function initPerfMode(){
+  const cmdbar=document.querySelector(".cmdbar");
+  if(!cmdbar||byId("perf-btn")) return;
+  let actions=cmdbar.querySelector(".cmdbar-actions");
+  if(!actions){
+    actions=document.createElement("div");
+    actions.className="cmdbar-actions";
+    const seasons=cmdbar.querySelector(".seasons");
+    if(seasons) actions.appendChild(seasons);
+    cmdbar.appendChild(actions);
+  }
+  const btn=document.createElement("button");
+  btn.type="button";
+  btn.id="perf-btn";
+  btn.className="perf-btn";
+  btn.innerHTML='<svg class="perf-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/></svg>';
+  btn.onclick=()=>{
+    const lite=!isPerfLite();
+    localStorage.setItem(PERF_LITE_KEY,lite?"1":"0");
+    applyPerfMode(lite);
+  };
+  actions.insertBefore(btn,actions.firstChild);
+  applyPerfMode(isPerfLite());
+}
+
 /* ---- ambient FX / seasonal themes ---- */
 function initFxLayers(){
   if(document.querySelector(".fx-root")){
@@ -256,6 +308,7 @@ function spawnDokaBurst(){
 
 async function startDokaSpawner(playerSlug){
   stopDokaSpawner();
+  if(isPerfLite()) return;
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   initFxLayers();
   await loadDokaPool();
@@ -316,6 +369,7 @@ function removeDokaIntro(){
 function showDokaIntro(){
   removeDokaIntro();
   if(PAGE !== "roster") return;
+  if(isPerfLite()) return;
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const el = document.createElement("div");
   el.className = "doka-intro";
@@ -481,24 +535,69 @@ async function renderPlayer(){
   try{ rec = await loadRecord(slug, PLAYER_SEASON); }
   catch(e){ fetchErr(view); return; }
   view.innerHTML = rec.meta ? playerBody(rec) : emptySeason(PLAYER_SEASON);
-  wireOpSideFilter();
+  wireOpTableControls();
   wirePastComments();
 }
-function wireOpSideFilter(root="#view"){
-  document.querySelectorAll(`${root} .op-filter`).forEach(filter=>{
-    const panel=filter.closest(".panel");
-    const tbody=panel?.querySelector("tbody");
+function sortOpTbody(tbody, key, dir){
+  const mult=dir==="asc"?1:-1;
+  Array.from(tbody.querySelectorAll("tr")).sort((a,b)=>{
+    const av=parseFloat(a.dataset[key])||0, bv=parseFloat(b.dataset[key])||0;
+    return (av-bv)*mult;
+  }).forEach(tr=>tbody.appendChild(tr));
+}
+function wireOpTableControls(root="#view"){
+  document.querySelectorAll(`${root} .op-standings, ${root} .ov-op-matrix`).forEach(panel=>{
+    const tbody=panel.querySelector("tbody");
     if(!tbody) return;
-    const btns=filter.querySelectorAll(".op-fbtn");
-    btns.forEach(btn=>btn.onclick=()=>{
-      btns.forEach(b=>b.classList.remove("on"));
-      btn.classList.add("on");
-      const f=btn.dataset.f;
+    const filter=panel.querySelector(".op-filter");
+    let sortKey="rounds", sortDir="desc";
+    function applyFilter(){
+      const f=filter?.querySelector(".op-fbtn.on")?.dataset.f||"all";
       tbody.querySelectorAll("tr").forEach(tr=>{
         tr.style.display=(f==="all"||tr.dataset.side===f)?"":"none";
       });
+    }
+    function updateSortUI(){
+      panel.querySelectorAll(".op-sbtn").forEach(btn=>{
+        const on=btn.dataset.sort===sortKey;
+        btn.classList.toggle("on",on);
+        const lbl=btn.dataset.label||btn.textContent.replace(/[▲▼]/g,"").trim();
+        btn.dataset.label=lbl;
+        btn.textContent=on?`${lbl} ${sortDir==="desc"?"▼":"▲"}`:lbl;
+        btn.title=on?(sortDir==="desc"?"High first — click for low first":"Low first — click for high first"):`Sort by ${lbl}`;
+      });
+    }
+    function applySort(){
+      sortOpTbody(tbody,sortKey,sortDir);
+      applyFilter();
+      updateSortUI();
+    }
+    panel.querySelectorAll(".op-sbtn").forEach(btn=>{
+      btn.onclick=()=>{
+        const k=btn.dataset.sort;
+        if(k===sortKey) sortDir=sortDir==="desc"?"asc":"desc";
+        else{ sortKey=k; sortDir="desc"; }
+        applySort();
+      };
     });
+    filter?.querySelectorAll(".op-fbtn").forEach(btn=>{
+      btn.onclick=()=>{
+        filter.querySelectorAll(".op-fbtn").forEach(b=>b.classList.remove("on"));
+        btn.classList.add("on");
+        applyFilter();
+      };
+    });
+    applySort();
   });
+}
+function opMatrixAgg(cells){
+  let rounds=0, wWin=0, wKd=0;
+  Object.values(cells).forEach(op=>{
+    rounds+=op.rounds;
+    wWin+=op.winPct*op.rounds;
+    wKd+=(typeof op.kd==="number"?op.kd:parseFloat(op.kd)||0)*op.rounds;
+  });
+  return { rounds, winpct:rounds?wWin/rounds:0, kd:rounds?wKd/rounds:0 };
 }
 function buildSeasonBtns(slug, active){
   const el = byId("seasons");
@@ -525,21 +624,28 @@ function playerBody(rec){
     <div class="milestone"><span class="bar"></span>${m.rpToNext} RP until ${esc(m.nextRank)} · season peak ${fmt(m.peakRp)} · avg HS% ${m.avgHs} · ${m.matches} matches</div>
   </div>`;
 
-  const ops = (rec.operators||[]).slice().sort((a,b)=>b.rounds-a.rounds).map(o=>`<tr data-side="${esc(o.side)}">
+  const ops = (rec.operators||[]).map(o=>`<tr data-side="${esc(o.side)}" data-rounds="${o.rounds}" data-winpct="${o.winPct}" data-kd="${o.kd}">
     <td class="l"><div class="opcell"><span class="opicon">${opIconImg(o.name)}</span><span class="opname">${esc(o.name)}<span class="side">${o.side}</span></span></div></td>
     <td>${o.rounds}</td><td style="color:${wrColor(o.winPct)};font-weight:700">${o.winPct}%</td>
     <td>${o.kd}</td><td>${o.hs}%</td><td>${o.w}</td><td>${o.l}</td><td>${o.k}</td><td>${o.d}</td><td>${o.a}</td>
     <td>${o.aces||0}</td><td>${o.tks||0}</td></tr>`).join("");
+  const opSortBar=`<div class="op-sort" role="group" aria-label="Sort operators">
+      <span class="op-sort-lbl">Sort</span>
+      <button type="button" class="op-sbtn on" data-sort="rounds">RDS</button>
+      <button type="button" class="op-sbtn" data-sort="winpct">WIN%</button>
+      <button type="button" class="op-sbtn" data-sort="kd">K/D</button>
+    </div>`;
   const operators=`<div class="panel op-standings"><div class="sect-hdr-row">
     <div class="sect-hdr">// OPERATOR STANDINGS <span class="n">— full roster, all maps</span></div>
+    <div class="op-controls">${opSortBar}
     <div class="op-filter" role="group" aria-label="Filter operators by side">
       <button type="button" class="op-fbtn on" data-f="all">All</button>
       <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
       <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
-    </div></div>
+    </div></div></div>
     <div class="scroll"><table><thead><tr><th class="l">Operator</th><th>RDS</th><th>WIN%</th><th>K/D</th><th>HS%</th><th>W</th><th>L</th><th>K</th><th>D</th><th>A</th><th>ACE</th><th>TK</th></tr></thead>
     <tbody>${ops}</tbody></table></div>
-    <div class="legend">WIN% — <span class="g">green &ge;55%</span> · <span class="y">gold &ge;45%</span> · <span class="r">red &lt;45%</span></div></div>`;
+    <div class="legend">WIN% — <span class="g">green &ge;55%</span> · <span class="y">gold &ge;45%</span> · <span class="r">red &lt;45%</span> · Sort <span class="g">▼</span> high first · <span class="r">▲</span> low first</div></div>`;
 
   const rows=(rec.matches||[]).map(x=>{
     const rb=x.result==="RB", win=!rb&&x.result==="W", drp=(x.drp>=0?"+":"")+x.drp;
@@ -604,7 +710,7 @@ async function renderOversight(){
   if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
   view.innerHTML = board(data) + radar(data) + squadComments(squad)
     + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
-  wireOpSideFilter();
+  wireOpTableControls();
   wirePastComments();
 }
 function buildOvSeasonBtns(active){
@@ -711,33 +817,41 @@ function operatorMatrix(data){
       ops[op.name].cells[d.cfg.slug]=op;
     });
   });
-  const list=Object.keys(ops).sort((a,b)=>{
-    const sum=n=>Object.values(ops[n].cells).reduce((s,o)=>s+o.rounds,0);
-    return sum(b)-sum(a);
-  });
+  const list=Object.keys(ops);
   if(!list.length) return "";
+  const pcolStyle=a=>`style="--pcol-accent:${a}"`;
   const head1=`<tr><th rowspan="2" class="l">Operator</th><th rowspan="2">Side</th>`
-    +data.map(d=>`<th colspan="3"><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
-  const head2=`<tr>`+data.map(()=>`<th>Rds</th><th>Win%</th><th>K/D</th>`).join("")+`</tr>`;
+    +data.map(d=>`<th colspan="3" class="pcol-hdr" ${pcolStyle(d.cfg.accent)}><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
+  const head2=`<tr>`+data.map(d=>`<th class="pcol-th pcol-rds" ${pcolStyle(d.cfg.accent)}>Rds</th><th class="pcol-th" ${pcolStyle(d.cfg.accent)}>Win%</th><th class="pcol-th" ${pcolStyle(d.cfg.accent)}>K/D</th>`).join("")+`</tr>`;
   const body=list.map(name=>{
     const o=ops[name];
+    const agg=opMatrixAgg(o.cells);
     const tag=o.side==="ATK"?'<span class="side-tag atk">ATK</span>':'<span class="side-tag def">DEF</span>';
-    let row=`<tr data-side="${esc(o.side)}"><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
+    let row=`<tr data-side="${esc(o.side)}" data-rounds="${agg.rounds}" data-winpct="${agg.winpct}" data-kd="${agg.kd}"><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
     data.forEach(d=>{
       const op=o.cells[d.cfg.slug];
-      if(op) row+=`<td>${op.rounds}</td><td style="color:${wrColor(op.winPct)}">${op.winPct}%</td><td>${op.kd.toFixed(2)}</td>`;
-      else row+=`<td class="dim-cell">—</td><td class="dim-cell">—</td><td class="dim-cell">—</td>`;
+      const ps=pcolStyle(d.cfg.accent);
+      if(op) row+=`<td class="pcol pcol-rds" ${ps}>${op.rounds}</td><td class="pcol" style="--pcol-accent:${d.cfg.accent};color:${wrColor(op.winPct)}">${op.winPct}%</td><td class="pcol" ${ps}>${op.kd.toFixed(2)}</td>`;
+      else row+=`<td class="pcol pcol-rds dim-cell" ${ps}>—</td><td class="pcol dim-cell" ${ps}>—</td><td class="pcol dim-cell" ${ps}>—</td>`;
     });
     return row+`</tr>`;
   }).join("");
+  const opSortBar=`<div class="op-sort" role="group" aria-label="Sort operators">
+      <span class="op-sort-lbl">Sort</span>
+      <button type="button" class="op-sbtn on" data-sort="rounds">RDS</button>
+      <button type="button" class="op-sbtn" data-sort="winpct">WIN%</button>
+      <button type="button" class="op-sbtn" data-sort="kd">K/D</button>
+    </div>`;
   return `<div class="panel ov-op-matrix"><div class="sect-hdr-row">
-    <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · rounds / win% / K/D</span></div>
+    <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
+    <div class="op-controls">${opSortBar}
     <div class="op-filter" role="group" aria-label="Filter operators by side">
       <button type="button" class="op-fbtn on" data-f="all">All</button>
       <button type="button" class="op-fbtn" data-f="ATK">Attack only</button>
       <button type="button" class="op-fbtn" data-f="DEF">Defense only</button>
-    </div></div>
-    <div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div></div>`;
+    </div></div></div>
+    <div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>
+    <div class="legend">Sort by squad-weighted RDS / WIN% / K/D · <span class="g">▼</span> high first · <span class="r">▲</span> low first</div></div>`;
 }
 
 function mapHeatmap(data){
@@ -1164,6 +1278,7 @@ async function initBgm(){
 }
 
 /* ---- boot ---- */
+initPerfMode();
 if(PAGE==="roster"){
   applyMenuTheme();
   initBgm().catch(()=>{});

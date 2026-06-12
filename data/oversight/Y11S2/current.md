@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 10, 2026 · evening PT
+**Updated:** Jun 12, 2026 · evening PT
 
 ```json
 {
   "name": "OVERSIGHT",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 10, 2026 · evening PT",
+  "updated": "Jun 12, 2026 · evening PT",
   "comments": [
     {
       "type": "map",
@@ -152,6 +152,42 @@
       "subject": "Finka",
       "date": "Jun 10",
       "text": "Matticus HQ: nine Finka attack rounds, 77.8% win rate, 2.33 K/D, 71.4% headshots — placements cleared and Silver IV at 2,113 RP arrived on surge timing that actually converted. Skopós at 70.0% over ten defensive rounds and Alibi at 80.0% on five rounds give Matticus both chairs for the first time this season. Cross-roster contrast: Grandmaster Sandman prints on Sledge, CunderThock on Zero/Jackal flex, Rogue on Dokkaebi. Ram is still 0–2. The Jun 10 player comment wave said it plainly — queue Finka and Skopós, stop spreading one-round labs."
+    },
+    {
+      "type": "map",
+      "subject": "Calypso Casino",
+      "date": "Jun 12",
+      "text": "Jun 12 made Calypso Casino the squad's shared tax map. Mynameisblang queued it twice in one block and donated −42 RP on back-to-back 2:4 and 1:4 losses with Victim and 1v3 Lost tags — the same map that printed a Jun 10 1v4 Clutch 4K W now punishes first-death timing on loss nights. slackandlack and MJester1337 both logged Calypso volume earlier in the season with mixed receipts; the core four touched it on Jun 10 and Jun 11 blocks that closed elsewhere. When seven dossiers converge on a new map and only the highlight reel remembers how to win it, the lesson is round closure on the execute floor — not another multi-kill that dies in overtime."
+    },
+    {
+      "type": "operator",
+      "subject": "Finka",
+      "date": "Jun 12",
+      "text": "Mynameisblang: one hundred five Finka attack rounds, 49.5% win rate, 1.01 K/D, twenty-five assists — the highest-volume attacker on the seven-player board and the spine behind Gold I at 2,972 RP even on a −104 RP Jun 12 night. Matticus HQ sits at 77.8% over nine rounds with 2.33 K/D — surge timing that actually converted placements into Silver IV. Cross-roster contrast: Grandmaster Sandman still prints on Sledge at 63.2%; CunderThock on Zero; Rogue on Dokkaebi. The squad memo is the same operator, two outcomes — Adrenal Surge wins when the stack commits to the buffed execute together; popping it solo on Calypso loss streaks is how break-even volume stalls at Gold I."
+    },
+    {
+      "type": "operator",
+      "subject": "Thunderbird",
+      "date": "Jun 12",
+      "text": "Mynameisblang: eighty-nine Thunderbird defensive rounds, 60.7% win rate, 1.33 K/D, thirty assists — the defensive main with real sample size on the heaviest grinder dossier in the stack. Kóna Stations top teammates between fights; thirty assists on seventy-six kills says sustain converted to round wins while Finka attack minutes hovered at break-even. Cross-roster anchors still split: Grandmaster Sandman on Kaid at 80.0%, CunderThock on Tachanka at 64.3%, MJester1337 on Thorn at 66.7%, slackandlack on Aruni at 62.5%. Thunderbird is proof the newcomer stack can lock a passive sustain anchor at volume — pair it with Oryx roam pressure and stop funding Dokkaebi attack rows that bleed."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 12",
+      "text": "Three dossiers, three Jegeo receipts. Rogue_Amputee: fifteen attack rounds, 60.0% win rate, 1.38 K/D — still the squad's best Dokkaebi volume after Wave 4. MJester1337: forty-two rounds at 50.0% with fourteen assists — break-even utility that buys trades without printing rank yet. Mynameisblang: sixty-five rounds at 35.4% with 0.60 K/D — the attack tax on a Gold I dossier that already proved Finka and Oryx. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in. Cross-roster lesson unchanged from Wave 2: scan-and-payload pressure wins when coordinated — hoarding charges or queueing her as a comfort pick after a loss night is how three players write three different seasons on the same remaster."
+    },
+    {
+      "type": "operator",
+      "subject": "Aruni",
+      "date": "Jun 12",
+      "text": "slackandlack: sixteen Aruni defensive rounds, 62.5% win rate, 1.62 K/D, 47.6% headshots, one ace — the highest-volume pick on a Silver II dossier and the defensive spine that actually prints. Surya Gates on the breach that matters, EBR pressure when the gate eats the push — ten wins in sixteen rounds is a main, not a placement audition. Cross-roster contrast: the same player's Osa row reads 25.0% over sixteen attack rounds with 1.00 K/D — tied for top volume, worst win rate. Grandmaster Sandman's Kaid, CunderThock's Tachanka, and MJester1337's Thorn all proved denial anchors convert; slackandlack found Aruni first. Stack the gate on defense, swap Osa minutes for Thermite or Blackbeard on attack, and Silver I is forty-nine RP away."
+    },
+    {
+      "type": "operator",
+      "subject": "Thorn",
+      "date": "Jun 12",
+      "text": "MJester1337: thirty-three Thorn defensive rounds, 66.7% win rate, 1.15 K/D, twenty assists — the best defensive win rate on a Copper I dossier that wins 59.4% of its sets anyway. Razorblooms on the plant window or choke the attack actually walks through; twenty assists says traps bought trades even when K/D looked modest. Wave 1 called Thorn the squad's benched ceiling operator; Wave 5 is thirty-three rounds of proof on the newest grinder. Cross-roster note: Grandmaster Sandman still never queued Thorn and hit Gold IV on Kaid; Mynameisblang's Thorn sits at 27.3% over eleven rounds while Thunderbird carries eighty-nine. Denari leads MJester's volume at forty-three rounds with 0.53 K/D — flex connectors behind Thorn minutes until the laser slows real pushes."
     }
   ]
 }
