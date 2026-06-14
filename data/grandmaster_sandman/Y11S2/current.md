@@ -1,1033 +1,1252 @@
 # VANTAGE RECORD — Grandmaster Sandman
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 10, 2026 · evening PT
+**Updated:** Jun 14, 2026 · afternoon PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
 ```json
 {
-  "name": "Grandmaster Sandman",
-  "season": "Y11S2",
-  "seasonLabel": "Operation System Override",
-  "updated": "Jun 10, 2026 · evening PT",
-  "meta": {
-    "rank": "Gold IV",
-    "rp": 2677,
-    "peakRp": 2677,
-    "nextRank": "Gold III",
-    "rpToNext": 23,
-    "matches": 23,
-    "w": 15,
-    "l": 8,
-    "winRate": 65.2,
-    "kd": 1.22,
-    "avgHs": 36.2,
-    "netRp": 204
-  },
-  "matches": [
-    {
-      "date": "Jun 10",
-      "map": "Consulate",
-      "result": "W",
-      "score": "4:1",
-      "rp": 2677,
-      "drp": 26,
-      "k": 10,
-      "d": 2,
-      "a": 0,
-      "hs": 30.0,
-      "badges": [
-        "4K",
-        "3K"
-      ]
-    },
-    {
-      "date": "Jun 10",
-      "map": "Calypso Casino",
-      "result": "W",
-      "score": "4:1",
-      "rp": 2651,
-      "drp": 23,
-      "k": 4,
-      "d": 5,
-      "a": 3,
-      "hs": 50.0,
-      "badges": [
-        "Victim",
-        "2K",
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 10",
-      "map": "Outback",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2628,
-      "drp": 23,
-      "k": 3,
-      "d": 5,
-      "a": 3,
-      "hs": 66.7,
-      "badges": []
-    },
-    {
-      "date": "Jun 10",
-      "map": "Oregon",
-      "result": "L",
-      "score": "2:4",
-      "rp": 2605,
-      "drp": -19,
-      "k": 6,
-      "d": 5,
-      "a": 1,
-      "hs": 33.3,
-      "badges": [
-        "3K",
-        "1v3 Lost"
-      ]
-    },
-    {
-      "date": "Jun 8",
-      "map": "Bank",
-      "result": "W",
-      "score": "4:1",
-      "rp": 2624,
-      "drp": 26,
-      "k": 7,
-      "d": 2,
-      "a": 1,
-      "hs": 28.6,
-      "badges": [
-        "3K",
-        "3K"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Lair",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2598,
-      "drp": 24,
-      "k": 8,
-      "d": 3,
-      "a": 0,
-      "hs": 62.5,
-      "badges": [
-        "3K",
-        "2K",
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Border",
-      "result": "L",
-      "score": "2:4",
-      "rp": 2574,
-      "drp": -25,
-      "k": 7,
-      "d": 6,
-      "a": 1,
-      "hs": 28.6,
-      "badges": [
-        "3K",
-        "Victim"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Calypso Casino",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2599,
-      "drp": 25,
-      "k": 5,
-      "d": 3,
-      "a": 1,
-      "hs": 40.0,
-      "badges": [
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Clubhouse",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2574,
-      "drp": 26,
-      "k": 9,
-      "d": 3,
-      "a": 1,
-      "hs": 44.4,
-      "badges": [
-        "3K",
-        "1v2 Lost"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Lair",
-      "result": "W",
-      "score": "4:0",
-      "rp": 2548,
-      "drp": 24,
-      "k": 2,
-      "d": 2,
-      "a": 3,
-      "hs": 50.0,
-      "badges": [
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 7",
-      "map": "Border",
-      "result": "W",
-      "score": "5:4",
-      "rp": 2524,
-      "drp": 26,
-      "k": 3,
-      "d": 8,
-      "a": 4,
-      "hs": 0.0,
-      "badges": []
-    },
-    {
-      "date": "Jun 7",
-      "map": "Oregon",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2498,
-      "drp": 25,
-      "k": 8,
-      "d": 5,
-      "a": 2,
-      "hs": 50.0,
-      "badges": [
-        "1v2 Clutch",
-        "4K"
-      ]
-    },
-    {
-      "date": "Jun 6",
-      "map": "Oregon",
-      "result": "W",
-      "score": "4:0",
-      "rp": 2473,
-      "drp": 23,
-      "k": 1,
-      "d": 3,
-      "a": 2,
-      "hs": 0.0,
-      "badges": []
-    },
-    {
-      "date": "Jun 6",
-      "map": "Clubhouse",
-      "result": "W",
-      "score": "4:2",
-      "rp": 2450,
-      "drp": 24,
-      "k": 3,
-      "d": 4,
-      "a": 1,
-      "hs": 66.7,
-      "badges": [
-        "2K",
-        "1v3 Lost"
-      ]
-    },
-    {
-      "date": "Jun 6",
-      "map": "Chalet",
-      "result": "L",
-      "score": "1:4",
-      "rp": 2426,
-      "drp": -24,
-      "k": 1,
-      "d": 4,
-      "a": 1,
-      "hs": 0.0,
-      "badges": []
-    },
-    {
-      "date": "Jun 6",
-      "map": "Coastline",
-      "result": "L",
-      "score": "1:4",
-      "rp": 2450,
-      "drp": -24,
-      "k": 1,
-      "d": 5,
-      "a": 0,
-      "hs": 0.0,
-      "badges": [
-        "1v1 Lost",
-        "Victim"
-      ]
-    },
-    {
-      "date": "Jun 6",
-      "map": "Oregon",
-      "result": "L",
-      "score": "2:4",
-      "rp": 2474,
-      "drp": -25,
-      "k": 2,
-      "d": 6,
-      "a": 2,
-      "hs": 100.0,
-      "badges": [
-        "Victim"
-      ]
-    },
-    {
-      "date": "Jun 6",
-      "map": "Oregon",
-      "result": "W",
-      "score": "4:0",
-      "rp": 2499,
-      "drp": 26,
-      "k": 6,
-      "d": 1,
-      "a": 2,
-      "hs": 0.0,
-      "badges": [
-        "3K",
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 5",
-      "map": "Consulate",
-      "result": "W",
-      "score": "4:1",
-      "rp": 2473,
-      "drp": 0,
-      "k": 7,
-      "d": 2,
-      "a": 0,
-      "hs": 42.9,
-      "badges": [
-        "3K",
-        "2K",
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 3",
-      "map": "Oregon",
-      "result": "L",
-      "score": "3:5",
-      "rp": 0,
-      "drp": 0,
-      "k": 9,
-      "d": 8,
-      "a": 1,
-      "hs": 11.1,
-      "badges": [
-        "3K",
-        "Victim"
-      ]
-    },
-    {
-      "date": "Jun 3",
-      "map": "Coastline",
-      "result": "L",
-      "score": "2:4",
-      "rp": 0,
-      "drp": 0,
-      "k": 5,
-      "d": 6,
-      "a": 1,
-      "hs": 60.0,
-      "badges": [
-        "1v1 Lost",
-        "Victim"
-      ]
-    },
-    {
-      "date": "Jun 3",
-      "map": "Coastline",
-      "result": "W",
-      "score": "4:1",
-      "rp": 0,
-      "drp": 0,
-      "k": 4,
-      "d": 3,
-      "a": 0,
-      "hs": 50.0,
-      "badges": [
-        "2K"
-      ]
-    },
-    {
-      "date": "Jun 3",
-      "map": "Oregon",
-      "result": "L",
-      "score": "2:4",
-      "rp": 0,
-      "drp": 0,
-      "k": 5,
-      "d": 4,
-      "a": 1,
-      "hs": 0.0,
-      "badges": [
-        "3K",
-        "2K"
-      ]
-    }
-  ],
-  "operators": [
-    {
-      "name": "Sledge",
-      "side": "ATK",
-      "rounds": 19,
-      "winPct": 63.2,
-      "kd": 1.79,
-      "hs": 40.0,
-      "w": 12,
-      "l": 7,
-      "k": 25,
-      "d": 14,
-      "a": 7,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Kaid",
-      "side": "DEF",
-      "rounds": 15,
-      "winPct": 80.0,
-      "kd": 0.9,
-      "hs": 33.3,
-      "w": 12,
-      "l": 3,
-      "k": 9,
-      "d": 10,
-      "a": 6,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Frost",
-      "side": "DEF",
-      "rounds": 11,
-      "winPct": 72.7,
-      "kd": 1.12,
-      "hs": 22.2,
-      "w": 8,
-      "l": 3,
-      "k": 9,
-      "d": 8,
-      "a": 3,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Fuze",
-      "side": "ATK",
-      "rounds": 9,
-      "winPct": 44.4,
-      "kd": 1.0,
-      "hs": 0.0,
-      "w": 4,
-      "l": 5,
-      "k": 6,
-      "d": 6,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Aruni",
-      "side": "DEF",
-      "rounds": 9,
-      "winPct": 55.6,
-      "kd": 1.12,
-      "hs": 66.7,
-      "w": 5,
-      "l": 4,
-      "k": 9,
-      "d": 8,
-      "a": 3,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Dokkaebi",
-      "side": "ATK",
-      "rounds": 6,
-      "winPct": 50.0,
-      "kd": 0.8,
-      "hs": 0.0,
-      "w": 3,
-      "l": 3,
-      "k": 4,
-      "d": 5,
-      "a": 2,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Kali",
-      "side": "ATK",
-      "rounds": 6,
-      "winPct": 50.0,
-      "kd": 0.8,
-      "hs": 50.0,
-      "w": 3,
-      "l": 3,
-      "k": 4,
-      "d": 5,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Thorn",
-      "side": "DEF",
-      "rounds": 6,
-      "winPct": 50.0,
-      "kd": 1.75,
-      "hs": 14.3,
-      "w": 3,
-      "l": 3,
-      "k": 7,
-      "d": 4,
-      "a": 2,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Rauora",
-      "side": "ATK",
-      "rounds": 6,
-      "winPct": 33.3,
-      "kd": 0.5,
-      "hs": 0.0,
-      "w": 2,
-      "l": 4,
-      "k": 3,
-      "d": 6,
-      "a": 2,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Fenrir",
-      "side": "DEF",
-      "rounds": 5,
-      "winPct": 40.0,
-      "kd": 1.33,
-      "hs": 100.0,
-      "w": 2,
-      "l": 3,
-      "k": 4,
-      "d": 3,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Blitz",
-      "side": "ATK",
-      "rounds": 5,
-      "winPct": 80.0,
-      "kd": 1.67,
-      "hs": 20.0,
-      "w": 4,
-      "l": 1,
-      "k": 5,
-      "d": 3,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Melusi",
-      "side": "DEF",
-      "rounds": 4,
-      "winPct": 75.0,
-      "kd": 1.5,
-      "hs": 66.7,
-      "w": 3,
-      "l": 1,
-      "k": 3,
-      "d": 2,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Mute",
-      "side": "DEF",
-      "rounds": 3,
-      "winPct": 33.3,
-      "kd": 1.0,
-      "hs": 66.7,
-      "w": 1,
-      "l": 2,
-      "k": 3,
-      "d": 3,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Valkyrie",
-      "side": "DEF",
-      "rounds": 3,
-      "winPct": 66.7,
-      "kd": 6.0,
-      "hs": 50.0,
-      "w": 2,
-      "l": 1,
-      "k": 6,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Pulse",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 100.0,
-      "kd": 3.0,
-      "hs": 0.0,
-      "w": 2,
-      "l": 0,
-      "k": 3,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Kapkan",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 50.0,
-      "kd": 0.5,
-      "hs": 100.0,
-      "w": 1,
-      "l": 1,
-      "k": 1,
-      "d": 2,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Tubarao",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 100.0,
-      "kd": 3.0,
-      "hs": 33.3,
-      "w": 2,
-      "l": 0,
-      "k": 3,
-      "d": 1,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Ying",
-      "side": "ATK",
-      "rounds": 2,
-      "winPct": 0.0,
-      "kd": 0.5,
-      "hs": 100.0,
-      "w": 0,
-      "l": 2,
-      "k": 1,
-      "d": 2,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Amaru",
-      "side": "ATK",
-      "rounds": 2,
-      "winPct": 0.0,
-      "kd": 0.5,
-      "hs": 100.0,
-      "w": 0,
-      "l": 2,
-      "k": 1,
-      "d": 2,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Azami",
-      "side": "DEF",
-      "rounds": 2,
-      "winPct": 50.0,
-      "kd": 0.5,
-      "hs": 0.0,
-      "w": 1,
-      "l": 1,
-      "k": 1,
-      "d": 2,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Osa",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 0,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Bandit",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 2.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 0,
-      "k": 2,
-      "d": 0,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "IQ",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 1.0,
-      "hs": 100.0,
-      "w": 1,
-      "l": 0,
-      "k": 1,
-      "d": 0,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Maestro",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Jackal",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Montagne",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Thermite",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 0,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Denari",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 1.0,
-      "hs": 0.0,
-      "w": 1,
-      "l": 0,
-      "k": 1,
-      "d": 0,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Brava",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 3.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 3,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Blackbeard",
-      "side": "ATK",
-      "rounds": 1,
-      "winPct": 0.0,
-      "kd": 0.0,
-      "hs": 0.0,
-      "w": 0,
-      "l": 1,
-      "k": 0,
-      "d": 1,
-      "a": 0,
-      "aces": 0,
-      "tks": 0
-    },
-    {
-      "name": "Doc",
-      "side": "DEF",
-      "rounds": 1,
-      "winPct": 100.0,
-      "kd": 2.0,
-      "hs": 50.0,
-      "w": 1,
-      "l": 0,
-      "k": 2,
-      "d": 0,
-      "a": 1,
-      "aces": 0,
-      "tks": 0
-    }
-  ],
-  "badges": [
-    {
-      "name": "2K",
-      "count": 11
-    },
-    {
-      "name": "3K",
-      "count": 11
-    },
-    {
-      "name": "Victim",
-      "count": 6
-    },
-    {
-      "name": "4K",
-      "count": 2
-    },
-    {
-      "name": "1v2 Clutch",
-      "count": 1
-    },
-    {
-      "name": "1v2 Lost",
-      "count": 1
-    },
-    {
-      "name": "1v3 Lost",
-      "count": 2
-    },
-    {
-      "name": "1v1 Lost",
-      "count": 2
-    }
-  ],
-  "debrief": "<p><b>Gold IV · 2,677 RP · 15–8 · 65.2% win rate · 1.22 K/D.</b> Jun 10 was a three-win night: +53 RP, new peak, and twenty-three RP from Gold III. Oregon opened with a 2:4 and a 1v3 Lost; Outback, Calypso, and Consulate all closed — Consulate capped it at 10/2/0 with a 4K and a 3K.</p><p><b>Kaid at 80.0% over fifteen defensive rounds</b> still owns the anchor chair. <b>Sledge at 63.2% over nineteen attack rounds</b> and 1.79 K/D is the hammer with timing, not Y11S1 volume tax. Frost climbed to 72.7% on eleven rounds; Aruni posted 66.7% headshots on nine defensive rounds.</p><p>Peak resets to <b>2,677</b>. Jun 8 Bank bought Gold IV; Jun 10 is buying Gold III. Queue Kaid, Sledge, and Frost — not the Montagne one-round labs.</p>",
-  "comments": [
-    {
-      "type": "map",
-      "subject": "Oregon",
-      "date": "Jun 3",
-      "text": "Two Oregon runs, 0–2, fourteen kills combined, and multi-kill badges on both losses. You are not losing Oregon because you can't shoot — you're losing it because the frags don't convert before Victim or timer tax hits. Silent Hunt had you elite on defense; these Oregon sets look like attack tempo with no plant discipline. Map knowledge isn't the issue. Round closure is."
-    },
-    {
-      "type": "operator",
-      "subject": "Dokkaebi",
-      "date": "Jun 3",
-      "text": "Four rounds — most-played operator in a four-match sample. 50% win rate, 1.33 K/D, zero headshots logged on the row. Dokkaebi is info and pressure, not your Kaid replacement. Fine as a flex once you're placed; not the identity to build placements around when Thorn went 3–0 in one round."
-    },
-    {
-      "type": "operator",
-      "subject": "Aruni",
-      "date": "Jun 3",
-      "text": "Two rounds, 4.00 K/D, four kills, one death — the Surya gate still works when you sit on it. Half the sample, half the losses, but the stat line screams anchor. You don't need a new defender; you need fewer Blitz rushes past the operator that already prints."
-    },
-    {
-      "type": "operator",
-      "subject": "Thorn",
-      "date": "Jun 3",
-      "text": "One round, 3–0 K/D, 100% win rate, one assist — Silent Hunt Thorn at 59.1% and 2.14 K/D over ninety-seven rounds, compressed into a single game. This is the pick that wins you placements if you queue it on defense instead of spreading fifteen operators. Traps collected three kills without you ego-peeking. More of this, less Oregon hero ball."
-    },
-    {
-      "type": "operator",
-      "subject": "Sledge",
-      "date": "Jun 3",
-      "text": "One attack round, 2.00 K/D, still a loss — the Y11S1 tax in miniature. You had 187 Sledge rounds at 43.3% last season. Opening System Override with him for one round is nostalgia, not strategy. Placement game five is not the moment to relitigate the hammer."
-    },
-    {
-      "type": "operator",
-      "subject": "Melusi",
-      "date": "Jun 3",
-      "text": "Two rounds, 100% win rate, zero kills, one death — pure gadget denial winning rounds you didn't have to frag for. Melusi and Thorn in the same night, both perfect win rates on tiny samples. That's the defensive blueprint hiding under the Dokkaebi and Brava noise. Consolidate there once rank shows up."
-    },
-    {
-      "type": "map",
-      "subject": "Lair",
-      "date": "Jun 7",
-      "text": "Two Lair wins in one block — 4–0 with two kills and three assists, then 4–2 with eight kills, a 3K, and two 2K tags to close at 2,598 RP. Lair rewarded round closure both times: the first set was pure setup and refrag value, the second was the fragger mode that actually finished. This is what Jun 7 looked like when Oregon's ghost stopped haunting the queue."
-    },
-    {
-      "type": "operator",
-      "subject": "Kaid",
-      "date": "Jun 7",
-      "text": "Eleven defensive rounds, 81.8% win rate, 1.00 K/D — the highest win rate on your board and it's not close. Kaid's job is Electroclaws on the wall and hatch that gate the hard breach; K/D undersells him when the breach fails and the attack bleeds utility. Nine wins in eleven rounds says the claws are landing on the right surfaces. This is your defensive main — not Fenrir labs, not one-round Maestro auditions."
-    },
-    {
-      "type": "operator",
-      "subject": "Sledge",
-      "date": "Jun 7",
-      "text": "Eleven attack rounds, 63.6% win rate, 1.75 K/D — Wave 1 called the one-round Sledge loss nostalgia; Wave 2 is the receipt. The L85A2 frags when entries are timed to the push, and the hammer opens vertical value instead of random floor noise. Y11S1's 43.3% over 187 rounds was an entry-timing problem, not a gun problem. You fixed the timing. Keep him as the attack default alongside structured breach picks."
-    },
-    {
-      "type": "operator",
-      "subject": "Thorn",
-      "date": "Jun 7",
-      "text": "Five defensive rounds, 60.0% win rate, 2.33 K/D, two assists — the Jun 3 one-round sample wasn't a fluke, it was a preview. Razorblooms on the plant spot force attackers to move or eat the blast; two assists says your shells displaced someone the team traded. K/D undersells trap value, but 2.33 means you're holding the angle after the pop too. Silent Hunt Thorn at 59.1% lives — queue her when Kaid isn't the call."
-    },
-    {
-      "type": "operator",
-      "subject": "Frost",
-      "date": "Jun 7",
-      "text": "Nine defensive rounds, 66.7% win rate, 0.71 K/D, three assists — trappers win on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and your team collected. The Super 90 doesn't need to print every round when the mat does the opening. Pair with Kaid and Thorn for a denial stack that doesn't require hero ball."
-    },
-    {
-      "type": "operator",
-      "subject": "Melusi",
-      "date": "Jun 7",
-      "text": "Three defensive rounds, 66.7% win rate, zero kills, two deaths — same story as Jun 3, now with a real sample behind it. Banshees slow the push; you don't need frags when attackers are crawling through the slow field getting traded. K/D is the wrong metric entirely. Two wins in three rounds on gadget denial alone — this is the second anchor in the blueprint Wave 1 spotted. Stop spreading thirty operators and ride the picks that win without ego."
-    },
-    {
-      "type": "map",
-      "subject": "Bank",
-      "date": "Jun 8",
-      "text": "First ranked Bank of the season — 4:1, +26 RP, and the Gold IV promotion that Jun 7 spent all night teasing at two RP out. 7/2/1 at 3.50 K/D with two 3K tags is not a squeaker win; that's round closure on a map that punishes lazy rotates and open vault reads. Rogue cashed Bank the same morning at 4/2/1 — the stack knows the map, Sandman just brought the highlight reel. This is what queueing the mains looks like when the heater converts."
-    },
-    {
-      "type": "operator",
-      "subject": "Sledge",
-      "date": "Jun 8",
-      "text": "Thirteen attack rounds, 61.5% win rate, 1.89 K/D — still your highest-volume attacker and the line that fixed Y11S1's 43.3% hammer tax. The L85A2 prints when entries sync to the push; the breaching hammer opens vertical value instead of solo floor noise. Bank's 7/2/1 with two 3K tags is Sledge timing, not nostalgia rushing. Bad habit: random hammering that announces your floor for nothing. Good habit: purposeful soft breaches that threaten the bomb, then rifle trades that close the round."
-    },
-    {
-      "type": "operator",
-      "subject": "Kaid",
-      "date": "Jun 8",
-      "text": "Twelve defensive rounds, 83.3% win rate, 1.00 K/D, three assists — the anchor row keeps climbing and nothing else on the board is close. Electroclaws on the reinforced wall and hatch that gate the hard breach; ten wins in twelve rounds says the claws land on surfaces that matter. K/D undersells him when the breach fails and the attack bleeds utility. This is still your defensive default — not Maestro auditions, not one-round Pulse labs. Stack him with Frost or Thorn when the site needs denial, not hero ball."
-    },
-    {
-      "type": "operator",
-      "subject": "Thorn",
-      "date": "Jun 8",
-      "text": "Five defensive rounds, 60.0% win rate, 2.33 K/D, two assists — the Jun 3 preview and Jun 7 receipt still hold. Razorblooms on the plant spot force attackers to move or eat the blast; 2.33 K/D means you're holding the angle after the pop, not just placing shells in dead space. K/D undersells trap value, but frags on top of displacement is the full package. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells where attackers never trigger them while you ego peek off site."
-    },
-    {
-      "type": "operator",
-      "subject": "Frost",
-      "date": "Jun 8",
-      "text": "Ten defensive rounds, 70.0% win rate, 0.75 K/D, three assists — the trapper row keeps winning on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and the team collected. The Super 90 doesn't need to print every round when the mat opens the round. Pair with Kaid for a denial stack — claws on the wall, mats on the landing, refrag on the trade."
-    },
-    {
-      "type": "operator",
-      "subject": "Melusi",
-      "date": "Jun 8",
-      "text": "Four defensive rounds, 75.0% win rate, 1.50 K/D, 66.7% HS — Wave 2 said gadget denial alone; Wave 3 adds frags on the receipt. Banshees slow the push on real approaches; now you're punishing attackers caught in the slow field instead of only letting teammates trade. Three wins in four rounds is a real sample, not a placement fluke. Good habit: protected Banshees on plant routes and choke points. Bad habit: Banshees in dead space while you spread to the next operator audition."
-    },
-    {
-      "type": "map",
-      "subject": "Consulate",
-      "date": "Jun 10",
-      "text": "A 4:1 cap to close a +53 RP night — 10/2/0 at 5.00 K/D with a 4K and a 3K on the same ticket. Consulate rewards disciplined site takes and post-plant discipline; you closed the set after Oregon opened the block with a 2:4 donation and a 1v3 Lost. When the multi-kill shows up on a map that punishes hero ball without converting, you moved rank — not just the clip reel. This is the Jun 8 Bank receipt on a different layout."
-    },
-    {
-      "type": "operator",
-      "subject": "Sledge",
-      "date": "Jun 10",
-      "text": "Nineteen attack rounds, 63.2% win rate, 1.79 K/D, 40.0% headshots — six more rounds since Jun 8 and the win rate climbed, not dipped. The L85A2 prints when entries sync to the push; the breaching hammer opens vertical value instead of solo floor noise. Consulate's 10/2/0 is Sledge timing at full volume, not nostalgia rushing. Bad habit: random hammering that announces your floor for nothing. Good habit: purposeful soft breaches that threaten the bomb, then rifle trades that close the round."
-    },
-    {
-      "type": "operator",
-      "subject": "Kaid",
-      "date": "Jun 10",
-      "text": "Fifteen defensive rounds, 80.0% win rate, 0.90 K/D, six assists — the anchor row keeps climbing and nothing else on the board is close. Electroclaws on the reinforced wall and hatch that gate the hard breach; twelve wins in fifteen rounds says the claws land on surfaces that matter. K/D undersells him when the breach fails and the attack bleeds utility. This is still your defensive default — not Maestro auditions, not one-round Pulse labs. Stack him with Frost or Thorn when the site needs denial, not hero ball."
-    },
-    {
-      "type": "operator",
-      "subject": "Frost",
-      "date": "Jun 10",
-      "text": "Eleven defensive rounds, 72.7% win rate, 1.12 K/D, three assists — the trapper row keeps winning on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and the team collected. The Super 90 doesn't need to print every round when the mat opens the round. Pair with Kaid for a denial stack — claws on the wall, mats on the landing, refrag on the trade."
-    },
-    {
-      "type": "operator",
-      "subject": "Aruni",
-      "date": "Jun 10",
-      "text": "Nine defensive rounds, 55.6% win rate, 1.12 K/D, 66.7% headshots — volume finally caught up to the Jun 3 two-round 4.00 K/D preview. Surya Gates on the doorways and hatches attackers must cross; the Mk 14 EBR means weak frags aren't fully excused when the gate does its job. Good habit: gates on real entry points plus confident EBR trades. Bad habit: gating useless openings while you hold so passively the DMR's damage goes to waste."
-    },
-    {
-      "type": "operator",
-      "subject": "Thorn",
-      "date": "Jun 10",
-      "text": "Six defensive rounds, 50.0% win rate, 1.75 K/D, two assists — one more round on the sample and the K/D held north of 1.5. Razorblooms on the plant spot force attackers to move or eat the blast; 1.75 K/D means you're holding the angle after the pop, not just placing shells in dead space. K/D undersells trap value, but frags on top of displacement is the full package. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells where attackers never trigger them while you ego peek off site."
-    }
-  ]
+    "name":  "Grandmaster Sandman",
+    "season":  "Y11S2",
+    "seasonLabel":  "Operation System Override",
+    "updated":  "Jun 14, 2026 · afternoon PT",
+    "meta":  {
+                 "rank":  "Gold IV",
+                 "rp":  2600,
+                 "peakRp":  2677,
+                 "nextRank":  "Gold III",
+                 "rpToNext":  100,
+                 "matches":  32,
+                 "w":  18,
+                 "l":  14,
+                 "winRate":  56.2,
+                 "kd":  1.17,
+                 "avgHs":  35,
+                 "netRp":  127
+             },
+    "matches":  [
+                    {
+                        "date":  "Jun 14",
+                        "map":  "Clubhouse",
+                        "result":  "L",
+                        "score":  "4:5",
+                        "rp":  2600,
+                        "drp":  -26,
+                        "k":  9,
+                        "d":  9,
+                        "a":  5,
+                        "hs":  22.2,
+                        "badges":  [
+                                       "Victim",
+                                       "2K",
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 13",
+                        "map":  "Clubhouse",
+                        "result":  "W",
+                        "score":  "5:3",
+                        "rp":  2626,
+                        "drp":  26,
+                        "k":  5,
+                        "d":  6,
+                        "a":  4,
+                        "hs":  40.0,
+                        "badges":  [
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 13",
+                        "map":  "Lair",
+                        "result":  "L",
+                        "score":  "3:5",
+                        "rp":  2600,
+                        "drp":  -18,
+                        "k":  9,
+                        "d":  6,
+                        "a":  1,
+                        "hs":  22.2,
+                        "badges":  [
+                                       "3K",
+                                       "2K",
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 13",
+                        "map":  "Coastline",
+                        "result":  "W",
+                        "score":  "5:3",
+                        "rp":  2618,
+                        "drp":  24,
+                        "k":  7,
+                        "d":  5,
+                        "a":  3,
+                        "hs":  42.9,
+                        "badges":  [
+                                       "3K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 13",
+                        "map":  "Coastline",
+                        "result":  "W",
+                        "score":  "4:0",
+                        "rp":  2594,
+                        "drp":  22,
+                        "k":  6,
+                        "d":  1,
+                        "a":  0,
+                        "hs":  33.3,
+                        "badges":  [
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 12",
+                        "map":  "Oregon",
+                        "result":  "L",
+                        "score":  "3:5",
+                        "rp":  2572,
+                        "drp":  -28,
+                        "k":  7,
+                        "d":  7,
+                        "a":  3,
+                        "hs":  14.3,
+                        "badges":  [
+                                       "3K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 12",
+                        "map":  "Calypso Casino",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  2600,
+                        "drp":  -20,
+                        "k":  6,
+                        "d":  5,
+                        "a":  2,
+                        "hs":  33.3,
+                        "badges":  [
+                                       "3K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 12",
+                        "map":  "Bank",
+                        "result":  "L",
+                        "score":  "1:4",
+                        "rp":  2620,
+                        "drp":  -28,
+                        "k":  1,
+                        "d":  4,
+                        "a":  1,
+                        "hs":  100.0,
+                        "badges":  [
+                                       "1v3 Lost"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 12",
+                        "map":  "Calypso Casino",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  2648,
+                        "drp":  -29,
+                        "k":  2,
+                        "d":  5,
+                        "a":  0,
+                        "hs":  50.0,
+                        "badges":  [
+
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 10",
+                        "map":  "Consulate",
+                        "result":  "W",
+                        "score":  "4:1",
+                        "rp":  2677,
+                        "drp":  26,
+                        "k":  10,
+                        "d":  2,
+                        "a":  0,
+                        "hs":  30.0,
+                        "badges":  [
+                                       "4K",
+                                       "3K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 10",
+                        "map":  "Calypso Casino",
+                        "result":  "W",
+                        "score":  "4:1",
+                        "rp":  2651,
+                        "drp":  23,
+                        "k":  4,
+                        "d":  5,
+                        "a":  3,
+                        "hs":  50.0,
+                        "badges":  [
+                                       "Victim",
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 10",
+                        "map":  "Outback",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2628,
+                        "drp":  23,
+                        "k":  3,
+                        "d":  5,
+                        "a":  3,
+                        "hs":  66.7,
+                        "badges":  [
+
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 10",
+                        "map":  "Oregon",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  2605,
+                        "drp":  -19,
+                        "k":  6,
+                        "d":  5,
+                        "a":  1,
+                        "hs":  33.3,
+                        "badges":  [
+                                       "3K",
+                                       "1v3 Lost"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 8",
+                        "map":  "Bank",
+                        "result":  "W",
+                        "score":  "4:1",
+                        "rp":  2624,
+                        "drp":  26,
+                        "k":  7,
+                        "d":  2,
+                        "a":  1,
+                        "hs":  28.6,
+                        "badges":  [
+                                       "3K",
+                                       "3K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Lair",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2598,
+                        "drp":  24,
+                        "k":  8,
+                        "d":  3,
+                        "a":  0,
+                        "hs":  62.5,
+                        "badges":  [
+                                       "3K",
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Border",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  2574,
+                        "drp":  -25,
+                        "k":  7,
+                        "d":  6,
+                        "a":  1,
+                        "hs":  28.6,
+                        "badges":  [
+                                       "3K",
+                                       "Victim"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Calypso Casino",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2599,
+                        "drp":  25,
+                        "k":  5,
+                        "d":  3,
+                        "a":  1,
+                        "hs":  40.0,
+                        "badges":  [
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Clubhouse",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2574,
+                        "drp":  26,
+                        "k":  9,
+                        "d":  3,
+                        "a":  1,
+                        "hs":  44.4,
+                        "badges":  [
+                                       "3K",
+                                       "1v2 Lost"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Lair",
+                        "result":  "W",
+                        "score":  "4:0",
+                        "rp":  2548,
+                        "drp":  24,
+                        "k":  2,
+                        "d":  2,
+                        "a":  3,
+                        "hs":  50.0,
+                        "badges":  [
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Border",
+                        "result":  "W",
+                        "score":  "5:4",
+                        "rp":  2524,
+                        "drp":  26,
+                        "k":  3,
+                        "d":  8,
+                        "a":  4,
+                        "hs":  0.0,
+                        "badges":  [
+
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 7",
+                        "map":  "Oregon",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2498,
+                        "drp":  25,
+                        "k":  8,
+                        "d":  5,
+                        "a":  2,
+                        "hs":  50.0,
+                        "badges":  [
+                                       "1v2 Clutch",
+                                       "4K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Oregon",
+                        "result":  "W",
+                        "score":  "4:0",
+                        "rp":  2473,
+                        "drp":  23,
+                        "k":  1,
+                        "d":  3,
+                        "a":  2,
+                        "hs":  0.0,
+                        "badges":  [
+
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Clubhouse",
+                        "result":  "W",
+                        "score":  "4:2",
+                        "rp":  2450,
+                        "drp":  24,
+                        "k":  3,
+                        "d":  4,
+                        "a":  1,
+                        "hs":  66.7,
+                        "badges":  [
+                                       "2K",
+                                       "1v3 Lost"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Chalet",
+                        "result":  "L",
+                        "score":  "1:4",
+                        "rp":  2426,
+                        "drp":  -24,
+                        "k":  1,
+                        "d":  4,
+                        "a":  1,
+                        "hs":  0.0,
+                        "badges":  [
+
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Coastline",
+                        "result":  "L",
+                        "score":  "1:4",
+                        "rp":  2450,
+                        "drp":  -24,
+                        "k":  1,
+                        "d":  5,
+                        "a":  0,
+                        "hs":  0.0,
+                        "badges":  [
+                                       "1v1 Lost",
+                                       "Victim"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Oregon",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  2474,
+                        "drp":  -25,
+                        "k":  2,
+                        "d":  6,
+                        "a":  2,
+                        "hs":  100.0,
+                        "badges":  [
+                                       "Victim"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 6",
+                        "map":  "Oregon",
+                        "result":  "W",
+                        "score":  "4:0",
+                        "rp":  2499,
+                        "drp":  26,
+                        "k":  6,
+                        "d":  1,
+                        "a":  2,
+                        "hs":  0.0,
+                        "badges":  [
+                                       "3K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 5",
+                        "map":  "Consulate",
+                        "result":  "W",
+                        "score":  "4:1",
+                        "rp":  2473,
+                        "drp":  0,
+                        "k":  7,
+                        "d":  2,
+                        "a":  0,
+                        "hs":  42.9,
+                        "badges":  [
+                                       "3K",
+                                       "2K",
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 3",
+                        "map":  "Oregon",
+                        "result":  "L",
+                        "score":  "3:5",
+                        "rp":  0,
+                        "drp":  0,
+                        "k":  9,
+                        "d":  8,
+                        "a":  1,
+                        "hs":  11.1,
+                        "badges":  [
+                                       "3K",
+                                       "Victim"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 3",
+                        "map":  "Coastline",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  0,
+                        "drp":  0,
+                        "k":  5,
+                        "d":  6,
+                        "a":  1,
+                        "hs":  60.0,
+                        "badges":  [
+                                       "1v1 Lost",
+                                       "Victim"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 3",
+                        "map":  "Coastline",
+                        "result":  "W",
+                        "score":  "4:1",
+                        "rp":  0,
+                        "drp":  0,
+                        "k":  4,
+                        "d":  3,
+                        "a":  0,
+                        "hs":  50.0,
+                        "badges":  [
+                                       "2K"
+                                   ]
+                    },
+                    {
+                        "date":  "Jun 3",
+                        "map":  "Oregon",
+                        "result":  "L",
+                        "score":  "2:4",
+                        "rp":  0,
+                        "drp":  0,
+                        "k":  5,
+                        "d":  4,
+                        "a":  1,
+                        "hs":  0.0,
+                        "badges":  [
+                                       "3K",
+                                       "2K"
+                                   ]
+                    }
+                ],
+    "operators":  [
+                      {
+                          "name":  "Sledge",
+                          "side":  "ATK",
+                          "rounds":  32,
+                          "winPct":  59.4,
+                          "kd":  1.57,
+                          "hs":  33.3,
+                          "w":  19,
+                          "l":  13,
+                          "k":  36,
+                          "d":  23,
+                          "a":  9,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Kaid",
+                          "side":  "DEF",
+                          "rounds":  19,
+                          "winPct":  68.4,
+                          "kd":  0.92,
+                          "hs":  33.3,
+                          "w":  13,
+                          "l":  6,
+                          "k":  12,
+                          "d":  13,
+                          "a":  6,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Frost",
+                          "side":  "DEF",
+                          "rounds":  16,
+                          "winPct":  75,
+                          "kd":  0.92,
+                          "hs":  16.7,
+                          "w":  12,
+                          "l":  4,
+                          "k":  12,
+                          "d":  13,
+                          "a":  8,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Thorn",
+                          "side":  "DEF",
+                          "rounds":  12,
+                          "winPct":  41.7,
+                          "kd":  1.67,
+                          "hs":  20,
+                          "w":  5,
+                          "l":  7,
+                          "k":  15,
+                          "d":  9,
+                          "a":  4,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Blitz",
+                          "side":  "ATK",
+                          "rounds":  11,
+                          "winPct":  54.5,
+                          "kd":  1.11,
+                          "hs":  20,
+                          "w":  6,
+                          "l":  5,
+                          "k":  10,
+                          "d":  9,
+                          "a":  2,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Fuze",
+                          "side":  "ATK",
+                          "rounds":  11,
+                          "winPct":  36.4,
+                          "kd":  0.75,
+                          "hs":  0,
+                          "w":  4,
+                          "l":  7,
+                          "k":  6,
+                          "d":  8,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Aruni",
+                          "side":  "DEF",
+                          "rounds":  11,
+                          "winPct":  54.5,
+                          "kd":  0.9,
+                          "hs":  66.7,
+                          "w":  6,
+                          "l":  5,
+                          "k":  9,
+                          "d":  10,
+                          "a":  5,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Kali",
+                          "side":  "ATK",
+                          "rounds":  10,
+                          "winPct":  50,
+                          "kd":  1.25,
+                          "hs":  40,
+                          "w":  5,
+                          "l":  5,
+                          "k":  10,
+                          "d":  8,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Rauora",
+                          "side":  "ATK",
+                          "rounds":  8,
+                          "winPct":  37.5,
+                          "kd":  0.5,
+                          "hs":  0,
+                          "w":  3,
+                          "l":  5,
+                          "k":  4,
+                          "d":  8,
+                          "a":  3,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Fenrir",
+                          "side":  "DEF",
+                          "rounds":  7,
+                          "winPct":  57.1,
+                          "kd":  2,
+                          "hs":  83.3,
+                          "w":  4,
+                          "l":  3,
+                          "k":  6,
+                          "d":  3,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Melusi",
+                          "side":  "DEF",
+                          "rounds":  6,
+                          "winPct":  66.7,
+                          "kd":  2,
+                          "hs":  83.3,
+                          "w":  4,
+                          "l":  2,
+                          "k":  6,
+                          "d":  3,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Dokkaebi",
+                          "side":  "ATK",
+                          "rounds":  6,
+                          "winPct":  50,
+                          "kd":  0.8,
+                          "hs":  0,
+                          "w":  3,
+                          "l":  3,
+                          "k":  4,
+                          "d":  5,
+                          "a":  2,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Denari",
+                          "side":  "ATK",
+                          "rounds":  5,
+                          "winPct":  100,
+                          "kd":  4,
+                          "hs":  50,
+                          "w":  5,
+                          "l":  0,
+                          "k":  4,
+                          "d":  1,
+                          "a":  2,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Bandit",
+                          "side":  "DEF",
+                          "rounds":  3,
+                          "winPct":  33.3,
+                          "kd":  2.5,
+                          "hs":  0,
+                          "w":  1,
+                          "l":  2,
+                          "k":  5,
+                          "d":  2,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Mute",
+                          "side":  "DEF",
+                          "rounds":  3,
+                          "winPct":  33.3,
+                          "kd":  1,
+                          "hs":  66.7,
+                          "w":  1,
+                          "l":  2,
+                          "k":  3,
+                          "d":  3,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Kapkan",
+                          "side":  "DEF",
+                          "rounds":  3,
+                          "winPct":  33.3,
+                          "kd":  0.33,
+                          "hs":  100,
+                          "w":  1,
+                          "l":  2,
+                          "k":  1,
+                          "d":  3,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Amaru",
+                          "side":  "ATK",
+                          "rounds":  3,
+                          "winPct":  0,
+                          "kd":  0.67,
+                          "hs":  100,
+                          "w":  0,
+                          "l":  3,
+                          "k":  2,
+                          "d":  3,
+                          "a":  2,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Brava",
+                          "side":  "ATK",
+                          "rounds":  3,
+                          "winPct":  0,
+                          "kd":  1,
+                          "hs":  0,
+                          "w":  0,
+                          "l":  3,
+                          "k":  3,
+                          "d":  3,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Azami",
+                          "side":  "DEF",
+                          "rounds":  3,
+                          "winPct":  66.7,
+                          "kd":  0.5,
+                          "hs":  0,
+                          "w":  2,
+                          "l":  1,
+                          "k":  1,
+                          "d":  2,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Valkyrie",
+                          "side":  "DEF",
+                          "rounds":  3,
+                          "winPct":  66.7,
+                          "kd":  6,
+                          "hs":  50,
+                          "w":  2,
+                          "l":  1,
+                          "k":  6,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Ying",
+                          "side":  "ATK",
+                          "rounds":  2,
+                          "winPct":  0,
+                          "kd":  0.5,
+                          "hs":  100,
+                          "w":  0,
+                          "l":  2,
+                          "k":  1,
+                          "d":  2,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Maestro",
+                          "side":  "DEF",
+                          "rounds":  2,
+                          "winPct":  0,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  0,
+                          "l":  2,
+                          "k":  0,
+                          "d":  2,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Tubarão",
+                          "side":  "DEF",
+                          "rounds":  2,
+                          "winPct":  100,
+                          "kd":  3,
+                          "hs":  33.3,
+                          "w":  2,
+                          "l":  0,
+                          "k":  3,
+                          "d":  1,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Pulse",
+                          "side":  "DEF",
+                          "rounds":  2,
+                          "winPct":  100,
+                          "kd":  3,
+                          "hs":  0,
+                          "w":  2,
+                          "l":  0,
+                          "k":  3,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Doc",
+                          "side":  "DEF",
+                          "rounds":  1,
+                          "winPct":  100,
+                          "kd":  2,
+                          "hs":  50,
+                          "w":  1,
+                          "l":  0,
+                          "k":  2,
+                          "d":  0,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Thermite",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  100,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  1,
+                          "l":  0,
+                          "k":  0,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "IQ",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  100,
+                          "kd":  1,
+                          "hs":  100,
+                          "w":  1,
+                          "l":  0,
+                          "k":  1,
+                          "d":  0,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Grim",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  0,
+                          "kd":  2,
+                          "hs":  50,
+                          "w":  0,
+                          "l":  1,
+                          "k":  2,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Jackal",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  0,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  0,
+                          "l":  1,
+                          "k":  0,
+                          "d":  1,
+                          "a":  1,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Thunderbird",
+                          "side":  "DEF",
+                          "rounds":  1,
+                          "winPct":  100,
+                          "kd":  1,
+                          "hs":  0,
+                          "w":  1,
+                          "l":  0,
+                          "k":  1,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Montagne",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  0,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  0,
+                          "l":  1,
+                          "k":  0,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Osa",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  100,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  1,
+                          "l":  0,
+                          "k":  0,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
+                          "name":  "Blackbeard",
+                          "side":  "ATK",
+                          "rounds":  1,
+                          "winPct":  0,
+                          "kd":  0,
+                          "hs":  0,
+                          "w":  0,
+                          "l":  1,
+                          "k":  0,
+                          "d":  1,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      }
+                  ],
+    "badges":  [
+                   {
+                       "count":  2,
+                       "name":  "4K"
+                   },
+                   {
+                       "count":  15,
+                       "name":  "3K"
+                   },
+                   {
+                       "count":  24,
+                       "name":  "2K"
+                   },
+                   {
+                       "count":  1,
+                       "name":  "1v2 Clutch"
+                   },
+                   {
+                       "count":  3,
+                       "name":  "1v3 Lost"
+                   },
+                   {
+                       "count":  1,
+                       "name":  "1v2 Lost"
+                   },
+                   {
+                       "count":  2,
+                       "name":  "1v1 Lost"
+                   },
+                   {
+                       "count":  7,
+                       "name":  "Victim"
+                   }
+               ],
+    "debrief":  "\u003cp\u003e\u003cb\u003eGold IV · 2,600 RP · 18–14 · 56.2% win rate · 1.17 K/D.\u003c/b\u003e Jun 12 bled \u003cb\u003e−105 RP\u003c/b\u003e on a one-and-four block — Oregon, Calypso twice, Bank — then Jun 13 stack nights clawed it back with Clubhouse, Coastline, and Lair volume. Jun 14 Clubhouse 4:5 dropped another twenty-six RP with Victim and three 2K tags that still could not close overtime.\u003c/p\u003e\u003cp\u003e\u003cb\u003eKaid at 68.4% over nineteen defensive rounds\u003c/b\u003e and \u003cb\u003eSledge at 59.4% over thirty-two attack rounds\u003c/b\u003e at 1.57 K/D are still the mains. Frost and Aruni flex behind the anchor row; Thorn at 41.7% on twelve rounds is not competing for minutes.\u003c/p\u003e\u003cp\u003ePeak resets to \u003cb\u003e2,677\u003c/b\u003e. One hundred RP to Gold III. Queue Kaid and Sledge — not the Jun 12 spread that turned a promotion push into a −105 invoice.\u003c/p\u003e",
+    "comments":  [
+                     {
+                         "type":  "map",
+                         "subject":  "Oregon",
+                         "date":  "Jun 3",
+                         "text":  "Two Oregon runs, 0–2, fourteen kills combined, and multi-kill badges on both losses. You are not losing Oregon because you can\u0027t shoot — you\u0027re losing it because the frags don\u0027t convert before Victim or timer tax hits. Silent Hunt had you elite on defense; these Oregon sets look like attack tempo with no plant discipline. Map knowledge isn\u0027t the issue. Round closure is."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Dokkaebi",
+                         "date":  "Jun 3",
+                         "text":  "Four rounds — most-played operator in a four-match sample. 50% win rate, 1.33 K/D, zero headshots logged on the row. Dokkaebi is info and pressure, not your Kaid replacement. Fine as a flex once you\u0027re placed; not the identity to build placements around when Thorn went 3–0 in one round."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Aruni",
+                         "date":  "Jun 3",
+                         "text":  "Two rounds, 4.00 K/D, four kills, one death — the Surya gate still works when you sit on it. Half the sample, half the losses, but the stat line screams anchor. You don\u0027t need a new defender; you need fewer Blitz rushes past the operator that already prints."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Thorn",
+                         "date":  "Jun 3",
+                         "text":  "One round, 3–0 K/D, 100% win rate, one assist — Silent Hunt Thorn at 59.1% and 2.14 K/D over ninety-seven rounds, compressed into a single game. This is the pick that wins you placements if you queue it on defense instead of spreading fifteen operators. Traps collected three kills without you ego-peeking. More of this, less Oregon hero ball."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Sledge",
+                         "date":  "Jun 3",
+                         "text":  "One attack round, 2.00 K/D, still a loss — the Y11S1 tax in miniature. You had 187 Sledge rounds at 43.3% last season. Opening System Override with him for one round is nostalgia, not strategy. Placement game five is not the moment to relitigate the hammer."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Melusi",
+                         "date":  "Jun 3",
+                         "text":  "Two rounds, 100% win rate, zero kills, one death — pure gadget denial winning rounds you didn\u0027t have to frag for. Melusi and Thorn in the same night, both perfect win rates on tiny samples. That\u0027s the defensive blueprint hiding under the Dokkaebi and Brava noise. Consolidate there once rank shows up."
+                     },
+                     {
+                         "type":  "map",
+                         "subject":  "Lair",
+                         "date":  "Jun 7",
+                         "text":  "Two Lair wins in one block — 4–0 with two kills and three assists, then 4–2 with eight kills, a 3K, and two 2K tags to close at 2,598 RP. Lair rewarded round closure both times: the first set was pure setup and refrag value, the second was the fragger mode that actually finished. This is what Jun 7 looked like when Oregon\u0027s ghost stopped haunting the queue."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Kaid",
+                         "date":  "Jun 7",
+                         "text":  "Eleven defensive rounds, 81.8% win rate, 1.00 K/D — the highest win rate on your board and it\u0027s not close. Kaid\u0027s job is Electroclaws on the wall and hatch that gate the hard breach; K/D undersells him when the breach fails and the attack bleeds utility. Nine wins in eleven rounds says the claws are landing on the right surfaces. This is your defensive main — not Fenrir labs, not one-round Maestro auditions."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Sledge",
+                         "date":  "Jun 7",
+                         "text":  "Eleven attack rounds, 63.6% win rate, 1.75 K/D — Wave 1 called the one-round Sledge loss nostalgia; Wave 2 is the receipt. The L85A2 frags when entries are timed to the push, and the hammer opens vertical value instead of random floor noise. Y11S1\u0027s 43.3% over 187 rounds was an entry-timing problem, not a gun problem. You fixed the timing. Keep him as the attack default alongside structured breach picks."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Thorn",
+                         "date":  "Jun 7",
+                         "text":  "Five defensive rounds, 60.0% win rate, 2.33 K/D, two assists — the Jun 3 one-round sample wasn\u0027t a fluke, it was a preview. Razorblooms on the plant spot force attackers to move or eat the blast; two assists says your shells displaced someone the team traded. K/D undersells trap value, but 2.33 means you\u0027re holding the angle after the pop too. Silent Hunt Thorn at 59.1% lives — queue her when Kaid isn\u0027t the call."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Frost",
+                         "date":  "Jun 7",
+                         "text":  "Nine defensive rounds, 66.7% win rate, 0.71 K/D, three assists — trappers win on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and your team collected. The Super 90 doesn\u0027t need to print every round when the mat does the opening. Pair with Kaid and Thorn for a denial stack that doesn\u0027t require hero ball."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Melusi",
+                         "date":  "Jun 7",
+                         "text":  "Three defensive rounds, 66.7% win rate, zero kills, two deaths — same story as Jun 3, now with a real sample behind it. Banshees slow the push; you don\u0027t need frags when attackers are crawling through the slow field getting traded. K/D is the wrong metric entirely. Two wins in three rounds on gadget denial alone — this is the second anchor in the blueprint Wave 1 spotted. Stop spreading thirty operators and ride the picks that win without ego."
+                     },
+                     {
+                         "type":  "map",
+                         "subject":  "Bank",
+                         "date":  "Jun 8",
+                         "text":  "First ranked Bank of the season — 4:1, +26 RP, and the Gold IV promotion that Jun 7 spent all night teasing at two RP out. 7/2/1 at 3.50 K/D with two 3K tags is not a squeaker win; that\u0027s round closure on a map that punishes lazy rotates and open vault reads. Rogue cashed Bank the same morning at 4/2/1 — the stack knows the map, Sandman just brought the highlight reel. This is what queueing the mains looks like when the heater converts."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Sledge",
+                         "date":  "Jun 8",
+                         "text":  "Thirteen attack rounds, 61.5% win rate, 1.89 K/D — still your highest-volume attacker and the line that fixed Y11S1\u0027s 43.3% hammer tax. The L85A2 prints when entries sync to the push; the breaching hammer opens vertical value instead of solo floor noise. Bank\u0027s 7/2/1 with two 3K tags is Sledge timing, not nostalgia rushing. Bad habit: random hammering that announces your floor for nothing. Good habit: purposeful soft breaches that threaten the bomb, then rifle trades that close the round."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Kaid",
+                         "date":  "Jun 8",
+                         "text":  "Twelve defensive rounds, 83.3% win rate, 1.00 K/D, three assists — the anchor row keeps climbing and nothing else on the board is close. Electroclaws on the reinforced wall and hatch that gate the hard breach; ten wins in twelve rounds says the claws land on surfaces that matter. K/D undersells him when the breach fails and the attack bleeds utility. This is still your defensive default — not Maestro auditions, not one-round Pulse labs. Stack him with Frost or Thorn when the site needs denial, not hero ball."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Thorn",
+                         "date":  "Jun 8",
+                         "text":  "Five defensive rounds, 60.0% win rate, 2.33 K/D, two assists — the Jun 3 preview and Jun 7 receipt still hold. Razorblooms on the plant spot force attackers to move or eat the blast; 2.33 K/D means you\u0027re holding the angle after the pop, not just placing shells in dead space. K/D undersells trap value, but frags on top of displacement is the full package. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells where attackers never trigger them while you ego peek off site."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Frost",
+                         "date":  "Jun 8",
+                         "text":  "Ten defensive rounds, 70.0% win rate, 0.75 K/D, three assists — the trapper row keeps winning on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and the team collected. The Super 90 doesn\u0027t need to print every round when the mat opens the round. Pair with Kaid for a denial stack — claws on the wall, mats on the landing, refrag on the trade."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Melusi",
+                         "date":  "Jun 8",
+                         "text":  "Four defensive rounds, 75.0% win rate, 1.50 K/D, 66.7% HS — Wave 2 said gadget denial alone; Wave 3 adds frags on the receipt. Banshees slow the push on real approaches; now you\u0027re punishing attackers caught in the slow field instead of only letting teammates trade. Three wins in four rounds is a real sample, not a placement fluke. Good habit: protected Banshees on plant routes and choke points. Bad habit: Banshees in dead space while you spread to the next operator audition."
+                     },
+                     {
+                         "type":  "map",
+                         "subject":  "Consulate",
+                         "date":  "Jun 10",
+                         "text":  "A 4:1 cap to close a +53 RP night — 10/2/0 at 5.00 K/D with a 4K and a 3K on the same ticket. Consulate rewards disciplined site takes and post-plant discipline; you closed the set after Oregon opened the block with a 2:4 donation and a 1v3 Lost. When the multi-kill shows up on a map that punishes hero ball without converting, you moved rank — not just the clip reel. This is the Jun 8 Bank receipt on a different layout."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Sledge",
+                         "date":  "Jun 10",
+                         "text":  "Nineteen attack rounds, 63.2% win rate, 1.79 K/D, 40.0% headshots — six more rounds since Jun 8 and the win rate climbed, not dipped. The L85A2 prints when entries sync to the push; the breaching hammer opens vertical value instead of solo floor noise. Consulate\u0027s 10/2/0 is Sledge timing at full volume, not nostalgia rushing. Bad habit: random hammering that announces your floor for nothing. Good habit: purposeful soft breaches that threaten the bomb, then rifle trades that close the round."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Kaid",
+                         "date":  "Jun 10",
+                         "text":  "Fifteen defensive rounds, 80.0% win rate, 0.90 K/D, six assists — the anchor row keeps climbing and nothing else on the board is close. Electroclaws on the reinforced wall and hatch that gate the hard breach; twelve wins in fifteen rounds says the claws land on surfaces that matter. K/D undersells him when the breach fails and the attack bleeds utility. This is still your defensive default — not Maestro auditions, not one-round Pulse labs. Stack him with Frost or Thorn when the site needs denial, not hero ball."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Frost",
+                         "date":  "Jun 10",
+                         "text":  "Eleven defensive rounds, 72.7% win rate, 1.12 K/D, three assists — the trapper row keeps winning on downs forced, not highlight K/D. Welcome Mats in vaults and breach holes create free knocks that collapse pushes; three assists says someone stepped on the mat and the team collected. The Super 90 doesn\u0027t need to print every round when the mat opens the round. Pair with Kaid for a denial stack — claws on the wall, mats on the landing, refrag on the trade."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Aruni",
+                         "date":  "Jun 10",
+                         "text":  "Nine defensive rounds, 55.6% win rate, 1.12 K/D, 66.7% headshots — volume finally caught up to the Jun 3 two-round 4.00 K/D preview. Surya Gates on the doorways and hatches attackers must cross; the Mk 14 EBR means weak frags aren\u0027t fully excused when the gate does its job. Good habit: gates on real entry points plus confident EBR trades. Bad habit: gating useless openings while you hold so passively the DMR\u0027s damage goes to waste."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Thorn",
+                         "date":  "Jun 10",
+                         "text":  "Six defensive rounds, 50.0% win rate, 1.75 K/D, two assists — one more round on the sample and the K/D held north of 1.5. Razorblooms on the plant spot force attackers to move or eat the blast; 1.75 K/D means you\u0027re holding the angle after the pop, not just placing shells in dead space. K/D undersells trap value, but frags on top of displacement is the full package. Good habit: shells on the actual plant, paired with an angle you hold. Bad habit: shells where attackers never trigger them while you ego peek off site."
+                     },
+                     {
+                         "type":  "map",
+                         "subject":  "Clubhouse",
+                         "date":  "Jun 14",
+                         "text":  "Nine kills, nine deaths, five assists, three 2K tags, a Victim badge — and a 4:5 overtime loss that still closed red. That's the genre, Sandman. Jun 12 you bled a hundred and five RP across an oh-and-four block; Jun 14 Clubhouse is the same movie with a prettier K/D and the identical ending. The stack proved this map 5:3 on Jun 13, then forty-eight hours later donated rank back on round closure. The frags were never your problem."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Sledge",
+                         "date":  "Jun 14",
+                         "text":  "Thirty-two rounds, 59.4%, a 1.57 K/D — still the hammer and still the most-played attacker on your card. The L85 prints when the entries are synced to the push; the Jun 14 Clubhouse nine-kill loss is what happens when the timing's off and the breach is just loud. Sledge is your consolidation answer after the Jun 12 bleed, but a soft breach that threatens the bomb beats a flashy floor you opened for nothing. Frags that don't convert before the timer are just expensive noise."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Kaid",
+                         "date":  "Jun 13",
+                         "text":  "Nineteen rounds, 68.4%, and nothing else on the board is even close — this is your anchor and your identity. You hit Gold IV without ever touching Tachanka because the Electroclaws keep landing on the walls and hatches that actually gate the breach: thirteen wins, attack utility bleeding out against your setup. The 0.92 K/D undersells every round the breach simply failed to happen. Keep him first — Thorn at 41.7% over twelve rounds is not stealing this chair."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Frost",
+                         "date":  "Jun 13",
+                         "text":  "Sixteen rounds, 75%, and she wins on downs forced, not on a highlight K/D. Welcome Mats tucked in the vaults and breach holes turn a careless push into a free knock, and eight assists says your team kept collecting the bodies you put on the floor. The Super 90 doesn't need to fire every round when the mat already opened it. Pair her with Kaid for a denial wall — claws on the surface, mats on the landing, refrag the trade — and stop reaching for one-round Montagne labs."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Thorn",
+                         "date":  "Jun 14",
+                         "text":  "Twelve rounds now and the win rate slipped under fifty for the first time this season — 41.7%, even with a 1.67 K/D. Here's the honest read: Razorblooms only win the round when the shell displaces a push that's actually happening, and frags on top of bad placement still land in the loss column. That Jun 3 one-round 3-0 preview was real, Sandman, but twelve rounds later the data says Kaid and Frost own the anchor chairs until your shells start sitting on the chokes attackers truly walk through."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Aruni",
+                         "date":  "Jun 13",
+                         "text":  "Eleven rounds, 54.5%, two-thirds of your kills through the head — a clean little flex behind Kaid when the site wants gate pressure. Surya Gates on the doorways the attack has to cross, EBR holding the long angle, and you've got a defender who can frag as hard as she denies. The gun means a weak round isn't fully excused here. Gate the real entries and trust the EBR trade — don't hang a gate on a dead opening and then anchor so passively the rifle never speaks."
+                     }
+                 ]
 }
 ```

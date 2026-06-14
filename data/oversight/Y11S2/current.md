@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 12, 2026 · evening PT
+**Updated:** Jun 14, 2026 · afternoon PT
 
 ```json
 {
   "name": "OVERSIGHT",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 12, 2026 · evening PT",
+  "updated": "Jun 14, 2026 · afternoon PT",
   "comments": [
     {
       "type": "map",
@@ -188,6 +188,42 @@
       "subject": "Thorn",
       "date": "Jun 12",
       "text": "MJester1337: thirty-three Thorn defensive rounds, 66.7% win rate, 1.15 K/D, twenty assists — the best defensive win rate on a Copper I dossier that wins 59.4% of its sets anyway. Razorblooms on the plant window or choke the attack actually walks through; twenty assists says traps bought trades even when K/D looked modest. Wave 1 called Thorn the squad's benched ceiling operator; Wave 5 is thirty-three rounds of proof on the newest grinder. Cross-roster note: Grandmaster Sandman still never queued Thorn and hit Gold IV on Kaid; Mynameisblang's Thorn sits at 27.3% over eleven rounds while Thunderbird carries eighty-nine. Denari leads MJester's volume at forty-three rounds with 0.53 K/D — flex connectors behind Thorn minutes until the laser slows real pushes."
+    },
+    {
+      "type": "map",
+      "subject": "Clubhouse",
+      "date": "Jun 14",
+      "text": "Jun 14 Clubhouse was the squad tax collected in real time. CunderThock, Grandmaster Sandman, Matticus HQ, and slackandlack all queued it together — forty-eight hours after the same map went 5:3 for the same core four — and donated a 4:5 overtime loss worth a combined hundred-plus RP. The badge column was loud: Victim on Sandman, 1v2 Lost on Matticus, a 3K on slack, multi-kills everywhere. Nobody closed the plant clock. When the stack converges on one map twice and only the first set moves rank, the missing skill isn't aim — it's round closure under overtime pressure, and two Gold IV peaks paid for the lesson."
+    },
+    {
+      "type": "operator",
+      "subject": "Tachanka",
+      "date": "Jun 14",
+      "text": "CunderThock's Tachanka is sixty rounds at 63.3% now — the highest-volume anchor on the whole stack and the literal spine of a Gold IV card. Here's the cross-roster beauty: Grandmaster Sandman hit the exact same rank without queuing the Lord a single time, anchoring Kaid instead. Two completely different defensive philosophies, both valid, both taxed on the Jun 14 Clubhouse overtime. Rogue_Amputee and Matticus HQ are still splitting Mute, Skopós and Aruni minutes — the Tachanka and Kaid templates are sitting right there on adjacent dossiers, fully proven."
+    },
+    {
+      "type": "operator",
+      "subject": "Sledge",
+      "date": "Jun 14",
+      "text": "Grandmaster Sandman's Sledge — thirty-two rounds, 59.4%, a 1.57 K/D — is the squad's clearest answer to who consolidates attack after the Jun 12 hundred-and-five-RP bleed. The Jun 14 Clubhouse nine-kill loss is the cautionary half: hammer timing without plant discipline is just louder hero ball. Look across the roster and the jobs are all different — CunderThock prints on Zero's intel, Rogue on Dokkaebi and Nomad, Matticus on Finka. Stop grading Sledge like the problem was aim when the whole stack lost the execute floor in overtime."
+    },
+    {
+      "type": "operator",
+      "subject": "Aruni",
+      "date": "Jun 14",
+      "text": "slackandlack's Aruni — twenty-three rounds, 60.9%, a 1.53 K/D — is proof the fifth stack member has a real anchor and not just a comfort pick. The Jun 13 Clubhouse 4K rode that chair; the Jun 14 overtime needed the gate on the execute floor instead of just the opening pick. Line the squad's anchors up: CunderThock on Tachanka at sixty-three percent, Sandman on Kaid at 68.4%, MJester1337 on Thorn over fifty-six rounds. The denial chairs are filled. slack, your leak is twenty Osa rounds at thirty-five percent — feed those minutes to Thermite."
+    },
+    {
+      "type": "operator",
+      "subject": "Skopós",
+      "date": "Jun 14",
+      "text": "Matticus HQ finally has a defensive identity the stack can mirror — Skopós, seventeen rounds, 70.6%, the best defensive win rate on the Jun 13 four-stack night. Pantheon Shells covering two zones bought the Jun 13 4:2; the Jun 14 4/8/2 line says the shell swaps stopped converting once overtime turned the screws. That's the same lesson stalking the whole stack right now. Sandman anchors Kaid, CunderThock anchors Tachanka, slack anchors Aruni, Matticus anchors Skopós — four real defensive chairs. Now go close the rounds they set up."
+    },
+    {
+      "type": "operator",
+      "subject": "Dokkaebi",
+      "date": "Jun 13",
+      "text": "The Jegeo Payload is a three-dossier experiment with three different verdicts. Rogue_Amputee's the textbook — twenty-two rounds, 50%, nine assists, scan-and-payload pressure converting on stack nights. MJester1337 mirrors it at fifty percent over fifty-four rounds with twenty assists. Mynameisblang is the warning: seventy-one rounds at 38% and a 0.59 K/D, the attack tax dragging a Gold I climb backward. The cross-roster lesson hasn't changed since the remaster dropped — Dokkaebi pays when the hack is coordinated and bleeds when it's solo phone noise. Rogue found the receipt; Blang's still chasing it."
     }
   ]
 }
