@@ -1360,6 +1360,7 @@ if(PAGE==="roster"){
   initBgm().catch(()=>{});
 }else if(PAGE==="player"){
   initFxLayers();
+  initBgm().catch(()=>{});
   renderPlayer();
 }else{
   initFxLayers();
