@@ -23,7 +23,12 @@ const ROSTER = [
   { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
 ];
 const PLAYER_BANNERS={
-  cunderthock:{Y11S2:"assets/images/cunderthock-think-banner.png"},
+  cunderthock:{
+    Y11S2:{src:"assets/images/cunderthock-think-banner.png",alt:"Think Cunder — CunderThock dossier header"},
+  },
+  grandmaster_sandman:{
+    Y11S2:{src:"assets/images/grandmaster_sandman-y11s2-banner.png",alt:"Grandmaster Sandman — Y11S2 dossier header"},
+  },
 };
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
@@ -469,10 +474,13 @@ function wireRosterFoot(){
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
 function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
 function playerBannerHtml(slug,season){
-  const src=PLAYER_BANNERS[slug]?.[season];
-  if(!src) return "";
-  return `<div class="player-banner" role="img" aria-label="Think Cunder">
-    <img src="${BASE}${src}" alt="Think Cunder — CunderThock dossier header" loading="eager">
+  const entry=PLAYER_BANNERS[slug]?.[season];
+  if(!entry) return "";
+  const src=typeof entry==="string"?entry:entry.src;
+  const name=ROSTER.find(r=>r.slug===slug)?.name||"Operator";
+  const alt=(typeof entry==="object"&&entry.alt)?entry.alt:`${name} dossier header`;
+  return `<div class="player-banner" role="img" aria-label="${esc(alt)}">
+    <img src="${BASE}${src}" alt="${esc(alt)}" loading="eager">
   </div>`;
 }
 const MONTHS = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
