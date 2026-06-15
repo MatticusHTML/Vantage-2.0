@@ -175,6 +175,7 @@ body[data-page="soundtracks"] .brand .div{display:inline-block;color:var(--purpl
 body[data-page="player"][data-player="cunderthock"] .player-banner{border-color:rgba(255,200,0,.45);box-shadow:0 0 0 1px rgba(255,200,0,.12)}
 body[data-page="player"][data-player="grandmaster_sandman"] .player-banner{border-color:rgba(43,184,122,.45);box-shadow:0 0 0 1px rgba(43,184,122,.12)}
 body[data-page="player"][data-player="rogue_amputee"] .player-banner{border-color:rgba(77,168,255,.45);box-shadow:0 0 0 1px rgba(77,168,255,.12)}
+body[data-page="player"][data-player="mynameisblang"] .player-banner{border-color:rgba(255,107,157,.45);box-shadow:0 0 0 1px rgba(255,107,157,.12)}
 .rankpill{font-family:var(--disp);font-weight:700;letter-spacing:2px;font-size:15px;color:var(--gold);
   border:1px solid var(--gold);background:rgba(255,200,0,.08);padding:5px 12px;border-radius:2px;text-transform:uppercase}
 

@@ -32,6 +32,9 @@ const PLAYER_BANNERS={
   rogue_amputee:{
     Y11S2:{src:"assets/images/rogue_amputee-y11s2-banner.png",alt:"Rogue_Amputee — Y11S2 dossier header"},
   },
+  mynameisblang:{
+    Y11S2:{src:"assets/images/mynameisblang-y11s2-banner.png",alt:"Mynameisblang — Y11S2 dossier header"},
+  },
 };
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
