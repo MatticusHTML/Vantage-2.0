@@ -993,6 +993,34 @@ body[data-fx="oversight"] .sect-hdr{color:var(--gold)}
 body[data-fx="oversight"] .debrief p::before{color:var(--gold)}
 body[data-fx="oversight"] .ocard{border-color:var(--gold);box-shadow:0 0 40px rgba(255,200,0,.08)}
 
+/* OVERSIGHT comparison chart panels */
+.ov-mode-toggle{display:flex;gap:4px;flex-shrink:0}
+.ov-mode-btn{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;
+  background:var(--panel);color:var(--dim);border:1px solid var(--border);padding:6px 14px;border-radius:2px;transition:.15s;white-space:nowrap}
+.ov-mode-btn:hover{color:var(--white);border-color:var(--purple-lt)}
+.ov-mode-btn.on{background:rgba(255,200,0,.12);color:var(--gold);border-color:var(--gold)}
+body[data-fx="oversight"] .ov-mode-btn.on{background:rgba(255,200,0,.12);color:var(--gold);border-color:var(--gold)}
+.ov-chart-filters{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.ov-filter-bulk{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.ov-filter-all,.ov-filter-none{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;
+  background:var(--panel);color:var(--dim);border:1px solid var(--border);padding:5px 12px;border-radius:2px;transition:.15s}
+.ov-filter-all:hover,.ov-filter-none:hover{color:var(--white);border-color:var(--purple-lt)}
+.ov-filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:8px}
+.ov-filter-bar:last-child{margin-bottom:0}
+.ov-filter-lbl{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);
+  flex:0 0 auto;min-width:52px;margin-right:4px}
+.ov-filter-chip{font-family:var(--mono);font-size:10px;letter-spacing:.5px;cursor:pointer;
+  background:color-mix(in srgb,var(--chip-accent) 14%,var(--panel));color:var(--chip-accent,var(--gold));
+  border:1px solid color-mix(in srgb,var(--chip-accent) 45%,var(--border));padding:5px 10px;border-radius:2px;transition:.15s}
+.ov-filter-chip:hover{border-color:var(--chip-accent,var(--gold));color:var(--white)}
+.ov-filter-chip.off{opacity:.38;background:var(--panel);color:var(--dim);border-color:var(--border)}
+.ov-chart-wrap{position:relative;height:340px;min-height:280px;width:100%}
+.ov-chart-canvas{display:block;width:100%!important;height:100%!important}
+.ov-chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--dim);padding:24px;line-height:1.6}
+.ov-chart-data{display:none}
+body.perf-lite .ov-chart-wrap{animation:none}
+
 @keyframes laser-h{
   0%{background-position:120% 0, 0 0, 0 0}
   100%{background-position:-120% 0, 0 0, 0 0}

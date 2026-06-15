@@ -752,9 +752,11 @@ async function renderOversight(){
 
   const data=ROSTER.map((p,i)=>({cfg:p,rec:recs[i]})).filter(d=>d.rec&&d.rec.meta);
   if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
+  destroyOvCharts();
   view.innerHTML = board(data) + radar(data) + squadComments(squad)
     + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
   wireOpTableControls();
+  wireOvChartPanels();
   wirePastComments();
 }
 function buildOvSeasonBtns(active){
@@ -835,11 +837,271 @@ function mapChip(wr){
   return `<span class="map-chip ${cls}">${wr.toFixed(0)}%</span>`;
 }
 
+function buildBadgeComparisonData(data){
+  const badges=BADGE_ORDER.filter(b=>data.some(d=>badgeCount(d.rec,b)>0));
+  const players=data.map(d=>({
+    slug:d.cfg.slug,
+    name:d.cfg.name,
+    accent:d.cfg.accent,
+    counts:badges.map(b=>badgeCount(d.rec,b)),
+  }));
+  return {badges,players};
+}
+function buildMapComparisonData(data){
+  const mapsObj={};
+  data.forEach(d=>{
+    (d.rec.matches||[]).forEach(m=>{
+      if(!m.map||m.result==="RB"||m.map==="RP Rollback") return;
+      if(!mapsObj[m.map]) mapsObj[m.map]={};
+      if(!mapsObj[m.map][d.cfg.slug]) mapsObj[m.map][d.cfg.slug]={w:0,l:0};
+      if(m.result==="W") mapsObj[m.map][d.cfg.slug].w++;
+      else if(m.result==="L") mapsObj[m.map][d.cfg.slug].l++;
+    });
+  });
+  const mapTotal=m=>data.reduce((s,d)=>{const x=mapsObj[m]?.[d.cfg.slug];return s+(x?x.w+x.l:0)},0);
+  const maps=Object.keys(mapsObj).sort((a,b)=>mapTotal(b)-mapTotal(a));
+  const players=data.map(d=>({
+    slug:d.cfg.slug,
+    name:d.cfg.name,
+    accent:d.cfg.accent,
+    stats:maps.map(map=>{
+      const x=mapsObj[map]?.[d.cfg.slug];
+      if(x&&x.w+x.l>0){
+        const g=x.w+x.l;
+        return {w:x.w,l:x.l,winPct:x.w/g*100};
+      }
+      return null;
+    }),
+  }));
+  return {maps,players};
+}
+
+function ovComparisonPanel(id,title,note,statHtml,visualHtml,chartData){
+  return `<div class="panel ov-chart-panel" data-ov-panel="${id}">
+    <div class="sect-hdr-row">
+      <div class="sect-hdr">// ${title} <span class="n">— ${note}</span></div>
+      <div class="ov-mode-toggle" role="group" aria-label="View mode">
+        <button type="button" class="ov-mode-btn on" data-mode="stat">Stat</button>
+        <button type="button" class="ov-mode-btn" data-mode="visual">Visual</button>
+      </div>
+    </div>
+    <div class="ov-stat-view">${statHtml}</div>
+    <div class="ov-visual-view" hidden>${visualHtml}</div>
+    <script type="application/json" class="ov-chart-data">${JSON.stringify(chartData)}</script>
+  </div>`;
+}
+function buildOvFilterBar(groups){
+  const bulk=`<div class="ov-filter-bulk">
+    <button type="button" class="ov-filter-all">Select all</button>
+    <button type="button" class="ov-filter-none">Remove all</button>
+  </div>`;
+  const bars=groups.map(g=>`<div class="ov-filter-bar" data-filter-group="${g.key}">
+    <span class="ov-filter-lbl">${esc(g.label)}</span>
+    ${g.items.map(it=>`<button type="button" class="ov-filter-chip" data-filter-key="${g.key}" data-filter-id="${esc(it.id)}" style="--chip-accent:${it.accent||"var(--gold)"}">${esc(it.label)}</button>`).join("")}
+  </div>`).join("");
+  return bulk+bars;
+}
+function buildOvVisualShell(filterHtml){
+  return `<div class="ov-chart-filters">${filterHtml}</div>
+    <div class="ov-chart-wrap">
+      <canvas class="ov-chart-canvas" aria-label="Comparison chart"></canvas>
+      <div class="ov-chart-empty" hidden>No series selected — use Select all or pick filters above.</div>
+    </div>`;
+}
+
+const OV_CHARTS=new Map();
+function destroyOvCharts(){
+  OV_CHARTS.forEach(ch=>ch.destroy());
+  OV_CHARTS.clear();
+}
+function hexToRgba(hex,a){
+  const h=String(hex||"#888").replace("#","");
+  if(h.length<6) return `rgba(136,136,136,${a})`;
+  const r=parseInt(h.slice(0,2),16), g=parseInt(h.slice(2,4),16), b=parseInt(h.slice(4,6),16);
+  return `rgba(${r},${g},${b},${a})`;
+}
+function ovChartAnimOff(){
+  return document.body.classList.contains("perf-lite")
+    ||window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+function ovChartBaseOptions(kind){
+  const anim=ovChartAnimOff()?false:{duration:400};
+  return {
+    responsive:true,
+    maintainAspectRatio:false,
+    animation:anim,
+    plugins:{
+      legend:{
+        labels:{
+          color:"#c8cad4",
+          font:{family:"'JetBrains Mono',monospace",size:11},
+          boxWidth:12,
+          padding:14,
+        },
+      },
+      tooltip:{
+        backgroundColor:"rgba(13,15,26,.94)",
+        borderColor:"rgba(255,200,0,.35)",
+        borderWidth:1,
+        titleFont:{family:"'JetBrains Mono',monospace",size:11},
+        bodyFont:{family:"'Saira Condensed',sans-serif",size:13,weight:"600"},
+        padding:10,
+      },
+    },
+    scales:{
+      x:{
+        ticks:{
+          color(ctx){
+            if(kind!=="badge") return "#888894";
+            const lbl=ctx.tick?.label;
+            return lbl&&NEG_BADGES.has(lbl)?"#ff5c66":"#888894";
+          },
+          font:{family:"'JetBrains Mono',monospace",size:10},
+          maxRotation:45,
+          minRotation:0,
+        },
+        grid:{color:"rgba(255,255,255,.06)"},
+      },
+      y:{
+        beginAtZero:true,
+        max:kind==="map"?100:undefined,
+        ticks:{
+          color:"#888894",
+          font:{family:"'JetBrains Mono',monospace",size:10},
+          callback:kind==="map"?v=>v+"%":undefined,
+        },
+        grid:{color:"rgba(255,255,255,.08)"},
+      },
+    },
+  };
+}
+function getOvPanelFilters(panel){
+  const out={player:new Set(),map:new Set()};
+  panel.querySelectorAll(".ov-filter-chip").forEach(chip=>{
+    const key=chip.dataset.filterKey, id=chip.dataset.filterId;
+    if(!chip.classList.contains("off")&&key&&id) out[key].add(id);
+  });
+  return out;
+}
+function renderOvComparisonChart(panel,kind,rawData,filters){
+  const canvas=panel.querySelector(".ov-chart-canvas");
+  const emptyEl=panel.querySelector(".ov-chart-empty");
+  if(!canvas||typeof Chart==="undefined") return;
+  const key=panel.dataset.ovPanel;
+  OV_CHARTS.get(key)?.destroy();
+  const selPlayers=rawData.players.filter(p=>filters.player.has(p.slug));
+  const empty=!selPlayers.length||(kind==="map"&&!filters.map.size);
+  canvas.hidden=empty;
+  if(emptyEl) emptyEl.hidden=!empty;
+  if(empty){ OV_CHARTS.delete(key); return; }
+  let labels, datasets;
+  if(kind==="badge"){
+    labels=rawData.badges;
+    datasets=selPlayers.map(p=>({
+      label:p.name,
+      data:p.counts,
+      backgroundColor:hexToRgba(p.accent,.82),
+      borderColor:p.accent,
+      borderWidth:1,
+      borderRadius:2,
+    }));
+  } else {
+    labels=rawData.maps.filter(m=>filters.map.has(m));
+    datasets=selPlayers.map(p=>{
+      const idxMap=Object.fromEntries(rawData.maps.map((m,i)=>[m,i]));
+      return {
+        label:p.name,
+        data:labels.map(map=>{
+          const st=p.stats[idxMap[map]];
+          return st?st.winPct:null;
+        }),
+        backgroundColor:hexToRgba(p.accent,.82),
+        borderColor:p.accent,
+        borderWidth:1,
+        borderRadius:2,
+        meta:labels.map(map=>{
+          const st=p.stats[idxMap[map]];
+          return st||null;
+        }),
+      };
+    });
+  }
+  const opts=ovChartBaseOptions(kind);
+  if(kind==="map"){
+    opts.plugins.tooltip.callbacks={
+      label(ctx){
+        const meta=ctx.dataset.meta?.[ctx.dataIndex];
+        const pct=ctx.parsed.y;
+        if(meta&&pct!=null) return `${ctx.dataset.label}: ${pct.toFixed(0)}% · ${meta.w}-${meta.l}`;
+        return `${ctx.dataset.label}: —`;
+      },
+    };
+  } else {
+    opts.plugins.tooltip.callbacks={
+      label(ctx){
+        const v=ctx.parsed.y;
+        return `${ctx.dataset.label}: ${v}${v===1?" badge":v?" badges":""}`;
+      },
+    };
+  }
+  const chart=new Chart(canvas,{
+    type:"bar",
+    data:{labels,datasets},
+    options:opts,
+  });
+  OV_CHARTS.set(key,chart);
+}
+function refreshOvPanelChart(panel){
+  const kind=panel.dataset.ovPanel;
+  const raw=panel.querySelector(".ov-chart-data");
+  if(!raw) return;
+  let data;
+  try{ data=JSON.parse(raw.textContent); }catch(e){ return; }
+  renderOvComparisonChart(panel,kind,data,getOvPanelFilters(panel));
+}
+function setOvPanelMode(panel,mode){
+  const stat=panel.querySelector(".ov-stat-view");
+  const visual=panel.querySelector(".ov-visual-view");
+  panel.querySelectorAll(".ov-mode-btn").forEach(btn=>{
+    btn.classList.toggle("on",btn.dataset.mode===mode);
+  });
+  if(stat) stat.hidden=mode!=="stat";
+  if(visual) visual.hidden=mode!=="visual";
+  if(mode==="visual") refreshOvPanelChart(panel);
+  else{
+    const k=panel.dataset.ovPanel;
+    OV_CHARTS.get(k)?.destroy();
+    OV_CHARTS.delete(k);
+  }
+}
+function wireOvChartPanels(root="#view"){
+  if(typeof Chart==="undefined") return;
+  document.querySelectorAll(`${root} .ov-chart-panel`).forEach(panel=>{
+    panel.querySelectorAll(".ov-mode-btn").forEach(btn=>{
+      btn.onclick=()=>setOvPanelMode(panel,btn.dataset.mode);
+    });
+    panel.querySelectorAll(".ov-filter-chip").forEach(chip=>{
+      chip.onclick=()=>{
+        chip.classList.toggle("off");
+        if(!panel.querySelector(".ov-visual-view")?.hidden) refreshOvPanelChart(panel);
+      };
+    });
+    panel.querySelector(".ov-filter-all")?.addEventListener("click",()=>{
+      panel.querySelectorAll(".ov-filter-chip").forEach(c=>c.classList.remove("off"));
+      if(!panel.querySelector(".ov-visual-view")?.hidden) refreshOvPanelChart(panel);
+    });
+    panel.querySelector(".ov-filter-none")?.addEventListener("click",()=>{
+      panel.querySelectorAll(".ov-filter-chip").forEach(c=>c.classList.add("off"));
+      if(!panel.querySelector(".ov-visual-view")?.hidden) refreshOvPanelChart(panel);
+    });
+  });
+}
+
 function badgeBoard(data){
-  const names=BADGE_ORDER.filter(b=>data.some(d=>badgeCount(d.rec,b)>0));
-  if(!names.length) return "";
+  const cmp=buildBadgeComparisonData(data);
+  if(!cmp.badges.length) return "";
   const head=`<tr><th class="l">Badge</th>`+data.map(d=>`<th><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
-  const body=names.map(b=>{
+  const body=cmp.badges.map(b=>{
     const neg=NEG_BADGES.has(b);
     const vals=data.map(d=>badgeCount(d.rec,b));
     const mx=Math.max(...vals);
@@ -848,8 +1110,15 @@ function badgeBoard(data){
       return `<td class="${lead?(neg?"neg-lead":"lead"):""}">${v||"—"}</td>`;
     }).join("")+`</tr>`;
   }).join("");
-  return ovPanel("BADGE COMPARISON","gold = squad high · red = high on losses / TK",
-    `<div class="scroll"><table class="board"><thead>${head}</thead><tbody>${body}</tbody></table></div>`);
+  const statHtml=`<div class="scroll"><table class="board"><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+  const filterHtml=buildOvFilterBar([{
+    key:"player",
+    label:"Players",
+    items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+  }]);
+  const visualHtml=buildOvVisualShell(filterHtml);
+  return ovComparisonPanel("badge","BADGE COMPARISON","gold = squad high · red = high on losses / TK",
+    statHtml,visualHtml,cmp);
 }
 
 function operatorMatrix(data){
@@ -887,39 +1156,43 @@ function operatorMatrix(data){
 }
 
 function mapHeatmap(data){
-  const maps={};
-  data.forEach(d=>{
-    (d.rec.matches||[]).forEach(m=>{
-      if(!m.map||m.result==="RB"||m.map==="RP Rollback") return;
-      if(!maps[m.map]) maps[m.map]={};
-      if(!maps[m.map][d.cfg.slug]) maps[m.map][d.cfg.slug]={w:0,l:0};
-      if(m.result==="W") maps[m.map][d.cfg.slug].w++;
-      else if(m.result==="L") maps[m.map][d.cfg.slug].l++;
-    });
-  });
-  const mapTotal=m=>data.reduce((s,d)=>{const x=maps[m]?.[d.cfg.slug];return s+(x?x.w+x.l:0)},0);
-  const list=Object.keys(maps).sort((a,b)=>mapTotal(b)-mapTotal(a));
-  if(!list.length) return "";
+  const cmp=buildMapComparisonData(data);
+  if(!cmp.maps.length) return "";
+  const slugIdx=Object.fromEntries(data.map((d,i)=>[d.cfg.slug,i]));
   const head1=`<tr><th rowspan="2" class="l">Map</th>`
     +data.map(d=>`<th colspan="2"><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")
     +`<th rowspan="2">Squad</th></tr>`;
   const head2=`<tr>`+data.map(()=>`<th>W-L</th><th>Win%</th>`).join("")+`</tr>`;
-  const body=list.map(map=>{
+  const body=cmp.maps.map((map,mapIdx)=>{
     let sw=0,sl=0,row=`<tr><th class="l">${esc(map)}</th>`;
     data.forEach(d=>{
-      const x=maps[map][d.cfg.slug];
-      if(x&&x.w+x.l>0){
-        const g=x.w+x.l,wr=x.w/g*100;
-        row+=`<td>${x.w}-${x.l}</td><td>${mapChip(wr)}</td>`;
-        sw+=x.w; sl+=x.l;
+      const p=cmp.players[slugIdx[d.cfg.slug]];
+      const st=p?.stats[mapIdx];
+      if(st){
+        row+=`<td>${st.w}-${st.l}</td><td>${mapChip(st.winPct)}</td>`;
+        sw+=st.w; sl+=st.l;
       } else row+=`<td class="dim-cell">—</td><td class="dim-cell">—</td>`;
     });
     const sg=sw+sl;
     row+=`<td>${sg?mapChip(sw/sg*100):"—"}</td></tr>`;
     return row;
   }).join("");
-  return ovPanel("MAP PERFORMANCE","from match log · green ≥55% · gold ≥45% · red &lt;45%",
-    `<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`);
+  const statHtml=`<div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>`;
+  const filterHtml=buildOvFilterBar([
+    {
+      key:"player",
+      label:"Players",
+      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+    },
+    {
+      key:"map",
+      label:"Maps",
+      items:cmp.maps.map(m=>({id:m,label:m,accent:"#888894"})),
+    },
+  ]);
+  const visualHtml=buildOvVisualShell(filterHtml);
+  return ovComparisonPanel("map","MAP PERFORMANCE","from match log · green ≥55% · gold ≥45% · red &lt;45%",
+    statHtml,visualHtml,cmp);
 }
 
 /* ---- background music / jukebox ---- */
