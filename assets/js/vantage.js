@@ -905,7 +905,7 @@ function buildOvVisualShell(filterHtml){
   return `<div class="ov-chart-filters">${filterHtml}</div>
     <div class="ov-chart-wrap">
       <canvas class="ov-chart-canvas" aria-label="Comparison chart"></canvas>
-      <div class="ov-chart-empty" hidden>No series selected — use Select all or pick filters above.</div>
+      <div class="ov-chart-empty">No series selected — use Select all or pick filters above.</div>
     </div>`;
 }
 
@@ -950,6 +950,7 @@ function ovChartBaseOptions(kind){
     },
     scales:{
       x:{
+        offset:true,
         ticks:{
           color(ctx){
             if(kind!=="badge") return "#888894";
@@ -959,8 +960,9 @@ function ovChartBaseOptions(kind){
           font:{family:"'JetBrains Mono',monospace",size:10},
           maxRotation:45,
           minRotation:0,
+          padding:6,
         },
-        grid:{color:"rgba(255,255,255,.06)"},
+        grid:{color:"rgba(255,255,255,.1)",offset:true,drawTicks:true},
       },
       y:{
         beginAtZero:true,
@@ -971,6 +973,13 @@ function ovChartBaseOptions(kind){
           callback:kind==="map"?v=>v+"%":undefined,
         },
         grid:{color:"rgba(255,255,255,.08)"},
+      },
+    },
+    datasets:{
+      bar:{
+        categoryPercentage:0.58,
+        barPercentage:0.78,
+        maxBarThickness:28,
       },
     },
   };
@@ -991,8 +1000,8 @@ function renderOvComparisonChart(panel,kind,rawData,filters){
   OV_CHARTS.get(key)?.destroy();
   const selPlayers=rawData.players.filter(p=>filters.player.has(p.slug));
   const empty=!selPlayers.length||(kind==="map"&&!filters.map.size);
-  canvas.hidden=empty;
-  if(emptyEl) emptyEl.hidden=!empty;
+  if(emptyEl) emptyEl.classList.toggle("is-visible",empty);
+  if(canvas) canvas.classList.toggle("is-hidden",empty);
   if(empty){ OV_CHARTS.delete(key); return; }
   let labels, datasets;
   if(kind==="badge"){

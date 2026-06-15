@@ -160,7 +160,7 @@ body[data-page="soundtracks"] .brand .div{display:inline-block;color:var(--purpl
 .phead .call{font-family:var(--disp);font-weight:800;font-size:34px;letter-spacing:2px;text-transform:uppercase}
 .phead .sub{font-size:11px;color:var(--dim);letter-spacing:1px}
 .phead .ubi{color:var(--purple-lt)}
-/* home roster — full-frame looping banner above character-select grid */
+/* home roster — full-width header above character-select grid */
 .roster-banner{
   width:100%;margin:0 0 16px;border:1px solid var(--border);border-radius:4px;
   background:var(--panel);overflow:hidden;animation:rise .45s ease both;
@@ -1016,8 +1016,11 @@ body[data-fx="oversight"] .ov-mode-btn.on{background:rgba(255,200,0,.12);color:v
 .ov-filter-chip.off{opacity:.38;background:var(--panel);color:var(--dim);border-color:var(--border)}
 .ov-chart-wrap{position:relative;height:340px;min-height:280px;width:100%}
 .ov-chart-canvas{display:block;width:100%!important;height:100%!important}
-.ov-chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;
-  font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--dim);padding:24px;line-height:1.6}
+.ov-chart-canvas.is-hidden{display:none!important}
+.ov-chart-empty{position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--dim);padding:24px;line-height:1.6;
+  display:none;pointer-events:none;z-index:2}
+.ov-chart-empty.is-visible{display:flex}
 .ov-chart-data{display:none}
 body.perf-lite .ov-chart-wrap{animation:none}
 
