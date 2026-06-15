@@ -29,6 +29,9 @@ const PLAYER_BANNERS={
   grandmaster_sandman:{
     Y11S2:{src:"assets/images/grandmaster_sandman-y11s2-banner.png",alt:"Grandmaster Sandman — Y11S2 dossier header"},
   },
+  rogue_amputee:{
+    Y11S2:{src:"assets/images/rogue_amputee-y11s2-banner.png",alt:"Rogue_Amputee — Y11S2 dossier header"},
+  },
 };
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
