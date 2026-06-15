@@ -166,6 +166,13 @@ body[data-page="soundtracks"] .brand .div{display:inline-block;color:var(--purpl
   background:var(--panel);overflow:hidden;animation:rise .45s ease both;
 }
 .roster-banner img,.roster-banner video{width:100%;height:auto;display:block;vertical-align:top}
+/* player dossier — optional per-player season header (e.g. Cunder Y11S2) */
+.player-banner{
+  width:100%;margin:0 0 18px;border:1px solid var(--border);border-radius:4px;
+  background:var(--panel);overflow:hidden;animation:rise .45s ease both;
+}
+.player-banner img{width:100%;height:auto;max-height:240px;object-fit:cover;object-position:center center;display:block}
+body[data-page="player"][data-player="cunderthock"] .player-banner{border-color:rgba(255,200,0,.45);box-shadow:0 0 0 1px rgba(255,200,0,.12)}
 .rankpill{font-family:var(--disp);font-weight:700;letter-spacing:2px;font-size:15px;color:var(--gold);
   border:1px solid var(--gold);background:rgba(255,200,0,.08);padding:5px 12px;border-radius:2px;text-transform:uppercase}
 

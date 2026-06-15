@@ -22,6 +22,9 @@ const ROSTER = [
   { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#f0a500" },
   { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
 ];
+const PLAYER_BANNERS={
+  cunderthock:{Y11S2:"assets/images/cunderthock-think-banner.png"},
+};
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
 const SEASON_OPS = {
@@ -465,6 +468,13 @@ function wireRosterFoot(){
 }
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
 function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
+function playerBannerHtml(slug,season){
+  const src=PLAYER_BANNERS[slug]?.[season];
+  if(!src) return "";
+  return `<div class="player-banner" role="img" aria-label="Think Cunder">
+    <img src="${BASE}${src}" alt="Think Cunder — CunderThock dossier header" loading="eager">
+  </div>`;
+}
 const MONTHS = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
 function formatCardUpdated(s){
   if(!s) return "—";
@@ -558,7 +568,8 @@ async function renderPlayer(){
   let rec;
   try{ rec = await loadRecord(slug, PLAYER_SEASON); }
   catch(e){ fetchErr(view); return; }
-  view.innerHTML = rec.meta ? playerBody(rec) : emptySeason(PLAYER_SEASON);
+  const banner=playerBannerHtml(slug,PLAYER_SEASON);
+  view.innerHTML=rec.meta?banner+playerBody(rec):banner+emptySeason(PLAYER_SEASON);
   wireOpTableControls();
   wirePastComments();
 }
