@@ -1050,7 +1050,15 @@ async function initBgm(){
     if(!pool.length) return exclude>=0?exclude:0;
     return pool[Math.floor(Math.random()*pool.length)];
   }
-  function albumTracks(albumId){ return tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId); }
+  function albumTracks(albumId){
+    const list=tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId);
+    list.sort((a,b)=>{
+      const af=a.t.favorite?1:0,bf=b.t.favorite?1:0;
+      if(af!==bf) return bf-af;
+      return a.i-b.i;
+    });
+    return list;
+  }
   function albumMeta(albumId){ return albums.find(a=>a.id===albumId)||null; }
 
   function setBrowseAlbum(albumId){
@@ -1075,9 +1083,11 @@ async function initBgm(){
       const li=document.createElement("li");
       const b=document.createElement("button");
       b.type="button";
-      b.className="bgm-list-item";
+      b.className="bgm-list-item"+(t.favorite?" bgm-list-item--favorite":"");
       b.dataset.idx=String(i);
-      b.textContent=t.title;
+      if(t.favorite||t.tag){
+        b.innerHTML=`<span class="bgm-list-item-text">${esc(t.title)}</span><span class="bgm-fav-tag">${esc(t.tag||"Matt's Favorite")}</span>`;
+      }else b.textContent=t.title;
       b.classList.toggle("on",i===trackIdx);
       b.onclick=e=>{
         e.stopPropagation();

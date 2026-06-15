@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 14, 2026 · afternoon PT
+**Updated:** Jun 15, 2026 · morning PT
 
 ```json
 {
   "name": "OVERSIGHT",
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Jun 14, 2026 · afternoon PT",
+  "updated": "Jun 15, 2026 · morning PT",
   "comments": [
     {
       "type": "map",
@@ -224,6 +224,42 @@
       "subject": "Dokkaebi",
       "date": "Jun 13",
       "text": "The Jegeo Payload is a three-dossier experiment with three different verdicts. Rogue_Amputee's the textbook — twenty-two rounds, 50%, nine assists, scan-and-payload pressure converting on stack nights. MJester1337 mirrors it at fifty percent over fifty-four rounds with twenty assists. Mynameisblang is the warning: seventy-one rounds at 38% and a 0.59 K/D, the attack tax dragging a Gold I climb backward. The cross-roster lesson hasn't changed since the remaster dropped — Dokkaebi pays when the hack is coordinated and bleeds when it's solo phone noise. Rogue found the receipt; Blang's still chasing it."
+    },
+    {
+      "type": "map",
+      "subject": "Emerald Plains",
+      "date": "Jun 14",
+      "text": "Jun 14 made Emerald Plains the stack's second tax map after Clubhouse. CunderThock, Rogue_Amputee, slackandlack, and MJester1337 all logged 3:5 losses on the modernized map in the same session — multi-kills, Victim tags, 1v3 Lost receipts, zero combined wins. Jun 13 Coastline proved the core four could close; Jun 14 Emerald proved they could queue the same vertical reads and still hand rounds to the plant clock. When five dossiers bleed on one map family in one night, the lesson isn't operator spread — it's execute discipline on the floor that actually ends the set."
+    },
+    {
+      "type": "operator",
+      "subject": "Tachanka",
+      "date": "Jun 15",
+      "text": "CunderThock: sixty-four Tachanka rounds, 62.5% win rate — still the highest-volume anchor on the stack after a Jun 14 double Clubhouse tax dropped him to Gold V at 2,572 RP. The Lord didn't fail Jun 14; round closure did. Cross-roster anchors still split: Grandmaster Sandman on Kaid at 71.4% over seven slack rounds isn't the story — Sandman unchanged since Jun 14 — but CunderThock, slackandlack on Aruni at 62.5%, and MJester1337 on Thorn at 59.0% over sixty-one rounds all prove denial chairs are filled. The stack's leak is attack-side closure on Emerald and Outback, not defensive mains."
+    },
+    {
+      "type": "operator",
+      "subject": "Aruni",
+      "date": "Jun 15",
+      "text": "slackandlack: twenty-four Aruni rounds, 62.5%, 1.55 K/D — the gate anchor held identity through a Jun 14 four-loss block that slid Silver II to Silver III at 2,270 RP. Fifteen wins in twenty-four rounds is a main; twenty Osa attack rounds at 35.0% is the tax bleeding the climb. Cross-roster contrast: CunderThock's Tachanka, Sandman's Kaid, MJester's Thorn, Matticus's Skopós — four denial philosophies, all printing when queued. slack's Jun 14 Outback 3:8 line wasn't Aruni failing; it was round closure after the gate did its job."
+    },
+    {
+      "type": "operator",
+      "subject": "Finka",
+      "date": "Jun 15",
+      "text": "Mynameisblang: one hundred eleven Finka attack rounds, 49.5%, 0.96 K/D — still the highest-volume attacker on the seven-player board after a twelve-game Jun 14 solo marathon and a Jun 15 Outback 5:4 with a 4K and 1v3 Clutch. Matticus HQ sits at 63.6% over eleven Finka rounds with 1.80 K/D — surge timing that converted placements. Cross-roster lesson: Adrenal Surge wins when the stack commits to the buffed execute; solo surging on Emerald loss streaks is how Gold I stalls at 2,900 instead of pushing Plat. Blang's spine is Finka and Oryx; the tax is Dokkaebi at 40.5% over eighty-four rounds."
+    },
+    {
+      "type": "operator",
+      "subject": "Thorn",
+      "date": "Jun 15",
+      "text": "MJester1337: sixty-one Thorn defensive rounds, 59.0%, 0.95 K/D, twenty-six assists — the trap anchor still leads volume on a Copper I dossier that wins 52.0% of its sets anyway. Jun 14 stack night was 0–3 on Clubhouse, Emerald, and Outback; Jun 13 was an eleven-game solo marathon — Thorn held while Denari's fifty-eight rounds at 0.55 K/D taxed placement. Cross-roster note: Grandmaster Sandman never queued Thorn and hit Gold IV on Kaid; MJester's Thorn is proof the newest grinder locked a denial main. Flex Denari behind Thorn minutes, not beside them on stack nights."
+    },
+    {
+      "type": "operator",
+      "subject": "Nomad",
+      "date": "Jun 15",
+      "text": "Rogue_Amputee: thirty-two Nomad attack rounds, 53.1%, 1.25 K/D — still the disciplined attack alternative after Jun 14 triple-loss block slid Bronze II to 1,810 RP. Dokkaebi at 47.8% with nine assists remains the payload call; Gridlock at 14.3% is the habit to kill. Cross-roster contrast: CunderThock prints on Zero intel, Sandman on Sledge, Matticus on Finka, blang on Oryx — Rogue's attack floor is Nomad beside Dokkaebi, not experimental flex on nights the stack already bled seventy-seven RP. Copy the process when Mute and Kaid hold defense."
     }
   ]
 }

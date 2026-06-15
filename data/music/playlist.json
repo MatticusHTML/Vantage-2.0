@@ -172,6 +172,16 @@
                        "albumLabel":  "Year 1"
                    },
                    {
+                       "id":  "f740538b",
+                       "title":  "Rainbow Six Siege - Invitational Main Theme",
+                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
+                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
+                       "album":  "y2",
+                       "albumLabel":  "Year 2",
+                       "favorite":  true,
+                       "tag":  "Matt's Favorite"
+                   },
+                   {
                        "id":  "cfadd51d",
                        "title":  "La Perla Blanca",
                        "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/01. La Perla Blanca.mp3",
@@ -239,14 +249,6 @@
                        "id":  "7157b045",
                        "title":  "Style Riderz",
                        "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/09. Style Riderz.mp3",
-                       "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
-                       "album":  "y2",
-                       "albumLabel":  "Year 2"
-                   },
-                   {
-                       "id":  "f740538b",
-                       "title":  "Rainbow Six Siege - Invitational Main Theme",
-                       "file":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3",
                        "cover":  "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/Images/00 Front.jpg",
                        "album":  "y2",
                        "albumLabel":  "Year 2"

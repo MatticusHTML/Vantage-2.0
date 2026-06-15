@@ -145,6 +145,30 @@ foreach ($t in $tracks) {
     if ($cunderIds.ContainsKey($t.file)) { $t.id = $cunderIds[$t.file] }
 }
 
+$favoriteFile = "Tom Clancy's Rainbow Six - Siege - Year 2 (2020)/10. Rainbow Six Siege - Invitational Main Theme.mp3"
+$favIdx = -1
+for ($i = 0; $i -lt $tracks.Count; $i++) {
+    if ($tracks[$i].file -eq $favoriteFile) {
+        $favIdx = $i
+        $tracks[$i].favorite = $true
+        $tracks[$i].tag = "Matt's Favorite"
+        break
+    }
+}
+if ($favIdx -ge 0) {
+    $firstY2 = -1
+    for ($i = 0; $i -lt $tracks.Count; $i++) {
+        if ($tracks[$i].album -eq "y2") { $firstY2 = $i; break }
+    }
+    if ($firstY2 -ge 0 -and $favIdx -ne $firstY2) {
+        $fav = $tracks[$favIdx]
+        $before = if ($firstY2 -gt 0) { @($tracks[0..($firstY2 - 1)]) } else { @() }
+        $between = @($tracks[$firstY2..($favIdx - 1)] | Where-Object { $_.file -ne $favoriteFile })
+        $after = if ($favIdx -lt ($tracks.Count - 1)) { @($tracks[($favIdx + 1)..($tracks.Count - 1)]) } else { @() }
+        $tracks = @($before + $fav + $between + $after)
+    }
+}
+
 $playlist = @{
     updated      = (Get-Date -Format "MMM d, yyyy") + " · evening PT"
     defaultTrack = "3aa63d76"

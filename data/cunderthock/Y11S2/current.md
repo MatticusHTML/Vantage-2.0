@@ -1,6 +1,6 @@
 # VANTAGE RECORD — CunderThock
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 14, 2026 · afternoon PT
+**Updated:** Jun 15, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,38 @@
     "name":  "CunderThock",
     "season":  "Y11S2",
     "seasonLabel":  "Operation System Override",
-    "updated":  "Jun 14, 2026 · afternoon PT",
+    "updated":  "Jun 15, 2026 · morning PT",
     "meta":  {
-                 "rank":  "Gold IV",
-                 "rp":  2600,
+                 "rank":  "Gold V",
+                 "rp":  2572,
                  "peakRp":  2626,
-                 "nextRank":  "Gold III",
-                 "rpToNext":  100,
-                 "matches":  23,
+                 "nextRank":  "Gold IV",
+                 "rpToNext":  28,
+                 "matches":  24,
                  "w":  14,
-                 "l":  9,
-                 "winRate":  60.9,
-                 "kd":  1.02,
-                 "avgHs":  38,
-                 "netRp":  190
+                 "l":  10,
+                 "winRate":  58.3,
+                 "kd":  1.04,
+                 "avgHs":  44,
+                 "netRp":  136
              },
     "matches":  [
+                    {
+                        "date":  "Jun 14",
+                        "map":  "Clubhouse",
+                        "result":  "L",
+                        "score":  "3:5",
+                        "rp":  2572,
+                        "drp":  -28,
+                        "k":  8,
+                        "d":  6,
+                        "a":  5,
+                        "hs":  62.5,
+                        "badges":  [
+                                       "3K",
+                                       "1v2 Lost"
+                                   ]
+                    },
                     {
                         "date":  "Jun 14",
                         "map":  "Clubhouse",
@@ -391,29 +407,29 @@
                       {
                           "name":  "Tachanka",
                           "side":  "DEF",
-                          "rounds":  60,
-                          "winPct":  63.3,
-                          "kd":  0.84,
-                          "hs":  24.3,
-                          "w":  38,
-                          "l":  22,
-                          "k":  37,
-                          "d":  44,
-                          "a":  19,
+                          "rounds":  64,
+                          "winPct":  62.5,
+                          "kd":  0.83,
+                          "hs":  25.6,
+                          "w":  40,
+                          "l":  24,
+                          "k":  39,
+                          "d":  47,
+                          "a":  24,
                           "aces":  0,
                           "tks":  0
                       },
                       {
                           "name":  "Zero",
                           "side":  "ATK",
-                          "rounds":  47,
-                          "winPct":  53.2,
-                          "kd":  0.91,
-                          "hs":  55.2,
-                          "w":  25,
-                          "l":  22,
-                          "k":  29,
-                          "d":  32,
+                          "rounds":  50,
+                          "winPct":  52.0,
+                          "kd":  0.97,
+                          "hs":  57.6,
+                          "w":  26,
+                          "l":  24,
+                          "k":  33,
+                          "d":  34,
                           "a":  12,
                           "aces":  0,
                           "tks":  0
@@ -424,7 +440,7 @@
                           "rounds":  8,
                           "winPct":  12.5,
                           "kd":  0.71,
-                          "hs":  80,
+                          "hs":  80.0,
                           "w":  1,
                           "l":  7,
                           "k":  5,
@@ -436,14 +452,14 @@
                       {
                           "name":  "Jackal",
                           "side":  "ATK",
-                          "rounds":  5,
-                          "winPct":  60,
-                          "kd":  4,
-                          "hs":  75,
+                          "rounds":  6,
+                          "winPct":  50.0,
+                          "kd":  3.33,
+                          "hs":  70.0,
                           "w":  3,
-                          "l":  2,
-                          "k":  8,
-                          "d":  2,
+                          "l":  3,
+                          "k":  10,
+                          "d":  3,
                           "a":  0,
                           "aces":  0,
                           "tks":  0
@@ -452,8 +468,8 @@
                           "name":  "Sentry",
                           "side":  "DEF",
                           "rounds":  4,
-                          "winPct":  50,
-                          "kd":  1,
+                          "winPct":  50.0,
+                          "kd":  1.0,
                           "hs":  66.7,
                           "w":  2,
                           "l":  2,
@@ -467,9 +483,9 @@
                           "name":  "Striker",
                           "side":  "ATK",
                           "rounds":  4,
-                          "winPct":  50,
+                          "winPct":  50.0,
                           "kd":  1.25,
-                          "hs":  20,
+                          "hs":  20.0,
                           "w":  2,
                           "l":  2,
                           "k":  5,
@@ -482,9 +498,9 @@
                           "name":  "Twitch",
                           "side":  "ATK",
                           "rounds":  4,
-                          "winPct":  75,
-                          "kd":  10,
-                          "hs":  30,
+                          "winPct":  75.0,
+                          "kd":  10.0,
+                          "hs":  30.0,
                           "w":  3,
                           "l":  1,
                           "k":  10,
@@ -499,7 +515,7 @@
                           "rounds":  3,
                           "winPct":  66.7,
                           "kd":  0.5,
-                          "hs":  0,
+                          "hs":  0.0,
                           "w":  2,
                           "l":  1,
                           "k":  1,
@@ -512,9 +528,9 @@
                           "name":  "Brava",
                           "side":  "ATK",
                           "rounds":  2,
-                          "winPct":  50,
-                          "kd":  0,
-                          "hs":  0,
+                          "winPct":  50.0,
+                          "kd":  0.0,
+                          "hs":  0.0,
                           "w":  1,
                           "l":  1,
                           "k":  0,
@@ -524,12 +540,27 @@
                           "tks":  0
                       },
                       {
+                          "name":  "Thunderbird",
+                          "side":  "DEF",
+                          "rounds":  1,
+                          "winPct":  100.0,
+                          "kd":  1.0,
+                          "hs":  0.0,
+                          "w":  1,
+                          "l":  0,
+                          "k":  1,
+                          "d":  0,
+                          "a":  0,
+                          "aces":  0,
+                          "tks":  0
+                      },
+                      {
                           "name":  "Kapkan",
                           "side":  "DEF",
                           "rounds":  1,
-                          "winPct":  0,
-                          "kd":  0,
-                          "hs":  0,
+                          "winPct":  0.0,
+                          "kd":  0.0,
+                          "hs":  0.0,
                           "w":  0,
                           "l":  1,
                           "k":  0,
@@ -542,27 +573,12 @@
                           "name":  "Mozzie",
                           "side":  "DEF",
                           "rounds":  1,
-                          "winPct":  100,
-                          "kd":  0,
-                          "hs":  0,
+                          "winPct":  100.0,
+                          "kd":  0.0,
+                          "hs":  0.0,
                           "w":  1,
                           "l":  0,
                           "k":  0,
-                          "d":  0,
-                          "a":  0,
-                          "aces":  0,
-                          "tks":  0
-                      },
-                      {
-                          "name":  "Thunderbird",
-                          "side":  "DEF",
-                          "rounds":  1,
-                          "winPct":  100,
-                          "kd":  1,
-                          "hs":  0,
-                          "w":  1,
-                          "l":  0,
-                          "k":  1,
                           "d":  0,
                           "a":  0,
                           "aces":  0,
@@ -575,7 +591,7 @@
                        "name":  "4K"
                    },
                    {
-                       "count":  5,
+                       "count":  6,
                        "name":  "3K"
                    },
                    {
@@ -595,7 +611,7 @@
                        "name":  "1v3 Lost"
                    },
                    {
-                       "count":  2,
+                       "count":  3,
                        "name":  "1v2 Lost"
                    },
                    {
@@ -603,7 +619,7 @@
                        "name":  "Victim"
                    }
                ],
-    "debrief":  "\u003cp\u003e\u003cb\u003eGold IV · 2,600 RP · 14–9 · 60.9% win rate · 1.02 K/D.\u003c/b\u003e Jun 13 was the stack night that mattered — Clubhouse closed 5:3, Coastline banked two clean Ws, and Lair was the only tax. Jun 14 put the same four-stack back on Clubhouse and donated a 4:5 overtime loss that peeled twenty-six RP off a 2,626 peak.\u003c/p\u003e\u003cp\u003e\u003cb\u003eTachanka at 63.3% over sixty defensive rounds\u003c/b\u003e is still the spine; \u003cb\u003eZero at 53.2% over forty-seven attack rounds\u003c/b\u003e finally cleared fifty and stayed there. Jackal flex at 60.0% on five rounds is converting when Snake is not in the queue.\u003c/p\u003e\u003cp\u003ePeak sits at \u003cb\u003e2,626\u003c/b\u003e. One hundred RP to Gold III. Queue the Lord first, let Zero run intel on stack nights, and stop letting Clubhouse overtime decide rank after a Jun 13 block that already proved the reads.\u003c/p\u003e",
+    "debrief":  "<p><b>Gold V · 2,572 RP · 14–10 · 58.3% win rate · 1.04 K/D.</b> Jun 13 stack night still holds — Clubhouse 5:3, Coastline doubled up. Jun 14 was a double Clubhouse tax: 4:5 overtime first, then a 3:5 with an 8/6/5 line and a 3K that still couldn't close. Fifty-four RP gone in one session off a 2,626 peak.</p><p><b>Tachanka at 62.5% over sixty-four defensive rounds</b> remains the spine; <b>Zero at 52.0% over fifty attack rounds</b> is holding break-even intel. Jackal climbed to six rounds at 50.0% with a 3.33 K/D — the flex that actually converts.</p><p>Peak sits at <b>2,626</b>. Twenty-eight RP to Gold IV. Queue the Lord first, run Zero for intel on stack nights, and stop letting Clubhouse overtime decide rank twice in forty-eight hours.</p>",
     "comments":  [
                      {
                          "type":  "map",
@@ -748,6 +764,42 @@
                          "subject":  "Twitch",
                          "date":  "Jun 13",
                          "text":  "Four rounds, three wins, a 10.00 K/D that means nothing and everything. Nothing, because four rounds is statistical noise. Everything, because every time you actually run Twitch for the job — Shock Drone surgery on Bandit batteries and cams so the hard breach lands — the round just quietly goes your way. Don't fall in love with the kill number, fall in love with the drone routes that cleared the wall. Bring her out on hard-breach maps when there's no Thatcher in the lobby."
+                     },
+                     {
+                         "type":  "map",
+                         "subject":  "Clubhouse",
+                         "date":  "Jun 14",
+                         "text":  "Third trip to Clubhouse in three days, second double-loss session — and this one hurt worse because the stat line lied. Eight kills, six deaths, five assists, sixty-two-point-five percent headshots, a 3K, and a 1v2 Lost on the same 3:5 ticket. You didn't get out-aimed; you got out-closed again on a map that already proved the read on Jun 13. Two Clubhouse losses in one night for minus fifty-four RP is not variance — that's discipline breaking on the plant clock twice."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Tachanka",
+                         "date":  "Jun 14",
+                         "text":  "Sixty-four defensive rounds at 62.5% — the Lord is still your identity even after a brutal Jun 14. The 0.83 K/D is anchor math on Shumikha denial: thirty-nine kills, forty-seven deaths, twenty-four assists, and forty round wins bought on the LMG. He didn't save Clubhouse last night because anchors don't win 3:5s alone — but he still earns first pick every stack queue until something else posts sixty-plus rounds at sixty percent."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Zero",
+                         "date":  "Jun 14",
+                         "text":  "Fifty attack rounds, 52.0% win rate, 0.97 K/D, 57.6% headshots — Zero cleared fifty and stayed there through the bleed. Five assists on the second Clubhouse loss says the cams and callouts were live even when the round died. Bad habit: treating an intel op like an entry when the stack needs refrags off the tablet. Good habit: hidden ARGUS, laser clears on denial, comms the team actually swings on — that's how you hold fifty on an op that doesn't need hero ball."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Jackal",
+                         "date":  "Jun 14",
+                         "text":  "Six rounds now, 50.0% win rate, 3.33 K/D, seventy percent headshots — the flex grew a sample and still converts. Footprint tracking through walls plus refrags off the ping is the attack engine Solid Snake refuses to be. Ten kills on three deaths across six rounds is real round impact, not a one-night spike. When Jackal's in the slot the sets have a chance; when Snake is, they don't. The roster priority isn't complicated."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Solid Snake",
+                         "date":  "Jun 14",
+                         "text":  "Still one win in eight rounds — 12.5% on a 3-speed flanker while Tachanka owns defense and Zero owns attack identity. Snake wins with radar intel from cover and silent F2 pressure off the call; he bleeds RP when you facecheck on stack nights that already cost fifty-four. There's nothing left to prove in the lab. Park him until the queue stops mattering."
+                     },
+                     {
+                         "type":  "operator",
+                         "subject":  "Twitch",
+                         "date":  "Jun 14",
+                         "text":  "Four rounds, 75.0% win rate, 10.00 K/D — unchanged volume, still the hard-breach specialist hiding in a tiny sample. Shock Drone surgery on Bandit batteries and cams is the job; the F2 frags are the receipt when denial is cleared. Clubhouse last night didn't need more frags — it needed gadget clears before the execute. Bring her on breach maps when Thatcher isn't in the lobby and let the drone do the work first."
                      }
                  ]
 }
