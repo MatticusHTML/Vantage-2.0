@@ -757,6 +757,7 @@ async function renderOversight(){
     + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
   wireOpTableControls();
   wireOvChartPanels();
+  wireOpMatrixPanels();
   wirePastComments();
 }
 function buildOvSeasonBtns(active){
@@ -985,10 +986,10 @@ function ovChartBaseOptions(kind){
   };
 }
 function getOvPanelFilters(panel){
-  const out={player:new Set(),map:new Set()};
+  const out={player:new Set(),map:new Set(),operator:new Set(),side:new Set()};
   panel.querySelectorAll(".ov-filter-chip").forEach(chip=>{
     const key=chip.dataset.filterKey, id=chip.dataset.filterId;
-    if(!chip.classList.contains("off")&&key&&id) out[key].add(id);
+    if(!chip.classList.contains("off")&&key&&id&&out[key]) out[key].add(id);
   });
   return out;
 }
@@ -1130,26 +1131,304 @@ function badgeBoard(data){
     statHtml,visualHtml,cmp);
 }
 
-function operatorMatrix(data){
+function buildOperatorMatrixData(data){
   const ops={};
   data.forEach(d=>{
     (d.rec.operators||[]).forEach(op=>{
       if(!op.rounds) return;
-      if(!ops[op.name]) ops[op.name]={side:op.side,cells:{}};
-      ops[op.name].cells[d.cfg.slug]=op;
+      if(!ops[op.name]) ops[op.name]={name:op.name,side:op.side,cells:{}};
+      ops[op.name].cells[d.cfg.slug]={
+        rounds:op.rounds,
+        winPct:op.winPct,
+        kd:typeof op.kd==="number"?op.kd:parseFloat(op.kd)||0,
+      };
     });
   });
-  const list=Object.keys(ops);
-  if(!list.length) return "";
+  const players=data.map(d=>({slug:d.cfg.slug,name:d.cfg.name,accent:d.cfg.accent}));
+  const operators=Object.values(ops).map(o=>({
+    name:o.name,
+    side:o.side,
+    agg:opMatrixAgg(o.cells),
+    cells:o.cells,
+  })).sort((a,b)=>b.agg.rounds-a.agg.rounds);
+  return {operators,players};
+}
+function filterOpMatrixOperators(operators,filters){
+  return operators.filter(op=>{
+    if(filters.operator.size&&!filters.operator.has(op.name)) return false;
+    if(filters.side.size&&!filters.side.has(op.side)) return false;
+    return true;
+  });
+}
+function buildOpMatrixFilterBar(cmp){
+  return buildOvFilterBar([
+    {
+      key:"player",
+      label:"Players",
+      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+    },
+    {
+      key:"operator",
+      label:"Operators",
+      items:cmp.operators.map(o=>({id:o.name,label:o.name,accent:"#888894"})),
+    },
+    {
+      key:"side",
+      label:"Side",
+      items:[{id:"ATK",label:"ATK",accent:"#4da8ff"},{id:"DEF",label:"DEF",accent:"#2bb87a"}],
+    },
+  ]);
+}
+function buildOpMatrixChartShell(canvasClass,height){
+  const h=height||420;
+  return `<div class="ov-chart-wrap ov-op-chart-wrap" style="height:${h}px">
+    <canvas class="ov-chart-canvas ${canvasClass}" aria-label="Operator matrix chart"></canvas>
+    <div class="ov-chart-empty">No series selected — use Select all or pick filters above.</div>
+  </div>`;
+}
+function getOpMatrixMetric(panel){
+  return panel.querySelector(".ov-op-metric-select")?.value||"winpct";
+}
+function renderOpMatrixBubbleChart(panel,rawData,filters){
+  const canvas=panel.querySelector(".ov-op-bubble-canvas");
+  const wrap=panel.querySelector(".ov-op-bubble-view .ov-chart-wrap");
+  const emptyEl=wrap?.querySelector(".ov-chart-empty");
+  if(!canvas||typeof Chart==="undefined") return;
+  const key="operator-bubble";
+  OV_CHARTS.get(key)?.destroy();
+  const selPlayers=rawData.players.filter(p=>filters.player.has(p.slug));
+  const selOps=filterOpMatrixOperators(rawData.operators,filters);
+  const empty=!selPlayers.length||!selOps.length;
+  if(emptyEl) emptyEl.classList.toggle("is-visible",empty);
+  canvas.classList.toggle("is-hidden",empty);
+  if(empty){ OV_CHARTS.delete(key); return; }
+  const datasets=selPlayers.map(p=>{
+    const points=[];
+    selOps.forEach(op=>{
+      const cell=op.cells[p.slug];
+      if(!cell) return;
+      points.push({
+        x:cell.rounds,
+        y:cell.winPct,
+        r:Math.max(5,Math.min(22,cell.kd*7)),
+        operator:op.name,
+        kd:cell.kd,
+        rounds:cell.rounds,
+      });
+    });
+    return {
+      label:p.name,
+      data:points,
+      backgroundColor:hexToRgba(p.accent,.55),
+      borderColor:p.accent,
+      borderWidth:1,
+    };
+  }).filter(ds=>ds.data.length);
+  if(!datasets.length){
+    if(emptyEl) emptyEl.classList.toggle("is-visible",true);
+    canvas.classList.toggle("is-hidden",true);
+    OV_CHARTS.delete(key);
+    return;
+  }
+  const anim=ovChartAnimOff()?false:{duration:400};
+  const chart=new Chart(canvas,{
+    type:"bubble",
+    data:{datasets},
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      animation:anim,
+      plugins:{
+        legend:{
+          labels:{color:"#c8cad4",font:{family:"'JetBrains Mono',monospace",size:11},boxWidth:12,padding:14},
+        },
+        tooltip:{
+          backgroundColor:"rgba(13,15,26,.94)",
+          borderColor:"rgba(255,200,0,.35)",
+          borderWidth:1,
+          callbacks:{
+            title(items){ return items[0]?.raw?.operator||""; },
+            label(ctx){
+              const r=ctx.raw;
+              return [
+                ctx.dataset.label,
+                `Win %: ${r.y.toFixed(0)}%`,
+                `Rounds: ${r.rounds}`,
+                `K/D: ${r.kd.toFixed(2)}`,
+              ];
+            },
+          },
+        },
+      },
+      scales:{
+        x:{
+          title:{display:true,text:"Rounds",color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10}},
+          beginAtZero:true,
+          ticks:{color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10}},
+          grid:{color:"rgba(255,255,255,.08)"},
+        },
+        y:{
+          title:{display:true,text:"Win %",color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10}},
+          beginAtZero:true,
+          max:100,
+          ticks:{color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10},callback:v=>v+"%"},
+          grid:{color:"rgba(255,255,255,.08)"},
+        },
+      },
+    },
+  });
+  OV_CHARTS.set(key,chart);
+}
+function renderOpMatrixBarChart(panel,rawData,filters){
+  const canvas=panel.querySelector(".ov-op-bar-canvas");
+  const wrap=panel.querySelector(".ov-op-bar-view .ov-chart-wrap");
+  const emptyEl=wrap?.querySelector(".ov-chart-empty");
+  if(!canvas||typeof Chart==="undefined") return;
+  const key="operator-bar";
+  OV_CHARTS.get(key)?.destroy();
+  const metric=getOpMatrixMetric(panel);
+  const selPlayers=rawData.players.filter(p=>filters.player.has(p.slug));
+  const selOps=filterOpMatrixOperators(rawData.operators,filters);
+  const empty=!selPlayers.length||!selOps.length;
+  if(wrap) wrap.style.height=Math.max(360,selOps.length*34)+"px";
+  if(emptyEl) emptyEl.classList.toggle("is-visible",empty);
+  canvas.classList.toggle("is-hidden",empty);
+  if(empty){ OV_CHARTS.delete(key); return; }
+  const labels=selOps.map(o=>o.name);
+  const metricVal=cell=>{
+    if(!cell) return null;
+    if(metric==="rounds") return cell.rounds;
+    if(metric==="kd") return cell.kd;
+    return cell.winPct;
+  };
+  const datasets=selPlayers.map(p=>({
+    label:p.name,
+    data:selOps.map(op=>metricVal(op.cells[p.slug])),
+    backgroundColor:hexToRgba(p.accent,.82),
+    borderColor:p.accent,
+    borderWidth:1,
+    borderRadius:2,
+    meta:selOps.map(op=>op.cells[p.slug]||null),
+  }));
+  const anim=ovChartAnimOff()?false:{duration:400};
+  const xTitle=metric==="rounds"?"Rounds":metric==="kd"?"K/D":"Win %";
+  const chart=new Chart(canvas,{
+    type:"bar",
+    data:{labels,datasets},
+    options:{
+      indexAxis:"y",
+      responsive:true,
+      maintainAspectRatio:false,
+      animation:anim,
+      plugins:{
+        legend:{
+          labels:{color:"#c8cad4",font:{family:"'JetBrains Mono',monospace",size:11},boxWidth:12,padding:14},
+        },
+        tooltip:{
+          backgroundColor:"rgba(13,15,26,.94)",
+          borderColor:"rgba(255,200,0,.35)",
+          borderWidth:1,
+          callbacks:{
+            label(ctx){
+              const meta=ctx.dataset.meta?.[ctx.dataIndex];
+              const v=ctx.parsed.x;
+              if(v==null||!meta) return `${ctx.dataset.label}: —`;
+              if(metric==="winpct") return `${ctx.dataset.label}: ${v.toFixed(0)}% · ${meta.rounds} rds · K/D ${meta.kd.toFixed(2)}`;
+              if(metric==="kd") return `${ctx.dataset.label}: K/D ${v.toFixed(2)} · ${meta.winPct.toFixed(0)}% · ${meta.rounds} rds`;
+              return `${ctx.dataset.label}: ${v} rds · ${meta.winPct.toFixed(0)}% · K/D ${meta.kd.toFixed(2)}`;
+            },
+          },
+        },
+      },
+      scales:{
+        x:{
+          beginAtZero:true,
+          max:metric==="winpct"?100:undefined,
+          title:{display:true,text:xTitle,color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10}},
+          ticks:{
+            color:"#888894",
+            font:{family:"'JetBrains Mono',monospace",size:10},
+            callback:metric==="winpct"?v=>v+"%":undefined,
+          },
+          grid:{color:"rgba(255,255,255,.1)"},
+        },
+        y:{
+          offset:true,
+          ticks:{color:"#888894",font:{family:"'JetBrains Mono',monospace",size:10},autoSkip:false},
+          grid:{color:"rgba(255,255,255,.06)",offset:true},
+        },
+      },
+      datasets:{bar:{categoryPercentage:.62,barPercentage:.78,maxBarThickness:22}},
+    },
+  });
+  OV_CHARTS.set(key,chart);
+}
+function refreshOpMatrixChart(panel){
+  const raw=panel.querySelector(".ov-chart-data");
+  if(!raw) return;
+  let data;
+  try{ data=JSON.parse(raw.textContent); }catch(e){ return; }
+  const filters=getOvPanelFilters(panel);
+  const mode=panel.querySelector(".ov-view-select")?.value||"data";
+  if(mode==="bubble") renderOpMatrixBubbleChart(panel,data,filters);
+  else if(mode==="bar") renderOpMatrixBarChart(panel,data,filters);
+}
+function setOpMatrixView(panel,mode){
+  const dataView=panel.querySelector(".ov-op-data-view");
+  const bubbleView=panel.querySelector(".ov-op-bubble-view");
+  const barView=panel.querySelector(".ov-op-bar-view");
+  const visualControls=panel.querySelector(".ov-op-visual-controls");
+  const metricRow=panel.querySelector(".ov-op-metric-row");
+  if(dataView) dataView.hidden=mode!=="data";
+  if(bubbleView) bubbleView.hidden=mode!=="bubble";
+  if(barView) barView.hidden=mode!=="bar";
+  if(visualControls) visualControls.hidden=mode==="data";
+  if(metricRow) metricRow.hidden=mode!=="bar";
+  OV_CHARTS.get("operator-bubble")?.destroy();
+  OV_CHARTS.delete("operator-bubble");
+  OV_CHARTS.get("operator-bar")?.destroy();
+  OV_CHARTS.delete("operator-bar");
+  if(mode==="bubble"||mode==="bar") refreshOpMatrixChart(panel);
+}
+function wireOpMatrixPanels(root="#view"){
+  if(typeof Chart==="undefined") return;
+  document.querySelectorAll(`${root} .ov-op-matrix-panel`).forEach(panel=>{
+    panel.querySelector(".ov-view-select")?.addEventListener("change",e=>{
+      setOpMatrixView(panel,e.target.value);
+    });
+    panel.querySelector(".ov-op-metric-select")?.addEventListener("change",()=>{
+      if(panel.querySelector(".ov-view-select")?.value==="bar") refreshOpMatrixChart(panel);
+    });
+    panel.querySelectorAll(".ov-filter-chip").forEach(chip=>{
+      chip.onclick=()=>{
+        chip.classList.toggle("off");
+        const mode=panel.querySelector(".ov-view-select")?.value;
+        if(mode==="bubble"||mode==="bar") refreshOpMatrixChart(panel);
+      };
+    });
+    panel.querySelector(".ov-filter-all")?.addEventListener("click",()=>{
+      panel.querySelectorAll(".ov-filter-chip").forEach(c=>c.classList.remove("off"));
+      const mode=panel.querySelector(".ov-view-select")?.value;
+      if(mode==="bubble"||mode==="bar") refreshOpMatrixChart(panel);
+    });
+    panel.querySelector(".ov-filter-none")?.addEventListener("click",()=>{
+      panel.querySelectorAll(".ov-filter-chip").forEach(c=>c.classList.add("off"));
+      const mode=panel.querySelector(".ov-view-select")?.value;
+      if(mode==="bubble"||mode==="bar") refreshOpMatrixChart(panel);
+    });
+  });
+}
+
+function operatorMatrix(data){
+  const cmp=buildOperatorMatrixData(data);
+  if(!cmp.operators.length) return "";
   const pcolStyle=a=>`style="--pcol-accent:${a}"`;
   const head1=`<tr><th rowspan="2" class="l">Operator</th><th rowspan="2">Side</th>`
     +data.map(d=>`<th colspan="3" class="pcol-hdr" ${pcolStyle(d.cfg.accent)}><div class="colcall" style="color:${d.cfg.accent}">${esc(d.cfg.name)}</div></th>`).join("")+`</tr>`;
   const head2=`<tr>`+data.map(d=>`<th class="pcol-th pcol-rds" ${pcolStyle(d.cfg.accent)}>Rds</th><th class="pcol-th" ${pcolStyle(d.cfg.accent)}>Win%</th><th class="pcol-th" ${pcolStyle(d.cfg.accent)}>K/D</th>`).join("")+`</tr>`;
-  const body=list.map(name=>{
-    const o=ops[name];
-    const agg=opMatrixAgg(o.cells);
+  const body=cmp.operators.map(o=>{
     const tag=o.side==="ATK"?'<span class="side-tag atk">ATK</span>':'<span class="side-tag def">DEF</span>';
-    let row=`<tr data-side="${esc(o.side)}" data-rounds="${agg.rounds}" data-winpct="${agg.winpct}" data-kd="${agg.kd}"><td class="l"><div class="opcell"><span class="opicon">${opIconImg(name)}</span><span class="opname">${esc(name)}</span></div></td><td>${tag}</td>`;
+    let row=`<tr data-side="${esc(o.side)}" data-rounds="${o.agg.rounds}" data-winpct="${o.agg.winpct}" data-kd="${o.agg.kd}"><td class="l"><div class="opcell"><span class="opicon">${opIconImg(o.name)}</span><span class="opname">${esc(o.name)}</span></div></td><td>${tag}</td>`;
     data.forEach(d=>{
       const op=o.cells[d.cfg.slug];
       const ps=pcolStyle(d.cfg.accent);
@@ -1158,10 +1437,46 @@ function operatorMatrix(data){
     });
     return row+`</tr>`;
   }).join("");
-  return `<div class="panel ov-op-matrix"><div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
+  const dataHtml=`<div class="ov-op-data-view">
     ${buildOpToolbar(OP_MATRIX_SORT,true)}
     <div class="scroll"><table class="board ov-matrix"><thead>${head1}${head2}</thead><tbody>${body}</tbody></table></div>
-    <div class="legend">Sort by squad-weighted RDS / WIN% / K/D · <span class="g">▼</span> high first · <span class="r">▲</span> low first</div></div>`;
+    <div class="legend">Sort by squad-weighted RDS / WIN% / K/D · <span class="g">▼</span> high first · <span class="r">▲</span> low first</div>
+  </div>`;
+  const filterHtml=buildOpMatrixFilterBar(cmp);
+  const visualControls=`<div class="ov-op-visual-controls" hidden>
+    <div class="ov-op-metric-row">
+      <label class="ov-op-metric-lbl">Metric</label>
+      <select class="ov-op-metric-select" aria-label="Bar chart metric">
+        <option value="winpct" selected>Win %</option>
+        <option value="kd">K/D</option>
+        <option value="rounds">Rounds</option>
+      </select>
+    </div>
+    <div class="ov-chart-filters">${filterHtml}</div>
+  </div>`;
+  const bubbleHtml=`<div class="ov-op-bubble-view" hidden>
+    <p class="ov-op-chart-note">X = rounds · Y = win % · bubble size = K/D · one dot per player × operator</p>
+    ${buildOpMatrixChartShell("ov-op-bubble-canvas",420)}
+  </div>`;
+  const barHtml=`<div class="ov-op-bar-view" hidden>
+    <p class="ov-op-chart-note">Horizontal grouped bars · change metric above · sorted by squad RDS</p>
+    ${buildOpMatrixChartShell("ov-op-bar-canvas",480)}
+  </div>`;
+  return `<div class="panel ov-op-matrix ov-op-matrix-panel" data-ov-panel="operator">
+    <div class="sect-hdr-row">
+      <div class="sect-hdr">// OPERATOR MATRIX <span class="n">— all season operators · squad-weighted sort</span></div>
+      <select class="ov-view-select" aria-label="Operator matrix view">
+        <option value="data" selected>Data</option>
+        <option value="bubble">Bubble Chart</option>
+        <option value="bar">Horizontal grouped bar</option>
+      </select>
+    </div>
+    ${visualControls}
+    ${dataHtml}
+    ${bubbleHtml}
+    ${barHtml}
+    <script type="application/json" class="ov-chart-data">${JSON.stringify(cmp)}</script>
+  </div>`;
 }
 
 function mapHeatmap(data){

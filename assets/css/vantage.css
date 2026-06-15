@@ -1024,6 +1024,20 @@ body[data-fx="oversight"] .ov-mode-btn.on{background:rgba(255,200,0,.12);color:v
 .ov-chart-data{display:none}
 body.perf-lite .ov-chart-wrap{animation:none}
 
+/* OVERSIGHT operator matrix — view dropdown + chart modes */
+.ov-view-select,.ov-op-metric-select{
+  font-family:var(--mono);font-size:11px;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;
+  background:var(--panel);color:var(--gold);border:1px solid var(--border);padding:7px 12px;border-radius:2px;
+  min-width:180px;flex-shrink:0}
+.ov-view-select:hover,.ov-op-metric-select:hover{border-color:var(--gold)}
+body[data-fx="oversight"] .ov-view-select,body[data-fx="oversight"] .ov-op-metric-select{color:var(--gold)}
+.ov-op-visual-controls{margin-bottom:14px}
+.ov-op-metric-row{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.ov-op-metric-lbl{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim)}
+.ov-op-metric-select{min-width:120px;text-transform:none}
+.ov-op-chart-note{font-family:var(--mono);font-size:10px;letter-spacing:.5px;color:var(--dim);margin:0 0 12px;line-height:1.5}
+.ov-op-chart-wrap{min-height:360px}
+
 @keyframes laser-h{
   0%{background-position:120% 0, 0 0, 0 0}
   100%{background-position:-120% 0, 0 0, 0 0}
