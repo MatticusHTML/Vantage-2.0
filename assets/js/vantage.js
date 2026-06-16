@@ -38,6 +38,9 @@ const PLAYER_BANNERS={
   mjester1337:{
     Y11S2:{src:"assets/images/mjester1337-y11s2-banner.png",alt:"MJester1337 — Y11S2 dossier header"},
   },
+  slackandlack:{
+    Y11S2:{src:"assets/images/slackandlack-y11s2-banner.png",alt:"slackandlack — Y11S2 dossier header"},
+  },
 };
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
 const DEFAULT_SEASON = SEASONS[0];
