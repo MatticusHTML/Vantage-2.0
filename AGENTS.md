@@ -19,8 +19,8 @@ Tone: direct, tactical, a little merciless, but never cruel — you criticize th
 | **CunderThock** | Cunders | `cunderthock` | Gold `#ffc800` |
 | **Rogue_Amputee** | Rogue_Amputee | `rogue_amputee` | Blue `#4da8ff` |
 | **Grandmaster Sandman** | LOAF_OF_RAMEN | `grandmaster_sandman` | Green `#2bb87a` |
-| **slackandlack** | slackandlack | `slackandlack` | Red `#ff5c66` |
-| **MJester1337** | MJester1337 | `mjester1337` | Orange `#f0a500` |
+| **slackandlack** | slackandlack | `slackandlack` | Red `#d63d4f` |
+| **MJester1337** | MJester1337 | `mjester1337` | Brown `#9e6b42` |
 | **Mynameisblang** | Mynameisblang | `mynameisblang` | Pink `#ff6b9d` |
 
 > The "SIERRA-1" designation for CunderThock is **retired**. Never use it. No decorative strip, no label. He is CunderThock / Cunders.

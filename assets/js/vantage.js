@@ -18,8 +18,8 @@ const ROSTER = [
   { slug:"matticus_hq",        name:"Matticus HQ",        ubi:"LOAF_OF_EDIBLES",  accent:"#9a5cd4" },
   { slug:"rogue_amputee",      name:"Rogue_Amputee",      ubi:"Rogue_Amputee",    accent:"#4da8ff" },
   { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#2bb87a" },
-  { slug:"slackandlack",       name:"slackandlack",       ubi:"slackandlack",     accent:"#ff5c66" },
-  { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#f0a500" },
+  { slug:"slackandlack",       name:"slackandlack",       ubi:"slackandlack",     accent:"#d63d4f" },
+  { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#9e6b42" },
   { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
 ];
 const PLAYER_BANNERS={
@@ -34,6 +34,9 @@ const PLAYER_BANNERS={
   },
   mynameisblang:{
     Y11S2:{src:"assets/images/mynameisblang-y11s2-banner.png",alt:"Mynameisblang — Y11S2 dossier header"},
+  },
+  mjester1337:{
+    Y11S2:{src:"assets/images/mjester1337-y11s2-banner.png",alt:"MJester1337 — Y11S2 dossier header"},
   },
 };
 const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
