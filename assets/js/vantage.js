@@ -2020,10 +2020,34 @@ const CHAT_AVATAR = {
   offline: `${BASE}assets/images/vantage-chat/offline.png`,
 };
 const CHAT_BUBBLE_SRC = `${BASE}assets/images/vantage-chat/bubble.png`;
-const CHAT_TALKING_MS = 7000;
+const CHAT_TALKING_MS = 14000;
+const CHAT_ACCENT_OVERSIGHT = "#ffc800";
+
+function chatAccentForPage(){
+  if(PAGE==="oversight") return CHAT_ACCENT_OVERSIGHT;
+  const slug=document.body.dataset.player||"";
+  const cfg=ROSTER.find(p=>p.slug===slug);
+  return cfg?.accent||"#9a5cd4";
+}
+function chatSeasonForPage(){
+  if(PAGE==="oversight") return OV_SEASON||DEFAULT_SEASON;
+  return PLAYER_SEASON||DEFAULT_SEASON;
+}
+function chatPlaceholderForPage(){
+  if(PAGE==="oversight") return "Ask about the squad…";
+  const slug=document.body.dataset.player||"";
+  const cfg=ROSTER.find(p=>p.slug===slug);
+  return cfg?`Ask about ${cfg.name}…`:"Ask VANTAGE…";
+}
 
 function chatTextHtml(text){
-  return esc(String(text||"")).replace(/\n/g,"<br>");
+  const parts=String(text||"").split(/(\*\*.+?\*\*)/g);
+  const html=parts.map(p=>{
+    const m=p.match(/^\*\*(.+)\*\*$/s);
+    if(m) return "<b>"+esc(m[1])+"</b>";
+    return esc(p);
+  }).join("").replace(/\n/g,"<br>");
+  return html;
 }
 function compactPlayerChat(rec, cfg){
   if(!rec||!rec.meta) return { name:cfg.name, slug:cfg.slug, active:false };
@@ -2034,7 +2058,7 @@ function compactPlayerChat(rec, cfg){
     meta:rec.meta,
     badges:rec.badges||[],
     operators:rec.operators||[],
-    recentMatches:(rec.matches||[]).slice(-12),
+    recentMatches:(rec.matches||[]).slice(0,12),
   };
 }
 async function buildOversightChatContext(season){
@@ -2046,35 +2070,86 @@ async function buildOversightChatContext(season){
     : null;
   return { season, seasonLabel:SEASON_OPS[season]||season, players, latestSquadComments:latestComments };
 }
+async function buildPlayerChatContext(slug,season){
+  const cfg=ROSTER.find(p=>p.slug===slug)||{name:slug,slug};
+  const rec=await loadRecord(slug,season).catch(()=>null);
+  const focusPlayer=compactPlayerChat(rec,cfg);
+  if(rec?.comments?.length){
+    focusPlayer.latestComments=splitCommentWaves(rec.comments).slice(-1)[0]||null;
+  }
+  if(rec?.seasonClosed&&rec?.seasonReport) focusPlayer.seasonReport=rec.seasonReport;
+  const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,season).catch(()=>null)));
+  const squadMeta=ROSTER.map((p,i)=>{
+    const r=recs[i];
+    if(!r?.meta) return {name:p.name,slug:p.slug,active:false};
+    return {
+      name:p.name,slug:p.slug,rank:r.meta.rank,rp:r.meta.rp,
+      winRate:r.meta.winRate,kd:r.meta.kd,matches:r.meta.matches,
+    };
+  });
+  return {season,seasonLabel:SEASON_OPS[season]||season,focusPlayer,squadMeta};
+}
+function buildPlayerChatSystemPrompt(ctx,cfg){
+  return [
+    `You are VANTAGE — tactical coaching analyst. The user is on ${cfg.name}'s dossier (${ctx.season}, ${ctx.seasonLabel}).`,
+    "Primary focus: focusPlayer JSON (stats, operators, recentMatches, comments). Use squadMeta only when they ask how they compare to the roster.",
+    "Use ONLY the JSON below for stats. If data is missing, say so. Never invent ranks, matches, or operator stats.",
+    "Address this player by Discord display name. Other squad members by Discord name too.",
+    "Tone: direct, tactical, part roast / part hype — criticize the play, never the person.",
+    "Keep replies focused: usually 2–4 short paragraphs unless the user asks for depth.",
+    "For chat UI, prefer tight answers — bullet summaries beat essays.",
+    "Use focusPlayer.updated and recentMatches (newest first) for recency; never invent time windows like 'last 48 hours'.",
+    "When citing form, name the date from match data (e.g. Jun 15), not vague relative time.",
+    "If focusPlayer.active is false, they have not played this season — say so plainly.",
+    "",
+    "DOSSIER DATA:",
+    JSON.stringify(ctx),
+  ].join("\n");
+}
+
 function buildOversightChatSystemPrompt(ctx){
   return [
     "You are VANTAGE — tactical coaching analyst for a seven-person Rainbow Six Siege squad on the OVERSIGHT command deck.",
     "Use ONLY the JSON below for stats. If data is missing, say so. Never invent ranks, matches, or operator stats.",
     "Address players by Discord display name (not Ubisoft username alone).",
     "Tone: direct, tactical, part roast / part hype — criticize the play, never the person.",
-    "Keep replies focused: usually 2–5 short paragraphs unless the user asks for depth.",
+    "Keep replies focused: usually 2–4 short paragraphs unless the user asks for depth.",
+    "For chat UI, prefer tight answers — bullet summaries beat essays.",
+    "Use each player's `updated` field and `recentMatches` (newest first) for recency; never invent time windows like 'last 48 hours'.",
+    "When citing form, name the date from match data (e.g. Jun 15), not vague relative time.",
     "Emphasize cross-roster comparison when relevant (who leads, who lags, map/operator reads).",
+    "If a player has active:false, they have not played this season — note that if relevant.",
     "",
     "SQUAD DATA:",
     JSON.stringify(ctx),
   ].join("\n");
 }
 
-async function initOversightChat(){
-  if(PAGE!=="oversight"||document.getElementById("vantage-chat-ctl")) return;
+async function initVantageChat(){
+  if(PAGE!=="oversight"&&PAGE!=="player") return;
+  if(document.getElementById("vantage-chat-ctl")) return;
+
+  const accent=chatAccentForPage();
+  const placeholder=chatPlaceholderForPage();
 
   const wrap=document.createElement("div");
   wrap.className="chat-ctl";
   wrap.id="vantage-chat-ctl";
+  wrap.style.setProperty("--chat-accent",accent);
   wrap.innerHTML=`<button type="button" class="chat-btn" id="chat-btn" aria-label="Chat with VANTAGE" aria-expanded="false" title="Chat with VANTAGE">
       <img src="${CHAT_BUBBLE_SRC}" alt="VANTAGE chat">
     </button>
     <div class="chat-drop" id="chat-drop" hidden>
       <div class="chat-drop-hdr">// VANTAGE CHANNEL</div>
-      <div class="chat-portrait"><img id="chat-avatar" src="${CHAT_AVATAR.default}" alt="VANTAGE"></div>
+      <div class="chat-portrait">
+        <img id="chat-avatar" src="${CHAT_AVATAR.default}" alt="VANTAGE">
+        <div class="chat-typing" id="chat-typing" hidden aria-hidden="true">
+          <span class="chat-typing-dot"></span><span class="chat-typing-dot"></span><span class="chat-typing-dot"></span>
+        </div>
+      </div>
       <div class="chat-log" id="chat-log" aria-live="polite"></div>
       <form class="chat-form" id="chat-form">
-        <input type="text" class="chat-input" id="chat-input" maxlength="2000" placeholder="Ask about the squad…" autocomplete="off">
+        <input type="text" class="chat-input" id="chat-input" maxlength="2000" placeholder="${esc(placeholder)}" autocomplete="off">
         <button type="submit" class="chat-send" id="chat-send">Send</button>
       </form>
     </div>`;
@@ -2083,6 +2158,7 @@ async function initOversightChat(){
   const btn=byId("chat-btn");
   const drop=byId("chat-drop");
   const avatar=byId("chat-avatar");
+  const typingEl=byId("chat-typing");
   const log=byId("chat-log");
   const form=byId("chat-form");
   const input=byId("chat-input");
@@ -2097,6 +2173,11 @@ async function initOversightChat(){
   function setAvatar(state){
     avatarState=state;
     avatar.src=CHAT_AVATAR[state]||CHAT_AVATAR.default;
+    if(typingEl){
+      const thinking=state==="thinking";
+      typingEl.hidden=!thinking;
+      typingEl.setAttribute("aria-hidden",thinking?"false":"true");
+    }
   }
   function clearTalkingTimer(){
     if(talkingTimer){ clearTimeout(talkingTimer); talkingTimer=null; }
@@ -2121,9 +2202,16 @@ async function initOversightChat(){
     sendBtn.disabled=on;
   }
   async function ensureSystemPrompt(){
-    const season=OV_SEASON||DEFAULT_SEASON;
-    const ctx=await buildOversightChatContext(season);
-    systemPrompt=buildOversightChatSystemPrompt(ctx);
+    const season=chatSeasonForPage();
+    if(PAGE==="player"){
+      const slug=document.body.dataset.player||"";
+      const cfg=ROSTER.find(p=>p.slug===slug)||{name:slug,slug};
+      const ctx=await buildPlayerChatContext(slug,season);
+      systemPrompt=buildPlayerChatSystemPrompt(ctx,cfg);
+    }else{
+      const ctx=await buildOversightChatContext(season);
+      systemPrompt=buildOversightChatSystemPrompt(ctx);
+    }
     return season;
   }
 
@@ -2199,11 +2287,12 @@ if(PAGE==="roster"){
   initFxLayers();
   initBgm().catch(()=>{});
   renderPlayer();
+  initVantageChat().catch(()=>{});
 }else{
   initFxLayers();
   initBgm().catch(()=>{});
   if(PAGE==="oversight"){
     renderOversight();
-    initOversightChat().catch(()=>{});
+    initVantageChat().catch(()=>{});
   }
 }
