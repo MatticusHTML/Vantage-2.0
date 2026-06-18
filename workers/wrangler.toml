@@ -1,0 +1,14 @@
+# VANTAGE chat proxy — deploy with: npx wrangler deploy
+# Secrets (never commit): wrangler secret put OPENROUTER_API_KEY
+
+name = "vantage-chat"
+main = "vantage-chat.js"
+compatibility_date = "2025-06-01"
+
+# Replace with YOUR GitHub Pages origin(s). Comma-separated for local dev.
+# Example: "https://yourusername.github.io,http://127.0.0.1:5500"
+[vars]
+ALLOWED_ORIGINS = "https://YOUR_GITHUB_USERNAME.github.io"
+
+# Optional: require X-Squad-Token header from the site (set via secret if you prefer)
+# SQUAD_TOKEN = ""

@@ -1609,7 +1609,7 @@ async function initBgm(){
       </div>`;
   const miniFooter=`<a class="bgm-full-link" href="${BASE}soundtracks.html">Full soundtrack library &rarr;</a>`;
   const audioTag=`<audio id="vantage-bgm" preload="metadata"></audio>`;
-  const dropInner=isPage?controlsInner+browseInner+audioTag:controlsInner+miniFooter+audioTag;
+  const dropInner=controlsInner+browseInner+(isPage?"":miniFooter)+audioTag;
 
   const wrap=document.createElement("div");
   wrap.className=isPage?"bgm-ctl bgm-ctl--page":"bgm-ctl bgm-ctl--mini";
@@ -1746,7 +1746,7 @@ async function initBgm(){
     if(t?.album) setBrowseAlbum(t.album);
   }
 
-  if(isPage&&albumsEl){
+  if(albumsEl){
   albums.forEach((a,i)=>{
     const count=a.count??albumTracks(a.id).length;
     const countLbl=count===0?"Coming soon":`${count} track${count===1?"":"s"}`;
@@ -1762,7 +1762,7 @@ async function initBgm(){
   });
   }
 
-  if(isPage&&pagesEl){
+  if(pagesEl){
   for(let p=0;p<albumPageCount;p++){
     const pb=document.createElement("button");
     pb.type="button";
@@ -1994,10 +1994,8 @@ async function initBgm(){
     });
   }
 
-  if(isPage){
-    if(trackIdx>=0) syncBrowseToPlayingAlbum();
-    else if(albums.length) setBrowseAlbum(albums[0].id);
-  }
+  if(trackIdx>=0) syncBrowseToPlayingAlbum();
+  else if(albums.length) setBrowseAlbum(albums[0].id);
   const resumePlay=trackIdx>=0&&!deactivated&&wasPlayingLastPage();
   if(trackIdx>=0){
     loadTrack(trackIdx,false);
@@ -2011,6 +2009,181 @@ async function initBgm(){
   }
   document.addEventListener("pointerdown",unlockFromGesture,{passive:true});
   document.addEventListener("keydown",unlockFromGesture);
+}
+
+/* ---- OVERSIGHT live chat (VANTAGE AI) ---- */
+const VANTAGE_CHAT_ENDPOINT = "https://vantagesecurity.matticus-ai.workers.dev";
+const CHAT_AVATAR = {
+  default: `${BASE}assets/images/vantage-chat/default.png`,
+  thinking: `${BASE}assets/images/vantage-chat/thinking.png`,
+  talking: `${BASE}assets/images/vantage-chat/talking.png`,
+  offline: `${BASE}assets/images/vantage-chat/offline.png`,
+};
+const CHAT_BUBBLE_SRC = `${BASE}assets/images/vantage-chat/bubble.png`;
+const CHAT_TALKING_MS = 7000;
+
+function chatTextHtml(text){
+  return esc(String(text||"")).replace(/\n/g,"<br>");
+}
+function compactPlayerChat(rec, cfg){
+  if(!rec||!rec.meta) return { name:cfg.name, slug:cfg.slug, active:false };
+  return {
+    name:cfg.name,
+    slug:cfg.slug,
+    updated:rec.updated,
+    meta:rec.meta,
+    badges:rec.badges||[],
+    operators:rec.operators||[],
+    recentMatches:(rec.matches||[]).slice(-12),
+  };
+}
+async function buildOversightChatContext(season){
+  const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,season).catch(()=>null)));
+  const squad=await loadRecord("oversight",season).catch(()=>null);
+  const players=ROSTER.map((p,i)=>compactPlayerChat(recs[i],p));
+  const latestComments=squad?.comments?.length
+    ? splitCommentWaves(squad.comments).slice(-1)[0]||null
+    : null;
+  return { season, seasonLabel:SEASON_OPS[season]||season, players, latestSquadComments:latestComments };
+}
+function buildOversightChatSystemPrompt(ctx){
+  return [
+    "You are VANTAGE — tactical coaching analyst for a seven-person Rainbow Six Siege squad on the OVERSIGHT command deck.",
+    "Use ONLY the JSON below for stats. If data is missing, say so. Never invent ranks, matches, or operator stats.",
+    "Address players by Discord display name (not Ubisoft username alone).",
+    "Tone: direct, tactical, part roast / part hype — criticize the play, never the person.",
+    "Keep replies focused: usually 2–5 short paragraphs unless the user asks for depth.",
+    "Emphasize cross-roster comparison when relevant (who leads, who lags, map/operator reads).",
+    "",
+    "SQUAD DATA:",
+    JSON.stringify(ctx),
+  ].join("\n");
+}
+
+async function initOversightChat(){
+  if(PAGE!=="oversight"||document.getElementById("vantage-chat-ctl")) return;
+
+  const wrap=document.createElement("div");
+  wrap.className="chat-ctl";
+  wrap.id="vantage-chat-ctl";
+  wrap.innerHTML=`<button type="button" class="chat-btn" id="chat-btn" aria-label="Chat with VANTAGE" aria-expanded="false" title="Chat with VANTAGE">
+      <img src="${CHAT_BUBBLE_SRC}" alt="VANTAGE chat">
+    </button>
+    <div class="chat-drop" id="chat-drop" hidden>
+      <div class="chat-drop-hdr">// VANTAGE CHANNEL</div>
+      <div class="chat-portrait"><img id="chat-avatar" src="${CHAT_AVATAR.default}" alt="VANTAGE"></div>
+      <div class="chat-log" id="chat-log" aria-live="polite"></div>
+      <form class="chat-form" id="chat-form">
+        <input type="text" class="chat-input" id="chat-input" maxlength="2000" placeholder="Ask about the squad…" autocomplete="off">
+        <button type="submit" class="chat-send" id="chat-send">Send</button>
+      </form>
+    </div>`;
+  document.body.appendChild(wrap);
+
+  const btn=byId("chat-btn");
+  const drop=byId("chat-drop");
+  const avatar=byId("chat-avatar");
+  const log=byId("chat-log");
+  const form=byId("chat-form");
+  const input=byId("chat-input");
+  const sendBtn=byId("chat-send");
+
+  let avatarState="default";
+  let talkingTimer=null;
+  let busy=false;
+  let systemPrompt=null;
+  const history=[];
+
+  function setAvatar(state){
+    avatarState=state;
+    avatar.src=CHAT_AVATAR[state]||CHAT_AVATAR.default;
+  }
+  function clearTalkingTimer(){
+    if(talkingTimer){ clearTimeout(talkingTimer); talkingTimer=null; }
+  }
+  function scheduleDefaultAfterTalking(){
+    clearTalkingTimer();
+    talkingTimer=setTimeout(()=>{
+      talkingTimer=null;
+      if(avatarState==="talking") setAvatar("default");
+    },CHAT_TALKING_MS);
+  }
+  function appendMsg(role,text){
+    const el=document.createElement("div");
+    el.className="chat-msg chat-msg--"+role;
+    el.innerHTML=chatTextHtml(text);
+    log.appendChild(el);
+    log.scrollTop=log.scrollHeight;
+  }
+  function setBusy(on){
+    busy=on;
+    input.disabled=on;
+    sendBtn.disabled=on;
+  }
+  async function ensureSystemPrompt(){
+    const season=OV_SEASON||DEFAULT_SEASON;
+    const ctx=await buildOversightChatContext(season);
+    systemPrompt=buildOversightChatSystemPrompt(ctx);
+    return season;
+  }
+
+  btn.onclick=e=>{
+    e.stopPropagation();
+    const open=!drop.hidden;
+    drop.hidden=open;
+    btn.setAttribute("aria-expanded",String(!open));
+    if(!open){
+      clearTalkingTimer();
+      if(avatarState!=="thinking") setAvatar("default");
+      input.focus();
+    }
+  };
+  document.addEventListener("click",e=>{
+    if(!wrap.contains(e.target)){
+      drop.hidden=true;
+      btn.setAttribute("aria-expanded","false");
+    }
+  });
+
+  form.onsubmit=async e=>{
+    e.preventDefault();
+    const text=input.value.trim();
+    if(!text||busy) return;
+    input.value="";
+    appendMsg("user",text);
+    history.push({role:"user",content:text});
+    clearTalkingTimer();
+    setAvatar("thinking");
+    setBusy(true);
+    try{
+      await ensureSystemPrompt();
+      const messages=[{role:"system",content:systemPrompt},...history];
+      const res=await fetch(VANTAGE_CHAT_ENDPOINT,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({messages,max_tokens:800}),
+      });
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok){
+        const detail=data.detail||data.error||`HTTP ${res.status}`;
+        throw new Error(String(detail));
+      }
+      const reply=data.choices?.[0]?.message?.content;
+      if(!reply||!String(reply).trim()) throw new Error("Empty reply from VANTAGE");
+      history.push({role:"assistant",content:reply});
+      appendMsg("vantage",reply);
+      setAvatar("talking");
+      scheduleDefaultAfterTalking();
+    }catch(err){
+      setAvatar("offline");
+      appendMsg("err","// SIGNAL LOST — "+(err.message||"Could not reach VANTAGE."));
+    }finally{
+      setBusy(false);
+      input.focus();
+    }
+  };
+
+  ensureSystemPrompt().catch(()=>{});
 }
 
 /* ---- boot ---- */
@@ -2029,5 +2202,8 @@ if(PAGE==="roster"){
 }else{
   initFxLayers();
   initBgm().catch(()=>{});
-  if(PAGE==="oversight") renderOversight();
+  if(PAGE==="oversight"){
+    renderOversight();
+    initOversightChat().catch(()=>{});
+  }
 }
