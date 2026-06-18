@@ -339,6 +339,27 @@ body.modal-open{overflow:hidden}
 /* ---- background music / jukebox ---- */
 .bgm-ctl{position:fixed;bottom:20px;right:20px;z-index:50}
 .bgm-ctl--page{position:static;width:100%;max-width:640px;margin:0 auto 24px;z-index:auto}
+.bgm-ctl--mini .bgm-drop{
+  width:min(92vw,300px);padding:14px 16px 16px;
+}
+.bgm-ctl--mini .bgm-cover{width:112px;margin-bottom:10px}
+.bgm-ctl--mini .bgm-cover-ph{font-size:36px}
+.bgm-ctl--mini .bgm-title{font-size:17px}
+.bgm-ctl--mini .bgm-album{font-size:10px;margin-top:4px}
+.bgm-ctl--mini .bgm-hero{margin-bottom:12px}
+.bgm-ctl--mini .bgm-transport{gap:10px;margin-bottom:10px}
+.bgm-ctl--mini .bgm-tbtn.bgm-play{width:48px;height:48px;font-size:18px}
+.bgm-ctl--mini .bgm-tbtn.bgm-skip{min-width:64px;padding:0 10px;font-size:12px}
+.bgm-ctl--mini .bgm-seek-row{margin-bottom:10px}
+.bgm-ctl--mini .bgm-vol-row{margin-bottom:0}
+.bgm-ctl--mini .bgm-active{min-width:96px;padding:7px 10px;font-size:10px}
+.bgm-full-link{
+  display:block;margin-top:14px;padding:10px 12px;text-align:center;
+  font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;
+  color:var(--gold);text-decoration:none;border:1px solid rgba(255,200,0,.35);
+  border-radius:3px;background:rgba(255,200,0,.06);transition:.15s;
+}
+.bgm-full-link:hover{color:var(--white);border-color:var(--gold);background:rgba(255,200,0,.14)}
 .bgm-page-panel{margin-bottom:0}
 .bgm-ctl--page .bgm-drop{
   position:static;display:block;width:100%;padding:0;

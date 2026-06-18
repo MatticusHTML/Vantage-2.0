@@ -1573,7 +1573,7 @@ async function initBgm(){
   if(!tracks.length) return;
 
   const albums=(playlist.albums||[]).filter(a=>a.id!=="y11s1");
-  const dropInner=`
+  const controlsInner=`
       <div class="bgm-hero">
         <div class="bgm-cover" id="bgm-cover"><span class="bgm-cover-ph" aria-hidden="true">&#9835;</span></div>
         <div class="bgm-meta">
@@ -1594,7 +1594,8 @@ async function initBgm(){
         <span class="bgm-vol-lbl">Vol</span>
         <input type="range" class="bgm-vol" id="bgm-vol" min="0" max="100" value="${BGM_DEFAULT_VOL}">
         <button type="button" class="bgm-active" id="bgm-active">Deactivate</button>
-      </div>
+      </div>`;
+  const browseInner=`
       <div class="bgm-browse">
         <div class="bgm-browse-hdr-row">
           <div class="bgm-browse-hdr" id="bgm-browse-hdr">// SOUNDTRACKS</div>
@@ -1605,11 +1606,13 @@ async function initBgm(){
           <div class="bgm-tracks-hdr" id="bgm-tracks-hdr">Pick an album</div>
           <ul class="bgm-list" id="bgm-tracks-list"></ul>
         </div>
-      </div>
-    <audio id="vantage-bgm" preload="metadata"></audio>`;
+      </div>`;
+  const miniFooter=`<a class="bgm-full-link" href="${BASE}soundtracks.html">Full soundtrack library &rarr;</a>`;
+  const audioTag=`<audio id="vantage-bgm" preload="metadata"></audio>`;
+  const dropInner=isPage?controlsInner+browseInner+audioTag:controlsInner+miniFooter+audioTag;
 
   const wrap=document.createElement("div");
-  wrap.className=isPage?"bgm-ctl bgm-ctl--page":"bgm-ctl";
+  wrap.className=isPage?"bgm-ctl bgm-ctl--page":"bgm-ctl bgm-ctl--mini";
   if(isPage){
     wrap.innerHTML=`<div class="panel bgm-page-panel">
       <div class="sect-hdr">// SOUNDTRACKS <span class="n">— full library · stats-free zone</span></div>
@@ -1657,6 +1660,7 @@ async function initBgm(){
     return idx<0?0:Math.floor(idx/BGM_ALBUMS_PER_PAGE);
   }
   function setAlbumPage(page){
+    if(!albumsEl||!pagesEl) return;
     albumPage=Math.max(0,Math.min(albumPageCount-1,page));
     albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
       el.hidden=parseInt(el.dataset.page,10)!==albumPage;
@@ -1699,6 +1703,7 @@ async function initBgm(){
 
   function setBrowseAlbum(albumId){
     browseAlbumId=albumId;
+    if(!albumsEl||!tracksList) return;
     if(albumId) setAlbumPage(albumPageFor(albumId));
     const album=albumMeta(albumId);
     albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
@@ -1741,6 +1746,7 @@ async function initBgm(){
     if(t?.album) setBrowseAlbum(t.album);
   }
 
+  if(isPage&&albumsEl){
   albums.forEach((a,i)=>{
     const count=a.count??albumTracks(a.id).length;
     const countLbl=count===0?"Coming soon":`${count} track${count===1?"":"s"}`;
@@ -1754,7 +1760,9 @@ async function initBgm(){
     b.onclick=e=>{ e.stopPropagation(); setBrowseAlbum(a.id); };
     albumsEl.appendChild(b);
   });
+  }
 
+  if(isPage&&pagesEl){
   for(let p=0;p<albumPageCount;p++){
     const pb=document.createElement("button");
     pb.type="button";
@@ -1765,6 +1773,7 @@ async function initBgm(){
     pagesEl.appendChild(pb);
   }
   setAlbumPage(0);
+  }
 
   function saveBgmState(){
     if(trackIdx<0){ sessionStorage.setItem(BGM_PLAYING_KEY,"0"); return; }
@@ -1796,6 +1805,7 @@ async function initBgm(){
     }
   }
   function highlightTrackList(){
+    if(!tracksList) return;
     tracksList.querySelectorAll(".bgm-list-item").forEach(el=>{
       el.classList.toggle("on",parseInt(el.dataset.idx,10)===trackIdx);
     });
@@ -1984,8 +1994,10 @@ async function initBgm(){
     });
   }
 
-  if(trackIdx>=0) syncBrowseToPlayingAlbum();
-  else if(albums.length) setBrowseAlbum(albums[0].id);
+  if(isPage){
+    if(trackIdx>=0) syncBrowseToPlayingAlbum();
+    else if(albums.length) setBrowseAlbum(albums[0].id);
+  }
   const resumePlay=trackIdx>=0&&!deactivated&&wasPlayingLastPage();
   if(trackIdx>=0){
     loadTrack(trackIdx,false);
