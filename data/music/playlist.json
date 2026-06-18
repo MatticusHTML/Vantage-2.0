@@ -70,7 +70,7 @@
                        "label":  "CunderRock",
                        "cover":  "Cunders Picks/Cunders Album Cover.png",
                        "id":  "cunderrock",
-                       "count":  3,
+                       "count":  20,
                        "manualOnly":  true
                    }
                ],
@@ -1668,8 +1668,144 @@
                        "cover":  "Cunders Picks/Cunders Album Cover.png",
                        "album":  "cunderrock",
                        "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-jewelry-duty",
+                       "title":  "Jewelry Duty",
+                       "file":  "Cunders Picks/Jewelry Duty.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-kia-boy",
+                       "title":  "KIA Boy",
+                       "file":  "Cunders Picks/KIA Boy.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-kin-outside",
+                       "title":  "KIN (im outside)",
+                       "file":  "Cunders Picks/KIN (im outside).mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-reaching-fire",
+                       "title":  "Reaching for Fire",
+                       "file":  "Cunders Picks/Reaching for Fire.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-saved-woman",
+                       "title":  "Saved By A Woman (intro)",
+                       "file":  "Cunders Picks/Saved By A Woman (intro).mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-untitles",
+                       "title":  "Untitles",
+                       "file":  "Cunders Picks/Untitles.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-low-tide",
+                       "title":  "A Crawl Through a Low Tide",
+                       "file":  "Cunders Picks/A Crawl Through a Low Tide.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-big-dog",
+                       "title":  "Big Dog",
+                       "file":  "Cunders Picks/Big Dog.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-big-wheels",
+                       "title":  "Big Wheels",
+                       "file":  "Cunders Picks/Big Wheels.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-brrrr",
+                       "title":  "Brrrr",
+                       "file":  "Cunders Picks/Brrrr.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-destiny",
+                       "title":  "Destiny",
+                       "file":  "Cunders Picks/Destiny.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-dirty-work",
+                       "title":  "Dirty Work",
+                       "file":  "Cunders Picks/Dirty Work.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-dynamite",
+                       "title":  "Dynamite",
+                       "file":  "Cunders Picks/Dynamite.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-fighter",
+                       "title":  "Fighter",
+                       "file":  "Cunders Picks/Fighter.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-garden-eden",
+                       "title":  "Garden of Eden",
+                       "file":  "Cunders Picks/Garden of Eden.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-good-time-boy",
+                       "title":  "Good Time Boy",
+                       "file":  "Cunders Picks/Good Time Boy.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
+                   },
+                   {
+                       "id":  "cunder-imposter",
+                       "title":  "Imposter",
+                       "file":  "Cunders Picks/Imposter.mp3",
+                       "cover":  "Cunders Picks/Cunders Album Cover.png",
+                       "album":  "cunderrock",
+                       "albumLabel":  "CunderRock"
                    }
                ],
-    "updated":  "Jun 12, 2026 Â· evening PT",
+    "updated":  "Jun 15, 2026 · morning PT",
     "defaultTrack":  "f740538b"
 }

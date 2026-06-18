@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Rogue_Amputee
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 15, 2026 · morning PT
+**Updated:** Jun 18, 2026 · evening PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,52 @@
     "name": "Rogue_Amputee",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 15, 2026 · morning PT",
+    "updated": "Jun 18, 2026 · evening PT",
     "meta": {
         "rank": "Bronze II",
-        "rp": 1810,
+        "rp": 1825,
         "peakRp": 1887,
         "nextRank": "Bronze I",
-        "rpToNext": 90,
-        "matches": 29,
-        "w": 13,
-        "l": 16,
-        "winRate": 44.8,
-        "kd": 1.08,
-        "avgHs": 38,
-        "netRp": -5
+        "rpToNext": 75,
+        "matches": 31,
+        "w": 14,
+        "l": 17,
+        "winRate": 45.2,
+        "kd": 1.06,
+        "avgHs": 50,
+        "netRp": 10
     },
     "matches": [
+        {
+            "date": "Jun 15",
+            "map": "Consulate",
+            "result": "W",
+            "score": "5:3",
+            "rp": 1825,
+            "drp": 25,
+            "k": 4,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+                "2K"
+            ]
+        },
+        {
+            "date": "Jun 15",
+            "map": "Border",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1800,
+            "drp": -10,
+            "k": 2,
+            "d": 5,
+            "a": 2,
+            "hs": 100.0,
+            "badges": [
+                "Victim"
+            ]
+        },
         {
             "date": "Jun 14",
             "map": "Outback",
@@ -481,14 +511,14 @@
         {
             "name": "Mute",
             "side": "DEF",
-            "rounds": 45,
-            "winPct": 44.4,
-            "kd": 0.83,
-            "hs": 31.0,
-            "w": 20,
-            "l": 25,
-            "k": 29,
-            "d": 35,
+            "rounds": 48,
+            "winPct": 43.8,
+            "kd": 0.79,
+            "hs": 33.3,
+            "w": 21,
+            "l": 27,
+            "k": 30,
+            "d": 38,
             "a": 14,
             "aces": 0,
             "tks": 0
@@ -496,14 +526,14 @@
         {
             "name": "Nomad",
             "side": "ATK",
-            "rounds": 32,
-            "winPct": 53.1,
-            "kd": 1.25,
-            "hs": 52.0,
+            "rounds": 33,
+            "winPct": 51.5,
+            "kd": 1.24,
+            "hs": 53.8,
             "w": 17,
-            "l": 15,
-            "k": 25,
-            "d": 20,
+            "l": 16,
+            "k": 26,
+            "d": 21,
             "a": 10,
             "aces": 0,
             "tks": 0
@@ -511,15 +541,15 @@
         {
             "name": "Dokkaebi",
             "side": "ATK",
-            "rounds": 23,
-            "winPct": 47.8,
-            "kd": 1.13,
-            "hs": 17.6,
-            "w": 11,
-            "l": 12,
-            "k": 17,
-            "d": 15,
-            "a": 9,
+            "rounds": 26,
+            "winPct": 46.2,
+            "kd": 1.06,
+            "hs": 16.7,
+            "w": 12,
+            "l": 14,
+            "k": 18,
+            "d": 17,
+            "a": 12,
             "aces": 0,
             "tks": 0
         },
@@ -541,13 +571,13 @@
         {
             "name": "Thorn",
             "side": "DEF",
-            "rounds": 8,
-            "winPct": 62.5,
-            "kd": 0.83,
-            "hs": 40.0,
-            "w": 5,
+            "rounds": 9,
+            "winPct": 66.7,
+            "kd": 1.17,
+            "hs": 42.9,
+            "w": 6,
             "l": 3,
-            "k": 5,
+            "k": 7,
             "d": 6,
             "a": 4,
             "aces": 0,
@@ -584,17 +614,17 @@
             "tks": 1
         },
         {
-            "name": "Ace",
-            "side": "ATK",
+            "name": "Alibi",
+            "side": "DEF",
             "rounds": 5,
             "winPct": 40.0,
             "kd": 1.33,
-            "hs": 50.0,
+            "hs": 25.0,
             "w": 2,
             "l": 3,
             "k": 4,
             "d": 3,
-            "a": 1,
+            "a": 0,
             "aces": 0,
             "tks": 0
         },
@@ -614,17 +644,17 @@
             "tks": 0
         },
         {
-            "name": "Alibi",
-            "side": "DEF",
-            "rounds": 4,
-            "winPct": 50.0,
-            "kd": 2.0,
-            "hs": 25.0,
+            "name": "Ace",
+            "side": "ATK",
+            "rounds": 5,
+            "winPct": 40.0,
+            "kd": 1.33,
+            "hs": 50.0,
             "w": 2,
-            "l": 2,
+            "l": 3,
             "k": 4,
-            "d": 2,
-            "a": 0,
+            "d": 3,
+            "a": 1,
             "aces": 0,
             "tks": 0
         },
@@ -638,6 +668,66 @@
             "w": 4,
             "l": 0,
             "k": 3,
+            "d": 3,
+            "a": 1,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Jackal",
+            "side": "ATK",
+            "rounds": 4,
+            "winPct": 100.0,
+            "kd": 6.0,
+            "hs": 66.7,
+            "w": 4,
+            "l": 0,
+            "k": 6,
+            "d": 1,
+            "a": 1,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Brava",
+            "side": "ATK",
+            "rounds": 3,
+            "winPct": 33.3,
+            "kd": 2.5,
+            "hs": 60.0,
+            "w": 1,
+            "l": 2,
+            "k": 5,
+            "d": 2,
+            "a": 1,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Fuze",
+            "side": "ATK",
+            "rounds": 3,
+            "winPct": 0.0,
+            "kd": 0.67,
+            "hs": 100.0,
+            "w": 0,
+            "l": 3,
+            "k": 2,
+            "d": 3,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Valkyrie",
+            "side": "DEF",
+            "rounds": 3,
+            "winPct": 33.3,
+            "kd": 0.67,
+            "hs": 50.0,
+            "w": 1,
+            "l": 2,
+            "k": 2,
             "d": 3,
             "a": 1,
             "aces": 0,
@@ -659,60 +749,30 @@
             "tks": 0
         },
         {
-            "name": "Jackal",
-            "side": "ATK",
-            "rounds": 3,
-            "winPct": 100.0,
-            "kd": 5.0,
-            "hs": 60.0,
-            "w": 3,
-            "l": 0,
-            "k": 5,
-            "d": 1,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Valkyrie",
+            "name": "Pulse",
             "side": "DEF",
-            "rounds": 3,
-            "winPct": 33.3,
-            "kd": 0.67,
-            "hs": 50.0,
+            "rounds": 2,
+            "winPct": 50.0,
+            "kd": 1.5,
+            "hs": 0.0,
             "w": 1,
-            "l": 2,
-            "k": 2,
-            "d": 3,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Fuze",
-            "side": "ATK",
-            "rounds": 3,
-            "winPct": 0.0,
-            "kd": 0.67,
-            "hs": 100.0,
-            "w": 0,
-            "l": 3,
-            "k": 2,
-            "d": 3,
+            "l": 1,
+            "k": 3,
+            "d": 2,
             "a": 0,
             "aces": 0,
             "tks": 0
         },
         {
-            "name": "Brava",
+            "name": "Hibana",
             "side": "ATK",
-            "rounds": 3,
-            "winPct": 33.3,
-            "kd": 2.5,
-            "hs": 60.0,
+            "rounds": 2,
+            "winPct": 50.0,
+            "kd": 1.0,
+            "hs": 50.0,
             "w": 1,
-            "l": 2,
-            "k": 5,
+            "l": 1,
+            "k": 2,
             "d": 2,
             "a": 1,
             "aces": 0,
@@ -734,16 +794,16 @@
             "tks": 0
         },
         {
-            "name": "Pulse",
+            "name": "Mozzie",
             "side": "DEF",
             "rounds": 2,
             "winPct": 50.0,
-            "kd": 1.5,
-            "hs": 0.0,
+            "kd": 1.0,
+            "hs": 100.0,
             "w": 1,
             "l": 1,
-            "k": 3,
-            "d": 2,
+            "k": 1,
+            "d": 1,
             "a": 0,
             "aces": 0,
             "tks": 0
@@ -764,90 +824,30 @@
             "tks": 0
         },
         {
-            "name": "Hibana",
+            "name": "Ram",
             "side": "ATK",
             "rounds": 2,
             "winPct": 50.0,
-            "kd": 1.0,
-            "hs": 50.0,
-            "w": 1,
-            "l": 1,
-            "k": 2,
-            "d": 2,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Blackbeard",
-            "side": "ATK",
-            "rounds": 1,
-            "winPct": 100.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 1,
-            "l": 0,
-            "k": 0,
-            "d": 0,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Mozzie",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 1.0,
-            "hs": 100.0,
-            "w": 0,
-            "l": 1,
-            "k": 1,
-            "d": 1,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Caveira",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 0,
-            "l": 1,
-            "k": 0,
-            "d": 1,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Melusi",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 0,
-            "l": 1,
-            "k": 0,
-            "d": 1,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Ram",
-            "side": "ATK",
-            "rounds": 1,
-            "winPct": 100.0,
             "kd": 2.0,
             "hs": 50.0,
             "w": 1,
-            "l": 0,
+            "l": 1,
             "k": 2,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Rook",
+            "side": "DEF",
+            "rounds": 1,
+            "winPct": 100.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 1,
+            "l": 0,
+            "k": 0,
             "d": 0,
             "a": 0,
             "aces": 0,
@@ -884,6 +884,51 @@
             "tks": 0
         },
         {
+            "name": "Caveira",
+            "side": "DEF",
+            "rounds": 1,
+            "winPct": 0.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 0,
+            "l": 1,
+            "k": 0,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Blackbeard",
+            "side": "ATK",
+            "rounds": 1,
+            "winPct": 100.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 1,
+            "l": 0,
+            "k": 0,
+            "d": 0,
+            "a": 1,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Melusi",
+            "side": "DEF",
+            "rounds": 1,
+            "winPct": 0.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 0,
+            "l": 1,
+            "k": 0,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
             "name": "Fenrir",
             "side": "DEF",
             "rounds": 1,
@@ -901,36 +946,36 @@
     ],
     "badges": [
         {
+            "name": "2K",
+            "count": 29
+        },
+        {
             "name": "3K",
             "count": 7
-        },
-        {
-            "name": "2K",
-            "count": 28
-        },
-        {
-            "name": "1v2 Clutch",
-            "count": 2
-        },
-        {
-            "name": "1v1 Clutch",
-            "count": 3
-        },
-        {
-            "name": "1v3 Lost",
-            "count": 1
         },
         {
             "name": "1v2 Lost",
             "count": 4
         },
         {
+            "name": "Victim",
+            "count": 4
+        },
+        {
+            "name": "1v1 Clutch",
+            "count": 3
+        },
+        {
+            "name": "1v2 Clutch",
+            "count": 2
+        },
+        {
             "name": "1v1 Lost",
             "count": 1
         },
         {
-            "name": "Victim",
-            "count": 3
+            "name": "1v3 Lost",
+            "count": 1
         },
         {
             "name": "TK",
@@ -1154,6 +1199,42 @@
             "subject": "Thorn",
             "date": "Jun 14",
             "text": "Eight rounds, 62.5%, 0.83 K/D — small volume, loud denial math on a night the stack couldn't close. Razorblooms on the plant window or the choke the attack actually walks; five wins in eight rounds is the trap anchor read from Silent Hunt still alive in System Override. Not your main over Mute yet, but the surgical defensive call when the site needs denial over frags."
+        },
+        {
+            "type": "map",
+            "subject": "Consulate",
+            "date": "Jun 15",
+            "text": "Jun 15 Consulate 5:3 — four-three-one, fifty percent headshots, a 2K, plus twenty-five RP after Jun 14's triple-loss block. That's the stack-closure read the squad needed: disciplined trades on a map that punishes hero ball, plant timed, rank recovered. Border later the same night donated ten back — but Consulate proved the Jun 14 bleed wasn't permanent when Nomad and Mute do their jobs."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 15",
+            "text": "Forty-eight defensive rounds, 43.8% win rate, 0.79 K/D, fourteen assists — still the volume leader and still treading water. Jammers on the wall the attack actually wants, drone denial in prep, not decorative surfaces; thirty assists on thirty kills says round impact even when WR lags. Sub-fifty on forty-eight rounds is placement discipline — fix the wall before you fix the gun."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 15",
+            "text": "Thirty-three attack rounds, 51.5% win rate, 1.24 K/D, 53.8% headshots — still the disciplined attack line when Dokkaebi isn't the call. Airjabs seal the flank the roamers use to collapse your execute; seventeen wins in thirty-three rounds is not luck. Consulate W is Nomad-shaped round closure — reach for her before Gridlock at 14.3%."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 15",
+            "text": "Twenty-six attack rounds, 46.2% win rate, 1.06 K/D, twelve assists — Jegeo Payload pressure still converting at volume. Scan, hack, force movement off the phone; twelve assists on eighteen kills says the remaster is doing team work, not solo hero ball. Stay parked beside Nomad on attack defaults — Gridlock's seven rounds at 14.3% isn't competing for this slot."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 15",
+            "text": "Sixteen rounds, 62.5% win rate, even K/D — the claws still print when Mute is treading water. Electroclaws on the breach wall and hatch that gate the hard push; ten wins in sixteen rounds says the anchor habit holds. Consulate W didn't happen on Kaid volume this session, but the defensive receipt on the card is still squad textbook."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 15",
+            "text": "Nine rounds, 66.7% win rate, 1.17 K/D, four assists — Razorblooms on the plant window or choke the attack walks through. Six wins in nine says the trap anchor earns stack minutes when Mute's forty-eight rounds need a denial partner. Keep blooming the real approach, not decorative corners the push ignores."
         }
     ]
 }

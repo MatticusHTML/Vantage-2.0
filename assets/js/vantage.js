@@ -1548,6 +1548,7 @@ const BGM_TRACK_KEY="vantage-bgm-track";
 const BGM_DEFAULT_VOL=25;
 const BGM_ALBUMS_PER_PAGE=4;
 const BGM_FALLBACK=[];
+const BGM_SIEGE_ALBUMS=new Set(["y1","y2","y3","y4","y5","y6","y7","y8","y9","siegex"]);
 
 function fmtAudioTime(s){
   if(!isFinite(s)||s<0) return "0:00";
@@ -1646,6 +1647,7 @@ async function initBgm(){
   let seekDragging=false;
   let trackIdx=-1;
   let shuffleOn=false;
+  let shufflePool="siege";
   let browseAlbumId=null;
   let albumPage=0;
   const albumPageCount=Math.max(1,Math.ceil(albums.length/BGM_ALBUMS_PER_PAGE));
@@ -1667,16 +1669,22 @@ async function initBgm(){
   function trackAt(i){ return i>=0&&i<tracks.length?tracks[i]:null; }
   function track(){ return trackAt(trackIdx)||{title:"—",albumLabel:"",cover:null}; }
   function wasPlayingLastPage(){ return sessionStorage.getItem(BGM_PLAYING_KEY)==="1"; }
-  function isShuffleTrack(i){
+  function shufflePoolForAlbum(albumId){
+    if(albumId==="lofi") return "lofi";
+    if(albumId==="cunderrock") return "cunderrock";
+    return "siege";
+  }
+  function trackInShufflePool(i,pool){
     const t=trackAt(i);
     if(!t) return false;
-    const a=albumMeta(t.album);
-    return !a?.manualOnly;
+    if(pool==="siege") return BGM_SIEGE_ALBUMS.has(t.album);
+    return t.album===pool;
   }
-  function randomTrackIdx(exclude){
-    const pool=tracks.map((_,i)=>i).filter(i=>i!==exclude&&isShuffleTrack(i));
-    if(!pool.length) return exclude>=0?exclude:0;
-    return pool[Math.floor(Math.random()*pool.length)];
+  function randomTrackIdx(exclude,pool){
+    const p=pool||shufflePool;
+    const candidates=tracks.map((_,i)=>i).filter(i=>i!==exclude&&trackInShufflePool(i,p));
+    if(!candidates.length) return exclude>=0?exclude:0;
+    return candidates[Math.floor(Math.random()*candidates.length)];
   }
   function albumTracks(albumId){
     const list=tracks.map((t,i)=>({t,i})).filter(x=>x.t.album===albumId);
@@ -1719,6 +1727,8 @@ async function initBgm(){
       b.classList.toggle("on",i===trackIdx);
       b.onclick=e=>{
         e.stopPropagation();
+        const t=tracks[i];
+        shufflePool=shufflePoolForAlbum(t.album);
         shuffleOn=true;
         loadTrack(i,true,true);
       };
@@ -1893,6 +1903,10 @@ async function initBgm(){
   if(savedId){
     const found=tracks.findIndex(t=>t.id===savedId);
     if(found>=0) trackIdx=found;
+  }
+  if(trackIdx>=0){
+    const t0=trackAt(trackIdx);
+    if(t0) shufflePool=shufflePoolForAlbum(t0.album);
   }
 
   audio.addEventListener("loadedmetadata",()=>{ restoreBgmPosition(); updateSeekUi(); });
