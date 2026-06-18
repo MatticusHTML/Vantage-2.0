@@ -355,7 +355,13 @@ body.modal-open{overflow:hidden}
 .bgm-ctl--mini .bgm-vol-row{margin-bottom:14px}
 .bgm-ctl--mini .bgm-active{min-width:96px;padding:7px 10px;font-size:10px}
 .bgm-ctl--mini .bgm-browse{margin-top:4px;padding-top:12px}
-.bgm-ctl--mini .bgm-albums{gap:6px;margin-bottom:10px}
+.bgm-ctl--page .bgm-pages{display:none}
+.bgm-ctl--page .bgm-browse-hdr-row{margin-bottom:10px}
+.bgm-album-btn[hidden]{display:none!important}
+.bgm-ctl--mini .bgm-albums{
+  grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-bottom:10px;
+  min-height:0;
+}
 .bgm-ctl--mini .bgm-album-btn{padding:6px 4px;gap:4px}
 .bgm-ctl--mini .bgm-album-name{font-size:8px}
 .bgm-ctl--mini .bgm-album-count{font-size:8px}

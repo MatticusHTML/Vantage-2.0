@@ -1607,9 +1607,8 @@ async function initBgm(){
           <ul class="bgm-list" id="bgm-tracks-list"></ul>
         </div>
       </div>`;
-  const miniFooter=`<a class="bgm-full-link" href="${BASE}soundtracks.html">Full soundtrack library &rarr;</a>`;
   const audioTag=`<audio id="vantage-bgm" preload="metadata"></audio>`;
-  const dropInner=controlsInner+browseInner+(isPage?"":miniFooter)+audioTag;
+  const dropInner=controlsInner+browseInner+audioTag;
 
   const wrap=document.createElement("div");
   wrap.className=isPage?"bgm-ctl bgm-ctl--page":"bgm-ctl bgm-ctl--mini";
@@ -1660,7 +1659,12 @@ async function initBgm(){
     return idx<0?0:Math.floor(idx/BGM_ALBUMS_PER_PAGE);
   }
   function setAlbumPage(page){
-    if(!albumsEl||!pagesEl) return;
+    if(!albumsEl) return;
+    if(isPage){
+      albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{ el.hidden=false; });
+      return;
+    }
+    if(!pagesEl) return;
     albumPage=Math.max(0,Math.min(albumPageCount-1,page));
     albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
       el.hidden=parseInt(el.dataset.page,10)!==albumPage;
@@ -1704,7 +1708,7 @@ async function initBgm(){
   function setBrowseAlbum(albumId){
     browseAlbumId=albumId;
     if(!albumsEl||!tracksList) return;
-    if(albumId) setAlbumPage(albumPageFor(albumId));
+    if(albumId&&!isPage) setAlbumPage(albumPageFor(albumId));
     const album=albumMeta(albumId);
     albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{
       el.classList.toggle("on",el.dataset.album===albumId);
@@ -1755,6 +1759,7 @@ async function initBgm(){
     b.className="bgm-album-btn"+(count===0?" bgm-album-placeholder":"")+(a.manualOnly?" bgm-album-manual":"");
     b.dataset.album=a.id;
     b.dataset.page=String(Math.floor(i/BGM_ALBUMS_PER_PAGE));
+    if(!isPage) b.hidden=Math.floor(i/BGM_ALBUMS_PER_PAGE)!==0;
     b.innerHTML=`<div class="bgm-album-thumb">${a.cover?`<img src="${audioSrc(a.cover)}" alt="" loading="lazy">`:`<span class="bgm-album-ph" aria-hidden="true">&#9835;</span>`}</div>
       <div class="bgm-album-name">${esc(a.label)}</div><div class="bgm-album-count">${countLbl}</div>`;
     b.onclick=e=>{ e.stopPropagation(); setBrowseAlbum(a.id); };
@@ -1762,7 +1767,7 @@ async function initBgm(){
   });
   }
 
-  if(pagesEl){
+  if(pagesEl&&!isPage){
   for(let p=0;p<albumPageCount;p++){
     const pb=document.createElement("button");
     pb.type="button";
@@ -1773,6 +1778,8 @@ async function initBgm(){
     pagesEl.appendChild(pb);
   }
   setAlbumPage(0);
+  }else if(isPage&&albumsEl){
+  albumsEl.querySelectorAll(".bgm-album-btn").forEach(el=>{ el.hidden=false; });
   }
 
   function saveBgmState(){
