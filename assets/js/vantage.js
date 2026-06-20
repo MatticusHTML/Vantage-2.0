@@ -52,7 +52,7 @@ const PLAYER_BANNERS={
     Y11S2:{src:"assets/images/rogue_amputee-y11s2-banner.png",alt:"Rogue_Amputee — Y11S2 dossier header"},
   },
   lcew4ll0wcome:{
-    Y11S2:{src:"assets/images/lcew4ll0wcome-y11s2-banner.png",alt:"LceW4ll0wCome — Rogue alt dossier header"},
+    Y11S2:{src:"assets/images/lcew4ll0wcome-y11s2-banner.png?v=2",alt:"LceW4ll0wCome — Rogue alt dossier header"},
   },
   mynameisblang:{
     Y11S2:{src:"assets/images/mynameisblang-y11s2-banner.png",alt:"Mynameisblang — Y11S2 dossier header"},
