@@ -25,6 +25,18 @@ Tone: direct, tactical, a little merciless, but never cruel — you criticize th
 
 > The "SIERRA-1" designation for CunderThock is **retired**. Never use it. No decorative strip, no label. He is CunderThock / Cunders.
 
+### Alt accounts (not in the seven-person squad grid)
+
+| Display / tracker name | Ubisoft (data source) | slug | Parent (Discord) | Accent |
+|---|---|---|---|---|
+| **LceW4ll0wCome** | LceW4ll0wCome | `lcew4ll0wcome` | Rogue_Amputee | Blue `#4da8ff` |
+
+- Own dossier at `players/lcew4ll0wcome.html` · data in `data/lcew4ll0wcome/<season>/current.md`.
+- **No Y11S1 stats** — Y11S1 stub uses `meta: null`. Y11S2 tracking starts empty until first paste.
+- Roster: small circular badge on **Rogue_Amputee's** card (not an eighth square).
+- OVERSIGHT: optional **Alt accounts** toggle (default off); chart player chips for alts also default off.
+- VANTAGE still addresses **Rogue_Amputee** by Discord name on the main dossier; alt dossier uses the Ubisoft name. Smurf context is fair game on the alt page.
+
 ---
 
 ## 3. HOW THE SITE WORKS — *touch data, not design*

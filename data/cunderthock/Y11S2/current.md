@@ -1,6 +1,6 @@
 # VANTAGE RECORD — CunderThock
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 18, 2026 · evening PT
+**Updated:** Jun 20, 2026 · evening PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,116 @@
     "name": "CunderThock",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 18, 2026 · evening PT",
+    "updated": "Jun 20, 2026 · evening PT",
     "meta": {
-        "rank": "Gold V",
-        "rp": 2545,
+        "rank": "Silver I",
+        "rp": 2497,
         "peakRp": 2626,
-        "nextRank": "Gold IV",
-        "rpToNext": 55,
-        "matches": 25,
-        "w": 14,
-        "l": 11,
-        "winRate": 56.0,
-        "kd": 1.02,
-        "avgHs": 56,
-        "netRp": 135
+        "nextRank": "Gold V",
+        "rpToNext": 3,
+        "matches": 31,
+        "w": 16,
+        "l": 15,
+        "winRate": 51.6,
+        "kd": 1.05,
+        "avgHs": 38,
+        "netRp": 87
     },
     "matches": [
+        {
+            "d": 3,
+            "badges": [
+                "3K",
+                "2K"
+            ],
+            "k": 7,
+            "drp": 24,
+            "hs": 28.6,
+            "date": "Jun 20",
+            "map": "Oregon",
+            "score": "4:2",
+            "rp": 2497,
+            "result": "W",
+            "a": 2
+        },
+        {
+            "d": 5,
+            "badges": [],
+            "k": 2,
+            "drp": -27,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "2:4",
+            "rp": 2473,
+            "result": "L",
+            "a": 1
+        },
+        {
+            "d": 5,
+            "badges": [
+                "1v3 Clutch",
+                "3K"
+            ],
+            "k": 7,
+            "drp": -17,
+            "hs": 14.3,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "4:5",
+            "rp": 2500,
+            "result": "L",
+            "a": 1
+        },
+        {
+            "d": 4,
+            "badges": [
+                "1v2 Lost",
+                "Victim"
+            ],
+            "k": 1,
+            "drp": -25,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Coastline",
+            "score": "0:4",
+            "rp": 2517,
+            "result": "L",
+            "a": 1
+        },
+        {
+            "d": 4,
+            "badges": [
+                "2K",
+                "2K"
+            ],
+            "k": 5,
+            "drp": 24,
+            "hs": 40,
+            "date": "Jun 18",
+            "map": "Emerald Plains",
+            "score": "4:2",
+            "rp": 2542,
+            "result": "W",
+            "a": 2
+        },
+        {
+            "d": 4,
+            "badges": [
+                "3K",
+                "2K",
+                "2K"
+            ],
+            "k": 8,
+            "drp": -27,
+            "hs": 25,
+            "date": "Jun 18",
+            "map": "Calypso Casino",
+            "score": "2:4",
+            "rp": 2518,
+            "result": "L",
+            "a": 2
+        },
         {
             "date": "Jun 15",
             "map": "Border",
@@ -410,221 +504,240 @@
     ],
     "operators": [
         {
+            "l": 32,
+            "w": 52,
+            "tks": 0,
+            "k": 56,
+            "rounds": 84,
             "name": "Tachanka",
-            "side": "DEF",
-            "rounds": 67,
-            "winPct": 61.2,
-            "kd": 0.82,
-            "hs": 25.0,
-            "w": 41,
-            "l": 26,
-            "k": 40,
-            "d": 49,
-            "a": 24,
             "aces": 0,
-            "tks": 0
+            "side": "DEF",
+            "winPct": 61.9,
+            "a": 29,
+            "hs": 19.6,
+            "kd": 0.97,
+            "d": 58
         },
         {
+            "l": 36,
+            "w": 30,
+            "tks": 0,
+            "k": 46,
+            "rounds": 66,
             "name": "Zero",
-            "side": "ATK",
-            "rounds": 51,
-            "winPct": 51.0,
-            "kd": 0.94,
-            "hs": 57.6,
-            "w": 26,
-            "l": 25,
-            "k": 33,
-            "d": 35,
-            "a": 12,
             "aces": 0,
-            "tks": 0
+            "side": "ATK",
+            "winPct": 45.5,
+            "a": 15,
+            "hs": 54.3,
+            "kd": 0.96,
+            "d": 48
         },
         {
+            "l": 8,
+            "w": 1,
+            "tks": 0,
+            "k": 5,
+            "rounds": 9,
             "name": "Solid Snake",
+            "aces": 0,
             "side": "ATK",
-            "rounds": 8,
-            "winPct": 12.5,
+            "winPct": 11.1,
+            "a": 0,
+            "hs": 80,
             "kd": 0.71,
-            "hs": 80.0,
-            "w": 1,
-            "l": 7,
-            "k": 5,
-            "d": 7,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
+            "d": 7
         },
         {
-            "name": "Jackal",
-            "side": "ATK",
-            "rounds": 7,
-            "winPct": 42.9,
-            "kd": 2.75,
-            "hs": 63.6,
-            "w": 3,
             "l": 4,
-            "k": 11,
-            "d": 4,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Striker",
-            "side": "ATK",
-            "rounds": 4,
-            "winPct": 50.0,
-            "kd": 1.25,
-            "hs": 20.0,
-            "w": 2,
-            "l": 2,
-            "k": 5,
-            "d": 4,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Sentry",
-            "side": "ATK",
-            "rounds": 4,
-            "winPct": 50.0,
-            "kd": 1.0,
-            "hs": 66.7,
-            "w": 2,
-            "l": 2,
-            "k": 3,
-            "d": 3,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Twitch",
-            "side": "ATK",
-            "rounds": 4,
-            "winPct": 75.0,
-            "kd": 10.0,
-            "hs": 30.0,
             "w": 3,
-            "l": 1,
-            "k": 10,
-            "d": 1,
-            "a": 0,
+            "tks": 0,
+            "k": 11,
+            "rounds": 7,
+            "name": "Jackal",
             "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Bandit",
-            "side": "DEF",
-            "rounds": 3,
-            "winPct": 66.7,
-            "kd": 0.5,
-            "hs": 0.0,
-            "w": 2,
-            "l": 1,
-            "k": 1,
-            "d": 2,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Brava",
             "side": "ATK",
+            "winPct": 42.9,
+            "a": 0,
+            "hs": 63.6,
+            "kd": 2.75,
+            "d": 4
+        },
+        {
+            "l": 2,
+            "w": 4,
+            "tks": 0,
+            "k": 10,
+            "rounds": 6,
+            "name": "Twitch",
+            "aces": 0,
+            "side": "ATK",
+            "winPct": 66.7,
+            "a": 1,
+            "hs": 30,
+            "kd": 5,
+            "d": 2
+        },
+        {
+            "l": 2,
+            "w": 2,
+            "tks": 0,
+            "k": 3,
+            "rounds": 4,
+            "name": "Sentry",
+            "aces": 0,
+            "side": "ATK",
+            "winPct": 50,
+            "a": 1,
+            "hs": 66.7,
+            "kd": 1,
+            "d": 3
+        },
+        {
+            "l": 2,
+            "w": 2,
+            "tks": 0,
+            "k": 5,
+            "rounds": 4,
+            "name": "Striker",
+            "aces": 0,
+            "side": "ATK",
+            "winPct": 50,
+            "a": 0,
+            "hs": 20,
+            "kd": 1.25,
+            "d": 4
+        },
+        {
+            "l": 2,
+            "w": 2,
+            "tks": 0,
+            "k": 2,
+            "rounds": 4,
+            "name": "Bandit",
+            "aces": 0,
+            "side": "DEF",
+            "winPct": 50,
+            "a": 1,
+            "hs": 0,
+            "kd": 0.67,
+            "d": 3
+        },
+        {
+            "l": 1,
+            "w": 1,
+            "tks": 0,
+            "k": 0,
             "rounds": 2,
-            "winPct": 50.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 1,
-            "l": 1,
-            "k": 0,
-            "d": 1,
-            "a": 0,
+            "name": "Brava",
             "aces": 0,
-            "tks": 0
+            "side": "ATK",
+            "winPct": 50,
+            "a": 0,
+            "hs": 0,
+            "kd": 0,
+            "d": 1
         },
         {
-            "name": "Kapkan",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 0.0,
-            "hs": 0.0,
+            "l": 1,
             "w": 0,
-            "l": 1,
+            "tks": 0,
             "k": 0,
-            "d": 1,
-            "a": 0,
+            "rounds": 1,
+            "name": "CapitÃ£o",
             "aces": 0,
-            "tks": 0
+            "side": "ATK",
+            "winPct": 0,
+            "a": 0,
+            "hs": 0,
+            "kd": 0,
+            "d": 1
         },
         {
+            "l": 0,
+            "w": 1,
+            "tks": 0,
+            "k": 0,
+            "rounds": 1,
             "name": "Mozzie",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 100.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 1,
-            "l": 0,
-            "k": 0,
-            "d": 0,
-            "a": 0,
             "aces": 0,
-            "tks": 0
+            "side": "DEF",
+            "winPct": 100,
+            "a": 0,
+            "hs": 0,
+            "kd": 0,
+            "d": 0
         },
         {
-            "name": "Thunderbird",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 100.0,
-            "kd": 1.0,
-            "hs": 0.0,
-            "w": 1,
             "l": 0,
+            "w": 1,
+            "tks": 0,
             "k": 1,
-            "d": 0,
-            "a": 0,
+            "rounds": 1,
+            "name": "Thunderbird",
             "aces": 0,
-            "tks": 0
+            "side": "DEF",
+            "winPct": 100,
+            "a": 0,
+            "hs": 0,
+            "kd": 1,
+            "d": 0
+        },
+        {
+            "l": 1,
+            "w": 0,
+            "tks": 0,
+            "k": 0,
+            "rounds": 1,
+            "name": "Kapkan",
+            "aces": 0,
+            "side": "DEF",
+            "winPct": 0,
+            "a": 0,
+            "hs": 0,
+            "kd": 0,
+            "d": 1
         }
     ],
     "badges": [
         {
-            "name": "2K",
-            "count": 17
+            "count": 1,
+            "name": "1v1 Clutch"
         },
         {
-            "name": "3K",
-            "count": 6
+            "count": 2,
+            "name": "1v2 Clutch"
         },
         {
-            "name": "1v2 Lost",
-            "count": 3
+            "count": 4,
+            "name": "1v2 Lost"
         },
         {
-            "name": "1v3 Lost",
-            "count": 3
+            "count": 1,
+            "name": "1v3 Clutch"
         },
         {
-            "name": "4K",
-            "count": 3
+            "count": 3,
+            "name": "1v3 Lost"
         },
         {
-            "name": "1v2 Clutch",
-            "count": 2
+            "count": 22,
+            "name": "2K"
         },
         {
-            "name": "Victim",
-            "count": 2
+            "count": 9,
+            "name": "3K"
         },
         {
-            "name": "1v1 Clutch",
-            "count": 1
+            "count": 3,
+            "name": "4K"
+        },
+        {
+            "count": 3,
+            "name": "Victim"
         }
     ],
-    "debrief": "<p><b>Gold V · 2,572 RP · 14–10 · 58.3% win rate · 1.04 K/D.</b> Jun 13 stack night still holds — Clubhouse 5:3, Coastline doubled up. Jun 14 was a double Clubhouse tax: 4:5 overtime first, then a 3:5 with an 8/6/5 line and a 3K that still couldn't close. Fifty-four RP gone in one session off a 2,626 peak.</p><p><b>Tachanka at 62.5% over sixty-four defensive rounds</b> remains the spine; <b>Zero at 52.0% over fifty attack rounds</b> is holding break-even intel. Jackal climbed to six rounds at 50.0% with a 3.33 K/D — the flex that actually converts.</p><p>Peak sits at <b>2,626</b>. Twenty-eight RP to Gold IV. Queue the Lord first, run Zero for intel on stack nights, and stop letting Clubhouse overtime decide rank twice in forty-eight hours.</p>",
+    "debrief": "<p><b>Silver I · 2,497 RP · 16–15 · 51.6% win rate · 1.05 K/D.</b> Jun 19 was a Calypso–Coastline tax: three straight Ls for minus sixty-nine RP — including a 1v3 Clutch on a 4:5 that still couldn't close. Jun 18 split Emerald and Calypso; Jun 20 Oregon 4:2 with a 3K and 2K reclaimed twenty-four RP and parked you <b>three RP from Gold V</b>.</p><p><b>Tachanka at 61.9% over eighty-four defensive rounds</b> still anchors; <b>Zero at 45.5% over sixty-six attack rounds</b> is the bleed-week tax when intel doesn't convert to closure.</p><p>Peak sits at <b>2,626</b>. Queue the Lord first, run Zero for cams — not hero peeks — and stop letting Calypso overtime eat rank after Oregon already proved the read.</p>",
     "comments": [
         {
             "type": "map",
@@ -841,6 +954,42 @@
             "subject": "Bandit",
             "date": "Jun 15",
             "text": "Three defensive rounds, 66.7% win rate — tiny sample, real job. Shock Wire on the wall the attack actually wants is breach denial, not decorative electricity; two wins in three rounds says the trick landed when you queued him. MP7 frags are a bonus — the metric is whether the hard breach failed. Bring him on maps with a obvious main wall and battery it before you roam."
+        },
+        {
+            "type": "map",
+            "subject": "Oregon",
+            "date": "Jun 20",
+            "text": "Jun 20 Oregon 4:2 — seven-three-two, twenty-eight-point-six percent headshots, a 3K and a 2K on the same W, plus twenty-four RP. That's the receipt after Jun 19 donated sixty-nine on Calypso and Coastline: multi-kill impact that actually closed the set instead of decorating another L. Oregon rewards timed plants and refrags off vertical reads — you brought both. Three RP from Gold V now; queue this map when the stack commits to closure, not highlight ball."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 20",
+            "text": "Eighty-four defensive rounds, 61.9% win rate, 0.97 K/D, twenty-nine assists — the Lord cleared eighty and still leads the card after a brutal Jun 19. Shumikha fire on the plant spot and LMG time bought on the choke still print fifty-two round wins; the 0.97 K/D is anchor math, not a crisis. Oregon's W wasn't Tachanka volume — it was attack closure — but he still earns first pick every stack night until something else posts eighty-plus rounds at sixty percent."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 20",
+            "text": "Sixty-six attack rounds, 45.5% win rate, 0.96 K/D, 54.3% headshots — Zero dipped below break-even in the Jun 19 bleed and that's the habit talking, not the gun. ARGUS cams and laser clears win rounds you never frag on; Calypso triple-loss nights are where you peek on timer instead of feeding callouts the stack swings on. Good habit: hidden cams on bomb and flanks, active tablet, lasers on the gadgets that gate the breach. Bad habit: treating an intel op like entry when Oregon just proved closure beats hero ball."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 20",
+            "text": "Seven rounds, 42.9% win rate, 2.75 K/D, 63.6% headshots — the flex grew a sample and the K/D still screams conversion. Footprint tracking through walls plus refrags off the ping is what Solid Snake refuses to be; eleven kills on four deaths across seven rounds is real round impact. Not volume yet — but when Jackal's in the slot the sets have a chance. Keep him behind Tachanka minutes on defense-first stack nights."
+        },
+        {
+            "type": "operator",
+            "subject": "Twitch",
+            "date": "Jun 20",
+            "text": "Six rounds, 66.7% win rate, 5.00 K/D — still a tiny sample, still the hard-breach specialist hiding in the flex row. Shock Drone surgery on Bandit batteries and cams is the job; the F2 frags are the bonus when denial is cleared. Calypso Jun 19 needed gadget clears before the execute, not another entry death. Bring her on breach maps when Thatcher isn't in the lobby and let the drone do the work first."
+        },
+        {
+            "type": "operator",
+            "subject": "Solid Snake",
+            "date": "Jun 20",
+            "text": "Nine attack rounds, 11.1% win rate, 0.71 K/D — the lab pick grew and still bleeds RP while Tachanka owns defense and Zero owns attack identity. One win in nine says you're facechecking with a flanker on weeks that already tax rank. Snake wins on radar intel from cover and silent F2 pressure off the call; ranked belongs to the Lord and the tablet until the queue is casual. Park the experiment."
         }
     ]
 }

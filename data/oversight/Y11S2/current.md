@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 18, 2026 · evening PT
+**Updated:** Jun 20, 2026 · evening PT
 
 ```json
 {
     "name": "OVERSIGHT",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 18, 2026 · evening PT",
+    "updated": "Jun 20, 2026 · evening PT",
     "comments": [
         {
             "type": "map",
@@ -296,6 +296,42 @@
             "subject": "Dokkaebi",
             "date": "Jun 18",
             "text": "The Y11S2 remaster lives on three dossiers at volume now: Rogue_Amputee twenty-six rounds, MJester1337 sixty, Mynameisblang ninety. Rogue at 46.2% with twelve assists, Jester at 46.7% with twenty-one, Blang at 42.2% with seventeen — Jegeo Payload pressure everywhere, WR uneven. CunderThock and Grandmaster Sandman still treat her as a flex pick under ten rounds. Matticus HQ unchanged on the bench. Squad memo: scan, hack, force movement — the phone tax is season meta; only three of seven are paying it at scale."
+        },
+        {
+            "type": "map",
+            "subject": "Calypso Casino",
+            "date": "Jun 20",
+            "text": "Jun 18–20 made Calypso the squad's shared ledger — Sandman and CunderThock bled Jun 19 triple-loss blocks; MJester1337 ran eighteen games Jun 20 and cashed 5:4 at 1,489 RP; slackandlack logged a 4:0 shutdown Jun 19; Matticus HQ took 2:4 with a Victim tag Jun 18. Same vertical map, wildly different receipts: shutdown Ws when the execute is timed, highlight reels that still donate when OT clock matters. The season's new casino isn't the problem — round closure on it is the squad homework."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 20",
+            "text": "CunderThock: eighty-four Tachanka rounds, 61.9% win rate — still the squad's highest-volume defensive anchor after Jun 19 bleed dropped him to Silver I at 2,497 RP. Grandmaster Sandman hit the same RP on Sledge and Kaid without queuing the Lord once — two anchor philosophies, both three RP from Gold V. Cross-roster lesson: pick a defensive main and commit before game thirty, not after Calypso taxes rank."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 20",
+            "text": "Grandmaster Sandman: fifty Sledge rounds, 54.0% win rate, 1.32 K/D — attack main that fixed System Override spread. Jun 20 Oregon 4:2 matched CunderThock's scoreline at the same RP — stack symmetry when hammer timing closes. MJester1337 never queued Sledge and grinds Copper on Thorn/Denari volume instead. Sandman's consolidation memo hasn't changed: one rifle, one job, timed entries not nostalgia rushes."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 20",
+            "text": "MJester1337: one hundred fifteen Thorn rounds, 60.9% win rate, forty-five assists — the squad's trap anchor cleared triple digits on a Copper dossier that wins 51.1% anyway. Jun 20 eighteen-game marathon printed plus one hundred ten RP with Thorn setup leading. Grandmaster Sandman's Thorn sits at 44.4% over eighteen; Mynameisblang's at 27.3% over eleven. Jester locked denial early; the rest of the stack still treats Razorblooms as flex toys."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 20",
+            "text": "Mynameisblang: one hundred fourteen Finka rounds, 50.0% win rate — attack default that broke Gold I at 3,000 RP Jun 19. Matticus HQ: eleven Finka rounds, 63.6%, 1.80 K/D — surge timing that converted Emerald Plains Jun 18 after six days idle. Cross-roster lesson: Adrenal Surge wins when the stack commits to the buffed execute; solo surging on Calypso loss streaks is how Silver IV stalls instead of climbing."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 20",
+            "text": "The Y11S2 remaster lives at volume on three dossiers: MJester1337 sixty-six rounds, Mynameisblang ninety-two, Rogue_Amputee twenty-six unchanged. Jester at 47.0% with twenty-three assists climbed Copper on a Jun 20 marathon; Blang at 42.4% treads water at Gold I. CunderThock and Sandman still under ten rounds each. Squad memo: scan, hack, force movement — Jegeo Payload is season meta; only half the stack is paying it at scale, and Rogue's still the textbook on a Bronze II bench."
         }
     ]
 }

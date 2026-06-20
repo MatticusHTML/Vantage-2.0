@@ -22,6 +22,25 @@ const ROSTER = [
   { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#9e6b42" },
   { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
 ];
+/* Alt / smurf accounts — own dossier, badge on parent roster card, optional on OVERSIGHT */
+const ALT_ACCOUNTS = [
+  { slug:"lcew4ll0wcome", name:"LceW4ll0wCome", ubi:"LceW4ll0wCome", accent:"#4da8ff", parentSlug:"rogue_amputee" },
+];
+function getPlayerCfg(slug){
+  return ROSTER.find(r=>r.slug===slug) || ALT_ACCOUNTS.find(r=>r.slug===slug) || null;
+}
+function getAltsForParent(parentSlug){
+  return ALT_ACCOUNTS.filter(a=>a.parentSlug===parentSlug);
+}
+function isAltSlug(slug){
+  return ALT_ACCOUNTS.some(a=>a.slug===slug);
+}
+function oversightBoardRoster(){
+  return OV_SHOW_ALT ? [...ROSTER, ...ALT_ACCOUNTS] : ROSTER;
+}
+function oversightChartRoster(){
+  return [...ROSTER, ...ALT_ACCOUNTS];
+}
 const PLAYER_BANNERS={
   cunderthock:{
     Y11S2:{src:"assets/images/cunderthock-think-banner.png",alt:"Think Cunder — CunderThock dossier header"},
@@ -484,12 +503,12 @@ function wireRosterFoot(){
   foot.append(a,tag);
 }
 function oversightTag(s){ return `Team Review · Squad Comparison · ${seasonOp(s)}`; }
-function playerTag(slug,s){ const p=ROSTER.find(r=>r.slug===slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
+function playerTag(slug,s){ const p=getPlayerCfg(slug); return `${p?p.name:"Operator"} · ${seasonOp(s)}`; }
 function playerBannerHtml(slug,season){
   const entry=PLAYER_BANNERS[slug]?.[season];
   if(!entry) return "";
   const src=typeof entry==="string"?entry:entry.src;
-  const name=ROSTER.find(r=>r.slug===slug)?.name||"Operator";
+  const name=getPlayerCfg(slug)?.name||"Operator";
   const alt=(typeof entry==="object"&&entry.alt)?entry.alt:`${name} dossier header`;
   return `<div class="player-banner" role="img" aria-label="${esc(alt)}">
     <img src="${BASE}${src}" alt="${esc(alt)}" loading="eager">
@@ -537,10 +556,8 @@ function fetchErr(host){
 /* ============================================================
    PAGE: CHARACTER SELECT
    ============================================================ */
-function renderRoster(){
-  const grid = byId("roster");
-  grid.innerHTML = ROSTER.map(p=>`
-    <a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}" style="--pcard-accent:${p.accent}">
+function renderPlayerCard(p){
+  return `<a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}" style="--pcard-accent:${p.accent}">
       <span class="corner"></span>
       <span class="rankchip" id="rank-${p.slug}">—</span>
       <img src="assets/cards/${p.slug}.png" alt="${esc(p.name)}">
@@ -551,7 +568,22 @@ function renderRoster(){
           <span class="lastupd" id="upd-${p.slug}">last updated —</span>
         </span>
       </span>
-    </a>`).join("") + `
+    </a>`;
+}
+function renderAltButtons(alts){
+  return alts.map(a=>`<a class="pcard-alt" href="players/${a.slug}.html" id="alt-${a.slug}"
+      title="${esc(a.name)} — alt account" aria-label="Open ${esc(a.name)} alt dossier">
+      <img src="assets/icons/${a.slug}-badge.png" alt="">
+    </a>`).join("");
+}
+function renderRoster(){
+  const grid = byId("roster");
+  grid.innerHTML = ROSTER.map(p=>{
+    const alts=getAltsForParent(p.slug);
+    const card=renderPlayerCard(p);
+    if(!alts.length) return card;
+    return `<div class="pcard-wrap" style="--pcard-accent:${p.accent}">${card}${renderAltButtons(alts)}</div>`;
+  }).join("") + `
     <a class="ocard" href="oversight.html">
       <span class="ocard-shimmer" aria-hidden="true"></span>
       <span class="ocard-sparkles" aria-hidden="true"></span>
@@ -568,6 +600,14 @@ function renderRoster(){
         byId("upd-"+p.slug).textContent   = "last updated "+formatCardUpdated(rec.updated);
       } else { byId("rank-"+p.slug).textContent = "UNRANKED"; }
     }catch(e){ byId("rank-"+p.slug).textContent="—"; }
+  });
+  ALT_ACCOUNTS.forEach(async a=>{
+    try{
+      const {rec}=await loadLatest(a.slug);
+      const el=byId("alt-"+a.slug);
+      if(!el) return;
+      if(rec.meta) el.title=`${a.name} — ${rec.meta.rank} · ${fmt(rec.meta.rp)} RP`;
+    }catch(e){}
   });
   wireRosterFoot();
 }
@@ -758,6 +798,7 @@ function emptySeason(season){
    PAGE: OVERSIGHT
    ============================================================ */
 let OV_SEASON=null;
+let OV_SHOW_ALT=false;
 async function renderOversight(){
   const view=byId("view");
   if(!OV_SEASON) OV_SEASON = DEFAULT_SEASON;
@@ -765,16 +806,30 @@ async function renderOversight(){
   buildOvSeasonBtns(OV_SEASON);
   setBrandTag(oversightTag(OV_SEASON));
 
-  let recs;
-  try{ recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,OV_SEASON))); }
-  catch(e){ fetchErr(view); return; }
+  const boardRoster=oversightBoardRoster();
+  const chartRoster=oversightChartRoster();
+  let boardRecs, chartRecs;
+  try{
+    boardRecs=await Promise.all(boardRoster.map(p=>loadRecord(p.slug,OV_SEASON)));
+    if(OV_SHOW_ALT){
+      chartRecs=boardRecs;
+    }else{
+      const loaded=await Promise.all(chartRoster.map(async p=>{
+        try{ return {slug:p.slug, rec:await loadRecord(p.slug,OV_SEASON)}; }
+        catch(e){ return {slug:p.slug, rec:null}; }
+      }));
+      const recMap=Object.fromEntries(loaded.map(x=>[x.slug,x.rec]));
+      chartRecs=chartRoster.map(p=>recMap[p.slug]??null);
+    }
+  }catch(e){ fetchErr(view); return; }
   const squad=await loadRecord("oversight",OV_SEASON).catch(()=>null);
 
-  const data=ROSTER.map((p,i)=>({cfg:p,rec:recs[i]})).filter(d=>d.rec&&d.rec.meta);
-  if(!data.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
+  const boardData=boardRoster.map((p,i)=>({cfg:p,rec:boardRecs[i]})).filter(d=>d.rec&&d.rec.meta);
+  const chartData=chartRoster.map((p,i)=>({cfg:p,rec:chartRecs[i]})).filter(d=>d.rec&&d.rec.meta);
+  if(!boardData.length){ view.innerHTML=emptySeason(OV_SEASON); return; }
   destroyOvCharts();
-  view.innerHTML = board(data) + radar(data) + squadComments(squad)
-    + badgeBoard(data) + mapHeatmap(data) + operatorMatrix(data);
+  view.innerHTML = board(boardData) + radar(boardData) + squadComments(squad)
+    + badgeBoard(chartData) + mapHeatmap(chartData) + operatorMatrix(chartData);
   wireOpTableControls();
   wireOvChartPanels();
   wireOpMatrixPanels();
@@ -782,8 +837,10 @@ async function renderOversight(){
 }
 function buildOvSeasonBtns(active){
   const el=byId("seasons");
-  el.innerHTML=`<span class="lbl">Season</span>`+SEASONS.map(s=>`<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("");
+  el.innerHTML=`<span class="lbl">Season</span>`+SEASONS.map(s=>`<button class="season-btn ${s===active?'on':''}" data-s="${s}">${s}</button>`).join("")
+    +`<button type="button" class="ov-alt-toggle${OV_SHOW_ALT?" on":""}" aria-pressed="${OV_SHOW_ALT}">Alt accounts</button>`;
   el.querySelectorAll(".season-btn").forEach(b=>b.onclick=()=>{ OV_SEASON=b.dataset.s; renderOversight(); });
+  el.querySelector(".ov-alt-toggle")?.addEventListener("click",()=>{ OV_SHOW_ALT=!OV_SHOW_ALT; renderOversight(); });
 }
 function topOp(rec){ return (rec.operators||[]).slice().sort((a,b)=>b.winPct-a.winPct)[0]; }
 function board(data){
@@ -918,7 +975,7 @@ function buildOvFilterBar(groups){
   </div>`;
   const bars=groups.map(g=>`<div class="ov-filter-bar" data-filter-group="${g.key}">
     <span class="ov-filter-lbl">${esc(g.label)}</span>
-    ${g.items.map(it=>`<button type="button" class="ov-filter-chip" data-filter-key="${g.key}" data-filter-id="${esc(it.id)}" style="--chip-accent:${it.accent||"var(--gold)"}">${esc(it.label)}</button>`).join("")}
+    ${g.items.map(it=>`<button type="button" class="ov-filter-chip${it.defaultOff?" off":""}" data-filter-key="${g.key}" data-filter-id="${esc(it.id)}" style="--chip-accent:${it.accent||"var(--gold)"}">${esc(it.label)}</button>`).join("")}
   </div>`).join("");
   return bulk+bars;
 }
@@ -1144,7 +1201,7 @@ function badgeBoard(data){
   const filterHtml=buildOvFilterBar([{
     key:"player",
     label:"Players",
-    items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+    items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent,defaultOff:isAltSlug(p.slug)})),
   }]);
   const visualHtml=buildOvVisualShell(filterHtml);
   return ovComparisonPanel("badge","BADGE COMPARISON","gold = squad high · red = high on losses / TK",
@@ -1185,7 +1242,7 @@ function buildOpMatrixFilterBar(cmp){
     {
       key:"player",
       label:"Players",
-      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent,defaultOff:isAltSlug(p.slug)})),
     },
     {
       key:"operator",
@@ -1526,7 +1583,7 @@ function mapHeatmap(data){
     {
       key:"player",
       label:"Players",
-      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent})),
+      items:cmp.players.map(p=>({id:p.slug,label:p.name,accent:p.accent,defaultOff:isAltSlug(p.slug)})),
     },
     {
       key:"map",
@@ -2033,7 +2090,7 @@ const CHAT_ACCENT_OVERSIGHT = "#ffc800";
 function chatAccentForPage(){
   if(PAGE==="oversight") return CHAT_ACCENT_OVERSIGHT;
   const slug=document.body.dataset.player||"";
-  const cfg=ROSTER.find(p=>p.slug===slug);
+  const cfg=getPlayerCfg(slug);
   return cfg?.accent||"#9a5cd4";
 }
 function chatSeasonForPage(){
@@ -2043,7 +2100,7 @@ function chatSeasonForPage(){
 function chatPlaceholderForPage(){
   if(PAGE==="oversight") return "Ask about the squad…";
   const slug=document.body.dataset.player||"";
-  const cfg=ROSTER.find(p=>p.slug===slug);
+  const cfg=getPlayerCfg(slug);
   return cfg?`Ask about ${cfg.name}…`:"Ask VANTAGE…";
 }
 
@@ -2078,7 +2135,7 @@ async function buildOversightChatContext(season){
   return { season, seasonLabel:SEASON_OPS[season]||season, players, latestSquadComments:latestComments };
 }
 async function buildPlayerChatContext(slug,season){
-  const cfg=ROSTER.find(p=>p.slug===slug)||{name:slug,slug};
+  const cfg=getPlayerCfg(slug)||{name:slug,slug};
   const rec=await loadRecord(slug,season).catch(()=>null);
   const focusPlayer=compactPlayerChat(rec,cfg);
   if(rec?.comments?.length){
@@ -2212,7 +2269,7 @@ async function initVantageChat(){
     const season=chatSeasonForPage();
     if(PAGE==="player"){
       const slug=document.body.dataset.player||"";
-      const cfg=ROSTER.find(p=>p.slug===slug)||{name:slug,slug};
+      const cfg=getPlayerCfg(slug)||{name:slug,slug};
       const ctx=await buildPlayerChatContext(slug,season);
       systemPrompt=buildPlayerChatSystemPrompt(ctx,cfg);
     }else{
