@@ -1,14 +1,50 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 20, 2026 · evening PT
+**Updated:** Jun 24, 2026 · morning PT
 
 ```json
 {
     "name": "OVERSIGHT",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 20, 2026 · evening PT",
+    "updated": "Jun 24, 2026 · morning PT",
     "comments": [
+        {
+            "type": "map",
+            "subject": "Bank",
+            "date": "Jun 23",
+            "text": "Jun 23 Bank 5:3 was the squad's shared closure map — CunderThock and Mynameisblang both banked Ws the same night at 2,548 and 3,048 RP. Bank punishes teams that win mid-round duels but lose the post-plant; when multiple dossiers move on the same map block with matching scorelines, the lesson is stack round closure, not individual highlight reels. Gold V and Platinum V in the same lobby is the System Override receipt."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 23",
+            "text": "CunderThock's Tachanka: one hundred eleven defensive rounds, 63.1% win rate — still the squad's highest-volume anchor after Bank closed Gold V. Grandmaster Sandman hit the same tier on Kaid and Sledge without queuing the Lord once. Two anchor philosophies, both printing; Rogue_Amputee and Matticus HQ still need a locked defensive main while the templates sit on adjacent dossiers."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 21",
+            "text": "slackandlack's Aruni: thirty-four rounds, 67.6% win rate, 1.92 K/D, two aces — Surya Gate denial with EBR frag upside on the Jun 21 Coastline heater. Cross-roster anchors split: Cunder on Tachanka, Sandman on Kaid/Frost, slack on Aruni/Doc. The stack's defensive chairs are filled; the leak is still attack-side closure on Chalet and Outback shutouts."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 23",
+            "text": "MJester1337's Thorn: one hundred fifty-three defensive rounds, 60.8% win rate, sixty-three assists — the grind anchor at one hundred eleven matches. Rogue's Thorn at thirteen rounds is the surgical call; MJester's is the career. Trap ops win on assists and plant denial — judge MJester's row on round impact, not the 0.84 season K/D."
+        },
+        {
+            "type": "operator",
+            "subject": "Thunderbird",
+            "date": "Jun 23",
+            "text": "Mynameisblang's Thunderbird: ninety-three defensive rounds, 59.1% win rate, 1.26 K/D — Platinum V anchor at volume. LceW4ll0wCome's Kaid at 82.4% over seventeen is the smurf receipt; Blang's Thunderbird is the main-account climb. Cross-squad lesson: denial anchors that rez and hold print rank when attack stops donating 0:4s."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 20",
+            "text": "Grandmaster Sandman's Sledge: sixty-one attack rounds, 52.5% win rate, 1.29 K/D — Gold V hammer at stack volume. CunderThock's Zero at ninety-five attack rounds and 45.3% is the cautionary spread tale on the same roster night. Sandman's consolidation arc is the squad memo: lock attack mains before game sixty, not after Calypso taxes rank."
+        },
         {
             "type": "map",
             "subject": "Coastline",
