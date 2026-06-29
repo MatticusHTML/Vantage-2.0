@@ -1,6 +1,6 @@
 # VANTAGE RECORD — LceW4ll0wCome (alt)
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 24, 2026 · morning PT
+**Updated:** Jun 28, 2026 · evening PT
 
 > Rogue_Amputee alt account. Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,22 +9,40 @@
     "name": "LceW4ll0wCome",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 24, 2026 · morning PT",
+    "updated": "Jun 28, 2026 · evening PT",
     "meta": {
         "rank": "Silver IV",
-        "rp": 2182,
+        "rp": 2156,
         "peakRp": 2191,
         "nextRank": "Silver III",
-        "rpToNext": 18,
-        "matches": 27,
+        "rpToNext": 44,
+        "matches": 28,
         "w": 13,
-        "l": 14,
-        "winRate": 48.1,
-        "kd": 1.2,
-        "avgHs": 36.7,
-        "netRp": -8
+        "l": 15,
+        "winRate": 46.4,
+        "kd": 1.21,
+        "avgHs": 35.7,
+        "netRp": -34
     },
     "matches": [
+        {
+            "date": "Jun 24",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2156,
+            "drp": -26,
+            "k": 6,
+            "d": 4,
+            "a": 1,
+            "hs": 16.7,
+            "badges": [
+                "2K",
+                "2K",
+                "1v3 Lost",
+                "1v3 Lost"
+            ]
+        },
         {
             "date": "Jun 21",
             "map": "Outback",
@@ -471,45 +489,30 @@
         {
             "name": "Nomad",
             "side": "ATK",
-            "rounds": 24,
-            "winPct": 33.3,
-            "kd": 0.78,
-            "hs": 14.3,
-            "w": 8,
-            "l": 16,
-            "k": 14,
-            "d": 18,
-            "a": 3,
+            "rounds": 26,
+            "winPct": 34.6,
+            "kd": 0.95,
+            "hs": 16.7,
+            "w": 9,
+            "l": 17,
+            "k": 18,
+            "d": 19,
+            "a": 4,
             "aces": 0,
             "tks": 0
         },
         {
             "name": "Kaid",
             "side": "DEF",
-            "rounds": 17,
-            "winPct": 82.4,
-            "kd": 4.0,
-            "hs": 35.0,
+            "rounds": 18,
+            "winPct": 77.8,
+            "kd": 3.5,
+            "hs": 33.3,
             "w": 14,
-            "l": 3,
-            "k": 20,
-            "d": 5,
+            "l": 4,
+            "k": 21,
+            "d": 6,
             "a": 7,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Mute",
-            "side": "DEF",
-            "rounds": 16,
-            "winPct": 43.8,
-            "kd": 0.73,
-            "hs": 12.5,
-            "w": 7,
-            "l": 9,
-            "k": 8,
-            "d": 11,
-            "a": 5,
             "aces": 0,
             "tks": 0
         },
@@ -524,6 +527,21 @@
             "l": 5,
             "k": 13,
             "d": 7,
+            "a": 5,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Mute",
+            "side": "DEF",
+            "rounds": 16,
+            "winPct": 43.8,
+            "kd": 0.73,
+            "hs": 12.5,
+            "w": 7,
+            "l": 9,
+            "k": 8,
+            "d": 11,
             "a": 5,
             "aces": 0,
             "tks": 0
@@ -546,14 +564,14 @@
         {
             "name": "Thorn",
             "side": "DEF",
-            "rounds": 8,
-            "winPct": 62.5,
-            "kd": 0.83,
+            "rounds": 9,
+            "winPct": 55.6,
+            "kd": 0.71,
             "hs": 60.0,
             "w": 5,
-            "l": 3,
+            "l": 4,
             "k": 5,
-            "d": 6,
+            "d": 7,
             "a": 3,
             "aces": 0,
             "tks": 0
@@ -585,21 +603,6 @@
             "k": 3,
             "d": 4,
             "a": 2,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Thermite",
-            "side": "ATK",
-            "rounds": 3,
-            "winPct": 33.3,
-            "kd": 0.5,
-            "hs": 0.0,
-            "w": 1,
-            "l": 2,
-            "k": 1,
-            "d": 2,
-            "a": 0,
             "aces": 0,
             "tks": 0
         },
@@ -649,6 +652,36 @@
             "tks": 0
         },
         {
+            "name": "Thermite",
+            "side": "ATK",
+            "rounds": 3,
+            "winPct": 33.3,
+            "kd": 0.5,
+            "hs": 0.0,
+            "w": 1,
+            "l": 2,
+            "k": 1,
+            "d": 2,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Thunderbird",
+            "side": "DEF",
+            "rounds": 2,
+            "winPct": 50.0,
+            "kd": 5.0,
+            "hs": 60.0,
+            "w": 1,
+            "l": 1,
+            "k": 5,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
             "name": "Dokkaebi",
             "side": "ATK",
             "rounds": 2,
@@ -679,23 +712,8 @@
             "tks": 0
         },
         {
-            "name": "Thunderbird",
+            "name": "Bandit",
             "side": "DEF",
-            "rounds": 2,
-            "winPct": 50.0,
-            "kd": 5.0,
-            "hs": 60.0,
-            "w": 1,
-            "l": 1,
-            "k": 5,
-            "d": 1,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Lion",
-            "side": "ATK",
             "rounds": 1,
             "winPct": 100.0,
             "kd": 0.0,
@@ -703,6 +721,21 @@
             "w": 1,
             "l": 0,
             "k": 0,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Fuze",
+            "side": "ATK",
+            "rounds": 1,
+            "winPct": 0.0,
+            "kd": 2.0,
+            "hs": 50.0,
+            "w": 0,
+            "l": 1,
+            "k": 2,
             "d": 1,
             "a": 0,
             "aces": 0,
@@ -724,21 +757,6 @@
             "tks": 0
         },
         {
-            "name": "Melusi",
-            "side": "DEF",
-            "rounds": 1,
-            "winPct": 100.0,
-            "kd": 1.0,
-            "hs": 0.0,
-            "w": 1,
-            "l": 0,
-            "k": 1,
-            "d": 0,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
-        },
-        {
             "name": "Azami",
             "side": "DEF",
             "rounds": 1,
@@ -754,30 +772,15 @@
             "tks": 0
         },
         {
-            "name": "Maestro",
+            "name": "Pulse",
             "side": "DEF",
             "rounds": 1,
             "winPct": 0.0,
-            "kd": 0.0,
+            "kd": 1.0,
             "hs": 0.0,
             "w": 0,
             "l": 1,
-            "k": 0,
-            "d": 1,
-            "a": 1,
-            "aces": 0,
-            "tks": 0
-        },
-        {
-            "name": "Fuze",
-            "side": "ATK",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 2.0,
-            "hs": 50.0,
-            "w": 0,
-            "l": 1,
-            "k": 2,
+            "k": 1,
             "d": 1,
             "a": 0,
             "aces": 0,
@@ -814,8 +817,8 @@
             "tks": 0
         },
         {
-            "name": "Bandit",
-            "side": "DEF",
+            "name": "Lion",
+            "side": "ATK",
             "rounds": 1,
             "winPct": 100.0,
             "kd": 0.0,
@@ -824,6 +827,21 @@
             "l": 0,
             "k": 0,
             "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Melusi",
+            "side": "DEF",
+            "rounds": 1,
+            "winPct": 100.0,
+            "kd": 1.0,
+            "hs": 0.0,
+            "w": 1,
+            "l": 0,
+            "k": 1,
+            "d": 0,
             "a": 0,
             "aces": 0,
             "tks": 0
@@ -842,12 +860,27 @@
             "a": 0,
             "aces": 0,
             "tks": 0
+        },
+        {
+            "name": "Maestro",
+            "side": "DEF",
+            "rounds": 1,
+            "winPct": 0.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 0,
+            "l": 1,
+            "k": 0,
+            "d": 1,
+            "a": 1,
+            "aces": 0,
+            "tks": 0
         }
     ],
     "badges": [
         {
             "name": "2K",
-            "count": 30
+            "count": 32
         },
         {
             "name": "Victim",
@@ -858,16 +891,16 @@
             "count": 4
         },
         {
+            "name": "1v3 Lost",
+            "count": 4
+        },
+        {
             "name": "1v1 Lost",
             "count": 3
         },
         {
             "name": "3K",
             "count": 3
-        },
-        {
-            "name": "1v3 Lost",
-            "count": 2
         },
         {
             "name": "4K",
@@ -882,8 +915,44 @@
             "count": 1
         }
     ],
-    "debrief": "<p><b>Silver IV · 2,182 RP · 13–14 · 48.1% win rate · 1.20 K/D.</b> Jun 20 squad night banked Fortress through Border; Jun 21 Outback 5:4 with a 1v3 Clutch and two 2K tags parked the alt at Silver IV. Twenty-three RP peeled off the 2,191 peak but the smurf is climbing again.</p><p><b>Kaid at 82.4% over seventeen defensive rounds</b> at 4.00 K/D is absurd anchor math. <b>Valkyrie at 68.8% over sixteen</b> and <b>Kapkan at 70.0% over ten</b> back the denial row. Jackal still leads attack volume at thirty rounds.</p><p>Peak <b>2,191</b>. Eighteen RP to Silver III. Queue Kaid and Valkyrie on defense, stop spreading Gridlock at 0% — and treat the alt like a rank push, not a highlight reel audition.</p>",
+    "debrief": "<p><b>Silver IV · 2,156 RP · 13–15 · 48.1% win rate · 1.20 K/D.</b> Jun 24 Oregon 1:4 — six-four-one, twin 2K tags and double 1v3 Lost buried in a twenty-six RP donation. Smurf idle since Jun 21 Outback heater; one ranked game logged this block.</p><p><b>Kaid at 77.8% over eighteen defensive rounds</b> at 3.50 K/D is still absurd anchor math. <b>Valkyrie at 68.8% over sixteen</b> and <b>Kapkan at 70.0% over ten</b> back the denial row. <b>Nomad at 34.6% over twenty-six</b> is the attack tax.</p><p>Peak <b>2,191</b>. Forty-four RP to Silver III. Queue Kaid and Valkyrie on defense, treat the alt like a rank push — not a highlight reel audition on Oregon 1:4 nights.</p>",
     "comments": [
+        {
+            "type": "map",
+            "subject": "Oregon",
+            "date": "Jun 24",
+            "text": "Jun 24 Oregon 1:4 — six-four-one, sixteen point seven percent headshots, twin 2K tags and double 1v3 Lost buried in the shutout that donated twenty-six RP. Squad Emerald block same night — you had the multi-kill impact and not the round closure. Silver IV at 2,156 means the smurf tax is real; Rogue's main dossier is chasing the same Kaid template you're already posting at seventy-seven point eight percent."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 24",
+            "text": "Eighteen defensive rounds, 77.8% win rate, 3.50 K/D, seven assists — the smurf's anchor receipt still absurd. Fourteen wins in eighteen says Electroclaws on the wall that gates the real push; twenty-one kills on six deaths is denial over highlight frags. This is the template Rogue's main dossier keeps chasing — protect these minutes, don't dilute with Nomad spread on defense."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 24",
+            "text": "Thirty attack rounds, 36.7% win rate, 1.05 K/D, 54.5% headshots — highest attack volume on the alt and still below break-even. Eleven wins in thirty says the gun is fine, the plant clock isn't. Coach the habit: ping, trade, plant — not ping, peek, donate on Oregon nights when Kaid is posting 3.50 K/D on the other side."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 24",
+            "text": "Twenty-six attack rounds, 34.6% win rate, 0.95 K/D, four assists — Airjabs without round closure is the tax. Nine wins in twenty-six says the flex isn't earning queue time over Jackal when Kaid is posting 77.8% on defense. Nomad wins when traps slow the push the team punishes — not solo flank hero ball on a smurf still grinding Silver."
+        },
+        {
+            "type": "operator",
+            "subject": "Valkyrie",
+            "date": "Jun 21",
+            "text": "Sixteen defensive rounds, 68.8% win rate, 1.86 K/D, five assists — Black Eye intel buying trades the sheet loves. Eleven wins in sixteen says the alt's defensive ceiling still lives here. Cam coverage on flanks, active callouts, MPX refrags — queue her first on stack defense nights beside Kaid."
+        },
+        {
+            "type": "operator",
+            "subject": "Kapkan",
+            "date": "Jun 21",
+            "text": "Ten defensive rounds, 70.0% win rate, 1.60 K/D, eight assists — trap anchor printing on a real sample. Seven wins in ten says traps on the approach attackers actually walk; eight assists on eight kills says placement discipline. Flex behind Kaid when the site needs denial, not Jackal volume on the other side at thirty-six point seven percent."
+        },
         {
             "type": "map",
             "subject": "Outback",

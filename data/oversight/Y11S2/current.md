@@ -1,14 +1,50 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 24, 2026 · morning PT
+**Updated:** Jun 28, 2026 · evening PT
 
 ```json
 {
     "name": "OVERSIGHT",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 24, 2026 · morning PT",
+    "updated": "Jun 28, 2026 · evening PT",
     "comments": [
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 28",
+            "text": "Jun 28 Chalet was the squad's shared stack map — CunderThock 4:0 with 4K and 2K, Grandmaster Sandman 4:0, slackandlack 4:0 with 2K, MJester1337 4:0 with 2K, Rogue_Amputee 4:1 with 1v1 Clutch. Five dossiers, same map block, four shutouts and a narrow W. When the stack converges on Chalet and closes, the board moves — Gold V pushes to 2,568, Sandman holds 2,548, slack climbs to 2,327, MJester promotes to Bronze II. Oregon and Consulate in the same session still tax rank; Chalet was the closure receipt."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 28",
+            "text": "Grandmaster Sandman's Sledge: seventy-six attack rounds, 51.3% win rate, 1.28 K/D — Gold V hammer after Jun 24–28 catch-up ended the Jun 20 dormancy. Consulate 4K 1v1 Clutch Jun 28 is the stack's loudest attack receipt. CunderThock's Zero at one-twenty-two rounds and 43.4% is the cautionary intel spread on the same roster night. Sandman's consolidation arc is still the squad memo: lock attack mains before game seventy, not after Oregon donates."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 28",
+            "text": "MJester1337's Thorn: one hundred eighty-eight defensive rounds, 61.7% win rate, seventy-three assists — Bronze II at 1,813 after Border 4K and Chalet 4:0 in an eight-game Jun 28 marathon. One hundred thirty-six ranked matches — the grind anchor promoted while the K/D sheet still reads 0.87. Rogue's Thorn at sixteen rounds is the surgical call; MJester's is the career. Trap ops win on assists and plant denial — judge the row on round impact."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopós",
+            "date": "Jun 27",
+            "text": "Matticus HQ's Skopós: thirty-four defensive rounds, 64.7% win rate — cam anchor at season volume while Oregon 4K still lost 2:4 Jun 27. Finka at 56.2% over sixteen backs the attack chair for the first time at fifty-fifty record. Cross-roster contrast: Cunder on Tachanka one-thirty-six, Sandman on Kaid thirty-three at 66.7%, slack on Aruni forty at 70.0%. Matticus finally has both chairs — the leak is still highlight ball without plant closure on Oregon."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 28",
+            "text": "Rogue_Amputee's Mute: sixty-nine defensive rounds, 47.8% win rate, seventeen assists — volume leader still treading water at Bronze II 1,856 RP despite Jun 25 Chalet and Nighthaven heater. Nomad at 52.5% over sixty-one is the attack line printing beside Dokkaebi. Cross-roster lesson: Kaid at 62.2% over thirty-seven says the claws work when stacked with Mute — fix the jammer wall before you fix the gun on a 1 W 3 L Jun 28 block."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 28",
+            "text": "slackandlack's Aruni: forty defensive rounds, 70.0% win rate, 1.74 K/D, two aces — gate anchor at Silver II 2,327 after Jun 28 Chalet 4:0. Doc at 58.3% over forty-eight and Osa at 44.9% over forty-nine split the other chairs. Cross-roster anchors: Cunder on Tachanka, Sandman on Kaid/Frost, MJester on Thorn. slack's defensive identity is locked — the tax is still Osa attack closure and Bank 3:5 donations after Chalet prints."
+        },
         {
             "type": "map",
             "subject": "Bank",
