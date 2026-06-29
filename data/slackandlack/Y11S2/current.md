@@ -1,6 +1,6 @@
 # VANTAGE RECORD — slackandlack
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "slackandlack",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Silver II",
         "rp": 2327,
@@ -1502,78 +1502,6 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Chalet",
-            "date": "Jun 28",
-            "text": "Jun 28 Chalet 4:0 — five-two-one, eighty percent headshots, 2K on the shutout that banked twenty-six RP at 2,327. Squad stack night symmetry with Cunder, Sandman, and MJester on the same map block — clean closure after Consulate and Oregon taxes in the same session. Chalet rewards stack trades on site; you brought the gate and the gun."
-        },
-        {
-            "type": "operator",
-            "subject": "Osa",
-            "date": "Jun 28",
-            "text": "Forty-nine attack rounds, 44.9% win rate, 1.42 K/D, sixty-one point one percent headshots — T-5 shield and plant pressure at volume. Twenty-two wins in forty-nine says the attack spread needs closure discipline; one ace says the ceiling is there when pushes sync. Coach the habit: shield the planter on Consulate 4K nights, not the solo peek that donates Bank."
-        },
-        {
-            "type": "operator",
-            "subject": "Doc",
-            "date": "Jun 28",
-            "text": "Forty-eight defensive rounds, 58.3% win rate, 1.12 K/D, sixty-two point two percent headshots — MP7 anchor with stim sustain. Forty-five kills on forty deaths, twenty-eight wins in forty-eight — highest defensive volume and above break-even. Hold the site angle, stim the trade, don't ego peek off the anchor role when Aruni is posting seventy percent."
-        },
-        {
-            "type": "operator",
-            "subject": "Aruni",
-            "date": "Jun 28",
-            "text": "Forty defensive rounds, 70.0% win rate, 1.74 K/D, two aces — Surya Gate anchor with real EBR frag upside. Fifty-four kills on thirty-one deaths says aggressive angle holding is working; twenty-eight wins in forty says gates on the entries attackers must cross. Queue her when the site needs denial and duels on Chalet stack nights."
-        },
-        {
-            "type": "operator",
-            "subject": "Thermite",
-            "date": "Jun 27",
-            "text": "Twenty-four attack rounds, 41.7% win rate, 1.05 K/D, forty-five percent headshots — hard breach flex when the wall matters. Ten wins in twenty-four says situational value over default; pair with Thatcher clear on ranked breach walls. Not every site needs Thermite — queue when the reinforced wall is the win condition, not spread over Osa's forty-nine."
-        },
-        {
-            "type": "operator",
-            "subject": "Smoke",
-            "date": "Jun 27",
-            "text": "Sixteen defensive rounds, 50.0% win rate, 1.00 K/D, four assists — toxic bar anchor at even split. Thirteen kills on thirteen deaths says round impact when smokes land on the choke; fifty-three point eight percent headshots says the M590 backs the deny. Flex behind Doc and Aruni volume — not a default over the denial chairs that print at fifty-eight and seventy percent."
-        },
-        {
-            "type": "map",
-            "subject": "Coastline",
-            "date": "Jun 21",
-            "text": "Jun 21 Coastline 5:3 — fourteen-seven-one, thirty-five point seven percent headshots, a 4K and 1v1 Clutch on the W that banked twenty-five RP. The Jun 21 marathon's loudest receipt: frag volume that actually closed the set. Coastline punishes teams that win duels but lose the plant — you finished this one."
-        },
-        {
-            "type": "operator",
-            "subject": "Aruni",
-            "date": "Jun 21",
-            "text": "Thirty-four defensive rounds, 67.6% win rate, 1.92 K/D, two aces — Surya Gate anchor with real EBR frag upside. Fifty kills on twenty-six deaths says aggressive angle holding is working; twenty-three wins in thirty-four says gates on the entries attackers must cross. Queue her when the site needs denial and duels."
-        },
-        {
-            "type": "operator",
-            "subject": "Doc",
-            "date": "Jun 21",
-            "text": "Forty-one defensive rounds, 58.5% win rate, 1.24 K/D, fifty-nine point five percent headshots — MP7 anchor with stim sustain. Forty-two kills on thirty-four deaths, twenty-four wins in forty-one — highest defensive volume and above break-even. Hold the site angle, stim the trade, don't ego peek off the anchor role."
-        },
-        {
-            "type": "operator",
-            "subject": "Osa",
-            "date": "Jun 21",
-            "text": "Thirty-six attack rounds, 41.7% win rate, 1.33 K/D, fifty-seven point five percent headshots — T-5 shield and plant pressure at volume. Fifteen wins in thirty-six says the attack spread needs closure discipline; one ace says the ceiling is there when pushes sync. Coach the habit: shield the planter, not the solo peek."
-        },
-        {
-            "type": "operator",
-            "subject": "Thermite",
-            "date": "Jun 21",
-            "text": "Twenty-two attack rounds, 45.5% win rate, 1.18 K/D — hard breach flex when the wall matters. Ten wins in twenty-two says situational value over default; pair with Thatcher clear on ranked breach walls. Not every site needs Thermite — queue when the reinforced wall is the win condition."
-        },
-        {
-            "type": "operator",
-            "subject": "Bandit",
-            "date": "Jun 21",
-            "text": "Six defensive rounds, 66.7% win rate, 5.00 K/D — MP7 trick anchor in a tiny sample. Four wins in six says active tricking when queued intentionally. Flex behind Doc and Aruni volume — not a spread pick over the denial chairs that actually print."
-        },
-        {
-            "type": "map",
             "subject": "Bank",
             "date": "Jun 8",
             "text": "A 4:1 win at +26 RP with a 2K tag — the first Bank entry that actually cashed instead of auditioning. Three kills, four deaths, one assist at 100% headshots says you traded on the vault floor and the set closed anyway. This is the Jun 8 block you want to repeat: not the Oregon TK round, not the Outback donation — Bank punished lazy reads and you took the points. Silver II lives on round closure, not clip volume."
@@ -1751,6 +1679,78 @@
             "subject": "Smoke",
             "date": "Jun 19",
             "text": "Eleven rounds, 54.5% win rate, 1.12 K/D, 55.6% headshots — Toxic Babes on the choke and plant deny window. Six wins in eleven with nine kills says setup op converts when gas is held for the push, not dumped at round start. Judge him on plant denials and time bought — but the 1.12 K/D doesn't hurt on a dossier that defaults to Osa on attack."
+        },
+        {
+            "type": "map",
+            "subject": "Coastline",
+            "date": "Jun 21",
+            "text": "Jun 21 Coastline 5:3 — fourteen-seven-one, thirty-five point seven percent headshots, a 4K and 1v1 Clutch on the W that banked twenty-five RP. The Jun 21 marathon's loudest receipt: frag volume that actually closed the set. Coastline punishes teams that win duels but lose the plant — you finished this one."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 21",
+            "text": "Thirty-four defensive rounds, 67.6% win rate, 1.92 K/D, two aces — Surya Gate anchor with real EBR frag upside. Fifty kills on twenty-six deaths says aggressive angle holding is working; twenty-three wins in thirty-four says gates on the entries attackers must cross. Queue her when the site needs denial and duels."
+        },
+        {
+            "type": "operator",
+            "subject": "Doc",
+            "date": "Jun 21",
+            "text": "Forty-one defensive rounds, 58.5% win rate, 1.24 K/D, fifty-nine point five percent headshots — MP7 anchor with stim sustain. Forty-two kills on thirty-four deaths, twenty-four wins in forty-one — highest defensive volume and above break-even. Hold the site angle, stim the trade, don't ego peek off the anchor role."
+        },
+        {
+            "type": "operator",
+            "subject": "Osa",
+            "date": "Jun 21",
+            "text": "Thirty-six attack rounds, 41.7% win rate, 1.33 K/D, fifty-seven point five percent headshots — T-5 shield and plant pressure at volume. Fifteen wins in thirty-six says the attack spread needs closure discipline; one ace says the ceiling is there when pushes sync. Coach the habit: shield the planter, not the solo peek."
+        },
+        {
+            "type": "operator",
+            "subject": "Thermite",
+            "date": "Jun 21",
+            "text": "Twenty-two attack rounds, 45.5% win rate, 1.18 K/D — hard breach flex when the wall matters. Ten wins in twenty-two says situational value over default; pair with Thatcher clear on ranked breach walls. Not every site needs Thermite — queue when the reinforced wall is the win condition."
+        },
+        {
+            "type": "operator",
+            "subject": "Bandit",
+            "date": "Jun 21",
+            "text": "Six defensive rounds, 66.7% win rate, 5.00 K/D — MP7 trick anchor in a tiny sample. Four wins in six says active tricking when queued intentionally. Flex behind Doc and Aruni volume — not a spread pick over the denial chairs that actually print."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 28",
+            "text": "Jun 28 Chalet 4:0 — five-two-one, eighty percent headshots, 2K on the shutout that banked twenty-six RP at 2,327. Squad stack night symmetry with Cunder, Sandman, and MJester on the same map block — clean closure after Consulate and Oregon taxes in the same session. Chalet rewards stack trades on site; you brought the gate and the gun."
+        },
+        {
+            "type": "operator",
+            "subject": "Osa",
+            "date": "Jun 28",
+            "text": "Forty-nine attack rounds, 44.9% win rate, 1.42 K/D, sixty-one point one percent headshots — T-5 shield and plant pressure at volume. Twenty-two wins in forty-nine says the attack spread needs closure discipline; one ace says the ceiling is there when pushes sync. Coach the habit: shield the planter on Consulate 4K nights, not the solo peek that donates Bank."
+        },
+        {
+            "type": "operator",
+            "subject": "Doc",
+            "date": "Jun 28",
+            "text": "Forty-eight defensive rounds, 58.3% win rate, 1.12 K/D, sixty-two point two percent headshots — MP7 anchor with stim sustain. Forty-five kills on forty deaths, twenty-eight wins in forty-eight — highest defensive volume and above break-even. Hold the site angle, stim the trade, don't ego peek off the anchor role when Aruni is posting seventy percent."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 28",
+            "text": "Forty defensive rounds, 70.0% win rate, 1.74 K/D, two aces — Surya Gate anchor with real EBR frag upside. Fifty-four kills on thirty-one deaths says aggressive angle holding is working; twenty-eight wins in forty says gates on the entries attackers must cross. Queue her when the site needs denial and duels on Chalet stack nights."
+        },
+        {
+            "type": "operator",
+            "subject": "Thermite",
+            "date": "Jun 27",
+            "text": "Twenty-four attack rounds, 41.7% win rate, 1.05 K/D, forty-five percent headshots — hard breach flex when the wall matters. Ten wins in twenty-four says situational value over default; pair with Thatcher clear on ranked breach walls. Not every site needs Thermite — queue when the reinforced wall is the win condition, not spread over Osa's forty-nine."
+        },
+        {
+            "type": "operator",
+            "subject": "Smoke",
+            "date": "Jun 27",
+            "text": "Sixteen defensive rounds, 50.0% win rate, 1.00 K/D, four assists — toxic bar anchor at even split. Thirteen kills on thirteen deaths says round impact when smokes land on the choke; fifty-three point eight percent headshots says the M590 backs the deny. Flex behind Doc and Aruni volume — not a default over the denial chairs that print at fifty-eight and seventy percent."
         }
     ]
 }

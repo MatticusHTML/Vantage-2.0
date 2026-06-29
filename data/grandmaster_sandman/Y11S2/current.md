@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Grandmaster Sandman
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "Grandmaster Sandman",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Gold V",
         "rp": 2548,
@@ -1538,78 +1538,6 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Consulate",
-            "date": "Jun 28",
-            "text": "Jun 28 Consulate 4:2 — twelve-two-zero, forty-one point seven percent headshots, 4K and 1v1 Clutch on the W that banked twenty-three RP. After Jun 27's twin Oregon donations, Consulate was the stack-closure read: frag volume that actually closed the set on the map the squad converged on. Gold V at 2,548 — hammer timing plus clutch discipline, not solo hero ball."
-        },
-        {
-            "type": "operator",
-            "subject": "Sledge",
-            "date": "Jun 28",
-            "text": "Seventy-six attack rounds, 51.3% win rate, 1.28 K/D, twenty-three assists — the hammer leads volume at Gold V after the Jun 24–28 catch-up. Thirty-nine wins in seventy-six says purposeful entries, not nostalgia rushes; 38.5% headshots on seventy-eight kills says aim backs the plant clock. Queue him when the breach wall is soft and the stack commits to closure."
-        },
-        {
-            "type": "operator",
-            "subject": "Kaid",
-            "date": "Jun 26",
-            "text": "Thirty-three defensive rounds, 66.7% win rate, 1.14 K/D, seven assists — Electroclaw anchor printing beside Frost. Twenty-two wins in thirty-three says denial over highlight frags; claws on the breach wall that gates the hard push. Stack with Frost on denial sites — the squad's defensive gold standard after Jun 20 dormancy ended."
-        },
-        {
-            "type": "operator",
-            "subject": "Frost",
-            "date": "Jun 26",
-            "text": "Thirty-one defensive rounds, 71.0% win rate, 1.20 K/D, twelve assists — trap mat anchor at elite WR. Twenty-two wins in thirty-one says welcome mats on the approach attackers walk; twelve assists on twenty-four kills says traps bought trades the sheet loves. Pair with Kaid on Oregon and Lair nights when denial needs to stick."
-        },
-        {
-            "type": "operator",
-            "subject": "Thorn",
-            "date": "Jun 26",
-            "text": "Twenty-six defensive rounds, 50.0% win rate, 1.45 K/D, twelve assists — trap anchor with frag upside at even split. Twenty-nine kills on twenty deaths says Razorblooms punish when placed on the plant window; one ace says the ceiling is there. Bloom the real approach, hold the angle that collects — not spread over Kaid's sixty-six point seven percent line."
-        },
-        {
-            "type": "operator",
-            "subject": "Denari",
-            "date": "Jun 28",
-            "text": "Thirteen defensive rounds, 92.3% win rate, 2.40 K/D, seven assists — perfect sample, loud signal on the Y11S2 defender. Twelve wins in thirteen says when you queue Denari, the gadget lands; 41.7% headshots on twelve kills says surgical minutes. Protect these picks — not another operator spread night while Sledge grinds seventy-six rounds."
-        },
-        {
-            "type": "map",
-            "subject": "Clubhouse",
-            "date": "Jun 20",
-            "text": "Jun 20 Clubhouse 4:0 — four-one-one, fifty percent headshots, a 2K on the shutdown that banked twenty-six RP at 2,534. Squad night symmetry with the stack: clean closure after Bank and Consulate taxes in the same block. Clubhouse rewards stack trades on site — you brought the hammer timing the plant needed."
-        },
-        {
-            "type": "operator",
-            "subject": "Sledge",
-            "date": "Jun 20",
-            "text": "Sixty-one attack rounds, 52.5% win rate, 1.29 K/D, nineteen assists — the hammer still leads volume at Gold V. Thirty-two wins in sixty-one says purposeful entries, not nostalgia rushes; 31.7% headshots on sixty-three kills says aim is there when timing is. Queue him when the breach wall is soft and the plant needs space."
-        },
-        {
-            "type": "operator",
-            "subject": "Kaid",
-            "date": "Jun 20",
-            "text": "Twenty-eight defensive rounds, 67.9% win rate, 1.22 K/D — Electroclaw anchor printing beside Frost. Nineteen wins in twenty-eight says denial over highlight frags; seven assists on twenty-two kills says the claws bought trades. Stack with Mute on stack nights when the breach actually matters."
-        },
-        {
-            "type": "operator",
-            "subject": "Frost",
-            "date": "Jun 20",
-            "text": "Twenty-four defensive rounds, 70.8% win rate, 1.12 K/D, ten assists — trap mat anchor at elite WR. Seventeen wins in twenty-four says welcome mats on the approach attackers walk, not decorative corners. Pair with Kaid on denial sites — the squad's defensive gold standard."
-        },
-        {
-            "type": "operator",
-            "subject": "Denari",
-            "date": "Jun 20",
-            "text": "Eleven defensive rounds, 100.0% win rate, 2.50 K/D — perfect sample, loud signal. Eleven wins in eleven says when you queue the Y11S2 defender, the gadget lands. Surgical call, not spread — protect these minutes."
-        },
-        {
-            "type": "operator",
-            "subject": "Thorn",
-            "date": "Jun 20",
-            "text": "Nineteen defensive rounds, 47.4% win rate, 1.57 K/D — trap anchor with frag upside below Frost's line. Twenty-two kills on fourteen deaths says the Razorblooms punish when placed on the plant window; sub-fifty WR says placement discipline still needs tuning. Bloom the real approach, hold the angle that collects."
-        },
-        {
-            "type": "map",
             "subject": "Oregon",
             "date": "Jun 3",
             "text": "Two Oregon runs, 0–2, fourteen kills combined, and multi-kill badges on both losses. You are not losing Oregon because you can't shoot — you're losing it because the frags don't convert before Victim or timer tax hits. Silent Hunt had you elite on defense; these Oregon sets look like attack tempo with no plant discipline. Map knowledge isn't the issue. Round closure is."
@@ -1826,6 +1754,42 @@
         },
         {
             "type": "map",
+            "subject": "Clubhouse",
+            "date": "Jun 20",
+            "text": "Jun 20 Clubhouse 4:0 — four-one-one, fifty percent headshots, a 2K on the shutdown that banked twenty-six RP at 2,534. Squad night symmetry with the stack: clean closure after Bank and Consulate taxes in the same block. Clubhouse rewards stack trades on site — you brought the hammer timing the plant needed."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 20",
+            "text": "Sixty-one attack rounds, 52.5% win rate, 1.29 K/D, nineteen assists — the hammer still leads volume at Gold V. Thirty-two wins in sixty-one says purposeful entries, not nostalgia rushes; 31.7% headshots on sixty-three kills says aim is there when timing is. Queue him when the breach wall is soft and the plant needs space."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 20",
+            "text": "Twenty-eight defensive rounds, 67.9% win rate, 1.22 K/D — Electroclaw anchor printing beside Frost. Nineteen wins in twenty-eight says denial over highlight frags; seven assists on twenty-two kills says the claws bought trades. Stack with Mute on stack nights when the breach actually matters."
+        },
+        {
+            "type": "operator",
+            "subject": "Frost",
+            "date": "Jun 20",
+            "text": "Twenty-four defensive rounds, 70.8% win rate, 1.12 K/D, ten assists — trap mat anchor at elite WR. Seventeen wins in twenty-four says welcome mats on the approach attackers walk, not decorative corners. Pair with Kaid on denial sites — the squad's defensive gold standard."
+        },
+        {
+            "type": "operator",
+            "subject": "Denari",
+            "date": "Jun 20",
+            "text": "Eleven defensive rounds, 100.0% win rate, 2.50 K/D — perfect sample, loud signal. Eleven wins in eleven says when you queue the Y11S2 defender, the gadget lands. Surgical call, not spread — protect these minutes."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 20",
+            "text": "Nineteen defensive rounds, 47.4% win rate, 1.57 K/D — trap anchor with frag upside below Frost's line. Twenty-two kills on fourteen deaths says the Razorblooms punish when placed on the plant window; sub-fifty WR says placement discipline still needs tuning. Bloom the real approach, hold the angle that collects."
+        },
+        {
+            "type": "map",
             "subject": "Oregon",
             "date": "Jun 20",
             "text": "Jun 20 Oregon 4:2 — seven-five-two, fourteen-point-three percent headshots, two 2K tags and a 1v3 Lost on the same W, plus twenty-four RP. You and CunderThock landed the same scoreline the same night at the same RP — stack symmetry when the plant actually closes. The 1v3 Lost badge on a W is the Sandman genre: highlight tension that didn't cost the set. Three RP from Gold V; queue Oregon when Sledge timing and stack trades align like this."
@@ -1859,6 +1823,42 @@
             "subject": "Denari",
             "date": "Jun 20",
             "text": "Ten rounds, 100.0% win rate, 2.50 K/D — small sample, loud connector signal. Denari's laser grid slows the push when entries sync to the trap setup; ten-for-ten says the flex worked in a tiny window. Not a main over Sledge yet — but the direction on maps that need connector control is here. Flex behind Kaid minutes, not beside him on every queue."
+        },
+        {
+            "type": "map",
+            "subject": "Consulate",
+            "date": "Jun 28",
+            "text": "Jun 28 Consulate 4:2 — twelve-two-zero, forty-one point seven percent headshots, 4K and 1v1 Clutch on the W that banked twenty-three RP. After Jun 27's twin Oregon donations, Consulate was the stack-closure read: frag volume that actually closed the set on the map the squad converged on. Gold V at 2,548 — hammer timing plus clutch discipline, not solo hero ball."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 28",
+            "text": "Seventy-six attack rounds, 51.3% win rate, 1.28 K/D, twenty-three assists — the hammer leads volume at Gold V after the Jun 24–28 catch-up. Thirty-nine wins in seventy-six says purposeful entries, not nostalgia rushes; 38.5% headshots on seventy-eight kills says aim backs the plant clock. Queue him when the breach wall is soft and the stack commits to closure."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 26",
+            "text": "Thirty-three defensive rounds, 66.7% win rate, 1.14 K/D, seven assists — Electroclaw anchor printing beside Frost. Twenty-two wins in thirty-three says denial over highlight frags; claws on the breach wall that gates the hard push. Stack with Frost on denial sites — the squad's defensive gold standard after Jun 20 dormancy ended."
+        },
+        {
+            "type": "operator",
+            "subject": "Frost",
+            "date": "Jun 26",
+            "text": "Thirty-one defensive rounds, 71.0% win rate, 1.20 K/D, twelve assists — trap mat anchor at elite WR. Twenty-two wins in thirty-one says welcome mats on the approach attackers walk; twelve assists on twenty-four kills says traps bought trades the sheet loves. Pair with Kaid on Oregon and Lair nights when denial needs to stick."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 26",
+            "text": "Twenty-six defensive rounds, 50.0% win rate, 1.45 K/D, twelve assists — trap anchor with frag upside at even split. Twenty-nine kills on twenty deaths says Razorblooms punish when placed on the plant window; one ace says the ceiling is there. Bloom the real approach, hold the angle that collects — not spread over Kaid's sixty-six point seven percent line."
+        },
+        {
+            "type": "operator",
+            "subject": "Denari",
+            "date": "Jun 28",
+            "text": "Thirteen defensive rounds, 92.3% win rate, 2.40 K/D, seven assists — perfect sample, loud signal on the Y11S2 defender. Twelve wins in thirteen says when you queue Denari, the gadget lands; 41.7% headshots on twelve kills says surgical minutes. Protect these picks — not another operator spread night while Sledge grinds seventy-six rounds."
         }
     ]
 }

@@ -134,6 +134,8 @@ Ubisoft sometimes **voids a match** and issues an **RP Rollback** — RP is adju
 
 Every refresh adds **exactly 1 MAP comment first, then 5 OPERATOR comments** to the `comments` array. Comments are **additive in the JSON** — never delete old waves from the file. Each block of 6 is one **wave** (wave 1, wave 2, …).
 
+**JSON order:** append each new wave at the **end** of `comments` (oldest wave first, newest wave last). The engine renders the **last** 6 entries as the live log.
+
 **On the site:** only the **latest wave** (most recent 6) renders on the dossier / OVERSIGHT page. A **Past comments** button at the bottom of the comment section opens a modal with all earlier waves, labeled **Wave 1 · date**, **Wave 2 · date**, etc.
 
 **Length:** Each comment should be **2–6 sentences** — enough room for the stat, the read, and the order. Don't pad for word count, but don't default to one-liners when the data supports a real coaching take.

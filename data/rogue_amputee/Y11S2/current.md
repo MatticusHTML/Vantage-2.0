@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Rogue_Amputee
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "Rogue_Amputee",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Bronze II",
         "rp": 1856,
@@ -1503,78 +1503,6 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Chalet",
-            "date": "Jun 27",
-            "text": "Jun 27 Chalet 2:4 — six-three-zero, sixteen point seven percent headshots, 1v3 Clutch and 3K buried in the L that donated twenty-four RP. You had the clutch highlight and not the round closure — Chalet punishes teams that win mid-round duels but lose the plant clock. Bronze II at 1,856 means the 3K tax is real rank, not a consolation badge."
-        },
-        {
-            "type": "operator",
-            "subject": "Mute",
-            "date": "Jun 28",
-            "text": "Sixty-nine defensive rounds, 47.8% win rate, 0.77 K/D, seventeen assists — still the volume leader and still treading water. Jammers on the breach wall the attack actually needs, drone denial in prep, overlap with Kaid so Thatcher spends twice. Sub-fifty on sixty-nine rounds is placement discipline, not aim — fix the wall before you fix the gun."
-        },
-        {
-            "type": "operator",
-            "subject": "Nomad",
-            "date": "Jun 25",
-            "text": "Sixty-one attack rounds, 52.5% win rate, 1.10 K/D, sixteen assists — still the disciplined line beside Dokkaebi. Thirty-two wins in sixty-one is break-even volume done right; Airjabs seal the flank the roamers use to collapse your execute. Jun 25 Nighthaven and Chalet Ws had impact tags — Nomad's job is map control first, highlight ball second."
-        },
-        {
-            "type": "operator",
-            "subject": "Kaid",
-            "date": "Jun 25",
-            "text": "Thirty-seven defensive rounds, 62.2% win rate, 1.04 K/D, twelve assists — the claws still print when Mute treads water. Twenty-three wins in thirty-seven says the anchor habit holds; Electroclaws on the breach wall and hatch that gate the hard push. Stack with Mute on Chalet and Nighthaven nights so denial actually sticks."
-        },
-        {
-            "type": "operator",
-            "subject": "Dokkaebi",
-            "date": "Jun 26",
-            "text": "Twenty-six attack rounds, 46.2% win rate, 1.06 K/D, twelve assists — Jegeo Payload still converting at volume. Twelve assists on eighteen kills says the remaster is team work; scan, hack, force phone discipline, collect the refrag. Stay parked beside Nomad — Gridlock at 26.3% isn't competing for this slot."
-        },
-        {
-            "type": "operator",
-            "subject": "Thorn",
-            "date": "Jun 26",
-            "text": "Sixteen defensive rounds, 50.0% win rate, 1.40 K/D, seven assists — trap anchor with frag upside in a growing sample. Eight wins in sixteen says Razorblooms on the plant window when queued intentionally; thirty-five point seven percent headshots on fourteen kills says the gun backs the traps. Flex behind Mute volume — not a default over Kaid when the claws are printing at sixty-two percent."
-        },
-        {
-            "type": "map",
-            "subject": "Chalet",
-            "date": "Jun 22",
-            "text": "Jun 22 Chalet 0:4 — two-four-one at one hundred percent headshots, Victim and a 2K buried in a shutout. Jun 21 banked three wins on Calypso and Coastline; Chalet was the cold open that erased the momentum. Modern Chalet punishes untimed vertical peeks — you had the tags, not the round closure. Bronze I is still forty-five RP away; don't queue tilt after a 0:4 donation."
-        },
-        {
-            "type": "operator",
-            "subject": "Mute",
-            "date": "Jun 22",
-            "text": "Fifty-six defensive rounds, 44.6% win rate, 0.77 K/D, fourteen assists — still the volume leader and still treading water. Jammers on the breach wall the attack actually needs, drone denial in prep, overlap with Kaid so Thatcher spends twice. Sub-fifty on fifty-six rounds is placement discipline, not aim — fix the wall before you fix the gun."
-        },
-        {
-            "type": "operator",
-            "subject": "Jackal",
-            "date": "Jun 21",
-            "text": "Eleven attack rounds, 63.6% win rate, 3.00 K/D, sixty percent headshots — the Jun 21 Calypso heater in one row. Footprint tracking through walls plus refrags off the ping is the attack engine when entries sync; seven wins in eleven says queue him when the stack commits to trades, not solo hero peeks."
-        },
-        {
-            "type": "operator",
-            "subject": "Nomad",
-            "date": "Jun 21",
-            "text": "Thirty-six attack rounds, 50.0% win rate, 1.22 K/D, ten assists — still the disciplined line beside Dokkaebi. Airjabs seal the flank the roamers use to collapse your execute; eighteen wins in thirty-six is break-even volume done right. Jun 21 Oregon L had impact tags — Nomad's job is map control first, highlight ball second."
-        },
-        {
-            "type": "operator",
-            "subject": "Dokkaebi",
-            "date": "Jun 21",
-            "text": "Twenty-six attack rounds, 46.2% win rate, 1.06 K/D, twelve assists — Jegeo Payload still converting at volume. Scan, hack, force phone discipline, collect the refrag; twelve assists on eighteen kills says the remaster is team work. Stay parked beside Nomad — Gridlock at 22.2% isn't competing for this slot."
-        },
-        {
-            "type": "operator",
-            "subject": "Kaid",
-            "date": "Jun 21",
-            "text": "Nineteen defensive rounds, 63.2% win rate, even K/D, five assists — the claws still print when Mute treads water. Electroclaws on the breach wall and hatch that gate the hard push; twelve wins in nineteen says the anchor habit holds. Stack with Mute on Calypso nights so denial actually sticks."
-        },
-        {
-            "type": "map",
             "subject": "Coastline",
             "date": "Jun 3",
             "text": "Three ranked trips to Coastline in one block — 2–1 on the map, and both wins were clean (4:1, 5:3). The loss in the middle was a 2:4 with Victim and 1v2 Lost tags: you had impact on paper but died before the round closed. On a map you clearly know, the difference wasn't aim — it was dying first on the rounds that decided the set."
@@ -1824,6 +1752,78 @@
             "subject": "Thorn",
             "date": "Jun 15",
             "text": "Nine rounds, 66.7% win rate, 1.17 K/D, four assists — Razorblooms on the plant window or choke the attack walks through. Six wins in nine says the trap anchor earns stack minutes when Mute's forty-eight rounds need a denial partner. Keep blooming the real approach, not decorative corners the push ignores."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 22",
+            "text": "Jun 22 Chalet 0:4 — two-four-one at one hundred percent headshots, Victim and a 2K buried in a shutout. Jun 21 banked three wins on Calypso and Coastline; Chalet was the cold open that erased the momentum. Modern Chalet punishes untimed vertical peeks — you had the tags, not the round closure. Bronze I is still forty-five RP away; don't queue tilt after a 0:4 donation."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 22",
+            "text": "Fifty-six defensive rounds, 44.6% win rate, 0.77 K/D, fourteen assists — still the volume leader and still treading water. Jammers on the breach wall the attack actually needs, drone denial in prep, overlap with Kaid so Thatcher spends twice. Sub-fifty on fifty-six rounds is placement discipline, not aim — fix the wall before you fix the gun."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 21",
+            "text": "Eleven attack rounds, 63.6% win rate, 3.00 K/D, sixty percent headshots — the Jun 21 Calypso heater in one row. Footprint tracking through walls plus refrags off the ping is the attack engine when entries sync; seven wins in eleven says queue him when the stack commits to trades, not solo hero peeks."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 21",
+            "text": "Thirty-six attack rounds, 50.0% win rate, 1.22 K/D, ten assists — still the disciplined line beside Dokkaebi. Airjabs seal the flank the roamers use to collapse your execute; eighteen wins in thirty-six is break-even volume done right. Jun 21 Oregon L had impact tags — Nomad's job is map control first, highlight ball second."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 21",
+            "text": "Twenty-six attack rounds, 46.2% win rate, 1.06 K/D, twelve assists — Jegeo Payload still converting at volume. Scan, hack, force phone discipline, collect the refrag; twelve assists on eighteen kills says the remaster is team work. Stay parked beside Nomad — Gridlock at 22.2% isn't competing for this slot."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 21",
+            "text": "Nineteen defensive rounds, 63.2% win rate, even K/D, five assists — the claws still print when Mute treads water. Electroclaws on the breach wall and hatch that gate the hard push; twelve wins in nineteen says the anchor habit holds. Stack with Mute on Calypso nights so denial actually sticks."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 27",
+            "text": "Jun 27 Chalet 2:4 — six-three-zero, sixteen point seven percent headshots, 1v3 Clutch and 3K buried in the L that donated twenty-four RP. You had the clutch highlight and not the round closure — Chalet punishes teams that win mid-round duels but lose the plant clock. Bronze II at 1,856 means the 3K tax is real rank, not a consolation badge."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 28",
+            "text": "Sixty-nine defensive rounds, 47.8% win rate, 0.77 K/D, seventeen assists — still the volume leader and still treading water. Jammers on the breach wall the attack actually needs, drone denial in prep, overlap with Kaid so Thatcher spends twice. Sub-fifty on sixty-nine rounds is placement discipline, not aim — fix the wall before you fix the gun."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 25",
+            "text": "Sixty-one attack rounds, 52.5% win rate, 1.10 K/D, sixteen assists — still the disciplined line beside Dokkaebi. Thirty-two wins in sixty-one is break-even volume done right; Airjabs seal the flank the roamers use to collapse your execute. Jun 25 Nighthaven and Chalet Ws had impact tags — Nomad's job is map control first, highlight ball second."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 25",
+            "text": "Thirty-seven defensive rounds, 62.2% win rate, 1.04 K/D, twelve assists — the claws still print when Mute treads water. Twenty-three wins in thirty-seven says the anchor habit holds; Electroclaws on the breach wall and hatch that gate the hard push. Stack with Mute on Chalet and Nighthaven nights so denial actually sticks."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 26",
+            "text": "Twenty-six attack rounds, 46.2% win rate, 1.06 K/D, twelve assists — Jegeo Payload still converting at volume. Twelve assists on eighteen kills says the remaster is team work; scan, hack, force phone discipline, collect the refrag. Stay parked beside Nomad — Gridlock at 26.3% isn't competing for this slot."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 26",
+            "text": "Sixteen defensive rounds, 50.0% win rate, 1.40 K/D, seven assists — trap anchor with frag upside in a growing sample. Eight wins in sixteen says Razorblooms on the plant window when queued intentionally; thirty-five point seven percent headshots on fourteen kills says the gun backs the traps. Flex behind Mute volume — not a default over Kaid when the claws are printing at sixty-two percent."
         }
     ]
 }

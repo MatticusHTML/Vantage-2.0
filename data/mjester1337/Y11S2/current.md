@@ -1,6 +1,6 @@
 # VANTAGE RECORD — MJester1337
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "MJester1337",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Bronze II",
         "rp": 1813,
@@ -2857,78 +2857,6 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Border",
-            "date": "Jun 28",
-            "text": "Jun 28 Border 4:1 — seven-one-one, twenty-eight point six percent headshots, 4K on the W that banked twenty-six RP in the eight-game marathon. After Jun 27's sixteen-game block and Calypso taxes, Border was closure: multi-kill impact that actually closed the set and pushed you into Bronze II at 1,813. Vertical reads plus plant discipline — not another highlight reel on a loss."
-        },
-        {
-            "type": "operator",
-            "subject": "Thorn",
-            "date": "Jun 28",
-            "text": "One hundred eighty-eight defensive rounds, 61.7% win rate, 1.32 K/D, seventy-three assists — the season's spine at one hundred thirty-six matches and Bronze II. One hundred sixteen wins in one-eighty-eight says Razorblooms on the plant window or choke the attack walks; one ace says the ceiling still climbs. Queue her first on defense — not another Montagne spread night at sixty-two rounds."
-        },
-        {
-            "type": "operator",
-            "subject": "Denari",
-            "date": "Jun 28",
-            "text": "One hundred twelve defensive rounds, 53.6% win rate, 0.57 K/D, thirty-six assists — Y11S2 defender at volume with team impact over frags. Sixty wins in one-twelve says the gadget is doing work even when K/D looks thin; sixty-six point seven percent headshots on fifty-one kills says precision traps. Anchor-trap op — judge denial and assists, not highlight K/D."
-        },
-        {
-            "type": "operator",
-            "subject": "Dokkaebi",
-            "date": "Jun 27",
-            "text": "Sixty-eight attack rounds, 45.6% win rate, 0.88 K/D, twenty-four assists — Jegeo Payload at grind volume. Thirty-one wins in sixty-eight says the hack converts when the stack syncs; twenty-four assists says phone pressure is team value. Stay on her for attack defaults over Gridlock at 52.5% with weaker round impact."
-        },
-        {
-            "type": "operator",
-            "subject": "Montagne",
-            "date": "Jun 27",
-            "text": "Sixty-two defensive rounds, 48.4% win rate, 0.34 K/D — shield anchor at volume with sub-fifty WR. Thirty wins in sixty-two says the extendo still buys time when the stack trades; three assists on fourteen kills is pure denial value. Not a frag op — coach the habit: hold the choke the plant needs, don't rotate for hero peeks when Thorn is posting sixty-one point seven percent."
-        },
-        {
-            "type": "operator",
-            "subject": "Lion",
-            "date": "Jun 27",
-            "text": "Forty-three attack rounds, 53.5% win rate, 0.81 K/D, eight assists — EE-One-D flex with two TKs logged. Twenty-three wins in forty-three says intel pressure when the execute follows; forty-eight percent headshots on twenty-five kills says the V308 converts on commit. Surgical attack pick behind Dokkaebi volume — not spread over Thorn's one-eighty-eight defensive minutes."
-        },
-        {
-            "type": "map",
-            "subject": "Calypso Casino",
-            "date": "Jun 23",
-            "text": "Jun 23 Calypso split — 4:2 W with eight-two-two and twin 3K tags, then 4:5 L with Victim and two 2K tags buried in a loss. Vertical casino punishes untimed pushes; you proved both outcomes in one session. Bronze III at 1,700 — closure on the second game decides whether the night prints or donates."
-        },
-        {
-            "type": "operator",
-            "subject": "Thorn",
-            "date": "Jun 23",
-            "text": "One hundred fifty-three defensive rounds, 60.8% win rate, 1.21 K/D, sixty-three assists — the season's spine at one hundred eleven matches. Ninety-three wins in one-fifty-three says Razorblooms on the plant window or choke the attack walks; K/D undersells trap value, but 1.21 says you're collecting too. Queue her first on defense — not another Montagne spread night."
-        },
-        {
-            "type": "operator",
-            "subject": "Denari",
-            "date": "Jun 23",
-            "text": "One hundred one defensive rounds, 51.5% win rate, 0.55 K/D, sixty-eight point nine percent headshots — Y11S2 defender at volume with team impact over frags. Fifty-two wins in one-oh-one says the gadget is doing work even when K/D looks thin; thirty-four assists on forty-five kills says round impact. Anchor-trap op — judge denial and assists, not highlight K/D."
-        },
-        {
-            "type": "operator",
-            "subject": "Dokkaebi",
-            "date": "Jun 23",
-            "text": "Sixty-eight attack rounds, 45.6% win rate, 0.88 K/D, twenty-four assists — Jegeo Payload at grind volume. Thirty-one wins in sixty-eight says the hack converts when the stack syncs; twenty-four assists says phone pressure is team value. Stay on her for attack defaults over Gridlock at fifty percent with weaker K/D."
-        },
-        {
-            "type": "operator",
-            "subject": "Thatcher",
-            "date": "Jun 22",
-            "text": "Thirteen attack rounds, 76.9% win rate, 1.80 K/D — EMP support printing in a small sample. Ten wins in thirteen says breach prep when the wall matters; zero assists still fine for Thatcher's job — deny Bandit/Mute, let the breach stick. Surgical pick on hard-wall sites."
-        },
-        {
-            "type": "operator",
-            "subject": "Maestro",
-            "date": "Jun 21",
-            "text": "Seven defensive rounds, 85.7% win rate, 1.00 K/D, seven assists — cam anchor with absurd WR in micro volume. Six wins in seven says Evil Eye placement on the angle that matters; seven assists on two kills is pure intel value. Flex behind Thorn's one-fifty-three — not a default over the trap main."
-        },
-        {
-            "type": "map",
             "subject": "Consulate",
             "date": "Jun 10",
             "text": "A 4:1 cap at +26 RP to top the Jun 10 block — 2/4/4 at 0.50 K/D with four assists and no highlight badge. That is the correct Consulate receipt: you did not win the frag column, you won the round clock. Oregon opened the night at 0/5/2; Calypso and Outback printed 3Ks that closed; Consulate finished the invoice. This is how Copper I becomes Bronze — three-map discipline, not one heroic loss on coastline."
@@ -3106,6 +3034,78 @@
             "subject": "Montagne",
             "date": "Jun 20",
             "text": "Twenty-eight rounds, 53.6% win rate, 0.60 K/D — shield stall volume hiding in the flex row on a marathon dossier. Montagne wins on time bought and space created for Thorn refrags, not K/D; fifteen wins in twenty-eight says the stall converted when the stack swung behind the shield. Don't chase frags on the extend — chase the push delayed long enough for traps to pop."
+        },
+        {
+            "type": "map",
+            "subject": "Calypso Casino",
+            "date": "Jun 23",
+            "text": "Jun 23 Calypso split — 4:2 W with eight-two-two and twin 3K tags, then 4:5 L with Victim and two 2K tags buried in a loss. Vertical casino punishes untimed pushes; you proved both outcomes in one session. Bronze III at 1,700 — closure on the second game decides whether the night prints or donates."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 23",
+            "text": "One hundred fifty-three defensive rounds, 60.8% win rate, 1.21 K/D, sixty-three assists — the season's spine at one hundred eleven matches. Ninety-three wins in one-fifty-three says Razorblooms on the plant window or choke the attack walks; K/D undersells trap value, but 1.21 says you're collecting too. Queue her first on defense — not another Montagne spread night."
+        },
+        {
+            "type": "operator",
+            "subject": "Denari",
+            "date": "Jun 23",
+            "text": "One hundred one defensive rounds, 51.5% win rate, 0.55 K/D, sixty-eight point nine percent headshots — Y11S2 defender at volume with team impact over frags. Fifty-two wins in one-oh-one says the gadget is doing work even when K/D looks thin; thirty-four assists on forty-five kills says round impact. Anchor-trap op — judge denial and assists, not highlight K/D."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 23",
+            "text": "Sixty-eight attack rounds, 45.6% win rate, 0.88 K/D, twenty-four assists — Jegeo Payload at grind volume. Thirty-one wins in sixty-eight says the hack converts when the stack syncs; twenty-four assists says phone pressure is team value. Stay on her for attack defaults over Gridlock at fifty percent with weaker K/D."
+        },
+        {
+            "type": "operator",
+            "subject": "Thatcher",
+            "date": "Jun 22",
+            "text": "Thirteen attack rounds, 76.9% win rate, 1.80 K/D — EMP support printing in a small sample. Ten wins in thirteen says breach prep when the wall matters; zero assists still fine for Thatcher's job — deny Bandit/Mute, let the breach stick. Surgical pick on hard-wall sites."
+        },
+        {
+            "type": "operator",
+            "subject": "Maestro",
+            "date": "Jun 21",
+            "text": "Seven defensive rounds, 85.7% win rate, 1.00 K/D, seven assists — cam anchor with absurd WR in micro volume. Six wins in seven says Evil Eye placement on the angle that matters; seven assists on two kills is pure intel value. Flex behind Thorn's one-fifty-three — not a default over the trap main."
+        },
+        {
+            "type": "map",
+            "subject": "Border",
+            "date": "Jun 28",
+            "text": "Jun 28 Border 4:1 — seven-one-one, twenty-eight point six percent headshots, 4K on the W that banked twenty-six RP in the eight-game marathon. After Jun 27's sixteen-game block and Calypso taxes, Border was closure: multi-kill impact that actually closed the set and pushed you into Bronze II at 1,813. Vertical reads plus plant discipline — not another highlight reel on a loss."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 28",
+            "text": "One hundred eighty-eight defensive rounds, 61.7% win rate, 1.32 K/D, seventy-three assists — the season's spine at one hundred thirty-six matches and Bronze II. One hundred sixteen wins in one-eighty-eight says Razorblooms on the plant window or choke the attack walks; one ace says the ceiling still climbs. Queue her first on defense — not another Montagne spread night at sixty-two rounds."
+        },
+        {
+            "type": "operator",
+            "subject": "Denari",
+            "date": "Jun 28",
+            "text": "One hundred twelve defensive rounds, 53.6% win rate, 0.57 K/D, thirty-six assists — Y11S2 defender at volume with team impact over frags. Sixty wins in one-twelve says the gadget is doing work even when K/D looks thin; sixty-six point seven percent headshots on fifty-one kills says precision traps. Anchor-trap op — judge denial and assists, not highlight K/D."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 27",
+            "text": "Sixty-eight attack rounds, 45.6% win rate, 0.88 K/D, twenty-four assists — Jegeo Payload at grind volume. Thirty-one wins in sixty-eight says the hack converts when the stack syncs; twenty-four assists says phone pressure is team value. Stay on her for attack defaults over Gridlock at 52.5% with weaker round impact."
+        },
+        {
+            "type": "operator",
+            "subject": "Montagne",
+            "date": "Jun 27",
+            "text": "Sixty-two defensive rounds, 48.4% win rate, 0.34 K/D — shield anchor at volume with sub-fifty WR. Thirty wins in sixty-two says the extendo still buys time when the stack trades; three assists on fourteen kills is pure denial value. Not a frag op — coach the habit: hold the choke the plant needs, don't rotate for hero peeks when Thorn is posting sixty-one point seven percent."
+        },
+        {
+            "type": "operator",
+            "subject": "Lion",
+            "date": "Jun 27",
+            "text": "Forty-three attack rounds, 53.5% win rate, 0.81 K/D, eight assists — EE-One-D flex with two TKs logged. Twenty-three wins in forty-three says intel pressure when the execute follows; forty-eight percent headshots on twenty-five kills says the V308 converts on commit. Surgical attack pick behind Dokkaebi volume — not spread over Thorn's one-eighty-eight defensive minutes."
         }
     ]
 }

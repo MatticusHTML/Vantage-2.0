@@ -103,13 +103,13 @@ def apply_wave(slug, wave):
     m = re.search(r"```json\s*([\s\S]*?)```", text)
     data = json.loads(m.group(1))
     data["debrief"] = wave["debrief"]
-    data["comments"] = wave["comments"] + data.get("comments", [])
+    data["comments"] = data.get("comments", []) + wave["comments"]
     data["updated"] = UPDATED
     header = text.split("```json")[0]
     header = re.sub(r"\*\*Updated:\*\*.*", f"**Updated:** {UPDATED}", header)
     body = json.dumps(data, indent=4, ensure_ascii=False)
     path.write_text(f"{header}```json\n{body}\n```\n", encoding="utf-8")
-    print(f"{slug}: debrief + {len(wave['comments'])} comments prepended")
+    print(f"{slug}: debrief + {len(wave['comments'])} comments appended (latest wave)")
 
 
 def apply_oversight():
@@ -117,7 +117,7 @@ def apply_oversight():
     text = path.read_text(encoding="utf-8")
     m = re.search(r"```json\s*([\s\S]*?)```", text)
     data = json.loads(m.group(1))
-    data["comments"] = OVERSIGHT_WAVE + data.get("comments", [])
+    data["comments"] = data.get("comments", []) + OVERSIGHT_WAVE
     data["updated"] = UPDATED
     header = text.split("```json")[0]
     header = re.sub(r"\*\*Updated:\*\*.*", f"**Updated:** {UPDATED}", header)

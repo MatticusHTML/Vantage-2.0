@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Matticus HQ
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "Matticus HQ",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Silver IV",
         "rp": 2149,
@@ -933,78 +933,6 @@
         {
             "type": "map",
             "subject": "Oregon",
-            "date": "Jun 27",
-            "text": "Jun 27 Oregon 2:4 — six-four-two, sixty-six point seven percent headshots, a 4K and 1v3 Lost buried in the L that donated twenty-six RP. You had the highlight reel and not the round closure — Oregon punishes teams that win duels but lose the post-plant clock. Silver IV at 2,149 means the 4K tax is real rank, not decoration."
-        },
-        {
-            "type": "operator",
-            "subject": "Skopós",
-            "date": "Jun 27",
-            "text": "Thirty-four defensive rounds, 64.7% win rate, 0.57 K/D, nine assists — cam anchor at season volume doing the Y11S2 denial job. Twenty-two wins in thirty-four says the shell holds when phone discipline lands; weak K/D is expected on intel anchors when breaches get denied. Dismiss the hack, reposition the cams, let the team trade off your pings — not hero peek because the gun feels quiet."
-        },
-        {
-            "type": "operator",
-            "subject": "Finka",
-            "date": "Jun 26",
-            "text": "Sixteen attack rounds, 56.2% win rate, 1.67 K/D, sixty-six point seven percent headshots — boost operator printing when the stack commits. Fifteen kills on nine deaths says timed Adrenal Surge pushes, not ego peeks; four assists on fifteen kills says the team ate the advantage. Queue her on execute nights when Oregon and Lair need horsepower behind the plant."
-        },
-        {
-            "type": "operator",
-            "subject": "Alibi",
-            "date": "Jun 26",
-            "text": "Fifteen defensive rounds, 66.7% win rate, 1.00 K/D, three assists — Prisma decoys on real entry lines, ten wins in fifteen. Intel roamer value shows in pings that become trades; fifty-three point eight percent headshots on thirteen kills says MPX refrags land when decoys bait the shot. Spread decoys on approaches attackers shoot, then collect the reveal."
-        },
-        {
-            "type": "operator",
-            "subject": "Sens",
-            "date": "Jun 25",
-            "text": "Twelve attack rounds, 41.7% win rate, 1.00 K/D, five assists — XK23 flex with smoke and plant utility at modest volume. Five wins in twelve says secondary pick, not spread disease — coach the habit: smoke the choke that opens site, plant behind cover, don't dry peek because the gun felt fine on one map."
-        },
-        {
-            "type": "operator",
-            "subject": "Deimos",
-            "date": "Jun 25",
-            "text": "Eight attack rounds, 62.5% win rate, 1.67 K/D — Y11S2 attacker flex with positive signal in a real sample. Five wins in eight says duels land when queued intentionally on frag-leaning minutes. Don't dilute with one-round Ram and Pulse labs while Skopós and Finka carry the actual ranked minutes."
-        },
-        {
-            "type": "map",
-            "subject": "Fortress",
-            "date": "Jun 20",
-            "text": "Jun 20 Fortress 5:4 — seven-five-three, fifty-seven percent headshots, three 2K tags and a 1v1 Lost on the W that banked twenty-six RP. First squad night on the ledger since Jun 18 — multi-kill impact that actually closed the set instead of decorating another donation. Fortress rewards timed plants and refrags; you brought both after the Calypso tax week."
-        },
-        {
-            "type": "operator",
-            "subject": "Skopós",
-            "date": "Jun 20",
-            "text": "Twenty-three defensive rounds, 69.6% win rate, 0.56 K/D, five assists — cam anchor doing the job Y11S2 Dokkaebi remaster punishes if you ignore phone discipline. Sixteen wins in twenty-three says the shell holds; weak K/D is expected on intel anchors when breaches get denied. Dismiss the hack, reposition the cams, let the team trade off your pings."
-        },
-        {
-            "type": "operator",
-            "subject": "Finka",
-            "date": "Jun 20",
-            "text": "Twelve attack rounds, 66.7% win rate, 1.50 K/D, sixty-seven percent headshots — the boost operator printing when the stack commits. Eight wins in twelve says timed pushes, not ego peeks; three assists on nine kills says the team ate the advantage. Queue her on execute nights when the plant needs horsepower."
-        },
-        {
-            "type": "operator",
-            "subject": "Alibi",
-            "date": "Jun 20",
-            "text": "Twelve defensive rounds, 75.0% win rate, 1.00 K/D, two assists — Prisma decoys on real entry lines, nine wins in twelve. Intel roamer value shows in pings that become trades, not in highlight K/D. Spread decoys on approaches attackers shoot, then MPX refrags off the reveal."
-        },
-        {
-            "type": "operator",
-            "subject": "Sens",
-            "date": "Jun 20",
-            "text": "Nine attack rounds, 55.6% win rate, 1.20 K/D, five assists — XK23 era flex with smoke and plant utility. Five wins in nine is a real sample for a secondary pick; coach the habit: smoke the right choke, plant behind cover, don't dry peek because the gun feels good."
-        },
-        {
-            "type": "operator",
-            "subject": "Deimos",
-            "date": "Jun 20",
-            "text": "Seven rounds, 57.1% win rate, 1.33 K/D — small volume, positive signal on the Y11S2 attacker flex. Frag-leaning op where K/D matters; four wins in seven says the duels landed when queued intentionally. Don't spread into one-round Ram and Pulse labs while Skopós and Finka carry the real minutes."
-        },
-        {
-            "type": "map",
-            "subject": "Oregon",
             "date": "Jun 7",
             "text": "A 2–4 loss with a 3/4/3 line, 66.7% headshots, and a 1v1 Lost tag — that's placement pain in one ticket. You traded fine and fed three assists, then lost the duel that decided the set. Oregon punishes hero ball and late plants; this wasn't an aim problem, it was round closure. Silent Hunt closed at Silver I — System Override opens with the same movie unless the 1v1 starts converting."
         },
@@ -1181,6 +1109,78 @@
             "subject": "Sens",
             "date": "Jun 18",
             "text": "Six rounds, 50.0% win rate, 1.00 K/D — break-even flex, not the answer while Finka sits at 63.6%. R.O.U. Projector lines only pay off when the team pushes through the cover with you; three wins in six is acceptable pocket volume. Sens earns minutes behind the attack main, not as a stack-night default bleeding Calypso closure."
+        },
+        {
+            "type": "map",
+            "subject": "Fortress",
+            "date": "Jun 20",
+            "text": "Jun 20 Fortress 5:4 — seven-five-three, fifty-seven percent headshots, three 2K tags and a 1v1 Lost on the W that banked twenty-six RP. First squad night on the ledger since Jun 18 — multi-kill impact that actually closed the set instead of decorating another donation. Fortress rewards timed plants and refrags; you brought both after the Calypso tax week."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopós",
+            "date": "Jun 20",
+            "text": "Twenty-three defensive rounds, 69.6% win rate, 0.56 K/D, five assists — cam anchor doing the job Y11S2 Dokkaebi remaster punishes if you ignore phone discipline. Sixteen wins in twenty-three says the shell holds; weak K/D is expected on intel anchors when breaches get denied. Dismiss the hack, reposition the cams, let the team trade off your pings."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 20",
+            "text": "Twelve attack rounds, 66.7% win rate, 1.50 K/D, sixty-seven percent headshots — the boost operator printing when the stack commits. Eight wins in twelve says timed pushes, not ego peeks; three assists on nine kills says the team ate the advantage. Queue her on execute nights when the plant needs horsepower."
+        },
+        {
+            "type": "operator",
+            "subject": "Alibi",
+            "date": "Jun 20",
+            "text": "Twelve defensive rounds, 75.0% win rate, 1.00 K/D, two assists — Prisma decoys on real entry lines, nine wins in twelve. Intel roamer value shows in pings that become trades, not in highlight K/D. Spread decoys on approaches attackers shoot, then MPX refrags off the reveal."
+        },
+        {
+            "type": "operator",
+            "subject": "Sens",
+            "date": "Jun 20",
+            "text": "Nine attack rounds, 55.6% win rate, 1.20 K/D, five assists — XK23 era flex with smoke and plant utility. Five wins in nine is a real sample for a secondary pick; coach the habit: smoke the right choke, plant behind cover, don't dry peek because the gun feels good."
+        },
+        {
+            "type": "operator",
+            "subject": "Deimos",
+            "date": "Jun 20",
+            "text": "Seven rounds, 57.1% win rate, 1.33 K/D — small volume, positive signal on the Y11S2 attacker flex. Frag-leaning op where K/D matters; four wins in seven says the duels landed when queued intentionally. Don't spread into one-round Ram and Pulse labs while Skopós and Finka carry the real minutes."
+        },
+        {
+            "type": "map",
+            "subject": "Oregon",
+            "date": "Jun 27",
+            "text": "Jun 27 Oregon 2:4 — six-four-two, sixty-six point seven percent headshots, a 4K and 1v3 Lost buried in the L that donated twenty-six RP. You had the highlight reel and not the round closure — Oregon punishes teams that win duels but lose the post-plant clock. Silver IV at 2,149 means the 4K tax is real rank, not decoration."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopós",
+            "date": "Jun 27",
+            "text": "Thirty-four defensive rounds, 64.7% win rate, 0.57 K/D, nine assists — cam anchor at season volume doing the Y11S2 denial job. Twenty-two wins in thirty-four says the shell holds when phone discipline lands; weak K/D is expected on intel anchors when breaches get denied. Dismiss the hack, reposition the cams, let the team trade off your pings — not hero peek because the gun feels quiet."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 26",
+            "text": "Sixteen attack rounds, 56.2% win rate, 1.67 K/D, sixty-six point seven percent headshots — boost operator printing when the stack commits. Fifteen kills on nine deaths says timed Adrenal Surge pushes, not ego peeks; four assists on fifteen kills says the team ate the advantage. Queue her on execute nights when Oregon and Lair need horsepower behind the plant."
+        },
+        {
+            "type": "operator",
+            "subject": "Alibi",
+            "date": "Jun 26",
+            "text": "Fifteen defensive rounds, 66.7% win rate, 1.00 K/D, three assists — Prisma decoys on real entry lines, ten wins in fifteen. Intel roamer value shows in pings that become trades; fifty-three point eight percent headshots on thirteen kills says MPX refrags land when decoys bait the shot. Spread decoys on approaches attackers shoot, then collect the reveal."
+        },
+        {
+            "type": "operator",
+            "subject": "Sens",
+            "date": "Jun 25",
+            "text": "Twelve attack rounds, 41.7% win rate, 1.00 K/D, five assists — XK23 flex with smoke and plant utility at modest volume. Five wins in twelve says secondary pick, not spread disease — coach the habit: smoke the choke that opens site, plant behind cover, don't dry peek because the gun felt fine on one map."
+        },
+        {
+            "type": "operator",
+            "subject": "Deimos",
+            "date": "Jun 25",
+            "text": "Eight attack rounds, 62.5% win rate, 1.67 K/D — Y11S2 attacker flex with positive signal in a real sample. Five wins in eight says duels land when queued intentionally on frag-leaning minutes. Don't dilute with one-round Ram and Pulse labs while Skopós and Finka carry the actual ranked minutes."
         }
     ]
 }

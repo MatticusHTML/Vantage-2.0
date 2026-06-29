@@ -1,6 +1,6 @@
 # VANTAGE RECORD — LceW4ll0wCome (alt)
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Rogue_Amputee alt account. Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "LceW4ll0wCome",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Silver IV",
         "rp": 2156,
@@ -919,39 +919,39 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Oregon",
-            "date": "Jun 24",
-            "text": "Jun 24 Oregon 1:4 — six-four-one, sixteen point seven percent headshots, twin 2K tags and double 1v3 Lost buried in the shutout that donated twenty-six RP. Squad Emerald block same night — you had the multi-kill impact and not the round closure. Silver IV at 2,156 means the smurf tax is real; Rogue's main dossier is chasing the same Kaid template you're already posting at seventy-seven point eight percent."
-        },
-        {
-            "type": "operator",
-            "subject": "Kaid",
-            "date": "Jun 24",
-            "text": "Eighteen defensive rounds, 77.8% win rate, 3.50 K/D, seven assists — the smurf's anchor receipt still absurd. Fourteen wins in eighteen says Electroclaws on the wall that gates the real push; twenty-one kills on six deaths is denial over highlight frags. This is the template Rogue's main dossier keeps chasing — protect these minutes, don't dilute with Nomad spread on defense."
+            "subject": "Calypso Casino",
+            "date": "Jun 19",
+            "text": "Jun 19 was Calypso dominance on the alt — seven games across the day, six losses, minus one hundred thirteen RP, and five of those tickets touched the casino. The 4:0 shutdown with a 3K and two 2K tags proved the read exists; the five Ls that followed proved the plant clock doesn't care about one highlight reel. Vertical casino punishes untimed pushes — this map is the alt's report card until closure improves."
         },
         {
             "type": "operator",
             "subject": "Jackal",
-            "date": "Jun 24",
-            "text": "Thirty attack rounds, 36.7% win rate, 1.05 K/D, 54.5% headshots — highest attack volume on the alt and still below break-even. Eleven wins in thirty says the gun is fine, the plant clock isn't. Coach the habit: ping, trade, plant — not ping, peek, donate on Oregon nights when Kaid is posting 3.50 K/D on the other side."
-        },
-        {
-            "type": "operator",
-            "subject": "Nomad",
-            "date": "Jun 24",
-            "text": "Twenty-six attack rounds, 34.6% win rate, 0.95 K/D, four assists — Airjabs without round closure is the tax. Nine wins in twenty-six says the flex isn't earning queue time over Jackal when Kaid is posting 77.8% on defense. Nomad wins when traps slow the push the team punishes — not solo flank hero ball on a smurf still grinding Silver."
+            "date": "Jun 19",
+            "text": "Twenty-four attack rounds, 37.5% win rate, 1.06 K/D, 58.8% headshots — highest volume on the alt and still below break-even. Footprint tracking through walls plus refrags off the ping is the attack engine when entries sync to the stack; nine wins in twenty-four says the gun works but the execute doesn't always follow. Coach the habit: ping, trade, plant — not ping, peek, donate."
         },
         {
             "type": "operator",
             "subject": "Valkyrie",
-            "date": "Jun 21",
-            "text": "Sixteen defensive rounds, 68.8% win rate, 1.86 K/D, five assists — Black Eye intel buying trades the sheet loves. Eleven wins in sixteen says the alt's defensive ceiling still lives here. Cam coverage on flanks, active callouts, MPX refrags — queue her first on stack defense nights beside Kaid."
+            "date": "Jun 19",
+            "text": "Eleven defensive rounds, 72.7% win rate, 2.50 K/D, five assists — Black Eye intel buying trades the K/D sheet loves. Eight wins in eleven says the alt's defensive ceiling lives here, not on the Nomad spread. Cam coverage on flanks and site, active callouts, then MPX refrags — queue her first on defense nights until something else posts seventy percent at double-digit volume."
         },
         {
             "type": "operator",
-            "subject": "Kapkan",
-            "date": "Jun 21",
-            "text": "Ten defensive rounds, 70.0% win rate, 1.60 K/D, eight assists — trap anchor printing on a real sample. Seven wins in ten says traps on the approach attackers actually walk; eight assists on eight kills says placement discipline. Flex behind Kaid when the site needs denial, not Jackal volume on the other side at thirty-six point seven percent."
+            "subject": "Kaid",
+            "date": "Jun 19",
+            "text": "Eight rounds, 87.5% win rate, 2.25 K/D, six assists — tiny sample, elite anchor signal. Electroclaws on the wall that gates the real push; seven wins in eight says denial over highlight frags. Same template Rogue runs on the main dossier — the alt found the right defensive habit early. Protect the minutes; don't dilute with Mute at thirty-six percent on eleven when Kaid is printing."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 19",
+            "text": "Eleven attack rounds, 27.3% win rate, 0.78 K/D — Airsoft Arrows and rotate intel without round closure is the tax. Three wins in eleven says the flex isn't earning queue time over Jackal volume yet. Nomad wins when traps slow the push the team punishes — not solo flank hero ball on a smurf account still learning ranked 3.0 lobbies."
+        },
+        {
+            "type": "operator",
+            "subject": "Gridlock",
+            "date": "Jun 19",
+            "text": "Four rounds, 0.0% win rate, 0.75 K/D — zero wins on the Y11S2 health-buff stingers in a tiny sample. Trax on lanes roamers actually use, not open floor; four losses in four says the placement habit isn't there yet. Flex behind Jackal when the map needs flank denial — not a default pick while Valkyrie and Kaid carry the other side."
         },
         {
             "type": "map",
@@ -991,39 +991,39 @@
         },
         {
             "type": "map",
-            "subject": "Calypso Casino",
-            "date": "Jun 19",
-            "text": "Jun 19 was Calypso dominance on the alt — seven games across the day, six losses, minus one hundred thirteen RP, and five of those tickets touched the casino. The 4:0 shutdown with a 3K and two 2K tags proved the read exists; the five Ls that followed proved the plant clock doesn't care about one highlight reel. Vertical casino punishes untimed pushes — this map is the alt's report card until closure improves."
-        },
-        {
-            "type": "operator",
-            "subject": "Jackal",
-            "date": "Jun 19",
-            "text": "Twenty-four attack rounds, 37.5% win rate, 1.06 K/D, 58.8% headshots — highest volume on the alt and still below break-even. Footprint tracking through walls plus refrags off the ping is the attack engine when entries sync to the stack; nine wins in twenty-four says the gun works but the execute doesn't always follow. Coach the habit: ping, trade, plant — not ping, peek, donate."
-        },
-        {
-            "type": "operator",
-            "subject": "Valkyrie",
-            "date": "Jun 19",
-            "text": "Eleven defensive rounds, 72.7% win rate, 2.50 K/D, five assists — Black Eye intel buying trades the K/D sheet loves. Eight wins in eleven says the alt's defensive ceiling lives here, not on the Nomad spread. Cam coverage on flanks and site, active callouts, then MPX refrags — queue her first on defense nights until something else posts seventy percent at double-digit volume."
+            "subject": "Oregon",
+            "date": "Jun 24",
+            "text": "Jun 24 Oregon 1:4 — six-four-one, sixteen point seven percent headshots, twin 2K tags and double 1v3 Lost buried in the shutout that donated twenty-six RP. Squad Emerald block same night — you had the multi-kill impact and not the round closure. Silver IV at 2,156 means the smurf tax is real; Rogue's main dossier is chasing the same Kaid template you're already posting at seventy-seven point eight percent."
         },
         {
             "type": "operator",
             "subject": "Kaid",
-            "date": "Jun 19",
-            "text": "Eight rounds, 87.5% win rate, 2.25 K/D, six assists — tiny sample, elite anchor signal. Electroclaws on the wall that gates the real push; seven wins in eight says denial over highlight frags. Same template Rogue runs on the main dossier — the alt found the right defensive habit early. Protect the minutes; don't dilute with Mute at thirty-six percent on eleven when Kaid is printing."
+            "date": "Jun 24",
+            "text": "Eighteen defensive rounds, 77.8% win rate, 3.50 K/D, seven assists — the smurf's anchor receipt still absurd. Fourteen wins in eighteen says Electroclaws on the wall that gates the real push; twenty-one kills on six deaths is denial over highlight frags. This is the template Rogue's main dossier keeps chasing — protect these minutes, don't dilute with Nomad spread on defense."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 24",
+            "text": "Thirty attack rounds, 36.7% win rate, 1.05 K/D, 54.5% headshots — highest attack volume on the alt and still below break-even. Eleven wins in thirty says the gun is fine, the plant clock isn't. Coach the habit: ping, trade, plant — not ping, peek, donate on Oregon nights when Kaid is posting 3.50 K/D on the other side."
         },
         {
             "type": "operator",
             "subject": "Nomad",
-            "date": "Jun 19",
-            "text": "Eleven attack rounds, 27.3% win rate, 0.78 K/D — Airsoft Arrows and rotate intel without round closure is the tax. Three wins in eleven says the flex isn't earning queue time over Jackal volume yet. Nomad wins when traps slow the push the team punishes — not solo flank hero ball on a smurf account still learning ranked 3.0 lobbies."
+            "date": "Jun 24",
+            "text": "Twenty-six attack rounds, 34.6% win rate, 0.95 K/D, four assists — Airjabs without round closure is the tax. Nine wins in twenty-six says the flex isn't earning queue time over Jackal when Kaid is posting 77.8% on defense. Nomad wins when traps slow the push the team punishes — not solo flank hero ball on a smurf still grinding Silver."
         },
         {
             "type": "operator",
-            "subject": "Gridlock",
-            "date": "Jun 19",
-            "text": "Four rounds, 0.0% win rate, 0.75 K/D — zero wins on the Y11S2 health-buff stingers in a tiny sample. Trax on lanes roamers actually use, not open floor; four losses in four says the placement habit isn't there yet. Flex behind Jackal when the map needs flank denial — not a default pick while Valkyrie and Kaid carry the other side."
+            "subject": "Valkyrie",
+            "date": "Jun 21",
+            "text": "Sixteen defensive rounds, 68.8% win rate, 1.86 K/D, five assists — Black Eye intel buying trades the sheet loves. Eleven wins in sixteen says the alt's defensive ceiling still lives here. Cam coverage on flanks, active callouts, MPX refrags — queue her first on stack defense nights beside Kaid."
+        },
+        {
+            "type": "operator",
+            "subject": "Kapkan",
+            "date": "Jun 21",
+            "text": "Ten defensive rounds, 70.0% win rate, 1.60 K/D, eight assists — trap anchor printing on a real sample. Seven wins in ten says traps on the approach attackers actually walk; eight assists on eight kills says placement discipline. Flex behind Kaid when the site needs denial, not Jackal volume on the other side at thirty-six point seven percent."
         }
     ]
 }

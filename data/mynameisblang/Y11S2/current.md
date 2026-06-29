@@ -1,6 +1,6 @@
 # VANTAGE RECORD — Mynameisblang
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 24, 2026 · morning PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "Mynameisblang",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 24, 2026 · morning PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Platinum V",
         "rp": 3048,
@@ -3253,42 +3253,6 @@
     "debrief": "<p><b>Platinum V · 3,048 RP · 74–68 · 52.1% win rate · 0.88 K/D.</b> Jun 23 four-game block: Bank 5:3 W, Kafe 4:1 with a 1v2 Clutch and 3K, Chalet and Oregon Ls. Jun 22 Oregon 5:3 with three 2K tags. Jun 21 Oregon 4:5 had a 4K and 3K that still couldn't close. Platinum V secured.</p><p><b>Finka at 50.0% over one hundred fourteen attack rounds</b>, <b>Oryx at 57.4% over ninety-four</b>, <b>Thunderbird at 59.1% over ninety-three</b> — three mains north of ninety rounds each.</p><p>Peak <b>3,142</b>. Fifty-two RP to Platinum IV. Ride Thunderbird and Oryx, time Finka boosts with stack executes, and stop letting Oregon overtime eat 4K decorations.</p>",
     "comments": [
         {
-            "type": "map",
-            "subject": "Bank",
-            "date": "Jun 23",
-            "text": "Jun 23 Bank 5:3 — five-eight-three, sixty percent headshots, Victim and two 2K tags on the W that parked you at 3,048 Platinum V. After Jun 22 Oregon and Jun 21's rollback noise, Bank was stack closure: trades that finish, plant timed, rank tier secured. Fifty-two RP to Platinum IV from here."
-        },
-        {
-            "type": "operator",
-            "subject": "Thunderbird",
-            "date": "Jun 23",
-            "text": "Ninety-three defensive rounds, 59.1% win rate, 1.26 K/D, thirty assists — Kóna sustain anchor at elite volume. Fifty-five wins in ninety-three says placement and rez timing print rounds; 55.8% headshots on seventy-seven kills says the Spear still frags. Queue her on denial sites when the stack needs a floor that doesn't fold."
-        },
-        {
-            "type": "operator",
-            "subject": "Oryx",
-            "date": "Jun 23",
-            "text": "Ninety-four defensive rounds, 57.4% win rate, 1.04 K/D, 73.3% headshots — roam anchor with real frag upside. Fifty-four wins in ninety-four says Remah Dash pressure on flanks that collapse late; seventy-five kills says the gun backs the mobility. Unconventional Oryx at fifty-seven percent WR — leave it alone, it's working."
-        },
-        {
-            "type": "operator",
-            "subject": "Finka",
-            "date": "Jun 23",
-            "text": "One hundred fourteen attack rounds, 50.0% win rate, 0.98 K/D, fifty-six percent headshots — boost operator at season volume. Fifty-seven wins in one-fourteen says break-even at scale; twenty-six assists on eighty-four kills says the team eats the advantage when you boost on commit. Time the adrenal surge with the plant, not the dry peek."
-        },
-        {
-            "type": "operator",
-            "subject": "Dokkaebi",
-            "date": "Jun 23",
-            "text": "Ninety-two attack rounds, 42.4% win rate, 0.62 K/D, eighteen assists — Jegeo Payload at grind volume with weak frags. Thirty-nine wins in ninety-two says intel pressure without enough closure; coach the habit: scan the anchor, hack on commit, don't hoard charges for cinematic rounds that never land."
-        },
-        {
-            "type": "operator",
-            "subject": "Doc",
-            "date": "Jun 23",
-            "text": "Twenty-five defensive rounds, 72.0% win rate, 2.33 K/D, sixty-four point three percent headshots — MP7 anchor in a smaller sample that screams when queued. Eighteen wins in twenty-five says stim sustain on the site angle; twenty-eight kills on twelve deaths is surgical, not spread. Flex behind Thunderbird's ninety-three — not a default over the volume anchors."
-        },
-        {
             "subject": "Emerald Plains",
             "text": "A 4:0 shutout at +13 RP in the middle of a −104 RP night — 5/2/0 with a 3K and 2K tag at 40% headshots. Emerald Plains rewarded the execute when Calypso and Chalet were bleeding the block dry. This is the map read to bank: not the 4K on Consulate that still lost 2:4, not the 0/4/0 Oregon donation — the set that ends before overtime taxes your patience. One clean 4:0 in a seven-loss day is proof the mechanics exist; the invoice is paid when you string two of these back-to-back.",
             "type": "map",
@@ -3467,6 +3431,42 @@
             "subject": "Ash",
             "date": "Jun 19",
             "text": "Forty-four attack rounds, 47.7% win rate, 0.67 K/D, 58.3% headshots — breach-entry flex behind Finka volume when the site wants ranged soft breach. Twenty-one wins in forty-four is break-even on a fragger op where K/D and entry timing carry weight. Use M120 rounds for hatch lines and utility clear before dry-peeking — the habit fix on sub-fifty WR is informed aggression, not passive holding."
+        },
+        {
+            "type": "map",
+            "subject": "Bank",
+            "date": "Jun 23",
+            "text": "Jun 23 Bank 5:3 — five-eight-three, sixty percent headshots, Victim and two 2K tags on the W that parked you at 3,048 Platinum V. After Jun 22 Oregon and Jun 21's rollback noise, Bank was stack closure: trades that finish, plant timed, rank tier secured. Fifty-two RP to Platinum IV from here."
+        },
+        {
+            "type": "operator",
+            "subject": "Thunderbird",
+            "date": "Jun 23",
+            "text": "Ninety-three defensive rounds, 59.1% win rate, 1.26 K/D, thirty assists — Kóna sustain anchor at elite volume. Fifty-five wins in ninety-three says placement and rez timing print rounds; 55.8% headshots on seventy-seven kills says the Spear still frags. Queue her on denial sites when the stack needs a floor that doesn't fold."
+        },
+        {
+            "type": "operator",
+            "subject": "Oryx",
+            "date": "Jun 23",
+            "text": "Ninety-four defensive rounds, 57.4% win rate, 1.04 K/D, 73.3% headshots — roam anchor with real frag upside. Fifty-four wins in ninety-four says Remah Dash pressure on flanks that collapse late; seventy-five kills says the gun backs the mobility. Unconventional Oryx at fifty-seven percent WR — leave it alone, it's working."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 23",
+            "text": "One hundred fourteen attack rounds, 50.0% win rate, 0.98 K/D, fifty-six percent headshots — boost operator at season volume. Fifty-seven wins in one-fourteen says break-even at scale; twenty-six assists on eighty-four kills says the team eats the advantage when you boost on commit. Time the adrenal surge with the plant, not the dry peek."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 23",
+            "text": "Ninety-two attack rounds, 42.4% win rate, 0.62 K/D, eighteen assists — Jegeo Payload at grind volume with weak frags. Thirty-nine wins in ninety-two says intel pressure without enough closure; coach the habit: scan the anchor, hack on commit, don't hoard charges for cinematic rounds that never land."
+        },
+        {
+            "type": "operator",
+            "subject": "Doc",
+            "date": "Jun 23",
+            "text": "Twenty-five defensive rounds, 72.0% win rate, 2.33 K/D, sixty-four point three percent headshots — MP7 anchor in a smaller sample that screams when queued. Eighteen wins in twenty-five says stim sustain on the site angle; twenty-eight kills on twelve deaths is surgical, not spread. Flex behind Thunderbird's ninety-three — not a default over the volume anchors."
         }
     ]
 }

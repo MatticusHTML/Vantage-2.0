@@ -1,6 +1,6 @@
 # VANTAGE RECORD — CunderThock
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 28, 2026 · evening PT
+**Updated:** Jun 29, 2026 · morning PT
 
 > Source of truth for the website. Edit via Cursor. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "CunderThock",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 28, 2026 · evening PT",
+    "updated": "Jun 29, 2026 · morning PT",
     "meta": {
         "rank": "Gold V",
         "rp": 2568,
@@ -1114,78 +1114,6 @@
     "comments": [
         {
             "type": "map",
-            "subject": "Chalet",
-            "date": "Jun 28",
-            "text": "Jun 28 Chalet 4:0 — six-one-one, fifty percent headshots, 4K and 2K on the shutout that banked twenty-five RP to 2,568. After Jun 27's twin Oregon donations and Jun 26's mixed block, Chalet was stack closure: trades that finish, plant timed, rank pushed past the Jun 23 Bank anchor. Fifty-two RP to Gold IV from here."
-        },
-        {
-            "type": "operator",
-            "subject": "Tachanka",
-            "date": "Jun 28",
-            "text": "One hundred thirty-six defensive rounds, 62.5% win rate, 0.94 K/D, forty-two assists — the Lord is still the spine of a Gold V dossier at 2,568 RP. Eighty-five wins in one-thirty-six says LMG denial scales when you commit; Jun 22's 4K on a 0:4 Chalet L proves frags without closure still tax rank. Anchor first, refrag second, hero ball never."
-        },
-        {
-            "type": "operator",
-            "subject": "Zero",
-            "date": "Jun 27",
-            "text": "One hundred twenty-two attack rounds, 43.4% win rate, 0.82 K/D, twenty-three assists — intel volume without enough round closure. Fifty-three wins in one-twenty-two says the cams are working; the execute isn't always following. Coach the habit: Argus on the breach that opens site, refrag with the team — not solo peek because fifty-two percent headshots look fine on paper."
-        },
-        {
-            "type": "operator",
-            "subject": "Twitch",
-            "date": "Jun 26",
-            "text": "Nine attack rounds, 66.7% win rate, 3.50 K/D, fifty percent headshots — F2 lab that actually closed in a small sample. Six wins in nine says purposeful duelist minutes when the stack syncs; fourteen kills on four deaths is loud frag signal. Flex behind Tachanka defense when the site needs hard breach denial clear — not default over Zero volume."
-        },
-        {
-            "type": "operator",
-            "subject": "Jackal",
-            "date": "Jun 24",
-            "text": "Seven attack rounds, 42.9% win rate, 2.75 K/D, 63.6% headshots — tiny sample, loud frag signal on the Jun 24 Oregon 5:3 W. Footprint tracking when the stack syncs; three wins in seven says don't default over Zero's one-twenty-two, but ride him when the map needs hard trades after Emerald donates."
-        },
-        {
-            "type": "operator",
-            "subject": "Bandit",
-            "date": "Jun 24",
-            "text": "Twelve defensive rounds, 66.7% win rate, 0.45 K/D, five assists — trick anchor printing in a modest sample. Eight wins in twelve says active tricking when queued intentionally; low K/D is fine on Bandit when the wall denies the hard breach. Stack with Tachanka on denial sites — Electroclaw overlap without spreading into Snake's nine percent WR lab."
-        },
-        {
-            "type": "map",
-            "subject": "Bank",
-            "date": "Jun 23",
-            "text": "Jun 23 Bank 5:3 — five-six-two, eighty percent headshots, a 2K and a 1v2 Lost on the W that parked you at Gold V. After Jun 22 Chalet donated twenty-six and Jun 21's seven-game block, Bank was the stack-closure read: trades that finish, plant timed, rank secured at 2,548. Fifty-two RP to Gold IV from here."
-        },
-        {
-            "type": "operator",
-            "subject": "Tachanka",
-            "date": "Jun 23",
-            "text": "One hundred eleven defensive rounds, 63.1% win rate, 0.93 K/D, thirty-seven assists — the Lord is still the spine of a Gold V dossier. Seventy wins in one-eleven says LMG denial scales when you commit; Jun 22's 4K on a 0:4 Chalet L proves frags without closure still tax rank. Anchor first, refrag second, hero ball never."
-        },
-        {
-            "type": "operator",
-            "subject": "Zero",
-            "date": "Jun 21",
-            "text": "Ninety-five attack rounds, 45.3% win rate, 0.85 K/D, twenty-one assists — intel volume without enough round closure. Forty-three wins in ninety-five says the cams are working; the execute isn't always following. Coach the habit: Argus on the breach that opens site, refrag with the team — not solo peek because the K/D looks fine on paper."
-        },
-        {
-            "type": "operator",
-            "subject": "Jackal",
-            "date": "Jun 21",
-            "text": "Seven attack rounds, 42.9% win rate, 2.75 K/D, 63.6% headshots — tiny sample, loud frag signal. Footprint tracking when the stack syncs; three wins in seven says don't default over Zero volume, but ride him when the map needs hard trades."
-        },
-        {
-            "type": "operator",
-            "subject": "Twitch",
-            "date": "Jun 21",
-            "text": "Six attack rounds, 66.7% win rate, 5.00 K/D — F2 lab that actually closed. Four wins in six says purposeful duelist minutes, not spread disease. Flex behind Tachanka defense when the site needs hard breach denial clear."
-        },
-        {
-            "type": "operator",
-            "subject": "Mozzie",
-            "date": "Jun 21",
-            "text": "Two defensive rounds, 100.0% win rate — Y11S2 pest range buff in a micro sample. Both wins says when you queue Mozzie, the pests land on the drone lane that matters. Not a main over the Lord — a surgical deny call on drone-heavy maps."
-        },
-        {
-            "type": "map",
             "subject": "Oregon",
             "date": "Jun 3",
             "text": "A 3:5 loss with a 4K and a 1v2 Lost on the same ticket — that's the Cunder special in miniature. Six kills, seven deaths, 66.7% HS: you traded fine and still donated the round because the multi-kill didn't convert to a W. On Oregon, the plant clock and site structure punish hero ball; you got the clip, not the RP."
@@ -1435,6 +1363,78 @@
             "subject": "Solid Snake",
             "date": "Jun 20",
             "text": "Nine attack rounds, 11.1% win rate, 0.71 K/D — the lab pick grew and still bleeds RP while Tachanka owns defense and Zero owns attack identity. One win in nine says you're facechecking with a flanker on weeks that already tax rank. Snake wins on radar intel from cover and silent F2 pressure off the call; ranked belongs to the Lord and the tablet until the queue is casual. Park the experiment."
+        },
+        {
+            "type": "map",
+            "subject": "Bank",
+            "date": "Jun 23",
+            "text": "Jun 23 Bank 5:3 — five-six-two, eighty percent headshots, a 2K and a 1v2 Lost on the W that parked you at Gold V. After Jun 22 Chalet donated twenty-six and Jun 21's seven-game block, Bank was the stack-closure read: trades that finish, plant timed, rank secured at 2,548. Fifty-two RP to Gold IV from here."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 23",
+            "text": "One hundred eleven defensive rounds, 63.1% win rate, 0.93 K/D, thirty-seven assists — the Lord is still the spine of a Gold V dossier. Seventy wins in one-eleven says LMG denial scales when you commit; Jun 22's 4K on a 0:4 Chalet L proves frags without closure still tax rank. Anchor first, refrag second, hero ball never."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 21",
+            "text": "Ninety-five attack rounds, 45.3% win rate, 0.85 K/D, twenty-one assists — intel volume without enough round closure. Forty-three wins in ninety-five says the cams are working; the execute isn't always following. Coach the habit: Argus on the breach that opens site, refrag with the team — not solo peek because the K/D looks fine on paper."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 21",
+            "text": "Seven attack rounds, 42.9% win rate, 2.75 K/D, 63.6% headshots — tiny sample, loud frag signal. Footprint tracking when the stack syncs; three wins in seven says don't default over Zero volume, but ride him when the map needs hard trades."
+        },
+        {
+            "type": "operator",
+            "subject": "Twitch",
+            "date": "Jun 21",
+            "text": "Six attack rounds, 66.7% win rate, 5.00 K/D — F2 lab that actually closed. Four wins in six says purposeful duelist minutes, not spread disease. Flex behind Tachanka defense when the site needs hard breach denial clear."
+        },
+        {
+            "type": "operator",
+            "subject": "Mozzie",
+            "date": "Jun 21",
+            "text": "Two defensive rounds, 100.0% win rate — Y11S2 pest range buff in a micro sample. Both wins says when you queue Mozzie, the pests land on the drone lane that matters. Not a main over the Lord — a surgical deny call on drone-heavy maps."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 28",
+            "text": "Jun 28 Chalet 4:0 — six-one-one, fifty percent headshots, 4K and 2K on the shutout that banked twenty-five RP to 2,568. After Jun 27's twin Oregon donations and Jun 26's mixed block, Chalet was stack closure: trades that finish, plant timed, rank pushed past the Jun 23 Bank anchor. Fifty-two RP to Gold IV from here."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 28",
+            "text": "One hundred thirty-six defensive rounds, 62.5% win rate, 0.94 K/D, forty-two assists — the Lord is still the spine of a Gold V dossier at 2,568 RP. Eighty-five wins in one-thirty-six says LMG denial scales when you commit; Jun 22's 4K on a 0:4 Chalet L proves frags without closure still tax rank. Anchor first, refrag second, hero ball never."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 27",
+            "text": "One hundred twenty-two attack rounds, 43.4% win rate, 0.82 K/D, twenty-three assists — intel volume without enough round closure. Fifty-three wins in one-twenty-two says the cams are working; the execute isn't always following. Coach the habit: Argus on the breach that opens site, refrag with the team — not solo peek because fifty-two percent headshots look fine on paper."
+        },
+        {
+            "type": "operator",
+            "subject": "Twitch",
+            "date": "Jun 26",
+            "text": "Nine attack rounds, 66.7% win rate, 3.50 K/D, fifty percent headshots — F2 lab that actually closed in a small sample. Six wins in nine says purposeful duelist minutes when the stack syncs; fourteen kills on four deaths is loud frag signal. Flex behind Tachanka defense when the site needs hard breach denial clear — not default over Zero volume."
+        },
+        {
+            "type": "operator",
+            "subject": "Jackal",
+            "date": "Jun 24",
+            "text": "Seven attack rounds, 42.9% win rate, 2.75 K/D, 63.6% headshots — tiny sample, loud frag signal on the Jun 24 Oregon 5:3 W. Footprint tracking when the stack syncs; three wins in seven says don't default over Zero's one-twenty-two, but ride him when the map needs hard trades after Emerald donates."
+        },
+        {
+            "type": "operator",
+            "subject": "Bandit",
+            "date": "Jun 24",
+            "text": "Twelve defensive rounds, 66.7% win rate, 0.45 K/D, five assists — trick anchor printing in a modest sample. Eight wins in twelve says active tricking when queued intentionally; low K/D is fine on Bandit when the wall denies the hard breach. Stack with Tachanka on denial sites — Electroclaw overlap without spreading into Snake's nine percent WR lab."
         }
     ]
 }
