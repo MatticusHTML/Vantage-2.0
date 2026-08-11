@@ -1,13 +1,13 @@
 # OVERSIGHT — Squad Team Debrief
 **Season:** Y11S2 · Operation System Override  
-**Updated:** Jun 29, 2026 · morning PT
+**Updated:** Aug 10, 2026 - morning PT
 
 ```json
 {
     "name": "OVERSIGHT",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Jun 29, 2026 · morning PT",
+    "updated": "Aug 10, 2026 - morning PT",
     "comments": [
         {
             "type": "map",
@@ -404,6 +404,42 @@
             "subject": "Aruni",
             "date": "Jun 28",
             "text": "slackandlack's Aruni: forty defensive rounds, 70.0% win rate, 1.74 K/D, two aces — gate anchor at Silver II 2,327 after Jun 28 Chalet 4:0. Doc at 58.3% over forty-eight and Osa at 44.9% over forty-nine split the other chairs. Cross-roster anchors: Cunder on Tachanka, Sandman on Kaid/Frost, MJester on Thorn. slack's defensive identity is locked — the tax is still Osa attack closure and Bank 3:5 donations after Chalet prints."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Aug 4",
+            "text": "Chalet keeps being the squad's shared proving ground. slackandlack swept it 4:2 mid-stretch on the way to Gold III; Rogue_Amputee split it across a six-week climb; Sandman, Jester, and Blang all logged both wins and donations there. Across the board this update: Rogue_Amputee climbed five full rank tiers — Bronze II to Gold V — and slackandlack climbed two, Silver II to Gold III. When the same map repeats across five dossiers in one stretch, the lesson isn't the map — it's that the squad is playing enough volume right now for patterns to actually mean something."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jul 22",
+            "text": "Rogue_Amputee's Nomad: one hundred sixty-eight attack rounds, 47.0% win rate — the volume engine behind a five-tier climb from Bronze II to Gold V. Cross-roster contrast: CunderThock still runs Zero at volume for intel, Sandman runs Sledge for frags, slackandlack splits Osa and Thermite, Blang runs Finka. Six different attack identities, six different rank bands — the squad doesn't need one answer, it needs each dossier to keep committing to its own."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jul 20",
+            "text": "MJester1337's Thorn: three hundred thirty-nine defensive rounds — the largest single-operator sample on the entire seven-player roster, still printing at 59.9%. The volume dwarfs entire dossiers' total matches. Grandmaster Sandman's defensive anchor is Frost at 70.0%; slackandlack's is Doc at 59.6%; CunderThock's is still Tachanka past 180 rounds. Four different defensive identities, all above break-even — this squad's denial game is the strongest it's been all season."
+        },
+        {
+            "type": "operator",
+            "subject": "Doc",
+            "date": "Jul 19",
+            "text": "slackandlack's Doc: eighty-nine defensive rounds, 59.6% win rate, 1.51 K/D — the anchor behind a Silver II to Gold III climb. Aruni backs him up at 64.6%, the best win rate on slack's card. Cross-roster: Rogue's Mute-Kaid pairing, Sandman's Frost-Kaid pairing, and now slack's Doc-Aruni pairing are all printing simultaneously — three separate two-operator defensive systems, three separate rank climbs."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 23",
+            "text": "Finka shows up at real volume on two dossiers with opposite shapes. Mynameisblang: one hundred fourteen rounds, dead-even 50.0%, the volume anchor of a Platinum IV card. Matticus HQ: eighteen rounds, 55.6%, a smaller but sharper sample backing a Silver III push. Same operator, same Adrenal Surge job — the squad-wide read hasn't changed since June: the buff wins when the whole team commits to the execute together, and it's costing rounds everywhere it gets popped solo."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jul 24",
+            "text": "Grandmaster Sandman's Sledge: one hundred eighteen attack rounds, dead-even 50.0% win rate — still the attack main behind Gold III, but the win rate finally cooled after a season of climbing. When a Sledge win rate stalls flat, it usually traces to over-aggressive solo entries, not the hammer — worth a look before the next stack night. Everywhere else on the roster attack identities keep separating out: Rogue on Nomad, Cunder on Zero, slack split Osa and Thermite, Blang on Finka. Five different attack philosophies, one shared coaching note: time the entry, don't force it."
         }
     ]
 }
