@@ -7,7 +7,7 @@
     "name": "OVERSIGHT",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Aug 10, 2026 - morning PT",
+    "updated": "Oct 3, 2026 · 8:37 PM PT",
     "comments": [
         {
             "type": "map",
@@ -441,6 +441,544 @@
             "date": "Jul 24",
             "text": "Grandmaster Sandman's Sledge: one hundred eighteen attack rounds, dead-even 50.0% win rate — still the attack main behind Gold III, but the win rate finally cooled after a season of climbing. When a Sledge win rate stalls flat, it usually traces to over-aggressive solo entries, not the hammer — worth a look before the next stack night. Everywhere else on the roster attack identities keep separating out: Rogue on Nomad, Cunder on Zero, slack split Osa and Thermite, Blang on Finka. Five different attack philosophies, one shared coaching note: time the entry, don't force it."
         }
+    ],
+    "seasonClosed": true,
+    "seasonReport": "<p><b>Y11S2 verdict: this squad won more often than it lost, but defense did the heavy lifting and attack never became reliable.</b> The seven main accounts logged <b>1,048 ranked player match entries: 532 W, 511 L, five outcomes outside W/L, and a 50.8% win rate</b> with those five entries retained in the denominator. Their combined <b>4,326 kills, 4,606 deaths, and 1,580 assists</b> produce a weighted <b>0.94 K/D</b>, a -280 kill differential, and 42.4% headshots recovered from the match rows. These totals include every supplied main-account game, whatever its queue, and repeat a shared game for each tracked participant; they are player records, so a unique squad-game count or five-stack win rate cannot be recovered from them.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Account</th><th>Entries</th><th>W-L-U</th><th>Win%</th><th>K/D/A</th><th>K/D</th><th>HS%</th><th>Closing rank / RP</th><th>Peak RP</th></tr></thead><tbody><tr><td>CunderThock</td><td>69</td><td>38-31-0</td><td>55.1%</td><td>301/309/102</td><td>0.97</td><td>41.5%</td><td>Gold IV · 2,631</td><td>2,685</td></tr><tr><td>Rogue_Amputee</td><td>169</td><td>86-83-0</td><td>50.9%</td><td>660/710/291</td><td>0.93</td><td>38.9%</td><td>Gold III · 2,705</td><td>2,731</td></tr><tr><td>Grandmaster Sandman</td><td>130</td><td>70-60-0</td><td>53.8%</td><td>707/565/203</td><td>1.25</td><td>36.9%</td><td>Gold II · 2,887</td><td>2,896</td></tr><tr><td>Matticus HQ</td><td>36</td><td>19-17-0</td><td>52.8%</td><td>117/133/45</td><td>0.88</td><td>48.7%</td><td>Silver III · 2,258</td><td>2,298</td></tr><tr><td>slackandlack</td><td>110</td><td>60-49-1</td><td>54.5%</td><td>649/503/166</td><td>1.29</td><td>49.6%</td><td>Gold III · 2,724</td><td>2,789</td></tr><tr><td>MJester1337</td><td>373</td><td>176-195-2</td><td>47.2%</td><td>1245/1636/553</td><td>0.76</td><td>34.4%</td><td>Silver III · 2,268</td><td>2,509</td></tr><tr><td>Mynameisblang · MIA</td><td>161</td><td>83-76-2</td><td>51.6%</td><td>647/750/220</td><td>0.86</td><td>59.7%</td><td>Platinum IV · 3,100</td><td>3,142</td></tr></tbody></table></div><p><b>The side split is the season’s clearest diagnosis:</b> the operator overviews record 1,807 wins in 3,179 defensive round observations (56.8%) against 1,394 in 3,122 attack observations (44.6%), a 12.2-point gap that also repeats rounds across accounts. Defense held a 1.02 K/D in those overviews while attack fell to 0.86, making coordinated attack execution the first repair rather than a wholesale rebuild of the defensive identity. slackandlack’s Doc and Aruni returned 60.0% across 100 rounds and 60.5% across 86, while CunderThock’s Tachanka delivered 63.0% across 181. MJester1337’s Thorn sustained 59.0% across 368 rounds with 168 assists, and Grandmaster Sandman’s Kaid and Frost backed that foundation at 67.2% across 61 rounds and 68.5% across 54. Keep those proven defensive options, judge denial and intel operators by the round result as well as their gunfights, and use replays to check the actual setup and gadget value that these aggregate stats cannot measure.</p><p><b>Build the next attack around a shared plan:</b> slackandlack can coordinate Thermite’s breach or Osa’s cover, Grandmaster Sandman can synchronize Sledge’s pressure, CunderThock can feed Zero’s information, and Rogue_Amputee can secure the relevant Nomad flank. Those are role options drawn from their existing operator pools, with one called breach or pressure lane, an assigned trader, a protected flank, and a plant route agreed before the push rather than five independent projects.</p><p><b>slackandlack was the combat leader:</b> 1.29 K/D and a +146 kill differential across 110 entries, with 60 W / 49 L / one unclassified outcome and a Gold III finish at 2,724 RP. <b>Grandmaster Sandman was the other sustained positive combat contributor:</b> 1.25 K/D, +142 differential, 70–60, and Gold II at 2,887 RP, with Bank’s 8–2 record and 2.32 map K/D showing a particularly strong conversion point. Together those two accounts contributed +288 in kill differential, a meaningful season contribution that should be turned into coordinated pressure and trades rather than treated as evidence that either player carried every shared lobby.</p><p><b>CunderThock posted the highest main-account win rate at 55.1%:</b> 38–31 across 69 games and Gold IV at 2,631 RP, with Tachanka’s strong defensive sample contrasting with Zero’s 43.2% across 162 attack rounds, where the coaching priority is information acted on during the execute. <b>Rogue_Amputee’s results improved:</b> June’s 25 wins in 56 entries (44.6%) became August’s 23 in 41 (56.1%), ending 86–83 and Gold III at 2,705 RP, although Nomad’s 46.0% across 187 rounds and Gridlock’s 36.5% across 85 still call for flank and post-plant utility timed to the team’s push. <b>Matticus HQ supplied a smaller positive record at 19–17 and Silver III, 2,258 RP:</b> Skopós won 60.4% of 48 rounds despite a 0.59 operator K/D, so protect the two-shell intel and positioning job, while Sens at 57.1% across 21 rounds and Finka at 55.6% across 18 are encouraging attack options with modest samples.</p><p><b>MJester1337 logged 35.6% of the main-account volume:</b> 373 entries, 176 W / 195 L / two unclassified outcomes, 0.76 K/D, 553 assists, and a -391 kill differential make his survival and conversion the largest individual improvement opportunity by recorded volume. His Thorn results deserve protection, while Montagne’s 41.4% round win rate across 116 rounds should be coached through escorted space, callouts, and plant conversion rather than judged by the shield’s low K/D alone. His August record fell to 49 wins in 125 entries (39.2%) and 0.63 K/D after June’s 73 in 137 (53.3%) and 0.86 K/D, supporting shorter sessions with deliberate reviews instead of treating another queue as the fix.</p><p><b>Mynameisblang earned the highest closing rank at Platinum IV, 3,100 RP:</b> 83 W / 76 L / two unclassified outcomes and the roster’s highest 59.7% headshot rate, but a 0.86 overall K/D shows that precision did not make the whole combat record positive. Oryx at 56.8% across 95 rounds and Thunderbird at 59.1% across 93 offer useful defensive history to preserve, alongside Finka’s 50.0% across 114 attack rounds. His current <b>MIA</b> status leaves that earned Y11S2 contribution in the historical totals, while the continuing squad needs to assign the roles that his absence leaves open.</p><p><b>Oregon and Chalet are the first map repairs:</b> Oregon finished 67–90 across 157 entries (42.7%) and Chalet 33–46 across 79 (41.8%), combining for a -36 W/L differential. Calypso Casino drew the most volume at 163 entries but finished 79 W / 83 L / one unclassified outcome (48.5%), so familiarity has not yet become a dependable map advantage. The stronger pooled results were Nighthaven Labs at 33 W / 20 L / one unclassified outcome in 54 entries (61.1%), Bank at 39–27 in 66 (59.1%), and Consulate at 38–28 in 66 (57.6%). Even a strong pooled map needs a player-specific plan: Nighthaven Labs gave Rogue_Amputee 72.7% across 11 entries and MJester1337 63.6% across 22, but Grandmaster Sandman and Mynameisblang each finished at 33.3% across six, so compare their actual approaches before calling it universally solved.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Map · seven main accounts</th><th>Player entries</th><th>W-L-U</th><th>Win%</th></tr></thead><tbody><tr><td>Calypso Casino</td><td>163</td><td>79-83-1</td><td>48.5%</td></tr><tr><td>Oregon</td><td>157</td><td>67-90-0</td><td>42.7%</td></tr><tr><td>Clubhouse</td><td>103</td><td>55-47-1</td><td>53.4%</td></tr><tr><td>Chalet</td><td>79</td><td>33-46-0</td><td>41.8%</td></tr><tr><td>Consulate</td><td>66</td><td>38-28-0</td><td>57.6%</td></tr><tr><td>Bank</td><td>66</td><td>39-27-0</td><td>59.1%</td></tr><tr><td>Border</td><td>65</td><td>34-30-1</td><td>52.3%</td></tr><tr><td>Nighthaven Labs</td><td>54</td><td>33-20-1</td><td>61.1%</td></tr><tr><td>Coastline</td><td>52</td><td>30-22-0</td><td>57.7%</td></tr><tr><td>Outback</td><td>45</td><td>24-21-0</td><td>53.3%</td></tr><tr><td>Lair</td><td>39</td><td>21-18-0</td><td>53.8%</td></tr><tr><td>Kafe Dostoyevsky</td><td>37</td><td>19-18-0</td><td>51.4%</td></tr><tr><td>Kanal</td><td>35</td><td>16-19-0</td><td>45.7%</td></tr><tr><td>Fortress</td><td>32</td><td>20-11-1</td><td>62.5%</td></tr><tr><td>Emerald Plains</td><td>30</td><td>14-16-0</td><td>46.7%</td></tr><tr><td>Villa</td><td>22</td><td>9-13-0</td><td>40.9%</td></tr><tr><td>Theme Park</td><td>3</td><td>1-2-0</td><td>33.3%</td></tr></tbody></table></div><p><b>The recorded season cooled late:</b> June returned 51.6% wins and 0.95 K/D, July 52.2% and 1.00, and August 47.2% and 0.83. The mix changed as well as the results: MJester1337 supplied 125 of August’s 229 entries (54.6%), while the other six accounts combined won 59 of 104 (56.7%), so the pooled decline cannot honestly be described as every player collapsing together.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Month · seven main accounts</th><th>Player entries</th><th>W-L-U</th><th>Win%</th><th>K/D</th></tr></thead><tbody><tr><td>Jun</td><td>543</td><td>280-262-1</td><td>51.6%</td><td>0.95</td></tr><tr><td>Jul</td><td>276</td><td>144-132-0</td><td>52.2%</td><td>1.00</td></tr><tr><td>Aug</td><td>229</td><td>108-117-4</td><td>47.2%</td><td>0.83</td></tr></tbody></table></div><p><b>Together-play evidence is strongest where several consecutive date, map, score, and outcome rows align:</b> the examples below support probable shared sessions, while missing match IDs, timestamps, and lobby lists prevent confirmed membership or causal duo rankings. On Jul 3, CunderThock, Rogue_Amputee, Matticus HQ, slackandlack, and MJester1337 share the same three-row sequence: Border 4:2 and Nighthaven Labs 4:0 wins, plus an Oregon 0:4 loss, a probable shared 2–1 set. Within those corresponding scoreboards, CunderThock and slackandlack supplied 19 of the five accounts’ 27 Border kills, while Matticus HQ and slackandlack supplied ten of their 19 Labs kills, showing the leading contribution changing across the sequence rather than one permanent hero. Grandmaster Sandman and slackandlack align across seven consecutive Jun 7 rows with six wins and one loss, a strong example of their results lining up successfully. Rogue_Amputee and MJester1337 also align across all five Jul 25 losses, which earns a shared review of those rounds rather than a claim that their pairing caused the losses. On Jun 20, Grandmaster Sandman, slackandlack, MJester1337, and Rogue_Amputee’s LceW4ll0wCome alt share a six-row sequence containing four wins and two losses, evidence that the alt appears in probable squad sessions without becoming an extra person.</p><p><b>SnSoldier’s supplied account is included separately:</b> 23–29 across 52 entries, 44.2% wins, 0.79 K/D, and Bronze IV at 1,624 RP, with Thorn’s 56.2% across 32 rounds and 1.57 K/D offering a defensive foothold while his Discord identity, roster role, and any parent account remain unconfirmed. <b>LceW4ll0wCome remains Rogue_Amputee’s alt:</b> 13–15 across 28 entries, 46.4% wins, 1.21 K/D, and Silver IV at 2,156 RP, a useful reminder that positive gunfight numbers still need to become winning rounds.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Account</th><th>Entries</th><th>W-L-U</th><th>Win%</th><th>K/D/A</th><th>K/D</th><th>HS%</th><th>Closing rank / RP</th><th>Peak RP</th></tr></thead><tbody><tr><td>SnSoldier · role unconfirmed</td><td>52</td><td>23-29-0</td><td>44.2%</td><td>190/239/74</td><td>0.79</td><td>37.9%</td><td>Bronze IV · 1,624</td><td>1,624</td></tr><tr><td>LceW4ll0wCome · alt</td><td>28</td><td>13-15-0</td><td>46.4%</td><td>126/104/46</td><td>1.21</td><td>35.7%</td><td>Silver IV · 2,156</td><td>2,191</td></tr></tbody></table></div><p>The seven-account badge ledger records <b>87 won-clutch badges and 25 teamkill badges</b>; celebrate the saves, keep the preventable damage visible, and judge utility work alongside the 1,580 assists instead of reducing contribution to kills. <b>Next-season orders:</b> rehearse Oregon and Chalet attack routes, turn Casino’s repeated exposure into a coordinated plan, assign the drone-to-entry trade and plant coverage on each attack, and make two consecutive losses trigger a review before deciding to requeue. This squad has a credible defensive foundation and real individual strengths; its next improvement comes from making those strengths arrive at the same breach, trade, and plant rather than asking the scoreboard to rescue another disconnected execute.</p>",
+    "seasonSummary": {
+        "scope": "Seven main accounts; historical Y11S2 includes Mynameisblang, now MIA. SnSoldier and LceW4ll0wCome are reported separately.",
+        "unit": "player match entries, not unique squad games",
+        "mainAccountSlugs": [
+            "cunderthock",
+            "rogue_amputee",
+            "grandmaster_sandman",
+            "matticus_hq",
+            "slackandlack",
+            "mjester1337",
+            "mynameisblang"
+        ],
+        "matches": 1048,
+        "w": 532,
+        "l": 511,
+        "unclassified": 5,
+        "winRate": 50.8,
+        "decidedWinRate": 51.0,
+        "k": 4326,
+        "d": 4606,
+        "a": 1580,
+        "kd": 0.94,
+        "headshots": 1836,
+        "hs": 42.4,
+        "killDifferential": -280,
+        "operatorSides": {
+            "DEF": {
+                "rounds": 3179,
+                "w": 1807,
+                "l": 1372,
+                "k": 2308,
+                "d": 2256,
+                "a": 930,
+                "winRate": 56.8,
+                "kd": 1.02,
+                "unit": "operator-round observations; shared rounds repeat across accounts"
+            },
+            "ATK": {
+                "rounds": 3122,
+                "w": 1394,
+                "l": 1728,
+                "k": 2016,
+                "d": 2347,
+                "a": 649,
+                "winRate": 44.7,
+                "kd": 0.86,
+                "unit": "operator-round observations; shared rounds repeat across accounts"
+            }
+        },
+        "maps": [
+            {
+                "name": "Calypso Casino",
+                "matches": 163,
+                "w": 79,
+                "l": 83,
+                "unclassified": 1,
+                "winRate": 48.5
+            },
+            {
+                "name": "Oregon",
+                "matches": 157,
+                "w": 67,
+                "l": 90,
+                "unclassified": 0,
+                "winRate": 42.7
+            },
+            {
+                "name": "Clubhouse",
+                "matches": 103,
+                "w": 55,
+                "l": 47,
+                "unclassified": 1,
+                "winRate": 53.4
+            },
+            {
+                "name": "Chalet",
+                "matches": 79,
+                "w": 33,
+                "l": 46,
+                "unclassified": 0,
+                "winRate": 41.8
+            },
+            {
+                "name": "Consulate",
+                "matches": 66,
+                "w": 38,
+                "l": 28,
+                "unclassified": 0,
+                "winRate": 57.6
+            },
+            {
+                "name": "Bank",
+                "matches": 66,
+                "w": 39,
+                "l": 27,
+                "unclassified": 0,
+                "winRate": 59.1
+            },
+            {
+                "name": "Border",
+                "matches": 65,
+                "w": 34,
+                "l": 30,
+                "unclassified": 1,
+                "winRate": 52.3
+            },
+            {
+                "name": "Nighthaven Labs",
+                "matches": 54,
+                "w": 33,
+                "l": 20,
+                "unclassified": 1,
+                "winRate": 61.1
+            },
+            {
+                "name": "Coastline",
+                "matches": 52,
+                "w": 30,
+                "l": 22,
+                "unclassified": 0,
+                "winRate": 57.7
+            },
+            {
+                "name": "Outback",
+                "matches": 45,
+                "w": 24,
+                "l": 21,
+                "unclassified": 0,
+                "winRate": 53.3
+            },
+            {
+                "name": "Lair",
+                "matches": 39,
+                "w": 21,
+                "l": 18,
+                "unclassified": 0,
+                "winRate": 53.8
+            },
+            {
+                "name": "Kafe Dostoyevsky",
+                "matches": 37,
+                "w": 19,
+                "l": 18,
+                "unclassified": 0,
+                "winRate": 51.4
+            },
+            {
+                "name": "Kanal",
+                "matches": 35,
+                "w": 16,
+                "l": 19,
+                "unclassified": 0,
+                "winRate": 45.7
+            },
+            {
+                "name": "Fortress",
+                "matches": 32,
+                "w": 20,
+                "l": 11,
+                "unclassified": 1,
+                "winRate": 62.5
+            },
+            {
+                "name": "Emerald Plains",
+                "matches": 30,
+                "w": 14,
+                "l": 16,
+                "unclassified": 0,
+                "winRate": 46.7
+            },
+            {
+                "name": "Villa",
+                "matches": 22,
+                "w": 9,
+                "l": 13,
+                "unclassified": 0,
+                "winRate": 40.9
+            },
+            {
+                "name": "Theme Park",
+                "matches": 3,
+                "w": 1,
+                "l": 2,
+                "unclassified": 0,
+                "winRate": 33.3
+            }
+        ],
+        "months": [
+            {
+                "month": "Jun",
+                "n": 543,
+                "w": 280,
+                "l": 262,
+                "u": 1,
+                "k": 2308,
+                "d": 2422,
+                "winRate": 51.6,
+                "kd": 0.95
+            },
+            {
+                "month": "Jul",
+                "n": 276,
+                "w": 144,
+                "l": 132,
+                "u": 0,
+                "k": 1188,
+                "d": 1189,
+                "winRate": 52.2,
+                "kd": 1.0
+            },
+            {
+                "month": "Aug",
+                "n": 229,
+                "w": 108,
+                "l": 117,
+                "u": 4,
+                "k": 830,
+                "d": 995,
+                "winRate": 47.2,
+                "kd": 0.83
+            }
+        ],
+        "badges": {
+            "2K": 633,
+            "3K": 228,
+            "1v3 Lost": 107,
+            "Victim": 216,
+            "4K": 63,
+            "1v2 Lost": 96,
+            "1v2 Clutch": 24,
+            "1v1 Clutch": 48,
+            "1v1 Lost": 40,
+            "1v3 Clutch": 12,
+            "TK": 25,
+            "Ace": 10,
+            "1v4 Clutch": 3
+        }
+    },
+    "additionalAccounts": [
+        {
+            "slug": "snsoldier",
+            "name": "SnSoldier",
+            "status": "UNCONFIRMED"
+        }
+    ],
+    "togetherEvidence": [
+        {
+            "date": "Jul 3",
+            "players": [
+                "cunderthock",
+                "rogue_amputee",
+                "matticus_hq",
+                "slackandlack",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Border",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Nighthaven Labs",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Oregon",
+                    "0:4",
+                    "L"
+                ]
+            ],
+            "w": 2,
+            "l": 1,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "cunderthock": {
+                    "k": 12,
+                    "d": 9,
+                    "a": 3
+                },
+                "rogue_amputee": {
+                    "k": 5,
+                    "d": 9,
+                    "a": 6
+                },
+                "matticus_hq": {
+                    "k": 11,
+                    "d": 8,
+                    "a": 2
+                },
+                "slackandlack": {
+                    "k": 16,
+                    "d": 10,
+                    "a": 3
+                },
+                "mjester1337": {
+                    "k": 12,
+                    "d": 9,
+                    "a": 3
+                }
+            }
+        },
+        {
+            "date": "Jun 7",
+            "players": [
+                "grandmaster_sandman",
+                "slackandlack"
+            ],
+            "sequence": [
+                [
+                    "Lair",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "2:4",
+                    "L"
+                ],
+                [
+                    "Calypso Casino",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Clubhouse",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Lair",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "5:4",
+                    "W"
+                ],
+                [
+                    "Oregon",
+                    "4:2",
+                    "W"
+                ]
+            ],
+            "w": 6,
+            "l": 1,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "grandmaster_sandman": {
+                    "k": 42,
+                    "d": 30,
+                    "a": 12
+                },
+                "slackandlack": {
+                    "k": 35,
+                    "d": 31,
+                    "a": 10
+                }
+            }
+        },
+        {
+            "date": "Jul 25",
+            "players": [
+                "rogue_amputee",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Fortress",
+                    "3:5",
+                    "L"
+                ],
+                [
+                    "Consulate",
+                    "1:4",
+                    "L"
+                ],
+                [
+                    "Chalet",
+                    "0:4",
+                    "L"
+                ],
+                [
+                    "Kanal",
+                    "0:4",
+                    "L"
+                ],
+                [
+                    "Lair",
+                    "1:4",
+                    "L"
+                ]
+            ],
+            "w": 0,
+            "l": 5,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "rogue_amputee": {
+                    "k": 7,
+                    "d": 22,
+                    "a": 4
+                },
+                "mjester1337": {
+                    "k": 23,
+                    "d": 21,
+                    "a": 7
+                }
+            }
+        },
+        {
+            "date": "Jun 20",
+            "players": [
+                "grandmaster_sandman",
+                "slackandlack",
+                "mjester1337",
+                "lcew4ll0wcome"
+            ],
+            "sequence": [
+                [
+                    "Clubhouse",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Consulate",
+                    "2:4",
+                    "L"
+                ],
+                [
+                    "Calypso Casino",
+                    "4:1",
+                    "W"
+                ],
+                [
+                    "Emerald Plains",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Bank",
+                    "1:4",
+                    "L"
+                ]
+            ],
+            "w": 4,
+            "l": 2,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "grandmaster_sandman": {
+                    "k": 20,
+                    "d": 16,
+                    "a": 8
+                },
+                "slackandlack": {
+                    "k": 40,
+                    "d": 23,
+                    "a": 7
+                },
+                "mjester1337": {
+                    "k": 15,
+                    "d": 17,
+                    "a": 12
+                },
+                "lcew4ll0wcome": {
+                    "k": 23,
+                    "d": 12,
+                    "a": 4
+                }
+            }
+        },
+        {
+            "date": "Aug 14",
+            "players": [
+                "rogue_amputee",
+                "matticus_hq",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Oregon",
+                    "5:4",
+                    "W"
+                ],
+                [
+                    "Nighthaven Labs",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Fortress",
+                    "4:2",
+                    "W"
+                ]
+            ],
+            "w": 3,
+            "l": 0,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "rogue_amputee": {
+                    "k": 10,
+                    "d": 14,
+                    "a": 8
+                },
+                "matticus_hq": {
+                    "k": 14,
+                    "d": 9,
+                    "a": 4
+                },
+                "mjester1337": {
+                    "k": 12,
+                    "d": 14,
+                    "a": 7
+                }
+            }
+        }
+    ],
+    "dataNotes": [
+        "Main-account totals include every supplied ranked entry, including solo, partial-stack, or full-stack play if present. Queues are not labeled. A shared game repeats across participating account records; do not describe 1048 entries as 1048 unique team games or infer a five-stack win rate.",
+        "Include Mynameisblang in the historical seven-player season while retaining current MIA status. LceW4ll0wCome belongs to Rogue_Amputee and remains a separate alt account, not an extra person. SnSoldier is a separate supplied account whose roster role, parent, and Discord display name are unconfirmed; no squad slot or parent was assigned.",
+        "Five main-account entries are outside W/L: slackandlack Aug 31 Clubhouse; Mynameisblang Aug 8 Fortress and Jun 14 Nighthaven Labs; MJester1337 Aug 29 Border and one Aug 1 Calypso Casino outcome whose exact row is unresolved. Apply Jester’s resultGroup once (2 L / 1 U across three candidate rows); do not label all three candidates U or invent which two are losses.",
+        "Win rates use wins divided by all player entries, preserving the supplied overview convention. Decided-only 532 / 1043 = 51.0% is a different denominator. Compute pooled K/D from total kills / deaths, and HS% from headshot counts recovered by rounding each match kills * HS% / 100; do not average rounded player rates.",
+        "Attack/defense round results are summed from the supplied operator overviews, not averaged from rounded map side percentages. They are operator-round observations, not unique squad rounds. The operator overviews total 4324 K / 4603 D / 1579 A, while match rows total 4326 / 4606 / 1580: slack’s overview accounts for 2 K / 2 D / 1 A and Rogue’s overview for the remaining 1 D source discrepancy. Preserve both sources.",
+        "Shared-session evidence requires identical consecutive date/map/score/outcome rows in account logs, with at least three aligned rows. It is stronger than an isolated same-map result but remains inferred without timestamps, match IDs, or lobby lists. Overlapping runs and same-day repeated scores prevent a validated unique-game count or duo win rate; lack of a qualifying run does not mean two players never played together.",
+        "The displayed sequences follow stored newest-first order, not chronological play order. Do not infer who joined first, which map started a streak, fixed lineups across a whole day, or operators played in an individual match from aggregate operator overviews.",
+        "Monthly comparisons pool accounts with different playing schedules and volumes; they show recorded form and composition, not a controlled comparison of one unchanged team. Jester contributes 125 / 229 August entries; the other six contribute 59 wins / 104 entries.",
+        "Exclude Matticus HQ’s three M.U.T.E. event rows and all RP Rollbacks from ranked and map totals. Keep slack’s Sep 14 rollback in outOfSeasonRows because it falls after the Y11S2 rollover. Recorded netRp fields contain incomplete early values and marked inferences; no combined squad RP gain, starting rank, or total climb from zero is claimed.",
+        "Final RP follows each finalized dossier and the user’s explicit 2705 choice for Rogue. Conflicting stale screenshots do not override later match anchors. Preserve all player-specific dataNotes, resultGroups, and rpInferences for the remaining discrepancies.",
+        "Close-out retains all 72 previous OVERSIGHT comments and adds no new comment wave. The final seasonReport replaces the live team-comment UI; dated closing snapshot and supporting analysis retain the full record."
     ]
 }
 ```

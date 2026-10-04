@@ -1,0 +1,7477 @@
+{
+  "season": "Y11S2",
+  "updated": "Oct 3, 2026 · 8:37 PM PT",
+  "method": [
+    "Main-account totals include every supplied ranked entry, including solo, partial-stack, or full-stack play if present. Queues are not labeled. A shared game repeats across participating account records; do not describe 1048 entries as 1048 unique team games or infer a five-stack win rate.",
+    "Include Mynameisblang in the historical seven-player season while retaining current MIA status. LceW4ll0wCome belongs to Rogue_Amputee and remains a separate alt account, not an extra person. SnSoldier is a separate supplied account whose roster role, parent, and Discord display name are unconfirmed; no squad slot or parent was assigned.",
+    "Five main-account entries are outside W/L: slackandlack Aug 31 Clubhouse; Mynameisblang Aug 8 Fortress and Jun 14 Nighthaven Labs; MJester1337 Aug 29 Border and one Aug 1 Calypso Casino outcome whose exact row is unresolved. Apply Jester’s resultGroup once (2 L / 1 U across three candidate rows); do not label all three candidates U or invent which two are losses.",
+    "Win rates use wins divided by all player entries, preserving the supplied overview convention. Decided-only 532 / 1043 = 51.0% is a different denominator. Compute pooled K/D from total kills / deaths, and HS% from headshot counts recovered by rounding each match kills * HS% / 100; do not average rounded player rates.",
+    "Attack/defense round results are summed from the supplied operator overviews, not averaged from rounded map side percentages. They are operator-round observations, not unique squad rounds. The operator overviews total 4324 K / 4603 D / 1579 A, while match rows total 4326 / 4606 / 1580: slack’s overview accounts for 2 K / 2 D / 1 A and Rogue’s overview for the remaining 1 D source discrepancy. Preserve both sources.",
+    "Shared-session evidence requires identical consecutive date/map/score/outcome rows in account logs, with at least three aligned rows. It is stronger than an isolated same-map result but remains inferred without timestamps, match IDs, or lobby lists. Overlapping runs and same-day repeated scores prevent a validated unique-game count or duo win rate; lack of a qualifying run does not mean two players never played together.",
+    "The displayed sequences follow stored newest-first order, not chronological play order. Do not infer who joined first, which map started a streak, fixed lineups across a whole day, or operators played in an individual match from aggregate operator overviews.",
+    "Monthly comparisons pool accounts with different playing schedules and volumes; they show recorded form and composition, not a controlled comparison of one unchanged team. Jester contributes 125 / 229 August entries; the other six contribute 59 wins / 104 entries.",
+    "Exclude Matticus HQ’s three M.U.T.E. event rows and all RP Rollbacks from ranked and map totals. Keep slack’s Sep 14 rollback in outOfSeasonRows because it falls after the Y11S2 rollover. Recorded netRp fields contain incomplete early values and marked inferences; no combined squad RP gain, starting rank, or total climb from zero is claimed.",
+    "Final RP follows each finalized dossier and the user’s explicit 2705 choice for Rogue. Conflicting stale screenshots do not override later match anchors. Preserve all player-specific dataNotes, resultGroups, and rpInferences for the remaining discrepancies.",
+    "Close-out retains all 72 previous OVERSIGHT comments and adds no new comment wave. The final seasonReport replaces the live team-comment UI; dated closing snapshot and supporting analysis retain the full record."
+  ],
+  "seasonSummary": {
+    "scope": "Seven main accounts; historical Y11S2 includes Mynameisblang, now MIA. SnSoldier and LceW4ll0wCome are reported separately.",
+    "unit": "player match entries, not unique squad games",
+    "mainAccountSlugs": [
+      "cunderthock",
+      "rogue_amputee",
+      "grandmaster_sandman",
+      "matticus_hq",
+      "slackandlack",
+      "mjester1337",
+      "mynameisblang"
+    ],
+    "matches": 1048,
+    "w": 532,
+    "l": 511,
+    "unclassified": 5,
+    "winRate": 50.8,
+    "decidedWinRate": 51.0,
+    "k": 4326,
+    "d": 4606,
+    "a": 1580,
+    "kd": 0.94,
+    "headshots": 1836,
+    "hs": 42.4,
+    "killDifferential": -280,
+    "operatorSides": {
+      "DEF": {
+        "rounds": 3179,
+        "w": 1807,
+        "l": 1372,
+        "k": 2308,
+        "d": 2256,
+        "a": 930,
+        "winRate": 56.8,
+        "kd": 1.02,
+        "unit": "operator-round observations; shared rounds repeat across accounts"
+      },
+      "ATK": {
+        "rounds": 3122,
+        "w": 1394,
+        "l": 1728,
+        "k": 2016,
+        "d": 2347,
+        "a": 649,
+        "winRate": 44.7,
+        "kd": 0.86,
+        "unit": "operator-round observations; shared rounds repeat across accounts"
+      }
+    },
+    "maps": [
+      {
+        "name": "Calypso Casino",
+        "matches": 163,
+        "w": 79,
+        "l": 83,
+        "unclassified": 1,
+        "winRate": 48.5
+      },
+      {
+        "name": "Oregon",
+        "matches": 157,
+        "w": 67,
+        "l": 90,
+        "unclassified": 0,
+        "winRate": 42.7
+      },
+      {
+        "name": "Clubhouse",
+        "matches": 103,
+        "w": 55,
+        "l": 47,
+        "unclassified": 1,
+        "winRate": 53.4
+      },
+      {
+        "name": "Chalet",
+        "matches": 79,
+        "w": 33,
+        "l": 46,
+        "unclassified": 0,
+        "winRate": 41.8
+      },
+      {
+        "name": "Consulate",
+        "matches": 66,
+        "w": 38,
+        "l": 28,
+        "unclassified": 0,
+        "winRate": 57.6
+      },
+      {
+        "name": "Bank",
+        "matches": 66,
+        "w": 39,
+        "l": 27,
+        "unclassified": 0,
+        "winRate": 59.1
+      },
+      {
+        "name": "Border",
+        "matches": 65,
+        "w": 34,
+        "l": 30,
+        "unclassified": 1,
+        "winRate": 52.3
+      },
+      {
+        "name": "Nighthaven Labs",
+        "matches": 54,
+        "w": 33,
+        "l": 20,
+        "unclassified": 1,
+        "winRate": 61.1
+      },
+      {
+        "name": "Coastline",
+        "matches": 52,
+        "w": 30,
+        "l": 22,
+        "unclassified": 0,
+        "winRate": 57.7
+      },
+      {
+        "name": "Outback",
+        "matches": 45,
+        "w": 24,
+        "l": 21,
+        "unclassified": 0,
+        "winRate": 53.3
+      },
+      {
+        "name": "Lair",
+        "matches": 39,
+        "w": 21,
+        "l": 18,
+        "unclassified": 0,
+        "winRate": 53.8
+      },
+      {
+        "name": "Kafe Dostoyevsky",
+        "matches": 37,
+        "w": 19,
+        "l": 18,
+        "unclassified": 0,
+        "winRate": 51.4
+      },
+      {
+        "name": "Kanal",
+        "matches": 35,
+        "w": 16,
+        "l": 19,
+        "unclassified": 0,
+        "winRate": 45.7
+      },
+      {
+        "name": "Fortress",
+        "matches": 32,
+        "w": 20,
+        "l": 11,
+        "unclassified": 1,
+        "winRate": 62.5
+      },
+      {
+        "name": "Emerald Plains",
+        "matches": 30,
+        "w": 14,
+        "l": 16,
+        "unclassified": 0,
+        "winRate": 46.7
+      },
+      {
+        "name": "Villa",
+        "matches": 22,
+        "w": 9,
+        "l": 13,
+        "unclassified": 0,
+        "winRate": 40.9
+      },
+      {
+        "name": "Theme Park",
+        "matches": 3,
+        "w": 1,
+        "l": 2,
+        "unclassified": 0,
+        "winRate": 33.3
+      }
+    ],
+    "months": [
+      {
+        "month": "Jun",
+        "n": 543,
+        "w": 280,
+        "l": 262,
+        "u": 1,
+        "k": 2308,
+        "d": 2422,
+        "winRate": 51.6,
+        "kd": 0.95
+      },
+      {
+        "month": "Jul",
+        "n": 276,
+        "w": 144,
+        "l": 132,
+        "u": 0,
+        "k": 1188,
+        "d": 1189,
+        "winRate": 52.2,
+        "kd": 1.0
+      },
+      {
+        "month": "Aug",
+        "n": 229,
+        "w": 108,
+        "l": 117,
+        "u": 4,
+        "k": 830,
+        "d": 995,
+        "winRate": 47.2,
+        "kd": 0.83
+      }
+    ],
+    "badges": {
+      "2K": 633,
+      "3K": 228,
+      "1v3 Lost": 107,
+      "Victim": 216,
+      "4K": 63,
+      "1v2 Lost": 96,
+      "1v2 Clutch": 24,
+      "1v1 Clutch": 48,
+      "1v1 Lost": 40,
+      "1v3 Clutch": 12,
+      "TK": 25,
+      "Ace": 10,
+      "1v4 Clutch": 3
+    }
+  },
+  "accounts": {
+    "cunderthock": {
+      "name": "CunderThock",
+      "n": 69,
+      "w": 38,
+      "l": 31,
+      "u": 0,
+      "k": 301,
+      "d": 309,
+      "a": 102,
+      "headshots": 125,
+      "kd": 0.974,
+      "hs": 41.5,
+      "diff": -8,
+      "months": {
+        "Jun": {
+          "n": 56,
+          "w": 30,
+          "l": 26,
+          "u": 0,
+          "k": 244,
+          "d": 252
+        },
+        "Jul": {
+          "n": 13,
+          "w": 8,
+          "l": 5,
+          "u": 0,
+          "k": 57,
+          "d": 57
+        },
+        "Aug": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "u": 0,
+          "k": 0,
+          "d": 0
+        }
+      },
+      "topOps": [
+        {
+          "name": "Tachanka",
+          "side": "DEF",
+          "rounds": 181,
+          "winPct": 63.0,
+          "kd": 1.01,
+          "hs": 24.2,
+          "w": 114,
+          "l": 67,
+          "k": 128,
+          "d": 127,
+          "a": 55,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Zero",
+          "side": "ATK",
+          "rounds": 162,
+          "winPct": 43.2,
+          "kd": 0.85,
+          "hs": 56.6,
+          "w": 70,
+          "l": 92,
+          "k": 106,
+          "d": 125,
+          "a": 33,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Twitch",
+          "side": "ATK",
+          "rounds": 15,
+          "winPct": 53.3,
+          "kd": 2.0,
+          "hs": 56.2,
+          "w": 8,
+          "l": 7,
+          "k": 16,
+          "d": 8,
+          "a": 2,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Solid Snake",
+          "side": "ATK",
+          "rounds": 12,
+          "winPct": 8.3,
+          "kd": 0.5,
+          "hs": 80.0,
+          "w": 1,
+          "l": 11,
+          "k": 5,
+          "d": 10,
+          "a": 0,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Bandit",
+          "side": "DEF",
+          "rounds": 12,
+          "winPct": 66.7,
+          "kd": 0.45,
+          "hs": 40.0,
+          "w": 8,
+          "l": 4,
+          "k": 5,
+          "d": 11,
+          "a": 5,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Gold IV",
+        "rp": 2631,
+        "peakRp": 2685,
+        "nextRank": "Gold III",
+        "rpToNext": 69,
+        "matches": 69,
+        "w": 38,
+        "l": 31,
+        "winRate": 55.1,
+        "kd": 0.97,
+        "avgHs": 41.5,
+        "netRp": 224
+      },
+      "scope": "main"
+    },
+    "rogue_amputee": {
+      "name": "Rogue_Amputee",
+      "n": 169,
+      "w": 86,
+      "l": 83,
+      "u": 0,
+      "k": 660,
+      "d": 710,
+      "a": 291,
+      "headshots": 257,
+      "kd": 0.93,
+      "hs": 38.9,
+      "diff": -50,
+      "months": {
+        "Jun": {
+          "n": 56,
+          "w": 25,
+          "l": 31,
+          "u": 0,
+          "k": 238,
+          "d": 245
+        },
+        "Jul": {
+          "n": 72,
+          "w": 38,
+          "l": 34,
+          "u": 0,
+          "k": 262,
+          "d": 292
+        },
+        "Aug": {
+          "n": 41,
+          "w": 23,
+          "l": 18,
+          "u": 0,
+          "k": 160,
+          "d": 173
+        }
+      },
+      "topOps": [
+        {
+          "name": "Nomad",
+          "side": "ATK",
+          "rounds": 187,
+          "winPct": 46.0,
+          "kd": 1.05,
+          "hs": 40.7,
+          "w": 86,
+          "l": 101,
+          "k": 135,
+          "d": 128,
+          "a": 44,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Mute",
+          "side": "DEF",
+          "rounds": 150,
+          "winPct": 52.0,
+          "kd": 0.8,
+          "hs": 38.6,
+          "w": 78,
+          "l": 72,
+          "k": 88,
+          "d": 110,
+          "a": 41,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Kaid",
+          "side": "DEF",
+          "rounds": 89,
+          "winPct": 60.7,
+          "kd": 1.2,
+          "hs": 28.8,
+          "w": 54,
+          "l": 35,
+          "k": 66,
+          "d": 55,
+          "a": 23,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Gridlock",
+          "side": "ATK",
+          "rounds": 85,
+          "winPct": 36.5,
+          "kd": 0.75,
+          "hs": 40.7,
+          "w": 31,
+          "l": 54,
+          "k": 54,
+          "d": 72,
+          "a": 27,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Azami",
+          "side": "DEF",
+          "rounds": 68,
+          "winPct": 55.9,
+          "kd": 0.93,
+          "hs": 39.5,
+          "w": 38,
+          "l": 30,
+          "k": 38,
+          "d": 41,
+          "a": 20,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Gold III",
+        "rp": 2705,
+        "peakRp": 2731,
+        "nextRank": "Gold II",
+        "rpToNext": 95,
+        "matches": 169,
+        "w": 86,
+        "l": 83,
+        "winRate": 50.9,
+        "kd": 0.93,
+        "avgHs": 38.9,
+        "netRp": 886
+      },
+      "scope": "main"
+    },
+    "grandmaster_sandman": {
+      "name": "Grandmaster Sandman",
+      "n": 130,
+      "w": 70,
+      "l": 60,
+      "u": 0,
+      "k": 707,
+      "d": 565,
+      "a": 203,
+      "headshots": 261,
+      "kd": 1.251,
+      "hs": 36.9,
+      "diff": 142,
+      "months": {
+        "Jun": {
+          "n": 64,
+          "w": 33,
+          "l": 31,
+          "u": 0,
+          "k": 333,
+          "d": 285
+        },
+        "Jul": {
+          "n": 38,
+          "w": 21,
+          "l": 17,
+          "u": 0,
+          "k": 221,
+          "d": 165
+        },
+        "Aug": {
+          "n": 28,
+          "w": 16,
+          "l": 12,
+          "u": 0,
+          "k": 153,
+          "d": 115
+        }
+      },
+      "topOps": [
+        {
+          "name": "Sledge",
+          "side": "ATK",
+          "rounds": 131,
+          "winPct": 51.1,
+          "kd": 1.35,
+          "hs": 41.0,
+          "w": 67,
+          "l": 64,
+          "k": 139,
+          "d": 103,
+          "a": 35,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Kaid",
+          "side": "DEF",
+          "rounds": 61,
+          "winPct": 67.2,
+          "kd": 1.42,
+          "hs": 39.2,
+          "w": 41,
+          "l": 20,
+          "k": 51,
+          "d": 36,
+          "a": 15,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Frost",
+          "side": "DEF",
+          "rounds": 54,
+          "winPct": 68.5,
+          "kd": 1.55,
+          "hs": 19.6,
+          "w": 37,
+          "l": 17,
+          "k": 51,
+          "d": 33,
+          "a": 21,
+          "aces": 1,
+          "tks": 0
+        },
+        {
+          "name": "Thorn",
+          "side": "DEF",
+          "rounds": 50,
+          "winPct": 52.0,
+          "kd": 1.53,
+          "hs": 27.3,
+          "w": 26,
+          "l": 24,
+          "k": 55,
+          "d": 36,
+          "a": 19,
+          "aces": 1,
+          "tks": 0
+        },
+        {
+          "name": "Kali",
+          "side": "ATK",
+          "rounds": 49,
+          "winPct": 46.9,
+          "kd": 1.5,
+          "hs": 33.3,
+          "w": 23,
+          "l": 26,
+          "k": 51,
+          "d": 34,
+          "a": 11,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Gold II",
+        "rp": 2887,
+        "peakRp": 2896,
+        "nextRank": "Gold I",
+        "rpToNext": 13,
+        "matches": 130,
+        "w": 70,
+        "l": 60,
+        "winRate": 53.8,
+        "kd": 1.25,
+        "avgHs": 36.9,
+        "netRp": 414
+      },
+      "scope": "main"
+    },
+    "matticus_hq": {
+      "name": "Matticus HQ",
+      "n": 36,
+      "w": 19,
+      "l": 17,
+      "u": 0,
+      "k": 117,
+      "d": 133,
+      "a": 45,
+      "headshots": 57,
+      "kd": 0.88,
+      "hs": 48.7,
+      "diff": -16,
+      "months": {
+        "Jun": {
+          "n": 24,
+          "w": 12,
+          "l": 12,
+          "u": 0,
+          "k": 81,
+          "d": 94
+        },
+        "Jul": {
+          "n": 5,
+          "w": 3,
+          "l": 2,
+          "u": 0,
+          "k": 15,
+          "d": 17
+        },
+        "Aug": {
+          "n": 7,
+          "w": 4,
+          "l": 3,
+          "u": 0,
+          "k": 21,
+          "d": 22
+        }
+      },
+      "topOps": [
+        {
+          "name": "Skopós",
+          "side": "DEF",
+          "rounds": 48,
+          "winPct": 60.4,
+          "kd": 0.59,
+          "hs": 47.4,
+          "w": 29,
+          "l": 19,
+          "k": 19,
+          "d": 32,
+          "a": 12,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Sens",
+          "side": "ATK",
+          "rounds": 21,
+          "winPct": 57.1,
+          "kd": 1.3,
+          "hs": 46.2,
+          "w": 12,
+          "l": 9,
+          "k": 13,
+          "d": 10,
+          "a": 5,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Alibi",
+          "side": "DEF",
+          "rounds": 20,
+          "winPct": 60.0,
+          "kd": 1.0,
+          "hs": 56.2,
+          "w": 12,
+          "l": 8,
+          "k": 16,
+          "d": 16,
+          "a": 4,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Finka",
+          "side": "ATK",
+          "rounds": 18,
+          "winPct": 55.6,
+          "kd": 1.36,
+          "hs": 66.7,
+          "w": 10,
+          "l": 8,
+          "k": 15,
+          "d": 11,
+          "a": 4,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Deimos",
+          "side": "ATK",
+          "rounds": 11,
+          "winPct": 54.5,
+          "kd": 1.17,
+          "hs": 0.0,
+          "w": 6,
+          "l": 5,
+          "k": 7,
+          "d": 6,
+          "a": 2,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Silver III",
+        "rp": 2258,
+        "peakRp": 2298,
+        "nextRank": "Silver II",
+        "rpToNext": 42,
+        "matches": 36,
+        "w": 19,
+        "l": 17,
+        "winRate": 52.8,
+        "kd": 0.88,
+        "avgHs": 48.7,
+        "netRp": 192
+      },
+      "scope": "main"
+    },
+    "slackandlack": {
+      "name": "slackandlack",
+      "n": 110,
+      "w": 60,
+      "l": 49,
+      "u": 1,
+      "k": 649,
+      "d": 503,
+      "a": 166,
+      "headshots": 322,
+      "kd": 1.29,
+      "hs": 49.6,
+      "diff": 146,
+      "months": {
+        "Jun": {
+          "n": 52,
+          "w": 28,
+          "l": 24,
+          "u": 0,
+          "k": 292,
+          "d": 249
+        },
+        "Jul": {
+          "n": 35,
+          "w": 20,
+          "l": 15,
+          "u": 0,
+          "k": 238,
+          "d": 156
+        },
+        "Aug": {
+          "n": 23,
+          "w": 12,
+          "l": 10,
+          "u": 1,
+          "k": 119,
+          "d": 98
+        }
+      },
+      "topOps": [
+        {
+          "name": "Doc",
+          "side": "DEF",
+          "rounds": 100,
+          "winPct": 60.0,
+          "kd": 1.53,
+          "hs": 58.2,
+          "w": 60,
+          "l": 40,
+          "k": 110,
+          "d": 72,
+          "a": 28,
+          "aces": 1,
+          "tks": 1
+        },
+        {
+          "name": "Aruni",
+          "side": "DEF",
+          "rounds": 86,
+          "winPct": 60.5,
+          "kd": 1.67,
+          "hs": 40.9,
+          "w": 52,
+          "l": 34,
+          "k": 110,
+          "d": 66,
+          "a": 27,
+          "aces": 2,
+          "tks": 0
+        },
+        {
+          "name": "Thermite",
+          "side": "ATK",
+          "rounds": 85,
+          "winPct": 49.4,
+          "kd": 1.23,
+          "hs": 40.7,
+          "w": 42,
+          "l": 43,
+          "k": 81,
+          "d": 66,
+          "a": 23,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Osa",
+          "side": "ATK",
+          "rounds": 77,
+          "winPct": 50.6,
+          "kd": 1.47,
+          "hs": 63.2,
+          "w": 39,
+          "l": 38,
+          "k": 87,
+          "d": 59,
+          "a": 14,
+          "aces": 1,
+          "tks": 0
+        },
+        {
+          "name": "Ace",
+          "side": "ATK",
+          "rounds": 31,
+          "winPct": 41.9,
+          "kd": 0.96,
+          "hs": 68.0,
+          "w": 13,
+          "l": 18,
+          "k": 25,
+          "d": 26,
+          "a": 5,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Gold III",
+        "rp": 2724,
+        "peakRp": 2789,
+        "nextRank": "Gold II",
+        "rpToNext": 76,
+        "matches": 110,
+        "w": 60,
+        "l": 49,
+        "winRate": 54.5,
+        "kd": 1.29,
+        "avgHs": 49.6,
+        "netRp": 450,
+        "unclassified": 1
+      },
+      "scope": "main"
+    },
+    "mjester1337": {
+      "name": "MJester1337",
+      "n": 373,
+      "w": 176,
+      "l": 195,
+      "u": 2,
+      "k": 1245,
+      "d": 1636,
+      "a": 553,
+      "headshots": 428,
+      "kd": 0.761,
+      "hs": 34.4,
+      "diff": -391,
+      "months": {
+        "Jun": {
+          "n": 137,
+          "w": 73,
+          "l": 64,
+          "u": 0,
+          "k": 494,
+          "d": 573
+        },
+        "Jul": {
+          "n": 111,
+          "w": 54,
+          "l": 57,
+          "u": 0,
+          "k": 390,
+          "d": 490
+        },
+        "Aug": {
+          "n": 125,
+          "w": 49,
+          "l": 74,
+          "u": 2,
+          "k": 361,
+          "d": 573
+        }
+      },
+      "topOps": [
+        {
+          "name": "Thorn",
+          "side": "DEF",
+          "rounds": 368,
+          "winPct": 59.0,
+          "kd": 1.18,
+          "hs": 32.1,
+          "w": 217,
+          "l": 151,
+          "k": 290,
+          "d": 245,
+          "a": 168,
+          "aces": 1,
+          "tks": 0
+        },
+        {
+          "name": "Denari",
+          "side": "DEF",
+          "rounds": 173,
+          "winPct": 53.2,
+          "kd": 0.5,
+          "hs": 67.1,
+          "w": 92,
+          "l": 81,
+          "k": 70,
+          "d": 140,
+          "a": 52,
+          "aces": 0,
+          "tks": 1
+        },
+        {
+          "name": "Montagne",
+          "side": "ATK",
+          "rounds": 116,
+          "winPct": 41.4,
+          "kd": 0.31,
+          "hs": 30.8,
+          "w": 48,
+          "l": 68,
+          "k": 26,
+          "d": 84,
+          "a": 8,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Caveira",
+          "side": "DEF",
+          "rounds": 116,
+          "winPct": 53.4,
+          "kd": 0.82,
+          "hs": 14.7,
+          "w": 62,
+          "l": 54,
+          "k": 75,
+          "d": 91,
+          "a": 24,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Hibana",
+          "side": "ATK",
+          "rounds": 99,
+          "winPct": 40.4,
+          "kd": 0.73,
+          "hs": 36.5,
+          "w": 40,
+          "l": 59,
+          "k": 52,
+          "d": 71,
+          "a": 19,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Silver III",
+        "rp": 2268,
+        "peakRp": 2509,
+        "nextRank": "Silver II",
+        "rpToNext": 32,
+        "matches": 373,
+        "w": 176,
+        "l": 195,
+        "winRate": 47.2,
+        "kd": 0.76,
+        "avgHs": 34.4,
+        "netRp": 998,
+        "unclassified": 2,
+        "unresolvedRows": 3
+      },
+      "scope": "main"
+    },
+    "mynameisblang": {
+      "name": "Mynameisblang",
+      "n": 161,
+      "w": 83,
+      "l": 76,
+      "u": 2,
+      "k": 647,
+      "d": 750,
+      "a": 220,
+      "headshots": 386,
+      "kd": 0.863,
+      "hs": 59.7,
+      "diff": -103,
+      "months": {
+        "Jun": {
+          "n": 154,
+          "w": 79,
+          "l": 74,
+          "u": 1,
+          "k": 626,
+          "d": 724
+        },
+        "Jul": {
+          "n": 2,
+          "w": 0,
+          "l": 2,
+          "u": 0,
+          "k": 5,
+          "d": 12
+        },
+        "Aug": {
+          "n": 5,
+          "w": 4,
+          "l": 0,
+          "u": 1,
+          "k": 16,
+          "d": 14
+        }
+      },
+      "topOps": [
+        {
+          "name": "Finka",
+          "side": "ATK",
+          "rounds": 114,
+          "winPct": 50.0,
+          "kd": 0.98,
+          "hs": 56.0,
+          "w": 57,
+          "l": 57,
+          "k": 84,
+          "d": 86,
+          "a": 26,
+          "aces": 1,
+          "tks": 0
+        },
+        {
+          "name": "Oryx",
+          "side": "DEF",
+          "rounds": 95,
+          "winPct": 56.8,
+          "kd": 1.03,
+          "hs": 73.3,
+          "w": 54,
+          "l": 41,
+          "k": 75,
+          "d": 73,
+          "a": 23,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Dokkaebi",
+          "side": "ATK",
+          "rounds": 94,
+          "winPct": 42.6,
+          "kd": 0.63,
+          "hs": 47.8,
+          "w": 40,
+          "l": 54,
+          "k": 46,
+          "d": 73,
+          "a": 18,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Thunderbird",
+          "side": "DEF",
+          "rounds": 93,
+          "winPct": 59.1,
+          "kd": 1.26,
+          "hs": 55.8,
+          "w": 55,
+          "l": 38,
+          "k": 77,
+          "d": 61,
+          "a": 30,
+          "aces": 1,
+          "tks": 1
+        },
+        {
+          "name": "Ash",
+          "side": "ATK",
+          "rounds": 62,
+          "winPct": 50.0,
+          "kd": 0.67,
+          "hs": 68.6,
+          "w": 31,
+          "l": 31,
+          "k": 35,
+          "d": 52,
+          "a": 15,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Platinum IV",
+        "rp": 3100,
+        "peakRp": 3142,
+        "nextRank": "Platinum III",
+        "rpToNext": 100,
+        "matches": 161,
+        "w": 83,
+        "l": 76,
+        "winRate": 51.6,
+        "kd": 0.86,
+        "avgHs": 59.7,
+        "netRp": 336,
+        "unclassified": 2
+      },
+      "scope": "main"
+    },
+    "snsoldier": {
+      "name": "SnSoldier",
+      "n": 52,
+      "w": 23,
+      "l": 29,
+      "u": 0,
+      "k": 190,
+      "d": 239,
+      "a": 74,
+      "headshots": 72,
+      "kd": 0.795,
+      "hs": 37.9,
+      "diff": -49,
+      "months": {
+        "Jun": {
+          "n": 10,
+          "w": 4,
+          "l": 6,
+          "u": 0,
+          "k": 48,
+          "d": 50
+        },
+        "Jul": {
+          "n": 27,
+          "w": 11,
+          "l": 16,
+          "u": 0,
+          "k": 85,
+          "d": 128
+        },
+        "Aug": {
+          "n": 15,
+          "w": 8,
+          "l": 7,
+          "u": 0,
+          "k": 57,
+          "d": 61
+        }
+      },
+      "topOps": [
+        {
+          "name": "Fuze",
+          "side": "ATK",
+          "rounds": 55,
+          "winPct": 41.8,
+          "kd": 0.7,
+          "hs": 51.6,
+          "w": 23,
+          "l": 32,
+          "k": 31,
+          "d": 44,
+          "a": 10,
+          "aces": 0,
+          "tks": 1
+        },
+        {
+          "name": "Kaid",
+          "side": "DEF",
+          "rounds": 51,
+          "winPct": 49.0,
+          "kd": 0.82,
+          "hs": 25.0,
+          "w": 25,
+          "l": 26,
+          "k": 32,
+          "d": 39,
+          "a": 7,
+          "aces": 0,
+          "tks": 1
+        },
+        {
+          "name": "Ace",
+          "side": "ATK",
+          "rounds": 35,
+          "winPct": 34.3,
+          "kd": 0.76,
+          "hs": 68.2,
+          "w": 12,
+          "l": 23,
+          "k": 22,
+          "d": 29,
+          "a": 7,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Thorn",
+          "side": "DEF",
+          "rounds": 32,
+          "winPct": 56.2,
+          "kd": 1.57,
+          "hs": 33.3,
+          "w": 18,
+          "l": 14,
+          "k": 36,
+          "d": 23,
+          "a": 15,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Smoke",
+          "side": "DEF",
+          "rounds": 23,
+          "winPct": 43.5,
+          "kd": 0.76,
+          "hs": 7.7,
+          "w": 10,
+          "l": 13,
+          "k": 13,
+          "d": 17,
+          "a": 9,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "matches": 52,
+        "w": 23,
+        "l": 29,
+        "winRate": 44.2,
+        "kd": 0.79,
+        "avgHs": 37.9,
+        "netRp": 375,
+        "peakRp": 1624,
+        "rank": "Bronze IV",
+        "rp": 1624,
+        "nextRank": "Bronze III",
+        "rpToNext": 76
+      },
+      "scope": "roster role unconfirmed"
+    },
+    "lcew4ll0wcome": {
+      "name": "LceW4ll0wCome",
+      "n": 28,
+      "w": 13,
+      "l": 15,
+      "u": 0,
+      "k": 126,
+      "d": 104,
+      "a": 46,
+      "headshots": 45,
+      "kd": 1.212,
+      "hs": 35.7,
+      "diff": 22,
+      "months": {
+        "Jun": {
+          "n": 28,
+          "w": 13,
+          "l": 15,
+          "u": 0,
+          "k": 126,
+          "d": 104
+        },
+        "Jul": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "u": 0,
+          "k": 0,
+          "d": 0
+        },
+        "Aug": {
+          "n": 0,
+          "w": 0,
+          "l": 0,
+          "u": 0,
+          "k": 0,
+          "d": 0
+        }
+      },
+      "topOps": [
+        {
+          "name": "Jackal",
+          "side": "ATK",
+          "rounds": 30,
+          "winPct": 36.7,
+          "kd": 1.05,
+          "hs": 54.5,
+          "w": 11,
+          "l": 19,
+          "k": 22,
+          "d": 21,
+          "a": 7,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Nomad",
+          "side": "ATK",
+          "rounds": 26,
+          "winPct": 34.6,
+          "kd": 0.95,
+          "hs": 16.7,
+          "w": 9,
+          "l": 17,
+          "k": 18,
+          "d": 19,
+          "a": 4,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Kaid",
+          "side": "DEF",
+          "rounds": 18,
+          "winPct": 77.8,
+          "kd": 3.5,
+          "hs": 33.3,
+          "w": 14,
+          "l": 4,
+          "k": 21,
+          "d": 6,
+          "a": 7,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Mute",
+          "side": "DEF",
+          "rounds": 16,
+          "winPct": 43.8,
+          "kd": 0.73,
+          "hs": 12.5,
+          "w": 7,
+          "l": 9,
+          "k": 8,
+          "d": 11,
+          "a": 5,
+          "aces": 0,
+          "tks": 0
+        },
+        {
+          "name": "Valkyrie",
+          "side": "DEF",
+          "rounds": 16,
+          "winPct": 68.8,
+          "kd": 1.86,
+          "hs": 46.2,
+          "w": 11,
+          "l": 5,
+          "k": 13,
+          "d": 7,
+          "a": 5,
+          "aces": 0,
+          "tks": 0
+        }
+      ],
+      "meta": {
+        "rank": "Silver IV",
+        "rp": 2156,
+        "peakRp": 2191,
+        "nextRank": "Silver III",
+        "rpToNext": 44,
+        "matches": 28,
+        "w": 13,
+        "l": 15,
+        "winRate": 46.4,
+        "kd": 1.21,
+        "avgHs": 35.7,
+        "netRp": -34
+      },
+      "scope": "alt"
+    }
+  },
+  "sharedExamples": [
+    {
+      "date": "Jul 3",
+      "players": [
+        "cunderthock",
+        "rogue_amputee",
+        "matticus_hq",
+        "slackandlack",
+        "mjester1337"
+      ],
+      "sequence": [
+        [
+          "Border",
+          "4:2",
+          "W"
+        ],
+        [
+          "Nighthaven Labs",
+          "4:0",
+          "W"
+        ],
+        [
+          "Oregon",
+          "0:4",
+          "L"
+        ]
+      ],
+      "w": 2,
+      "l": 1,
+      "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+      "playerTotals": {
+        "cunderthock": {
+          "k": 12,
+          "d": 9,
+          "a": 3
+        },
+        "rogue_amputee": {
+          "k": 5,
+          "d": 9,
+          "a": 6
+        },
+        "matticus_hq": {
+          "k": 11,
+          "d": 8,
+          "a": 2
+        },
+        "slackandlack": {
+          "k": 16,
+          "d": 10,
+          "a": 3
+        },
+        "mjester1337": {
+          "k": 12,
+          "d": 9,
+          "a": 3
+        }
+      },
+      "anchors": {
+        "cunderthock": [
+          {
+            "map": "Border",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2653,
+            "k": 9,
+            "d": 3,
+            "a": 2
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2630,
+            "k": 2,
+            "d": 2,
+            "a": 1
+          },
+          {
+            "map": "Oregon",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2630,
+            "k": 1,
+            "d": 4,
+            "a": 0
+          }
+        ],
+        "rogue_amputee": [
+          {
+            "map": "Border",
+            "score": "4:2",
+            "result": "W",
+            "rp": 1979,
+            "k": 1,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:0",
+            "result": "W",
+            "rp": 1952,
+            "k": 4,
+            "d": 1,
+            "a": 4
+          },
+          {
+            "map": "Oregon",
+            "score": "0:4",
+            "result": "L",
+            "rp": 1952,
+            "k": 0,
+            "d": 4,
+            "a": 1
+          }
+        ],
+        "matticus_hq": [
+          {
+            "map": "Border",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2177,
+            "k": 2,
+            "d": 3,
+            "a": 0
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2151,
+            "k": 5,
+            "d": 1,
+            "a": 0
+          },
+          {
+            "map": "Oregon",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2151,
+            "k": 4,
+            "d": 4,
+            "a": 2
+          }
+        ],
+        "slackandlack": [
+          {
+            "map": "Border",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2356,
+            "k": 10,
+            "d": 3,
+            "a": 0
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2331,
+            "k": 5,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Oregon",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2331,
+            "k": 1,
+            "d": 4,
+            "a": 2
+          }
+        ],
+        "mjester1337": [
+          {
+            "map": "Border",
+            "score": "4:2",
+            "result": "W",
+            "rp": 1912,
+            "k": 5,
+            "d": 4,
+            "a": 3
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:0",
+            "result": "W",
+            "rp": 1885,
+            "k": 3,
+            "d": 1,
+            "a": 0
+          },
+          {
+            "map": "Oregon",
+            "score": "0:4",
+            "result": "L",
+            "rp": 1885,
+            "k": 4,
+            "d": 4,
+            "a": 0
+          }
+        ]
+      }
+    },
+    {
+      "date": "Jun 7",
+      "players": [
+        "grandmaster_sandman",
+        "slackandlack"
+      ],
+      "sequence": [
+        [
+          "Lair",
+          "4:2",
+          "W"
+        ],
+        [
+          "Border",
+          "2:4",
+          "L"
+        ],
+        [
+          "Calypso Casino",
+          "4:2",
+          "W"
+        ],
+        [
+          "Clubhouse",
+          "4:2",
+          "W"
+        ],
+        [
+          "Lair",
+          "4:0",
+          "W"
+        ],
+        [
+          "Border",
+          "5:4",
+          "W"
+        ],
+        [
+          "Oregon",
+          "4:2",
+          "W"
+        ]
+      ],
+      "w": 6,
+      "l": 1,
+      "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+      "playerTotals": {
+        "grandmaster_sandman": {
+          "k": 42,
+          "d": 30,
+          "a": 12
+        },
+        "slackandlack": {
+          "k": 35,
+          "d": 31,
+          "a": 10
+        }
+      },
+      "anchors": {
+        "grandmaster_sandman": [
+          {
+            "map": "Lair",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2598,
+            "k": 8,
+            "d": 3,
+            "a": 0
+          },
+          {
+            "map": "Border",
+            "score": "2:4",
+            "result": "L",
+            "rp": 2574,
+            "k": 7,
+            "d": 6,
+            "a": 1
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2599,
+            "k": 5,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Clubhouse",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2574,
+            "k": 9,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Lair",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2548,
+            "k": 2,
+            "d": 2,
+            "a": 3
+          },
+          {
+            "map": "Border",
+            "score": "5:4",
+            "result": "W",
+            "rp": 2524,
+            "k": 3,
+            "d": 8,
+            "a": 4
+          },
+          {
+            "map": "Oregon",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2498,
+            "k": 8,
+            "d": 5,
+            "a": 2
+          }
+        ],
+        "slackandlack": [
+          {
+            "map": "Lair",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2374,
+            "k": 5,
+            "d": 5,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "2:4",
+            "result": "L",
+            "rp": 2350,
+            "k": 7,
+            "d": 5,
+            "a": 2
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2375,
+            "k": 3,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Clubhouse",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2350,
+            "k": 6,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Lair",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2324,
+            "k": 3,
+            "d": 2,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "5:4",
+            "result": "W",
+            "rp": 2300,
+            "k": 5,
+            "d": 7,
+            "a": 3
+          },
+          {
+            "map": "Oregon",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2274,
+            "k": 6,
+            "d": 5,
+            "a": 1
+          }
+        ]
+      }
+    },
+    {
+      "date": "Jul 25",
+      "players": [
+        "rogue_amputee",
+        "mjester1337"
+      ],
+      "sequence": [
+        [
+          "Fortress",
+          "3:5",
+          "L"
+        ],
+        [
+          "Consulate",
+          "1:4",
+          "L"
+        ],
+        [
+          "Chalet",
+          "0:4",
+          "L"
+        ],
+        [
+          "Kanal",
+          "0:4",
+          "L"
+        ],
+        [
+          "Lair",
+          "1:4",
+          "L"
+        ]
+      ],
+      "w": 0,
+      "l": 5,
+      "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+      "playerTotals": {
+        "rogue_amputee": {
+          "k": 7,
+          "d": 22,
+          "a": 4
+        },
+        "mjester1337": {
+          "k": 23,
+          "d": 21,
+          "a": 7
+        }
+      },
+      "anchors": {
+        "rogue_amputee": [
+          {
+            "map": "Fortress",
+            "score": "3:5",
+            "result": "L",
+            "rp": 2274,
+            "k": 3,
+            "d": 7,
+            "a": 0
+          },
+          {
+            "map": "Consulate",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2300,
+            "k": 0,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Chalet",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2322,
+            "k": 1,
+            "d": 4,
+            "a": 2
+          },
+          {
+            "map": "Kanal",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2348,
+            "k": 1,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Lair",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2376,
+            "k": 2,
+            "d": 3,
+            "a": 0
+          }
+        ],
+        "mjester1337": [
+          {
+            "map": "Fortress",
+            "score": "3:5",
+            "result": "L",
+            "rp": 2221,
+            "k": 7,
+            "d": 6,
+            "a": 3
+          },
+          {
+            "map": "Consulate",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2247,
+            "k": 5,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Chalet",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2274,
+            "k": 2,
+            "d": 4,
+            "a": 0
+          },
+          {
+            "map": "Kanal",
+            "score": "0:4",
+            "result": "L",
+            "rp": 2300,
+            "k": 4,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Lair",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2320,
+            "k": 5,
+            "d": 4,
+            "a": 2
+          }
+        ]
+      }
+    },
+    {
+      "date": "Jun 20",
+      "players": [
+        "grandmaster_sandman",
+        "slackandlack",
+        "mjester1337",
+        "lcew4ll0wcome"
+      ],
+      "sequence": [
+        [
+          "Clubhouse",
+          "4:0",
+          "W"
+        ],
+        [
+          "Consulate",
+          "2:4",
+          "L"
+        ],
+        [
+          "Calypso Casino",
+          "4:1",
+          "W"
+        ],
+        [
+          "Emerald Plains",
+          "4:2",
+          "W"
+        ],
+        [
+          "Border",
+          "4:0",
+          "W"
+        ],
+        [
+          "Bank",
+          "1:4",
+          "L"
+        ]
+      ],
+      "w": 4,
+      "l": 2,
+      "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+      "playerTotals": {
+        "grandmaster_sandman": {
+          "k": 20,
+          "d": 16,
+          "a": 8
+        },
+        "slackandlack": {
+          "k": 40,
+          "d": 23,
+          "a": 7
+        },
+        "mjester1337": {
+          "k": 15,
+          "d": 17,
+          "a": 12
+        },
+        "lcew4ll0wcome": {
+          "k": 23,
+          "d": 12,
+          "a": 4
+        }
+      },
+      "anchors": {
+        "grandmaster_sandman": [
+          {
+            "map": "Clubhouse",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2534,
+            "k": 4,
+            "d": 1,
+            "a": 1
+          },
+          {
+            "map": "Consulate",
+            "score": "2:4",
+            "result": "L",
+            "rp": 2508,
+            "k": 2,
+            "d": 4,
+            "a": 3
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:1",
+            "result": "W",
+            "rp": 2534,
+            "k": 5,
+            "d": 2,
+            "a": 2
+          },
+          {
+            "map": "Emerald Plains",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2513,
+            "k": 4,
+            "d": 4,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2491,
+            "k": 2,
+            "d": 1,
+            "a": 1
+          },
+          {
+            "map": "Bank",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2469,
+            "k": 3,
+            "d": 4,
+            "a": 0
+          }
+        ],
+        "slackandlack": [
+          {
+            "map": "Clubhouse",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2343,
+            "k": 9,
+            "d": 2,
+            "a": 3
+          },
+          {
+            "map": "Consulate",
+            "score": "2:4",
+            "result": "L",
+            "rp": 2316,
+            "k": 3,
+            "d": 6,
+            "a": 0
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:1",
+            "result": "W",
+            "rp": 2341,
+            "k": 7,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Emerald Plains",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2319,
+            "k": 7,
+            "d": 6,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2296,
+            "k": 9,
+            "d": 2,
+            "a": 1
+          },
+          {
+            "map": "Bank",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2273,
+            "k": 5,
+            "d": 4,
+            "a": 1
+          }
+        ],
+        "mjester1337": [
+          {
+            "map": "Clubhouse",
+            "score": "4:0",
+            "result": "W",
+            "rp": 1589,
+            "k": 4,
+            "d": 1,
+            "a": 0
+          },
+          {
+            "map": "Consulate",
+            "score": "2:4",
+            "result": "L",
+            "rp": 1558,
+            "k": 3,
+            "d": 6,
+            "a": 3
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:1",
+            "result": "W",
+            "rp": 1580,
+            "k": 1,
+            "d": 2,
+            "a": 2
+          },
+          {
+            "map": "Emerald Plains",
+            "score": "4:2",
+            "result": "W",
+            "rp": 1554,
+            "k": 4,
+            "d": 3,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "4:0",
+            "result": "W",
+            "rp": 1527,
+            "k": 1,
+            "d": 1,
+            "a": 2
+          },
+          {
+            "map": "Bank",
+            "score": "1:4",
+            "result": "L",
+            "rp": 1500,
+            "k": 2,
+            "d": 4,
+            "a": 4
+          }
+        ],
+        "lcew4ll0wcome": [
+          {
+            "map": "Clubhouse",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2128,
+            "k": 1,
+            "d": 0,
+            "a": 1
+          },
+          {
+            "map": "Consulate",
+            "score": "2:4",
+            "result": "L",
+            "rp": 2100,
+            "k": 7,
+            "d": 3,
+            "a": 0
+          },
+          {
+            "map": "Calypso Casino",
+            "score": "4:1",
+            "result": "W",
+            "rp": 2122,
+            "k": 6,
+            "d": 1,
+            "a": 1
+          },
+          {
+            "map": "Emerald Plains",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2099,
+            "k": 6,
+            "d": 2,
+            "a": 1
+          },
+          {
+            "map": "Border",
+            "score": "4:0",
+            "result": "W",
+            "rp": 2075,
+            "k": 0,
+            "d": 1,
+            "a": 1
+          },
+          {
+            "map": "Bank",
+            "score": "1:4",
+            "result": "L",
+            "rp": 2051,
+            "k": 3,
+            "d": 5,
+            "a": 0
+          }
+        ]
+      }
+    },
+    {
+      "date": "Aug 14",
+      "players": [
+        "rogue_amputee",
+        "matticus_hq",
+        "mjester1337"
+      ],
+      "sequence": [
+        [
+          "Oregon",
+          "5:4",
+          "W"
+        ],
+        [
+          "Nighthaven Labs",
+          "4:2",
+          "W"
+        ],
+        [
+          "Fortress",
+          "4:2",
+          "W"
+        ]
+      ],
+      "w": 3,
+      "l": 0,
+      "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+      "playerTotals": {
+        "rogue_amputee": {
+          "k": 10,
+          "d": 14,
+          "a": 8
+        },
+        "matticus_hq": {
+          "k": 14,
+          "d": 9,
+          "a": 4
+        },
+        "mjester1337": {
+          "k": 12,
+          "d": 14,
+          "a": 7
+        }
+      },
+      "anchors": {
+        "rogue_amputee": [
+          {
+            "map": "Oregon",
+            "score": "5:4",
+            "result": "W",
+            "rp": 2594,
+            "k": 2,
+            "d": 6,
+            "a": 2
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2563,
+            "k": 6,
+            "d": 3,
+            "a": 2
+          },
+          {
+            "map": "Fortress",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2531,
+            "k": 2,
+            "d": 5,
+            "a": 4
+          }
+        ],
+        "matticus_hq": [
+          {
+            "map": "Oregon",
+            "score": "5:4",
+            "result": "W",
+            "rp": 2298,
+            "k": 7,
+            "d": 5,
+            "a": 2
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2266,
+            "k": 4,
+            "d": 2,
+            "a": 0
+          },
+          {
+            "map": "Fortress",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2232,
+            "k": 3,
+            "d": 2,
+            "a": 2
+          }
+        ],
+        "mjester1337": [
+          {
+            "map": "Oregon",
+            "score": "5:4",
+            "result": "W",
+            "rp": 2471,
+            "k": 4,
+            "d": 6,
+            "a": 2
+          },
+          {
+            "map": "Nighthaven Labs",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2440,
+            "k": 3,
+            "d": 4,
+            "a": 2
+          },
+          {
+            "map": "Fortress",
+            "score": "4:2",
+            "result": "W",
+            "rp": 2407,
+            "k": 5,
+            "d": 4,
+            "a": 3
+          }
+        ]
+      }
+    }
+  ],
+  "pairSequenceEvidence": [
+    {
+      "players": [
+        "cunderthock",
+        "rogue_amputee"
+      ],
+      "qualifyingDates": [
+        "Jun 3",
+        "Jun 7",
+        "Jun 10",
+        "Jun 13",
+        "Jun 21",
+        "Jun 24",
+        "Jul 1",
+        "Jul 3",
+        "Jul 9"
+      ],
+      "longestRun": {
+        "date": "Jul 1",
+        "length": 5,
+        "sequence": [
+          [
+            "Bank",
+            "4:1",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:2",
+            "W"
+          ],
+          [
+            "Nighthaven Labs",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "3:5",
+            "L"
+          ],
+          [
+            "Emerald Plains",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 1",
+            "map": "Bank",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2633,
+            "drp": 23,
+            "k": 5,
+            "d": 3,
+            "a": 0,
+            "hs": 40.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2610,
+            "drp": 23,
+            "k": 4,
+            "d": 6,
+            "a": 4,
+            "hs": 50.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Nighthaven Labs",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2587,
+            "drp": 23,
+            "k": 11,
+            "d": 3,
+            "a": 3,
+            "hs": 54.5,
+            "badges": [
+              "4K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Border",
+            "result": "L",
+            "score": "3:5",
+            "rp": 2564,
+            "drp": -25,
+            "k": 1,
+            "d": 7,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 1",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2589,
+            "drp": 24,
+            "k": 4,
+            "d": 5,
+            "a": 0,
+            "hs": 75.0,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 1",
+            "map": "Bank",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1948,
+            "drp": 27,
+            "k": 2,
+            "d": 3,
+            "a": 3,
+            "hs": 50.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 1",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1921,
+            "drp": 27,
+            "k": 5,
+            "d": 2,
+            "a": 0,
+            "hs": 80.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Nighthaven Labs",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1894,
+            "drp": 27,
+            "k": 1,
+            "d": 6,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "TK",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Border",
+            "result": "L",
+            "score": "3:5",
+            "rp": 1867,
+            "drp": -22,
+            "k": 7,
+            "d": 6,
+            "a": 4,
+            "hs": 28.6,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 1",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1889,
+            "drp": 28,
+            "k": 2,
+            "d": 4,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "grandmaster_sandman"
+      ],
+      "qualifyingDates": [
+        "Jun 3",
+        "Jun 10",
+        "Jun 13",
+        "Jun 19",
+        "Jun 24",
+        "Jun 26",
+        "Jun 28",
+        "Jul 1"
+      ],
+      "longestRun": {
+        "date": "Jun 10",
+        "length": 4,
+        "sequence": [
+          [
+            "Consulate",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Outback",
+            "4:2",
+            "W"
+          ],
+          [
+            "Oregon",
+            "2:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2572,
+            "drp": 26,
+            "k": 5,
+            "d": 2,
+            "a": 2,
+            "hs": 40.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2546,
+            "drp": 23,
+            "k": 5,
+            "d": 4,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2523,
+            "drp": 23,
+            "k": 7,
+            "d": 3,
+            "a": 0,
+            "hs": 57.1,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2500,
+            "drp": -9,
+            "k": 2,
+            "d": 4,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2677,
+            "drp": 26,
+            "k": 10,
+            "d": 2,
+            "a": 0,
+            "hs": 30.0,
+            "badges": [
+              "4K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2651,
+            "drp": 23,
+            "k": 4,
+            "d": 5,
+            "a": 3,
+            "hs": 50.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2628,
+            "drp": 23,
+            "k": 3,
+            "d": 5,
+            "a": 3,
+            "hs": 66.7,
+            "badges": []
+          },
+          {
+            "date": "Jun 10",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2605,
+            "drp": -19,
+            "k": 6,
+            "d": 5,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "1v3 Lost"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "matticus_hq"
+      ],
+      "qualifyingDates": [
+        "Jun 10",
+        "Jun 26",
+        "Jul 3"
+      ],
+      "longestRun": {
+        "date": "Jun 10",
+        "length": 3,
+        "sequence": [
+          [
+            "Consulate",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Outback",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2572,
+            "drp": 26,
+            "k": 5,
+            "d": 2,
+            "a": 2,
+            "hs": 40.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2546,
+            "drp": 23,
+            "k": 5,
+            "d": 4,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2523,
+            "drp": 23,
+            "k": 7,
+            "d": 3,
+            "a": 0,
+            "hs": 57.1,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2113,
+            "drp": 26,
+            "k": 2,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2087,
+            "drp": 23,
+            "k": 4,
+            "d": 2,
+            "a": 1,
+            "hs": 75.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2064,
+            "drp": 23,
+            "k": 5,
+            "d": 2,
+            "a": 0,
+            "hs": 40.0,
+            "badges": [
+              "1v1 Lost",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "slackandlack"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 13",
+        "Jun 21",
+        "Jun 28",
+        "Jul 3"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 4,
+        "sequence": [
+          [
+            "Oregon",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "2:4",
+            "L"
+          ],
+          [
+            "Lair",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "2:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2509,
+            "drp": -26,
+            "k": 4,
+            "d": 6,
+            "a": 1,
+            "hs": 25.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2535,
+            "drp": -24,
+            "k": 6,
+            "d": 5,
+            "a": 0,
+            "hs": 50.0,
+            "badges": [
+              "1v2 Clutch",
+              "4K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2559,
+            "drp": 24,
+            "k": 8,
+            "d": 3,
+            "a": 2,
+            "hs": 37.5,
+            "badges": [
+              "4K",
+              "1v1 Clutch"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2535,
+            "drp": -25,
+            "k": 2,
+            "d": 5,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2324,
+            "drp": -26,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 40.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -24,
+            "k": 5,
+            "d": 6,
+            "a": 0,
+            "hs": 60.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2374,
+            "drp": 24,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -25,
+            "k": 7,
+            "d": 5,
+            "a": 2,
+            "hs": 42.9,
+            "badges": [
+              "Ace",
+              "1v1 Clutch"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "mjester1337"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 10",
+        "Jun 19",
+        "Jun 21",
+        "Jun 24",
+        "Jun 26",
+        "Jun 28",
+        "Jul 1",
+        "Jul 3"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 4,
+        "sequence": [
+          [
+            "Oregon",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "2:4",
+            "L"
+          ],
+          [
+            "Lair",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "2:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2509,
+            "drp": -26,
+            "k": 4,
+            "d": 6,
+            "a": 1,
+            "hs": 25.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2535,
+            "drp": -24,
+            "k": 6,
+            "d": 5,
+            "a": 0,
+            "hs": 50.0,
+            "badges": [
+              "1v2 Clutch",
+              "4K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2559,
+            "drp": 24,
+            "k": 8,
+            "d": 3,
+            "a": 2,
+            "hs": 37.5,
+            "badges": [
+              "4K",
+              "1v1 Clutch"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2535,
+            "drp": -25,
+            "k": 2,
+            "d": 5,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1344,
+            "drp": -26,
+            "k": 4,
+            "d": 5,
+            "a": 3,
+            "hs": 50.0,
+            "badges": [
+              "1v1 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1370,
+            "drp": -24,
+            "k": 1,
+            "d": 5,
+            "a": 3,
+            "hs": 100.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1394,
+            "drp": 24,
+            "k": 1,
+            "d": 4,
+            "a": 5,
+            "hs": 0.0,
+            "badges": [
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1370,
+            "drp": -25,
+            "k": 2,
+            "d": 5,
+            "a": 4,
+            "hs": 100.0,
+            "badges": []
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "cunderthock",
+        "snsoldier"
+      ],
+      "qualifyingDates": [
+        "Jul 9"
+      ],
+      "longestRun": {
+        "date": "Jul 9",
+        "length": 3,
+        "sequence": [
+          [
+            "Clubhouse",
+            "3:5",
+            "L"
+          ],
+          [
+            "Lair",
+            "0:4",
+            "L"
+          ],
+          [
+            "Oregon",
+            "4:0",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 9",
+            "map": "Clubhouse",
+            "result": "L",
+            "score": "3:5",
+            "rp": 2631,
+            "drp": -27,
+            "k": 8,
+            "d": 7,
+            "a": 3,
+            "hs": 87.5,
+            "badges": [
+              "2K",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 9",
+            "map": "Lair",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2658,
+            "drp": -27,
+            "k": 5,
+            "d": 4,
+            "a": 1,
+            "hs": 40.0,
+            "badges": [
+              "3K",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 9",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2685,
+            "drp": 35,
+            "k": 1,
+            "d": 3,
+            "a": 3,
+            "hs": 100.0,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 9",
+            "map": "Clubhouse",
+            "result": "L",
+            "score": "3:5",
+            "rp": 1280,
+            "drp": -20,
+            "k": 5,
+            "d": 7,
+            "a": 5,
+            "hs": 20.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 9",
+            "map": "Lair",
+            "result": "L",
+            "score": "0:4",
+            "rp": 1300,
+            "drp": -19,
+            "k": 2,
+            "d": 4,
+            "a": 0,
+            "hs": 50.0,
+            "badges": [
+              "1v2 Lost",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 9",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1319,
+            "drp": 41,
+            "k": 7,
+            "d": 3,
+            "a": 1,
+            "hs": 57.1,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "cunderthock",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [
+        "Jun 19"
+      ],
+      "longestRun": {
+        "date": "Jun 19",
+        "length": 3,
+        "sequence": [
+          [
+            "Calypso Casino",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:5",
+            "L"
+          ],
+          [
+            "Coastline",
+            "0:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "d": 5,
+            "badges": [],
+            "k": 2,
+            "drp": -27,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "2:4",
+            "rp": 2473,
+            "result": "L",
+            "a": 1
+          },
+          {
+            "d": 5,
+            "badges": [
+              "1v3 Clutch",
+              "3K"
+            ],
+            "k": 7,
+            "drp": -17,
+            "hs": 14.3,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "4:5",
+            "rp": 2500,
+            "result": "L",
+            "a": 1
+          },
+          {
+            "d": 4,
+            "badges": [
+              "1v2 Lost",
+              "Victim"
+            ],
+            "k": 1,
+            "drp": -25,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Coastline",
+            "score": "0:4",
+            "rp": 2517,
+            "result": "L",
+            "a": 1
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2051,
+            "drp": -24,
+            "k": 3,
+            "d": 5,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "4:5",
+            "rp": 2075,
+            "drp": -25,
+            "k": 4,
+            "d": 6,
+            "a": 4,
+            "hs": 50.0,
+            "badges": [
+              "1v1 Lost",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Coastline",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2100,
+            "drp": -10,
+            "k": 1,
+            "d": 3,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "1v1 Lost"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "grandmaster_sandman"
+      ],
+      "qualifyingDates": [
+        "Jun 3",
+        "Jun 7",
+        "Jun 10",
+        "Jun 12",
+        "Jun 13",
+        "Jun 24",
+        "Jul 1",
+        "Jul 9",
+        "Jul 22",
+        "Jul 24",
+        "Aug 4",
+        "Aug 11",
+        "Aug 14",
+        "Aug 18",
+        "Aug 21",
+        "Aug 27"
+      ],
+      "longestRun": {
+        "date": "Jul 24",
+        "length": 6,
+        "sequence": [
+          [
+            "Bank",
+            "5:4",
+            "W"
+          ],
+          [
+            "Oregon",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "1:4",
+            "L"
+          ],
+          [
+            "Chalet",
+            "1:4",
+            "L"
+          ],
+          [
+            "Kanal",
+            "4:1",
+            "W"
+          ],
+          [
+            "Kafe Dostoyevsky",
+            "2:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2400,
+            "drp": 34,
+            "k": 4,
+            "d": 5,
+            "a": 3,
+            "hs": 25.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2366,
+            "drp": 35,
+            "k": 6,
+            "d": 1,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2331,
+            "drp": -26,
+            "k": 1,
+            "d": 5,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2357,
+            "drp": -26,
+            "k": 3,
+            "d": 5,
+            "a": 5,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Kanal",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2383,
+            "drp": 33,
+            "k": 2,
+            "d": 2,
+            "a": 2,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 24",
+            "map": "Kafe Dostoyevsky",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -24,
+            "k": 3,
+            "d": 5,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2674,
+            "drp": 33,
+            "k": 16,
+            "d": 5,
+            "a": 1,
+            "hs": 43.8,
+            "badges": [
+              "1v3 Clutch",
+              "4K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2641,
+            "drp": 34,
+            "k": 5,
+            "d": 3,
+            "a": 3,
+            "hs": 80.0,
+            "badges": [
+              "1v3 Clutch",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2607,
+            "drp": -28,
+            "k": 4,
+            "d": 4,
+            "a": 3,
+            "hs": 75.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2635,
+            "drp": -27,
+            "k": 6,
+            "d": 4,
+            "a": 2,
+            "hs": 16.7,
+            "badges": [
+              "1v1 Clutch",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Kanal",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2662,
+            "drp": 32,
+            "k": 6,
+            "d": 2,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "4K",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Kafe Dostoyevsky",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2630,
+            "drp": -26,
+            "k": 3,
+            "d": 5,
+            "a": 1,
+            "hs": 66.7,
+            "badges": [
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "matticus_hq"
+      ],
+      "qualifyingDates": [
+        "Jun 10",
+        "Jun 25",
+        "Jul 3",
+        "Aug 14"
+      ],
+      "longestRun": {
+        "date": "Jun 10",
+        "length": 3,
+        "sequence": [
+          [
+            "Consulate",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Outback",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1853,
+            "drp": 26,
+            "k": 4,
+            "d": 3,
+            "a": 3,
+            "hs": 0.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1827,
+            "drp": 23,
+            "k": 6,
+            "d": 3,
+            "a": 2,
+            "hs": 33.3,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1804,
+            "drp": 23,
+            "k": 8,
+            "d": 3,
+            "a": 3,
+            "hs": 37.5,
+            "badges": [
+              "3K",
+              "1v1 Lost"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2113,
+            "drp": 26,
+            "k": 2,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2087,
+            "drp": 23,
+            "k": 4,
+            "d": 2,
+            "a": 1,
+            "hs": 75.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2064,
+            "drp": 23,
+            "k": 5,
+            "d": 2,
+            "a": 0,
+            "hs": 40.0,
+            "badges": [
+              "1v1 Lost",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "slackandlack"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 13",
+        "Jun 21",
+        "Jun 28",
+        "Jul 3",
+        "Jul 12",
+        "Jul 19",
+        "Jul 31",
+        "Aug 16",
+        "Aug 19"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 6,
+        "sequence": [
+          [
+            "Oregon",
+            "1:4",
+            "L"
+          ],
+          [
+            "Oregon",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "2:4",
+            "L"
+          ],
+          [
+            "Lair",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1774,
+            "drp": -26,
+            "k": 1,
+            "d": 5,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1800,
+            "drp": -15,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "1v2 Clutch",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1815,
+            "drp": -24,
+            "k": 2,
+            "d": 5,
+            "a": 2,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1839,
+            "drp": 24,
+            "k": 3,
+            "d": 5,
+            "a": 3,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1815,
+            "drp": -25,
+            "k": 4,
+            "d": 5,
+            "a": 0,
+            "hs": 0.0,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1840,
+            "drp": 25,
+            "k": 8,
+            "d": 3,
+            "a": 4,
+            "hs": 25.0,
+            "badges": [
+              "2K",
+              "2K",
+              "2K",
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2300,
+            "drp": -24,
+            "k": 4,
+            "d": 4,
+            "a": 0,
+            "hs": 50.0,
+            "badges": [
+              "1v1 Clutch",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2324,
+            "drp": -26,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 40.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -24,
+            "k": 5,
+            "d": 6,
+            "a": 0,
+            "hs": 60.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2374,
+            "drp": 24,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -25,
+            "k": 7,
+            "d": 5,
+            "a": 2,
+            "hs": 42.9,
+            "badges": [
+              "Ace",
+              "1v1 Clutch"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2375,
+            "drp": 25,
+            "k": 3,
+            "d": 3,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "mjester1337"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 10",
+        "Jun 12",
+        "Jun 21",
+        "Jun 24",
+        "Jun 25",
+        "Jul 1",
+        "Jul 3",
+        "Jul 16",
+        "Jul 19",
+        "Jul 22",
+        "Jul 23",
+        "Jul 24",
+        "Jul 25",
+        "Jul 26",
+        "Jul 31",
+        "Aug 2",
+        "Aug 4",
+        "Aug 5",
+        "Aug 11",
+        "Aug 14",
+        "Aug 19",
+        "Aug 21",
+        "Aug 27",
+        "Aug 28"
+      ],
+      "longestRun": {
+        "date": "Jul 23",
+        "length": 6,
+        "sequence": [
+          [
+            "Oregon",
+            "4:1",
+            "W"
+          ],
+          [
+            "Kanal",
+            "1:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:5",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:2",
+            "W"
+          ],
+          [
+            "Bank",
+            "4:1",
+            "W"
+          ],
+          [
+            "Oregon",
+            "5:3",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 23",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2374,
+            "drp": 35,
+            "k": 4,
+            "d": 3,
+            "a": 3,
+            "hs": 25.0,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Kanal",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2339,
+            "drp": -26,
+            "k": 1,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "4:5",
+            "rp": 2365,
+            "drp": -27,
+            "k": 9,
+            "d": 5,
+            "a": 1,
+            "hs": 44.4,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2392,
+            "drp": 38,
+            "k": 2,
+            "d": 5,
+            "a": 2,
+            "hs": 100.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 23",
+            "map": "Bank",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2354,
+            "drp": 34,
+            "k": 3,
+            "d": 2,
+            "a": 1,
+            "hs": 33.3,
+            "badges": []
+          },
+          {
+            "date": "Jul 23",
+            "map": "Oregon",
+            "result": "W",
+            "score": "5:3",
+            "rp": 2320,
+            "drp": 35,
+            "k": 2,
+            "d": 6,
+            "a": 3,
+            "hs": 50.0,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 23",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2335,
+            "drp": 35,
+            "k": 6,
+            "d": 3,
+            "a": 2,
+            "hs": 33.3,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Kanal",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2300,
+            "drp": -18,
+            "k": 1,
+            "d": 4,
+            "a": 3,
+            "hs": 100.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 23",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "4:5",
+            "rp": 2318,
+            "drp": -26,
+            "k": 7,
+            "d": 5,
+            "a": 0,
+            "hs": 28.6,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2344,
+            "drp": 39,
+            "k": 5,
+            "d": 3,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Bank",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2305,
+            "drp": 34,
+            "k": 3,
+            "d": 4,
+            "a": 0,
+            "hs": 33.3,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 23",
+            "map": "Oregon",
+            "result": "W",
+            "score": "5:3",
+            "rp": 2271,
+            "drp": 36,
+            "k": 7,
+            "d": 6,
+            "a": 1,
+            "hs": 14.3,
+            "badges": [
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "snsoldier"
+      ],
+      "qualifyingDates": [
+        "Jul 9",
+        "Jul 19",
+        "Jul 24",
+        "Jul 25",
+        "Jul 26"
+      ],
+      "longestRun": {
+        "date": "Jul 24",
+        "length": 4,
+        "sequence": [
+          [
+            "Bank",
+            "5:4",
+            "W"
+          ],
+          [
+            "Oregon",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "1:4",
+            "L"
+          ],
+          [
+            "Chalet",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2400,
+            "drp": 34,
+            "k": 4,
+            "d": 5,
+            "a": 3,
+            "hs": 25.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2366,
+            "drp": 35,
+            "k": 6,
+            "d": 1,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2331,
+            "drp": -26,
+            "k": 1,
+            "d": 5,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2357,
+            "drp": -26,
+            "k": 3,
+            "d": 5,
+            "a": 5,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "Victim"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1457,
+            "drp": 39,
+            "k": 3,
+            "d": 6,
+            "a": 1,
+            "hs": 66.7,
+            "badges": []
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1418,
+            "drp": 40,
+            "k": 2,
+            "d": 3,
+            "a": 0,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1378,
+            "drp": -22,
+            "k": 2,
+            "d": 5,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "Victim",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1400,
+            "drp": -11,
+            "k": 1,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "rogue_amputee",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "matticus_hq"
+      ],
+      "qualifyingDates": [
+        "Jun 10",
+        "Jun 26"
+      ],
+      "longestRun": {
+        "date": "Jun 10",
+        "length": 3,
+        "sequence": [
+          [
+            "Consulate",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Outback",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2677,
+            "drp": 26,
+            "k": 10,
+            "d": 2,
+            "a": 0,
+            "hs": 30.0,
+            "badges": [
+              "4K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2651,
+            "drp": 23,
+            "k": 4,
+            "d": 5,
+            "a": 3,
+            "hs": 50.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2628,
+            "drp": 23,
+            "k": 3,
+            "d": 5,
+            "a": 3,
+            "hs": 66.7,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2113,
+            "drp": 26,
+            "k": 2,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2087,
+            "drp": 23,
+            "k": 4,
+            "d": 2,
+            "a": 1,
+            "hs": 75.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2064,
+            "drp": 23,
+            "k": 5,
+            "d": 2,
+            "a": 0,
+            "hs": 40.0,
+            "badges": [
+              "1v1 Lost",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "slackandlack"
+      ],
+      "qualifyingDates": [
+        "Jun 6",
+        "Jun 7",
+        "Jun 13",
+        "Jun 20",
+        "Jun 28",
+        "Jul 6",
+        "Jul 18"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 7,
+        "sequence": [
+          [
+            "Lair",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:2",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:2",
+            "W"
+          ],
+          [
+            "Lair",
+            "4:0",
+            "W"
+          ],
+          [
+            "Border",
+            "5:4",
+            "W"
+          ],
+          [
+            "Oregon",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2598,
+            "drp": 24,
+            "k": 8,
+            "d": 3,
+            "a": 0,
+            "hs": 62.5,
+            "badges": [
+              "3K",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2574,
+            "drp": -25,
+            "k": 7,
+            "d": 6,
+            "a": 1,
+            "hs": 28.6,
+            "badges": [
+              "3K",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2599,
+            "drp": 25,
+            "k": 5,
+            "d": 3,
+            "a": 1,
+            "hs": 40.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2574,
+            "drp": 26,
+            "k": 9,
+            "d": 3,
+            "a": 1,
+            "hs": 44.4,
+            "badges": [
+              "3K",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2548,
+            "drp": 24,
+            "k": 2,
+            "d": 2,
+            "a": 3,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2524,
+            "drp": 26,
+            "k": 3,
+            "d": 8,
+            "a": 4,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2498,
+            "drp": 25,
+            "k": 8,
+            "d": 5,
+            "a": 2,
+            "hs": 50.0,
+            "badges": [
+              "1v2 Clutch",
+              "4K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2374,
+            "drp": 24,
+            "k": 5,
+            "d": 5,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2350,
+            "drp": -25,
+            "k": 7,
+            "d": 5,
+            "a": 2,
+            "hs": 42.9,
+            "badges": [
+              "Ace",
+              "1v1 Clutch"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2375,
+            "drp": 25,
+            "k": 3,
+            "d": 3,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2350,
+            "drp": 26,
+            "k": 6,
+            "d": 4,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2324,
+            "drp": 24,
+            "k": 3,
+            "d": 2,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2300,
+            "drp": 26,
+            "k": 5,
+            "d": 7,
+            "a": 3,
+            "hs": 60.0,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2274,
+            "drp": 0,
+            "k": 6,
+            "d": 5,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "mjester1337"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 10",
+        "Jun 12",
+        "Jun 19",
+        "Jun 20",
+        "Jun 24",
+        "Jun 26",
+        "Jun 28",
+        "Jul 6",
+        "Jul 22",
+        "Jul 24",
+        "Aug 4",
+        "Aug 11",
+        "Aug 14",
+        "Aug 21",
+        "Aug 27"
+      ],
+      "longestRun": {
+        "date": "Jun 20",
+        "length": 6,
+        "sequence": [
+          [
+            "Clubhouse",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Emerald Plains",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "4:0",
+            "W"
+          ],
+          [
+            "Bank",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2534,
+            "drp": 26,
+            "k": 4,
+            "d": 1,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2508,
+            "drp": -26,
+            "k": 2,
+            "d": 4,
+            "a": 3,
+            "hs": 0.0,
+            "badges": [
+              "TK"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2534,
+            "drp": 21,
+            "k": 5,
+            "d": 2,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "4K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2513,
+            "drp": 22,
+            "k": 4,
+            "d": 4,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2491,
+            "drp": 22,
+            "k": 2,
+            "d": 1,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2469,
+            "drp": -28,
+            "k": 3,
+            "d": 4,
+            "a": 0,
+            "hs": 66.7,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1589,
+            "drp": 31,
+            "k": 4,
+            "d": 1,
+            "a": 0,
+            "hs": 25.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1558,
+            "drp": -22,
+            "k": 3,
+            "d": 6,
+            "a": 3,
+            "hs": 100.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1580,
+            "drp": 26,
+            "k": 1,
+            "d": 2,
+            "a": 2,
+            "hs": 100.0,
+            "badges": [
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1554,
+            "drp": 27,
+            "k": 4,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1527,
+            "drp": 27,
+            "k": 1,
+            "d": 1,
+            "a": 2,
+            "hs": 100.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1500,
+            "drp": -14,
+            "k": 2,
+            "d": 4,
+            "a": 4,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [
+        "Jun 7"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 3,
+        "sequence": [
+          [
+            "Clubhouse",
+            "4:2",
+            "W"
+          ],
+          [
+            "Lair",
+            "4:0",
+            "W"
+          ],
+          [
+            "Border",
+            "5:4",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2574,
+            "drp": 26,
+            "k": 9,
+            "d": 3,
+            "a": 1,
+            "hs": 44.4,
+            "badges": [
+              "3K",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2548,
+            "drp": 24,
+            "k": 2,
+            "d": 2,
+            "a": 3,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2524,
+            "drp": 26,
+            "k": 3,
+            "d": 8,
+            "a": 4,
+            "hs": 0.0,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2817,
+            "drp": 26,
+            "k": 4,
+            "d": 4,
+            "a": 3,
+            "hs": 50.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2791,
+            "drp": 24,
+            "k": 11,
+            "d": 1,
+            "a": 1,
+            "hs": 63.6,
+            "badges": [
+              "Ace",
+              "3K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2767,
+            "drp": 26,
+            "k": 13,
+            "d": 5,
+            "a": 2,
+            "hs": 53.8,
+            "badges": [
+              "3K",
+              "3K",
+              "3K",
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "snsoldier"
+      ],
+      "qualifyingDates": [
+        "Jul 24"
+      ],
+      "longestRun": {
+        "date": "Jul 24",
+        "length": 4,
+        "sequence": [
+          [
+            "Bank",
+            "5:4",
+            "W"
+          ],
+          [
+            "Oregon",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "1:4",
+            "L"
+          ],
+          [
+            "Chalet",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2674,
+            "drp": 33,
+            "k": 16,
+            "d": 5,
+            "a": 1,
+            "hs": 43.8,
+            "badges": [
+              "1v3 Clutch",
+              "4K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2641,
+            "drp": 34,
+            "k": 5,
+            "d": 3,
+            "a": 3,
+            "hs": 80.0,
+            "badges": [
+              "1v3 Clutch",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2607,
+            "drp": -28,
+            "k": 4,
+            "d": 4,
+            "a": 3,
+            "hs": 75.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2635,
+            "drp": -27,
+            "k": 6,
+            "d": 4,
+            "a": 2,
+            "hs": 16.7,
+            "badges": [
+              "1v1 Clutch",
+              "2K",
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 24",
+            "map": "Bank",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1457,
+            "drp": 39,
+            "k": 3,
+            "d": 6,
+            "a": 1,
+            "hs": 66.7,
+            "badges": []
+          },
+          {
+            "date": "Jul 24",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1418,
+            "drp": 40,
+            "k": 2,
+            "d": 3,
+            "a": 0,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Consulate",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1378,
+            "drp": -22,
+            "k": 2,
+            "d": 5,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "Victim",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jul 24",
+            "map": "Chalet",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1400,
+            "drp": -11,
+            "k": 1,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "grandmaster_sandman",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [
+        "Jun 19",
+        "Jun 20"
+      ],
+      "longestRun": {
+        "date": "Jun 20",
+        "length": 7,
+        "sequence": [
+          [
+            "Clubhouse",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Emerald Plains",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "4:0",
+            "W"
+          ],
+          [
+            "Bank",
+            "1:4",
+            "L"
+          ],
+          [
+            "Oregon",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2534,
+            "drp": 26,
+            "k": 4,
+            "d": 1,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2508,
+            "drp": -26,
+            "k": 2,
+            "d": 4,
+            "a": 3,
+            "hs": 0.0,
+            "badges": [
+              "TK"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2534,
+            "drp": 21,
+            "k": 5,
+            "d": 2,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "4K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2513,
+            "drp": 22,
+            "k": 4,
+            "d": 4,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2491,
+            "drp": 22,
+            "k": 2,
+            "d": 1,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2469,
+            "drp": -28,
+            "k": 3,
+            "d": 4,
+            "a": 0,
+            "hs": 66.7,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "d": 5,
+            "badges": [
+              "2K",
+              "2K",
+              "1v3 Lost"
+            ],
+            "k": 7,
+            "drp": 24,
+            "hs": 14.3,
+            "date": "Jun 20",
+            "map": "Oregon",
+            "score": "4:2",
+            "rp": 2497,
+            "result": "W",
+            "a": 2
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2128,
+            "drp": 28,
+            "k": 1,
+            "d": 0,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2100,
+            "drp": -22,
+            "k": 7,
+            "d": 3,
+            "a": 0,
+            "hs": 14.3,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2122,
+            "drp": 23,
+            "k": 6,
+            "d": 1,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "4K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2099,
+            "drp": 24,
+            "k": 6,
+            "d": 2,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2075,
+            "drp": 24,
+            "k": 0,
+            "d": 1,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2051,
+            "drp": -26,
+            "k": 3,
+            "d": 5,
+            "a": 0,
+            "hs": 33.3,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Oregon",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2077,
+            "drp": 26,
+            "k": 5,
+            "d": 4,
+            "a": 3,
+            "hs": 20.0,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "matticus_hq",
+        "slackandlack"
+      ],
+      "qualifyingDates": [
+        "Jul 3"
+      ],
+      "longestRun": {
+        "date": "Jul 3",
+        "length": 3,
+        "sequence": [
+          [
+            "Border",
+            "4:2",
+            "W"
+          ],
+          [
+            "Nighthaven Labs",
+            "4:0",
+            "W"
+          ],
+          [
+            "Oregon",
+            "0:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 3",
+            "map": "Border",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2177,
+            "drp": 26,
+            "k": 2,
+            "d": 3,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "1v1 Clutch",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jul 3",
+            "map": "Nighthaven Labs",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2151,
+            "drp": 0,
+            "k": 5,
+            "d": 1,
+            "a": 0,
+            "hs": 0.0,
+            "badges": [
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 3",
+            "map": "Oregon",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2151,
+            "drp": 0,
+            "k": 4,
+            "d": 4,
+            "a": 2,
+            "hs": 50.0,
+            "badges": [
+              "Victim",
+              "1v3 Lost"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 3",
+            "map": "Border",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2356,
+            "drp": 25,
+            "k": 10,
+            "d": 3,
+            "a": 0,
+            "hs": 60.0,
+            "badges": [
+              "3K",
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 3",
+            "map": "Nighthaven Labs",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2331,
+            "drp": 0,
+            "k": 5,
+            "d": 3,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 3",
+            "map": "Oregon",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2331,
+            "drp": 0,
+            "k": 1,
+            "d": 4,
+            "a": 2,
+            "hs": 100.0,
+            "badges": [
+              "Victim"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "matticus_hq",
+        "mjester1337"
+      ],
+      "qualifyingDates": [
+        "Jun 10",
+        "Jun 26",
+        "Jul 3",
+        "Aug 14"
+      ],
+      "longestRun": {
+        "date": "Jun 10",
+        "length": 3,
+        "sequence": [
+          [
+            "Consulate",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Outback",
+            "4:2",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2113,
+            "drp": 26,
+            "k": 2,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2087,
+            "drp": 23,
+            "k": 4,
+            "d": 2,
+            "a": 1,
+            "hs": 75.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2064,
+            "drp": 23,
+            "k": 5,
+            "d": 2,
+            "a": 0,
+            "hs": 40.0,
+            "badges": [
+              "1v1 Lost",
+              "2K"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 10",
+            "map": "Consulate",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1445,
+            "drp": 26,
+            "k": 2,
+            "d": 4,
+            "a": 4,
+            "hs": 50.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 10",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1419,
+            "drp": 23,
+            "k": 4,
+            "d": 1,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 10",
+            "map": "Outback",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1396,
+            "drp": 23,
+            "k": 4,
+            "d": 5,
+            "a": 2,
+            "hs": 50.0,
+            "badges": [
+              "3K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "matticus_hq",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "matticus_hq",
+        "snsoldier"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "matticus_hq",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "slackandlack",
+        "mjester1337"
+      ],
+      "qualifyingDates": [
+        "Jun 7",
+        "Jun 14",
+        "Jun 20",
+        "Jun 21",
+        "Jun 28",
+        "Jul 3",
+        "Jul 6",
+        "Jul 19",
+        "Jul 31",
+        "Aug 2",
+        "Aug 19"
+      ],
+      "longestRun": {
+        "date": "Jun 20",
+        "length": 7,
+        "sequence": [
+          [
+            "Fortress",
+            "5:4",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Emerald Plains",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "4:0",
+            "W"
+          ],
+          [
+            "Bank",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 20",
+            "map": "Fortress",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2368,
+            "drp": 25,
+            "k": 13,
+            "d": 9,
+            "a": 1,
+            "hs": 38.5,
+            "badges": [
+              "3K",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2343,
+            "drp": 27,
+            "k": 9,
+            "d": 2,
+            "a": 3,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "2K",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2316,
+            "drp": -25,
+            "k": 3,
+            "d": 6,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "3K",
+              "TK"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2341,
+            "drp": 22,
+            "k": 7,
+            "d": 3,
+            "a": 1,
+            "hs": 57.1,
+            "badges": [
+              "Ace"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2319,
+            "drp": 23,
+            "k": 7,
+            "d": 6,
+            "a": 1,
+            "hs": 100.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2296,
+            "drp": 23,
+            "k": 9,
+            "d": 2,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2273,
+            "drp": -27,
+            "k": 5,
+            "d": 4,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "Ace"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 20",
+            "map": "Fortress",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1618,
+            "drp": 29,
+            "k": 7,
+            "d": 7,
+            "a": 3,
+            "hs": 28.6,
+            "badges": [
+              "3K",
+              "1v1 Lost"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1589,
+            "drp": 31,
+            "k": 4,
+            "d": 1,
+            "a": 0,
+            "hs": 25.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 1558,
+            "drp": -22,
+            "k": 3,
+            "d": 6,
+            "a": 3,
+            "hs": 100.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1580,
+            "drp": 26,
+            "k": 1,
+            "d": 2,
+            "a": 2,
+            "hs": 100.0,
+            "badges": [
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1554,
+            "drp": 27,
+            "k": 4,
+            "d": 3,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1527,
+            "drp": 27,
+            "k": 1,
+            "d": 1,
+            "a": 2,
+            "hs": 100.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1500,
+            "drp": -14,
+            "k": 2,
+            "d": 4,
+            "a": 4,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "slackandlack",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [
+        "Jun 7"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 3,
+        "sequence": [
+          [
+            "Clubhouse",
+            "4:2",
+            "W"
+          ],
+          [
+            "Lair",
+            "4:0",
+            "W"
+          ],
+          [
+            "Border",
+            "5:4",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2350,
+            "drp": 26,
+            "k": 6,
+            "d": 4,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2324,
+            "drp": 24,
+            "k": 3,
+            "d": 2,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2300,
+            "drp": 26,
+            "k": 5,
+            "d": 7,
+            "a": 3,
+            "hs": 60.0,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2817,
+            "drp": 26,
+            "k": 4,
+            "d": 4,
+            "a": 3,
+            "hs": 50.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2791,
+            "drp": 24,
+            "k": 11,
+            "d": 1,
+            "a": 1,
+            "hs": 63.6,
+            "badges": [
+              "Ace",
+              "3K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2767,
+            "drp": 26,
+            "k": 13,
+            "d": 5,
+            "a": 2,
+            "hs": 53.8,
+            "badges": [
+              "3K",
+              "3K",
+              "3K",
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "slackandlack",
+        "snsoldier"
+      ],
+      "qualifyingDates": [
+        "Jul 19"
+      ],
+      "longestRun": {
+        "date": "Jul 19",
+        "length": 4,
+        "sequence": [
+          [
+            "Clubhouse",
+            "5:4",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "1:4",
+            "L"
+          ],
+          [
+            "Oregon",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2542,
+            "drp": 35,
+            "k": 14,
+            "d": 6,
+            "a": 1,
+            "hs": 71.4,
+            "badges": [
+              "1v4 Clutch",
+              "4K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2507,
+            "drp": 34,
+            "k": 6,
+            "d": 2,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "3K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2473,
+            "drp": -27,
+            "k": 7,
+            "d": 4,
+            "a": 0,
+            "hs": 57.1,
+            "badges": [
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2500,
+            "drp": -16,
+            "k": 6,
+            "d": 4,
+            "a": 5,
+            "hs": 50.0,
+            "badges": [
+              "3K",
+              "TK"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1390,
+            "drp": 41,
+            "k": 0,
+            "d": 8,
+            "a": 2,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1349,
+            "drp": 40,
+            "k": 3,
+            "d": 3,
+            "a": 5,
+            "hs": 33.3,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1309,
+            "drp": -21,
+            "k": 3,
+            "d": 5,
+            "a": 0,
+            "hs": 66.7,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1330,
+            "drp": -22,
+            "k": 3,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "slackandlack",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [
+        "Jun 20"
+      ],
+      "longestRun": {
+        "date": "Jun 20",
+        "length": 7,
+        "sequence": [
+          [
+            "Fortress",
+            "5:4",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:0",
+            "W"
+          ],
+          [
+            "Consulate",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:1",
+            "W"
+          ],
+          [
+            "Emerald Plains",
+            "4:2",
+            "W"
+          ],
+          [
+            "Border",
+            "4:0",
+            "W"
+          ],
+          [
+            "Bank",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 20",
+            "map": "Fortress",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2368,
+            "drp": 25,
+            "k": 13,
+            "d": 9,
+            "a": 1,
+            "hs": 38.5,
+            "badges": [
+              "3K",
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2343,
+            "drp": 27,
+            "k": 9,
+            "d": 2,
+            "a": 3,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "2K",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2316,
+            "drp": -25,
+            "k": 3,
+            "d": 6,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "3K",
+              "TK"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2341,
+            "drp": 22,
+            "k": 7,
+            "d": 3,
+            "a": 1,
+            "hs": 57.1,
+            "badges": [
+              "Ace"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2319,
+            "drp": 23,
+            "k": 7,
+            "d": 6,
+            "a": 1,
+            "hs": 100.0,
+            "badges": [
+              "Victim",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2296,
+            "drp": 23,
+            "k": 9,
+            "d": 2,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "3K",
+              "3K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2273,
+            "drp": -27,
+            "k": 5,
+            "d": 4,
+            "a": 1,
+            "hs": 20.0,
+            "badges": [
+              "Ace"
+            ]
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 20",
+            "map": "Fortress",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2154,
+            "drp": 26,
+            "k": 4,
+            "d": 6,
+            "a": 7,
+            "hs": 50.0,
+            "badges": [
+              "1v1 Clutch",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2128,
+            "drp": 28,
+            "k": 1,
+            "d": 0,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Consulate",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2100,
+            "drp": -22,
+            "k": 7,
+            "d": 3,
+            "a": 0,
+            "hs": 14.3,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2122,
+            "drp": 23,
+            "k": 6,
+            "d": 1,
+            "a": 1,
+            "hs": 50.0,
+            "badges": [
+              "4K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Emerald Plains",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2099,
+            "drp": 24,
+            "k": 6,
+            "d": 2,
+            "a": 1,
+            "hs": 33.3,
+            "badges": [
+              "1v2 Lost",
+              "2K",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 20",
+            "map": "Border",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2075,
+            "drp": 24,
+            "k": 0,
+            "d": 1,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 20",
+            "map": "Bank",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2051,
+            "drp": -26,
+            "k": 3,
+            "d": 5,
+            "a": 0,
+            "hs": 33.3,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "mjester1337",
+        "mynameisblang"
+      ],
+      "qualifyingDates": [
+        "Jun 7"
+      ],
+      "longestRun": {
+        "date": "Jun 7",
+        "length": 3,
+        "sequence": [
+          [
+            "Clubhouse",
+            "4:2",
+            "W"
+          ],
+          [
+            "Lair",
+            "4:0",
+            "W"
+          ],
+          [
+            "Border",
+            "5:4",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 1395,
+            "drp": 26,
+            "k": 3,
+            "d": 3,
+            "a": 1,
+            "hs": 33.3,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 1369,
+            "drp": 24,
+            "k": 0,
+            "d": 2,
+            "a": 1,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1345,
+            "drp": 26,
+            "k": 1,
+            "d": 6,
+            "a": 2,
+            "hs": 100.0,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 7",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:2",
+            "rp": 2817,
+            "drp": 26,
+            "k": 4,
+            "d": 4,
+            "a": 3,
+            "hs": 50.0,
+            "badges": []
+          },
+          {
+            "date": "Jun 7",
+            "map": "Lair",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2791,
+            "drp": 24,
+            "k": 11,
+            "d": 1,
+            "a": 1,
+            "hs": 63.6,
+            "badges": [
+              "Ace",
+              "3K",
+              "3K"
+            ]
+          },
+          {
+            "date": "Jun 7",
+            "map": "Border",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2767,
+            "drp": 26,
+            "k": 13,
+            "d": 5,
+            "a": 2,
+            "hs": 53.8,
+            "badges": [
+              "3K",
+              "3K",
+              "3K",
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "mjester1337",
+        "snsoldier"
+      ],
+      "qualifyingDates": [
+        "Jul 19",
+        "Jul 24",
+        "Jul 25",
+        "Jul 26"
+      ],
+      "longestRun": {
+        "date": "Jul 19",
+        "length": 4,
+        "sequence": [
+          [
+            "Clubhouse",
+            "5:4",
+            "W"
+          ],
+          [
+            "Clubhouse",
+            "4:1",
+            "W"
+          ],
+          [
+            "Calypso Casino",
+            "1:4",
+            "L"
+          ],
+          [
+            "Oregon",
+            "1:4",
+            "L"
+          ]
+        ],
+        "a": [
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "5:4",
+            "rp": 2097,
+            "drp": 37,
+            "k": 5,
+            "d": 7,
+            "a": 0,
+            "hs": 60.0,
+            "badges": [
+              "2K",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:1",
+            "rp": 2060,
+            "drp": 36,
+            "k": 3,
+            "d": 3,
+            "a": 3,
+            "hs": 66.7,
+            "badges": []
+          },
+          {
+            "date": "Jul 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2024,
+            "drp": -25,
+            "k": 0,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2049,
+            "drp": -26,
+            "k": 3,
+            "d": 4,
+            "a": 2,
+            "hs": 0.0,
+            "badges": []
+          }
+        ],
+        "b": [
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "5:4",
+            "rp": 1390,
+            "drp": 41,
+            "k": 0,
+            "d": 8,
+            "a": 2,
+            "hs": 0.0,
+            "badges": []
+          },
+          {
+            "date": "Jul 19",
+            "map": "Clubhouse",
+            "result": "W",
+            "score": "4:1",
+            "rp": 1349,
+            "drp": 40,
+            "k": 3,
+            "d": 3,
+            "a": 5,
+            "hs": 33.3,
+            "badges": [
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1309,
+            "drp": -21,
+            "k": 3,
+            "d": 5,
+            "a": 0,
+            "hs": 66.7,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jul 19",
+            "map": "Oregon",
+            "result": "L",
+            "score": "1:4",
+            "rp": 1330,
+            "drp": -22,
+            "k": 3,
+            "d": 5,
+            "a": 1,
+            "hs": 0.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "mjester1337",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [
+        "Jun 17",
+        "Jun 19",
+        "Jun 20"
+      ],
+      "longestRun": {
+        "date": "Jun 19",
+        "length": 7,
+        "sequence": [
+          [
+            "Calypso Casino",
+            "2:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:5",
+            "L"
+          ],
+          [
+            "Coastline",
+            "0:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "1:4",
+            "L"
+          ],
+          [
+            "Nighthaven Labs",
+            "0:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "0:4",
+            "L"
+          ],
+          [
+            "Calypso Casino",
+            "4:0",
+            "W"
+          ]
+        ],
+        "a": [
+          {
+            "d": 5,
+            "badges": [
+              "1v1 Lost",
+              "2K"
+            ],
+            "k": 5,
+            "drp": -21,
+            "hs": 20,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "2:4",
+            "rp": 1379,
+            "result": "L",
+            "a": 1
+          },
+          {
+            "d": 8,
+            "badges": [],
+            "k": 0,
+            "drp": -3,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "4:5",
+            "rp": 1400,
+            "result": "L",
+            "a": 1
+          },
+          {
+            "d": 4,
+            "badges": [
+              "Victim"
+            ],
+            "k": 0,
+            "drp": -19,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Coastline",
+            "score": "0:4",
+            "rp": 1403,
+            "result": "L",
+            "a": 0
+          },
+          {
+            "d": 4,
+            "badges": [],
+            "k": 0,
+            "drp": -22,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "1:4",
+            "rp": 1422,
+            "result": "L",
+            "a": 0
+          },
+          {
+            "d": 4,
+            "badges": [
+              "Victim"
+            ],
+            "k": 1,
+            "drp": -22,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Nighthaven Labs",
+            "score": "0:4",
+            "rp": 1444,
+            "result": "L",
+            "a": 0
+          },
+          {
+            "d": 4,
+            "badges": [
+              "3K",
+              "Victim"
+            ],
+            "k": 5,
+            "drp": -24,
+            "hs": 60,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "0:4",
+            "rp": 1466,
+            "result": "L",
+            "a": 1
+          },
+          {
+            "d": 2,
+            "badges": [],
+            "k": 0,
+            "drp": 27,
+            "hs": 0,
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "score": "4:0",
+            "rp": 1490,
+            "result": "W",
+            "a": 1
+          }
+        ],
+        "b": [
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "2:4",
+            "rp": 2051,
+            "drp": -24,
+            "k": 3,
+            "d": 5,
+            "a": 2,
+            "hs": 0.0,
+            "badges": [
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "4:5",
+            "rp": 2075,
+            "drp": -25,
+            "k": 4,
+            "d": 6,
+            "a": 4,
+            "hs": 50.0,
+            "badges": [
+              "1v1 Lost",
+              "1v2 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Coastline",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2100,
+            "drp": -10,
+            "k": 1,
+            "d": 3,
+            "a": 0,
+            "hs": 100.0,
+            "badges": [
+              "1v1 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "1:4",
+            "rp": 2110,
+            "drp": -25,
+            "k": 3,
+            "d": 5,
+            "a": 3,
+            "hs": 33.3,
+            "badges": [
+              "Victim",
+              "1v3 Lost"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Nighthaven Labs",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2135,
+            "drp": -25,
+            "k": 1,
+            "d": 4,
+            "a": 0,
+            "hs": 0.0,
+            "badges": [
+              "Victim"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "L",
+            "score": "0:4",
+            "rp": 2160,
+            "drp": -27,
+            "k": 2,
+            "d": 4,
+            "a": 1,
+            "hs": 100.0,
+            "badges": [
+              "Victim",
+              "2K"
+            ]
+          },
+          {
+            "date": "Jun 19",
+            "map": "Calypso Casino",
+            "result": "W",
+            "score": "4:0",
+            "rp": 2187,
+            "drp": 23,
+            "k": 8,
+            "d": 0,
+            "a": 1,
+            "hs": 37.5,
+            "badges": [
+              "3K",
+              "2K",
+              "2K"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "players": [
+        "mynameisblang",
+        "snsoldier"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "mynameisblang",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    },
+    {
+      "players": [
+        "snsoldier",
+        "lcew4ll0wcome"
+      ],
+      "qualifyingDates": [],
+      "longestRun": null
+    }
+  ]
+}

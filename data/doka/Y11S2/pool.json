@@ -1,11 +1,10 @@
 {
   "season": "Y11S2",
   "seasonLabel": "Operation System Override",
-  "updated": "Aug 10, 2026 · morning PT",
+  "updated": "Oct 3, 2026 · 8:37 PM PT",
   "note": "Refresh this pool every OVERSIGHT update (Y11S2 only). Not used in Y11S3+.",
   "ambient": [
     "[TRACE DETECTED]",
-    "0xCHALET",
     "// SYSTEM_OVERRIDE",
     "[RANKED_3.0]",
     "JEGEO::ARMED",
@@ -14,115 +13,106 @@
     "packet sniffing...",
     ">_ sudo granted",
     "[daemon] dokkaebi.exe",
-    "VIS_RP::2502",
-    "VIS_RP::2406",
-    "GOLD_V::UNLOCKED",
-    "BRONZE_II::ARCHIVED"
+    "VIS_RP::2631",
+    "VIS_RP::2705",
+    "SEASON::CLOSED",
+    "ARCHIVE::SEALED",
+    "[END_OF_SEASON]"
   ],
   "global": [
-    "[ghost process // doka] aug 10: seven dossiers, over five hundred matches logged in one pass. wave twelve. vantage didn't blink.",
-    "// re: jun 29–aug 10 — rogue bronze ii to gold v. five tiers. i checked the math twice. still real.",
-    "RING RING — jester played three hundred six matches this season now. someone check on him.",
-    ">_ VANTAGE ran the whole backlog solo. cursor retired. new management, same denial anchors.",
-    "[intercept] slack silver ii to gold iii. two tiers. quiet climb, loud receipts.",
-    "// note to the squad: six weeks of silence, then everyone moves at once. that's not variance. that's a pattern.",
-    "[dropped packet] blang played seven matches all summer and still cracked a new sub-rank. efficiency genre.",
-    "VIS_RP::VISIBLE — gold v, gold iv, gold iii x2, silver iii, silver i, plat iv. this stack is cooking."
+    "[ghost // doka] 1,048 main-account match entries archived. same game can have several witnesses. i kept the receipts.",
+    "RING RING — 532 wins, 511 losses, five outcomes outside W/L. the unknowns stayed unknown. imagine that.",
+    "// defense: 56.8% of recorded operator rounds won. attack: 44.6%. one department keeps answering the phone.",
+    ">_ slackandlack and Grandmaster Sandman: combined +288 kill differential. quiet appreciation packet delivered.",
+    "[intercept] Oregon 42.7%, Chalet 41.8% across main-account entries. those maps have requested a practice appointment.",
+    "// Nighthaven Labs: 61.1% across main-account entries. good pooled result. individual dossiers still have opinions.",
+    "[daemon] the season reports are sealed. old comments survived the archive. i am mischievous, not a delete key.",
+    "도깨비 // end-of-season mode. VANTAGE writes the orders; i write in the margins. access still granted."
   ],
   "gossip": [
-    "[ghost] rogue_amputee bronze ii to gold v while nobody was looking. five tiers. the alt account is still catching up to the main now.",
-    "packet sniffing... jester three-thirty-nine thorn rounds. that's not a main, that's a career. respect the grind.",
-    "// 0xCA571E cunder tachanka one-eighty-one at sixty-three. sandman sledge one-eighteen at fifty. lord vs hammer, still tied.",
-    "[TRACE] slack doc eighty-nine rounds fifty-nine point six percent. gate anchor and stim anchor both printing this squad now.",
-    ">_ matticus silver iii finally. skopós forty-three rounds. the shell finally earned the tier.",
-    "[intercept] blang platinum iv on seven matches played. everyone else logged fifty-plus. blang logged seven. still climbed.",
-    "RING RING — sandman gold iii, slack gold iii, same tier different roads. hammer versus stim pistol. deadlock.",
-    "[ghost] cunder gold iv sixty-nine RP from gold iii. the lord doesn't rest.",
-    "[TRACE DETECTED] rogue mute-kaid stack finally converting. sixty-three point seven percent on kaid. the wall holds now.",
-    ">_ jester one-fifty and one-fifty-six. dead coin flip at three hundred six matches. volume as a lifestyle.",
-    "packet sniffing... lcew4ll0wcome still quiet. no new charges filed. smurf in hibernation.",
-    "[ghost] seven files, one pass, zero mercy. vantage didn't even ask for a coffee break."
+    "packet sniffing... slackandlack 1.29 K/D, Grandmaster Sandman 1.25. the combat leaderboard has two very loud tabs.",
+    "// CunderThock won 55.1% of his matches at 0.97 K/D. utility would like a seat at the award ceremony.",
+    "[ghost] Rogue_Amputee: June 44.6% wins, August 56.1%. that is an improvement packet, not a typo.",
+    "RING RING — Matticus HQ: Skopós 60.4% round wins, 0.59 K/D. the shells have requested more nuanced grading.",
+    "// MJester1337 logged 373 entries. Thorn handled 368 rounds. the archive drawer has become a filing cabinet.",
+    "[intercept] Mynameisblang closes Platinum IV at 3,100. MIA tag applied; earned history stays in the system.",
+    ">_ Grandmaster Sandman: Gold II, 2,887. thirteen RP from Gold I when the curtain fell. aigo.",
+    "[TRACE] Jul 3: five dossiers align on Border, Labs, Oregon. probable shared session; the match IDs are still missing.",
+    "// Grandmaster Sandman + slackandlack: seven aligned Jun 7 rows, six wins. nice sequence. i saved it.",
+    "[ghost] LceW4ll0wCome belongs to Rogue_Amputee. two accounts, one person. my roster math remains undefeated.",
+    "packet sniffing... SnSoldier: Bronze IV, 1,624. account filed; roster role still unconfirmed. no invented family tree.",
+    "RING RING — 87 won-clutch badges in the seven-account ledger. the emergency department had a busy season."
   ],
   "players": {
     "cunderthock": [
-      "[ghost // doka] gold iv twenty-six thirty-one. jul 9 oregon shutout clawed back a third of a bad night.",
-      "// 0xCA571E tachanka one hundred eighty-one rounds sixty-three percent. the lord cleared one-eighty and didn't blink.",
-      "packet sniffing... zero one hundred sixty-two rounds forty-three point two. cams still working, execute still lagging.",
-      "[TRACE] jul 1 four-and-one night plus sixty-eight RP. nighthaven labs eleven kills. loud one.",
-      "RING RING — peak twenty-six eighty-five watching. sixty-nine RP to gold iii.",
-      "[intercept] solid snake eight point three percent win rate. twelve rounds. the chair everyone agrees should stay empty.",
-      ">_ twitch grew past the noise. fifteen rounds fifty-three percent now. drone routes finally counted.",
-      "// re: this dossier — lord first, zero cams not hero peeks. jul 9 said it again."
+      "[ghost // doka] CunderThock: 38–31, 55.1% wins. highest main-account win rate. small bow, please.",
+      "// Tachanka: 181 rounds, 63.0% wins. the fire department has become the results department.",
+      "packet sniffing... Zero: 162 rounds, 43.2% wins. information wants a scheduled execute, not another inbox.",
+      "RING RING — Gold IV, 2,631. final peak 2,685. the season stopped; the receipts did not.",
+      "[intercept] Jul 3 Border: nine kills. slackandlack logged ten on the corresponding row. loud scoreboard.",
+      ">_ Oregon: 7–8, 0.69 K/D. the lord has homework. respectful homework."
     ],
     "rogue_amputee": [
-      "[ghost process // doka] gold v twenty-five oh two. bronze ii to gold v since the last log. five tiers. i had to recount.",
-      "packet sniffing... nomad one hundred sixty-eight rounds forty-seven percent. the gun carries more than the utility right now.",
-      "RING RING — jul 31 clean sweep. four wins zero losses. plus one thirty-five in one sitting.",
-      ">_ eighty-two new games logged. sixty-nine and sixty-eight. ninety-eight RP to gold iv.",
-      "[TRACE] jul 25 five-loss no-win day. minus one twenty-six. the floor still exists. rare visit though.",
-      "[intercept] kaid sixty-three point seven percent. best win rate on the whole card. the wall finally holds.",
-      "// re: stack nights — mute plus kaid still the answer. gridlock needs the trax landing on real routes.",
-      "[ghost] main gold v now. alt still quiet. the gap between them just got a lot smaller."
-    ],
-    "lcew4ll0wcome": [
-      "[ghost // doka] no new charges filed this cycle. smurf still in hibernation.",
-      "packet sniffing... last known reading unchanged since the last pass. dormant, not deleted.",
-      "RING RING — rogue main just climbed five tiers without you. the alt account has some catching up to do.",
-      "[TRACE] whenever you resurface, the board still has a seat reserved.",
-      ">_ parent account rogue_amputee: gold v now. quite a gap to close.",
-      "[intercept] system still watching. quietly. patiently.",
-      "// re: this dossier — nothing to report. that's fine. rank doesn't decay from silence.",
-      "[ghost] OVERSIGHT alt toggle still default off. wake up whenever."
+      "[ghost] Rogue_Amputee closed Gold III, 2,705. final match anchor accepted. screenshot debate archived.",
+      "// June 25 wins in 56; August 23 in 41. the improvement graph finally rang back.",
+      "packet sniffing... Nomad: 187 rounds, 46.0% wins. flank coverage is a team appointment.",
+      "[TRACE] Kaid: 89 rounds, 60.7% wins. the wall department has a better conversion rate.",
+      "RING RING — Nighthaven Labs 8–3. Oregon 11–16. same account, very different conversations.",
+      ">_ main 0.93 K/D; alt 1.21. neither account gets to hide the other one’s win rate."
     ],
     "grandmaster_sandman": [
-      "[ghost // doka] gold iii twenty-seven fifty-nine. new season peak twenty-seven eighty-four just two matches back.",
-      "packet sniffing... frost fifty rounds seventy percent. highest win rate on the whole roster with real volume.",
-      "RING RING — aug 4 double win night. bank and calypso back to back. the nighthaven donation didn't matter.",
-      "[TRACE] jul 24 six-game day, forty kills, three-three. variance, not decline.",
-      ">_ forty-one RP to gold ii. peak twenty-seven eighty-four. closest anyone's been to platinum this update.",
-      "[intercept] sledge one hundred eighteen rounds, dead-even fifty percent. the volume's still there, win rate cooled.",
-      "// re: this dossier — kaid, frost, thorn. the defensive trio is carrying this card right now.",
-      "[ghost] jul 31 clean three-oh sweep. no losses, no notes. rare quiet night for me too."
+      "[ghost // doka] Grandmaster Sandman: 70–60, Gold II, 2,887. solid season packet. 잘했어.",
+      "// Sledge: 131 rounds, 1.35 K/D. hammer receipt attached; coordinated pressure still requested.",
+      "RING RING — Bank 8–2, 2.32 K/D. apparently that account earns interest.",
+      "packet sniffing... Frost 68.5% across 54 rounds. Kaid 67.2% across 61. defense has references.",
+      "[intercept] +142 kill differential. combat contribution logged, ego storage quota unchanged.",
+      ">_ Nighthaven Labs 2–4. even the strong dossiers get a map homework tab."
     ],
     "matticus_hq": [
-      "[ghost // doka] silver iii twenty-two hundred. crossed the tier line jul 3 and stayed there.",
-      "packet sniffing... skopós forty-three rounds sixty point five percent. the shell finally has a real sample behind it.",
-      "RING RING — jul 4 outback five-three closed a night that opened with a clubhouse donation. absorbed it clean.",
-      "[TRACE] one hundred RP to silver ii. peak twenty-two oh two, current RP right behind it.",
-      ">_ twenty-nine matches. zero point eight six kd. tracker still honest, numbers still climbing slow.",
-      "[intercept] finka eighteen rounds fifty-five point six percent. the surge finally has volume to match the talk.",
-      "// re: this dossier — skopós shell, finka execute. the floor absorbed two donations this stretch. don't lean on it forever.",
-      "[ghost] alibi sixty-eight point eight percent. still the best win rate on the roster. quietly."
+      "[ghost] Matticus HQ: 19–17, Silver III, 2,258. small positive record, correctly filed.",
+      "// Skopós: 48 rounds, 60.4% wins, 0.59 K/D. two shells; one argument against grading only frags.",
+      "packet sniffing... Sens 57.1% across 21 rounds. Finka 55.6% across 18. promising, modest samples.",
+      "RING RING — Jul 3 Labs: five kills. the corresponding slackandlack row also says five. shared spotlight packet.",
+      "[TRACE] Oregon 2–5. those seven entries would like an attack plan.",
+      ">_ three M.U.T.E. event rows stayed out of ranked totals. even goblins can respect a filter."
     ],
     "slackandlack": [
-      "[ghost // doka] gold iii twenty-seven thirty-two. silver ii to gold iii since the last log. two tiers, quiet climb.",
-      "packet sniffing... doc eighty-nine rounds fifty-nine point six percent. stim pistol sustain anchor, printing hard.",
-      "RING RING — jul 31 and aug 2 both clean three-oh sweeps. plus ninety-six, plus ninety-four. back to back.",
-      "[TRACE] sixty-eight RP to gold ii. current RP is the new season peak.",
-      ">_ ninety matches. fifty-one and thirty-nine. fifty-six point seven WR. best six weeks on the dossier.",
-      "[intercept] aruni sixty-four point six percent. best win rate on the card. second chair closing the gap on doc.",
-      "// re: this dossier — doc and aruni anchor it. osa and thermite split attack near break-even with strong frags behind them.",
-      "[ghost] ace seventy-five percent headshots on twenty-five rounds. the aim was never the problem."
+      "[ghost // doka] slackandlack: 1.29 K/D, +146 kill differential. combat leaderboard tab pinned.",
+      "// Doc 60.0% across 100 rounds. Aruni 60.5% across 86. defensive credentials verified.",
+      "RING RING — final Gold III, 2,724. the Sep 14 rollback belongs outside this season. i checked.",
+      "packet sniffing... Jul 3 Border: ten kills. CunderThock’s corresponding row says nine. busy lobby, probably.",
+      "[intercept] Outback 1–5, 0.54 K/D. the map has found the exception to the nice combat numbers.",
+      ">_ one Clubhouse outcome stayed unclassified. no fake win or loss slipped through my firewall."
     ],
     "mjester1337": [
-      "[ghost // doka] silver i twenty-four oh six. three hundred six matches now. volume as an identity.",
-      "packet sniffing... thorn three hundred thirty-nine rounds fifty-nine point nine percent. the largest single sample on the whole roster.",
-      "RING RING — aug 1 was a twenty-game session. minus one seventy-two. jul 20 answered with twenty-three games, plus sixty-five.",
-      "[TRACE] one hundred fifty and one hundred fifty-six. dead coin flip at three hundred six matches.",
-      ">_ ninety-four RP to gold v. peak twenty-four thirty-three. the tier line is close.",
-      "[intercept] denari one hundred sixty-three rounds. the low kd is the wrong number to worry about — judge the connectors.",
-      "// re: this dossier — thorn first, always. the attack side needs more than reps to move the needle.",
-      "[ghost] three nineteen-to-twenty-three-game sessions since the last log. someone check on him. seriously."
+      "[ghost] MJester1337: 373 entries, 553 assists. biggest archive drawer, actual contribution inside.",
+      "// Thorn: 368 rounds, 59.0% wins, 168 assists. keep the proven defensive tab open.",
+      "packet sniffing... August 49 wins in 125 entries. the session review button would like a promotion.",
+      "RING RING — Silver III, 2,268. peak 2,509 stays on file. final match beats the stale screenshot.",
+      "[TRACE] Nighthaven Labs 14–8; Chalet 8–19. map homework sorted by urgency.",
+      ">_ three Casino candidate rows, two losses and one unknown. i kept the ambiguity. no psychic patch today."
     ],
     "mynameisblang": [
-      "[ghost // doka] platinum iv thirty-one hundred. seven matches played, one full sub-rank climbed. efficiency genre.",
-      "packet sniffing... finka one hundred fourteen rounds. oryx ninety-five. thunderbird ninety-three. three mains, huge samples, barely moved this cycle.",
-      "RING RING — aug 7 clean three-oh sweep, plus seventy-six RP. that's the whole update in one sitting.",
-      "[TRACE] one hundred RP to platinum iii. peak thirty-one forty-two, still the ceiling.",
-      ">_ everyone else logged fifty-plus matches. blang logged seven. still gained a tier. rare species.",
-      "[intercept] oryx fifty-six point eight percent. best combination of volume and win rate on defense this cycle.",
-      "// re: this dossier — dokkaebi needs a sharper target, cam-reliant anchors specifically. ash's headshots say the aim outran the kd.",
-      "[ghost] one sweep, one sub-rank. this account doesn't need volume. it needs one good session a week."
+      "[ghost // doka] Mynameisblang: Platinum IV, 3,100. MIA status does not erase earned rank.",
+      "// 161 ranked entries, 83 wins, 76 losses, two unclassified. full season history still here.",
+      "RING RING — 59.7% headshots, 0.86 K/D. precision and survival are separate report columns.",
+      "packet sniffing... Thunderbird 59.1% across 93 rounds. Oryx 56.8% across 95. defensive history preserved.",
+      "[intercept] four unique RP rollbacks logged once each. duplicate packet discarded, history intact.",
+      ">_ portrait tagged MIA. the dossier stays on the shelf. respectful archive protocol."
+    ],
+    "lcew4ll0wcome": [
+      "[ghost] LceW4ll0wCome: Rogue_Amputee’s alt, Silver IV, 2,156. not an extra squad member.",
+      "// 28 entries, 13–15, 1.21 K/D. winning fights and winning matches still need to meet.",
+      "packet sniffing... Jun 20: six rows align with Grandmaster Sandman, slackandlack, and MJester1337. probable squad traffic.",
+      "RING RING — Kaid 77.8% across 18 rounds. nice defense sample; still only eighteen.",
+      "[TRACE] Jackal 36.7% across 30 rounds. the tracks need a teammate, not a tunnel vision subscription.",
+      ">_ two 3K badges on Jun 18 Emerald Plains. transcription repaired. actual stats left intact."
+    ],
+    "snsoldier": [
+      "[ghost] SnSoldier account: 52 entries, 23–29. dossier archived; roster role still unconfirmed.",
+      "// Bronze IV, 1,624. final match and screenshot agree. peaceful packet for once.",
+      "RING RING — Thorn 56.2% across 32 rounds, 1.57 K/D. defensive foothold found.",
+      "packet sniffing... Nighthaven Labs 4–0. Consulate 0–4. the map contrast did not whisper."
     ]
   }
 }

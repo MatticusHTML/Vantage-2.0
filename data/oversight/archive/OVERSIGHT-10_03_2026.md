@@ -1,0 +1,983 @@
+# OVERSIGHT — Y11S2 Closing Snapshot
+**Archived:** Oct 3, 2026 · 8:37 PM PT
+
+```json
+{
+    "name": "OVERSIGHT",
+    "season": "Y11S2",
+    "seasonLabel": "Operation System Override",
+    "updated": "Oct 3, 2026 · 8:37 PM PT",
+    "comments": [
+        {
+            "type": "map",
+            "subject": "Coastline",
+            "date": "Jun 3",
+            "text": "Coastline was the squad's shared classroom on night one — all three active stacks queued it, and the map went roughly even across the board while the record didn't. Rogue_Amputee bookended with wins; CunderThock and Grandmaster Sandman split one W and one L each. When everyone lands on the same map the same session, the lesson is coordination, not mechanics: you know the angles, you're still handing rounds to first-death timing."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 3",
+            "text": "Rogue_Amputee's Mute line is the early defensive headline — nine rounds at 55.6% with a 60% headshot rate on denial. Silent Hunt already had Mute in the engine room; System Override opens with him actually leading volume. If the squad wants a defensive tempo that doesn't require highlight-reel fragging, this is the pick to mirror while CunderThock and Sandman finish placements."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 3",
+            "text": "CunderThock ran ten Zero rounds in four matches — tied with Tachanka for top volume, 40% win rate, 1.38 K/D. The K/D says he wins duels; the WR says the rounds still die. Y11S1's Zero compulsion didn't retire, it respawned. He's since climbed to Gold V on a Tachanka heater — the squad lesson is anchor defense first, disciplined attack second, not Zero volume instead of the Lord."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 3",
+            "text": "Rogue_Amputee's Nomad is the best attack sample on the board after thirteen combined games — seven rounds, 57.1%, 1.50 K/D. Placement Bronze II or not, the data already points at info-and-rotate attack winning where Brava reflexes used to bleed. Cross-roster note: nobody else is printing attack WR on a flex this clean; copy the process, not the operator, if your kit differs."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 3",
+            "text": "Grandmaster Sandman squeezed Thorn into one round at 3–0 K/D and 100% WR — Silent Hunt's trap god in microcosm. Rogue_Amputee's Thorn sample is only two rounds but still break-even. The squad's defensive ceiling operator is sitting on the bench while Sandman auditions fifteen picks in four games. System Override will punish that spread until someone anchors on traps again."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 3",
+            "text": "CunderThock's Tachanka: ten rounds, 50% WR, 0.88 K/D — the Lord still breaks even when Zero doesn't. Grandmaster Sandman hasn't touched him yet this season, but the cross-roster lesson from Silent Hunt stands: anchor LMG defense wins placements for this stack. Pair CunderThock on Tachanka/Mozzie and Sandman on Thorn/Aruni before the fifth game decides your rank."
+        },
+        {
+            "type": "map",
+            "subject": "Lair",
+            "date": "Jun 7",
+            "text": "Jun 7 made Lair the squad's conversion map. Grandmaster Sandman went 2–0 on it — 4–0 with setup value, then 4–2 with an eight-kill closer. CunderThock posted a 4–2 W with a 4K and a 1v1 clutch. Rogue_Amputee took a 4–2 W in the same block. When three stacks land the same map and actually close rounds, the board moves — Sandman printed +125 RP that day while CunderThock and Rogue_Amputee bled elsewhere. Stack Lair reads before you queue Oregon hero ball again."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 7",
+            "text": "Grandmaster Sandman's Kaid line is the defensive headline of System Override so far — eleven rounds, 81.8% win rate, breaches denied over highlight K/D. Rogue_Amputee has five Kaid rounds at 40% with zero kills and five deaths; the claws aren't landing the same way yet. Cross-roster lesson: Sandman consolidated on Electroclaw anchors and climbed to Gold V; Rogue's still rotating experimental picks while the wall that actually holds is sitting on Sandman's dossier, not yours."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 7",
+            "text": "The Y11S2 remaster is live on two dossiers. Rogue_Amputee's Dokkaebi: ten attack rounds, 60.0% win rate, 1.20 K/D, five assists — Jegeo Payload pressure and cam denial actually converting. Grandmaster Sandman sits at 50% over six rounds with two assists. CunderThock hasn't leaned in yet. This is the season's attacker utility meta for solo and stack play — scan, payload, force movement — not passive phone hacks from Silent Hunt. Rogue found it first; the rest of the squad should study the receipt."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 7",
+            "text": "CunderThock's Tachanka: thirty-three defensive rounds, 63.6% win rate — still the highest-volume pick on his board and the spine of a Gold V dossier even after a Jun 7 giveback. Wave 1 called the Lord break-even at ten rounds; Wave 2 is thirty-three rounds of proof. Grandmaster Sandman never queued him and hit Gold V on Kaid instead — two anchor philosophies, both valid. Rogue_Amputee and Matticus HQ still need defensive mains locked; Tachanka and Kaid are the templates sitting right in front of them."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 7",
+            "text": "CunderThock: twenty-four attack rounds, 50.0% win rate, 1.12 K/D — even split on an intel op where the Oregon W with zero kills and three assists is the real receipt. Zero is ARGUS coverage and laser clears, not entry hero ball; the squad debrief from Wave 1 still stands, now with data behind it. Nobody else is running Zero at volume. Cross-roster note: Grandmaster Sandman prints attack on Sledge at 63.6% over eleven rounds; CunderThock prints on cams and callouts. Different jobs — stop grading Zero like an entry fragger when the tablet wins rounds you never frag on."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 8",
+            "text": "Grandmaster Sandman opened Wave 1 with fifteen operators in four placement games and one Sledge round that lost anyway. Fourteen games later: eleven Sledge rounds, 63.6% win rate, 1.75 K/D, Gold V at 2,598 RP. That's consolidation paying off — purposeful hammer, timed entries, not nostalgia rushes. Matticus HQ just opened with ten operators in two placement losses — same spread disease, better headshot rate, zero rank. Sandman's arc is the squad memo: lock attack and defense mains before game five, not after Bronze."
+        },
+        {
+            "type": "map",
+            "subject": "Bank",
+            "date": "Jun 8",
+            "text": "Jun 8 made Bank the squad's shared receipt map. Grandmaster Sandman cashed 4:1 with two 3K tags and the Gold IV promotion. Rogue_Amputee stopped a Jun 7 bleed with a clean 4/2/1 W. Matticus HQ logged his first placement win at 2/2/0 — no RP tick yet, but the round closure finally landed. Three stacks, same morning, same map, three Ws. CunderThock didn't queue it this session, but the rest of the stack proved Bank rewards disciplined trades over hero ball. When the squad converges on a map and closes, the board moves — Sandman to Gold IV, Rogue back to Bronze II, Matticus off an 0–2 opener."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 9",
+            "text": "Grandmaster Sandman: thirteen Sledge rounds, 61.5% win rate, 1.89 K/D — still the highest-volume attacker on the squad and the line that fixed Y11S1's hammer tax. Bank's 7/2/1 with two 3K tags is timed entry and round closure, not nostalgia floor-bashing. Cross-roster contrast: CunderThock's attack volume still lives on Zero and Solid Snake experiments; Sandman consolidated on one rifle and climbed to Gold IV. The squad memo didn't change — pick an attack main and stop auditioning — Sandman just wrote the answer on the dossier."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 9",
+            "text": "Rogue_Amputee's Dokkaebi: eleven attack rounds, 63.6% win rate, 1.40 K/D, five assists — the best Jegeo Payload receipt on the stack after Bank stopped the slide. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in at volume. The remaster rewards scan-and-payload pressure, not passive phone hacks — Rogue found the rhythm first and climbed back to Bronze II on discipline, not highlight volume. Cross-roster note: when attack WR is underwater, Dokkaebi and Nomad on Rogue's sheet are the template; Brava and Gridlock reflexes are the tax."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopos",
+            "date": "Jun 9",
+            "text": "Matticus HQ's Skopós: four defensive rounds, 100% win rate, 2.00 K/D — the first perfect operator sample on his placement card and the engine behind the Bank W. Pantheon Shells in two zones let him swap bodies and punish commitments without ego peeking. Cross-roster contrast: Grandmaster Sandman anchors on Kaid at 83.3%; CunderThock on Tachanka at sixty-three percent over thirty-three rounds; Rogue on Mute volume. Matticus finally has a defensive signal — stop spreading twelve operators in three games and ride the shell swap before Copper lands."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 9",
+            "text": "Grandmaster Sandman: twelve Kaid rounds, 83.3% win rate — the defensive headline of System Override and the anchor behind Gold IV. Rogue_Amputee's Kaid row still reads 0.00 K/D but ticked to 50% over six rounds; the claws are landing more than the scoreboard admits. CunderThock hasn't mirrored the pick this season — Tachanka and Mozzie still own his defensive volume. Cross-roster lesson unchanged: Electroclaw anchors win placements for this stack when the wall gates the real breach. Sandman proved it; Rogue's learning it; Matticus and Cunder have the templates sitting on adjacent dossiers."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 9",
+            "text": "CunderThock: thirty-three Tachanka rounds, 63.6% win rate — still the highest-volume defensive pick on his Gold V dossier and the spine of the stack's heaviest grinder. Grandmaster Sandman hit Gold IV without queuing the Lord once, riding Kaid instead — two anchor philosophies, both printing. Rogue_Amputee and Matticus HQ still lack a locked defensive main; Tachanka and Kaid are sitting in plain sight on Cunder's and Sandman's sheets. System Override punishes operator spread; Cunder's volume on the Lord is proof the habit works when you commit."
+        },
+        {
+            "type": "map",
+            "subject": "Consulate",
+            "date": "Jun 10",
+            "text": "Jun 10 was the squad's first full four-stack night — Oregon, Outback, Calypso Casino, Consulate, same order, same shape: one Oregon donation, three wins to close, +218 RP combined. Grandmaster Sandman capped Consulate at 10/2/0 with a 4K and a 3K on the way to Gold IV at 2,677 RP. CunderThock closed at 5/2/2 with a 3K and a new Gold V peak at 2,572. Rogue_Amputee and Matticus HQ both banked clean 4:1 Ws — Rogue to break-even at 8–8, Matticus to Silver IV at 2,113 on his first ranked night. When all four dossiers move on the same map block, the lesson isn't individual aim — it's shared round closure on the back three maps after Oregon punishes hero ball."
+        },
+        {
+            "type": "operator",
+            "subject": "Kaid",
+            "date": "Jun 10",
+            "text": "Grandmaster Sandman: fifteen Kaid rounds, 80.0% win rate, six assists — still the squad's defensive ceiling and the anchor behind 2,677 RP. Rogue_Amputee's Kaid finally climbed to 60.0% over ten rounds with 0.75 K/D after the 0.00 K/D era — Electroclaws landing on the breach that matters, stacked with Mute on twenty-four defensive rounds. CunderThock still rides Tachanka; Matticus HQ rides Skopós at 70.0%. Cross-roster lesson unchanged: the wall that gates the hard breach wins placements for this stack. Sandman wrote the manual; Rogue's Jun 10 wave says the homework is finally turning in."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 10",
+            "text": "CunderThock: forty-two Tachanka rounds, 64.3% win rate — nine more defensive rounds since the last refresh and the win rate climbed, not dipped. The Lord is still the spine of a Gold V dossier at 2,572 RP (+63 on the night) even when Oregon opens the block with a 2:4 donation. Grandmaster Sandman hit 2,677 on Kaid and Sledge without queuing Tachanka once — two anchor philosophies, both printing. Rogue's Mute volume and Matticus's Skopós shells still need a long-term defensive lock; Tachanka and Kaid templates are sitting on adjacent dossiers in plain sight."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 10",
+            "text": "Rogue_Amputee: fifteen Dokkaebi attack rounds, 60.0% win rate, 1.38 K/D, seven assists — the best Jegeo Payload volume on the stack after Outback's 8/3/3 heater and a +53 RP night that finally broke even at 8–8. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in at volume. Cross-roster lesson: when attack WR needs a floor, Rogue's scan-and-payload rhythm is the Y11S2 meta receipt — Nomad beside her at fifty percent, Smoke at 4–0 on four rounds, Gridlock at twenty percent not competing for the slot."
+        },
+        {
+            "type": "operator",
+            "subject": "Zero",
+            "date": "Jun 10",
+            "text": "CunderThock: thirty-one Zero attack rounds, 54.8% win rate, 1.10 K/D, 52.2% headshots — finally cleared fifty percent for the season and stayed north of it on the same night Tachanka climbed to sixty-four point three. ARGUS coverage and laser clears, not entry hero ball; the Oregon loss with two kills and two assists still fits the intel-op script. Cross-roster note: Grandmaster Sandman prints attack on Sledge at 1.79 K/D; Rogue on Dokkaebi; Matticus on Finka. Different jobs — stop grading Zero like an entry fragger when the tablet wins rounds you never frag on, and stop burying him under Solid Snake's six Ls on seven rounds."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 10",
+            "text": "Matticus HQ: nine Finka attack rounds, 77.8% win rate, 2.33 K/D, 71.4% headshots — placements cleared and Silver IV at 2,113 RP arrived on surge timing that actually converted. Skopós at 70.0% over ten defensive rounds and Alibi at 80.0% on five rounds give Matticus both chairs for the first time this season. Cross-roster contrast: Grandmaster Sandman prints on Sledge, CunderThock on Zero/Jackal flex, Rogue on Dokkaebi. Ram is still 0–2. The Jun 10 player comment wave said it plainly — queue Finka and Skopós, stop spreading one-round labs."
+        },
+        {
+            "type": "map",
+            "subject": "Calypso Casino",
+            "date": "Jun 12",
+            "text": "Jun 12 made Calypso Casino the squad's shared tax map. Mynameisblang queued it twice in one block and donated −42 RP on back-to-back 2:4 and 1:4 losses with Victim and 1v3 Lost tags — the same map that printed a Jun 10 1v4 Clutch 4K W now punishes first-death timing on loss nights. slackandlack and MJester1337 both logged Calypso volume earlier in the season with mixed receipts; the core four touched it on Jun 10 and Jun 11 blocks that closed elsewhere. When seven dossiers converge on a new map and only the highlight reel remembers how to win it, the lesson is round closure on the execute floor — not another multi-kill that dies in overtime."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 12",
+            "text": "Mynameisblang: one hundred five Finka attack rounds, 49.5% win rate, 1.01 K/D, twenty-five assists — the highest-volume attacker on the seven-player board and the spine behind Gold I at 2,972 RP even on a −104 RP Jun 12 night. Matticus HQ sits at 77.8% over nine rounds with 2.33 K/D — surge timing that actually converted placements into Silver IV. Cross-roster contrast: Grandmaster Sandman still prints on Sledge at 63.2%; CunderThock on Zero; Rogue on Dokkaebi. The squad memo is the same operator, two outcomes — Adrenal Surge wins when the stack commits to the buffed execute together; popping it solo on Calypso loss streaks is how break-even volume stalls at Gold I."
+        },
+        {
+            "type": "operator",
+            "subject": "Thunderbird",
+            "date": "Jun 12",
+            "text": "Mynameisblang: eighty-nine Thunderbird defensive rounds, 60.7% win rate, 1.33 K/D, thirty assists — the defensive main with real sample size on the heaviest grinder dossier in the stack. Kóna Stations top teammates between fights; thirty assists on seventy-six kills says sustain converted to round wins while Finka attack minutes hovered at break-even. Cross-roster anchors still split: Grandmaster Sandman on Kaid at 80.0%, CunderThock on Tachanka at 64.3%, MJester1337 on Thorn at 66.7%, slackandlack on Aruni at 62.5%. Thunderbird is proof the newcomer stack can lock a passive sustain anchor at volume — pair it with Oryx roam pressure and stop funding Dokkaebi attack rows that bleed."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 12",
+            "text": "Three dossiers, three Jegeo receipts. Rogue_Amputee: fifteen attack rounds, 60.0% win rate, 1.38 K/D — still the squad's best Dokkaebi volume after Wave 4. MJester1337: forty-two rounds at 50.0% with fourteen assists — break-even utility that buys trades without printing rank yet. Mynameisblang: sixty-five rounds at 35.4% with 0.60 K/D — the attack tax on a Gold I dossier that already proved Finka and Oryx. Grandmaster Sandman sits at 50% over six rounds; CunderThock hasn't leaned in. Cross-roster lesson unchanged from Wave 2: scan-and-payload pressure wins when coordinated — hoarding charges or queueing her as a comfort pick after a loss night is how three players write three different seasons on the same remaster."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 12",
+            "text": "slackandlack: sixteen Aruni defensive rounds, 62.5% win rate, 1.62 K/D, 47.6% headshots, one ace — the highest-volume pick on a Silver II dossier and the defensive spine that actually prints. Surya Gates on the breach that matters, EBR pressure when the gate eats the push — ten wins in sixteen rounds is a main, not a placement audition. Cross-roster contrast: the same player's Osa row reads 25.0% over sixteen attack rounds with 1.00 K/D — tied for top volume, worst win rate. Grandmaster Sandman's Kaid, CunderThock's Tachanka, and MJester1337's Thorn all proved denial anchors convert; slackandlack found Aruni first. Stack the gate on defense, swap Osa minutes for Thermite or Blackbeard on attack, and Silver I is forty-nine RP away."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 12",
+            "text": "MJester1337: thirty-three Thorn defensive rounds, 66.7% win rate, 1.15 K/D, twenty assists — the best defensive win rate on a Copper I dossier that wins 59.4% of its sets anyway. Razorblooms on the plant window or choke the attack actually walks through; twenty assists says traps bought trades even when K/D looked modest. Wave 1 called Thorn the squad's benched ceiling operator; Wave 5 is thirty-three rounds of proof on the newest grinder. Cross-roster note: Grandmaster Sandman still never queued Thorn and hit Gold IV on Kaid; Mynameisblang's Thorn sits at 27.3% over eleven rounds while Thunderbird carries eighty-nine. Denari leads MJester's volume at forty-three rounds with 0.53 K/D — flex connectors behind Thorn minutes until the laser slows real pushes."
+        },
+        {
+            "type": "map",
+            "subject": "Clubhouse",
+            "date": "Jun 14",
+            "text": "Jun 14 Clubhouse was the squad tax collected in real time. CunderThock, Grandmaster Sandman, Matticus HQ, and slackandlack all queued it together — forty-eight hours after the same map went 5:3 for the same core four — and donated a 4:5 overtime loss worth a combined hundred-plus RP. The badge column was loud: Victim on Sandman, 1v2 Lost on Matticus, a 3K on slack, multi-kills everywhere. Nobody closed the plant clock. When the stack converges on one map twice and only the first set moves rank, the missing skill isn't aim — it's round closure under overtime pressure, and two Gold IV peaks paid for the lesson."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 14",
+            "text": "CunderThock's Tachanka is sixty rounds at 63.3% now — the highest-volume anchor on the whole stack and the literal spine of a Gold IV card. Here's the cross-roster beauty: Grandmaster Sandman hit the exact same rank without queuing the Lord a single time, anchoring Kaid instead. Two completely different defensive philosophies, both valid, both taxed on the Jun 14 Clubhouse overtime. Rogue_Amputee and Matticus HQ are still splitting Mute, Skopós and Aruni minutes — the Tachanka and Kaid templates are sitting right there on adjacent dossiers, fully proven."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 14",
+            "text": "Grandmaster Sandman's Sledge — thirty-two rounds, 59.4%, a 1.57 K/D — is the squad's clearest answer to who consolidates attack after the Jun 12 hundred-and-five-RP bleed. The Jun 14 Clubhouse nine-kill loss is the cautionary half: hammer timing without plant discipline is just louder hero ball. Look across the roster and the jobs are all different — CunderThock prints on Zero's intel, Rogue on Dokkaebi and Nomad, Matticus on Finka. Stop grading Sledge like the problem was aim when the whole stack lost the execute floor in overtime."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 14",
+            "text": "slackandlack's Aruni — twenty-three rounds, 60.9%, a 1.53 K/D — is proof the fifth stack member has a real anchor and not just a comfort pick. The Jun 13 Clubhouse 4K rode that chair; the Jun 14 overtime needed the gate on the execute floor instead of just the opening pick. Line the squad's anchors up: CunderThock on Tachanka at sixty-three percent, Sandman on Kaid at 68.4%, MJester1337 on Thorn over fifty-six rounds. The denial chairs are filled. slack, your leak is twenty Osa rounds at thirty-five percent — feed those minutes to Thermite."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopós",
+            "date": "Jun 14",
+            "text": "Matticus HQ finally has a defensive identity the stack can mirror — Skopós, seventeen rounds, 70.6%, the best defensive win rate on the Jun 13 four-stack night. Pantheon Shells covering two zones bought the Jun 13 4:2; the Jun 14 4/8/2 line says the shell swaps stopped converting once overtime turned the screws. That's the same lesson stalking the whole stack right now. Sandman anchors Kaid, CunderThock anchors Tachanka, slack anchors Aruni, Matticus anchors Skopós — four real defensive chairs. Now go close the rounds they set up."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 13",
+            "text": "The Jegeo Payload is a three-dossier experiment with three different verdicts. Rogue_Amputee's the textbook — twenty-two rounds, 50%, nine assists, scan-and-payload pressure converting on stack nights. MJester1337 mirrors it at fifty percent over fifty-four rounds with twenty assists. Mynameisblang is the warning: seventy-one rounds at 38% and a 0.59 K/D, the attack tax dragging a Gold I climb backward. The cross-roster lesson hasn't changed since the remaster dropped — Dokkaebi pays when the hack is coordinated and bleeds when it's solo phone noise. Rogue found the receipt; Blang's still chasing it."
+        },
+        {
+            "type": "map",
+            "subject": "Emerald Plains",
+            "date": "Jun 14",
+            "text": "Jun 14 made Emerald Plains the stack's second tax map after Clubhouse. CunderThock, Rogue_Amputee, slackandlack, and MJester1337 all logged 3:5 losses on the modernized map in the same session — multi-kills, Victim tags, 1v3 Lost receipts, zero combined wins. Jun 13 Coastline proved the core four could close; Jun 14 Emerald proved they could queue the same vertical reads and still hand rounds to the plant clock. When five dossiers bleed on one map family in one night, the lesson isn't operator spread — it's execute discipline on the floor that actually ends the set."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 15",
+            "text": "CunderThock: sixty-four Tachanka rounds, 62.5% win rate — still the highest-volume anchor on the stack after a Jun 14 double Clubhouse tax dropped him to Gold V at 2,572 RP. The Lord didn't fail Jun 14; round closure did. Cross-roster anchors still split: Grandmaster Sandman on Kaid at 71.4% over seven slack rounds isn't the story — Sandman unchanged since Jun 14 — but CunderThock, slackandlack on Aruni at 62.5%, and MJester1337 on Thorn at 59.0% over sixty-one rounds all prove denial chairs are filled. The stack's leak is attack-side closure on Emerald and Outback, not defensive mains."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 15",
+            "text": "slackandlack: twenty-four Aruni rounds, 62.5%, 1.55 K/D — the gate anchor held identity through a Jun 14 four-loss block that slid Silver II to Silver III at 2,270 RP. Fifteen wins in twenty-four rounds is a main; twenty Osa attack rounds at 35.0% is the tax bleeding the climb. Cross-roster contrast: CunderThock's Tachanka, Sandman's Kaid, MJester's Thorn, Matticus's Skopós — four denial philosophies, all printing when queued. slack's Jun 14 Outback 3:8 line wasn't Aruni failing; it was round closure after the gate did its job."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 15",
+            "text": "Mynameisblang: one hundred eleven Finka attack rounds, 49.5%, 0.96 K/D — still the highest-volume attacker on the seven-player board after a twelve-game Jun 14 solo marathon and a Jun 15 Outback 5:4 with a 4K and 1v3 Clutch. Matticus HQ sits at 63.6% over eleven Finka rounds with 1.80 K/D — surge timing that converted placements. Cross-roster lesson: Adrenal Surge wins when the stack commits to the buffed execute; solo surging on Emerald loss streaks is how Gold I stalls at 2,900 instead of pushing Plat. Blang's spine is Finka and Oryx; the tax is Dokkaebi at 40.5% over eighty-four rounds."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 15",
+            "text": "MJester1337: sixty-one Thorn defensive rounds, 59.0%, 0.95 K/D, twenty-six assists — the trap anchor still leads volume on a Copper I dossier that wins 52.0% of its sets anyway. Jun 14 stack night was 0–3 on Clubhouse, Emerald, and Outback; Jun 13 was an eleven-game solo marathon — Thorn held while Denari's fifty-eight rounds at 0.55 K/D taxed placement. Cross-roster note: Grandmaster Sandman never queued Thorn and hit Gold IV on Kaid; MJester's Thorn is proof the newest grinder locked a denial main. Flex Denari behind Thorn minutes, not beside them on stack nights."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jun 15",
+            "text": "Rogue_Amputee: thirty-two Nomad attack rounds, 53.1%, 1.25 K/D — still the disciplined attack alternative after Jun 14 triple-loss block slid Bronze II to 1,810 RP. Dokkaebi at 47.8% with nine assists remains the payload call; Gridlock at 14.3% is the habit to kill. Cross-roster contrast: CunderThock prints on Zero intel, Sandman on Sledge, Matticus on Finka, blang on Oryx — Rogue's attack floor is Nomad beside Dokkaebi, not experimental flex on nights the stack already bled seventy-seven RP. Copy the process when Mute and Kaid hold defense."
+        },
+        {
+            "type": "map",
+            "subject": "Border",
+            "date": "Jun 15",
+            "text": "Jun 15 made Border the squad's shared donation map — CunderThock, Grandmaster Sandman, and MJester1337 all logged 1:4 Ls within the same block for a combined eighty-one RP gone. Rogue_Amputee split the night with Consulate 5:3 first, then Border Victim after. Same map, same scoreline, three grinders bleeding rank while Rogue at least banked a W elsewhere. When half the stack converges on Border and nobody closes site, the lesson isn't aim — it's attack discipline on a map that punishes untimed pushes. slackandlack and Rogue_Amputee skipped the Border tax and cashed Consulate instead — that's the contrast worth copying."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 18",
+            "text": "CunderThock: sixty-seven Tachanka rounds, 61.2% win rate — still the squad's highest-volume defensive anchor after Jun 15 Border bleed dropped him to Gold V at 2,545 RP. Grandmaster Sandman hit Gold V on Sledge and Kaid without queuing the Lord once — two anchor philosophies, both valid. Matticus HQ hasn't updated — bench watching while Cunder proves LMG denial still scales. Cross-roster lesson: pick a defensive main and commit before game twenty-five, not after."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 18",
+            "text": "Grandmaster Sandman: thirty-eight Sledge rounds, 57.9% win rate, 1.52 K/D — the attack main that fixed System Override spread. Jun 16 Calypso 5:3 with a 3K is timed hammer, not nostalgia. CunderThock's attack volume still splits Zero, Jackal, and Snake experiments; Sandman's consolidation memo hasn't changed — one rifle, one job. MJester1337 never queued Sledge and still grinds Copper on Thorn/Denari volume instead."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 18",
+            "text": "MJester1337: seventy-four Thorn rounds, 58.1% win rate, thirty-six assists — the squad's trap anchor on a Copper I dossier that wins fifty-two percent of its sets anyway. Grandmaster Sandman's Thorn sits at 38.5% over thirteen rounds; Mynameisblang's at 27.3% over eleven. Jester locked denial early; Sandman and Blang still treat Razorblooms as a flex toy. Cross-roster ceiling: bloom the plant window, not the decorative corner."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 18",
+            "text": "slackandlack: twenty-four Aruni rounds, 62.5% win rate, 1.55 K/D — Consulate 5:3 Jun 15 was gate-and-hold aggression that closed. Mynameisblang's Aruni row reads 35.3% over seventeen rounds on the same op — same gadget, different discipline. When slack's EBR prints on Consulate and Blang's doesn't, the squad lesson is angle selection and gated entries, not operator choice."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 18",
+            "text": "The Y11S2 remaster lives on three dossiers at volume now: Rogue_Amputee twenty-six rounds, MJester1337 sixty, Mynameisblang ninety. Rogue at 46.2% with twelve assists, Jester at 46.7% with twenty-one, Blang at 42.2% with seventeen — Jegeo Payload pressure everywhere, WR uneven. CunderThock and Grandmaster Sandman still treat her as a flex pick under ten rounds. Matticus HQ unchanged on the bench. Squad memo: scan, hack, force movement — the phone tax is season meta; only three of seven are paying it at scale."
+        },
+        {
+            "type": "map",
+            "subject": "Calypso Casino",
+            "date": "Jun 20",
+            "text": "Jun 18–20 made Calypso the squad's shared ledger — Sandman and CunderThock bled Jun 19 triple-loss blocks; MJester1337 ran eighteen games Jun 20 and cashed 5:4 at 1,489 RP; slackandlack logged a 4:0 shutdown Jun 19; Matticus HQ took 2:4 with a Victim tag Jun 18. Same vertical map, wildly different receipts: shutdown Ws when the execute is timed, highlight reels that still donate when OT clock matters. The season's new casino isn't the problem — round closure on it is the squad homework."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 20",
+            "text": "CunderThock: eighty-four Tachanka rounds, 61.9% win rate — still the squad's highest-volume defensive anchor after Jun 19 bleed dropped him to Silver I at 2,497 RP. Grandmaster Sandman hit the same RP on Sledge and Kaid without queuing the Lord once — two anchor philosophies, both three RP from Gold V. Cross-roster lesson: pick a defensive main and commit before game thirty, not after Calypso taxes rank."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 20",
+            "text": "Grandmaster Sandman: fifty Sledge rounds, 54.0% win rate, 1.32 K/D — attack main that fixed System Override spread. Jun 20 Oregon 4:2 matched CunderThock's scoreline at the same RP — stack symmetry when hammer timing closes. MJester1337 never queued Sledge and grinds Copper on Thorn/Denari volume instead. Sandman's consolidation memo hasn't changed: one rifle, one job, timed entries not nostalgia rushes."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 20",
+            "text": "MJester1337: one hundred fifteen Thorn rounds, 60.9% win rate, forty-five assists — the squad's trap anchor cleared triple digits on a Copper dossier that wins 51.1% anyway. Jun 20 eighteen-game marathon printed plus one hundred ten RP with Thorn setup leading. Grandmaster Sandman's Thorn sits at 44.4% over eighteen; Mynameisblang's at 27.3% over eleven. Jester locked denial early; the rest of the stack still treats Razorblooms as flex toys."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 20",
+            "text": "Mynameisblang: one hundred fourteen Finka rounds, 50.0% win rate — attack default that broke Gold I at 3,000 RP Jun 19. Matticus HQ: eleven Finka rounds, 63.6%, 1.80 K/D — surge timing that converted Emerald Plains Jun 18 after six days idle. Cross-roster lesson: Adrenal Surge wins when the stack commits to the buffed execute; solo surging on Calypso loss streaks is how Silver IV stalls instead of climbing."
+        },
+        {
+            "type": "operator",
+            "subject": "Dokkaebi",
+            "date": "Jun 20",
+            "text": "The Y11S2 remaster lives at volume on three dossiers: MJester1337 sixty-six rounds, Mynameisblang ninety-two, Rogue_Amputee twenty-six unchanged. Jester at 47.0% with twenty-three assists climbed Copper on a Jun 20 marathon; Blang at 42.4% treads water at Gold I. CunderThock and Sandman still under ten rounds each. Squad memo: scan, hack, force movement — Jegeo Payload is season meta; only half the stack is paying it at scale, and Rogue's still the textbook on a Bronze II bench."
+        },
+        {
+            "type": "map",
+            "subject": "Bank",
+            "date": "Jun 23",
+            "text": "Jun 23 Bank 5:3 was the squad's shared closure map — CunderThock and Mynameisblang both banked Ws the same night at 2,548 and 3,048 RP. Bank punishes teams that win mid-round duels but lose the post-plant; when multiple dossiers move on the same map block with matching scorelines, the lesson is stack round closure, not individual highlight reels. Gold V and Platinum V in the same lobby is the System Override receipt."
+        },
+        {
+            "type": "operator",
+            "subject": "Tachanka",
+            "date": "Jun 23",
+            "text": "CunderThock's Tachanka: one hundred eleven defensive rounds, 63.1% win rate — still the squad's highest-volume anchor after Bank closed Gold V. Grandmaster Sandman hit the same tier on Kaid and Sledge without queuing the Lord once. Two anchor philosophies, both printing; Rogue_Amputee and Matticus HQ still need a locked defensive main while the templates sit on adjacent dossiers."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 21",
+            "text": "slackandlack's Aruni: thirty-four rounds, 67.6% win rate, 1.92 K/D, two aces — Surya Gate denial with EBR frag upside on the Jun 21 Coastline heater. Cross-roster anchors split: Cunder on Tachanka, Sandman on Kaid/Frost, slack on Aruni/Doc. The stack's defensive chairs are filled; the leak is still attack-side closure on Chalet and Outback shutouts."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 23",
+            "text": "MJester1337's Thorn: one hundred fifty-three defensive rounds, 60.8% win rate, sixty-three assists — the grind anchor at one hundred eleven matches. Rogue's Thorn at thirteen rounds is the surgical call; MJester's is the career. Trap ops win on assists and plant denial — judge MJester's row on round impact, not the 0.84 season K/D."
+        },
+        {
+            "type": "operator",
+            "subject": "Thunderbird",
+            "date": "Jun 23",
+            "text": "Mynameisblang's Thunderbird: ninety-three defensive rounds, 59.1% win rate, 1.26 K/D — Platinum V anchor at volume. LceW4ll0wCome's Kaid at 82.4% over seventeen is the smurf receipt; Blang's Thunderbird is the main-account climb. Cross-squad lesson: denial anchors that rez and hold print rank when attack stops donating 0:4s."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 20",
+            "text": "Grandmaster Sandman's Sledge: sixty-one attack rounds, 52.5% win rate, 1.29 K/D — Gold V hammer at stack volume. CunderThock's Zero at ninety-five attack rounds and 45.3% is the cautionary spread tale on the same roster night. Sandman's consolidation arc is the squad memo: lock attack mains before game sixty, not after Calypso taxes rank."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Jun 28",
+            "text": "Jun 28 Chalet was the squad's shared stack map — CunderThock 4:0 with 4K and 2K, Grandmaster Sandman 4:0, slackandlack 4:0 with 2K, MJester1337 4:0 with 2K, Rogue_Amputee 4:1 with 1v1 Clutch. Five dossiers, same map block, four shutouts and a narrow W. When the stack converges on Chalet and closes, the board moves — Gold V pushes to 2,568, Sandman holds 2,548, slack climbs to 2,327, MJester promotes to Bronze II. Oregon and Consulate in the same session still tax rank; Chalet was the closure receipt."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jun 28",
+            "text": "Grandmaster Sandman's Sledge: seventy-six attack rounds, 51.3% win rate, 1.28 K/D — Gold V hammer after Jun 24–28 catch-up ended the Jun 20 dormancy. Consulate 4K 1v1 Clutch Jun 28 is the stack's loudest attack receipt. CunderThock's Zero at one-twenty-two rounds and 43.4% is the cautionary intel spread on the same roster night. Sandman's consolidation arc is still the squad memo: lock attack mains before game seventy, not after Oregon donates."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jun 28",
+            "text": "MJester1337's Thorn: one hundred eighty-eight defensive rounds, 61.7% win rate, seventy-three assists — Bronze II at 1,813 after Border 4K and Chalet 4:0 in an eight-game Jun 28 marathon. One hundred thirty-six ranked matches — the grind anchor promoted while the K/D sheet still reads 0.87. Rogue's Thorn at sixteen rounds is the surgical call; MJester's is the career. Trap ops win on assists and plant denial — judge the row on round impact."
+        },
+        {
+            "type": "operator",
+            "subject": "Skopós",
+            "date": "Jun 27",
+            "text": "Matticus HQ's Skopós: thirty-four defensive rounds, 64.7% win rate — cam anchor at season volume while Oregon 4K still lost 2:4 Jun 27. Finka at 56.2% over sixteen backs the attack chair for the first time at fifty-fifty record. Cross-roster contrast: Cunder on Tachanka one-thirty-six, Sandman on Kaid thirty-three at 66.7%, slack on Aruni forty at 70.0%. Matticus finally has both chairs — the leak is still highlight ball without plant closure on Oregon."
+        },
+        {
+            "type": "operator",
+            "subject": "Mute",
+            "date": "Jun 28",
+            "text": "Rogue_Amputee's Mute: sixty-nine defensive rounds, 47.8% win rate, seventeen assists — volume leader still treading water at Bronze II 1,856 RP despite Jun 25 Chalet and Nighthaven heater. Nomad at 52.5% over sixty-one is the attack line printing beside Dokkaebi. Cross-roster lesson: Kaid at 62.2% over thirty-seven says the claws work when stacked with Mute — fix the jammer wall before you fix the gun on a 1 W 3 L Jun 28 block."
+        },
+        {
+            "type": "operator",
+            "subject": "Aruni",
+            "date": "Jun 28",
+            "text": "slackandlack's Aruni: forty defensive rounds, 70.0% win rate, 1.74 K/D, two aces — gate anchor at Silver II 2,327 after Jun 28 Chalet 4:0. Doc at 58.3% over forty-eight and Osa at 44.9% over forty-nine split the other chairs. Cross-roster anchors: Cunder on Tachanka, Sandman on Kaid/Frost, MJester on Thorn. slack's defensive identity is locked — the tax is still Osa attack closure and Bank 3:5 donations after Chalet prints."
+        },
+        {
+            "type": "map",
+            "subject": "Chalet",
+            "date": "Aug 4",
+            "text": "Chalet keeps being the squad's shared proving ground. slackandlack swept it 4:2 mid-stretch on the way to Gold III; Rogue_Amputee split it across a six-week climb; Sandman, Jester, and Blang all logged both wins and donations there. Across the board this update: Rogue_Amputee climbed five full rank tiers — Bronze II to Gold V — and slackandlack climbed two, Silver II to Gold III. When the same map repeats across five dossiers in one stretch, the lesson isn't the map — it's that the squad is playing enough volume right now for patterns to actually mean something."
+        },
+        {
+            "type": "operator",
+            "subject": "Nomad",
+            "date": "Jul 22",
+            "text": "Rogue_Amputee's Nomad: one hundred sixty-eight attack rounds, 47.0% win rate — the volume engine behind a five-tier climb from Bronze II to Gold V. Cross-roster contrast: CunderThock still runs Zero at volume for intel, Sandman runs Sledge for frags, slackandlack splits Osa and Thermite, Blang runs Finka. Six different attack identities, six different rank bands — the squad doesn't need one answer, it needs each dossier to keep committing to its own."
+        },
+        {
+            "type": "operator",
+            "subject": "Thorn",
+            "date": "Jul 20",
+            "text": "MJester1337's Thorn: three hundred thirty-nine defensive rounds — the largest single-operator sample on the entire seven-player roster, still printing at 59.9%. The volume dwarfs entire dossiers' total matches. Grandmaster Sandman's defensive anchor is Frost at 70.0%; slackandlack's is Doc at 59.6%; CunderThock's is still Tachanka past 180 rounds. Four different defensive identities, all above break-even — this squad's denial game is the strongest it's been all season."
+        },
+        {
+            "type": "operator",
+            "subject": "Doc",
+            "date": "Jul 19",
+            "text": "slackandlack's Doc: eighty-nine defensive rounds, 59.6% win rate, 1.51 K/D — the anchor behind a Silver II to Gold III climb. Aruni backs him up at 64.6%, the best win rate on slack's card. Cross-roster: Rogue's Mute-Kaid pairing, Sandman's Frost-Kaid pairing, and now slack's Doc-Aruni pairing are all printing simultaneously — three separate two-operator defensive systems, three separate rank climbs."
+        },
+        {
+            "type": "operator",
+            "subject": "Finka",
+            "date": "Jun 23",
+            "text": "Finka shows up at real volume on two dossiers with opposite shapes. Mynameisblang: one hundred fourteen rounds, dead-even 50.0%, the volume anchor of a Platinum IV card. Matticus HQ: eighteen rounds, 55.6%, a smaller but sharper sample backing a Silver III push. Same operator, same Adrenal Surge job — the squad-wide read hasn't changed since June: the buff wins when the whole team commits to the execute together, and it's costing rounds everywhere it gets popped solo."
+        },
+        {
+            "type": "operator",
+            "subject": "Sledge",
+            "date": "Jul 24",
+            "text": "Grandmaster Sandman's Sledge: one hundred eighteen attack rounds, dead-even 50.0% win rate — still the attack main behind Gold III, but the win rate finally cooled after a season of climbing. When a Sledge win rate stalls flat, it usually traces to over-aggressive solo entries, not the hammer — worth a look before the next stack night. Everywhere else on the roster attack identities keep separating out: Rogue on Nomad, Cunder on Zero, slack split Osa and Thermite, Blang on Finka. Five different attack philosophies, one shared coaching note: time the entry, don't force it."
+        }
+    ],
+    "seasonClosed": true,
+    "seasonReport": "<p><b>Y11S2 verdict: this squad won more often than it lost, but defense did the heavy lifting and attack never became reliable.</b> The seven main accounts logged <b>1,048 ranked player match entries: 532 W, 511 L, five outcomes outside W/L, and a 50.8% win rate</b> with those five entries retained in the denominator. Their combined <b>4,326 kills, 4,606 deaths, and 1,580 assists</b> produce a weighted <b>0.94 K/D</b>, a -280 kill differential, and 42.4% headshots recovered from the match rows. These totals include every supplied main-account game, whatever its queue, and repeat a shared game for each tracked participant; they are player records, so a unique squad-game count or five-stack win rate cannot be recovered from them.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Account</th><th>Entries</th><th>W-L-U</th><th>Win%</th><th>K/D/A</th><th>K/D</th><th>HS%</th><th>Closing rank / RP</th><th>Peak RP</th></tr></thead><tbody><tr><td>CunderThock</td><td>69</td><td>38-31-0</td><td>55.1%</td><td>301/309/102</td><td>0.97</td><td>41.5%</td><td>Gold IV · 2,631</td><td>2,685</td></tr><tr><td>Rogue_Amputee</td><td>169</td><td>86-83-0</td><td>50.9%</td><td>660/710/291</td><td>0.93</td><td>38.9%</td><td>Gold III · 2,705</td><td>2,731</td></tr><tr><td>Grandmaster Sandman</td><td>130</td><td>70-60-0</td><td>53.8%</td><td>707/565/203</td><td>1.25</td><td>36.9%</td><td>Gold II · 2,887</td><td>2,896</td></tr><tr><td>Matticus HQ</td><td>36</td><td>19-17-0</td><td>52.8%</td><td>117/133/45</td><td>0.88</td><td>48.7%</td><td>Silver III · 2,258</td><td>2,298</td></tr><tr><td>slackandlack</td><td>110</td><td>60-49-1</td><td>54.5%</td><td>649/503/166</td><td>1.29</td><td>49.6%</td><td>Gold III · 2,724</td><td>2,789</td></tr><tr><td>MJester1337</td><td>373</td><td>176-195-2</td><td>47.2%</td><td>1245/1636/553</td><td>0.76</td><td>34.4%</td><td>Silver III · 2,268</td><td>2,509</td></tr><tr><td>Mynameisblang · MIA</td><td>161</td><td>83-76-2</td><td>51.6%</td><td>647/750/220</td><td>0.86</td><td>59.7%</td><td>Platinum IV · 3,100</td><td>3,142</td></tr></tbody></table></div><p><b>The side split is the season’s clearest diagnosis:</b> the operator overviews record 1,807 wins in 3,179 defensive round observations (56.8%) against 1,394 in 3,122 attack observations (44.6%), a 12.2-point gap that also repeats rounds across accounts. Defense held a 1.02 K/D in those overviews while attack fell to 0.86, making coordinated attack execution the first repair rather than a wholesale rebuild of the defensive identity. slackandlack’s Doc and Aruni returned 60.0% across 100 rounds and 60.5% across 86, while CunderThock’s Tachanka delivered 63.0% across 181. MJester1337’s Thorn sustained 59.0% across 368 rounds with 168 assists, and Grandmaster Sandman’s Kaid and Frost backed that foundation at 67.2% across 61 rounds and 68.5% across 54. Keep those proven defensive options, judge denial and intel operators by the round result as well as their gunfights, and use replays to check the actual setup and gadget value that these aggregate stats cannot measure.</p><p><b>Build the next attack around a shared plan:</b> slackandlack can coordinate Thermite’s breach or Osa’s cover, Grandmaster Sandman can synchronize Sledge’s pressure, CunderThock can feed Zero’s information, and Rogue_Amputee can secure the relevant Nomad flank. Those are role options drawn from their existing operator pools, with one called breach or pressure lane, an assigned trader, a protected flank, and a plant route agreed before the push rather than five independent projects.</p><p><b>slackandlack was the combat leader:</b> 1.29 K/D and a +146 kill differential across 110 entries, with 60 W / 49 L / one unclassified outcome and a Gold III finish at 2,724 RP. <b>Grandmaster Sandman was the other sustained positive combat contributor:</b> 1.25 K/D, +142 differential, 70–60, and Gold II at 2,887 RP, with Bank’s 8–2 record and 2.32 map K/D showing a particularly strong conversion point. Together those two accounts contributed +288 in kill differential, a meaningful season contribution that should be turned into coordinated pressure and trades rather than treated as evidence that either player carried every shared lobby.</p><p><b>CunderThock posted the highest main-account win rate at 55.1%:</b> 38–31 across 69 games and Gold IV at 2,631 RP, with Tachanka’s strong defensive sample contrasting with Zero’s 43.2% across 162 attack rounds, where the coaching priority is information acted on during the execute. <b>Rogue_Amputee’s results improved:</b> June’s 25 wins in 56 entries (44.6%) became August’s 23 in 41 (56.1%), ending 86–83 and Gold III at 2,705 RP, although Nomad’s 46.0% across 187 rounds and Gridlock’s 36.5% across 85 still call for flank and post-plant utility timed to the team’s push. <b>Matticus HQ supplied a smaller positive record at 19–17 and Silver III, 2,258 RP:</b> Skopós won 60.4% of 48 rounds despite a 0.59 operator K/D, so protect the two-shell intel and positioning job, while Sens at 57.1% across 21 rounds and Finka at 55.6% across 18 are encouraging attack options with modest samples.</p><p><b>MJester1337 logged 35.6% of the main-account volume:</b> 373 entries, 176 W / 195 L / two unclassified outcomes, 0.76 K/D, 553 assists, and a -391 kill differential make his survival and conversion the largest individual improvement opportunity by recorded volume. His Thorn results deserve protection, while Montagne’s 41.4% round win rate across 116 rounds should be coached through escorted space, callouts, and plant conversion rather than judged by the shield’s low K/D alone. His August record fell to 49 wins in 125 entries (39.2%) and 0.63 K/D after June’s 73 in 137 (53.3%) and 0.86 K/D, supporting shorter sessions with deliberate reviews instead of treating another queue as the fix.</p><p><b>Mynameisblang earned the highest closing rank at Platinum IV, 3,100 RP:</b> 83 W / 76 L / two unclassified outcomes and the roster’s highest 59.7% headshot rate, but a 0.86 overall K/D shows that precision did not make the whole combat record positive. Oryx at 56.8% across 95 rounds and Thunderbird at 59.1% across 93 offer useful defensive history to preserve, alongside Finka’s 50.0% across 114 attack rounds. His current <b>MIA</b> status leaves that earned Y11S2 contribution in the historical totals, while the continuing squad needs to assign the roles that his absence leaves open.</p><p><b>Oregon and Chalet are the first map repairs:</b> Oregon finished 67–90 across 157 entries (42.7%) and Chalet 33–46 across 79 (41.8%), combining for a -36 W/L differential. Calypso Casino drew the most volume at 163 entries but finished 79 W / 83 L / one unclassified outcome (48.5%), so familiarity has not yet become a dependable map advantage. The stronger pooled results were Nighthaven Labs at 33 W / 20 L / one unclassified outcome in 54 entries (61.1%), Bank at 39–27 in 66 (59.1%), and Consulate at 38–28 in 66 (57.6%). Even a strong pooled map needs a player-specific plan: Nighthaven Labs gave Rogue_Amputee 72.7% across 11 entries and MJester1337 63.6% across 22, but Grandmaster Sandman and Mynameisblang each finished at 33.3% across six, so compare their actual approaches before calling it universally solved.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Map · seven main accounts</th><th>Player entries</th><th>W-L-U</th><th>Win%</th></tr></thead><tbody><tr><td>Calypso Casino</td><td>163</td><td>79-83-1</td><td>48.5%</td></tr><tr><td>Oregon</td><td>157</td><td>67-90-0</td><td>42.7%</td></tr><tr><td>Clubhouse</td><td>103</td><td>55-47-1</td><td>53.4%</td></tr><tr><td>Chalet</td><td>79</td><td>33-46-0</td><td>41.8%</td></tr><tr><td>Consulate</td><td>66</td><td>38-28-0</td><td>57.6%</td></tr><tr><td>Bank</td><td>66</td><td>39-27-0</td><td>59.1%</td></tr><tr><td>Border</td><td>65</td><td>34-30-1</td><td>52.3%</td></tr><tr><td>Nighthaven Labs</td><td>54</td><td>33-20-1</td><td>61.1%</td></tr><tr><td>Coastline</td><td>52</td><td>30-22-0</td><td>57.7%</td></tr><tr><td>Outback</td><td>45</td><td>24-21-0</td><td>53.3%</td></tr><tr><td>Lair</td><td>39</td><td>21-18-0</td><td>53.8%</td></tr><tr><td>Kafe Dostoyevsky</td><td>37</td><td>19-18-0</td><td>51.4%</td></tr><tr><td>Kanal</td><td>35</td><td>16-19-0</td><td>45.7%</td></tr><tr><td>Fortress</td><td>32</td><td>20-11-1</td><td>62.5%</td></tr><tr><td>Emerald Plains</td><td>30</td><td>14-16-0</td><td>46.7%</td></tr><tr><td>Villa</td><td>22</td><td>9-13-0</td><td>40.9%</td></tr><tr><td>Theme Park</td><td>3</td><td>1-2-0</td><td>33.3%</td></tr></tbody></table></div><p><b>The recorded season cooled late:</b> June returned 51.6% wins and 0.95 K/D, July 52.2% and 1.00, and August 47.2% and 0.83. The mix changed as well as the results: MJester1337 supplied 125 of August’s 229 entries (54.6%), while the other six accounts combined won 59 of 104 (56.7%), so the pooled decline cannot honestly be described as every player collapsing together.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Month · seven main accounts</th><th>Player entries</th><th>W-L-U</th><th>Win%</th><th>K/D</th></tr></thead><tbody><tr><td>Jun</td><td>543</td><td>280-262-1</td><td>51.6%</td><td>0.95</td></tr><tr><td>Jul</td><td>276</td><td>144-132-0</td><td>52.2%</td><td>1.00</td></tr><tr><td>Aug</td><td>229</td><td>108-117-4</td><td>47.2%</td><td>0.83</td></tr></tbody></table></div><p><b>Together-play evidence is strongest where several consecutive date, map, score, and outcome rows align:</b> the examples below support probable shared sessions, while missing match IDs, timestamps, and lobby lists prevent confirmed membership or causal duo rankings. On Jul 3, CunderThock, Rogue_Amputee, Matticus HQ, slackandlack, and MJester1337 share the same three-row sequence: Border 4:2 and Nighthaven Labs 4:0 wins, plus an Oregon 0:4 loss, a probable shared 2–1 set. Within those corresponding scoreboards, CunderThock and slackandlack supplied 19 of the five accounts’ 27 Border kills, while Matticus HQ and slackandlack supplied ten of their 19 Labs kills, showing the leading contribution changing across the sequence rather than one permanent hero. Grandmaster Sandman and slackandlack align across seven consecutive Jun 7 rows with six wins and one loss, a strong example of their results lining up successfully. Rogue_Amputee and MJester1337 also align across all five Jul 25 losses, which earns a shared review of those rounds rather than a claim that their pairing caused the losses. On Jun 20, Grandmaster Sandman, slackandlack, MJester1337, and Rogue_Amputee’s LceW4ll0wCome alt share a six-row sequence containing four wins and two losses, evidence that the alt appears in probable squad sessions without becoming an extra person.</p><p><b>SnSoldier’s supplied account is included separately:</b> 23–29 across 52 entries, 44.2% wins, 0.79 K/D, and Bronze IV at 1,624 RP, with Thorn’s 56.2% across 32 rounds and 1.57 K/D offering a defensive foothold while his Discord identity, roster role, and any parent account remain unconfirmed. <b>LceW4ll0wCome remains Rogue_Amputee’s alt:</b> 13–15 across 28 entries, 46.4% wins, 1.21 K/D, and Silver IV at 2,156 RP, a useful reminder that positive gunfight numbers still need to become winning rounds.</p><div class=\"scroll\"><table class=\"board\"><thead><tr><th>Account</th><th>Entries</th><th>W-L-U</th><th>Win%</th><th>K/D/A</th><th>K/D</th><th>HS%</th><th>Closing rank / RP</th><th>Peak RP</th></tr></thead><tbody><tr><td>SnSoldier · role unconfirmed</td><td>52</td><td>23-29-0</td><td>44.2%</td><td>190/239/74</td><td>0.79</td><td>37.9%</td><td>Bronze IV · 1,624</td><td>1,624</td></tr><tr><td>LceW4ll0wCome · alt</td><td>28</td><td>13-15-0</td><td>46.4%</td><td>126/104/46</td><td>1.21</td><td>35.7%</td><td>Silver IV · 2,156</td><td>2,191</td></tr></tbody></table></div><p>The seven-account badge ledger records <b>87 won-clutch badges and 25 teamkill badges</b>; celebrate the saves, keep the preventable damage visible, and judge utility work alongside the 1,580 assists instead of reducing contribution to kills. <b>Next-season orders:</b> rehearse Oregon and Chalet attack routes, turn Casino’s repeated exposure into a coordinated plan, assign the drone-to-entry trade and plant coverage on each attack, and make two consecutive losses trigger a review before deciding to requeue. This squad has a credible defensive foundation and real individual strengths; its next improvement comes from making those strengths arrive at the same breach, trade, and plant rather than asking the scoreboard to rescue another disconnected execute.</p>",
+    "seasonSummary": {
+        "scope": "Seven main accounts; historical Y11S2 includes Mynameisblang, now MIA. SnSoldier and LceW4ll0wCome are reported separately.",
+        "unit": "player match entries, not unique squad games",
+        "mainAccountSlugs": [
+            "cunderthock",
+            "rogue_amputee",
+            "grandmaster_sandman",
+            "matticus_hq",
+            "slackandlack",
+            "mjester1337",
+            "mynameisblang"
+        ],
+        "matches": 1048,
+        "w": 532,
+        "l": 511,
+        "unclassified": 5,
+        "winRate": 50.8,
+        "decidedWinRate": 51.0,
+        "k": 4326,
+        "d": 4606,
+        "a": 1580,
+        "kd": 0.94,
+        "headshots": 1836,
+        "hs": 42.4,
+        "killDifferential": -280,
+        "operatorSides": {
+            "DEF": {
+                "rounds": 3179,
+                "w": 1807,
+                "l": 1372,
+                "k": 2308,
+                "d": 2256,
+                "a": 930,
+                "winRate": 56.8,
+                "kd": 1.02,
+                "unit": "operator-round observations; shared rounds repeat across accounts"
+            },
+            "ATK": {
+                "rounds": 3122,
+                "w": 1394,
+                "l": 1728,
+                "k": 2016,
+                "d": 2347,
+                "a": 649,
+                "winRate": 44.7,
+                "kd": 0.86,
+                "unit": "operator-round observations; shared rounds repeat across accounts"
+            }
+        },
+        "maps": [
+            {
+                "name": "Calypso Casino",
+                "matches": 163,
+                "w": 79,
+                "l": 83,
+                "unclassified": 1,
+                "winRate": 48.5
+            },
+            {
+                "name": "Oregon",
+                "matches": 157,
+                "w": 67,
+                "l": 90,
+                "unclassified": 0,
+                "winRate": 42.7
+            },
+            {
+                "name": "Clubhouse",
+                "matches": 103,
+                "w": 55,
+                "l": 47,
+                "unclassified": 1,
+                "winRate": 53.4
+            },
+            {
+                "name": "Chalet",
+                "matches": 79,
+                "w": 33,
+                "l": 46,
+                "unclassified": 0,
+                "winRate": 41.8
+            },
+            {
+                "name": "Consulate",
+                "matches": 66,
+                "w": 38,
+                "l": 28,
+                "unclassified": 0,
+                "winRate": 57.6
+            },
+            {
+                "name": "Bank",
+                "matches": 66,
+                "w": 39,
+                "l": 27,
+                "unclassified": 0,
+                "winRate": 59.1
+            },
+            {
+                "name": "Border",
+                "matches": 65,
+                "w": 34,
+                "l": 30,
+                "unclassified": 1,
+                "winRate": 52.3
+            },
+            {
+                "name": "Nighthaven Labs",
+                "matches": 54,
+                "w": 33,
+                "l": 20,
+                "unclassified": 1,
+                "winRate": 61.1
+            },
+            {
+                "name": "Coastline",
+                "matches": 52,
+                "w": 30,
+                "l": 22,
+                "unclassified": 0,
+                "winRate": 57.7
+            },
+            {
+                "name": "Outback",
+                "matches": 45,
+                "w": 24,
+                "l": 21,
+                "unclassified": 0,
+                "winRate": 53.3
+            },
+            {
+                "name": "Lair",
+                "matches": 39,
+                "w": 21,
+                "l": 18,
+                "unclassified": 0,
+                "winRate": 53.8
+            },
+            {
+                "name": "Kafe Dostoyevsky",
+                "matches": 37,
+                "w": 19,
+                "l": 18,
+                "unclassified": 0,
+                "winRate": 51.4
+            },
+            {
+                "name": "Kanal",
+                "matches": 35,
+                "w": 16,
+                "l": 19,
+                "unclassified": 0,
+                "winRate": 45.7
+            },
+            {
+                "name": "Fortress",
+                "matches": 32,
+                "w": 20,
+                "l": 11,
+                "unclassified": 1,
+                "winRate": 62.5
+            },
+            {
+                "name": "Emerald Plains",
+                "matches": 30,
+                "w": 14,
+                "l": 16,
+                "unclassified": 0,
+                "winRate": 46.7
+            },
+            {
+                "name": "Villa",
+                "matches": 22,
+                "w": 9,
+                "l": 13,
+                "unclassified": 0,
+                "winRate": 40.9
+            },
+            {
+                "name": "Theme Park",
+                "matches": 3,
+                "w": 1,
+                "l": 2,
+                "unclassified": 0,
+                "winRate": 33.3
+            }
+        ],
+        "months": [
+            {
+                "month": "Jun",
+                "n": 543,
+                "w": 280,
+                "l": 262,
+                "u": 1,
+                "k": 2308,
+                "d": 2422,
+                "winRate": 51.6,
+                "kd": 0.95
+            },
+            {
+                "month": "Jul",
+                "n": 276,
+                "w": 144,
+                "l": 132,
+                "u": 0,
+                "k": 1188,
+                "d": 1189,
+                "winRate": 52.2,
+                "kd": 1.0
+            },
+            {
+                "month": "Aug",
+                "n": 229,
+                "w": 108,
+                "l": 117,
+                "u": 4,
+                "k": 830,
+                "d": 995,
+                "winRate": 47.2,
+                "kd": 0.83
+            }
+        ],
+        "badges": {
+            "2K": 633,
+            "3K": 228,
+            "1v3 Lost": 107,
+            "Victim": 216,
+            "4K": 63,
+            "1v2 Lost": 96,
+            "1v2 Clutch": 24,
+            "1v1 Clutch": 48,
+            "1v1 Lost": 40,
+            "1v3 Clutch": 12,
+            "TK": 25,
+            "Ace": 10,
+            "1v4 Clutch": 3
+        }
+    },
+    "additionalAccounts": [
+        {
+            "slug": "snsoldier",
+            "name": "SnSoldier",
+            "status": "UNCONFIRMED"
+        }
+    ],
+    "togetherEvidence": [
+        {
+            "date": "Jul 3",
+            "players": [
+                "cunderthock",
+                "rogue_amputee",
+                "matticus_hq",
+                "slackandlack",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Border",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Nighthaven Labs",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Oregon",
+                    "0:4",
+                    "L"
+                ]
+            ],
+            "w": 2,
+            "l": 1,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "cunderthock": {
+                    "k": 12,
+                    "d": 9,
+                    "a": 3
+                },
+                "rogue_amputee": {
+                    "k": 5,
+                    "d": 9,
+                    "a": 6
+                },
+                "matticus_hq": {
+                    "k": 11,
+                    "d": 8,
+                    "a": 2
+                },
+                "slackandlack": {
+                    "k": 16,
+                    "d": 10,
+                    "a": 3
+                },
+                "mjester1337": {
+                    "k": 12,
+                    "d": 9,
+                    "a": 3
+                }
+            }
+        },
+        {
+            "date": "Jun 7",
+            "players": [
+                "grandmaster_sandman",
+                "slackandlack"
+            ],
+            "sequence": [
+                [
+                    "Lair",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "2:4",
+                    "L"
+                ],
+                [
+                    "Calypso Casino",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Clubhouse",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Lair",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "5:4",
+                    "W"
+                ],
+                [
+                    "Oregon",
+                    "4:2",
+                    "W"
+                ]
+            ],
+            "w": 6,
+            "l": 1,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "grandmaster_sandman": {
+                    "k": 42,
+                    "d": 30,
+                    "a": 12
+                },
+                "slackandlack": {
+                    "k": 35,
+                    "d": 31,
+                    "a": 10
+                }
+            }
+        },
+        {
+            "date": "Jul 25",
+            "players": [
+                "rogue_amputee",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Fortress",
+                    "3:5",
+                    "L"
+                ],
+                [
+                    "Consulate",
+                    "1:4",
+                    "L"
+                ],
+                [
+                    "Chalet",
+                    "0:4",
+                    "L"
+                ],
+                [
+                    "Kanal",
+                    "0:4",
+                    "L"
+                ],
+                [
+                    "Lair",
+                    "1:4",
+                    "L"
+                ]
+            ],
+            "w": 0,
+            "l": 5,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "rogue_amputee": {
+                    "k": 7,
+                    "d": 22,
+                    "a": 4
+                },
+                "mjester1337": {
+                    "k": 23,
+                    "d": 21,
+                    "a": 7
+                }
+            }
+        },
+        {
+            "date": "Jun 20",
+            "players": [
+                "grandmaster_sandman",
+                "slackandlack",
+                "mjester1337",
+                "lcew4ll0wcome"
+            ],
+            "sequence": [
+                [
+                    "Clubhouse",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Consulate",
+                    "2:4",
+                    "L"
+                ],
+                [
+                    "Calypso Casino",
+                    "4:1",
+                    "W"
+                ],
+                [
+                    "Emerald Plains",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Border",
+                    "4:0",
+                    "W"
+                ],
+                [
+                    "Bank",
+                    "1:4",
+                    "L"
+                ]
+            ],
+            "w": 4,
+            "l": 2,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "grandmaster_sandman": {
+                    "k": 20,
+                    "d": 16,
+                    "a": 8
+                },
+                "slackandlack": {
+                    "k": 40,
+                    "d": 23,
+                    "a": 7
+                },
+                "mjester1337": {
+                    "k": 15,
+                    "d": 17,
+                    "a": 12
+                },
+                "lcew4ll0wcome": {
+                    "k": 23,
+                    "d": 12,
+                    "a": 4
+                }
+            }
+        },
+        {
+            "date": "Aug 14",
+            "players": [
+                "rogue_amputee",
+                "matticus_hq",
+                "mjester1337"
+            ],
+            "sequence": [
+                [
+                    "Oregon",
+                    "5:4",
+                    "W"
+                ],
+                [
+                    "Nighthaven Labs",
+                    "4:2",
+                    "W"
+                ],
+                [
+                    "Fortress",
+                    "4:2",
+                    "W"
+                ]
+            ],
+            "w": 3,
+            "l": 0,
+            "confidence": "probable co-play; ordered sequence evidence, no match IDs or lobby confirmation",
+            "playerTotals": {
+                "rogue_amputee": {
+                    "k": 10,
+                    "d": 14,
+                    "a": 8
+                },
+                "matticus_hq": {
+                    "k": 14,
+                    "d": 9,
+                    "a": 4
+                },
+                "mjester1337": {
+                    "k": 12,
+                    "d": 14,
+                    "a": 7
+                }
+            }
+        }
+    ],
+    "dataNotes": [
+        "Main-account totals include every supplied ranked entry, including solo, partial-stack, or full-stack play if present. Queues are not labeled. A shared game repeats across participating account records; do not describe 1048 entries as 1048 unique team games or infer a five-stack win rate.",
+        "Include Mynameisblang in the historical seven-player season while retaining current MIA status. LceW4ll0wCome belongs to Rogue_Amputee and remains a separate alt account, not an extra person. SnSoldier is a separate supplied account whose roster role, parent, and Discord display name are unconfirmed; no squad slot or parent was assigned.",
+        "Five main-account entries are outside W/L: slackandlack Aug 31 Clubhouse; Mynameisblang Aug 8 Fortress and Jun 14 Nighthaven Labs; MJester1337 Aug 29 Border and one Aug 1 Calypso Casino outcome whose exact row is unresolved. Apply Jester’s resultGroup once (2 L / 1 U across three candidate rows); do not label all three candidates U or invent which two are losses.",
+        "Win rates use wins divided by all player entries, preserving the supplied overview convention. Decided-only 532 / 1043 = 51.0% is a different denominator. Compute pooled K/D from total kills / deaths, and HS% from headshot counts recovered by rounding each match kills * HS% / 100; do not average rounded player rates.",
+        "Attack/defense round results are summed from the supplied operator overviews, not averaged from rounded map side percentages. They are operator-round observations, not unique squad rounds. The operator overviews total 4324 K / 4603 D / 1579 A, while match rows total 4326 / 4606 / 1580: slack’s overview accounts for 2 K / 2 D / 1 A and Rogue’s overview for the remaining 1 D source discrepancy. Preserve both sources.",
+        "Shared-session evidence requires identical consecutive date/map/score/outcome rows in account logs, with at least three aligned rows. It is stronger than an isolated same-map result but remains inferred without timestamps, match IDs, or lobby lists. Overlapping runs and same-day repeated scores prevent a validated unique-game count or duo win rate; lack of a qualifying run does not mean two players never played together.",
+        "The displayed sequences follow stored newest-first order, not chronological play order. Do not infer who joined first, which map started a streak, fixed lineups across a whole day, or operators played in an individual match from aggregate operator overviews.",
+        "Monthly comparisons pool accounts with different playing schedules and volumes; they show recorded form and composition, not a controlled comparison of one unchanged team. Jester contributes 125 / 229 August entries; the other six contribute 59 wins / 104 entries.",
+        "Exclude Matticus HQ’s three M.U.T.E. event rows and all RP Rollbacks from ranked and map totals. Keep slack’s Sep 14 rollback in outOfSeasonRows because it falls after the Y11S2 rollover. Recorded netRp fields contain incomplete early values and marked inferences; no combined squad RP gain, starting rank, or total climb from zero is claimed.",
+        "Final RP follows each finalized dossier and the user’s explicit 2705 choice for Rogue. Conflicting stale screenshots do not override later match anchors. Preserve all player-specific dataNotes, resultGroups, and rpInferences for the remaining discrepancies.",
+        "Close-out retains all 72 previous OVERSIGHT comments and adds no new comment wave. The final seasonReport replaces the live team-comment UI; dated closing snapshot and supporting analysis retain the full record."
+    ]
+}
+```

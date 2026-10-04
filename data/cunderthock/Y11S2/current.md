@@ -9,7 +9,7 @@
     "name": "CunderThock",
     "season": "Y11S2",
     "seasonLabel": "Operation System Override",
-    "updated": "Aug 10, 2026 - morning PT",
+    "updated": "Oct 3, 2026 · season close-out PT (map overview verified)",
     "meta": {
         "rank": "Gold IV",
         "rp": 2631,
@@ -435,7 +435,6 @@
             "a": 0,
             "hs": 50.0,
             "badges": [
-                "3K",
                 "2K",
                 "2K",
                 "1v3 Lost"
@@ -689,7 +688,7 @@
             "d": 4,
             "badges": [
                 "3K",
-                "2K",
+                "3K",
                 "2K"
             ],
             "k": 8,
@@ -1132,21 +1131,6 @@
             "tks": 0
         },
         {
-            "name": "Bandit",
-            "side": "DEF",
-            "rounds": 12,
-            "winPct": 66.7,
-            "kd": 0.45,
-            "hs": 40.0,
-            "w": 8,
-            "l": 4,
-            "k": 5,
-            "d": 11,
-            "a": 5,
-            "aces": 0,
-            "tks": 0
-        },
-        {
             "name": "Solid Snake",
             "side": "ATK",
             "rounds": 12,
@@ -1158,6 +1142,21 @@
             "k": 5,
             "d": 10,
             "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
+            "name": "Bandit",
+            "side": "DEF",
+            "rounds": 12,
+            "winPct": 66.7,
+            "kd": 0.45,
+            "hs": 40.0,
+            "w": 8,
+            "l": 4,
+            "k": 5,
+            "d": 11,
+            "a": 5,
             "aces": 0,
             "tks": 0
         },
@@ -1267,6 +1266,21 @@
             "tks": 0
         },
         {
+            "name": "Amaru",
+            "side": "ATK",
+            "rounds": 2,
+            "winPct": 100.0,
+            "kd": 7.0,
+            "hs": 28.6,
+            "w": 2,
+            "l": 0,
+            "k": 7,
+            "d": 1,
+            "a": 0,
+            "aces": 0,
+            "tks": 0
+        },
+        {
             "name": "Kapkan",
             "side": "DEF",
             "rounds": 2,
@@ -1282,15 +1296,15 @@
             "tks": 0
         },
         {
-            "name": "Amaru",
+            "name": "Capitão",
             "side": "ATK",
-            "rounds": 2,
-            "winPct": 100.0,
-            "kd": 7.0,
-            "hs": 28.6,
-            "w": 2,
-            "l": 0,
-            "k": 7,
+            "rounds": 1,
+            "winPct": 0.0,
+            "kd": 0.0,
+            "hs": 0.0,
+            "w": 0,
+            "l": 1,
+            "k": 0,
             "d": 1,
             "a": 0,
             "aces": 0,
@@ -1310,27 +1324,12 @@
             "a": 0,
             "aces": 0,
             "tks": 0
-        },
-        {
-            "name": "Capitão",
-            "side": "ATK",
-            "rounds": 1,
-            "winPct": 0.0,
-            "kd": 0.0,
-            "hs": 0.0,
-            "w": 0,
-            "l": 1,
-            "k": 0,
-            "d": 1,
-            "a": 0,
-            "aces": 0,
-            "tks": 0
         }
     ],
     "badges": [
         {
             "name": "2K",
-            "count": 44
+            "count": 43
         },
         {
             "name": "3K",
@@ -1370,6 +1369,166 @@
         }
     ],
     "debrief": "<p><b>Gold IV · 2,631 RP · 38–31 · 55.1% win rate · 0.97 K/D.</b> The stretch since Jun 29 pushed a full sub-rank: Jul 1 alone banked +68 across a 4-1 night, and Jul 9's Oregon shutout clawed back a third of a -19 day. Peak 2,685 — the tier crossed and then some.</p><p><b>Tachanka at 63.0% over 181 defensive rounds</b> remains the spine of this dossier, full stop. <b>Zero at 43.2% over 162 attack rounds</b> is still the volume that needs the win rate to catch up — the cams are working, the execute isn't always following. <b>Twitch's</b> sample finally grew past noise at 53.3%, and <b>Solid Snake</b> is still the one chair that needs to sit empty.</p><p>Sixty-nine RP to Gold III. The floor absorbed real damage on Jul 9 and the stack still came out ahead for the stretch — keep stacking Nighthaven-style nights over Clubhouse donations.</p>",
+    "seasonClosed": true,
+    "seasonReport": "<p>CunderThock, Operation System Override closes at <b>Gold IV, 2,631 RP</b>, with <b>38 wins and 31 losses across 69 ranked matches</b>. The <b>55.1% win rate</b> held up even with 301 kills against 309 deaths, leaving the season at <b>0.97 K/D</b>. Your peak was <b>2,685 RP</b>, and the final reading finished 54 RP below it. You earned a winning season through round conversion, even when the duel ledger stayed slightly negative.</p><p>Defense was the engine: <b>137 round wins in 217 defensive rounds, 63.1%</b>. <b>Tachanka carried the real volume</b> with 181 rounds, 114 wins, a 63.0% win rate, 1.01 K/D, and 55 assists. That is enough evidence to keep the winning style; the Lord does not need a cosmetic rebrand or a forced role change. Keep the Shumikha fire on the plant spot or approach lane when the attack actually commits, and protect the angle that makes the delay count. Bandit added eight wins in twelve rounds at 66.7%, despite a 0.45 K/D, so his defensive results deserve more respect than the frag column alone gives them. The overview does not count breaches denied, but the next defensive order is clear: put Shock Wire on the contested wall and time your trick around the breach attempt.</p><p>Attack finished at <b>89 round wins in 209 rounds, 42.6%</b>, which is the clearest improvement target on this dossier. <b>Zero went 70-92 across 162 rounds</b>, with 0.85 K/D, 56.6% headshots, and 33 assists. The headshot percentage shows you can land shots; that much losing volume still demands an attack process that closes more rounds. These stats cannot prove where your ARGUS cameras were placed or whether teammates acted on the calls, so the coaching order is to make that connection deliberate. Hide a camera on the relevant flank or site route, use the laser on denial that blocks the breach, and give a teammate a specific action off the information before you take the next fight.</p><p>Twitch offers a useful attack option at eight wins in fifteen rounds, 53.3% win rate, and sixteen kills against eight deaths. The 2.00 K/D is promising, but fifteen rounds is still a small sample: use the Shock Drone to clear the gadget gating the breach, then judge whether the execute finishes. <b>Solid Snake needs practice before more ranked investment</b>: one win in twelve rounds, 0.50 K/D, and no assists is a rough return. Use the Soliton Radar from cover, call the defender position, and convert that information into a cleared route or coordinated collapse before expanding his ranked sample. Jackal went 11-4 in kills and deaths but won only three of seven rounds, so the next roam hunt needs to leave the team a clean route to site. Amaru won both of her two rounds with seven kills and one death; enjoy the clean cameo without turning two rounds into a new-main manifesto.</p><p><b>Consulate at 5-2 and Coastline at 4-2</b> gave you the strongest repeated map returns. Consulate won <b>77.3% of defensive rounds against 45.0% on attack</b>, while Coastline was more balanced at 62.5% defense and 52.6% attack. Oregon was the largest sample at fifteen matches and finished <b>7-8 with 46 kills, 67 deaths, and 0.69 K/D</b>. Its <b>65.2% defensive win rate against 39.5% on attack</b> puts the first map review on the attacking plan. Clubhouse has the same divide: ten matches and a 5-5 record, with <b>62.9% defense against 40.0% attack</b>. On Oregon and Clubhouse, review the opening clear, trade spacing, and the final site hit so those attacking rounds have a route to conversion.</p><p><b>Calypso Casino needs work on both sides</b>: 3-5 across eight matches, with 46.4% attack and 48.1% defense despite a near-even 0.98 K/D. Review the defensive setup and plant denial as well as the attacking execute there; that map does not have a winning side to lean on yet. Outback shows another attack gap at <b>23.1% attack versus 70.0% defense</b>, although its four matches make that a smaller sample than Oregon or Clubhouse. Nighthaven Labs finished 2-0 with 2.60 K/D, including the July 1 4:2 win with <b>11 kills, 3 deaths, and 3 assists</b>. Two matches are still too few to declare the map solved. July 1 as a whole was the clean momentum night: four wins, one loss, and <b>+68 RP</b>.</p><p>The last session on July 9 opened with a 4:0 Oregon win and +35 RP to the season peak, then the Lair and Clubhouse losses gave back 54 RP. That left the day at 1-2 and -19 RP, with the season closing at 2,631. The next season order is to preserve the defensive denial that already wins and make each attacking intel read lead to a team action. <b>Gold IV is earned; cleaner attack conversion is the next promotion plan</b>.</p>",
+    "mapOverview": [
+        {
+            "name": "Oregon",
+            "matches": 15,
+            "winPct": 46.7,
+            "w": 7,
+            "l": 8,
+            "kd": 0.69,
+            "atkWinPct": 39.5,
+            "defWinPct": 65.2,
+            "hs": 39.1,
+            "esr": 0.32
+        },
+        {
+            "name": "Clubhouse",
+            "matches": 10,
+            "winPct": 50.0,
+            "w": 5,
+            "l": 5,
+            "kd": 1.02,
+            "atkWinPct": 40.0,
+            "defWinPct": 62.9,
+            "hs": 53.8,
+            "esr": 0.58
+        },
+        {
+            "name": "Calypso Casino",
+            "matches": 8,
+            "winPct": 37.5,
+            "w": 3,
+            "l": 5,
+            "kd": 0.98,
+            "atkWinPct": 46.4,
+            "defWinPct": 48.1,
+            "hs": 24.4,
+            "esr": 0.3
+        },
+        {
+            "name": "Consulate",
+            "matches": 7,
+            "winPct": 71.4,
+            "w": 5,
+            "l": 2,
+            "kd": 1.03,
+            "atkWinPct": 45.0,
+            "defWinPct": 77.3,
+            "hs": 40.0,
+            "esr": 0.33
+        },
+        {
+            "name": "Coastline",
+            "matches": 6,
+            "winPct": 66.7,
+            "w": 4,
+            "l": 2,
+            "kd": 0.77,
+            "atkWinPct": 52.6,
+            "defWinPct": 62.5,
+            "hs": 47.1,
+            "esr": 0.43
+        },
+        {
+            "name": "Border",
+            "matches": 5,
+            "winPct": 40.0,
+            "w": 2,
+            "l": 3,
+            "kd": 0.92,
+            "atkWinPct": 37.5,
+            "defWinPct": 50.0,
+            "hs": 21.7,
+            "esr": 0.75
+        },
+        {
+            "name": "Lair",
+            "matches": 4,
+            "winPct": 50.0,
+            "w": 2,
+            "l": 2,
+            "kd": 1.31,
+            "atkWinPct": 38.5,
+            "defWinPct": 60.0,
+            "hs": 42.9,
+            "esr": 0.5
+        },
+        {
+            "name": "Outback",
+            "matches": 4,
+            "winPct": 50.0,
+            "w": 2,
+            "l": 2,
+            "kd": 1.0,
+            "atkWinPct": 23.1,
+            "defWinPct": 70.0,
+            "hs": 41.2,
+            "esr": 0.5
+        },
+        {
+            "name": "Emerald Plains",
+            "matches": 3,
+            "winPct": 66.7,
+            "w": 2,
+            "l": 1,
+            "kd": 1.21,
+            "atkWinPct": 50.0,
+            "defWinPct": 60.0,
+            "hs": 47.1,
+            "esr": 0.83
+        },
+        {
+            "name": "Bank",
+            "matches": 2,
+            "winPct": 100.0,
+            "w": 2,
+            "l": 0,
+            "kd": 1.11,
+            "atkWinPct": 57.1,
+            "defWinPct": 83.3,
+            "hs": 60.0,
+            "esr": 0.67
+        },
+        {
+            "name": "Chalet",
+            "matches": 2,
+            "winPct": 50.0,
+            "w": 1,
+            "l": 1,
+            "kd": 2.0,
+            "atkWinPct": 50.0,
+            "defWinPct": 50.0,
+            "hs": 40.0,
+            "esr": 0.5
+        },
+        {
+            "name": "Nighthaven Labs",
+            "matches": 2,
+            "winPct": 100.0,
+            "w": 2,
+            "l": 0,
+            "kd": 2.6,
+            "atkWinPct": 75.0,
+            "defWinPct": 83.3,
+            "hs": 53.8,
+            "esr": 1.0
+        },
+        {
+            "name": "Fortress",
+            "matches": 1,
+            "winPct": 100.0,
+            "w": 1,
+            "l": 0,
+            "kd": 0.57,
+            "atkWinPct": 25.0,
+            "defWinPct": 80.0,
+            "hs": 75.0,
+            "esr": 0.67
+        }
+    ],
     "comments": [
         {
             "type": "map",
@@ -1732,4 +1891,5 @@
             "text": "Still bleeding — twelve attack rounds now, 8.3% win rate, 0.50 K/D, one win on the whole season. Snake wins on radar intel from cover and silent F2 pressure off the call; one win in twelve says the facechecking habit never got fixed after three separate June waves flagged it. Tachanka owns defense at 181 rounds and Zero owns attack identity at 162 — there's no ranked minutes left to justify the lab. Park him until the queue is casual, full stop."
         }
     ]
-}```
+}
+```

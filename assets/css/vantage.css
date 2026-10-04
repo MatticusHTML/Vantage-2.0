@@ -102,6 +102,13 @@ body[data-page="soundtracks"] .brand .div{display:inline-block;color:var(--purpl
 .pcard:hover{transform:translateY(-4px);border-color:var(--pcard-accent);box-shadow:0 14px 36px color-mix(in srgb,var(--pcard-accent) 35%,transparent)}
 .pcard:hover img{transform:scale(1.05);filter:saturate(1.05) brightness(1)}
 .pcard:hover .corner{width:26px;height:26px;border-color:var(--pcard-accent)}
+/* Current roster availability; the portrait and archived season stay intact. */
+.mia-tag{position:absolute;right:8%;bottom:42%;z-index:3;pointer-events:none;
+  font-family:var(--disp);font-weight:800;font-size:clamp(26px,5vw,58px);line-height:1;
+  letter-spacing:.12em;text-indent:.12em;color:#ff5c66;background:rgba(13,15,26,.88);
+  border:3px double #ff5c66;padding:.18em .3em;transform:rotate(-11deg);
+  text-shadow:0 2px 8px rgba(0,0,0,.85);box-shadow:0 0 18px rgba(255,92,102,.2)}
+.player-banner .mia-tag{right:5%;bottom:13%}
 /* oversight square tile — bottom-right in 2×4 roster grid */
 .ocard{position:relative;aspect-ratio:1/1;border:1px solid var(--gold);border-radius:4px;
   overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;animation:rise .5s .2s ease both;
@@ -175,7 +182,7 @@ body[data-page="soundtracks"] .brand .div{display:inline-block;color:var(--purpl
 .roster-banner img,.roster-banner video{width:100%;height:auto;display:block;vertical-align:top}
 /* player dossier — optional per-player season header (e.g. Cunder Y11S2) */
 .player-banner{
-  width:100%;margin:0 0 18px;border:1px solid var(--border);border-radius:4px;
+  position:relative;width:100%;margin:0 0 18px;border:1px solid var(--border);border-radius:4px;
   background:var(--panel);overflow:hidden;animation:rise .45s ease both;
 }
 .player-banner img{width:100%;height:auto;display:block;vertical-align:top}

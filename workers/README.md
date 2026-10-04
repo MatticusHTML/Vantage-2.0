@@ -96,8 +96,21 @@ Edit `wrangler.toml` → set `ALLOWED_ORIGINS` to your real GitHub Pages origin.
 - **CORS** locked to `ALLOWED_ORIGINS` (no `*` wildcard)
 - **Model allowlist** — only DeepSeek V4 Flash / Pro; unknown models fall back to Flash
 - **Message sanitization** — roles, length caps, no empty payloads
+- **Context retention** — preserves the system prompt plus up to 23 recent conversation messages; system context is accepted intact up to 160,000 characters, with larger contexts rejected instead of silently cut
 - **max_tokens** capped at 1200
 - Optional **SQUAD_TOKEN** header gate
+
+---
+
+## Updating the chat context fix
+
+Publish the website files through GitHub Desktop as usual, and separately replace the code in the existing **vantagesecurity** Cloudflare Worker with `workers/vantage-chat.js`, then **Save and deploy**. A GitHub Pages publish does not deploy the Worker. Preserve its existing secrets and origin settings; `wrangler.toml` still contains setup placeholders.
+
+The website sends operator and recent-match rows with shared column schemas, preserving all their values while reducing context size. Closed player and squad season reports are included automatically. Conversation history resets on the next question after switching seasons.
+
+The final Y11S2 OVERSIGHT context also includes both related accounts, the verified seven-account summary, and probable shared-session evidence. The current prompt is about 113,000 characters; the seven-player growth fixture with 77 operators, 17 maps, and 40-sentence reviews is about 131,000. The 160,000-character cap accommodates both without changing the supplied stats or truncating the final review.
+
+Run the local context checks from the repo root with `node --test tools/chat_context.test.mjs`. These checks use mocked upstream responses and do not call OpenRouter.
 
 ---
 

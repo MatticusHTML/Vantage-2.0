@@ -20,7 +20,7 @@ const ROSTER = [
   { slug:"grandmaster_sandman",name:"Grandmaster Sandman",ubi:"LOAF_OF_RAMEN",    accent:"#2bb87a" },
   { slug:"slackandlack",       name:"slackandlack",       ubi:"slackandlack",     accent:"#d63d4f" },
   { slug:"mjester1337",        name:"MJester1337",        ubi:"MJester1337",      accent:"#9e6b42" },
-  { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d" },
+  { slug:"mynameisblang",      name:"Mynameisblang",      ubi:"Mynameisblang",    accent:"#ff6b9d", status:"MIA" },
 ];
 /* Alt / smurf accounts — own dossier, badge on parent roster card, optional on OVERSIGHT */
 const ALT_ACCOUNTS = [
@@ -28,6 +28,9 @@ const ALT_ACCOUNTS = [
 ];
 function getPlayerCfg(slug){
   return ROSTER.find(r=>r.slug===slug) || ALT_ACCOUNTS.find(r=>r.slug===slug) || null;
+}
+function playerStatusTag(cfg){
+  return cfg?.status==="MIA" ? `<span class="mia-tag" aria-hidden="true" title="MIA — no longer active with the squad">MIA</span>` : "";
 }
 function getAltsForParent(parentSlug){
   return ALT_ACCOUNTS.filter(a=>a.parentSlug===parentSlug);
@@ -511,10 +514,13 @@ function playerBannerHtml(slug,season){
   const entry=PLAYER_BANNERS[slug]?.[season];
   if(!entry) return "";
   const src=typeof entry==="string"?entry:entry.src;
-  const name=getPlayerCfg(slug)?.name||"Operator";
+  const cfg=getPlayerCfg(slug);
+  const name=cfg?.name||"Operator";
   const alt=(typeof entry==="object"&&entry.alt)?entry.alt:`${name} dossier header`;
-  return `<div class="player-banner" role="img" aria-label="${esc(alt)}">
+  const label=cfg?.status==="MIA"?`${alt} — MIA, no longer active with the squad`:alt;
+  return `<div class="player-banner" role="img" aria-label="${esc(label)}">
     <img src="${BASE}${src}" alt="${esc(alt)}" loading="eager">
+    ${playerStatusTag(cfg)}
   </div>`;
 }
 const MONTHS = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
@@ -560,10 +566,12 @@ function fetchErr(host){
    PAGE: CHARACTER SELECT
    ============================================================ */
 function renderPlayerCard(p){
-  return `<a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}" style="--pcard-accent:${p.accent}">
+  const label=p.status==="MIA"?`${p.name} — MIA, no longer active with the squad`:p.name;
+  return `<a class="pcard" href="players/${p.slug}.html" data-slug="${p.slug}" style="--pcard-accent:${p.accent}" aria-label="${esc(label)}">
       <span class="corner"></span>
       <span class="rankchip" id="rank-${p.slug}">—</span>
       <img src="assets/cards/${p.slug}.png" alt="${esc(p.name)}">
+      ${playerStatusTag(p)}
       <span class="meta">
         <span class="meta-left"><span class="call">${esc(p.name)}</span></span>
         <span class="meta-right">
@@ -931,15 +939,35 @@ function buildBadgeComparisonData(data){
 function buildMapComparisonData(data){
   const mapsObj={};
   data.forEach(d=>{
-    (d.rec.matches||[]).forEach(m=>{
-      if(!m.map||m.result==="RB"||m.map==="RP Rollback") return;
-      if(!mapsObj[m.map]) mapsObj[m.map]={};
-      if(!mapsObj[m.map][d.cfg.slug]) mapsObj[m.map][d.cfg.slug]={w:0,l:0};
-      if(m.result==="W") mapsObj[m.map][d.cfg.slug].w++;
-      else if(m.result==="L") mapsObj[m.map][d.cfg.slug].l++;
+    const playerMaps={};
+    if(d.rec.mapOverview?.length){
+      // The supplied overview includes outcomes omitted from W/L checksums.
+      d.rec.mapOverview.forEach(m=>{
+        playerMaps[m.name]={matches:m.matches,w:m.w,l:m.l};
+      });
+    } else {
+      (d.rec.matches||[]).forEach(m=>{
+        if(!m.map||m.result==="RB"||m.map==="RP Rollback") return;
+        const x=playerMaps[m.map]||(playerMaps[m.map]={matches:0,w:0,l:0});
+        x.matches++;
+        if(m.result==="W") x.w++;
+        else if(m.result==="L") x.l++;
+      });
+      (d.rec.resultGroups||[]).forEach(g=>{
+        const members=(d.rec.matches||[]).filter(m=>m.resultGroup===g.id);
+        const outcomes=g.outcomes||{};
+        const count=Object.values(outcomes).reduce((s,n)=>s+n,0);
+        if(members.length!==count||!members.every(m=>m.result==="?"&&m.map===g.map)) return;
+        const x=playerMaps[g.map];
+        if(x){x.w+=outcomes.W||0;x.l+=outcomes.L||0;}
+      });
+    }
+    Object.entries(playerMaps).forEach(([map,stats])=>{
+      if(!mapsObj[map]) mapsObj[map]={};
+      mapsObj[map][d.cfg.slug]=stats;
     });
   });
-  const mapTotal=m=>data.reduce((s,d)=>{const x=mapsObj[m]?.[d.cfg.slug];return s+(x?x.w+x.l:0)},0);
+  const mapTotal=m=>data.reduce((s,d)=>s+(mapsObj[m]?.[d.cfg.slug]?.matches||0),0);
   const maps=Object.keys(mapsObj).sort((a,b)=>mapTotal(b)-mapTotal(a));
   const players=data.map(d=>({
     slug:d.cfg.slug,
@@ -947,9 +975,8 @@ function buildMapComparisonData(data){
     accent:d.cfg.accent,
     stats:maps.map(map=>{
       const x=mapsObj[map]?.[d.cfg.slug];
-      if(x&&x.w+x.l>0){
-        const g=x.w+x.l;
-        return {w:x.w,l:x.l,winPct:x.w/g*100};
+      if(x&&x.matches>0){
+        return {...x,unclassified:Math.max(0,x.matches-x.w-x.l),winPct:x.w/x.matches*100};
       }
       return null;
     }),
@@ -1122,7 +1149,7 @@ function renderOvComparisonChart(panel,kind,rawData,filters){
       label(ctx){
         const meta=ctx.dataset.meta?.[ctx.dataIndex];
         const pct=ctx.parsed.y;
-        if(meta&&pct!=null) return `${ctx.dataset.label}: ${pct.toFixed(0)}% · ${meta.w}-${meta.l}`;
+        if(meta&&pct!=null) return `${ctx.dataset.label}: ${pct.toFixed(0)}% · ${meta.w}-${meta.l}${meta.unclassified?` + ${meta.unclassified} U`:""} · ${meta.matches} entries`;
         return `${ctx.dataset.label}: —`;
       },
     };
@@ -1568,16 +1595,15 @@ function mapHeatmap(data){
     +`<th rowspan="2">Squad</th></tr>`;
   const head2=`<tr>`+data.map(()=>`<th>W-L</th><th>Win%</th>`).join("")+`</tr>`;
   const body=cmp.maps.map((map,mapIdx)=>{
-    let sw=0,sl=0,row=`<tr><th class="l">${esc(map)}</th>`;
+    let sw=0,sg=0,row=`<tr><th class="l">${esc(map)}</th>`;
     data.forEach(d=>{
       const p=cmp.players[slugIdx[d.cfg.slug]];
       const st=p?.stats[mapIdx];
       if(st){
-        row+=`<td>${st.w}-${st.l}</td><td>${mapChip(st.winPct)}</td>`;
-        sw+=st.w; sl+=st.l;
+        row+=`<td>${st.w}-${st.l}${st.unclassified?` + ${st.unclassified} U`:""}</td><td>${mapChip(st.winPct)}</td>`;
+        if(!isAltSlug(d.cfg.slug)){sw+=st.w;sg+=st.matches;}
       } else row+=`<td class="dim-cell">—</td><td class="dim-cell">—</td>`;
     });
-    const sg=sw+sl;
     row+=`<td>${sg?mapChip(sw/sg*100):"—"}</td></tr>`;
     return row;
   }).join("");
@@ -1595,7 +1621,7 @@ function mapHeatmap(data){
     },
   ]);
   const visualHtml=buildOvVisualShell(filterHtml);
-  return ovComparisonPanel("map","MAP PERFORMANCE","from match log · green ≥55% · gold ≥45% · red &lt;45%",
+  return ovComparisonPanel("map","MAP PERFORMANCE","season map records · U = outside W/L · squad excludes alts",
     statHtml,visualHtml,cmp);
 }
 
@@ -2089,6 +2115,16 @@ const CHAT_AVATAR = {
 const CHAT_BUBBLE_SRC = `${BASE}assets/images/vantage-chat/bubble.png`;
 const CHAT_TALKING_MS = 14000;
 const CHAT_ACCENT_OVERSIGHT = "#ffc800";
+const CHAT_HISTORY_LIMIT = 23; // reserve the Worker message slot for the system prompt
+const CHAT_OPERATOR_COLUMNS = ["name","side","rounds","winPct","kd","hs","w","l","k","d","a","aces","tks"];
+const CHAT_MATCH_COLUMNS = ["date","map","result","score","rp","drp","k","d","a","hs","badges"];
+const CHAT_MAP_COLUMNS = ["name","matches","winPct","w","l","kd","atkWinPct","defWinPct","hs","esr"];
+
+function buildChatMessages(systemPrompt,history){
+  const recent=history.slice(-CHAT_HISTORY_LIMIT);
+  while(recent.length&&recent[0].role==="assistant") recent.shift();
+  return [{role:"system",content:systemPrompt},...recent];
+}
 
 function chatAccentForPage(){
   if(PAGE==="oversight") return CHAT_ACCENT_OVERSIGHT;
@@ -2117,34 +2153,58 @@ function chatTextHtml(text){
   return html;
 }
 function compactPlayerChat(rec, cfg){
-  if(!rec||!rec.meta) return { name:cfg.name, slug:cfg.slug, active:false };
+  if(!rec||!rec.meta) return { name:cfg.name, slug:cfg.slug, rosterStatus:cfg.status||"ACTIVE", active:false };
   return {
     name:cfg.name,
     slug:cfg.slug,
+    rosterStatus:cfg.status||"ACTIVE",
     updated:rec.updated,
+    seasonClosed:!!rec.seasonClosed,
     meta:rec.meta,
     badges:rec.badges||[],
-    operators:rec.operators||[],
-    recentMatches:(rec.matches||[]).slice(0,12),
+    // Column schemas live once at the context root, preserving every stat
+    // without repeating field names across hundreds of operator/match rows.
+    operators:(rec.operators||[]).map(o=>CHAT_OPERATOR_COLUMNS.map(key=>o[key]??((key==="aces"||key==="tks")?0:null))),
+    recentMatches:(rec.matches||[]).slice(0,12).map(m=>CHAT_MATCH_COLUMNS.map(key=>m[key]??(key==="badges"?[]:null))),
+    mapOverview:(rec.mapOverview||[]).map(m=>CHAT_MAP_COLUMNS.map(key=>m[key]??null)),
+    dataNotes:rec.dataNotes||[],
+    resultGroups:rec.resultGroups||[],
+    rpInferences:rec.rpInferences||[],
+    ...(rec.seasonClosed&&rec.seasonReport?{seasonReport:rec.seasonReport}:{}),
   };
 }
 async function buildOversightChatContext(season){
   const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,season).catch(()=>null)));
   const squad=await loadRecord("oversight",season).catch(()=>null);
   const players=ROSTER.map((p,i)=>compactPlayerChat(recs[i],p));
-  const latestComments=squad?.comments?.length
+  const relatedCfg=[...ALT_ACCOUNTS,...(squad?.additionalAccounts||[])];
+  const relatedRecs=await Promise.all(relatedCfg.map(p=>loadRecord(p.slug,season).catch(()=>null)));
+  const relatedAccounts=relatedCfg.map((p,i)=>({
+    ...compactPlayerChat(relatedRecs[i],p),
+    accountType:p.parentSlug?"alt":"roster role unconfirmed",
+    ...(p.parentSlug?{parentSlug:p.parentSlug}:{}),
+  }));
+  const latestComments=!squad?.seasonClosed&&squad?.comments?.length
     ? splitCommentWaves(squad.comments).slice(-1)[0]||null
     : null;
-  return { season, seasonLabel:SEASON_OPS[season]||season, players, latestSquadComments:latestComments };
+  return {
+    season,seasonLabel:SEASON_OPS[season]||season,
+    operatorColumns:CHAT_OPERATOR_COLUMNS,matchColumns:CHAT_MATCH_COLUMNS,mapColumns:CHAT_MAP_COLUMNS,
+    players,relatedAccounts,latestSquadComments:latestComments,
+    seasonSummary:squad?.seasonSummary||null,
+    togetherEvidence:squad?.togetherEvidence||[],
+    dataNotes:squad?.dataNotes||[],
+    seasonClosed:!!squad?.seasonClosed,
+    ...(squad?.seasonClosed&&squad?.seasonReport?{seasonReport:squad.seasonReport}:{}),
+  };
 }
 async function buildPlayerChatContext(slug,season){
   const cfg=getPlayerCfg(slug)||{name:slug,slug};
   const rec=await loadRecord(slug,season).catch(()=>null);
   const focusPlayer=compactPlayerChat(rec,cfg);
-  if(rec?.comments?.length){
+  if(!rec?.seasonClosed&&rec?.comments?.length){
     focusPlayer.latestComments=splitCommentWaves(rec.comments).slice(-1)[0]||null;
   }
-  if(rec?.seasonClosed&&rec?.seasonReport) focusPlayer.seasonReport=rec.seasonReport;
   const recs=await Promise.all(ROSTER.map(p=>loadRecord(p.slug,season).catch(()=>null)));
   const squadMeta=ROSTER.map((p,i)=>{
     const r=recs[i];
@@ -2154,13 +2214,21 @@ async function buildPlayerChatContext(slug,season){
       winRate:r.meta.winRate,kd:r.meta.kd,matches:r.meta.matches,
     };
   });
-  return {season,seasonLabel:SEASON_OPS[season]||season,focusPlayer,squadMeta};
+  return {
+    season,seasonLabel:SEASON_OPS[season]||season,
+    operatorColumns:CHAT_OPERATOR_COLUMNS,matchColumns:CHAT_MATCH_COLUMNS,mapColumns:CHAT_MAP_COLUMNS,
+    focusPlayer,squadMeta,
+  };
 }
 function buildPlayerChatSystemPrompt(ctx,cfg){
   return [
     `You are VANTAGE — tactical coaching analyst. The user is on ${cfg.name}'s dossier (${ctx.season}, ${ctx.seasonLabel}).`,
-    "Primary focus: focusPlayer JSON (stats, operators, recentMatches, comments). Use squadMeta only when they ask how they compare to the roster.",
+    "Primary focus: focusPlayer JSON (stats, operators, mapOverview, recentMatches, comments). Use squadMeta only when they ask how they compare to the roster.",
     "Use ONLY the JSON below for stats. If data is missing, say so. Never invent ranks, matches, or operator stats.",
+    "Operator, map-overview, and recent-match rows are arrays: decode them using operatorColumns, mapColumns, and matchColumns in the JSON. All operators and supplied season map overviews are included; recentMatches contains only the latest 12 logged rows, not the full season.",
+    "Map winPct is match win rate; atkWinPct and defWinPct are round win rates by side. An empty mapOverview means no overview was supplied. Do not infer a full-season map record from recentMatches or guess what the tracker esr metric means.",
+    "Read dataNotes before reconciling totals. U is an outcome outside W/L; ? marks unresolved row identity. resultGroups gives confirmed aggregate outcomes for those candidates: count the group once and never guess which candidate had which outcome. rpInferences labels derived RP changes, not explicitly reported deltas.",
+    "For a closed season, use seasonReport as the final review; do not treat earlier comments as the live review.",
     "Address this player by Discord display name. Other squad members by Discord name too.",
     "Tone: direct, tactical, part roast / part hype — criticize the play, never the person.",
     "Keep replies focused: usually 2–4 short paragraphs unless the user asks for depth.",
@@ -2178,6 +2246,11 @@ function buildOversightChatSystemPrompt(ctx){
   return [
     "You are VANTAGE — tactical coaching analyst for a seven-person Rainbow Six Siege squad on the OVERSIGHT command deck.",
     "Use ONLY the JSON below for stats. If data is missing, say so. Never invent ranks, matches, or operator stats.",
+    "Operator, map-overview, and recent-match rows are arrays: decode them using operatorColumns, mapColumns, and matchColumns in the JSON. All operators and supplied season map overviews are included; recentMatches contains only the latest 12 logged rows, not the full season.",
+    "Map winPct is match win rate; atkWinPct and defWinPct are round win rates by side. An empty mapOverview means no overview was supplied. Do not infer a full-season map record from recentMatches or guess what the tracker esr metric means.",
+    "Read each player's dataNotes before reconciling totals. U is an outcome outside W/L; ? marks unresolved row identity. resultGroups gives confirmed aggregate outcomes for those candidates: count the group once and never guess which candidate had which outcome. rpInferences labels derived RP changes, not explicitly reported deltas.",
+    "Players close their seasons individually. Use each player's seasonClosed and seasonReport for their final review; the squad seasonReport is the final team review when present.",
+    "seasonSummary counts player match entries and operator-round observations across the seven main accounts, not unique squad games or rounds. relatedAccounts are separate: an alt is not another person; a roster role unconfirmed account must not be assigned a parent or a squad slot. togetherEvidence is inferred from matching ordered date/map/score/outcome sequences, not verified lobby membership; do not invent duo win rates, queue sizes, causal synergy, or a five-stack record.",
     "Address players by Discord display name (not Ubisoft username alone).",
     "Tone: direct, tactical, part roast / part hype — criticize the play, never the person.",
     "Keep replies focused: usually 2–4 short paragraphs unless the user asks for depth.",
@@ -2234,7 +2307,7 @@ async function initVantageChat(){
   let avatarState="default";
   let talkingTimer=null;
   let busy=false;
-  let systemPrompt=null;
+  let historySeason=null;
   const history=[];
 
   function setAvatar(state){
@@ -2268,18 +2341,16 @@ async function initVantageChat(){
     input.disabled=on;
     sendBtn.disabled=on;
   }
-  async function ensureSystemPrompt(){
-    const season=chatSeasonForPage();
+  async function ensureSystemPrompt(season){
     if(PAGE==="player"){
       const slug=document.body.dataset.player||"";
       const cfg=getPlayerCfg(slug)||{name:slug,slug};
       const ctx=await buildPlayerChatContext(slug,season);
-      systemPrompt=buildPlayerChatSystemPrompt(ctx,cfg);
+      return buildPlayerChatSystemPrompt(ctx,cfg);
     }else{
       const ctx=await buildOversightChatContext(season);
-      systemPrompt=buildOversightChatSystemPrompt(ctx);
+      return buildOversightChatSystemPrompt(ctx);
     }
-    return season;
   }
 
   btn.onclick=e=>{
@@ -2304,6 +2375,12 @@ async function initVantageChat(){
     e.preventDefault();
     const text=input.value.trim();
     if(!text||busy) return;
+    const season=chatSeasonForPage();
+    if(historySeason!==season){
+      history.length=0;
+      log.replaceChildren();
+      historySeason=season;
+    }
     input.value="";
     appendMsg("user",text);
     history.push({role:"user",content:text});
@@ -2311,8 +2388,8 @@ async function initVantageChat(){
     setAvatar("thinking");
     setBusy(true);
     try{
-      await ensureSystemPrompt();
-      const messages=[{role:"system",content:systemPrompt},...history];
+      const systemPrompt=await ensureSystemPrompt(season);
+      const messages=buildChatMessages(systemPrompt,history);
       const res=await fetch(VANTAGE_CHAT_ENDPOINT,{
         method:"POST",
         headers:{"Content-Type":"application/json"},
@@ -2326,6 +2403,7 @@ async function initVantageChat(){
       const reply=data.choices?.[0]?.message?.content;
       if(!reply||!String(reply).trim()) throw new Error("Empty reply from VANTAGE");
       history.push({role:"assistant",content:reply});
+      if(history.length>CHAT_HISTORY_LIMIT) history.splice(0,history.length-CHAT_HISTORY_LIMIT);
       appendMsg("vantage",reply);
       setAvatar("talking");
       scheduleDefaultAfterTalking();
@@ -2338,7 +2416,6 @@ async function initVantageChat(){
     }
   };
 
-  ensureSystemPrompt().catch(()=>{});
 }
 
 /* ---- boot ---- */

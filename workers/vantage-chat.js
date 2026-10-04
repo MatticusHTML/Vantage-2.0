@@ -17,6 +17,7 @@ const ALLOWED_MODELS = new Set([
 
 const MAX_MESSAGES = 24;
 const MAX_MESSAGE_CHARS = 32000;
+const MAX_SYSTEM_CHARS = 160000;
 const MAX_TOKENS_DEFAULT = 800;
 const MAX_TOKENS_CAP = 1200;
 const VALID_ROLES = new Set(["system", "user", "assistant"]);
@@ -150,16 +151,28 @@ function sanitizeMessages(messages) {
   if (!Array.isArray(messages) || messages.length === 0) {
     throw new Error("messages array required");
   }
-  const slice = messages.length > MAX_MESSAGES ? messages.slice(-MAX_MESSAGES) : messages;
-  const out = [];
-  for (const m of slice) {
+  let system = null;
+  const history = [];
+  for (const m of messages) {
     if (!m || typeof m !== "object") continue;
     if (!VALID_ROLES.has(m.role)) continue;
     if (typeof m.content !== "string") continue;
-    const content = m.content.slice(0, MAX_MESSAGE_CHARS);
-    if (!content.trim()) continue;
-    out.push({ role: m.role, content });
+    if (!m.content.trim()) continue;
+    if (m.role === "system") {
+      // Keep the current stats/instructions intact; never truncate their JSON.
+      if (system) continue;
+      if (m.content.length > MAX_SYSTEM_CHARS) {
+        throw new Error("System context exceeds " + MAX_SYSTEM_CHARS + " characters");
+      }
+      system = { role: "system", content: m.content };
+    } else {
+      history.push({ role: m.role, content: m.content.slice(0, MAX_MESSAGE_CHARS) });
+    }
   }
+  const recent = history.slice(-(MAX_MESSAGES - (system ? 1 : 0)));
+  // A trimmed conversation should start with a question, not an orphan reply.
+  while (recent.length && recent[0].role === "assistant") recent.shift();
+  const out = system ? [system, ...recent] : recent;
   if (!out.length) throw new Error("No valid messages after sanitization");
   const hasUser = out.some((m) => m.role === "user");
   if (!hasUser) throw new Error("At least one user message required");
