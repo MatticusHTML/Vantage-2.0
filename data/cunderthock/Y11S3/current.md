@@ -1,6 +1,6 @@
 # VANTAGE RECORD — CunderThock
 **Season:** Y11S3 · Operation Split Fire  
-**Updated:** Oct 26, 2026 · 8:00 PM PT
+**Updated:** Oct 26, 2026 · 1:01 PM PT
 
 > Source of truth for the website. The fenced `json` block below is what the site reads.
 
@@ -9,7 +9,7 @@
     "name": "CunderThock",
     "season": "Y11S3",
     "seasonLabel": "Operation Split Fire",
-    "updated": "Oct 26, 2026 · 8:00 PM PT",
+    "updated": "Oct 26, 2026 · 1:01 PM PT",
     "meta": {
         "rank": "Gold III",
         "rp": 2774,

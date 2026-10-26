@@ -280,7 +280,7 @@ function ensureY11S3Assets(){
   if(!y11s3ModulePromise){
     y11s3ModulePromise=new Promise((resolve,reject)=>{
       const s=document.createElement("script");
-      s.src=`${BASE}assets/js/vantage-y11s3.js?v=2`;
+      s.src=`${BASE}assets/js/vantage-y11s3.js?v=3`;
       s.onload=()=>resolve(window.VantageY11S3);
       s.onerror=reject;
       document.head.appendChild(s);

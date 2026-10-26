@@ -1324,3 +1324,11 @@ body.perf-lite::before{opacity:0}
   body[data-page="player"].theme-y11s1 .fx-hud,
   body[data-page="player"][data-season="Y11S1"] .fx-hud{opacity:.35}
 }
+
+/* ---- Y11S3 · season switcher overflow guard (append-only) ----
+   A third season button (Y11S3) widens the switcher; on phones let it wrap instead of
+   scrolling the page sideways. Rows that already fit are not affected. */
+@media (max-width:480px){
+  .cmdbar-actions{flex-shrink:1;min-width:0;max-width:100%}
+  .seasons{flex-wrap:wrap;min-width:0}
+}

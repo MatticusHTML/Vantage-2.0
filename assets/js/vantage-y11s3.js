@@ -126,6 +126,20 @@
     setTimeout(()=>el.remove(), 2100);
   }
 
+  /* the engine card hard-codes "+" in front of Net RP; show a negative season honestly (minus sign, red) */
+  function fixNetRp(view, rec){
+    const m = rec.meta;
+    if(!m || !(num(m.netRp) < 0)) return;
+    view.querySelectorAll(".cards .card").forEach(c=>{
+      const k = c.querySelector(".k"), v = c.querySelector(".v");
+      if(k && v && /net rp/i.test(k.textContent)){
+        v.textContent = "−" + fmt(Math.abs(num(m.netRp)));
+        v.classList.remove("green");
+        v.style.color = "var(--red)";
+      }
+    });
+  }
+
   /* ---- entry point, called by vantage.js after the dossier renders ---- */
   async function decorate(ctx){
     const view = ctx && ctx.view;
@@ -139,6 +153,7 @@
       const eh = view.querySelector(".empty .eh");
       if(eh) eh.innerHTML = "&#9650; Season Open — Split Fire";
     }else{
+      fixNetRp(view, rec);
       const first = view.querySelector(".panel");
       if(first){
         first.insertAdjacentHTML("afterend", ladderHtml(rec) + splitHtml(rec) + '<div class="sf-vs-slot"></div>');
