@@ -293,3 +293,21 @@ After close-out, the squad moves to the **next season's** empty `current.md` fil
 After push, Pages redeploys from `main` automatically (~1 minute).
 
 *The high ground is reserved for those who earn it.*
+
+---
+
+## 12. Y11S3 — OPERATION SPLIT FIRE (live)
+
+**Frozen history rule (owner's standing order):** Y11S1 and Y11S2 **data, designs, archives, banners and themes are history. Never edit, restyle, re-time or "clean up" them.** All Y11S3 work is **additive**: new files, or new code paths that only run when the season is `Y11S3`. If a change could alter how a Y11S1/Y11S2 page renders, don't make it — ask first.
+
+**Season:** Y11S3 — *Operation Split Fire* (started Sept 1, 2026; new defender Noor; new **Legend** rank above Champion; Ranked 3.0 adjustments). Name/details came from preview coverage — confirm against official Ubisoft notes. Rank thresholds **unconfirmed**; the rank ladder shows tier names only, no RP cutoffs.
+
+**Files**
+- `data/<slug>/Y11S3/current.md` — empty "Season Open" stubs (`meta:null`) for the seven players + `lcew4ll0wcome`; `data/oversight/Y11S3/current.md` for OVERSIGHT. Same schema and rules as §4–§6.
+- `assets/css/vantage-y11s3.css` — theme, **scoped to `body.theme-y11s3` / `.sf-*` only**. Loaded on demand by the engine.
+- `assets/js/vantage-y11s3.js` — dossier module (hero strip, rank ladder, ATK | DEF split, Y11S3-vs-Y11S2 panel, lance-strike intro). Loaded on demand; runs only for Y11S3.
+- `assets/js/vantage.js` — only the minimal hooks: `SEASONS`/`SEASON_OPS`, theme class, on-demand loader, one decorate call in `renderPlayer`.
+
+**Look:** ember (attack) | ice (defense) split with Noor's sand-gold between; diagonal seam; Horus Lance sweep. **Doka intercepts and the hack intro are Y11S2-only** — do not carry them into Y11S3.
+
+**Comments / data cadence for Y11S3:** unchanged — 1 map + 5 operator per refresh (§6), operator reference docs per §6a (add Y11S3 reference files when available).

@@ -67,11 +67,12 @@ const PLAYER_BANNERS={
     Y11S2:{src:"assets/images/slackandlack-y11s2-banner.png",alt:"slackandlack — Y11S2 dossier header"},
   },
 };
-const SEASONS = ["Y11S2","Y11S1"];           // newest first — Y11S2 is default
+const SEASONS = ["Y11S3","Y11S2","Y11S1"];   // newest first — Y11S3 is default
 const DEFAULT_SEASON = SEASONS[0];
 const SEASON_OPS = {
   Y11S1: "Operation Silent Hunt",
   Y11S2: "Operation System Override",
+  Y11S3: "Operation Split Fire",
 };
 const RECRUITS = ["blue","green","orange","red","yellow"];
 const ICON_ALIAS = { solidsnake:"snake" };
@@ -263,7 +264,29 @@ function initFxLayers(){
   document.body.prepend(root);
 }
 function clearThemeClasses(){
-  document.body.classList.remove("theme-y11s1","theme-y11s2");
+  document.body.classList.remove("theme-y11s1","theme-y11s2","theme-y11s3");
+}
+
+/* Y11S3 · Operation Split Fire — theme sheet + dossier module, loaded on demand (Y11S1 / Y11S2 never use them) */
+let y11s3ModulePromise = null;
+function ensureY11S3Assets(){
+  if(!byId("y11s3-css")){
+    const l=document.createElement("link");
+    l.id="y11s3-css"; l.rel="stylesheet";
+    l.href=`${BASE}assets/css/vantage-y11s3.css?v=3`;
+    document.head.appendChild(l);
+  }
+  if(window.VantageY11S3) return Promise.resolve(window.VantageY11S3);
+  if(!y11s3ModulePromise){
+    y11s3ModulePromise=new Promise((resolve,reject)=>{
+      const s=document.createElement("script");
+      s.src=`${BASE}assets/js/vantage-y11s3.js?v=2`;
+      s.onload=()=>resolve(window.VantageY11S3);
+      s.onerror=reject;
+      document.head.appendChild(s);
+    });
+  }
+  return y11s3ModulePromise;
 }
 
 /* Y11S2 · Dokkaebi background intercepts (pool: data/doka/Y11S2/pool.json) */
@@ -473,7 +496,8 @@ function applyPlayerSeasonTheme(season){
   clearThemeClasses();
   const s=season||DEFAULT_SEASON;
   document.body.dataset.season=s;
-  document.body.classList.add(s==="Y11S1"?"theme-y11s1":"theme-y11s2");
+  document.body.classList.add(s==="Y11S1"?"theme-y11s1":s==="Y11S3"?"theme-y11s3":"theme-y11s2");
+  if(s==="Y11S3") ensureY11S3Assets();
   if(s==="Y11S2") startDokaSpawner(document.body.dataset.player);
   else stopDokaSpawner();
   removeDokaIntro();
@@ -643,6 +667,9 @@ async function renderPlayer(){
   view.innerHTML=rec.meta?banner+playerBody(rec):banner+emptySeason(PLAYER_SEASON);
   wireOpTableControls();
   wirePastComments();
+  if(PLAYER_SEASON==="Y11S3"){
+    ensureY11S3Assets().then(m=>{ if(m && PLAYER_SEASON==="Y11S3") m.decorate({rec,slug,view}); }).catch(()=>{});
+  }
 }
 const OP_STANDINGS_SORT=[
   ["rounds","RDS"],["winpct","WIN%"],["kd","K/D"],["hs","HS%"],
